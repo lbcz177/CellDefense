@@ -67,9 +67,12 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyData.cs" />
     <Compile Include="Assets\Scripts\Tower\Bullet.cs" />
     <Compile Include="Assets\Scripts\MapCell\GridManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\BuildManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Tower\TowerPrefab.cs" />
+    <Compile Include="Assets\Scripts\Towers\TowerData.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Towers\BaseTower.cs" />
     <Compile Include="Assets\Scripts\Wave\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyFindWay.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

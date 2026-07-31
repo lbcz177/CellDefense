@@ -51,7 +51,7 @@ MonoBehaviour:
   attackRange: 5
   damage: 10
   attackCooldown: 1
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 4981414422873340332}
 --- !u!212 &4217582134625982719
 SpriteRenderer:
   m_ObjectHideFlags: 0

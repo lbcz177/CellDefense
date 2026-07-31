@@ -1490,7 +1490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4285278363253650339, guid: 266adcbd03ba61f48bf1a4171fafb5da, type: 3}
-  initialSize: 0
+  initialSize: 20
 --- !u!4 &1185129873
 Transform:
   m_ObjectHideFlags: 0
@@ -1580,7 +1580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3fef9ae675f3da468ad216fc20d0ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 200
+  money: 300000
   lives: 20
 --- !u!4 &1371981335
 Transform:
