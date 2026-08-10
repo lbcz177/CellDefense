@@ -17,15 +17,42 @@ public class TowerData : ScriptableObject
     public int maxLevel = 3;
 
     [Header("属性（按等级）")]
-    public List<float> attackRange = new List<float> { 3.5f, 3.8f, 4.2f };
-    public List<float> damage = new List<float> { 8f, 12f, 18f };
-    public List<float> attackCooldown = new List<float> { 0.25f, 0.18f, 0.15f };
+    public List<TowerLevelStats> towerLevelStats = new List<TowerLevelStats> { new TowerLevelStats() };
+
 
     [Header("特殊标签")]
     public bool canSlow = false;
     public bool canPierce = false;
     public bool isAOE = false;
     public bool isMelee = false;
+
+
+    public int LevelCountFind()
+    {
+        return towerLevelStats.Count;
+    }
+
+    public TowerLevelStats GetLevelStats(int level)
+    {
+        if(!IsValidLevel(level))
+        {
+            return default(TowerLevelStats);
+        }
+        return towerLevelStats[level - 1];
+    }
+
+    private bool IsValidLevel(int level)
+    {
+        if(level >= 1 && level <= towerLevelStats.Count)
+        {
+            return true;
+        }
+        else
+        {
+            Debug.LogWarning("等级超出范围或为空");
+            return false;
+        }
+    }
 }
 
 public enum TowerType
@@ -36,4 +63,12 @@ public enum TowerType
     NeuralSpiker,
     Macrophage,
     ViralInterceptor
+}
+
+public struct TowerLevelStats
+{
+    public int upgradeCost;
+    public float attackRange;
+    public float damage;
+    public float attackCooldown;
 }
