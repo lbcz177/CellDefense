@@ -13,6 +13,7 @@ public class BuildManager : MonoBehaviour
 
     public TowerData SelectedTowerData => selectedTowerData;
     public bool HasSelectedTower => selectedTowerData != null;
+    private Cell[] cells;
 
     void Awake()
     {
@@ -22,6 +23,20 @@ public class BuildManager : MonoBehaviour
             return;
         }
         Instance = this;
+        cells = FindObjectsOfType<Cell>();
+        foreach (Cell cell in cells)
+        {
+            cell.OnCellClicked += OnCellClicked;
+        }
+        SelectTower(0);
+    }
+
+    void OnCellClicked(Cell cell)
+    {
+        if(Time.timeScale == 0) return;
+        if (cell.isOccupied || !cell.isBuildable) return;
+        if (!TryPlaceTower(cell)) return;
+
     }
 
     public void SelectTower(int index)
@@ -72,6 +87,15 @@ public class BuildManager : MonoBehaviour
     {
         if (index < 0 || index >= towerPrefabs.Count) return null;
         return towerPrefabs[index].towerData;
+    }
+
+    void OnDestroy()
+    {
+        if (cells == null) return;
+        foreach (Cell cell in cells)
+        {
+            cell.OnCellClicked -= OnCellClicked;
+        }
     }
 }
 

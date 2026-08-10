@@ -48,7 +48,7 @@ public class BaseTower : MonoBehaviour
     protected virtual EnemyHealth FindTarget()
     {
         if (enemyManager == null) return null;
-        return enemyManager.GetNearestEnemy(transform.position, towerData.attackRange[currentLevel - 1]);
+        return enemyManager.GetNearestEnemy(transform.position, towerData.GetLevelStats(currentLevel).attackRange);
     }
 
     protected virtual void Attack(EnemyHealth target)
@@ -56,12 +56,12 @@ public class BaseTower : MonoBehaviour
         GameObject bullet = bulletPool.Get();
         bullet.transform.position = firePoint.position;
         Bullet bulletComponent = bullet.GetComponent<Bullet>();
-        bulletComponent.Init(target.transform, towerData.damage[currentLevel - 1], 10f);
+        bulletComponent.Init(target.transform, towerData.GetLevelStats(currentLevel).damage, 10f);
     }
 
     protected virtual float GetCurrentAttackRate()
     {
-        return towerData.attackCooldown[currentLevel - 1];
+        return towerData.GetLevelStats(currentLevel).attackCooldown;
     }
 
     public virtual bool Upgrade()
