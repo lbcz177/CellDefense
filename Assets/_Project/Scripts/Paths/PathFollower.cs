@@ -68,4 +68,9 @@ public class PathFollower : MonoBehaviour
         isMoving = false;
         ReachedEnd?.Invoke();
     }
+
+    public void Stop()
+    {
+        isMoving = false;
+    }
 }

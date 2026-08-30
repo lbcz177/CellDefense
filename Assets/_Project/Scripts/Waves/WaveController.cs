@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaveController : MonoBehaviour
@@ -27,16 +28,16 @@ public class WaveController : MonoBehaviour
         }
 
         activeEnemy = Instantiate(enemyPrefab);
-        activeEnemy.ReachedEnd += ReportEnemyExited;
+        activeEnemy.Exited += ReportEnemyExited;
         activeEnemy.Initialize(path);
     }
 
-    public void ReportEnemyExited(EnemyController enemy)
+    public void ReportEnemyExited(EnemyController enemy, EnemyExitReason reason)
     {
         if(activeEnemy == enemy)
         {
-            activeEnemy.ReachedEnd -= ReportEnemyExited;
-            Destroy(enemy);
+            activeEnemy.Exited -= ReportEnemyExited;
+            Destroy(enemy.gameObject);
             activeEnemy = null;
             EvaluateWaveComplete();
         }

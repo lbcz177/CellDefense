@@ -2,13 +2,15 @@
 
 > 2D 横屏俯视塔防学习项目  
 > Unity `2022.3.53f1c1` · 开发中  
-> 文档基线：2026-08-10
+> 文档基线：2026-08-30
 
 《细胞防卫战：伤口入侵》是一款以免疫系统为主题的 2D 塔防原型。玩家在预定塔位部署免疫细胞，抵御病原体入侵，并通过战斗提示、知识卡与图鉴了解相关知识。
 
 ## 项目状态
 
-- 当前阶段：学习原型与核心玩法验证。
+- 当前阶段：从零重构后的首个 PC 纵向切片。
+- 当前进度：M1–M3 已完成；敌人生命与退出原因、固定塔位及一塔建造均通过 Play Mode 验证。
+- 下一里程碑：M4 接入 ATP、最小锁敌与攻击、短波次和胜负闭环。
 - 目标平台：Windows PC、Android 与 iOS 横屏设备。
 - 最小完整范围：三个关卡、六种防御塔，战前从已解锁塔中六选四。
 - 经济系统：ATP、局内生物酶、局外免疫记忆点。
@@ -39,10 +41,13 @@
 
 ## 当前技术关注点
 
-1. 项目正在验证 `BuildManager + BaseTower` 路径，后续将与旧 `TowerPlacer + TowerPrefab` 路径收敛为单一实现。
-2. 敌人和防御塔增多后，将逐步用注册表、分频调度、依赖缓存与事件刷新替代频繁的全局查找。
-3. `TowerLevelStats` 的 Unity 序列化与升级费用数据源尚需收敛，`SentryTowerData.asset` 需在 Inspector 中人工核对。
-4. 当前固定路线和固定塔位玩法优先使用可测量的 MonoBehaviour 方案，再根据 Profiler 证据决定是否引入 A* 或 DOTS。
+1. `Health + EnemyController` 已实现 `Killed / Leaked / Cleared` 互斥退出，并由 `TryExit` 保证单个敌人只结算一次。
+2. `BuildSlot + BuildController + TowerDefinition` 已形成免费建造闭环；`EconomyService`、塔攻击、正式波次、胜负与 HUD 仍是下一阶段范围。
+3. 首个纵向切片只使用一座塔和少量固定塔位；完整六塔、三关和免疫反应链属于后续完成范围。
+4. 敌人和防御塔增多后，再根据 Profiler 证据逐步引入注册表、分频调度、对象池和空间划分。
+5. 固定路线和固定塔位优先使用可测量、可解释的 MonoBehaviour 方案，不为“架构高级”提前引入 A*、DOTS 或大型依赖注入框架。
+
+原始 `cell_defense_gdd.pdf` 只作为初始玩法提案和数值来源；当前玩法规则以 `Docs/GAME_DESIGN_FRAMEWORK.md` 为准，技术实现以 `Docs/TECHNICAL_ARCHITECTURE.md` 和实际代码为准。
 
 ## 文档维护原则
 

@@ -1,11 +1,11 @@
 # 《细胞防卫战：伤口入侵》技术架构与代码学习路线
 
-> 文档状态：目标架构 v0.2  
+> 文档状态：目标架构 v0.3  
 > 适用引擎：Unity 2022.3.53f1c1  
 > 文档导航：[README.md](README.md)  
 > 配套策划：[GAME_DESIGN_FRAMEWORK.md](GAME_DESIGN_FRAMEWORK.md)  
 > 性能专项：[PERFORMANCE_MANY_ENEMIES.md](PERFORMANCE_MANY_ENEMIES.md)  
-> 最近更新：2026-08-10
+> 最近更新：2026-08-30
 
 ---
 
@@ -71,6 +71,8 @@ flowchart TD
 
 ## 3. 场景与生命周期架构
 
+当前阶段例外：新工程只使用 `Prototype.unity` 验证单局纵向切片，不提前建立菜单、存档和跨场景常驻对象。只有一塔战斗闭环稳定后，才按下述目标拆分 `Bootstrap`、`MainMenu` 和 `Gameplay`。Prototype 未加入 Build Settings 前，只算 Editor 验证场景。
+
 ### 3.1 场景列表
 
 | 场景 | 责任 | 是否常驻 |
@@ -122,73 +124,64 @@ flowchart LR
 
 ## 4. 推荐目录与命名空间
 
-保持 Unity 自有资源与第三方资源分开，并修正当前 `Perfabs` 拼写：
+当前工程统一把自有内容放在 `Assets/_Project/`，避免与 Unity 默认资源、Package 示例和未来第三方资产混在一起。目录按当前真实结构渐进扩展：
 
 ```text
 Assets/
-├── Art/
-├── Audio/
-├── Data/
-│   ├── Towers/
-│   ├── Enemies/
-│   ├── Waves/
-│   ├── Levels/
-│   ├── Skills/
-│   └── Difficulties/
-├── Prefabs/
-│   ├── Towers/
-│   ├── Enemies/
-│   ├── Projectiles/
-│   ├── Levels/
-│   ├── UI/
-│   └── VFX/
-├── Scenes/
-│   ├── Bootstrap.unity
-│   ├── MainMenu.unity
-│   └── Gameplay.unity
-├── Scripts/
-│   ├── Runtime/
-│   │   ├── Core/
-│   │   ├── Data/
-│   │   ├── Gameplay/
-│   │   │   ├── Build/
-│   │   │   ├── Combat/
-│   │   │   ├── Enemies/
-│   │   │   ├── Flow/
-│   │   │   ├── Paths/
-│   │   │   ├── Skills/
-│   │   │   ├── Towers/
-│   │   │   └── Waves/
-│   │   ├── Infrastructure/
-│   │   └── Presentation/
-│   └── Editor/
-├── Tests/
-│   ├── EditMode/
-│   └── PlayMode/
-└── ThirdParty/
+└── _Project/
+    ├── Art/
+    │   ├── Animations/
+    │   ├── Sprites/
+    │   └── VFX/
+    ├── Audio/
+    ├── Data/
+    │   ├── Towers/
+    │   ├── Enemies/
+    │   ├── Waves/
+    │   └── Levels/
+    ├── Prefabs/
+    │   ├── Towers/
+    │   ├── Enemies/
+    │   └── Projectiles/
+    ├── Scenes/
+    │   └── Prototype.unity
+    ├── Scripts/
+    │   ├── Core/
+    │   ├── Paths/
+    │   ├── Enemies/
+    │   ├── Combat/
+    │   ├── Building/
+    │   ├── Towers/
+    │   ├── Waves/
+    │   ├── Economy/
+    │   ├── UI/
+    │   └── Data/
+    ├── Tests/
+    │   ├── EditMode/
+    │   └── PlayMode/
+    └── UI/
 ```
 
-初期只建立需要的文件夹，不一次创建大量空目录。命名空间与目录对应：
+当前教学骨架暂时不使用命名空间，避免在第一个移动闭环中同时引入额外概念。纵向切片稳定、脚本数量继续增长或开始建立 asmdef 时，再一次性加入以下命名空间，不允许长期出现一半全局、一半命名空间的混合状态：
 
 ```text
 CellDefense.Core
 CellDefense.Data
-CellDefense.Gameplay.Build
-CellDefense.Gameplay.Combat
-CellDefense.Gameplay.Enemies
-CellDefense.Gameplay.Flow
-CellDefense.Gameplay.Paths
-CellDefense.Gameplay.Skills
-CellDefense.Gameplay.Towers
-CellDefense.Gameplay.Waves
+CellDefense.Building
+CellDefense.Combat
+CellDefense.Enemies
+CellDefense.Economy
+CellDefense.Paths
+CellDefense.Towers
+CellDefense.Waves
+CellDefense.UI
 CellDefense.Infrastructure
-CellDefense.Presentation
 ```
 
 程序集定义分阶段加入：
 
 1. 原型稳定前不急于拆分 asmdef。
-2. 第一关稳定后建立 `CellDefense.Runtime`。
+2. 第一关纵向切片稳定后建立 `CellDefense.Runtime`。
 3. Editor 工具使用 `CellDefense.Editor`，只引用 Runtime。
 4. 测试使用 `CellDefense.Tests.EditMode` 和 `CellDefense.Tests.PlayMode`。
 
@@ -643,102 +636,97 @@ BuildResult
 
 ---
 
-## 13. 从当前代码到目标架构的映射
+## 13. 当前代码到目标职责的推进
 
-| 当前实现 | 目标实现 | 处理方式 |
+新工程没有旧类需要迁移。下面的“当前状态”只说明哪些职责已经可运行，不能把空骨架当作已完成功能。
+
+| 当前类/资产 | 当前状态 | 下一次扩展边界 |
 |---|---|---|
-| `GameManager` | `GameSession`、`LifeService`、`SessionEconomy`、`GameStateMachine` | 先用适配器迁移，再移除单例职责 |
-| `UIManager` | `HudPresenter`、`ResultPresenter` | 改为事件更新，拆分面板责任 |
-| `GridManager`、`Cell` | `LevelRoot`、`BuildSlot` | 固定塔位取代 20×20 动态网格 |
-| `TowerPlacer` | 无 | 迁移完成后删除 |
-| `BuildManager` | `BuildController` + Presenters | 保留业务方向，移除场景查找和静态入口 |
-| `TowerPrefab` | 无 | 迁移到 `TowerController` 后删除 |
-| `BaseTower` | `TowerController` + 策略/能力组件 | 渐进拆分，不一次重写六塔 |
-| `TowerData` | `TowerDefinition` | 重建有效资产，调整等级数据形状 |
-| `EnemyData` | `EnemyDefinition` | MonoBehaviour 数据迁到 ScriptableObject |
-| `EnemyFindWay` | `PathFollower` | 增加路径进度与退出原因 |
-| `EnemyHealth` | `Health` + `EnemyController` | 统一死亡/泄露，不依赖 OnDestroy 猜测 |
-| `EnemyManager` | `EnemyRegistry` | 去除查找，提供安全只读快照 |
-| `WaveSpawner` | `WaveController` + `WaveSequenceDefinition` | 支持 Spawn Group 和统一完成判定 |
-| `ObjectPool` | `ComponentPool<T>` | 先迁移 Projectile，再按测量扩展 |
-| `Bullet` | `Projectile` | 清晰处理租用、目标丢失、命中与归还 |
+| `WaypointPath` | 已运行；保存有序路径点并验证索引 | 增加编辑器引用完整性检查，不承担移动 |
+| `PathFollower` | 已运行；逐帧移动、推进节点、停止与单次到达通知 | M4 后暴露路径进度；暂停由 GameFlow 统一控制 |
+| `EnemyController` | 已接入 Health，并统一处理 Killed/Leaked/Cleared | M4 把退出原因接入奖励、基地生命和波次计数 |
+| `Health` | 已实现初始化、校验、生命变化和单次死亡 | 后续补自动化边界测试，不承担奖励或销毁 |
+| `WaveController` | 单敌人验证器；接收明确退出原因并销毁 GameObject | M4 扩展短波次与完成判定 |
+| `BuildSlot`、`BuildController` | 已通过三个固定塔位的一塔免费建造测试 | M4 接入 ATP，并保持验证、支付、创建、初始化、占用的事务顺序 |
+| `TowerController`、`Projectile` | TowerController 已保存 Definition；Projectile 仍为骨架 | M4 实现最小锁敌和攻击，不预建六塔万能基类 |
+| `EconomyService`、`GameFlowController`、`HudController` | 教学骨架 | M4 形成 ATP、状态、胜负和事件驱动显示闭环 |
+| 三个 Definition | 空 ScriptableObject 骨架 | M5 在纵向切片稳定后定义第一批静态数据 |
+| `Prototype.unity` | Editor 验证场景 | 完成可构建闭环时加入 Build Settings |
 
 ---
 
-## 14. 渐进迁移顺序
+## 14. 从零构筑的里程碑顺序
 
-每一步结束后都必须仍能进入 Play Mode 验证，禁止先删除旧架构再花很长时间重建。
+每一步结束后都必须保留一个可重复的 Play Mode 验证。核心实现由开发者完成；AI 提供需求、边界、Review 和机械配置协助。
 
-### M0：保存基线与复现问题
+### M0：新工程和目录基线（已完成）
 
-`【你主导】`
+- 使用 Unity 2022.3.53f1c1 创建 2D Core 项目。
+- 建立 `Assets/_Project/` 目录和必要 API 骨架。
 
-1. 记录当前场景从开始到胜利/失败的操作步骤。
-2. 画出当前建塔、攻击、击杀、波次的调用链。
-3. 记录已知问题和 Console 状态。
-4. 建立可恢复的 Git 提交；Git 命令可由 AI 协助。
+完成标准：项目可编译，目录和类职责能被说明。
 
-完成标准：能明确说明当前代码如何跑起来，以及哪两套塔架构在竞争。
+### M1：固定路线移动（已完成）
 
-### M1：修复数据与固定塔位
+- 场景配置 6 个有序路径点。
+- `WaypointPath` 提供只读数量和安全索引。
+- `PathFollower` 完成帧率无关移动、节点推进和单次终点事件。
+- 一个敌人能从 P00 移动至 P05，并由波次验证器接收结果。
 
-1. 在 Unity 中创建 `Assets/Data/Towers/SentryTowerData.asset`。
-2. 用 `TowerLevelStats` 替代容易错位的平行 List。
-3. 创建少量场景预置 `BuildSlot`，不再运行时生成 20×20 Cell。
-4. 暂时让现有 BuildManager 适配 BuildSlot，保持基础建塔可用。
+学习重点：序列化引用、数组、属性、Update、`Time.deltaTime`、事件和状态不变量。
 
-学习重点：序列化、ScriptableObject、Prefab、Awake/Start 和 Inspector。
+### M2：生命与敌人退出（已完成）
 
-### M2：统一建塔与塔运行路径
+1. 先把 `Destroy(enemy)` 修正为销毁敌人 GameObject。
+2. 实现 `Health` 的初始化、伤害、生命变化和单次死亡。
+3. 定义死亡、泄露、清场等明确退出原因。
+4. 让 `EnemyController` 统一解决退出，并保证同帧只结算一次。
+5. 让 `WaveController` 根据退出原因接收结果。
 
-1. 实现 `BuildController.TryBuild` 与明确结果。
-2. 实现 `TowerFactory` 初始化流程。
-3. 让 Sentry 只走 `TowerController` 路径。
-4. 检查场景/Prefab 不再引用 `TowerPlacer`、`TowerPrefab` 后删除旧脚本。
-5. 实现出售并释放 BuildSlot。
+完成标准：死亡和泄露不会同时奖励、扣命或减少两次存活计数。
 
-学习重点：职责划分、依赖传递、事务回滚、接口与事件。
+### M3：固定塔位与一座塔建造（已完成）
 
-### M3：游戏状态与经济
+1. 实现场景预置 `BuildSlot` 的空闲、占用和释放。
+2. `BuildController` 作为唯一建造入口，按验证 -> 扣款 -> 生成 -> 初始化 -> 占用执行。
+3. 只支持一座哨兵塔，不实现升级、出售分支和六塔通用工厂。
 
-1. 实现 `GameStateMachine`、`SessionEconomy`、`LifeService`。
-2. 将 money/金币统一为 ATP。
-3. 集中 `Time.timeScale` 写入。
-4. UI 改为订阅资源和生命变化。
+学习重点：职责、所有权、事务顺序、失败不改变状态和显式依赖。
 
-学习重点：普通 C# 类、状态机、委托事件、订阅生命周期。
+### M4：首个战斗纵向切片
 
-### M4：敌人、路径进度与伤害
+1. 实现最小锁敌和攻击。
+2. 接入 ATP、敌人奖励和泄露生命。
+3. 把单敌人验证器扩展为 2–3 个短波次。
+4. 接入 Running、Paused、Victory、Defeat 和最小 HUD。
+5. 建立从开局到结算的 PC 鼠标操作闭环。
 
-1. 创建 `EnemyDefinition`。
-2. 统一死亡和泄露退出原因。
-3. 让 PathFollower 暴露路径进度。
-4. 实现 ProgressTargeting。
-5. 实现 DamageCalculator 与代表性测试。
+完成标准：占位资源下可完整打一局，关键结算只发生一次。
 
-学习重点：数据/状态分离、策略、纯逻辑、Debug 和测试。
+### M5：数据化与第二座塔
 
-### M5：波次数据化
+1. 定义第一版 `EnemyDefinition`、`TowerDefinition` 和 `WaveDefinition`。
+2. 静态配置与本局状态分离，数据资产从 Unity 菜单创建。
+3. 加入第二座机制不同的塔，完成最小“识别 -> 效应”免疫反应链。
+4. 出现真实变化点后再提取 Strategy 或 Factory 边界。
 
-1. 建立 `WaveSequenceDefinition` 和 Spawn Group。
-2. 实现统一 `EvaluateCompletion()`。
-3. 加入倒计时、自动/提前开波和奖励。
-4. 接入波次 UI。
+学习重点：ScriptableObject、序列化、Definition/State、组合和设计模式触发条件。
 
-学习重点：协程、并发生成组、边界顺序、事件驱动 UI。
+### M6：第一关内容
 
-### M6：扩展塔与状态系统
+- 逐步扩展六塔基础形态、四类敌人、5 波和 Boss。
+- 接入升级、出售、提前开波、教学、基础 VFX 和完整结算。
+- 至少三座塔完成独特行为后复盘共享攻击能力。
 
-1. 先完成中性粒细胞哨兵、纤维蛋白壁垒、溶酶体酸化炮三种不同机制。
-2. 从真实重复中抽取 `IAttackBehaviour` 或共享组件。
-3. 建立状态叠加规则。
-4. 再完成剩余三塔与 LV3 分支。
+### M7：性能与交付基线
 
-学习重点：继承与组合取舍、重构时机、状态效果和对象池。
+- 建立 Windows Development Build、压力场景和 Profiler 基线。
+- 只按证据加入 EnemyRegistry、分频、对象池和空间桶。
+- 建立高价值 EditMode/PlayMode 测试与可复现 Bug 记录。
 
-### M7：存档、第二/三关与发布系统
+### M8：第二/三关与发布系统
 
-按照主设计文档路线加入多路线、技能、Boss、存档、移动适配、本地化、Profiler 和构建。每个系统继续遵循“先一个真实实现，再抽象复用”。
+按实际里程碑逐步加入多入口路径图、状态系统、信号网络、存档、UI 自适应、移动输入、本地化、Boss 状态机和平台构建。
 
 ---
 
@@ -830,6 +818,7 @@ BuildResult
 | ADR-010 | 炎症由事件累积、统一服务结算 | 防止每座塔直接修改全局值，便于回放与平衡 | 长期保持 |
 | ADR-011 | 适应在波间快照生成且对玩家公开 | 避免隐藏动态难度和同帧行为改变 | 试玩证明信息负担过高时简化 |
 | ADR-012 | 玩法结算与投射物/VFX 分离 | 视觉池达到上限时不能丢失伤害或改变结果 | 慢速可躲避投射物仍保留到达时结算 |
+| ADR-013 | 自有资源统一放入 `Assets/_Project`；命名空间延后到纵向切片稳定后一次性加入 | 与默认/第三方资源隔离，同时降低首个闭环的学习噪声 | 脚本继续增长或建立 asmdef 前必须复审 |
 
 新增或推翻重要架构决定时，在此记录问题、备选方案、选择和代价，而不是只改代码不留原因。
 
@@ -976,23 +965,18 @@ Recorder 在一波内累计有效伤害、控制时间、群落中断和吞噬�
 
 ---
 
-## 21. 2026-08-10 当前代码与资产复核
+## 21. 2026-08-30 当前代码与资产复核
 
-这张表是迁移起点，不代表要求在一次提交中全部修复。
-
-| 事实 | 风险 | 进入实现阶段后的动作 | 学习责任 |
+| 当前事实 | 判断 | 下一步 | 学习责任 |
 |---|---|---|---|
-| `TowerLevelStats` 已替换部分平行列表，但结构体没有明确 `[System.Serializable]` | Inspector 可能无法按预期显示/保存 | 先做最小序列化实验，再决定 class/struct 与标记 | 【你主导】 |
-| `TowerLevelStats.upgradeCost` 与 `TowerData.upgradeCosts` 同时存在 | 两个升级费用真相，容易索引错位 | 选定一个权威来源并写 `OnValidate` 规则 | 【你主导】 |
-| 旧 `SentryTowerData.asset` 仍保留旧字段且费用异常 | 资产迁移不可信 | 停止复用旧资产；通过 Unity 菜单在 `Assets/Data/Towers` 重建并人工核对 | 【你主导】 |
-| 玩家名“中性粒细胞哨兵”与代码 ID `SentryTCell` 不一致 | 科普和代码含义混乱 | 暂保稳定 ID，增加迁移映射；切勿直接改 GUID/手工改 `.asset` | 【协作完成】 |
-| `BuildManager/BaseTower` 与 `TowerPlacer/TowerPrefab` 并行 | 建造、费用和实例生命周期有两个入口 | 先让哨兵完整走新路径，Prefab 无旧引用后再删旧路径 | 【你主导】 |
-| `GridManager` 运行时生成 20×20 Cell | 与固定塔位/信号节点规则冲突 | 场景预制 `BuildSlot + SignalNode`，先小图验证 | 【你主导】 |
-| 多处 `FindObjectOfType`、`GameObject.Find` | 隐式依赖和初始化顺序风险 | Composition Root 缓存并显式传递依赖 | 【你主导】 |
-| 子弹已池化，敌人和高频 VFX 尚未统一 | 高波次生成和销毁尖峰 | 先建立 Profiler 基线，再迁移敌人/VFX 池 | 【协作完成】 |
-| 暂停直接依赖 `Time.timeScale` | 状态、UI 和 unscaled time 语义混杂 | 建 `GameStateMachine + TimeController` 单入口 | 【你主导】 |
-
-本轮文档工作禁止修改上述代码或资产。真正开始 M1 前，先创建可恢复的 Git 提交并逐项执行迁移。
+| `WaypointPath + PathFollower` 已通过单敌人移动测试 | M1 完成 | M4 后补路径进度与暂停语义 | 【你主导】 |
+| `Health + EnemyController` 已通过死亡与泄露测试 | M2 完成 | M4 将退出原因连接奖励、基地生命和波次计数 | 【你主导】 |
+| `WaveController` 只有一个活动敌人，并在 Start 自动启动 | 合理的临时验证器 | M4 再扩展短波次、生成结束与存活清空判定 | 【你主导】 |
+| `BuildSlot + BuildController + TowerDefinition` 已通过三个塔位建造测试 | M3 完成 | M4 接入 ATP 和失败不改变状态的建造事务 | 【你主导】 |
+| `TowerDefinition` 当前只保存 Prefab，其余 Definition 仍为骨架 | 足够支持 M3，不是正式数据模型 | M4 增加最小费用/攻击数据，M5 再扩展第二塔 | 【你主导】 |
+| 当前没有全局查找、旧双建塔路径或旧数据资产 | 符合新工程方向 | 不重新引入旧工程代码 | 【共同约束】 |
+| `Prototype.unity` 未进入 Build Settings | 当前只能证明 Editor Play Mode | 首个闭环完成时加入并生成 Windows Development Build | 【协作完成】 |
+| 没有性能采样和压力测试 | 不允许声称已经优化 | 战斗循环稳定后执行 PERF-0 | 【你主导】 |
 
 ---
 
@@ -1002,3 +986,4 @@ Recorder 在一波内累计有效伤害、控制时间、群落中断和吞噬�
 |---|---|---|
 | 2026-07-31 | 0.1 | 建立目标架构、类职责、数据流、迁移路线和 AI 学习协作方式 |
 | 2026-08-10 | 0.2 | 增加信号网络、群落、炎症、软适应模块；补充当前塔数据序列化与资产迁移复核；连接大量敌人性能专项 |
+| 2026-08-30 | 0.3 | 以新工程事实重写目录、当前类状态和 M0–M8 路线；旧工程迁移表退役；记录 Prototype 与已知销毁问题 |

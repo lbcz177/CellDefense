@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 630568728452401114}
   - component: {fileID: 1548251395116818521}
   - component: {fileID: -4507983432483004271}
+  - component: {fileID: -3572867911406769365}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,3 +113,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!114 &-3572867911406769365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893610674875225557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75aac51adfa5d9f49af3a6d979e7f8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,8 +5,17 @@ public class EnemyController : MonoBehaviour
 {
 
     [SerializeField] private PathFollower pathFollower;
-    public event Action<EnemyController> ReachedEnd;
+    public event Action<EnemyController, EnemyExitReason> Exited;
     private bool hasResolved;
+    private Health health;//接入health引用
+    
+
+    void Awake()
+    {
+        health = GetComponent<Health>();
+        pathFollower = GetComponent<PathFollower>();
+    }
+
     public void Initialize(WaypointPath path)
     {
         if(pathFollower == null)
@@ -20,17 +29,20 @@ public class EnemyController : MonoBehaviour
         hasResolved = false;
         pathFollower.Initialize(path);
         pathFollower.Begin();
+        health.Initialize(100f); //随便初始化，晚点修改
         
     }
 
     private void OnEnable()
     {
         pathFollower.ReachedEnd += HandleReachedEnd;
+        health.Died += HandleDeath;
     }
 
     private void OnDisable()
     {
         pathFollower.ReachedEnd -= HandleReachedEnd;
+        health.Died -= HandleDeath;
     }
 
     private void HandleReachedEnd()
@@ -39,12 +51,34 @@ public class EnemyController : MonoBehaviour
         {
             return;
         }
-        hasResolved = true;
-        ReachedEnd?.Invoke(this);
+        TryExit(EnemyExitReason.Leaked);
     }
 
     private void HandleDeath()
     {
-        // TODO: Resolve this enemy as killed exactly once.
+        TryExit(EnemyExitReason.Killed);
+    }
+
+    private bool TryExit(EnemyExitReason reason)
+    {
+        if (hasResolved)
+        {
+            return false;
+        }
+        hasResolved = true;
+        pathFollower.Stop();
+        Exited?.Invoke(this, reason);
+        return true;
+    }
+
+    public void Clear()
+    {
+        TryExit(EnemyExitReason.Cleared);
+    }
+
+    [ContextMenu("Test Take Damage")]
+    void TestTakeDamage()
+    {
+        health.TakeDamage(50f);
     }
 }

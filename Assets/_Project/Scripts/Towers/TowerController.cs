@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class TowerController : MonoBehaviour
 {
+    public TowerDefinition Definition{ get; private set; }
     public void Initialize(TowerDefinition definition)
     {
-        // TODO: Store the tower definition and initialize runtime state.
+        if(definition == null)
+        {
+            throw new System.ArgumentNullException(nameof(definition));
+        }
+        Definition = definition;
     }
 
     private void Update()

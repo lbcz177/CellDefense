@@ -1,10 +1,12 @@
 # 《细胞防卫战：伤口入侵》文档导航
 
-> 文档基线：2026-08-10  
+> 文档基线：2026-08-30  
 > 当前 Unity 版本：2022.3.53f1c1  
-> 本轮约束：只完善设计文档，不修改代码、Scene、Prefab 或 `.asset`
+> 当前阶段：新工程首个 PC 纵向切片；M1–M3 已完成，下一步为 M4 ATP 与最小战斗闭环
 
 这组文档既是游戏的设计基线，也是开发者的学习地图。任何实现与本文档冲突时，先记录证据，再修改相应文档；不要让过时的文档反过来强迫代码。
+
+当前事实的优先级为：实际可运行代码与场景证据 > 本地 Markdown 当前状态段落 > Notion 镜像与开发日志 > 2026-08-10 旧工程审计 > 原始 GDD。原始 PDF 和旧工程记录保留用于追溯设计演进，不能作为新工程的直接实现要求。
 
 ## 1. 单一事实来源
 
@@ -34,13 +36,15 @@
 
 ## 3. 当前代码事实与目标架构的关系
 
-当前代码是学习原型，不是需要一次性推倒重写的失败版本。已观察到的主要迁移点：
+旧 Unity 工程已经删除，当前项目于 2026-08-28 从新的 2D Core 工程开始。现在不存在需要迁移的 `TowerPlacer`、`BaseTower`、`GridManager`、旧 `.asset` 或双建塔路径。
 
-1. 目前存在两条建造/塔运行路径：`BuildManager + BaseTower` 与 `TowerPlacer + TowerPrefab`。目标是验证新路径后只保留一条权威路径。
-2. 当前大量对象会分别执行 `Update`、查找目标或查找全局对象。目标是逐步改为注册表、分频调度、缓存依赖和事件刷新。
-3. `TowerLevelStats` 已开始代替平行数值列表，但当前结构体缺少明确的 Unity 序列化标记，且升级费用仍有两个候选来源；旧 `SentryTowerData.asset` 也没有完成迁移。本轮只记录问题，不修改代码或资产。
-4. 当前 `SentryTowerData.asset` 的升级费用序列化值异常，不应继续作为可信数据源。正式实现时应在 Unity 菜单中重新创建 `Assets/Data/Towers/SentryTowerData.asset`，并人工核对 Inspector。
-5. 当前固定路线、固定塔位玩法没有必要一开始使用复杂 A* 或 DOTS。先建立可测量的 MonoBehaviour 版本，再由 Profiler 证据决定是否升级技术。
+1. 自有资源统一放在 `Assets/_Project/`；当前代码按 Core、Paths、Enemies、Combat、Building、Towers、Waves、Economy、UI 和 Data 分组。
+2. `WaypointPath + PathFollower` 已完成：路径由有序 `Transform[]` 配置，敌人使用帧率无关移动并在终点发布一次事件。
+3. `Health + EnemyController + WaveController` 已实现死亡、泄露、清场三种互斥退出，并正确销毁敌人 GameObject。
+4. `BuildSlot + BuildController + TowerDefinition` 已通过三个固定塔位的一塔建造测试；重复点击和重新启用控制器不会重复建塔或重复订阅。
+5. 当前使用显式 Inspector 引用和 `Initialize` 传递依赖，没有引入场景全局查找、全局 EventBus 或大型 DI 容器。
+6. 当前性能数据为空白。只有完整战斗循环可运行后才建立 Profiler 基线；目标表不能提前写成已达成结果。
+7. 固定路线和固定塔位继续使用可测量的 MonoBehaviour 实现；A*、对象池、分频和空间桶必须由玩法需要或 Profiler 证据触发。
 
 ## 4. 推荐阅读顺序
 

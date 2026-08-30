@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Project\Scripts\Enemies\EnemyController.cs" />
+    <Compile Include="Assets\_Project\Scripts\Enemies\EnemyExitReason.cs" />
     <Compile Include="Assets\_Project\Scripts\Waves\WaveController.cs" />
     <Compile Include="Assets\_Project\Scripts\Paths\WaypointPath.cs" />
     <Compile Include="Assets\_Project\Scripts\Data\TowerDefinition.cs" />

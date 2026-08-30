@@ -40,7 +40,7 @@ text, letters, numbers, logo, watermark, border, UI mockup
 
 ### 0.3 六塔 ID 对照
 
-| 玩家可见名称 | 当前/旧设计标识 | 反应角色 |
+| 玩家可见名称 | 原始 GDD/历史设计标识 | 反应角色 |
 |---|---|---|
 | 中性粒细胞哨兵 | `SentryTCell` / SentryTower | 识别、采样、速射 |
 | 纤维蛋白壁垒 | Bio Barrier Cell | 调节、隔离、减速 |
@@ -49,7 +49,7 @@ text, letters, numbers, logo, watermark, border, UI mockup
 | 巨噬细胞清道夫 | Macrophage Devourer | 清除、回收、降炎症 |
 | 抗体 B 细胞中继 | Viral Interceptor | 标记、记忆、信号中继 |
 
-旧 ID 只用于和当前原型对照；最终 UI 与美术文件名采用玩家可见名称。不要通过手工修改 `.asset` 或 GUID 完成重命名。
+历史标识只用于追溯原始 GDD；新工程尚未建立正式塔 ID。最终 UI、Definition 和美术文件名采用稳定代码 ID 与玩家可见名称的明确映射，不通过手工修改 `.asset` 或 GUID 完成重命名。
 
 ---
 
@@ -457,5 +457,5 @@ each pose isolated with equal spacing, no overlap, plain light gray background,
 
 | 日期 | 版本 | 变更 |
 |---|---|---|
-| 2026-08-10 | 1.0 | 为六塔建立独立生产精灵、升级分支、图标与姿势提示词，并保留当前代码 ID 对照 |
+| 2026-08-10 | 1.0 | 为六塔建立独立生产精灵、升级分支、图标与姿势提示词，并保留历史设计标识对照 |
 

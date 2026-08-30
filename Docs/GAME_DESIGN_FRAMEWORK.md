@@ -1,13 +1,13 @@
 # 《细胞防卫战：伤口入侵》游戏设计与学习开发框架
 
 > 英文名：Cell Defense: Wound Invasion  
-> 文档状态：设计基线 v0.4  
+> 文档状态：设计基线 v0.5  
 > 适用引擎：Unity 2022.3.53f1c1  
 > 目标平台：Windows PC、Android、iOS  
-> 原始设计依据：`cell_defense_gdd.pdf`  
+> 原始设计依据：`cell_defense_gdd.pdf`（历史提案；冲突时以本文为准）  
 > 文档导航：[README.md](README.md)  
 > 配套技术架构：[TECHNICAL_ARCHITECTURE.md](TECHNICAL_ARCHITECTURE.md)  
-> 最近更新：2026-08-10
+> 最近更新：2026-08-30
 
 ---
 
@@ -742,7 +742,7 @@ Assets/Data/Levels/
 Assets/Data/Skills/
 ```
 
-例如哨兵塔应通过 Unity 菜单创建为 `Assets/Data/Towers/SentryTowerData.asset`。不要把运行数据资产继续放在 `Assets/Scripts/` 中，也不要在资源管理器里手工创建 `.asset` 文件。
+例如第一座哨兵塔应通过 Unity 菜单创建为 `Assets/_Project/Data/Towers/SentryTowerDefinition.asset`。不要把数据资产放进 `Scripts/`，也不要在资源管理器里手工创建 `.asset` 文件。
 
 ### 12.4 运行时模块
 
@@ -792,44 +792,38 @@ Assets/Data/Skills/
 
 ---
 
-## 13. 当前代码审计与迁移方向
+## 13. 当前新工程实现状态与开发约束
 
-以下结论基于 2026-08-10 的项目状态，仅用于规划，不表示需要一次性重写。更细的类级复核以 [TECHNICAL_ARCHITECTURE.md](TECHNICAL_ARCHITECTURE.md) 第 21 节为准。
+以下事实基于 2026-08-30 的实际项目。旧工程的类、资产和 Bug 只保留在历史日志中，不再形成迁移任务。更细的模块职责和里程碑以 [TECHNICAL_ARCHITECTURE.md](TECHNICAL_ARCHITECTURE.md) 为准。
 
-### 13.1 已有可复用基础
+### 13.1 已完成的最小基础
 
-- 敌人 Waypoint 移动、生命与击杀奖励。
-- 敌人列表与范围内最近目标查询。
-- 波次协程与存活计数。
-- 子弹对象池。
-- 格子点击、塔建造和基础 UI。
-- `TowerData`、`BaseTower` 的数据驱动雏形。
+- 使用 Unity 2022.3.53f1c1 建立全新 2D Core 项目，自有资源统一放在 `Assets/_Project/`。
+- 已创建 Core、Paths、Enemies、Combat、Building、Towers、Waves、Economy、UI 和 Data 的教学骨架。
+- `Prototype.unity` 已建立 `LevelRoot/Path_01` 与 6 个有序路径点。
+- `WaypointPath` 负责路径数据和索引验证；`PathFollower` 负责帧率无关移动、路径点推进和单次终点通知。
+- `Health + EnemyController + WaveController` 已能处理 `Killed / Leaked / Cleared`，并由统一 `TryExit` 保证一个敌人只退出一次。
+- `BuildSlot + BuildController + TowerDefinition` 已在三个固定塔位上通过免费建塔、重复点击和事件重订阅测试。
+- 当前没有旧 `TowerData`、旧建塔路径、动态网格、对象池或正式 UI。
 
-### 13.2 优先处理的问题
+### 13.2 当前已知问题与未完成边界
 
-1. `TowerPlacer/TowerPrefab` 与 `BuildManager/BaseTower/TowerData` 是两套重复架构，应保留后一套并迁移后删除旧路径。
-2. 当前 `TowerLevelStats` 未明确标记为 Unity 可序列化类型，`TowerLevelStats.upgradeCost` 与 `TowerData.upgradeCosts` 又形成双数据源；旧 `Assets/Scripts/Towers/SentryTowerData.asset` 仍保存旧字段且费用异常。必须先停止复用旧资产，再从 Unity 菜单重建到 `Assets/Data/Towers/` 并验证 Inspector、保存和重启结果，禁止手改 `.asset` 文本。
-3. `BuildManager.Awake()` 与 `GridManager.Awake()` 存在初始化顺序风险；改为场景预置固定塔位后可直接消除动态 20×20 网格依赖。
-4. `GridManager` 在 `Awake()` 中写死宽、高和格子尺寸，覆盖 Inspector 数据。
-5. 当前锁敌是空间最近，与 GDD 的“最接近终点”不一致。
-6. `GameManager` 只用 `Time.timeScale` 表示结束状态，需要正式流程状态机。
-7. UI 每帧轮询数据且波次显示未接入，后续改为事件更新。
-8. 波次生成结束时若存活数已经为 0，可能错过胜利触发，需要统一完成判定入口。
-9. 多处 `FindObjectOfType` 隐藏依赖、增加查找与生命周期风险，应逐步改为 Inspector 引用、初始化注入或服务入口。
-10. 当前场景资金为 300000，属于测试值；正式首关应恢复为配置化的 150 ATP。
-11. 当前 `Wave` 一次只能配置一种敌人，无法表达混合交替、多个入口、Boss 伴随单位等波次；应改为一个波次包含多个 Spawn Group。
-12. 当前 `EnemyData` 是 Prefab 上的 `MonoBehaviour` 数据容器；应迁移为 ScriptableObject 定义，并把当前生命、路径进度和状态留在运行时组件中。
-13. 当前只有子弹进入对象池，敌人和高频特效仍使用 `Instantiate/Destroy`；在 Profiler 证明有收益后逐步池化。
-14. 出售塔只销毁对象，没有通知 Cell/BuildSlot 释放占用状态。
-15. `OnMouseDown/Enter` 难以统一手机触控、UI 遮挡和输入禁用；核心循环稳定后引入输入适配层，再评估迁移 Input System。
+1. `WaveController` 只支持一个活动敌人，并在 `Start()` 中自动开始；退出原因尚未产生奖励或基地扣血。
+2. 敌人最大生命暂时由 `EnemyController` 以测试值初始化，尚未接入 `EnemyDefinition`。
+3. `TowerDefinition` 当前只保存 Prefab；费用、攻击数据与升级数据尚未接入。
+4. 建造目前免费且仅使用 PC `OnMouseDown`；出售、ATP、统一输入和 UI 尚未实现。
+5. `TowerController` 尚未锁敌或攻击；`EconomyService`、`GameFlowController` 和 HUD 仍是教学骨架。
+6. `Prototype.unity` 尚未加入 Build Settings；当前只承诺 Editor Play Mode 验证，不宣称已有可发布构建。
+7. 当前没有性能测量结果；性能文档中的数字全部是目标或未来压力测试规模。
 
-### 13.3 重构策略
+### 13.3 当前开发约束
 
-- 不做“大爆炸式重写”。
-- 每次只替换一个可运行闭环，并在迁移后删除对应旧实现。
-- 第一阶段先统一命名：`money -> ATP`、`damage -> leakDamage`、`alliveEnemyCount -> aliveEnemyCount`。
-- 先修正确性和生命周期，再抽象模式。
-- 每次重构前保留可复现的场景或测试步骤。
+- 一次完成一个可运行模块：需求与不变量 -> 开发者实现 -> Play Mode/测试验证 -> 集中 Review。
+- 已掌握的语法快速通过；生命周期、事件、状态机、数据流和模式取舍设置检查点。
+- 首个纵向切片先用一座塔完成闭环，稳定后再加入第二座塔和最小免疫反应链。
+- 不复制旧工程代码或资产；需要的数据通过新的 Definition 从 Unity 菜单创建。
+- 不提前引入对象池、空间桶、A*、DOTS 或大型 DI；出现真实重复或 Profiler 证据后再升级。
+- 本阶段优先保证 PC 鼠标操作，移动端输入与横屏适配在核心循环稳定后处理。
 
 ---
 
@@ -1019,21 +1013,22 @@ Assets/Data/Skills/
 
 ## 18. 开发路线图与责任划分
 
-### 阶段 0：稳定当前原型
+### 阶段 0：首个纵向切片闭环
 
-目标：消除双架构和数据损坏，得到可靠起点。
+目标：在新工程中用最少内容打通“路径 -> 敌人 -> 生命/退出 -> 建造 -> 一座塔攻击 -> ATP -> 波次 -> 胜负”。
 
-- `【你主导】` 画出当前建塔、攻击、击杀和波次的数据流。
-- `【你主导】` 选择并保留 `BuildManager + BaseTower + TowerData` 路线。
-- `【协作完成】` 迁移引用并验证旧组件不再参与运行。
-- `【你主导】` 通过 Unity 菜单重建哨兵塔数据，确认升级列表正常。
-- `【你主导】` 修复初始化顺序与波次完成边界。
-- `【AI 可代办】` 机械命名整理、检查引用清单和回归步骤格式化。
+- `【已完成】` 建立项目目录、API 骨架、Prototype 场景和单敌人固定路线移动。
+- `【已完成】` 完成 `Health + EnemyController`，让死亡、泄露和清场互斥且只结算一次。
+- `【已完成】` 完成固定 `BuildSlot + BuildController`，只支持一座占位塔。
+- `【你主导】` 完成最小锁敌、攻击、ATP、短波次和胜负流程。
+- `【协作完成】` 检查 Inspector 引用、Prefab 生命周期、事件解绑和失败边界。
+- `【AI 可代办】` 目录、占位资源、配置清单和回归步骤的机械整理。
 
-完成定义：可重复运行 10 次，无空引用、双重建塔或胜负不触发；所有正式数值来自有效配置。
+完成定义：使用占位图形即可从开始完成一局短战斗；死亡/泄露、扣款、奖励和胜负均无重复结算；开发者能画出完整数据流。
 
 ### 阶段 1：第一关核心纵向切片
 
+- 在阶段 0 的一塔闭环稳定后加入第二座塔和最小“识别 -> 效应”反应链，再逐步扩展首关内容。
 - 固定塔位与范围预览。
 - 6 塔基础形态，至少 3 塔完成全部特殊行为。
 - 4 种敌人、5 波和 Boss 基础能力。
@@ -1186,3 +1181,4 @@ Assets/Data/Skills/
 | 2026-07-31 | 0.2 | 确认横屏短局、伤害类型、三档难度、塔解锁、三关 Boss、统计、资产与音频范围 | 将玩家体验和制作边界推进到可实施基线 |
 | 2026-07-31 | 0.3 | 确认六选四、双建造交互、ATP 节奏、三星、单存档、教程、无障碍与语言方案 | 完成首版局内交互和局外进度基线 |
 | 2026-08-10 | 0.4 | 建立免疫反应链、组织信号网络、病原群落感应、炎症稳态与软适应；统一六塔玩家可见名称 | 避免形成传统塔防换皮，让细胞主题直接产生玩法与学习价值 |
+| 2026-08-30 | 0.5 | 删除旧工程迁移要求，记录新工程实际完成状态、已知问题和一塔纵向切片顺序 | 旧工程已删除，文档必须以当前代码和可运行证据为准 |
