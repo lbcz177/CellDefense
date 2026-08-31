@@ -8,23 +8,42 @@ public class EconomyService
 
     public void Initialize(int initialATP)
     {
-        // TODO: Validate and assign the starting ATP value.
+        if(initialATP < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(initialATP), "Initial ATP cannot be negative.");
+        }
+        CurrentATP = initialATP;
+        ATPChanged?.Invoke(CurrentATP);
     }
 
     public bool CanAfford(int amount)
     {
-        // TODO: Check a purchase without changing ATP.
-        return false;
+        if(amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount cannot be negative or zero.");
+        }
+        return CurrentATP >= amount;
     }
 
     public bool TrySpend(int amount)
     {
-        // TODO: Spend ATP only when the complete request is valid.
+        if (CanAfford(amount))
+        {
+            CurrentATP -= amount;
+            ATPChanged?.Invoke(CurrentATP);
+            return true;
+        }
+
         return false;
     }
 
     public void AddATP(int amount)
     {
-        // TODO: Add a validated amount and notify ATP observers.
+        if(amount <= 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "Amount cannot be negative or zero.");
+        }
+        CurrentATP += amount;
+        ATPChanged?.Invoke(CurrentATP);
     }
 }

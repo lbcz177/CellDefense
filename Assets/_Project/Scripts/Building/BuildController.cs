@@ -1,5 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using System;
 
 public class BuildController : MonoBehaviour
 {
@@ -7,16 +7,29 @@ public class BuildController : MonoBehaviour
     private BuildSlot[] slots;
     [SerializeField]
     private TowerDefinition selectedDefinition;
+    private EconomyService economyService;
 
+    public void Initialize(EconomyService economyService)
+    {
+        if(economyService == null)
+        {
+            throw new ArgumentNullException(nameof(economyService));
+        }
+        this.economyService = economyService;
+    }
     public bool TryBuild(BuildSlot slot, TowerDefinition definition)
     {
         if(slot == null)
         {
-            throw new System.ArgumentNullException(nameof(slot));
+            throw new ArgumentNullException(nameof(slot));
         }
         if(definition == null)
         {
-            throw new System.ArgumentNullException(nameof(definition));
+            throw new ArgumentNullException(nameof(definition));
+        }
+        if(economyService == null)
+        {
+            throw new InvalidOperationException("EconomyService is not initialized.");
         }
         if(slot.CanBuild() == false)
         {
@@ -24,19 +37,42 @@ public class BuildController : MonoBehaviour
         }
         if(definition.Prefab == null)
         {
-            throw new System.InvalidOperationException("Cannot build a tower without a prefab.");
+            throw new InvalidOperationException("Cannot build a tower without a prefab.");
         }
-        TowerController tower = Instantiate(definition.Prefab, slot.transform.position, Quaternion.identity);
-        tower.Initialize(definition);
-        slot.Occupy(tower);
-        return true;
+        int buildCost = definition.BuildCost;
+        if(buildCost <= 0)
+        {
+            throw new InvalidOperationException("Tower build cost must be greater than zero.");
+        }
+        if(!economyService.TrySpend(buildCost))
+        {
+            return false;
+        }
+        TowerController tower = null;
+        try
+        {
+            tower = Instantiate(definition.Prefab, slot.transform.position, Quaternion.identity);
+            tower.Initialize(definition);
+            slot.Occupy(tower);
+            return true;
+        }
+        catch
+        {
+            if(tower != null)
+            {
+                Destroy(tower.gameObject);
+            }
+            economyService.AddATP(buildCost);
+            throw;
+        }
+        
     }
 
     private void HandleSlotClicked(BuildSlot slot)
     {
         if(slot == null)
         {
-            throw new System.ArgumentNullException(nameof(slot));
+            throw new ArgumentNullException(nameof(slot));
         }
         if(selectedDefinition == null)
         {
