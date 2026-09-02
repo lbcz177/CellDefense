@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     private bool hasResolved;
     private Health health;//接入health引用
     
+    public bool CanBeTargeted => !hasResolved && health != null && !health.IsDead;
+    
 
     void Awake()
     {
@@ -79,6 +81,14 @@ public class EnemyController : MonoBehaviour
     [ContextMenu("Test Take Damage")]
     void TestTakeDamage()
     {
-        health.TakeDamage(50f);
+        TakeDamage(50f);
+    }
+
+    public void TakeDamage(float amount)
+    {
+        if (CanBeTargeted)
+        {
+            health.TakeDamage(amount);
+        }
     }
 }

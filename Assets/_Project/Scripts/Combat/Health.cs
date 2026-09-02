@@ -8,7 +8,7 @@ public class Health : MonoBehaviour, IDamageable
     public float MaxHealth { get; private set; }
     public float CurrentHealth { get; private set; }
     public bool IsDead { get; private set; }
-
+    
 
     public void Initialize(float maxHealth)
     {
@@ -28,9 +28,10 @@ public class Health : MonoBehaviour, IDamageable
         {
             return;
         }
+
         if(amount <= 0)
         {
-            throw new ArgumentOutOfRangeException(nameof(amount), "Damage amount cannot be negative.");
+            throw new ArgumentOutOfRangeException(nameof(amount), "Damage amount must be greater than zero.");
         }
         CurrentHealth = Mathf.Max(CurrentHealth - amount, 0);
         HealthChanged?.Invoke(CurrentHealth, MaxHealth);
