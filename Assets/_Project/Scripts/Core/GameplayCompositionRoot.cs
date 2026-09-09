@@ -11,6 +11,8 @@ public class GameplayCompositionRoot : MonoBehaviour
     private EconomyService economyService;
     [SerializeField]
     private HudController hudController;
+    [SerializeField]
+    private WaveController waveController;
     
     private void Awake()
     {
@@ -22,11 +24,15 @@ public class GameplayCompositionRoot : MonoBehaviour
         {
             throw new InvalidOperationException("HudController reference is not set in the inspector.");
         }
+        if(waveController == null)
+        {
+            throw new InvalidOperationException("WaveController reference is not set in the inspector.");
+        }
         economyService = new EconomyService();
         economyService.Initialize(initialATP);
-
         buildController.Initialize(economyService);
         hudController.Initialize(economyService);
+        waveController.Initialize(economyService);
     }
 
 

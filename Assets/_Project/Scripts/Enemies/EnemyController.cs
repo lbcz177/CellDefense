@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public event Action<EnemyController, EnemyExitReason> Exited;
     private bool hasResolved;
     private Health health;//接入health引用
+    public EnemyDefinition Definition { get; private set; }
     
     public bool CanBeTargeted => !hasResolved && health != null && !health.IsDead;
     
@@ -18,20 +19,25 @@ public class EnemyController : MonoBehaviour
         pathFollower = GetComponent<PathFollower>();
     }
 
-    public void Initialize(WaypointPath path)
+    public void Initialize(WaypointPath path, EnemyDefinition definition)
     {
         if(pathFollower == null)
         {
             throw new ArgumentNullException(nameof(pathFollower));
         }
+        if(definition == null)
+        {
+            throw new ArgumentNullException(nameof(definition));
+        }
         if(path == null)
         {
             throw new ArgumentNullException(nameof(path));
         }
+        Definition = definition;
         hasResolved = false;
+        health.Initialize(definition.MaxHealth);
         pathFollower.Initialize(path);
         pathFollower.Begin();
-        health.Initialize(100f); //随便初始化，晚点修改
         
     }
 
