@@ -1,24 +1,99 @@
 using UnityEngine;
+using System;
 
 public class Projectile : MonoBehaviour
 {
-    public void Initialize(Transform target, float damage)
+    [SerializeField, Min(0.01f)]
+    private float moveSpeed = 6f;
+    [SerializeField, Min(0.01f)]
+    private float hitDistance = 0.1f;
+
+    private EnemyController target;
+    private float damage;
+    private bool isInitialized;
+    private bool hasResolved;
+
+    public void Initialize(EnemyController target, float damage)
     {
-        // TODO: Store the target and immutable attack result for this shot.
+        if (target == null)
+        {
+            throw new ArgumentNullException(nameof(target));
+        }
+        if (damage <= 0f)
+        {
+            throw new ArgumentOutOfRangeException(nameof(damage), "Damage must be greater than zero.");
+        }
+        if (moveSpeed <= 0f)
+        {
+            throw new InvalidOperationException("Projectile move speed must be greater than zero.");
+        }
+        if (hitDistance <= 0f)
+        {
+            throw new InvalidOperationException("Projectile hit distance must be greater than zero.");
+        }
+
+        this.target = target;
+        this.damage = damage;
+        isInitialized = true;
+        hasResolved = false;
     }
 
     private void Update()
     {
-        // TODO: Move only while the projectile has a valid flight state.
+        if (!isInitialized || hasResolved)
+        {
+            return;
+        }
+        if (Time.deltaTime <= 0f)
+        {
+            return;
+        }
+
+        if (target == null || !target.CanBeTargeted || target.isActiveAndEnabled == false)
+        {
+            Finish();
+            return;
+        }
+
+        Move();
     }
 
     private void Move()
     {
-        // TODO: Move toward the target without deciding combat rules here.
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+        float distanceSquared = (target.transform.position - transform.position).sqrMagnitude;
+        if (distanceSquared <= hitDistance * hitDistance)
+        {
+            Hit();
+        }
+
     }
 
     private void Hit()
     {
-        // TODO: Deliver damage once and finish this projectile's lifetime.
+        if (hasResolved)
+        {
+            return;
+        }
+        if (target == null || !target.CanBeTargeted || target.isActiveAndEnabled == false)
+        {
+            Finish();
+            return;
+        }
+        target.TakeDamage(damage);
+        Finish();
+    }
+
+    private void Finish()
+    {
+        if (hasResolved)
+        {
+            return;
+        }
+
+        hasResolved = true;
+        isInitialized = false;
+        target = null;
+        Destroy(gameObject);
     }
 }

@@ -26,6 +26,10 @@ public class TowerController : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException(nameof(definition.AttackInterval), "Attack interval must be greater than zero.");
         }
+        if(definition.ProjectilePrefab == null)
+        {
+            throw new System.ArgumentException("Projectile prefab must be set.", nameof(definition.ProjectilePrefab));
+        }
         if(enemyLayerMask.value == 0)
         {
             throw new System.ArgumentException("Enemy layer mask must be set.", nameof(enemyLayerMask));
@@ -121,6 +125,7 @@ public class TowerController : MonoBehaviour
 
     private void Attack(EnemyController target)
     {
-        target.TakeDamage(Definition.Damage);
+        Projectile projectile = Instantiate(Definition.ProjectilePrefab, transform.position, Quaternion.identity);
+        projectile.Initialize(target, Definition.Damage);
     }
 }
