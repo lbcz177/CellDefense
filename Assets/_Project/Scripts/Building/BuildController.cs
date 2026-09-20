@@ -8,14 +8,20 @@ public class BuildController : MonoBehaviour
     [SerializeField]
     private TowerDefinition selectedDefinition;
     private EconomyService economyService;
+    private GameFlowController gameFlowController;
 
-    public void Initialize(EconomyService economyService)
+    public void Initialize(EconomyService economyService, GameFlowController gameFlowController)
     {
         if(economyService == null)
         {
             throw new ArgumentNullException(nameof(economyService));
         }
+        if(gameFlowController == null)
+        {
+            throw new ArgumentNullException(nameof(gameFlowController));
+        }
         this.economyService = economyService;
+        this.gameFlowController = gameFlowController;
     }
     public bool TryBuild(BuildSlot slot, TowerDefinition definition)
     {
@@ -30,6 +36,14 @@ public class BuildController : MonoBehaviour
         if(economyService == null)
         {
             throw new InvalidOperationException("EconomyService is not initialized.");
+        }
+        if(gameFlowController == null)
+        {
+            throw new InvalidOperationException("GameFlowController is not initialized.");
+        }
+        if(gameFlowController.CurrentState != GameState.Running)
+        {
+            return false;
         }
         if(slot.CanBuild() == false)
         {
