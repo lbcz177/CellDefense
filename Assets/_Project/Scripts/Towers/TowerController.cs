@@ -6,6 +6,8 @@ public class TowerController : MonoBehaviour
     [SerializeField]
     private LayerMask enemyLayerMask;
     private float attackCooldown = 0f;
+    private EnemyController currentTarget;
+
     public void Initialize(TowerDefinition definition)
     {
         if(definition == null)
@@ -29,7 +31,8 @@ public class TowerController : MonoBehaviour
             throw new System.ArgumentException("Enemy layer mask must be set.", nameof(enemyLayerMask));
         }
         Definition = definition;
-        attackCooldown = 0;
+        attackCooldown = 0f;
+        currentTarget = null;
     }
 
     private void Update()
@@ -42,18 +45,50 @@ public class TowerController : MonoBehaviour
         {
             return;
         }
+
+        if (currentTarget != null && !IsCurrentTargetValid())
+        {
+            currentTarget = null;
+        }
+
         attackCooldown -= Time.deltaTime;
         if (attackCooldown > 0f)
         {
             return;
         }
-        EnemyController target = FindTarget();
-        if(target == null)
+
+        if (currentTarget == null)
+        {
+            currentTarget = FindTarget();
+        }
+        if(currentTarget == null)
         {
             return;
         }
-        Attack(target);
+
+        Attack(currentTarget);
         attackCooldown = Definition.AttackInterval;
+    }
+
+    private bool IsCurrentTargetValid()
+    {
+        if (currentTarget == null)
+        {
+            return false;
+        }
+        if (!currentTarget.isActiveAndEnabled)
+        {
+            return false;
+        }
+        if (!currentTarget.CanBeTargeted)
+        {
+            return false;
+        }
+        if ((currentTarget.transform.position - transform.position).sqrMagnitude <= Definition.AttackRange * Definition.AttackRange)
+        {
+            return true;
+        }
+        return false;
     }
 
     private EnemyController FindTarget()
