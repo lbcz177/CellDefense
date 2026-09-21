@@ -38,7 +38,7 @@ public class GameplayCompositionRoot : MonoBehaviour
         waveController.Initialize(economyService, lifeService);
         gameFlowController.Initialize(lifeService, waveController);
         buildController.Initialize(economyService, gameFlowController);
-        hudController.Initialize(economyService, lifeService, gameFlowController);
+        hudController.Initialize(economyService, lifeService, gameFlowController, waveController);
     }
 
     private void Start()

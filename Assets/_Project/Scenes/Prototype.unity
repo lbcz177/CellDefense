@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1437921324}
-  waveDefinition: {fileID: 11400000, guid: 8ba433dab5e253148b1a1e3d8d8d296a, type: 2}
+  waveSequence: {fileID: 11400000, guid: c71fab2641c8426b865d3e9079cff7e8, type: 2}
 --- !u!4 &724212066
 Transform:
   m_ObjectHideFlags: 0

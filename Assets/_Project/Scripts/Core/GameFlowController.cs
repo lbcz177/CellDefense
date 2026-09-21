@@ -9,7 +9,7 @@ public class GameFlowController : MonoBehaviour
     public GameState CurrentState { get; private set; }
     private LifeService lifeService;
     private WaveController waveController;
-    private bool waveCompleted;
+    private bool allWavesCompleted;
 
     public void Initialize(LifeService lifeService, WaveController waveController)
     {
@@ -24,9 +24,9 @@ public class GameFlowController : MonoBehaviour
 
         this.lifeService = lifeService;
         this.waveController = waveController;
-        waveCompleted = false;
+        allWavesCompleted = false;
         lifeService.LifeChanged += HandleLifeChanged;
-        waveController.WaveCompleted += HandleWaveCompleted;
+        waveController.AllWavesCompleted += HandleAllWavesCompleted;
         SetState(GameState.Ready);
     }
 
@@ -39,7 +39,7 @@ public class GameFlowController : MonoBehaviour
 
         Time.timeScale = 1f;
         SetState(GameState.Running);
-        waveController.StartWave();
+        waveController.StartSequence();
     }
 
     public void Pause()
@@ -86,7 +86,7 @@ public class GameFlowController : MonoBehaviour
             Time.timeScale = 0f;
             SetState(GameState.Defeat);
         }
-        else if (waveCompleted)
+        else if (allWavesCompleted)
         {
             Time.timeScale = 0f;
             SetState(GameState.Victory);
@@ -98,9 +98,9 @@ public class GameFlowController : MonoBehaviour
         EvaluateResult();
     }
 
-    private void HandleWaveCompleted()
+    private void HandleAllWavesCompleted()
     {
-        waveCompleted = true;
+        allWavesCompleted = true;
         EvaluateResult();
     }
 
@@ -124,7 +124,7 @@ public class GameFlowController : MonoBehaviour
         }
         if (waveController != null)
         {
-            waveController.WaveCompleted -= HandleWaveCompleted;
+            waveController.AllWavesCompleted -= HandleAllWavesCompleted;
         }
     }
 }

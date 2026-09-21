@@ -24,12 +24,14 @@ public class HudController : MonoBehaviour
     private EconomyService economyService;
     private LifeService lifeService;
     private GameFlowController gameFlowController;
+    private WaveController waveController;
     private bool isSubscribed;
 
     public void Initialize(
         EconomyService economy,
         LifeService life,
-        GameFlowController gameFlow)
+        GameFlowController gameFlow,
+        WaveController waves)
     {
         if (economy == null)
         {
@@ -42,6 +44,10 @@ public class HudController : MonoBehaviour
         if (gameFlow == null)
         {
             throw new ArgumentNullException(nameof(gameFlow));
+        }
+        if (waves == null)
+        {
+            throw new ArgumentNullException(nameof(waves));
         }
         if (atpText == null)
         {
@@ -75,6 +81,7 @@ public class HudController : MonoBehaviour
         economyService = economy;
         lifeService = life;
         gameFlowController = gameFlow;
+        waveController = waves;
 
         RefreshAll();
         if (isActiveAndEnabled)
@@ -111,7 +118,7 @@ public class HudController : MonoBehaviour
 
     private void RefreshState(GameState state)
     {
-        stateText.text = state switch
+        string stateLabel = state switch
         {
             GameState.Boot => "状态：启动中",
             GameState.Ready => "状态：准备中",
@@ -121,6 +128,11 @@ public class HudController : MonoBehaviour
             GameState.Defeat => "状态：失败",
             _ => $"状态：{state}"
         };
+
+        string waveLabel = waveController != null && waveController.TotalWaveCount > 0
+            ? $"  波次：{waveController.CurrentWaveNumber}/{waveController.TotalWaveCount}"
+            : string.Empty;
+        stateText.text = stateLabel + waveLabel;
 
         pauseButton.interactable =
             state == GameState.Running || state == GameState.Paused;
@@ -163,10 +175,15 @@ public class HudController : MonoBehaviour
         gameFlowController.RestartRun();
     }
 
+    private void HandleWaveChanged(int currentWave, int totalWaves)
+    {
+        RefreshState(gameFlowController.CurrentState);
+    }
+
     private void Subscribe()
     {
         if (isSubscribed || economyService == null || lifeService == null ||
-            gameFlowController == null || pauseButton == null)
+            gameFlowController == null || waveController == null || pauseButton == null)
         {
             return;
         }
@@ -174,6 +191,7 @@ public class HudController : MonoBehaviour
         economyService.ATPChanged += RefreshATP;
         lifeService.LifeChanged += RefreshLife;
         gameFlowController.StateChanged += RefreshState;
+        waveController.WaveChanged += HandleWaveChanged;
         pauseButton.onClick.AddListener(HandlePauseClicked);
         restartButton.onClick.AddListener(HandleRestartClicked);
         isSubscribed = true;
@@ -189,6 +207,7 @@ public class HudController : MonoBehaviour
         economyService.ATPChanged -= RefreshATP;
         lifeService.LifeChanged -= RefreshLife;
         gameFlowController.StateChanged -= RefreshState;
+        waveController.WaveChanged -= HandleWaveChanged;
         pauseButton.onClick.RemoveListener(HandlePauseClicked);
         restartButton.onClick.RemoveListener(HandleRestartClicked);
         isSubscribed = false;
