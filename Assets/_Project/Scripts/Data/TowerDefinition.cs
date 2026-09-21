@@ -10,6 +10,9 @@ public enum TargetingMode
 public class TowerDefinition : ScriptableObject
 {
     [SerializeField]
+    private string displayName = "Tower";
+    public string DisplayName => displayName;
+    [SerializeField]
     private TowerController prefab;
     public TowerController Prefab => prefab;
     [SerializeField]

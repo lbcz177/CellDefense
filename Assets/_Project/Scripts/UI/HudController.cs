@@ -20,18 +20,26 @@ public class HudController : MonoBehaviour
     private TextMeshProUGUI resultText;
     [SerializeField]
     private Button restartButton;
+    private Button guardTowerButton;
+    private Button interceptorTowerButton;
+    [SerializeField]
+    private TowerDefinition guardTowerDefinition;
+    [SerializeField]
+    private TowerDefinition interceptorTowerDefinition;
 
     private EconomyService economyService;
     private LifeService lifeService;
     private GameFlowController gameFlowController;
     private WaveController waveController;
+    private BuildController buildController;
     private bool isSubscribed;
 
     public void Initialize(
         EconomyService economy,
         LifeService life,
         GameFlowController gameFlow,
-        WaveController waves)
+        WaveController waves,
+        BuildController build)
     {
         if (economy == null)
         {
@@ -48,6 +56,10 @@ public class HudController : MonoBehaviour
         if (waves == null)
         {
             throw new ArgumentNullException(nameof(waves));
+        }
+        if (build == null)
+        {
+            throw new ArgumentNullException(nameof(build));
         }
         if (atpText == null)
         {
@@ -77,11 +89,17 @@ public class HudController : MonoBehaviour
         {
             throw new InvalidOperationException("Restart Button reference is not set in the inspector.");
         }
+        if (guardTowerDefinition == null || interceptorTowerDefinition == null)
+        {
+            throw new InvalidOperationException("Tower definition references are not set in the inspector.");
+        }
 
         economyService = economy;
         lifeService = life;
         gameFlowController = gameFlow;
         waveController = waves;
+        buildController = build;
+        CreateTowerSelectionButtons();
 
         RefreshAll();
         if (isActiveAndEnabled)
@@ -132,10 +150,19 @@ public class HudController : MonoBehaviour
         string waveLabel = waveController != null && waveController.TotalWaveCount > 0
             ? $"  波次：{waveController.CurrentWaveNumber}/{waveController.TotalWaveCount}"
             : string.Empty;
-        stateText.text = stateLabel + waveLabel;
+        string selectionLabel = buildController != null && buildController.SelectedDefinition != null
+            ? $"  当前塔：{buildController.SelectedDefinition.DisplayName}"
+            : "  当前塔：未选择";
+        stateText.text = stateLabel + waveLabel + selectionLabel;
 
         pauseButton.interactable =
             state == GameState.Running || state == GameState.Paused;
+
+        bool canSelectTower = state == GameState.Ready ||
+                              state == GameState.Running ||
+                              state == GameState.Paused;
+        guardTowerButton.interactable = canSelectTower;
+        interceptorTowerButton.interactable = canSelectTower;
 
         bool hasResult = state == GameState.Victory || state == GameState.Defeat;
         resultPanel.SetActive(hasResult);
@@ -180,10 +207,56 @@ public class HudController : MonoBehaviour
         RefreshState(gameFlowController.CurrentState);
     }
 
+    private void HandleGuardTowerClicked()
+    {
+        buildController.TrySelectDefinition(guardTowerDefinition);
+    }
+
+    private void HandleInterceptorTowerClicked()
+    {
+        buildController.TrySelectDefinition(interceptorTowerDefinition);
+    }
+
+    private void HandleSelectedDefinitionChanged(TowerDefinition definition)
+    {
+        RefreshState(gameFlowController.CurrentState);
+    }
+
+    private void CreateTowerSelectionButtons()
+    {
+        if (guardTowerButton != null || interceptorTowerButton != null)
+        {
+            return;
+        }
+
+        guardTowerButton = CreateTowerSelectionButton(guardTowerDefinition, new Vector2(20f, 20f));
+        interceptorTowerButton = CreateTowerSelectionButton(interceptorTowerDefinition, new Vector2(200f, 20f));
+    }
+
+    private Button CreateTowerSelectionButton(TowerDefinition definition, Vector2 anchoredPosition)
+    {
+        Button button = Instantiate(pauseButton, pauseButton.transform.parent);
+        button.name = $"{definition.DisplayName} Button";
+
+        RectTransform rectTransform = button.GetComponent<RectTransform>();
+        rectTransform.anchorMin = Vector2.zero;
+        rectTransform.anchorMax = Vector2.zero;
+        rectTransform.pivot = Vector2.zero;
+        rectTransform.anchoredPosition = anchoredPosition;
+        rectTransform.sizeDelta = new Vector2(170f, 40f);
+
+        TextMeshProUGUI label = button.GetComponentInChildren<TextMeshProUGUI>();
+        label.text = $"{definition.DisplayName}  {definition.BuildCost} ATP";
+        label.fontSize = 22f;
+
+        return button;
+    }
+
     private void Subscribe()
     {
         if (isSubscribed || economyService == null || lifeService == null ||
-            gameFlowController == null || waveController == null || pauseButton == null)
+            gameFlowController == null || waveController == null || buildController == null ||
+            pauseButton == null || guardTowerButton == null || interceptorTowerButton == null)
         {
             return;
         }
@@ -192,8 +265,11 @@ public class HudController : MonoBehaviour
         lifeService.LifeChanged += RefreshLife;
         gameFlowController.StateChanged += RefreshState;
         waveController.WaveChanged += HandleWaveChanged;
+        buildController.SelectedDefinitionChanged += HandleSelectedDefinitionChanged;
         pauseButton.onClick.AddListener(HandlePauseClicked);
         restartButton.onClick.AddListener(HandleRestartClicked);
+        guardTowerButton.onClick.AddListener(HandleGuardTowerClicked);
+        interceptorTowerButton.onClick.AddListener(HandleInterceptorTowerClicked);
         isSubscribed = true;
     }
 
@@ -208,8 +284,11 @@ public class HudController : MonoBehaviour
         lifeService.LifeChanged -= RefreshLife;
         gameFlowController.StateChanged -= RefreshState;
         waveController.WaveChanged -= HandleWaveChanged;
+        buildController.SelectedDefinitionChanged -= HandleSelectedDefinitionChanged;
         pauseButton.onClick.RemoveListener(HandlePauseClicked);
         restartButton.onClick.RemoveListener(HandleRestartClicked);
+        guardTowerButton.onClick.RemoveListener(HandleGuardTowerClicked);
+        interceptorTowerButton.onClick.RemoveListener(HandleInterceptorTowerClicked);
         isSubscribed = false;
     }
 }

@@ -2024,6 +2024,8 @@ MonoBehaviour:
   resultPanel: {fileID: 1462505045}
   resultText: {fileID: 81972555}
   restartButton: {fileID: 1476800893}
+  guardTowerDefinition: {fileID: 11400000, guid: f792795d860c0f64192b65d8083c175c, type: 2}
+  interceptorTowerDefinition: {fileID: 11400000, guid: 8426eaf7d3b04fb28cd92c71e795aa64, type: 2}
 --- !u!114 &1554989976
 MonoBehaviour:
   m_ObjectHideFlags: 0

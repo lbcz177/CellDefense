@@ -10,6 +10,9 @@ public class BuildController : MonoBehaviour
     private EconomyService economyService;
     private GameFlowController gameFlowController;
 
+    public event Action<TowerDefinition> SelectedDefinitionChanged;
+    public TowerDefinition SelectedDefinition => selectedDefinition;
+
     public void Initialize(EconomyService economyService, GameFlowController gameFlowController)
     {
         if(economyService == null)
@@ -23,6 +26,33 @@ public class BuildController : MonoBehaviour
         this.economyService = economyService;
         this.gameFlowController = gameFlowController;
     }
+
+    public bool TrySelectDefinition(TowerDefinition definition)
+    {
+        if (definition == null)
+        {
+            throw new ArgumentNullException(nameof(definition));
+        }
+        if (gameFlowController == null)
+        {
+            throw new InvalidOperationException("GameFlowController is not initialized.");
+        }
+        GameState currentState = gameFlowController.CurrentState;
+        bool canSelect = currentState == GameState.Running || currentState == GameState.Paused || currentState == GameState.Ready;
+        if (!canSelect)
+        {
+            Debug.LogWarning($"Cannot select tower definition in the current game state: {currentState}");
+            return false;
+        }
+        if (selectedDefinition == definition)
+        {
+            return false;
+        }
+        selectedDefinition = definition;
+        SelectedDefinitionChanged?.Invoke(selectedDefinition);
+        return true;
+    }
+
     public bool TryBuild(BuildSlot slot, TowerDefinition definition)
     {
         if(slot == null)

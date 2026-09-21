@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5821597d2fbd35049b050306d57e6dee, type: 3}
-  m_Name: TowerDefinition
+  m_Name: InterceptorTowerDefinition
   m_EditorClassIdentifier: 
-  displayName: 近卫塔
-  prefab: {fileID: -7672387684028090219, guid: 52a63b992ad86f0489399f942ef9ea92, type: 3}
+  displayName: 拦截塔
+  prefab: {fileID: -7672387684028090219, guid: c4d01993e8b9467da4bd65b1a2f7c38e, type: 3}
   projectilePrefab: {fileID: 11400000, guid: 9d8c4c2a4b8748dd96b25bd87df0584a, type: 3}
-  buildCost: 25
-  attackRange: 2.5
-  damage: 25
-  attackInterval: 1
-  targetingMode: 0
+  buildCost: 40
+  attackRange: 3
+  damage: 40
+  attackInterval: 1.5
+  targetingMode: 1
