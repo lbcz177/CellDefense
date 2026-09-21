@@ -1,5 +1,11 @@
 using UnityEngine;
 
+public enum TargetingMode
+{
+    NearestToTower = 0,
+    FarthestAlongPath = 1
+}
+
 [CreateAssetMenu(fileName = "TowerDefinition", menuName = "Cell Defense/Tower Definition")]
 public class TowerDefinition : ScriptableObject
 {
@@ -18,7 +24,10 @@ public class TowerDefinition : ScriptableObject
     private float damage = 25f;
     [SerializeField, Min(0.01f)]
     private float attackInterval = 1f;
+    [SerializeField]
+    private TargetingMode targetingMode = TargetingMode.NearestToTower;
     public float AttackRange => attackRange;
     public float AttackInterval => attackInterval;
     public float Damage => damage;
+    public TargetingMode TargetingMode => targetingMode;
 }

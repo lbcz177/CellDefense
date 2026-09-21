@@ -103,24 +103,63 @@ public class TowerController : MonoBehaviour
         foreach (var collider in colliders)
         {
             EnemyController candidate = collider.GetComponentInParent<EnemyController>();
-            if(candidate == null)
+            if(candidate == null || !candidate.CanBeTargeted)
             {
                 continue;
             }
-            else
+
+            float candidateDistanceSquared = (candidate.transform.position - transform.position).sqrMagnitude;
+            if (bestTarget == null || IsCandidateBetter(
+                    candidate,
+                    candidateDistanceSquared,
+                    bestTarget,
+                    bestDistanceSquared))
             {
-                if (candidate != null && candidate.CanBeTargeted)
-                {
-                    float distanceToCurrent = (candidate.transform.position - transform.position).sqrMagnitude;
-                    if (distanceToCurrent < bestDistanceSquared)
-                    {
-                        bestDistanceSquared = distanceToCurrent;
-                        bestTarget = candidate;
-                    }
-                }
+                bestDistanceSquared = candidateDistanceSquared;
+                bestTarget = candidate;
             }
         }
         return bestTarget;
+    }
+
+    private bool IsCandidateBetter(
+        EnemyController candidate,
+        float candidateDistanceSquared,
+        EnemyController currentBest,
+        float currentBestDistanceSquared)
+    {
+        switch (Definition.TargetingMode)
+        {
+            case TargetingMode.NearestToTower:
+                return candidateDistanceSquared < currentBestDistanceSquared;
+
+            case TargetingMode.FarthestAlongPath:
+                float candidateProgress = GetPathProgress(candidate);
+                float currentBestProgress = GetPathProgress(currentBest);
+                if (candidateProgress > currentBestProgress)
+                {
+                    return true;
+                }
+                if (Mathf.Approximately(candidateProgress, currentBestProgress))
+                {
+                    return candidateDistanceSquared < currentBestDistanceSquared;
+                }
+                return false;
+
+            default:
+                throw new System.ArgumentOutOfRangeException(nameof(Definition.TargetingMode));
+        }
+    }
+
+    private static float GetPathProgress(EnemyController enemy)
+    {
+        PathFollower pathFollower = enemy.GetComponent<PathFollower>();
+        if (pathFollower == null)
+        {
+            throw new System.InvalidOperationException("Target enemy must have a PathFollower component.");
+        }
+
+        return pathFollower.Progress;
     }
 
     private void Attack(EnemyController target)

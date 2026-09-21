@@ -9,6 +9,30 @@ public class PathFollower : MonoBehaviour
     private int targetPointIndex;
     private bool isMoving;
 
+    public float Progress
+    {
+        get
+        {
+            if (path == null || targetPointIndex <= 0)
+            {
+                return 0f;
+            }
+
+            int segmentStartIndex = targetPointIndex - 1;
+            Vector3 segmentStart = path.GetPoint(segmentStartIndex).position;
+            Vector3 segmentEnd = path.GetPoint(targetPointIndex).position;
+            float segmentLength = Vector3.Distance(segmentStart, segmentEnd);
+            if (segmentLength <= Mathf.Epsilon)
+            {
+                return targetPointIndex;
+            }
+
+            float distanceFromStart = Vector3.Distance(segmentStart, transform.position);
+            float segmentProgress = Mathf.Clamp01(distanceFromStart / segmentLength);
+            return segmentStartIndex + segmentProgress;
+        }
+    }
+
     public void Initialize(WaypointPath path)
     {
         if(path == null)
