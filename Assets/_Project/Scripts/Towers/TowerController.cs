@@ -1,14 +1,19 @@
 using UnityEngine;
+using Unity.Profiling;
 
 public class TowerController : MonoBehaviour
 {
+    private static readonly ProfilerMarker SpawnProjectileMarker =
+        new ProfilerMarker("CellDefense.Projectile.Spawn");
+
     public TowerDefinition Definition{ get; private set; }
     [SerializeField]
     private LayerMask enemyLayerMask;
     private float attackCooldown = 0f;
     private EnemyController currentTarget;
+    private ProjectilePool projectilePool;
 
-    public void Initialize(TowerDefinition definition)
+    public void Initialize(TowerDefinition definition, ProjectilePool pool)
     {
         if(definition == null)
         {
@@ -34,7 +39,12 @@ public class TowerController : MonoBehaviour
         {
             throw new System.ArgumentException("Enemy layer mask must be set.", nameof(enemyLayerMask));
         }
+        if (pool == null)
+        {
+            throw new System.ArgumentNullException(nameof(pool));
+        }
         Definition = definition;
+        projectilePool = pool;
         attackCooldown = 0f;
         currentTarget = null;
     }
@@ -164,7 +174,10 @@ public class TowerController : MonoBehaviour
 
     private void Attack(EnemyController target)
     {
-        Projectile projectile = Instantiate(Definition.ProjectilePrefab, transform.position, Quaternion.identity);
-        projectile.Initialize(target, Definition.Damage);
+        using (SpawnProjectileMarker.Auto())
+        {
+            Projectile projectile = projectilePool.Get(transform.position);
+            projectile.Initialize(target, Definition.Damage);
+        }
     }
 }

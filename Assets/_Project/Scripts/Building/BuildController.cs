@@ -9,11 +9,15 @@ public class BuildController : MonoBehaviour
     private TowerDefinition selectedDefinition;
     private EconomyService economyService;
     private GameFlowController gameFlowController;
+    private ProjectilePool projectilePool;
 
     public event Action<TowerDefinition> SelectedDefinitionChanged;
     public TowerDefinition SelectedDefinition => selectedDefinition;
 
-    public void Initialize(EconomyService economyService, GameFlowController gameFlowController)
+    public void Initialize(
+        EconomyService economyService,
+        GameFlowController gameFlowController,
+        ProjectilePool projectilePool)
     {
         if(economyService == null)
         {
@@ -23,8 +27,13 @@ public class BuildController : MonoBehaviour
         {
             throw new ArgumentNullException(nameof(gameFlowController));
         }
+        if (projectilePool == null)
+        {
+            throw new ArgumentNullException(nameof(projectilePool));
+        }
         this.economyService = economyService;
         this.gameFlowController = gameFlowController;
+        this.projectilePool = projectilePool;
     }
 
     public bool TrySelectDefinition(TowerDefinition definition)
@@ -96,7 +105,7 @@ public class BuildController : MonoBehaviour
         try
         {
             tower = Instantiate(definition.Prefab, slot.transform.position, Quaternion.identity);
-            tower.Initialize(definition);
+            tower.Initialize(definition, projectilePool);
             slot.Occupy(tower);
             return true;
         }

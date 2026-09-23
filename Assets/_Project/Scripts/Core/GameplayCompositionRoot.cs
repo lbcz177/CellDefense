@@ -9,6 +9,7 @@ public class GameplayCompositionRoot : MonoBehaviour
     [SerializeField] private HudController hudController;
     [SerializeField] private WaveController waveController;
     [SerializeField] private GameFlowController gameFlowController;
+    [SerializeField] private ProjectilePool projectilePool;
     private EconomyService economyService;
     private LifeService lifeService;
 
@@ -30,6 +31,10 @@ public class GameplayCompositionRoot : MonoBehaviour
         {
             throw new InvalidOperationException("GameFlowController reference is not set in the inspector.");
         }
+        if (projectilePool == null)
+        {
+            throw new InvalidOperationException("ProjectilePool reference is not set in the inspector.");
+        }
 
         economyService = new EconomyService();
         economyService.Initialize(initialATP);
@@ -37,7 +42,8 @@ public class GameplayCompositionRoot : MonoBehaviour
         lifeService.Initialize(initialLife);
         waveController.Initialize(economyService, lifeService);
         gameFlowController.Initialize(lifeService, waveController);
-        buildController.Initialize(economyService, gameFlowController);
+        projectilePool.Initialize();
+        buildController.Initialize(economyService, gameFlowController, projectilePool);
         hudController.Initialize(economyService, lifeService, gameFlowController, waveController, buildController);
     }
 

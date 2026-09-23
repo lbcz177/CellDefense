@@ -1,8 +1,12 @@
 using UnityEngine;
 using System;
+using Unity.Profiling;
 
 public class Projectile : MonoBehaviour
 {
+    private static readonly ProfilerMarker ReturnProjectileMarker =
+        new ProfilerMarker("CellDefense.Projectile.Return");
+
     [SerializeField, Min(0.01f)]
     private float moveSpeed = 6f;
     [SerializeField, Min(0.01f)]
@@ -12,6 +16,21 @@ public class Projectile : MonoBehaviour
     private float damage;
     private bool isInitialized;
     private bool hasResolved;
+    private ProjectilePool ownerPool;
+
+    public void AssignPool(ProjectilePool pool)
+    {
+        if (pool == null)
+        {
+            throw new ArgumentNullException(nameof(pool));
+        }
+        if (ownerPool != null && ownerPool != pool)
+        {
+            throw new InvalidOperationException("Projectile already belongs to another pool.");
+        }
+
+        ownerPool = pool;
+    }
 
     public void Initialize(EnemyController target, float damage)
     {
@@ -92,8 +111,22 @@ public class Projectile : MonoBehaviour
         }
 
         hasResolved = true;
-        isInitialized = false;
+        if (ownerPool == null)
+        {
+            throw new InvalidOperationException("Projectile does not belong to a pool.");
+        }
+
+        using (ReturnProjectileMarker.Auto())
+        {
+            ownerPool.Release(this);
+        }
+    }
+
+    public void ResetForPool()
+    {
         target = null;
-        Destroy(gameObject);
+        damage = 0f;
+        isInitialized = false;
+        hasResolved = false;
     }
 }
