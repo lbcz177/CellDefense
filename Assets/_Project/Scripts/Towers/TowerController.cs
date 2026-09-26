@@ -84,7 +84,9 @@ public class TowerController : MonoBehaviour
             return;
         }
 
-        if (currentTarget == null)
+        // Specialized towers reevaluate priority after each cooldown so newly marked
+        // enemies and unmarked antibody targets can take precedence.
+        if (attackBehaviour != null || currentTarget == null)
         {
             currentTarget = FindTarget();
         }
