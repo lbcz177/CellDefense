@@ -1,0 +1,13 @@
+{
+  "name": "CellDefense.Tests.EditMode",
+  "references": [
+    "CellDefense.Economy",
+    "CellDefense.Life"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
