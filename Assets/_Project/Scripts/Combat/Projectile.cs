@@ -14,6 +14,7 @@ public class Projectile : MonoBehaviour
 
     private EnemyController target;
     private float damage;
+    private float markDuration;
     private bool isInitialized;
     private bool hasResolved;
     private ProjectilePool ownerPool;
@@ -34,6 +35,11 @@ public class Projectile : MonoBehaviour
 
     public void Initialize(EnemyController target, float damage)
     {
+        Initialize(target, damage, 0f);
+    }
+
+    public void Initialize(EnemyController target, float damage, float markDuration)
+    {
         if (target == null)
         {
             throw new ArgumentNullException(nameof(target));
@@ -41,6 +47,10 @@ public class Projectile : MonoBehaviour
         if (damage <= 0f)
         {
             throw new ArgumentOutOfRangeException(nameof(damage), "Damage must be greater than zero.");
+        }
+        if (markDuration < 0f)
+        {
+            throw new ArgumentOutOfRangeException(nameof(markDuration));
         }
         if (moveSpeed <= 0f)
         {
@@ -53,6 +63,7 @@ public class Projectile : MonoBehaviour
 
         this.target = target;
         this.damage = damage;
+        this.markDuration = markDuration;
         isInitialized = true;
         hasResolved = false;
     }
@@ -99,6 +110,15 @@ public class Projectile : MonoBehaviour
             Finish();
             return;
         }
+        if (markDuration > 0f)
+        {
+            EnemyImmuneState immuneState = target.GetComponent<EnemyImmuneState>();
+            if (immuneState == null)
+            {
+                throw new InvalidOperationException("Antibody target lost its EnemyImmuneState component.");
+            }
+            immuneState.ApplyMark(markDuration);
+        }
         target.TakeDamage(damage);
         Finish();
     }
@@ -126,6 +146,7 @@ public class Projectile : MonoBehaviour
     {
         target = null;
         damage = 0f;
+        markDuration = 0f;
         isInitialized = false;
         hasResolved = false;
     }

@@ -9,7 +9,13 @@ public class EnemyDefinition : ScriptableObject
     private float maxHealth = 100f;
     [SerializeField, Min(0)]
     private int killReward = 10;
+    [SerializeField]
+    private AntigenId antigenId = AntigenId.PrototypeA;
+    [SerializeField]
+    private bool engulfImmune;
     public EnemyController EnemyPrefab => enemyPrefab;
     public float MaxHealth => maxHealth;
     public int KillReward => killReward;
+    public AntigenId AntigenId => antigenId;
+    public bool CanBeEngulfed => !engulfImmune;
 }

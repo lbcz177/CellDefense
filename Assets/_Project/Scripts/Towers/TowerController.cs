@@ -12,9 +12,17 @@ public class TowerController : MonoBehaviour
     private float attackCooldown = 0f;
     private EnemyController currentTarget;
     private ProjectilePool projectilePool;
+    private TowerAttackBehaviour attackBehaviour;
 
     public void Initialize(TowerDefinition definition, ProjectilePool pool)
     {
+        TowerAttackBehaviour[] attackBehaviours = GetComponents<TowerAttackBehaviour>();
+        if (attackBehaviours.Length > 1)
+        {
+            throw new System.InvalidOperationException("A tower can have only one attack behaviour.");
+        }
+        attackBehaviour = attackBehaviours.Length == 1 ? attackBehaviours[0] : null;
+
         if(definition == null)
         {
             throw new System.ArgumentNullException(nameof(definition));
@@ -31,7 +39,8 @@ public class TowerController : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException(nameof(definition.AttackInterval), "Attack interval must be greater than zero.");
         }
-        if(definition.ProjectilePrefab == null)
+        if((attackBehaviour == null || attackBehaviour is AntibodyAttackBehaviour) &&
+            definition.ProjectilePrefab == null)
         {
             throw new System.ArgumentException("Projectile prefab must be set.", nameof(definition.ProjectilePrefab));
         }
@@ -67,6 +76,10 @@ public class TowerController : MonoBehaviour
 
         attackCooldown -= Time.deltaTime;
         if (attackCooldown > 0f)
+        {
+            return;
+        }
+        if (attackBehaviour != null && !attackBehaviour.CanAttack)
         {
             return;
         }
@@ -138,6 +151,16 @@ public class TowerController : MonoBehaviour
         EnemyController currentBest,
         float currentBestDistanceSquared)
     {
+        if (attackBehaviour != null)
+        {
+            int candidatePriority = attackBehaviour.GetTargetPriority(candidate);
+            int currentPriority = attackBehaviour.GetTargetPriority(currentBest);
+            if (candidatePriority != currentPriority)
+            {
+                return candidatePriority > currentPriority;
+            }
+        }
+
         switch (Definition.TargetingMode)
         {
             case TargetingMode.NearestToTower:
@@ -174,6 +197,12 @@ public class TowerController : MonoBehaviour
 
     private void Attack(EnemyController target)
     {
+        if (attackBehaviour != null)
+        {
+            attackBehaviour.Attack(target, Definition.Damage, projectilePool);
+            return;
+        }
+
         using (SpawnProjectileMarker.Auto())
         {
             Projectile projectile = projectilePool.Get(transform.position);
