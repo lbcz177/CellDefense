@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.Serialization;
 
 public class HudController : MonoBehaviour
 {
@@ -15,13 +16,26 @@ public class HudController : MonoBehaviour
     [SerializeField]
     private Button pauseButton;
     [SerializeField]
+    [FormerlySerializedAs("sellModeButton")]
+    private Button sellButton;
+    [SerializeField]
+    [FormerlySerializedAs("upgradeModeButton")]
+    private Button upgradeButton;
+    [SerializeField]
     private GameObject resultPanel;
     [SerializeField]
     private TextMeshProUGUI resultText;
     [SerializeField]
     private Button restartButton;
+    [SerializeField]
+    private Button nextLevelButton;
     private Button guardTowerButton;
     private Button interceptorTowerButton;
+    private TextMeshProUGUI sellLabel;
+    private TextMeshProUGUI upgradeLabel;
+    [SerializeField, Min(0f)]
+    [FormerlySerializedAs("towerActionButtonOffset")]
+    private float slotActionButtonOffset = 65f;
     [SerializeField]
     private TowerDefinition guardTowerDefinition;
     [SerializeField]
@@ -32,6 +46,9 @@ public class HudController : MonoBehaviour
     private GameFlowController gameFlowController;
     private WaveController waveController;
     private BuildController buildController;
+    private Canvas hudCanvas;
+    private RectTransform hudRectTransform;
+    private Camera gameplayCamera;
     private bool isSubscribed;
 
     public void Initialize(
@@ -77,6 +94,14 @@ public class HudController : MonoBehaviour
         {
             throw new InvalidOperationException("Pause Button reference is not set in the inspector.");
         }
+        if (sellButton == null)
+        {
+            throw new InvalidOperationException("Sell Button reference is not set in the inspector.");
+        }
+        if (upgradeButton == null)
+        {
+            throw new InvalidOperationException("Upgrade Button reference is not set in the inspector.");
+        }
         if (resultPanel == null)
         {
             throw new InvalidOperationException("Result Panel reference is not set in the inspector.");
@@ -99,6 +124,29 @@ public class HudController : MonoBehaviour
         gameFlowController = gameFlow;
         waveController = waves;
         buildController = build;
+        hudCanvas = GetComponent<Canvas>();
+        hudRectTransform = (RectTransform)transform;
+        gameplayCamera = Camera.main;
+        if (hudCanvas == null || gameplayCamera == null)
+        {
+            throw new InvalidOperationException("HUD Canvas and Main Camera are required for slot actions.");
+        }
+        sellLabel = sellButton.GetComponentInChildren<TextMeshProUGUI>(true);
+        if (sellLabel == null)
+        {
+            throw new InvalidOperationException("Sell Button must have a TextMeshPro label.");
+        }
+        upgradeLabel = upgradeButton.GetComponentInChildren<TextMeshProUGUI>(true);
+        if (upgradeLabel == null)
+        {
+            throw new InvalidOperationException("Upgrade Button must have a TextMeshPro label.");
+        }
+        if (sellButton.transform.parent != transform || upgradeButton.transform.parent != transform)
+        {
+            throw new InvalidOperationException("Tower action buttons must be direct children of the HUD Canvas.");
+        }
+        sellButton.gameObject.SetActive(false);
+        upgradeButton.gameObject.SetActive(false);
         CreateTowerSelectionButtons();
 
         RefreshAll();
@@ -120,6 +168,30 @@ public class HudController : MonoBehaviour
         Unsubscribe();
     }
 
+    private void LateUpdate()
+    {
+        if (buildController == null)
+        {
+            return;
+        }
+        BuildSlot slot = buildController.SelectedSlot;
+        if (slot == null)
+        {
+            return;
+        }
+        if (slot.CurrentTower == null && guardTowerButton.gameObject.activeSelf)
+        {
+            PositionContextButton(guardTowerButton, slot.transform.position, slotActionButtonOffset);
+            PositionContextButton(interceptorTowerButton, slot.transform.position, -slotActionButtonOffset);
+        }
+        else if (slot.CurrentTower != null && sellButton.gameObject.activeSelf)
+        {
+            Vector3 towerPosition = slot.CurrentTower.transform.position;
+            PositionContextButton(upgradeButton, towerPosition, slotActionButtonOffset);
+            PositionContextButton(sellButton, towerPosition, -slotActionButtonOffset);
+        }
+    }
+
     private void RefreshATP(int currentATP)
     {
         if (atpText == null)
@@ -127,6 +199,10 @@ public class HudController : MonoBehaviour
             throw new InvalidOperationException("ATP Text reference is not set in the inspector.");
         }
         atpText.text = $"ATP: {currentATP}";
+        if (buildController != null)
+        {
+            RefreshSlotActions(buildController.SelectedSlot);
+        }
     }
 
     private void RefreshLife(int currentLife)
@@ -150,22 +226,19 @@ public class HudController : MonoBehaviour
         string waveLabel = waveController != null && waveController.TotalWaveCount > 0
             ? $"  波次：{waveController.CurrentWaveNumber}/{waveController.TotalWaveCount}"
             : string.Empty;
-        string selectionLabel = buildController != null && buildController.SelectedDefinition != null
-            ? $"  当前塔：{buildController.SelectedDefinition.DisplayName}"
-            : "  当前塔：未选择";
-        stateText.text = stateLabel + waveLabel + selectionLabel;
+        stateText.text = stateLabel + waveLabel;
 
         pauseButton.interactable =
             state == GameState.Running || state == GameState.Paused;
 
-        bool canSelectTower = state == GameState.Ready ||
-                              state == GameState.Running ||
-                              state == GameState.Paused;
-        guardTowerButton.interactable = canSelectTower;
-        interceptorTowerButton.interactable = canSelectTower;
+        RefreshSlotActions(buildController.SelectedSlot);
 
         bool hasResult = state == GameState.Victory || state == GameState.Defeat;
         resultPanel.SetActive(hasResult);
+        if (nextLevelButton != null)
+        {
+            nextLevelButton.gameObject.SetActive(state == GameState.Victory && gameFlowController.HasNextLevel);
+        }
         if (hasResult)
         {
             resultText.text = state == GameState.Victory ? "胜利" : "失败";
@@ -202,6 +275,11 @@ public class HudController : MonoBehaviour
         gameFlowController.RestartRun();
     }
 
+    private void HandleNextLevelClicked()
+    {
+        gameFlowController.TryLoadNextLevel();
+    }
+
     private void HandleWaveChanged(int currentWave, int totalWaves)
     {
         RefreshState(gameFlowController.CurrentState);
@@ -209,17 +287,85 @@ public class HudController : MonoBehaviour
 
     private void HandleGuardTowerClicked()
     {
-        buildController.TrySelectDefinition(guardTowerDefinition);
+        BuildSlot slot = buildController.SelectedSlot;
+        if (slot != null)
+        {
+            buildController.TryBuild(slot, guardTowerDefinition);
+        }
     }
 
     private void HandleInterceptorTowerClicked()
     {
-        buildController.TrySelectDefinition(interceptorTowerDefinition);
+        BuildSlot slot = buildController.SelectedSlot;
+        if (slot != null)
+        {
+            buildController.TryBuild(slot, interceptorTowerDefinition);
+        }
     }
 
-    private void HandleSelectedDefinitionChanged(TowerDefinition definition)
+    private void HandleSellClicked()
     {
-        RefreshState(gameFlowController.CurrentState);
+        BuildSlot slot = buildController.SelectedSlot;
+        if (slot != null)
+        {
+            buildController.TrySell(slot);
+        }
+    }
+
+    private void HandleUpgradeClicked()
+    {
+        BuildSlot slot = buildController.SelectedSlot;
+        if (slot != null)
+        {
+            buildController.TryUpgrade(slot);
+            RefreshSlotActions(buildController.SelectedSlot);
+        }
+    }
+
+    private void RefreshSlotActions(BuildSlot slot)
+    {
+        bool running = gameFlowController.CurrentState == GameState.Running;
+        bool showBuild = running && slot != null && slot.CurrentTower == null;
+        bool showTower = running && slot != null && slot.CurrentTower != null;
+        guardTowerButton.gameObject.SetActive(showBuild);
+        interceptorTowerButton.gameObject.SetActive(showBuild);
+        sellButton.gameObject.SetActive(showTower);
+        upgradeButton.gameObject.SetActive(showTower);
+
+        if (showBuild)
+        {
+            guardTowerButton.interactable = economyService.CurrentATP >= guardTowerDefinition.BuildCost;
+            interceptorTowerButton.interactable = economyService.CurrentATP >= interceptorTowerDefinition.BuildCost;
+            PositionContextButton(guardTowerButton, slot.transform.position, slotActionButtonOffset);
+            PositionContextButton(interceptorTowerButton, slot.transform.position, -slotActionButtonOffset);
+            return;
+        }
+        if (!showTower)
+        {
+            return;
+        }
+
+        TowerController tower = slot.CurrentTower;
+        sellLabel.text = $"出售 +{buildController.GetSellRefund(slot)}";
+        upgradeLabel.text = tower.IsUpgraded ? "已升级" : $"升级 {tower.BuildCostPaid}";
+        upgradeButton.interactable = !tower.IsUpgraded &&
+                                     economyService.CurrentATP >= tower.BuildCostPaid;
+        PositionContextButton(upgradeButton, tower.transform.position, slotActionButtonOffset);
+        PositionContextButton(sellButton, tower.transform.position, -slotActionButtonOffset);
+    }
+
+    private void PositionContextButton(Button button, Vector3 worldPosition, float verticalOffset)
+    {
+        Camera uiCamera = hudCanvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : hudCanvas.worldCamera;
+        Vector2 screenPosition = gameplayCamera.WorldToScreenPoint(worldPosition);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            hudRectTransform, screenPosition, uiCamera, out Vector2 localPosition);
+
+        RectTransform buttonRect = button.GetComponent<RectTransform>();
+        buttonRect.anchorMin = new Vector2(0.5f, 0.5f);
+        buttonRect.anchorMax = new Vector2(0.5f, 0.5f);
+        buttonRect.pivot = new Vector2(0.5f, 0.5f);
+        buttonRect.anchoredPosition = localPosition + new Vector2(0f, verticalOffset);
     }
 
     private void CreateTowerSelectionButtons()
@@ -231,6 +377,8 @@ public class HudController : MonoBehaviour
 
         guardTowerButton = CreateTowerSelectionButton(guardTowerDefinition, new Vector2(20f, 20f));
         interceptorTowerButton = CreateTowerSelectionButton(interceptorTowerDefinition, new Vector2(200f, 20f));
+        guardTowerButton.gameObject.SetActive(false);
+        interceptorTowerButton.gameObject.SetActive(false);
     }
 
     private Button CreateTowerSelectionButton(TowerDefinition definition, Vector2 anchoredPosition)
@@ -256,7 +404,8 @@ public class HudController : MonoBehaviour
     {
         if (isSubscribed || economyService == null || lifeService == null ||
             gameFlowController == null || waveController == null || buildController == null ||
-            pauseButton == null || guardTowerButton == null || interceptorTowerButton == null)
+            pauseButton == null || sellButton == null || upgradeButton == null ||
+            guardTowerButton == null || interceptorTowerButton == null)
         {
             return;
         }
@@ -265,9 +414,15 @@ public class HudController : MonoBehaviour
         lifeService.LifeChanged += RefreshLife;
         gameFlowController.StateChanged += RefreshState;
         waveController.WaveChanged += HandleWaveChanged;
-        buildController.SelectedDefinitionChanged += HandleSelectedDefinitionChanged;
+        buildController.SelectedSlotChanged += RefreshSlotActions;
         pauseButton.onClick.AddListener(HandlePauseClicked);
+        sellButton.onClick.AddListener(HandleSellClicked);
+        upgradeButton.onClick.AddListener(HandleUpgradeClicked);
         restartButton.onClick.AddListener(HandleRestartClicked);
+        if (nextLevelButton != null)
+        {
+            nextLevelButton.onClick.AddListener(HandleNextLevelClicked);
+        }
         guardTowerButton.onClick.AddListener(HandleGuardTowerClicked);
         interceptorTowerButton.onClick.AddListener(HandleInterceptorTowerClicked);
         isSubscribed = true;
@@ -284,9 +439,15 @@ public class HudController : MonoBehaviour
         lifeService.LifeChanged -= RefreshLife;
         gameFlowController.StateChanged -= RefreshState;
         waveController.WaveChanged -= HandleWaveChanged;
-        buildController.SelectedDefinitionChanged -= HandleSelectedDefinitionChanged;
+        buildController.SelectedSlotChanged -= RefreshSlotActions;
         pauseButton.onClick.RemoveListener(HandlePauseClicked);
+        sellButton.onClick.RemoveListener(HandleSellClicked);
+        upgradeButton.onClick.RemoveListener(HandleUpgradeClicked);
         restartButton.onClick.RemoveListener(HandleRestartClicked);
+        if (nextLevelButton != null)
+        {
+            nextLevelButton.onClick.RemoveListener(HandleNextLevelClicked);
+        }
         guardTowerButton.onClick.RemoveListener(HandleGuardTowerClicked);
         interceptorTowerButton.onClick.RemoveListener(HandleInterceptorTowerClicked);
         isSubscribed = false;

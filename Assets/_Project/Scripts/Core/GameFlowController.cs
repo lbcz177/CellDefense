@@ -6,7 +6,18 @@ public class GameFlowController : MonoBehaviour
 {
     public event Action<GameState> StateChanged;
 
+    [SerializeField]
+    private string nextLevelSceneName;
     public GameState CurrentState { get; private set; }
+    public bool HasNextLevel
+    {
+        get
+        {
+            return !string.IsNullOrWhiteSpace(nextLevelSceneName) &&
+                   !string.Equals(SceneManager.GetActiveScene().name, nextLevelSceneName, StringComparison.OrdinalIgnoreCase) &&
+                   Application.CanStreamedLevelBeLoaded(nextLevelSceneName);
+        }
+    }
     private LifeService lifeService;
     private WaveController waveController;
     private bool allWavesCompleted;
@@ -73,6 +84,18 @@ public class GameFlowController : MonoBehaviour
         Time.timeScale = 1f;
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
+    }
+
+    public bool TryLoadNextLevel()
+    {
+        if (CurrentState != GameState.Victory || !HasNextLevel)
+        {
+            return false;
+        }
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(nextLevelSceneName);
+        return true;
     }
 
     public void EvaluateResult()

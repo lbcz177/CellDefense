@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BuildSlot : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class BuildSlot : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         Clicked?.Invoke(this);
     }
 }

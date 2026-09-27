@@ -9,11 +9,13 @@ public class WaveController : MonoBehaviour
     public event Action AllWavesCompleted;
 
     [SerializeField] private WaypointPath path;
+    [SerializeField] private WaypointPath alternatePath;
     [SerializeField] private WaveSequenceDefinition waveSequence;
     private readonly List<EnemyController> activeEnemies = new List<EnemyController>();
     private EconomyService economyService;
     private LifeService lifeService;
     private int currentWaveIndex = -1;
+    private int spawnedEnemyCount;
     private bool allEnemiesSpawned;
     private bool waveRunning;
     private bool sequenceRunning;
@@ -56,6 +58,7 @@ public class WaveController : MonoBehaviour
         sequenceRunning = true;
         hasCompletedSequence = false;
         currentWaveIndex = 0;
+        spawnedEnemyCount = 0;
         StartCurrentWave();
     }
 
@@ -100,10 +103,14 @@ public class WaveController : MonoBehaviour
     private void SpawnNextEnemy(WaveDefinition wave)
     {
         EnemyDefinition definition = wave.Enemy;
+        WaypointPath spawnPath = alternatePath != null && spawnedEnemyCount % 2 != 0
+            ? alternatePath
+            : path;
         EnemyController enemy = Instantiate(definition.EnemyPrefab);
         enemy.Exited += ReportEnemyExited;
         activeEnemies.Add(enemy);
-        enemy.Initialize(path, definition);
+        enemy.Initialize(spawnPath, definition);
+        spawnedEnemyCount++;
     }
 
     public void ReportEnemyExited(EnemyController enemy, EnemyExitReason reason)

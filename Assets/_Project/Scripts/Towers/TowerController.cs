@@ -7,6 +7,11 @@ public class TowerController : MonoBehaviour
         new ProfilerMarker("CellDefense.Projectile.Spawn");
 
     public TowerDefinition Definition{ get; private set; }
+    public int BuildCostPaid { get; private set; }
+    public int UpgradeCostPaid { get; private set; }
+    public bool IsUpgraded { get; private set; }
+    public const int UpgradeDamageBonusPercent = 50;
+    private const float UpgradeVisualScale = 1.15f;
     [SerializeField]
     private LayerMask enemyLayerMask;
     private float attackCooldown = 0f;
@@ -53,9 +58,33 @@ public class TowerController : MonoBehaviour
             throw new System.ArgumentNullException(nameof(pool));
         }
         Definition = definition;
+        BuildCostPaid = definition.BuildCost;
+        UpgradeCostPaid = 0;
+        IsUpgraded = false;
         projectilePool = pool;
         attackCooldown = 0f;
         currentTarget = null;
+    }
+
+    public bool TryUpgrade(int upgradeCostPaid)
+    {
+        if (Definition == null)
+        {
+            throw new System.InvalidOperationException("Tower is not initialized.");
+        }
+        if (IsUpgraded)
+        {
+            return false;
+        }
+        if (upgradeCostPaid <= 0)
+        {
+            throw new System.ArgumentOutOfRangeException(nameof(upgradeCostPaid));
+        }
+
+        UpgradeCostPaid = upgradeCostPaid;
+        IsUpgraded = true;
+        transform.localScale *= UpgradeVisualScale;
+        return true;
     }
 
     private void Update()
@@ -199,16 +228,18 @@ public class TowerController : MonoBehaviour
 
     private void Attack(EnemyController target)
     {
+        float damageMultiplier = IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f;
+        float damage = Definition.Damage * damageMultiplier;
         if (attackBehaviour != null)
         {
-            attackBehaviour.Attack(target, Definition.Damage, projectilePool);
+            attackBehaviour.Attack(target, damage, projectilePool);
             return;
         }
 
         using (SpawnProjectileMarker.Auto())
         {
             Projectile projectile = projectilePool.Get(transform.position);
-            projectile.Initialize(target, Definition.Damage);
+            projectile.Initialize(target, damage);
         }
     }
 }
