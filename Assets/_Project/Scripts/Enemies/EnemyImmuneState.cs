@@ -46,8 +46,10 @@ public class EnemyImmuneState : MonoBehaviour
             throw new ArgumentOutOfRangeException(nameof(duration));
         }
 
-        // TODO(USER): Refresh markedUntil using scaled game time. Do not stack durations.
-        throw new NotImplementedException("Complete EnemyImmuneState.ApplyMark before enabling antibody attacks.");
+        if (Time.time + duration > markedUntil)
+        {
+            markedUntil = Time.time + duration;
+        }
     }
 
     private void Update()

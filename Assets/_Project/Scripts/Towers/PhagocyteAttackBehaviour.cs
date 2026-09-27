@@ -49,8 +49,36 @@ public class PhagocyteAttackBehaviour : TowerAttackBehaviour
 
     private bool ShouldEngulf(EnemyController target)
     {
-        // TODO(USER): Decide eligibility using the target's current health,
-        // engulf immunity, mark state, and the two health thresholds above.
-        throw new NotImplementedException("Complete PhagocyteAttackBehaviour.ShouldEngulf before using this tower.");
+        if (target == null)
+        {
+            return false;
+        }
+        if (target.CanBeTargeted == false)
+        {
+            return false;
+        }
+        if (target.Definition == null)
+        {
+            return false;
+        }
+        if (target.Definition.CanBeEngulfed == false)
+        {
+            return false;
+        }
+
+        if (baseEngulfHealth < 0f || markedEngulfHealth < baseEngulfHealth)
+        {
+            throw new InvalidOperationException("Marked engulf health must be at least the base engulf health.");
+        }
+        Health health = target.GetComponent<Health>();
+        if (health == null)
+        {
+            return false;
+        }
+        EnemyImmuneState enemy = target.GetComponent<EnemyImmuneState>();
+        bool isMarked = enemy != null && enemy.IsMarked;
+        float threshold = isMarked? markedEngulfHealth : baseEngulfHealth;
+
+        return health.CurrentHealth <= threshold;
     }
 }
