@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 860453341
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a06b8342318df514ab56a4e939eb9a2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,6 +101,8 @@ MonoBehaviour:
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 8
+  samplesAntigenOnHit: 0
+  antigenMemoryDuration: 8
 --- !u!114 &-7922307027125182902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,3 +118,7 @@ MonoBehaviour:
   baseEngulfHealth: 20
   markedEngulfHealth: 50
   digestionDuration: 3
+  bodyRenderer: {fileID: 0}
+  attackFlashColor: {r: 0.55, g: 0.95, b: 1, a: 1}
+  engulfFlashColor: {r: 1, g: 0.7, b: 0.25, a: 1}
+  feedbackDuration: 0.2

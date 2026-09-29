@@ -422,6 +422,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors:
+  - {fileID: 1519726161}
 --- !u!1 &315963127
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &315963130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -997,6 +1000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 1
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &637650049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1481,6 +1485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!1 &849799365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,6 +1595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &975331368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1959,6 +1965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &1160117438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2127,6 +2134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!1 &1309668994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &1309668997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2587,6 +2596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &1489740090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2724,6 +2734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!1 &1530586234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +3240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!61 &1728418865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3652,6 +3664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementKind: 0
   currentTower: {fileID: 0}
+  signalNeighbors: []
 --- !u!1 &1861081176
 GameObject:
   m_ObjectHideFlags: 0

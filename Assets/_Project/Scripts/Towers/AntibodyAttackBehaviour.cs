@@ -1,15 +1,37 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AntibodyAttackBehaviour : TowerAttackBehaviour
 {
-    [SerializeField] private AntigenId prototypeKnownAntigen = AntigenId.PrototypeA;
     [SerializeField, Min(0.01f)] private float markDuration = 4f;
+    private readonly Dictionary<AntigenId, float> knownAntigens = new Dictionary<AntigenId, float>();
+
+    public void RememberAntigen(AntigenId antigenId, float duration)
+    {
+        if (duration <= 0f)
+        {
+            throw new ArgumentOutOfRangeException(nameof(duration));
+        }
+
+        knownAntigens[antigenId] = Time.time + duration;
+    }
+
+    private bool KnowsAntigen(AntigenId antigenId)
+    {
+        return knownAntigens.TryGetValue(antigenId, out float knownUntil) &&
+            Time.time < knownUntil;
+    }
+
+    private void OnDisable()
+    {
+        knownAntigens.Clear();
+    }
 
     public override int GetTargetPriority(EnemyController target)
     {
         if (target == null || target.Definition == null ||
-            target.Definition.AntigenId != prototypeKnownAntigen)
+            !KnowsAntigen(target.Definition.AntigenId))
         {
             return 0;
         }
@@ -34,7 +56,7 @@ public class AntibodyAttackBehaviour : TowerAttackBehaviour
         }
 
         bool canMark = target.Definition != null &&
-            target.Definition.AntigenId == prototypeKnownAntigen;
+            KnowsAntigen(target.Definition.AntigenId);
         if (canMark && target.GetComponent<EnemyImmuneState>() == null)
         {
             throw new InvalidOperationException("Enemy prefab needs an EnemyImmuneState component for antibody attacks.");

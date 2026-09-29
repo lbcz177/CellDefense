@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
     private EnemyController target;
     private float damage;
     private float markDuration;
+    private Action<EnemyController> onHit;
     private bool isInitialized;
     private bool hasResolved;
     private ProjectilePool ownerPool;
@@ -40,6 +41,12 @@ public class Projectile : MonoBehaviour
 
     public void Initialize(EnemyController target, float damage, float markDuration)
     {
+        Initialize(target, damage, markDuration, null);
+    }
+
+    public void Initialize(EnemyController target, float damage, float markDuration,
+        Action<EnemyController> onHit)
+    {
         if (target == null)
         {
             throw new ArgumentNullException(nameof(target));
@@ -64,6 +71,7 @@ public class Projectile : MonoBehaviour
         this.target = target;
         this.damage = damage;
         this.markDuration = markDuration;
+        this.onHit = onHit;
         isInitialized = true;
         hasResolved = false;
     }
@@ -110,6 +118,7 @@ public class Projectile : MonoBehaviour
             Finish();
             return;
         }
+        onHit?.Invoke(target);
         if (markDuration > 0f)
         {
             EnemyImmuneState immuneState = target.GetComponent<EnemyImmuneState>();
@@ -147,6 +156,7 @@ public class Projectile : MonoBehaviour
         target = null;
         damage = 0f;
         markDuration = 0f;
+        onHit = null;
         isInitialized = false;
         hasResolved = false;
     }

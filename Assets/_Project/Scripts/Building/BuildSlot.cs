@@ -14,6 +14,8 @@ public class BuildSlot : MonoBehaviour
     private BuildPlacementKind placementKind = BuildPlacementKind.TowerSite;
     [SerializeField]
     private TowerController currentTower;
+    [SerializeField]
+    private BuildSlot[] signalNeighbors = Array.Empty<BuildSlot>();
     public BuildPlacementKind PlacementKind => placementKind;
     public TowerController CurrentTower => currentTower;
 
@@ -43,6 +45,32 @@ public class BuildSlot : MonoBehaviour
     public void Release()
     {
         currentTower = null;
+    }
+
+    public void ShareAntigen(AntigenId antigenId, float duration)
+    {
+        if (duration <= 0f)
+        {
+            throw new ArgumentOutOfRangeException(nameof(duration));
+        }
+        if (signalNeighbors == null)
+        {
+            return;
+        }
+
+        foreach (BuildSlot neighbor in signalNeighbors)
+        {
+            if (neighbor == null || neighbor == this || neighbor.CurrentTower == null)
+            {
+                continue;
+            }
+
+            AntibodyAttackBehaviour antibody = neighbor.CurrentTower.GetComponent<AntibodyAttackBehaviour>();
+            if (antibody != null)
+            {
+                antibody.RememberAntigen(antigenId, duration);
+            }
+        }
     }
 
     void OnMouseDown()

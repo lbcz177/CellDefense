@@ -14,12 +14,17 @@ public class TowerController : MonoBehaviour
     private const float UpgradeVisualScale = 1.15f;
     [SerializeField]
     private LayerMask enemyLayerMask;
+    [SerializeField]
+    private bool samplesAntigenOnHit;
+    [SerializeField, Min(0.01f)]
+    private float antigenMemoryDuration = 8f;
     private float attackCooldown = 0f;
     private EnemyController currentTarget;
     private ProjectilePool projectilePool;
     private TowerAttackBehaviour attackBehaviour;
+    private BuildSlot occupiedSlot;
 
-    public void Initialize(TowerDefinition definition, ProjectilePool pool)
+    public void Initialize(TowerDefinition definition, ProjectilePool pool, BuildSlot slot)
     {
         TowerAttackBehaviour[] attackBehaviours = GetComponents<TowerAttackBehaviour>();
         if (attackBehaviours.Length > 1)
@@ -57,11 +62,24 @@ public class TowerController : MonoBehaviour
         {
             throw new System.ArgumentNullException(nameof(pool));
         }
+        if (slot == null)
+        {
+            throw new System.ArgumentNullException(nameof(slot));
+        }
+        if (samplesAntigenOnHit && antigenMemoryDuration <= 0f)
+        {
+            throw new System.InvalidOperationException("Antigen memory duration must be greater than zero.");
+        }
+        if (samplesAntigenOnHit && attackBehaviour != null)
+        {
+            throw new System.InvalidOperationException("Only the basic projectile tower can sample antigens.");
+        }
         Definition = definition;
         BuildCostPaid = definition.BuildCost;
         UpgradeCostPaid = 0;
         IsUpgraded = false;
         projectilePool = pool;
+        occupiedSlot = slot;
         attackCooldown = 0f;
         currentTarget = null;
     }
@@ -239,7 +257,19 @@ public class TowerController : MonoBehaviour
         using (SpawnProjectileMarker.Auto())
         {
             Projectile projectile = projectilePool.Get(transform.position);
-            projectile.Initialize(target, damage);
+            projectile.Initialize(target, damage, 0f,
+                samplesAntigenOnHit ? HandleAntigenSample : null);
         }
+    }
+
+    private void HandleAntigenSample(EnemyController target)
+    {
+        if (this == null || !isActiveAndEnabled || occupiedSlot == null ||
+            occupiedSlot.CurrentTower != this || target == null || target.Definition == null)
+        {
+            return;
+        }
+
+        occupiedSlot.ShareAntigen(target.Definition.AntigenId, antigenMemoryDuration);
     }
 }

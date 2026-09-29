@@ -95,7 +95,7 @@ public class BuildController : MonoBehaviour
         try
         {
             tower = Instantiate(definition.Prefab, slot.transform.position, Quaternion.identity);
-            tower.Initialize(definition, projectilePool);
+            tower.Initialize(definition, projectilePool, slot);
             slot.Occupy(tower);
         }
         catch
