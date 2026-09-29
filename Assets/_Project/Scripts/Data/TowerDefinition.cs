@@ -16,6 +16,9 @@ public class TowerDefinition : ScriptableObject
     private TowerController prefab;
     public TowerController Prefab => prefab;
     [SerializeField]
+    private BuildPlacementKind placementKind = BuildPlacementKind.TowerSite;
+    public BuildPlacementKind PlacementKind => placementKind;
+    [SerializeField]
     private Projectile projectilePrefab;
     public Projectile ProjectilePrefab => projectilePrefab;
     [SerializeField, Min(1)]

@@ -74,6 +74,10 @@ public class BuildController : MonoBehaviour
         {
             return false;
         }
+        if(slot.PlacementKind != definition.PlacementKind)
+        {
+            return false;
+        }
         if(definition.Prefab == null)
         {
             throw new InvalidOperationException("Cannot build a tower without a prefab.");

@@ -2,10 +2,19 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+public enum BuildPlacementKind
+{
+    TowerSite = 0,
+    RoadSite = 1
+}
+
 public class BuildSlot : MonoBehaviour
 {
     [SerializeField]
+    private BuildPlacementKind placementKind = BuildPlacementKind.TowerSite;
+    [SerializeField]
     private TowerController currentTower;
+    public BuildPlacementKind PlacementKind => placementKind;
     public TowerController CurrentTower => currentTower;
 
     public event Action<BuildSlot> Clicked;

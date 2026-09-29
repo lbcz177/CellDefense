@@ -31,6 +31,7 @@ public class HudController : MonoBehaviour
     private Button nextLevelButton;
     private Button guardTowerButton;
     private Button interceptorTowerButton;
+    private Button phagocyteButton;
     private TextMeshProUGUI sellLabel;
     private TextMeshProUGUI upgradeLabel;
     [SerializeField, Min(0f)]
@@ -40,6 +41,8 @@ public class HudController : MonoBehaviour
     private TowerDefinition guardTowerDefinition;
     [SerializeField]
     private TowerDefinition interceptorTowerDefinition;
+    [SerializeField]
+    private TowerDefinition phagocyteDefinition;
 
     private EconomyService economyService;
     private LifeService lifeService;
@@ -118,6 +121,15 @@ public class HudController : MonoBehaviour
         {
             throw new InvalidOperationException("Tower definition references are not set in the inspector.");
         }
+        if (guardTowerDefinition.PlacementKind != BuildPlacementKind.TowerSite ||
+            interceptorTowerDefinition.PlacementKind != BuildPlacementKind.TowerSite)
+        {
+            throw new InvalidOperationException("Guard and interceptor definitions must use Tower Site placement.");
+        }
+        if (phagocyteDefinition != null && phagocyteDefinition.PlacementKind != BuildPlacementKind.RoadSite)
+        {
+            throw new InvalidOperationException("Phagocyte definition must use Road Site placement.");
+        }
 
         economyService = economy;
         lifeService = life;
@@ -183,6 +195,10 @@ public class HudController : MonoBehaviour
         {
             PositionContextButton(guardTowerButton, slot.transform.position, slotActionButtonOffset);
             PositionContextButton(interceptorTowerButton, slot.transform.position, -slotActionButtonOffset);
+        }
+        else if (slot.CurrentTower == null && phagocyteButton != null && phagocyteButton.gameObject.activeSelf)
+        {
+            PositionContextButton(phagocyteButton, slot.transform.position, slotActionButtonOffset);
         }
         else if (slot.CurrentTower != null && sellButton.gameObject.activeSelf)
         {
@@ -303,6 +319,15 @@ public class HudController : MonoBehaviour
         }
     }
 
+    private void HandlePhagocyteClicked()
+    {
+        BuildSlot slot = buildController.SelectedSlot;
+        if (slot != null && phagocyteDefinition != null)
+        {
+            buildController.TryBuild(slot, phagocyteDefinition);
+        }
+    }
+
     private void HandleSellClicked()
     {
         BuildSlot slot = buildController.SelectedSlot;
@@ -327,17 +352,30 @@ public class HudController : MonoBehaviour
         bool running = gameFlowController.CurrentState == GameState.Running;
         bool showBuild = running && slot != null && slot.CurrentTower == null;
         bool showTower = running && slot != null && slot.CurrentTower != null;
-        guardTowerButton.gameObject.SetActive(showBuild);
-        interceptorTowerButton.gameObject.SetActive(showBuild);
+        bool showTowerBuild = showBuild && slot.PlacementKind == BuildPlacementKind.TowerSite;
+        bool showRoadBuild = showBuild && slot.PlacementKind == BuildPlacementKind.RoadSite &&
+                             phagocyteButton != null;
+        guardTowerButton.gameObject.SetActive(showTowerBuild);
+        interceptorTowerButton.gameObject.SetActive(showTowerBuild);
+        if (phagocyteButton != null)
+        {
+            phagocyteButton.gameObject.SetActive(showRoadBuild);
+        }
         sellButton.gameObject.SetActive(showTower);
         upgradeButton.gameObject.SetActive(showTower);
 
-        if (showBuild)
+        if (showTowerBuild)
         {
             guardTowerButton.interactable = economyService.CurrentATP >= guardTowerDefinition.BuildCost;
             interceptorTowerButton.interactable = economyService.CurrentATP >= interceptorTowerDefinition.BuildCost;
             PositionContextButton(guardTowerButton, slot.transform.position, slotActionButtonOffset);
             PositionContextButton(interceptorTowerButton, slot.transform.position, -slotActionButtonOffset);
+            return;
+        }
+        if (showRoadBuild)
+        {
+            phagocyteButton.interactable = economyService.CurrentATP >= phagocyteDefinition.BuildCost;
+            PositionContextButton(phagocyteButton, slot.transform.position, slotActionButtonOffset);
             return;
         }
         if (!showTower)
@@ -370,7 +408,7 @@ public class HudController : MonoBehaviour
 
     private void CreateTowerSelectionButtons()
     {
-        if (guardTowerButton != null || interceptorTowerButton != null)
+        if (guardTowerButton != null || interceptorTowerButton != null || phagocyteButton != null)
         {
             return;
         }
@@ -379,6 +417,11 @@ public class HudController : MonoBehaviour
         interceptorTowerButton = CreateTowerSelectionButton(interceptorTowerDefinition, new Vector2(200f, 20f));
         guardTowerButton.gameObject.SetActive(false);
         interceptorTowerButton.gameObject.SetActive(false);
+        if (phagocyteDefinition != null)
+        {
+            phagocyteButton = CreateTowerSelectionButton(phagocyteDefinition, new Vector2(380f, 20f));
+            phagocyteButton.gameObject.SetActive(false);
+        }
     }
 
     private Button CreateTowerSelectionButton(TowerDefinition definition, Vector2 anchoredPosition)
@@ -425,6 +468,10 @@ public class HudController : MonoBehaviour
         }
         guardTowerButton.onClick.AddListener(HandleGuardTowerClicked);
         interceptorTowerButton.onClick.AddListener(HandleInterceptorTowerClicked);
+        if (phagocyteButton != null)
+        {
+            phagocyteButton.onClick.AddListener(HandlePhagocyteClicked);
+        }
         isSubscribed = true;
     }
 
@@ -450,6 +497,10 @@ public class HudController : MonoBehaviour
         }
         guardTowerButton.onClick.RemoveListener(HandleGuardTowerClicked);
         interceptorTowerButton.onClick.RemoveListener(HandleInterceptorTowerClicked);
+        if (phagocyteButton != null)
+        {
+            phagocyteButton.onClick.RemoveListener(HandlePhagocyteClicked);
+        }
         isSubscribed = false;
     }
 }
