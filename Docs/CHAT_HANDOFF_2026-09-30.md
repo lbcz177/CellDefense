@@ -33,11 +33,11 @@
 
 ## Git 与素材范围
 
-- 上次已提交版本：`93f05dc`。本轮新代码、`Level02`、`MainMenu`、Prefab 替换、Build Settings 和本交接文档将同批提交；新哈希以 Git 日志为准。
+- 本轮功能和初版交接文档已在本地提交为 `a533e87 feat: add antigen relay and main menu entry`。截至 2026-09-30，GitHub `origin/main` 仍在 `dcd1088`；本地尚有 `3e5e088`、`93f05dc`、`a533e87` 及后续文档状态提交待推送，精确数量以 `git log origin/main..main --oneline` 为准。两次 `git push origin main` 均因连接 `github.com:443` 超时／重置失败，**远端尚未更新**。网络恢复后需重试 `git push origin main`，并核对远端哈希。
 - 开发者决定：本次只提交**当前场景／Prefab 实际引用**的图片及其 `.meta`，不把未使用的完整美术包（约 175 张 PNG、128 MB，另有大量清单与提示词）全部纳入 Git。未提交素材仍保留在本地工作区，不删除。
 - 待替换的抗体 B 细胞基础图当前也属于未提交素材；若在别的机器检出本次提交，需先从本地素材包补入该图，之后再由 Unity 编辑器替换并提交。
 - Notion 项目总览：<https://app.notion.com/p/3b8c4f9516208114a5bfc964cc2a5ed2>；策划：<https://app.notion.com/p/3b8c4f9516208182bdf1f2b106c7ba75>；学习路线：<https://app.notion.com/p/3b8c4f9516208129b301f4d8d999106c>。
 
 ## 新对话可以这样开头
 
-请先阅读 `Docs/CHAT_HANDOFF_2026-09-30.md` 和当前 Git 状态，沿用其中的学习分工。优先核对 Unity Prefab 中 B 塔误用哨兵图标的问题，并根据我接下来的要求推进；不要把未使用的完整美术包自动提交，也不要记录我的个人回答或评分到 Notion。
+请先阅读 `Docs/CHAT_HANDOFF_2026-09-30.md` 和当前 Git 状态，沿用其中的学习分工。先核对远端推送状态和 Unity Prefab 中 B 塔误用哨兵图标的问题，再根据我接下来的要求推进；不要把未使用的完整美术包自动提交，也不要记录我的个人回答或评分到 Notion。
