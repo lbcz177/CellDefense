@@ -58,6 +58,11 @@ public class BuildSlot : MonoBehaviour
         currentTower = null;
     }
 
+    public void ConfigureSignalNeighbors(BuildSlot[] neighbors)
+    {
+        signalNeighbors = neighbors ?? Array.Empty<BuildSlot>();
+    }
+
     public void ShareAntigen(AntigenId antigenId, float duration)
     {
         if (duration <= 0f)

@@ -17,4 +17,20 @@ public class WaypointPath : MonoBehaviour
         }
         throw new ArgumentOutOfRangeException(nameof(index));
     }
+
+    public void Configure(Transform[] configuredPoints)
+    {
+        if (configuredPoints == null || configuredPoints.Length < 2)
+        {
+            throw new ArgumentException("Path must contain at least two points.", nameof(configuredPoints));
+        }
+        foreach (Transform point in configuredPoints)
+        {
+            if (point == null)
+            {
+                throw new ArgumentException("Path points cannot be null.", nameof(configuredPoints));
+            }
+        }
+        points = (Transform[])configuredPoints.Clone();
+    }
 }
