@@ -1,0 +1,82 @@
+=== 01_空面板.png ===
+参考图：D:\Desktop\细胞绘制\主界面\按钮_v1\03_设置_v1.png
+
+Use case: precise-object-edit.
+Asset: ONE standalone EMPTY PAUSE MENU PANEL for the Chinese cartoon pixel-art biological tower-defense game 胞卫战.
+Input image is the style and border edit target: transform the small cream menu button into a LARGE near-square vertical pause panel, while preserving its stepped pixel corners, dark plum outline, cream-white highlights and restrained salmon lower bevel.
+Layout: portrait 4:5 transparent canvas, one centered panel occupying about 84% width and 84% height, fully visible with transparent margin on all sides. Front view with no perspective.
+Panel design: a moderately thick cream-white cell-membrane-inspired frame, dark plum outer silhouette, subtle coral lower rim, a very narrow immune-cyan inner edge as an accent. The entire large interior is a calm uniform pale peach-cream field, EMPTY and uncluttered. The interior must have ample room for three wide buttons stacked vertically later in Unity. No baked-in slots or button shapes. No title tab.
+Style: same simple cheerful retro pixel-game UI as the reference; crisp square pixel clusters, regular stepped outlines, restrained 3-tone flat shading. Reduce texture. No glossy 3D, blur, realistic flesh or smooth painted detail.
+Text: NONE. Remove the original 设置 text completely. No letters, numbers, header, pause bars, logos, icons, cells, characters, gears, X/close button or decoration in the center.
+Background: genuinely transparent outside the panel; the panel interior is opaque. Preserve alpha transparency, no backdrop, no drawn checkerboard, no cast shadow beyond a tiny attached pixel bevel.
+Exactly one empty panel; no other components, no collage, no examples of a completed menu.
+
+=== 02_返回游戏_未选中.png ===
+参考图：C:\Users\a\.codex\generated_images\01a084f1-f69d-7a33-8c71-b97bcc527387\exec-0aa7f4ea-4df3-4f44-bd46-9652173236e9.png
+C:\Users\a\.codex\generated_images\01a084f1-f69d-7a33-8c71-b97bcc527387\exec-a8ad22bd-3930-41cc-98cc-63e80a2f5ba6.png
+
+Use case: precise-object-edit.
+Asset: ONE UNSELECTED STATE sprite for the “返回游戏” pause-menu button in 胞卫战.
+Image 1 is the EDIT TARGET and is the selected-state sprite. Image 2 is ONLY a COLOR reference for the cream unselected state.
+Produce the paired normal/unselected state of Image 1. Keep EXACTLY the same 2172x724 transparent canvas, button silhouette, pixel-step corner geometry, attached bottom bevel size, placement, width and height, gold triangular play icon position and dimensions, letter shapes and positions, and transparent margins as Image 1. Do not resize or recenter anything.
+Change only state colors: replace cyan/blue face with pale cream/ivory; top highlights cream-white; lower bevel salmon coral; outer outline dark plum. Replace the white interior of the Chinese letters with dark indigo to create readable dark lettering, retaining the exact glyph outlines/positions and adequate contrast against the cream face. Gold play triangle stays gold at the same location.
+The label must remain EXACTLY “返回游戏”. No extra letters, no space inserted, no icon change.
+Match the simple crisp retro pixel-art UI. Flat restrained shading, clean square clusters and stepped edges. No new effects, glow, ornamental cells, textures, added shadows, stretching or redrawing of the shape.
+Genuinely transparent outside the button, no background or checkerboard. Exactly ONE button state, not both states together.
+
+=== 03_返回游戏_选中.png ===
+参考图：D:\Desktop\细胞绘制\主界面\按钮_v1\01_开始游戏_v1.png
+
+Use case: text-localization.
+Asset: ONE standalone RESUME GAME BUTTON for the pause menu of 胞卫战.
+Input image is the EDIT TARGET. Keep its cyan rectangular button body, stepped pixel corners, dark indigo/plum border, short blue bottom bevel and little gold right-pointing play triangle on the left. Preserve the existing layout, colors, front view, pixel style and relative icon size.
+Change the existing Chinese label 开始游戏 to EXACTLY “返回游戏” (four simplified Chinese characters: 返 回 游 戏). The new text is large, highly legible cream-white bold block/pixel lettering with a dark indigo outline, centered in the text region to the right of the icon. Readable correct Chinese strokes are essential. No other text.
+Landscape 3:1 transparent canvas, one centered wide horizontal button with even transparent margins, about 84% canvas width and 60% canvas height; keep everything fully inside. Crisp regular square pixel clusters and stepped silhouettes, restrained 3-tone shading, matching the game's existing main-menu button. No gradients, no antialiasing, no blur or new ornaments.
+Genuinely transparent background, no checkerboard, no full pause panel, no scene, no mouse pointer, no additional button states, no duplicate buttons. Exactly one button.
+
+=== 04_退出到主菜单_未选中.png ===
+参考图：D:\Desktop\细胞绘制\主界面\按钮_v1\03_设置_v1.png
+
+Use case: text-localization.
+Asset: ONE standalone RETURN TO MAIN MENU BUTTON for the pause menu of 胞卫战.
+Input image is the EDIT TARGET. Preserve its wide cream/ivory rectangular face, stepped rounded pixel corners, dark plum outline, white top-edge highlight and restrained salmon pink lower bevel. Keep its front view and simple pixel-game UI design.
+Replace the existing text 设置 with EXACTLY “退出到主菜单” (six simplified Chinese characters: 退 出 到 主 菜 单). Fit all six in one centered horizontal line, using highly legible bold dark-indigo block/pixel lettering. Use smaller but still substantial lettering to fit comfortably; do not abbreviate, wrap or add spaces between characters. Text must be correct and balanced with generous side padding.
+Landscape 3:1 transparent canvas, one centered wide horizontal button with even transparent margins, about 84% canvas width and 60% canvas height. Shape and bevel proportions should match the provided settings button. Crisp regular pixel clusters, restrained flat 3-tone shading; no glossy 3D, blur, gradients or decorative texture.
+Genuinely transparent background outside the button. No checkerboard, icons, gear, arrows, title, full panel, surrounding scene, other states or duplicated buttons. Exactly one button.
+
+=== 05_退出到主菜单_选中.png ===
+参考图：C:\Users\a\.codex\generated_images\01a084f1-f69d-7a33-8c71-b97bcc527387\exec-8b5a212f-9950-42c1-908f-3d9341ce171e.png
+C:\Users\a\.codex\generated_images\01a084f1-f69d-7a33-8c71-b97bcc527387\exec-0aa7f4ea-4df3-4f44-bd46-9652173236e9.png
+
+Use case: precise-object-edit.
+Asset: ONE BLUE SELECTED STATE sprite for the “退出到主菜单” pause-menu button in 胞卫战.
+Image 1 is the EDIT TARGET, the cream normal-state button. Image 2 is ONLY a COLOR reference for the cyan-blue selected state.
+Produce the paired selected state of Image 1. Keep EXACTLY the same 2172x724 transparent canvas, button silhouette, all pixel-step corners, border/bevel geometry, position, width and height, transparent margins, and the Chinese letter shapes, size, spacing and location. Do not resize or recenter any element.
+Change only state colors: cream face becomes saturated clear cyan/sky-blue matching Image 2, top inner rim becomes bright turquoise, lower bevel becomes medium royal blue, dark outline becomes deep indigo/plum. The six Chinese characters become cream-white with a restrained dark-indigo outline for contrast, maintaining the original font and positioning.
+Keep label EXACTLY “退出到主菜单” (退 出 到 主 菜 单) on ONE centered line. No abbreviations or added spaces. Do NOT add Image 2's triangle or any other icon.
+Same crisp retro pixel-game style, flat restrained shading, simple square clusters, regular stepped edges. No glow, blur, gradients, texture, other objects, new borders, shadow expansion or perspective.
+Genuinely transparent outside the button, no checkerboard, no scene. Exactly ONE button state, not a side-by-side comparison.
+
+=== 06_设置_未选中.png ===
+参考图：D:\Desktop\细胞绘制\主界面\按钮_v1\03_设置_v1.png
+
+Use case: precise-object-edit.
+Asset: ONE standalone SETTINGS BUTTON for the pause menu of 胞卫战.
+Input image is the EDIT TARGET. Make a clean matching pause-menu version of this same button. Preserve its wide cream/ivory rectangular face, stepped rounded pixel corners, dark plum outline, cream-white top-edge highlight and restrained salmon-pink lower bevel. Keep the front view and simple existing main-menu visual identity.
+Keep the exact Chinese label “设置” (设 置) in bold dark-indigo block/pixel lettering, horizontally and vertically centered, highly legible correct Chinese strokes. No extra text.
+Normalize the edges into crisp regular square pixel clusters, with clean stepped corners and restrained flat 3-tone shading. No stray fringe pixels below the bottom bevel. No smooth gradients, antialiasing, blur, glossy 3D or decorative texture.
+Landscape 3:1 transparent canvas, one centered wide horizontal button with even transparent margins, about 84% canvas width and 60% canvas height, all edges fully inside. Match the size proportions of the provided cream button.
+Genuinely transparent background outside the button. No checkerboard, icons, gear, characters, title, full menu panel, scene, other states or duplicated buttons. Exactly one settings button.
+
+=== 07_设置_选中.png ===
+参考图：C:\Users\a\.codex\generated_images\01a084f1-f69d-7a33-8c71-b97bcc527387\exec-a8ad22bd-3930-41cc-98cc-63e80a2f5ba6.png
+C:\Users\a\.codex\generated_images\01a084f1-f69d-7a33-8c71-b97bcc527387\exec-0aa7f4ea-4df3-4f44-bd46-9652173236e9.png
+
+Use case: precise-object-edit.
+Asset: ONE BLUE SELECTED STATE sprite for the “设置” pause-menu button in 胞卫战.
+Image 1 is the EDIT TARGET, the cream normal-state button. Image 2 is ONLY a COLOR reference for the cyan-blue selected state.
+Produce the paired selected state of Image 1. Keep EXACTLY the same 2172x724 transparent canvas, silhouette, stepped corners, border and short bevel geometry, whole button location, width/height and margins. Preserve the exact glyph shapes, type size, spacing and centered position. Do not resize or recenter anything.
+Change only state colors: cream face becomes saturated clear cyan/sky-blue matching Image 2; top inner highlight bright turquoise; lower bevel medium royal blue; outer border deep indigo/plum. Make the text cream-white with a restrained dark-indigo outline so it stays legible, maintaining the original typeface and position.
+Text must remain EXACTLY “设置” (设 置). No extra text or spacing. Do not add the reference's triangle, gears, icons, extra decorations or other components.
+Crisp cartoon pixel-game style with clean square clusters, simple flat 3-tone shading, no glow, blur, gradients, texture or expanded shadows.
+Genuinely transparent background outside the button, no checkerboard, no surrounding panel or scene. Exactly ONE button, not two states on the same image.

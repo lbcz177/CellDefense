@@ -1,0 +1,15 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 第三关_生产背景
+production-ready top-down background for a branching vascular level,
+one continuous uniform-width main vessel enters from the middle-left,
+forks into exactly two clean curved branches near center-left,
+both branches remain separate and rejoin exactly once near the right-center,
+one final channel reaches the middle-right exit,
+soft layered vessel walls in muted rose, burgundy and deep plum,
+two visible but inactive membrane-valve folds at the fork,
+twelve empty wall attachment niches and faint non-glowing cyan signal fibers,
+no red blood-cell crowd, no characters, no arrows, no tower rings, no UI, no text,
+calm top and bottom safe bands, strict orthographic 16:9, low-noise gameplay background
+Only background candidate. Do not bake in cyan tower pads, brackets, infection patches, signal lines, endpoint icons or active effects. Quiet empty attachment clearings only.
+FINAL FORMAT: One full edge-to-edge 16:9 landscape map, strict orthographic top-down, no perspective. Consistent pixel grid, target 640x360 pixel appearance with nearest-neighbor enlargement. Broad simple tissue shapes and low contrast edges, no busy cell texture. Continuous comfortably wide routes, no pinches. No HUD, labels, text, magic portals or caves.
+All older vector/gradient/soft-blur language is overridden by crisp cartoon pixel art. Draw only the requested asset.

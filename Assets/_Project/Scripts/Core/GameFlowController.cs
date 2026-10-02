@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameFlowController : MonoBehaviour
 {
+    private const string MainMenuSceneName = "MainMenu";
+
     public event Action<GameState> StateChanged;
 
     [SerializeField]
@@ -95,6 +97,22 @@ public class GameFlowController : MonoBehaviour
 
         Time.timeScale = 1f;
         SceneManager.LoadScene(nextLevelSceneName);
+        return true;
+    }
+
+    public bool TryReturnToMainMenu()
+    {
+        if (CurrentState != GameState.Victory && CurrentState != GameState.Defeat)
+        {
+            return false;
+        }
+        if (!Application.CanStreamedLevelBeLoaded(MainMenuSceneName))
+        {
+            throw new InvalidOperationException("MainMenu scene is not included in Scenes In Build.");
+        }
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(MainMenuSceneName);
         return true;
     }
 

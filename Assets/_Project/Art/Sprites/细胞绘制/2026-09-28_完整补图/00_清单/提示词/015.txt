@@ -1,0 +1,17 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 神经脉冲刺突_LV3B_同步电弧
+a living neural pulse spire grown from tissue for a cell-themed strategy game,
+tall slender organic core with several elegant dendrite-like branches,
+a visible blue-white synaptic nucleus inside a translucent cyan membrane,
+branches end in rounded receptor bulbs rather than sharp metal points,
+two roots connect naturally to biological signal fibers at the base,
+upright branching silhouette clearly different from all round immune cells,
+tiny restrained electric arcs contained between branch tips, calm before firing,
+organic nervous-tissue inspiration, no machine, no magic tower
+UPGRADE VARIANT:
+upgrade variant focused on chaining through a marked cohort:
+branches curl into a graceful spiral crown around the central synaptic core,
+three small gold antibody sparks align with the blue-white arc path,
+taller energetic silhouette, restrained electricity, no lightning storm
+FINAL FORMAT: One isolated complete subject on a genuine transparent alpha background, centered with 12% empty margin. 70–75 degree top-down game view. Friendly large shapes, minimum substructure. Target appearance: native 96x96 grid (Boss 160x160), enlarged only with nearest-neighbor. No ground plane or background.
+Draw this single requested asset only. Do not render this prompt as text.

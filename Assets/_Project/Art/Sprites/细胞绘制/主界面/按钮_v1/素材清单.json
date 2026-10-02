@@ -1,0 +1,90 @@
+[
+  {
+    "label": "开始游戏",
+    "desktopPath": "D:\\Desktop\\细胞绘制\\主界面\\按钮_v1\\01_开始游戏_v1.png",
+    "projectPath": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\Buttons-v1\\start-v1.png",
+    "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-c8d7985c-1f95-4231-83e2-92659ad26f64.png",
+    "width": 2172,
+    "height": 724,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "transparentSamples": 1229,
+    "alphaAtLeast250Samples": 1520,
+    "sampledMaxAlpha": 255,
+    "sha256": "51339E57703EE062AE666FE260309B0CAFA697699E314673A377E7CB8A95CC7A",
+    "method": "built-in image_gen",
+    "state": "normal enabled",
+    "textIncluded": true,
+    "generatedAlphaPreserved": true
+  },
+  {
+    "label": "细胞图鉴",
+    "desktopPath": "D:\\Desktop\\细胞绘制\\主界面\\按钮_v1\\02_细胞图鉴_v1.png",
+    "projectPath": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\Buttons-v1\\codex-v1.png",
+    "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-501246da-8567-4a55-9b00-38be09600cb5.png",
+    "width": 2069,
+    "height": 760,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "transparentSamples": 1512,
+    "alphaAtLeast250Samples": 1269,
+    "sampledMaxAlpha": 255,
+    "sha256": "3AB99BC0BE35BF25F38A50A77729DB38687C005D14F6103A4BD20B8D4FAA10F2",
+    "method": "built-in image_gen",
+    "state": "normal enabled",
+    "textIncluded": true,
+    "generatedAlphaPreserved": true
+  },
+  {
+    "label": "设置",
+    "desktopPath": "D:\\Desktop\\细胞绘制\\主界面\\按钮_v1\\03_设置_v1.png",
+    "projectPath": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\Buttons-v1\\settings-v1.png",
+    "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-d8a687b4-0df3-4933-8d32-3d12dddabc6e.png",
+    "width": 2172,
+    "height": 724,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "transparentSamples": 1540,
+    "alphaAtLeast250Samples": 1264,
+    "sampledMaxAlpha": 254,
+    "sha256": "D9DE34F0F06D070717A47037E96625B42D82AC600F6B9699ABA8BE2AD3BFAE24",
+    "method": "built-in image_gen",
+    "state": "normal enabled",
+    "textIncluded": true,
+    "generatedAlphaPreserved": true
+  },
+  {
+    "label": "退出游戏",
+    "desktopPath": "D:\\Desktop\\细胞绘制\\主界面\\按钮_v1\\04_退出游戏_v1.png",
+    "projectPath": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\Buttons-v1\\exit-v1.png",
+    "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-873baaf9-f4fc-451c-a681-0f070c17d653.png",
+    "width": 2070,
+    "height": 760,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "transparentSamples": 1498,
+    "alphaAtLeast250Samples": 1270,
+    "sampledMaxAlpha": 254,
+    "sha256": "2096B4FF6D7A850849974708A1CA65F25A128FDC8CFF055E2F92ED7F2561D303",
+    "method": "built-in image_gen",
+    "state": "normal enabled",
+    "textIncluded": true,
+    "generatedAlphaPreserved": true
+  }
+]

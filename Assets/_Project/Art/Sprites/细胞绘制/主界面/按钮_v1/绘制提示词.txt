@@ -1,0 +1,39 @@
+===== 开始游戏 =====
+Use case: background-extraction.
+Asset type: ONE standalone transparent PNG main-menu button for the Chinese cartoon pixel-art tower-defense game 胞卫战.
+Input image 1 is the EDIT TARGET, the approved full main-menu screen. Isolate and carefully redraw ONLY the specified button from its left menu at higher resolution, preserving its existing design. All other menu items, logo, environment and characters must disappear.
+Style: faithful to the reference: crisp square pixel clusters, stepped/chamfered corners, dark plum/navy pixel outline, subtle hard-edged pixel highlights, shallow lower-edge shadow. Front-facing, no perspective. Chunky friendly 2D game UI, no vector-smooth edges, no photorealism.
+Output/framing: a single horizontal button centered on a wide 1536 x 512 transparent canvas. The button including attached shadow is approximately 1392 x 352 pixels; sufficient transparent padding on all four sides, do not clip. Genuine transparent alpha outside the button, not a white backdrop, not a painted checkerboard. Keep all highlights and shadows within the button silhouette or attached narrow stepped shadow. No detached effects.
+Typography: preserve the correct Simplified Chinese label verbatim, centered vertically, bold dark-plum pixel lettering on cream buttons; the primary cyan button uses ivory text with dark outline. Large legible characters.
+Constraints: exactly one complete button in its normal enabled state, one image, no sprite sheet, no alternate states, no surrounding panel, no logo, no scene, no labels outside the button, no watermark.
+Target: the TOP cyan primary button labeled exactly "开始游戏". Preserve the saturated cyan and turquoise face, dark navy/plum outline, pale aqua upper highlight, deeper blue lower edge, and golden/yellow pixel play triangle at the left. Four correct Chinese characters 开 始 游 戏. Text is ivory with dark navy outline. Icon-and-text group visually centered. No other icons.
+
+===== 细胞图鉴 =====
+Use case: background-extraction.
+Asset type: ONE standalone transparent PNG main-menu button for the Chinese cartoon pixel-art tower-defense game 胞卫战.
+Input image 1 is the EDIT TARGET, the approved full main-menu screen. Isolate and carefully redraw ONLY the specified button from its left menu at higher resolution, preserving its existing design. All other menu items, logo, environment and characters must disappear.
+Style: faithful to the reference: crisp square pixel clusters, stepped/chamfered corners, dark plum/navy pixel outline, subtle hard-edged pixel highlights, shallow lower-edge shadow. Front-facing, no perspective. Chunky friendly 2D game UI, no vector-smooth edges, no photorealism.
+Output/framing: a single horizontal button centered on a wide 1536 x 512 transparent canvas. The button including attached shadow is approximately 1392 x 352 pixels; sufficient transparent padding on all four sides, do not clip. Genuine transparent alpha outside the button, not a white backdrop, not a painted checkerboard. Keep all highlights and shadows within the button silhouette or attached narrow stepped shadow. No detached effects.
+Typography: preserve the correct Simplified Chinese label verbatim, centered vertically, bold dark-plum pixel lettering on cream buttons; the primary cyan button uses ivory text with dark outline. Large legible characters.
+Constraints: exactly one complete button in its normal enabled state, one image, no sprite sheet, no alternate states, no surrounding panel, no logo, no scene, no labels outside the button, no watermark.
+Target: the SECOND cream button labeled exactly "细胞图鉴". Preserve the warm ivory/cream face, subtle peach lower bevel, ivory upper highlight, dark plum outline and tiny stepped coral shadow. Four correct Chinese characters 细 胞 图 鉴. Dark plum text centered horizontally. No icon.
+
+===== 设置 =====
+Use case: background-extraction.
+Asset type: ONE standalone transparent PNG main-menu button for the Chinese cartoon pixel-art tower-defense game 胞卫战.
+Input image 1 is the EDIT TARGET, the approved full main-menu screen. Isolate and carefully redraw ONLY the specified button from its left menu at higher resolution, preserving its existing design. All other menu items, logo, environment and characters must disappear.
+Style: faithful to the reference: crisp square pixel clusters, stepped/chamfered corners, dark plum/navy pixel outline, subtle hard-edged pixel highlights, shallow lower-edge shadow. Front-facing, no perspective. Chunky friendly 2D game UI, no vector-smooth edges, no photorealism.
+Output/framing: a single horizontal button centered on a wide 1536 x 512 transparent canvas. The button including attached shadow is approximately 1392 x 352 pixels; sufficient transparent padding on all four sides, do not clip. Genuine transparent alpha outside the button, not a white backdrop, not a painted checkerboard. Keep all highlights and shadows within the button silhouette or attached narrow stepped shadow. No detached effects.
+Typography: preserve the correct Simplified Chinese label verbatim, centered vertically, bold dark-plum pixel lettering on cream buttons; the primary cyan button uses ivory text with dark outline. Large legible characters.
+Constraints: exactly one complete button in its normal enabled state, one image, no sprite sheet, no alternate states, no surrounding panel, no logo, no scene, no labels outside the button, no watermark.
+Target: the THIRD cream button labeled exactly "设置". Preserve the warm ivory/cream face, subtle peach lower bevel, ivory upper highlight, dark plum outline and tiny stepped coral shadow. Two correct Chinese characters 设 置. Dark plum text centered horizontally, same character height as the other menu labels. No icon.
+
+===== 退出游戏 =====
+Use case: background-extraction.
+Asset type: ONE standalone transparent PNG main-menu button for the Chinese cartoon pixel-art tower-defense game 胞卫战.
+Input image 1 is the EDIT TARGET, the approved full main-menu screen. Isolate and carefully redraw ONLY the specified button from its left menu at higher resolution, preserving its existing design. All other menu items, logo, environment and characters must disappear.
+Style: faithful to the reference: crisp square pixel clusters, stepped/chamfered corners, dark plum/navy pixel outline, subtle hard-edged pixel highlights, shallow lower-edge shadow. Front-facing, no perspective. Chunky friendly 2D game UI, no vector-smooth edges, no photorealism.
+Output/framing: a single horizontal button centered on a wide 1536 x 512 transparent canvas. The button including attached shadow is approximately 1392 x 352 pixels; sufficient transparent padding on all four sides, do not clip. Genuine transparent alpha outside the button, not a white backdrop, not a painted checkerboard. Keep all highlights and shadows within the button silhouette or attached narrow stepped shadow. No detached effects.
+Typography: preserve the correct Simplified Chinese label verbatim, centered vertically, bold dark-plum pixel lettering on cream buttons; the primary cyan button uses ivory text with dark outline. Large legible characters.
+Constraints: exactly one complete button in its normal enabled state, one image, no sprite sheet, no alternate states, no surrounding panel, no logo, no scene, no labels outside the button, no watermark.
+Target: the FOURTH cream button labeled exactly "退出游戏". Preserve the warm ivory/cream face, subtle peach lower bevel, ivory upper highlight, dark plum outline and tiny stepped coral shadow. Four correct Chinese characters 退 出 游 戏. Dark plum text centered horizontally. No icon.

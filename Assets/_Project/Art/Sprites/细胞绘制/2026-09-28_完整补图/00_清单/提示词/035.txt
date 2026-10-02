@@ -1,0 +1,15 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 重甲芽孢杆菌_吞噬阈值状态
+a heavy spore-forming rod bacterium inspired by Clostridium tetani morphology,
+thick elongated magenta-violet rod body ending in one large rounded terminal spore,
+three overlapping organic cell-wall lamellae wrap around the body like natural layered armor,
+the terminal spore has a muted pale-green core under a violet shell,
+low heavy drumstick-shaped silhouette, slightly bent as if pushing forward through tissue,
+no metal plates, no helmet, no medieval armor, no weapon,
+designed as a slow high-armor enemy readable at 64 pixels
+STATE VARIANT:
+the same heavy bacterium with its outer layers weakened and compressed inward,
+one clear cyan circular cleanup marker underneath and a small gold antibody tag above,
+do not include the macrophage itself, no text, no death effect
+FINAL FORMAT: One isolated complete subject on a genuine transparent alpha background, centered with 12% empty margin. 70–75 degree top-down game view. Friendly large shapes, minimum substructure. Target appearance: native 96x96 grid (Boss 160x160), enlarged only with nearest-neighbor. No ground plane or background.
+Draw this single requested asset only. Do not render this prompt as text.

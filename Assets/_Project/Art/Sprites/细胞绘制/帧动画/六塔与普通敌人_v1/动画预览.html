@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>胞卫战 · 单位动画预览</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#161321;color:#f0ebf5;--stage:#262038}
+    *{box-sizing:border-box}body{margin:0}main{max-width:1240px;margin:auto;padding:36px 24px 56px}
+    .eyebrow{color:#67dbd9;font-size:13px;letter-spacing:2px}h1{font-size:30px;margin:12px 0}p{color:#bcb3cd;line-height:1.7;margin:8px 0}
+    .toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:18px 0 24px}button,select,a{font:inherit}
+    button,select{background:#312a43;color:#f0ebf5;border:1px solid #574968;border-radius:7px;padding:9px 13px;cursor:pointer}
+    button:hover,select:hover{border-color:#77dcdb}button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid #77dcdb;outline-offset:3px}
+    #play{background:#67d9d2;color:#142d32;border-color:transparent;min-width:96px}label{display:flex;gap:8px;align-items:center;font-size:14px;color:#cec4da}
+    output{font-variant-numeric:tabular-nums;color:#77dcdb;min-width:78px}#gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    article{background:#201a2d;border:1px solid #3b304d;border-radius:12px;overflow:hidden}article[hidden]{display:none}
+    .stage{height:264px;background-color:var(--stage);display:grid;place-items:center;position:relative;background-image:linear-gradient(45deg,#ffffff04 25%,transparent 25%),linear-gradient(-45deg,#ffffff04 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ffffff04 75%),linear-gradient(-45deg,transparent 75%,#ffffff04 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}
+    canvas{width:256px;height:256px;image-rendering:pixelated}.details{padding:16px}h2{font-size:17px;margin:0 0 6px}.meta{font-size:13px;color:#aaa0b9;margin-bottom:16px}
+    .links{display:flex;gap:18px}.links a{font-size:13px;color:#86e2de;text-underline-offset:4px}.badge{position:absolute;top:12px;left:12px;font-size:11px;color:#fff;background:#302640c9;padding:4px 8px;border-radius:4px}
+    footer{font-size:13px;margin-top:28px;color:#aaa0b9;line-height:1.8}footer a{color:#86e2de}#status{font-size:13px;min-height:22px}.error{color:#ffbdaf!important}
+    @media(max-width:540px){main{padding:24px 16px}.toolbar{gap:10px}h1{font-size:26px}#gallery{grid-template-columns:1fr}}
+  </style>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+<main>
+  <div class="eyebrow">CELL DEFENSE / ANIMATION STUDY 01</div>
+  <h1>胞卫战 · 单位动画</h1>
+  <p>六座防御塔，三种普通敌人。共 12 套动作，每套 8 帧；暂停后可逐帧检查。</p>
+  <div class="toolbar" aria-label="预览控制">
+    <button id="play" type="button" aria-pressed="true">暂停</button>
+    <button id="step" type="button">下一帧 →</button>
+    <output id="frame" aria-label="当前帧">帧 1 / 8</output>
+    <label>速度 <select id="speed"><option value="5">5 FPS</option><option value="10" selected>10 FPS</option><option value="15">15 FPS</option></select></label>
+    <label>底色 <select id="background"><option value="#262038">深色</option><option value="#eea89e">组织粉</option><option value="#eee8dc">浅色</option></select></label>
+    <label>查看 <select id="filter"><option value="all">全部 12 套</option><option value="tower">防御塔 6 套</option><option value="enemy">敌人 6 套</option></select></label>
+  </div>
+  <p id="status" role="status">正在载入本地精灵图…</p>
+  <section id="gallery" aria-label="动画素材"></section>
+  <noscript><p>请启用 JavaScript，或直接打开各文件夹中的 preview.gif 查看动画。</p></noscript>
+  <footer>透明精灵图：512 × 256，4 列 × 2 行，单帧 128 × 128。当前画面为 2 倍整数放大。<br>
+    攻击连续播放仅用于预览；游戏内请按攻击冷却触发。<a href="README.md">查看素材说明与 Unity 切割参数</a>。</footer>
+</main>
+</body>
+</html>

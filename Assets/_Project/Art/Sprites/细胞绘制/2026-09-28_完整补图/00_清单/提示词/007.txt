@@ -1,0 +1,16 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 纤维蛋白壁垒_LV3B_稳态凝固
+a living fibrin barrier organoid for a cell-themed tower-defense game,
+wide low platelet-inspired central body anchored to tissue by two soft membrane pads,
+an elegant woven ring of thick biological fibrin fibers spreading horizontally around it,
+the center gently pulls and organizes the fibers like a living loom,
+stable protective silhouette, broad base and low height, no vertical cannon,
+immune white and pale cyan body, blue-white fibers, tiny calm green homeostasis glow,
+clearly organic and soft, readable as slowing and isolating rather than attacking
+UPGRADE VARIANT:
+upgrade variant focused on calming tissue:
+the outer fibers curl back into a balanced circular nest around the platelet core,
+three gentle green-cyan breathing nodes are embedded in the ring,
+more symmetrical and tranquil silhouette, restrained light, no healing cross symbol
+FINAL FORMAT: One isolated complete subject on a genuine transparent alpha background, centered with 12% empty margin. 70–75 degree top-down game view. Friendly large shapes, minimum substructure. Target appearance: native 96x96 grid (Boss 160x160), enlarged only with nearest-neighbor. No ground plane or background.
+Draw this single requested asset only. Do not render this prompt as text.

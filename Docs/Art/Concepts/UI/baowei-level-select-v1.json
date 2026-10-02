@@ -1,0 +1,23 @@
+{
+  "desktopPath": "D:\\Desktop\\细胞绘制\\选关界面\\胞卫战_选关界面_v1.png",
+  "projectPath": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\baowei-level-select-v1.png",
+  "promptPath": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\baowei-level-select-v1.prompt.txt",
+  "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-71340a88-d794-4089-98c9-808ad0acdaa8.png",
+  "method": "built-in image_gen",
+  "width": 1672,
+  "height": 941,
+  "cornerAlpha": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "sha256": "4F0C2063A05EF8B0049EAE4B6B418E8708B1657C2A902597406815E5C68F8073",
+  "references": [
+    "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\baowei-main-menu-v1.png",
+    "D:\\Desktop\\细胞绘制\\2026-09-28_完整补图\\07_地图与覆盖层\\057_第一关_关卡选择卡_v2.png",
+    "D:\\Desktop\\细胞绘制\\2026-09-28_完整补图\\07_地图与覆盖层\\061_第二关_关卡选择卡_v2.png",
+    "D:\\Desktop\\细胞绘制\\2026-09-28_完整补图\\07_地图与覆盖层\\066_第三关_关卡选择卡_v2.png"
+  ],
+  "purpose": "Level selection visual concept; preview state: level 1 completed, level 2 selected, level 3 locked"
+}

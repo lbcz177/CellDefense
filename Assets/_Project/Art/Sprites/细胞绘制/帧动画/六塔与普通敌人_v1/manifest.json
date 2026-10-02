@@ -1,0 +1,221 @@
+{
+  "totalFrames": 96,
+  "sheetWidth": 512,
+  "fps": 10,
+  "validation": "all-12-passed",
+  "totalAnimations": 12,
+  "unityRuntimeIntegrated": false,
+  "columns": 4,
+  "newAnimations": 11,
+  "title": "胞卫战 · 六塔与普通敌人动画 v1",
+  "sheetHeight": 256,
+  "reusedAnimations": 1,
+  "clips": [
+    {
+      "id": "01_neutrophil_attack",
+      "name": "中性粒细胞哨兵_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "01_neutrophil_attack/animation_sheet.png",
+      "aseprite": "01_neutrophil_attack/animation.aseprite",
+      "preview": "01_neutrophil_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "63671B6E6E89699DAEDE9EDC04A18CD67C3B3D58C66192903C35CF32A4106C66"
+    },
+    {
+      "id": "02_fibrin_attack",
+      "name": "纤维蛋白壁垒_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "02_fibrin_attack/animation_sheet.png",
+      "aseprite": "02_fibrin_attack/animation.aseprite",
+      "preview": "02_fibrin_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "32BC29E93BA3A3351D3BA750C5D89F91BD81E8206A353D4CAF9560F329F2AF69"
+    },
+    {
+      "id": "03_lysosome_attack",
+      "name": "溶酶体酸化炮_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "03_lysosome_attack/animation_sheet.png",
+      "aseprite": "03_lysosome_attack/animation.aseprite",
+      "preview": "03_lysosome_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "EAB38DE430305063C93CA2F8C08F29DE2B3535EB9A792DB35999221DEC07ACAC"
+    },
+    {
+      "id": "04_neural_attack",
+      "name": "神经脉冲刺突_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "04_neural_attack/animation_sheet.png",
+      "aseprite": "04_neural_attack/animation.aseprite",
+      "preview": "04_neural_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "2839286BE2B9559FC857B26AD82B4126280342992B24F2B971A56EA830734686"
+    },
+    {
+      "id": "05_phagocyte_attack",
+      "name": "巨噬细胞清道夫_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "05_phagocyte_attack/animation_sheet.png",
+      "aseprite": "05_phagocyte_attack/animation.aseprite",
+      "preview": "05_phagocyte_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "B84681615FBF2CC5B264B330B59168465BDC1C3D8CA10D1F111A46345463F47D"
+    },
+    {
+      "id": "06_antibody_attack",
+      "name": "抗体B细胞中继_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "06_antibody_attack/animation_sheet.png",
+      "aseprite": "06_antibody_attack/animation.aseprite",
+      "preview": "06_antibody_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "FF2D569E455FC154FD4BB5020730FA124D31EC615D2D2707404174C6279269C5"
+    },
+    {
+      "id": "07_staph_move",
+      "name": "葡萄球菌群_移动",
+      "action": "Move",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": true,
+      "sheet": "07_staph_move/animation_sheet.png",
+      "aseprite": "07_staph_move/animation.aseprite",
+      "preview": "07_staph_move/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "3B19D55995D4774457EBB26FB3A1724F25430AAD8E8BD52740ADF3B67D61D150"
+    },
+    {
+      "id": "08_staph_attack",
+      "name": "葡萄球菌群_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "08_staph_attack/animation_sheet.png",
+      "aseprite": "08_staph_attack/animation.aseprite",
+      "preview": "08_staph_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "47A11942870310B7B5B7E1F5E59C5ED2A7EDFE266F1D70C6238082A5C36BA839"
+    },
+    {
+      "id": "09_diplococcus_move",
+      "name": "鞭毛双球菌_移动",
+      "action": "Move",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "09_diplococcus_move/animation_sheet.png",
+      "aseprite": "09_diplococcus_move/animation.aseprite",
+      "preview": "09_diplococcus_move/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "04235D08AC0AE14ECD8EFC8D617315789079E7C7B6720EA1816FAC1CEA7E5428"
+    },
+    {
+      "id": "10_diplococcus_attack",
+      "name": "鞭毛双球菌_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "10_diplococcus_attack/animation_sheet.png",
+      "aseprite": "10_diplococcus_attack/animation.aseprite",
+      "preview": "10_diplococcus_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "8D3F9CDE29CDDF8C9918191CC67AA59007B875C65EF087EBBC5D34C3A7FEECA3"
+    },
+    {
+      "id": "11_bacillus_move",
+      "name": "重甲芽孢杆菌_移动",
+      "action": "Move",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "11_bacillus_move/animation_sheet.png",
+      "aseprite": "11_bacillus_move/animation.aseprite",
+      "preview": "11_bacillus_move/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "60C2C153138124AE5DFA71124A66D4EB389FB6D5727C95A9AF776C37368BE87E"
+    },
+    {
+      "id": "12_bacillus_attack",
+      "name": "重甲芽孢杆菌_攻击",
+      "action": "Attack",
+      "status": "complete-verified",
+      "frames": 8,
+      "fps": 10,
+      "reused": false,
+      "sheet": "12_bacillus_attack/animation_sheet.png",
+      "aseprite": "12_bacillus_attack/animation.aseprite",
+      "preview": "12_bacillus_attack/preview.gif",
+      "pivot": {
+        "y": 0.125,
+        "x": 0.5
+      },
+      "sheetSha256": "F45A6380CB77C07A9EEFE51203B5E5807C78E6F19907691BF75027FA6ECAA53F"
+    }
+  ],
+  "rows": 2,
+  "cellSize": 128
+}

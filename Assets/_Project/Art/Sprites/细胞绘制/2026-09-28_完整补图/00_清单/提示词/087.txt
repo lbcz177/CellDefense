@@ -1,0 +1,8 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 清除收缩
+a non-gory cellular cleanup effect,
+three concentric irregular membrane rings shrinking toward a small deep-blue digestion vesicle,
+outer ring magenta-violet fading into immune cyan and white toward the center,
+few large shapes, no fragments flying outward, no blood, no explosion
+FINAL FORMAT: Exactly one complete cohesive effect or overlay on genuine transparent alpha, strict top-down view. Large clean pixel clusters, native 64–128px appearance, no scenery, no image-wide glow. Preserve transparent openings. Centered with safe empty margins.
+All older vector/gradient/soft-blur language is overridden by crisp cartoon pixel art. Draw only the requested asset.

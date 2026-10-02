@@ -1,0 +1,4182 @@
+{
+  "source": "D:\\Desktop\\细胞绘制",
+  "destination": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制",
+  "verifiedAt": "2026-09-30T13:20:34.1851273+08:00",
+  "files": 595,
+  "copiedNew": 235,
+  "reusedIdentical": 360,
+  "sourceBytes": 166355680.0,
+  "allFilesVerified": true,
+  "desktopDeleted": true,
+  "additionalDocsArtMediaMissing": 0,
+  "records": [
+    {
+      "relativePath": "2026-09-28_完整补图\\使用说明.md",
+      "bytes": 3586,
+      "sha256": "292490FE7E21915C195B5EDAFD92E683F18138BB451B500750EE18CAF22DEBFC",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\素材索引.html",
+      "bytes": 151650,
+      "sha256": "E6B467542CC8564D43A0C7A76111C681EC2634A74A5A16F2423ECCD7F46BE681",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\第二关_双入口最新调整.png",
+      "bytes": 1539558,
+      "sha256": "01C53A0D0FF33DCA6AEF9DCE1242BF68CEA39C9252847EFF1D2EF44E8C2D8C9F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\第一关_六塔位确认版.png",
+      "bytes": 1434384,
+      "sha256": "3055857DF71F57A77246E11EC0F6D7C266B61900F114A143A3044E9CFCB561B9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\巨噬细胞清道夫_基础.png",
+      "bytes": 597058,
+      "sha256": "6E5DDCB48BDD53EF36D8FDAB3DF5C76AB37D3930DB6A15E0124B15F16F29F715",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\抗体B细胞中继_基础.png",
+      "bytes": 677394,
+      "sha256": "C65614230500C4CE6942DF68207309D494DB1AAD7CFC48600059B4DC95E38054",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\溶酶体酸化炮_基础.png",
+      "bytes": 528073,
+      "sha256": "BB620B1AFDA89F2BEB16AE22473B2D403BC9DC659A33A55CB9635D88297DB256",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\神经脉冲刺突_基础.png",
+      "bytes": 445321,
+      "sha256": "3BF1339AF92C91ADB174BB046E234B2E0DCD891C187C2CE7F0CED988435EB689",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\纤维蛋白壁垒_基础.png",
+      "bytes": 514807,
+      "sha256": "A69840280DCBBE5C32EA3830D0484436F15A65C6103DE03C92DBE4B77E458B12",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\早期普通病原体_概念留档.png",
+      "bytes": 1435746,
+      "sha256": "C184C072872225BDA5DD45842154541AEB2E2C76F742DD2E74580D40FE9C1B36",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_已有素材\\中性粒细胞哨兵_基础.png",
+      "bytes": 439989,
+      "sha256": "09502A6A806E94E056390BA1E318F90BBD030406EC6DE0EA3ACC1CA093E4CEEA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\补图计划.tsv",
+      "bytes": 11801,
+      "sha256": "E547B1C78F97D47F563FF73E2EFC288788786AA69D04BE0B3721B936682F818C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\补图任务.json",
+      "bytes": 361997,
+      "sha256": "3B52E5EB9F136682012FABDCBE022F05F5ECCBD9F2C5686EA4B03F68A7C31791",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\生成记录.jsonl",
+      "bytes": 78611,
+      "sha256": "D938D30577A8E7BE3537FB321C8FE2D9CDB082E473CEAF85BA84842CA9C7C2A7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\完成清单.json",
+      "bytes": 244779,
+      "sha256": "7076333DDC7B69C87876545804B7F96D8946015F1C5816A7625E261578C7553D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\完成清单.tsv",
+      "bytes": 60887,
+      "sha256": "3590399C31421E39FA89948F51A074AF44C22412BF4CA01FC8B7863FAD57E86B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\修正记录.jsonl",
+      "bytes": 14619,
+      "sha256": "8101C44604A52FE3487145FA9C7CE1AC8FBC7B756DBC39A4C825529530CF4641",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\修正说明.md",
+      "bytes": 1043,
+      "sha256": "CBB2AECF268B0907C1E010D6B97717FF1F289B7B02045D2D85A05B8020E07611",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\总览检查.json",
+      "bytes": 184,
+      "sha256": "D2A8C7FACCC2D95C45A2695188ACB8E433B4B32E7CEB31F712631522306B5E92",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\001.txt",
+      "bytes": 2411,
+      "sha256": "0C77CF3909BBFD318345F86A0F5054B79325AAF731347FEB61DB9B263A5F3D54",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\002.txt",
+      "bytes": 2474,
+      "sha256": "515927CF38853859FBF438F2FF421E0D53093641744604983E09DD2FE86056DF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\003.txt",
+      "bytes": 2478,
+      "sha256": "C6AACFD6F5E7D1652A0B166AC207EBAD15EFBC4672CA70787B0A2BB1F3DF25A2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\004.txt",
+      "bytes": 1678,
+      "sha256": "B17334A5AAF94885D4C7126EADBB733713D6B02511618171E48F40488CD28436",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\005.txt",
+      "bytes": 2258,
+      "sha256": "F047082F696903A826A6ED964B2E2C435B241CBE6D295659908D821702074086",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\006.txt",
+      "bytes": 2362,
+      "sha256": "5894E284E707924636E86061A52FE96EFA58941070FC1B1944E436DC1CABD668",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\007.txt",
+      "bytes": 2348,
+      "sha256": "79CEF57E2C72FBF2D9E452BCD53FF6809C25C9E506A74EB1A8DB19A1FA81577F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\008.txt",
+      "bytes": 1634,
+      "sha256": "16DB07D4638417D41DF76B0560100AB8EFC77FB7725905D93C979C6227BA7A13",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\009.txt",
+      "bytes": 2346,
+      "sha256": "3B4E67EE63BBA7B42D690763A768995E5002BAD44F5AA961F5F9189F310D2B7B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\010.txt",
+      "bytes": 2479,
+      "sha256": "D692A40E3EFE72CEF67190AF5FE0104A9D2723B4C1F372635E3043AB136C628A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\011.txt",
+      "bytes": 2480,
+      "sha256": "B3AF950A3B9F981158DB864BBAFAB1A6226F2245DB930992CB24A06EA1490227",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\012.txt",
+      "bytes": 1653,
+      "sha256": "CA310EF0BDA34C8856A6D129279B82DA48B27FDB945DC1AFF673697177122FA2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\013.txt",
+      "bytes": 2264,
+      "sha256": "2F5DCCFAAE03C0C729AFA6E8CD76E94511F875F14972312B71AD9A1F3D6D4D1D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\014.txt",
+      "bytes": 2361,
+      "sha256": "ED8158A6612014225915B102C0F6D22DABFD2FA532F8D8A44AC989C5098DB629",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\015.txt",
+      "bytes": 2374,
+      "sha256": "D5596C9C515A694CB4FE68F2DA5E7D2377FF119F8D6D4CE8320D879B1982A278",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\016.txt",
+      "bytes": 1633,
+      "sha256": "7DFB2124E3B76CAF7E97911943EBBEEA57521DFD259DCAFC4CFE9F32ABEAE99E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\017.txt",
+      "bytes": 2350,
+      "sha256": "322BDD5E3F7F8D176BF505CB3E9F30D60797817C6C0B91E6E9E66ACEA7355A6C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\018.txt",
+      "bytes": 2421,
+      "sha256": "B05FDA6BD29622C9F21A3E904E10DE04F7732F78F503CDB62AF332199DA5A2B4",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\019.txt",
+      "bytes": 2471,
+      "sha256": "79EBD5A16CD2DA469573572E474C7280BE40EFBA4D9BB122218B4086C66AA1C7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\020.txt",
+      "bytes": 1646,
+      "sha256": "4E2B9296E28820B1F04093199DEC7AF27D45462CEEEA2AC3607E65F16FC67875",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\021.txt",
+      "bytes": 2345,
+      "sha256": "0400ECC35593D4A74A3D61F7433CA992615C8526E18BF3E6527CAA4C40B569BC",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\022.txt",
+      "bytes": 2419,
+      "sha256": "874A34F1841ECB649E275CE9813773934A49B8FF48CD01DB1E4093C14D9DE3C8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\023.txt",
+      "bytes": 2425,
+      "sha256": "B7DD82851435673C061EC85AACEA8E12E8A91E5FF3B0FD67FBCAB2A1991948E9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\024.txt",
+      "bytes": 1652,
+      "sha256": "2403F018A05DDF044B02CE4A5BD1D64BFFC756BF24A2826CF963036C6B0B6C4D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\025.txt",
+      "bytes": 2043,
+      "sha256": "057473C1809DFEABECEFDACD7C6E80A2C56B396BBC9EF28B32A0FCA73D35CC28",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\026.txt",
+      "bytes": 1824,
+      "sha256": "6E79BF063475213ADF5018AF2609AA51528D5C0137B657C931D508A547EBA024",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\027.txt",
+      "bytes": 2398,
+      "sha256": "AB528C342EDA3844B3D297C530F2AEB31009A16184D8EB3D3EE2C826D24FD1D9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\028.txt",
+      "bytes": 1582,
+      "sha256": "418986B1638B4701DA5AFDB45466740F5ACB56EB7462CC3569F37ACD3ACBE287",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\029.txt",
+      "bytes": 2004,
+      "sha256": "34D652C63F7BA0FA4947878C5DB43AE3E7701878ECA9F558E467AA18A622EC0B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\030.txt",
+      "bytes": 2364,
+      "sha256": "BE8BB4CA7708BC7ED0AD0C5254D3C6DF09C759926C95AC50BC43B40031B0CF23",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\031.txt",
+      "bytes": 2262,
+      "sha256": "5B36302A18864766E5463114BBEF5BA1183F091BB06AED62982610BCD49F08EB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\032.txt",
+      "bytes": 1598,
+      "sha256": "521A1080D686627097EFC1C025EF7F7224662B02EE8A98F872BEE7F9FBF856C0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\033.txt",
+      "bytes": 2016,
+      "sha256": "FB93DBB3EFF3B86F1D99D21AC76F28A5D8969BE73D527D16AA3C3EEE825D3212",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\034.txt",
+      "bytes": 2347,
+      "sha256": "C0B9FC8D30460F40001B7372ACB35086398AEBFB49E756C36128E7214270BF03",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\035.txt",
+      "bytes": 2272,
+      "sha256": "0D7C92DDCD8AC92C48DE9F8B35A443558D25AE192E56800925B834453FE126A4",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\036.txt",
+      "bytes": 1619,
+      "sha256": "B6F0DB9A973C8DA96F73BC05304B8ABF9CE89C39E47666B7B95F281BD1DC552D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\037.txt",
+      "bytes": 2083,
+      "sha256": "A5D265CDDFC33659231F5E3CA00FD33FBD19B860B07C535C03445EEC6B75DFBD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\038.txt",
+      "bytes": 2367,
+      "sha256": "68F8520380A1681EAD23F133925B59F24F8724575CA6779322D21095837A8B44",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\039.txt",
+      "bytes": 2404,
+      "sha256": "AA8DBF58967338FC8BE4553C8123FA365C0D38E447CEFF4D95D906C321A6C3E1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\040.txt",
+      "bytes": 2476,
+      "sha256": "C5FFF14DAE2E4CB6730E2BF9C82680C4357412420958C7528640134982108C8E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\041.txt",
+      "bytes": 1639,
+      "sha256": "D9D421A5ED22BBCE65FBABDA8D565280FCD549EA5478083EC36C990ACB8F0F9F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\042.txt",
+      "bytes": 2071,
+      "sha256": "8246534291B9BD8BA508CA2222551AF384E70535515FCAA6303CD2724D07E0A4",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\043.txt",
+      "bytes": 2368,
+      "sha256": "3E537D33B3B27B26B771761062D9708A1925D181003B776F48FBC1B7F65CF064",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\044.txt",
+      "bytes": 2352,
+      "sha256": "0F7D348666FDC42CDC56C0B1DAF11F4EE9128A6E2730B0235661C77920B5B018",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\045.txt",
+      "bytes": 2095,
+      "sha256": "4178644FF374F61FAEED9B01AD46DEFFE35128FE514E5B29EA4295AE33AFA6BF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\046.txt",
+      "bytes": 2270,
+      "sha256": "9CDB35C37B57D0AC51182AA20375465FEB0FBB30D206388881BD3A42703BCC3F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\047.txt",
+      "bytes": 2367,
+      "sha256": "B133C82E9E859397F3B70DED8A2FC286260AF4BDE3F101B3F35C5BB9AF6B3E4A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\048.txt",
+      "bytes": 2347,
+      "sha256": "E3344EC772577DB072E5740F96AB562C8E27C4C07D7A8A69A3E99A1EC333438C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\049.txt",
+      "bytes": 1503,
+      "sha256": "FCC4646CB146EBAD7FB0ABC4ABE2FB1D18FCB2A53CC27CDB7DF996949A1AD2AB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\050.txt",
+      "bytes": 1482,
+      "sha256": "2548FDCA8C125816A3BA34B41DF58A0EE55BAE0CF30E32A0135D38C670394D29",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\051.txt",
+      "bytes": 1512,
+      "sha256": "053BE23CC1E4246F6827108CACAA912DE760FED1BA7E5494A68891597F16CAA1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\052.txt",
+      "bytes": 1489,
+      "sha256": "EAD67BCDCC70654C5F914B14400B61680942F4917836B76B89A50BB5732696CB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\053.txt",
+      "bytes": 1490,
+      "sha256": "E15CAF25191B6CB6746BBABFB772BB2B7BBC1B4F46184E61FE1887E54A2F168A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\054.txt",
+      "bytes": 1486,
+      "sha256": "55A71536DB78B8E44903294C291012A544AD1535D31D345F29A2490F487330FC",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\055_v2.txt",
+      "bytes": 602,
+      "sha256": "067E82EA8143AA04BBCCE21CD2CFB2ED7F915E84C2EE8737E1BA60A8C0440001",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\055.txt",
+      "bytes": 2792,
+      "sha256": "AEDD5E67D621A7EB6288BBC13EDABE29451E257C58DCF790757CF3CCA1A46035",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\056.txt",
+      "bytes": 1865,
+      "sha256": "1108EEA3316FE108EB007F9E6EDECDC502AEB00A8A7664E916C93B5590E43448",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\057_v2.txt",
+      "bytes": 783,
+      "sha256": "508CC98E2E25435440642DF8EA8E8CD36FAB2E96BCFA9C9C1022C13D9747A367",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\057.txt",
+      "bytes": 1824,
+      "sha256": "357E0B33A24ED43CB22A8048EF6338A3650A350DC10EEC2F3F82E13B285AA130",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\058_v2.txt",
+      "bytes": 720,
+      "sha256": "B5C1F57E818B358969F3E7AD5A58CE0582ED6B284DA6A5C08BBE0DA09DD3DD75",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\058.txt",
+      "bytes": 2664,
+      "sha256": "DC0B39502822A1E62109317D226ECE8CB8A7946309FE2556F16E200D5DDA0BAA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\059.txt",
+      "bytes": 1840,
+      "sha256": "D78F093D2D852E587A294D986C5FD6BCC452290F31C8FF05DBA54DAFBAF874B6",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\060.txt",
+      "bytes": 1798,
+      "sha256": "304030475EE5458F8CE4AD6D0EC6C08654CEA087A4853B32D519CC1DAE61C6E2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\061_v2.txt",
+      "bytes": 703,
+      "sha256": "95953EC35CE126B05F6420E54380FE8D99CF86072DCB6DAA43A63B1D00632B45",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\061.txt",
+      "bytes": 1664,
+      "sha256": "4E7418F1EBE1B337BFECE5C88F2CCDD63882D9595E6826BD78FF7CC5A343AA97",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\062_v2.txt",
+      "bytes": 676,
+      "sha256": "597FD23ECEF22F2A2AD0079C1FFFBD74EFD28090CA6B8E9BDE2A24038AF50AAE",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\062.txt",
+      "bytes": 2359,
+      "sha256": "07420A12DBED713F8F60168E0E9A16BD0A3C2F31760D498E86AAEDDCA13292DA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\063_v2.txt",
+      "bytes": 761,
+      "sha256": "1F9C1DF65978214F67447343E0ECCC525F8D5895A8D240C2F35D1BC8EB3A18CE",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\063.txt",
+      "bytes": 2439,
+      "sha256": "9AC0D381BE083184279CCB8C70D551478FAC288E67D877BE23AAF022F30C8C25",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\064.txt",
+      "bytes": 1823,
+      "sha256": "A968720CA2B31087DB4E68F95BEDB93F7405A2F0CA44E381EE8A8D87550E74E7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\065.txt",
+      "bytes": 1844,
+      "sha256": "64CD30247F281CE8F6529609E91737432E4D3E89926168A28F7BB2B771D41AD8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\066_v2.txt",
+      "bytes": 547,
+      "sha256": "BE61879B317BE189787D22A883793A1ED169BCE9551FFB59231CEC67F466166E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\066.txt",
+      "bytes": 1671,
+      "sha256": "9F7F324857E5858B823524CA0161173E77B7BFCCC6C15DF93F754E107626A7DF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\067.txt",
+      "bytes": 1857,
+      "sha256": "4BFDEBF79628C1A86658BB23AEFFB20B046076B9A950F8DF25DA670741EEB975",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\068.txt",
+      "bytes": 1761,
+      "sha256": "59EE2172440B26A0B69E8EB4F96A5329504178932570BFB597F722249D7199B5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\069_v2.txt",
+      "bytes": 604,
+      "sha256": "1F319D4B04BC0FA8C9E753FAF8D54E78F5A1C04D0D4FA6DD99D0378A26FA4136",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\069.txt",
+      "bytes": 2217,
+      "sha256": "5CDC9217EBB6F8535A00FC7C94FCEA5C3CA0C3B8A321BEE178875E7B1016517E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\070.txt",
+      "bytes": 1914,
+      "sha256": "0742B72287ACF66B6A4CF8C4583ECFA6DDDFD9F4A723CC3C4BE79DF2253134AB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\071.txt",
+      "bytes": 1856,
+      "sha256": "157C2B5AC270726A3BFCEE1262492B1FB62DF93F741D681B792FEACFBADAE78C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\072.txt",
+      "bytes": 1747,
+      "sha256": "7D043EE678301B033A86A7367956D9314DEAEF9DA93D1AC3375230B5EE45FC1D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\073.txt",
+      "bytes": 1704,
+      "sha256": "05769F96363F47D1AF9CE917F6EA9F3B38B43A5A248E4654C74EAC03E4E30D11",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\074.txt",
+      "bytes": 1831,
+      "sha256": "C366ADB55AD6C408F8D06D95DA9BA3E5681E8671F8C73F8068C3614AE2BCB7B3",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\075.txt",
+      "bytes": 1739,
+      "sha256": "2E181BA60B07C605CC22F66D968C96BD61561833D1DAB9BD7AF23C6BC031149E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\076.txt",
+      "bytes": 1734,
+      "sha256": "4A332DBD960F6B8399AD7E54991EF7E0AF1020A3CCAEBEDEAE8FB410FA16208A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\077.txt",
+      "bytes": 1794,
+      "sha256": "C2836F524E6DC805269287ABAC2E7A312A2A96147E525010866859FF21327E3C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\078.txt",
+      "bytes": 1678,
+      "sha256": "2E4D741F31D62BEED223E553C84B138B95F4A74F3072EEEBBD812F8F44456F60",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\079.txt",
+      "bytes": 1740,
+      "sha256": "3BEBC966F9940CBA1C79AC0FE7EF9632EB0DB5E4408962B485D37DDE632AE070",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\080.txt",
+      "bytes": 1862,
+      "sha256": "1BA9EFC71A6E1A1884661D0C9D182D1FEF712AFC84E842BA371C2F51F3934F59",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\081.txt",
+      "bytes": 1726,
+      "sha256": "78DF920A43CA552D4C1565A1896F8FCD01AD36CA4AFD87A581DAAF38CC8134EA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\082.txt",
+      "bytes": 1785,
+      "sha256": "5BAFEAE74BFFC3A35E34483CD422CF537873AFED961E0874327E8C0F08FCCA1F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\083.txt",
+      "bytes": 1794,
+      "sha256": "FC56229859BCE07631DF91E090C91DDDD88DD045A2353579DC61C52975B96951",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\084.txt",
+      "bytes": 1749,
+      "sha256": "12FACA3C85A4B4E523D0FF2F77CD088067F22CB59E8C38022241232183BF4BB9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\085.txt",
+      "bytes": 1725,
+      "sha256": "68C62D274DD8011796A308DB3AA65F366B15EFBDA1122C301021251573207213",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\086.txt",
+      "bytes": 1734,
+      "sha256": "B2C301E034F1E3CF7A31574CE9D77099E743D0F853BCD758ED4279DFE2A439A7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\087.txt",
+      "bytes": 1744,
+      "sha256": "BE3CA4D9C90DE67FA4F65362F97AACE4FE888BCCF4FA64D4E4132072CBD93F47",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\088.txt",
+      "bytes": 1761,
+      "sha256": "025F0802E8B535486B232DC5FF37BF2C9C03C6B07EE7E3911B6201B15A754CAF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\089.txt",
+      "bytes": 1718,
+      "sha256": "2858E59F78B186FE60B2CCCD4E57B9EFC4AFF17A081446CE07F5801743EFEB0E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\090.txt",
+      "bytes": 1805,
+      "sha256": "B62AF1843498991FEE88AA948A1DC2470B4BF4597FDBD840E5069708CC743DD5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\091.txt",
+      "bytes": 1733,
+      "sha256": "70B71AFD690AE71506AF9CDB8B8AF502ED17D82E53D12EFEF17C466C342DE46A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\092.txt",
+      "bytes": 1712,
+      "sha256": "2AC832B616C324AF4720E575DE171A43CD7C3909589A31CD844F2CEA7B48CE49",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\093.txt",
+      "bytes": 1744,
+      "sha256": "F91867CDA8685ED6A155C338534C92282CA1D1A8291B9D6CC5F68577827B3805",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\094.txt",
+      "bytes": 1623,
+      "sha256": "64AD1EF3937BD8671A41CD002D70F0478D1E05D9C68B04312BF18F4E78A527EA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\095.txt",
+      "bytes": 1613,
+      "sha256": "2E817C68BF4B4657117810C263E5C6E4A1E9D5237DDB888C548DC6B8DD7B903A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\096.txt",
+      "bytes": 1598,
+      "sha256": "69DC09C2F80B36C32BFA51B229AB4F4440B2B99BD24AD1E78336F2ADC7194A99",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\097.txt",
+      "bytes": 1620,
+      "sha256": "CFF226C0EE8DD196BF4271C1D1AF0714D812AF8567CB70FACB73EDC0D8F40475",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\098.txt",
+      "bytes": 1609,
+      "sha256": "6DF747E9D88D618155215C0BC297FB0A21DF9DBA2159E8B9602526331EBCF38E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\099.txt",
+      "bytes": 1679,
+      "sha256": "9725983CABA4C9F728B8746343718D5CA124546D19C6350A5139D5FEE35BFB19",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\100.txt",
+      "bytes": 1670,
+      "sha256": "D5EAE19156260B8AF10198D1FC298BCA9A41C82B26F81A1B168C55A8EAC9F744",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\101_v2.txt",
+      "bytes": 704,
+      "sha256": "353C86EECC2372A7F9B73A40EE82D3DA721D4F597A8954B51B999BA495BA755C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\101.txt",
+      "bytes": 1739,
+      "sha256": "05735D7245DA7775528D299637730808967096F6571C79167226065F84917DA1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\102.txt",
+      "bytes": 1660,
+      "sha256": "6BB822E839370FAAC791E67F1622528E91B65AF3BC3341823B2627914A768560",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\103.txt",
+      "bytes": 1702,
+      "sha256": "BAC3EC798DC7FDF6725C7599A865AFB29791450F916FCDE022DB5E04D121EA37",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\104.txt",
+      "bytes": 1735,
+      "sha256": "382B11704B9A6D717DFBF7BD203D547FF9CE51F00051D421D7BFEA12A1840EDB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\105.txt",
+      "bytes": 1819,
+      "sha256": "B20FAF7BFB4C14DACAE1E291842828AEB7CD79170D18C948175DBE3872B8E486",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\106_v2.txt",
+      "bytes": 722,
+      "sha256": "E5BFABC3B6AE2E03FEAA6E0AC1A6BAF65ECEBF10616D710D814FDF04AFFF16E0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\106.txt",
+      "bytes": 1838,
+      "sha256": "896DF3973A4EDA1709C5A4815BBB3E7B7A9994BCF171C756D8BBE49A3A82B355",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\107_v2.txt",
+      "bytes": 769,
+      "sha256": "6C631E41EB2FA2423729D4409ADA03BC14834F19396F71A68CF91A780738FFFD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\107.txt",
+      "bytes": 1759,
+      "sha256": "72FA484DF2CDBA0D4783519DFCC964B42BF8D9200659D3623FACA3DFF2A1E6E4",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\108.txt",
+      "bytes": 1788,
+      "sha256": "95958A892E14A43D7428F42B082B6E7D0B11558120A8B4E123800F5F29C44FA5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\109.txt",
+      "bytes": 2340,
+      "sha256": "056CC706A8E09CB8687AE8B68570B195E4A9C34486BF22B568AD4E87D4169C6C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\110.txt",
+      "bytes": 2376,
+      "sha256": "8DBC4235A92F9CA2BBB827FF56E74B4B0905FA61547CD9FB860B8D6ADE5C7E8D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\111.txt",
+      "bytes": 2334,
+      "sha256": "687E74445A485EB4A9D67071CF70349FD1EA4F7801C7DB5D368220AABC024BF8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\112.txt",
+      "bytes": 2234,
+      "sha256": "7C8D4A9B1D5DA71BE63EA80C0A29FAC062FA1F0BCB41614CE1937613F304A012",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\113.txt",
+      "bytes": 2270,
+      "sha256": "53520BD2A343BB4FD0D3F62D69EC2779D56BF842715D401153B1A50F45712453",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\114.txt",
+      "bytes": 2228,
+      "sha256": "8BD467F0479D1A036AFD07C11AF199419A67D10FEC2510564D39A8E83FA27D91",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\115.txt",
+      "bytes": 2320,
+      "sha256": "8533A54FE0BC82868A86D64E508E94C18FAE5E56946EF73CB219018D2C52F9D9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\116.txt",
+      "bytes": 2356,
+      "sha256": "B5A3AF8C51A11E2996E214C65438590B147E2D0F33F9EA629F4A8874F4632E63",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\117.txt",
+      "bytes": 2314,
+      "sha256": "0053959AA9496453329F0506974F67CF3E5DC187B773AE0C32167757933DC3ED",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\118.txt",
+      "bytes": 2257,
+      "sha256": "F8270DB971511FCA8DD67A7BEBD0DB9918B919BF3AB710612A423D6D6BB5F05D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\119.txt",
+      "bytes": 2293,
+      "sha256": "B47721BFDE59393EEB8AACA77747A712F893F22A7B3CF27C711D0F00546F7EF2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\120.txt",
+      "bytes": 2251,
+      "sha256": "60CAD9486B377E5081E5D7AC0116A2CD23EE00545FD4E2BF59AD5505413BB728",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\121.txt",
+      "bytes": 2333,
+      "sha256": "33F7F7820AEAEFE2587A12B3B525106A51AC0C6F024A41E67404123762771850",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\122.txt",
+      "bytes": 2369,
+      "sha256": "CC471155275FD748CAC9614CC8EB496F454154DE2B6BD1406627791FB7828D8E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\123.txt",
+      "bytes": 2327,
+      "sha256": "E254107D7C16E06CAFF01B2D8AE4BFDD139A8EB4EEAF47BE7EFC1A532B5EE5B0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\124.txt",
+      "bytes": 2293,
+      "sha256": "62DFDDF1DA04A53C4CF27CA2555EBEE5A0124AABFB635F5A9F329404FE4122E7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\125.txt",
+      "bytes": 2329,
+      "sha256": "33E29698806812A45B426D1D3DEC021835C7A5FA77A382E473289D2752F0FABB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\126.txt",
+      "bytes": 2287,
+      "sha256": "CA88FF5588F1791FCBA823C10C573293610D9C9D94092F125C0EBE2982C87B43",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\127.txt",
+      "bytes": 2262,
+      "sha256": "211A4F23C0EF3525929CBAF5522EDCA57F5AD079C110B98BF222A179890A4340",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\128.txt",
+      "bytes": 2246,
+      "sha256": "2E3D7A8F86F1CA3D288BEBE786FA2868391B6B24CECC5C28DFFB20D36BC9DD26",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\129.txt",
+      "bytes": 2276,
+      "sha256": "25CA8701342C1E18F8622E5F238C97622AC9BD11D9C018609DD660490F7B9419",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\130.txt",
+      "bytes": 2223,
+      "sha256": "6ABC17D0C5968B4C9D3DB672AD5D3898A67BE774679B2ABAAD4FBFB0C557AC63",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\131.txt",
+      "bytes": 2207,
+      "sha256": "37FD0E7BDA1325D747ECF9CBB7AD6CB0FC8CFF790691450CDB8DACA655E5A530",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\132.txt",
+      "bytes": 2237,
+      "sha256": "4A052AE173C0C06002DCA09E0FF6D561060FA1D04746EA50C80301C33D098EE6",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\133.txt",
+      "bytes": 2235,
+      "sha256": "C9B14CCD8198904149E3805683546D78A88FDA82167ACE64C113EB2448F6E1A7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\134.txt",
+      "bytes": 2219,
+      "sha256": "786D78E9B6760A8225CDD370EBC019B07A6A10DAF4DD096EACB3F0C62B097376",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\135.txt",
+      "bytes": 2249,
+      "sha256": "3CB7342B019715A0769FBBED9FEAC1B00A159D6D72ED555B776ECB5D9DF8A02E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\136.txt",
+      "bytes": 2302,
+      "sha256": "DD57E131053CC2769C6D4B29DB6D6583D19FF1398F8024E8A8E47E86553A629E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\137.txt",
+      "bytes": 2286,
+      "sha256": "EA8003CD124EC672101F5DCF26D51F9828BAB61DED14679C9F1F21657B60CF7B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\138.txt",
+      "bytes": 2316,
+      "sha256": "DA895791A3141E071AC960AC2C9E6BEA96B58A7F0B3CDFFA9FFBD31075173C38",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\139.txt",
+      "bytes": 2290,
+      "sha256": "1083D5C2A131D74D80D30FA2C0C6D491BB362B195604AA2343EB3803B6D507A6",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\140.txt",
+      "bytes": 2274,
+      "sha256": "BB70BE922A8DBE88894B2AC08A0A02D70268F3D0BBC1F5E187F60E5654CB6FF5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\141.txt",
+      "bytes": 2304,
+      "sha256": "92FA1CAAE6FA6A618E0715C575F5BE8C781DCE462460FD9C0433D6BB0819960F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\142.txt",
+      "bytes": 2314,
+      "sha256": "AB5BF5C7101E414624B848C7ADF4F4CEB841A1A0FE0E88005B4ED9193E5C216F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\143.txt",
+      "bytes": 2298,
+      "sha256": "FF768A45242C46F9EAF5BBE144AF924489B12E5C5B8D99F69586108800D6DD38",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\144.txt",
+      "bytes": 2328,
+      "sha256": "FE2DE06E1EBB824494314BB797387A96F11469E10A029F1A20E4D1E58BCB5752",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\145.txt",
+      "bytes": 1719,
+      "sha256": "CAEDDEDFF281F6F63A6729F51B0C7AE0F250CF609C95A40B524BF969E776D0FB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\146.txt",
+      "bytes": 1668,
+      "sha256": "89C418998C0702BA566C8338D1ED664C382688491CC99ABEEFDCF41793C68C67",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\147.txt",
+      "bytes": 1683,
+      "sha256": "758F6FB55AD0F3CC943CCEE128351810F11AC28B8F66F3042B108B294C3F370A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\148.txt",
+      "bytes": 1713,
+      "sha256": "8F8C1E581C607D8BA54C567D3A5A77C6DA57DE05DC2182D305326144E1805DD8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\149.txt",
+      "bytes": 1657,
+      "sha256": "5C652C0A5B89F4A227C222841A98795D5EFACB63BCB7F89E4E6B0DAF74B24600",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\150.txt",
+      "bytes": 1644,
+      "sha256": "A73AFC7EE15448C67872ED8DBBBBE00232C0F8A286D2A4158F7FAA0B769C81BD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\151.txt",
+      "bytes": 1630,
+      "sha256": "AB263B99410B6EEBD1CEFC9ACAEBCF5B056327A36342D089E71D2C491BF9BA36",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\152.txt",
+      "bytes": 1619,
+      "sha256": "E909893AB0EC820646477386F61C4D1D0C85B038664C2064C261CC3643D3F5AF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\153.txt",
+      "bytes": 1619,
+      "sha256": "389AF939CDC9B694326B0BEBE86B74ECB4B9D6BF222229737C44684F2252A7BF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\154.txt",
+      "bytes": 1803,
+      "sha256": "B5F9BEDFB7FD5F3AC49EDB346081353281F2255C602E257BF7CDE6B1B87C3EDD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\00_清单\\提示词\\155.txt",
+      "bytes": 1835,
+      "sha256": "456FDFA93122978D1DDF0FC69D77F7217C53D1B07053C5921BD8E7C78A4C7164",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\001_中性粒细胞哨兵_LV2_趋化强化.png",
+      "bytes": 554077,
+      "sha256": "AFCFC07D4A7E50D1883467828E6FECA2CB5E4BE9D04B227D77FA31AF16E4BBF8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\002_中性粒细胞哨兵_LV3A_NET捕获.png",
+      "bytes": 838517,
+      "sha256": "47B37CAB1A929F1226056FB0A4DAC61D4BDE95DAE3BF53B820A0108D7E91B30E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\003_中性粒细胞哨兵_LV3B_精准趋化.png",
+      "bytes": 599423,
+      "sha256": "5F8A6B89AF18E46EC492668111F8B6118AFB497DFBCD296BD41D60A1C5819172",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\005_纤维蛋白壁垒_LV2_纤维致密.png",
+      "bytes": 916726,
+      "sha256": "0B2C5FAF10540C8321A9C3A3201747A2E662AC39AD4C93A4A23DF61AF2926350",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\006_纤维蛋白壁垒_LV3A_隔离纤维.png",
+      "bytes": 876325,
+      "sha256": "8C04A3AA911F9F617A7C06FC7B52A5AFD8A691AAA7F32CC5A83DDEBC04C2FD2F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\007_纤维蛋白壁垒_LV3B_稳态凝固.png",
+      "bytes": 935025,
+      "sha256": "95F0AD8E174A91A0B58F898123391D1FADFF526DFDE32146072C5DA56E669208",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\009_溶酶体酸化炮_LV2_囊泡储备.png",
+      "bytes": 735846,
+      "sha256": "187356FE908E9486B1E577759238950DD383A44EC40D16A69C53807AB1D1F350",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\010_溶酶体酸化炮_LV3A_破膜酸化.png",
+      "bytes": 725272,
+      "sha256": "8A7D06B4D0E2D5174DE66BE48FA1C144387034C78BD323052D1FCCBF02F148EA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\011_溶酶体酸化炮_LV3B_定向囊泡.png",
+      "bytes": 675978,
+      "sha256": "69BFDD3A857A48045389320BD722C0A6FE38B5757AF5350651DE14FD72BF3064",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\013_神经脉冲刺突_LV2_传导增幅.png",
+      "bytes": 625982,
+      "sha256": "9D5B86ED3E26EE12657A4399E1E1D3E31146E86AEC8EF530A57E51112DC4F07D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\014_神经脉冲刺突_LV3A_信号封锁.png",
+      "bytes": 672028,
+      "sha256": "16AC6884F6FED530662E6F6D7CF464CD2CF3FC6DA0B903423120E23A422F44E1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\015_神经脉冲刺突_LV3B_同步电弧.png",
+      "bytes": 628526,
+      "sha256": "170F6F8F193BF82DD7C472D5400B1D3DA62A3C2402915409A7C6782464323FB1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\017_巨噬细胞清道夫_LV2_伪足加速.png",
+      "bytes": 804549,
+      "sha256": "B3933867E0A75162687470620A60AE0080B263E069C61F6869FE2E6DCA44A500",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\018_巨噬细胞清道夫_LV3A_消化回收.png",
+      "bytes": 892961,
+      "sha256": "3549298057A80BE420E642B7F4A5E4339D5E44843B35C175968DEDCFDF679C03",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\019_巨噬细胞清道夫_LV3B_巨物裂解.png",
+      "bytes": 841069,
+      "sha256": "806BBFDAF710FA85841ADADD04AAEB524BE8B688917B78D7E995CB40554BFAF2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\021_抗体B细胞中继_LV2_亲和成熟.png",
+      "bytes": 617812,
+      "sha256": "4CEC76AC52D7AE1A380942B491FAD571EBF1E47057C65A56E79B77A4E49DD722",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\022_抗体B细胞中继_LV3A_克隆记忆.png",
+      "bytes": 663609,
+      "sha256": "77A8C44A655BF80CCA859BF8FEA9835DF39DEFE0AD486C81D42C7A38D2EA3A36",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\01_塔升级\\023_抗体B细胞中继_LV3B_连续中继.png",
+      "bytes": 678293,
+      "sha256": "863C66126CEEE28D89D660D75EB154BC4DEBF18D4C47705B4EBEF8D277E9A0F2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\02_塔图标\\004_中性粒细胞哨兵_图标.png",
+      "bytes": 424781,
+      "sha256": "34A74AF2D192DBE03AA19E483DC408BCDFCB060EFAABB84ABEEDE1F2444D7AB0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\02_塔图标\\008_纤维蛋白壁垒_图标.png",
+      "bytes": 474287,
+      "sha256": "73B495596A8CCDCE185317E77C7CDE34E003D505019B297514BBEE8F64888ED6",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\02_塔图标\\012_溶酶体酸化炮_图标.png",
+      "bytes": 476592,
+      "sha256": "F8BBFC5829C66BCD54D2B87DCD3C9BFEBEA591A80162C37B35589B8BF7D9333D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\02_塔图标\\016_神经脉冲刺突_图标.png",
+      "bytes": 265467,
+      "sha256": "E634D701263568B5C2A0424F55117C48FC0944DC39CF7F2B893E055A96C0B7E7",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\02_塔图标\\020_巨噬细胞清道夫_图标.png",
+      "bytes": 439549,
+      "sha256": "7F3688F930F1531FBD82BDC1A619F4F42F6E2A29CA6F87506328316B9949D7B9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\02_塔图标\\024_抗体B细胞中继_图标.png",
+      "bytes": 322647,
+      "sha256": "4B111D0C36EDAE1ADA90A6191F2BE0E53AF81D5093FDC023D7B3140A523FB57F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\025_葡萄球菌群_基础.png",
+      "bytes": 405671,
+      "sha256": "B1BA507FA8DC82829F386C00E40D4446AD916E96C8A23E712802413952061897",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\026_葡萄球菌群_群落聚集.png",
+      "bytes": 1450722,
+      "sha256": "DCC67603B2928AF193C0963C28D61407AC254C23970C741627E9EED1EA65BBEF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\027_葡萄球菌群_生物膜软适应.png",
+      "bytes": 602938,
+      "sha256": "B16BC76CD97568AC5BDDAC1D9BEF580543B929B796381CBBA815C090B156FDBE",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\029_鞭毛双球菌_基础.png",
+      "bytes": 303774,
+      "sha256": "870257FEA9BA027897E113405151AB58B542E03B23E78BFC736CAA360CD9A778",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\030_鞭毛双球菌_集群冲刺状态.png",
+      "bytes": 339109,
+      "sha256": "4442035AA7465976B5011B2C1501C8DA39662314733E10798CE95A2B27C0EE63",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\031_鞭毛双球菌_被凝血隔离状态.png",
+      "bytes": 502209,
+      "sha256": "271E4214D438BD17F35085F109FBCC156C80A24BDB6D34842BBF060F3EEE181E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\033_重甲芽孢杆菌_基础.png",
+      "bytes": 494036,
+      "sha256": "FDF5D86409630EB7140C477F99500334D8684555DBB54846D9EA1C222B961A32",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\034_重甲芽孢杆菌_破膜状态.png",
+      "bytes": 618509,
+      "sha256": "A5B4225265D43BAB3466EADD460BF0B8364638523E8A2426122CF1AEC2481372",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\03_普通敌人与状态\\035_重甲芽孢杆菌_吞噬阈值状态.png",
+      "bytes": 519312,
+      "sha256": "FEF37151459CDD333AD4ED46EEB741B63472343E48325384148270F851FBF4A0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\04_敌人图标\\028_葡萄球菌群_图标.png",
+      "bytes": 303460,
+      "sha256": "4BA0507E891CC7D315D081232A48E31048209A2B2FBACB486417C7D502C955DD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\04_敌人图标\\032_鞭毛双球菌_图标.png",
+      "bytes": 317601,
+      "sha256": "D8697F4F1B90272FA633EE1D1FF60DDAEFBBD6721405BF8CF8D6C9C0338A667E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\04_敌人图标\\036_重甲芽孢杆菌_图标.png",
+      "bytes": 368352,
+      "sha256": "4E8C390184EDEF6B8A9B316A8422735FAA2FD2A21E6541265FB86D580762E4AE",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\04_敌人图标\\041_变异超级真菌_Boss图标.png",
+      "bytes": 576455,
+      "sha256": "77119396F08AFF1A5702EE3FEA43A6A64AED3104A4E20B5543C71EA0C2300738",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\037_变异超级真菌_基础.png",
+      "bytes": 1170341,
+      "sha256": "4E956972E585C9F33CE5A072C49779598E2FBB505B49A00FE4537CE166942561",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\038_变异超级真菌_阶段一：休眠侵入.png",
+      "bytes": 1047971,
+      "sha256": "8512AA8E96B1E7D2E7FE24B820ED8AAB9B52843921F629A16B678AE96A427255",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\039_变异超级真菌_阶段二：孢子播散.png",
+      "bytes": 964791,
+      "sha256": "B65F2EE9D44E0235610C00CF1A68835D02AD2242B2B400F17FE99A5D805BBC84",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\040_变异超级真菌_阶段三：菌丝干扰.png",
+      "bytes": 1177762,
+      "sha256": "138CB6D3F0B6BABA5CF5F6E927E266B927683933095B6B6DE37948780D8B12FC",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\042_细菌生物膜核心_基础.png",
+      "bytes": 1002528,
+      "sha256": "63DEF9E618BE1087A71DAF32A239C60AE3DB59B1F49C3A10F8ACFD1B8A31921E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\043_细菌生物膜核心_护盾脉冲状态.png",
+      "bytes": 1047291,
+      "sha256": "828DE9A53A6DD1A6BFBB8EF3DB931295F71383ED21600AC6CBB2C0EE29C2B6E2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\044_细菌生物膜核心_破膜状态.png",
+      "bytes": 1051179,
+      "sha256": "96D7C87D67732FFCE0B23EDBF686A331F216CC1FC14A883BA0DFFA1703F97A46",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\045_病毒母体_基础.png",
+      "bytes": 913282,
+      "sha256": "077A42A7627F65F55EA9119364AF9E32E67E4AC3947C43DACE99B617F0282ACD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\046_病毒母体_复制阶段.png",
+      "bytes": 1030320,
+      "sha256": "6707BD14A68B7851109D4A8D9A39EEE3981E0D59DAA369768B0D9C59BF91E532",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\047_病毒母体_变异阶段.png",
+      "bytes": 1079501,
+      "sha256": "97E31B72B0C3C31F475061BEE7B6240493512CAECBB436C254E9CF5A156468E1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\05_Boss与阶段\\048_病毒母体_劫持阶段.png",
+      "bytes": 1000028,
+      "sha256": "CD602AE013ECC53F50E17BF1FB984F0D848DF9D7CFAB99033857919A11A62F35",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\06_状态图标\\049_已采样.png",
+      "bytes": 243018,
+      "sha256": "E25563C4075E6048575269C20A6CBFD6E240AB2828FC6A5B18A61D8578CF6931",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\06_状态图标\\050_已标记.png",
+      "bytes": 486219,
+      "sha256": "2752E41882906912C4FB823E9F1F1CF13153B54947E4793D05AADBE48808CB0C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\06_状态图标\\051_群落感应.png",
+      "bytes": 254826,
+      "sha256": "1B4DE2D86AFA43351D9D86D56640A8C319557149C6551F8ED0AFCFF367E7359C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\06_状态图标\\052_生物膜.png",
+      "bytes": 516092,
+      "sha256": "5E5CF349A6B988078B5759AFDA5C18618CCE72D3707712BE2B21E61DCAE7084C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\06_状态图标\\053_集群冲刺.png",
+      "bytes": 317066,
+      "sha256": "74720B683DAA52ADA3A0D1E4B02AFE84734D2E153ABE913BAADC8FEC3730D009",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\06_状态图标\\054_孢子播散.png",
+      "bytes": 524714,
+      "sha256": "8140F3E2623C4D3151ABEE26D33E471C187BDABA4FFA798CD1428F96EAA75994",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\055_第一关_生产背景_v2.png",
+      "bytes": 1533332,
+      "sha256": "F11D198DB742679489767BC11D0F9462C8A1FB0C1EA8B92D306FD92C3E7E0C1C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\055_第一关_生产背景.png",
+      "bytes": 2192850,
+      "sha256": "FE1F6616BD1AD65BB5BDF836950C1920FC770200FF991F634F145C9C95C32620",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\056_第一关_路径蒙版参考.png",
+      "bytes": 710077,
+      "sha256": "A8EEA1BFD3C18ECCED4A7568FC7658326207CBC2639B36F711AFD176523FE7ED",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\057_第一关_关卡选择卡_v2.png",
+      "bytes": 1407624,
+      "sha256": "6F1605894C7F8C869701B4A6C4C1DB4C60D640BD7E022011E178E76C24C3DD14",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\057_第一关_关卡选择卡.png",
+      "bytes": 1731762,
+      "sha256": "7569899F39DE1C19F09112E34E82FCA2F2911D308E2D13B396673B094DDC6939",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\058_第二关_生产背景_v2.png",
+      "bytes": 1573509,
+      "sha256": "9D4A0F90BADB418C307FA6C44BDD10B98093BAB2A065D022E00DD8F530999308",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\058_第二关_生产背景.png",
+      "bytes": 2070381,
+      "sha256": "733223459AA983ADC59550E7C68C65C4376A96E399A8555D7B0DC4A8E6095AC0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\059_第二关_双路线蒙版参考.png",
+      "bytes": 256309,
+      "sha256": "BD4779E35B4D05F105367E494228B35F2264E94A8792C864404D9F8C52372888",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\060_第二关_感染覆盖层.png",
+      "bytes": 823508,
+      "sha256": "C348785A2160DC44C254DDF0C4ED7095290033CA5B167C40A65E5C1F0BA42B7B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\061_第二关_关卡选择卡_v2.png",
+      "bytes": 1647951,
+      "sha256": "994EF3D7BB11F12E99D52437EFA7593CBCA8D74B0B4E3833D39FE24E64C9A96D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\061_第二关_关卡选择卡.png",
+      "bytes": 2066995,
+      "sha256": "2FDB3DBA1F30E9BA36D899FD559651B993AF22FCBE3D48DB5F174FCECC583B2A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\062_第三关_氛围概念图_v2.png",
+      "bytes": 1742651,
+      "sha256": "58061D6BA0D544BC146B3E5BB97BBCBDF29F55EEDB8183F53F29EA18C6E08A77",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\062_第三关_氛围概念图.png",
+      "bytes": 2196374,
+      "sha256": "D947F19912DF6187261A66D8EF19B2B3C75EA9EC1E1A28B6A47089731F9B369E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\063_第三关_生产背景_v2.png",
+      "bytes": 1578181,
+      "sha256": "F9DEC70F59F3E0415ECFAAD067D79E71BB6DE646D130C4AFA53E2484C22F9AF8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\063_第三关_生产背景.png",
+      "bytes": 1521874,
+      "sha256": "C86B989857B50140469228F90085809C48F17459EDC7E4434A3C2D08D0C7D8B0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\064_第三关_分叉路线蒙版参考.png",
+      "bytes": 697262,
+      "sha256": "02C88C25089DCAE2E9FB7A41A2FF25C2526835561098CF75CAF5CD060B0690D0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\065_第三关_血管阀门覆盖层.png",
+      "bytes": 673126,
+      "sha256": "796765E6E8A844AD15CFEEC1752533211A13A55B246D0614395945AAE5D721E1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\066_第三关_关卡选择卡_v2.png",
+      "bytes": 1411381,
+      "sha256": "142E15FCE5D9CB2024BD31AD25C2C692E6E5A5C48B45780853FB5BB25715F447",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\066_第三关_关卡选择卡.png",
+      "bytes": 1994713,
+      "sha256": "59DAB809A33D2AEF9F5C7598E18652D1DBE24D33676AE33C8B95B25D0519BD70",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\067__信号节点底图.png",
+      "bytes": 586156,
+      "sha256": "25F1F05BA171781CDB8CE9B575B691BC1E158967991BEC9AD76FEA41DFDE126A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\068__信号纤维纹理.png",
+      "bytes": 1022086,
+      "sha256": "734C7D667D7CB46F45B6C49D707B5D094F819238CE547B129B6DE6EB202564A8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\069__宣传主视觉_v2.png",
+      "bytes": 2141605,
+      "sha256": "A289AC0D63591576B3861982A87524E1B627C182740FA71118B982904313B20F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\07_地图与覆盖层\\069__宣传主视觉.png",
+      "bytes": 2664232,
+      "sha256": "4726C36213422A93D862EC52CDF955DEBF0AE2BD79966CCCA9AD5FEAAEF4F559",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\070_单体子弹.png",
+      "bytes": 735158,
+      "sha256": "7242CAD2DB34C668654C206EC147262A5523E91A9B8A0491C1F7E8465563D303",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\071_高频曳光.png",
+      "bytes": 183467,
+      "sha256": "2948705FA84B0AA4165A35B635DECD8B76F0A1CDD2C30CFCB13AF52156F47DD3",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\072_命中.png",
+      "bytes": 323900,
+      "sha256": "008F908D1F9C5A64691E36DD2EC611EEA21A617A2B92445047443E4109842A19",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\073_已采样碎片.png",
+      "bytes": 265665,
+      "sha256": "839E727A18E560A5DF8567956F7085340773920A1EEF66C22861A2E1D4B67F08",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\074_基础减速群落隔离环.png",
+      "bytes": 697927,
+      "sha256": "8E5D09E59D0922C3460CA10F42C6C97B0D86E3F2670888600E993B39EAFE9BB5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\075_群落信号切断.png",
+      "bytes": 363582,
+      "sha256": "FCB9F2712FEE48C2C9945C5A6E6C2812D8AAB6282227256BCF3C9EB5B4EC76AB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\076_稳态降炎脉冲.png",
+      "bytes": 475397,
+      "sha256": "1C011565BCBFC654F51013E20D7020C6DAF415079C567BF2C179838F52AA03B0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\077_慢速酸化囊泡弹.png",
+      "bytes": 345363,
+      "sha256": "9F9BD8335451B5651328EBDEB1DD429A2AB5E473337A063D4B9B667D87E4B55F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\078_囊泡飞行拖尾.png",
+      "bytes": 896642,
+      "sha256": "4C6FD4939177D79D97AAF22E1B5D25CEE10941428EDF1E1F823D99C351436A9C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\079_囊泡落地命中.png",
+      "bytes": 510136,
+      "sha256": "3EE834EAF66F954BB8ED20BA6B08F90E913A186BF1049238E621EBE137955744",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\080_酸化区域.png",
+      "bytes": 1037409,
+      "sha256": "357B8E66B4B5FDB3A7B6481CFB1A3F6179312C7FBCE192333768F7CCBECE96A5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\081_生物膜裂纹.png",
+      "bytes": 304836,
+      "sha256": "3A2EC8C18EFA8A6240AC7E81E1FEEBBC23E4BF984048014427857F20722BB5EF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\082_单段电弧.png",
+      "bytes": 875950,
+      "sha256": "1CBD2E0949DEE99A4AE0B643282489E2D72AD1BCE2681462969F6E3D2E116073",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\083_群落连锁路径.png",
+      "bytes": 497740,
+      "sha256": "0ED37D6E78667115F70F06F0AD09B062799D90091D30AB3AF81AB1F4BBC094D8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\084_信号封锁命中.png",
+      "bytes": 1028768,
+      "sha256": "0EE6417B42C57FB4CACD0C0834F73690D0C407F4BEF30EB38866F10026D88653",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\085_电击无障碍替代.png",
+      "bytes": 560427,
+      "sha256": "48B32A0C8792FADFC86A15EA62C270291B45265860692A8B8465458B924610D8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\086_伪足包裹弧.png",
+      "bytes": 738215,
+      "sha256": "3864DC06422240A9A10B46B09976D89803428EC38EFE664E272065FF4BAED08F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\087_清除收缩.png",
+      "bytes": 726191,
+      "sha256": "EC2F2222307BB0950C4137B0D8017706969E8375F2725B7DB684C9BD4EA5663A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\088_生物酶回收滴.png",
+      "bytes": 297035,
+      "sha256": "C5A46FA1F98AFB84BD03356B583F7030462F8420F0C8163B373D8DC826920C58",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\089_免疫记忆脉冲.png",
+      "bytes": 631835,
+      "sha256": "3B88F741744F87B4BCF8FAAF8BBE29D50326B2E482E34FAF28C606910F227428",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\090_抗体标记环.png",
+      "bytes": 439728,
+      "sha256": "4CA6723ACAD8FF85B4F28DC821BA4E0FACBB057B60BD19C26338229C9E10B812",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\091_样本传递光点.png",
+      "bytes": 109542,
+      "sha256": "6283C1BD4F046FCD18C472ACE0BEB4B8E6B78D4CBD6F58EF7F6CECC54501782F",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\092_连续中继.png",
+      "bytes": 813596,
+      "sha256": "7E9A47B73761967278405C8CEBEB794D00C72F080F68C1138AD0B6F0AFC3761D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\093_护盾加速剥离.png",
+      "bytes": 769367,
+      "sha256": "622F324DBB15D895D4C66739F95BC77E764CD0559AC1D82157CD8F22C7AE3152",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\094_物理微脉冲命中.png",
+      "bytes": 288977,
+      "sha256": "EC7871044FB744E9BAC816FE60658BA95D9C2B19732F3222A42B0D0697EFB73D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\095_化学持续伤害Tick.png",
+      "bytes": 199921,
+      "sha256": "1F67D249AF387D044ADF2A9918AFB2926342E1F8C39F6291C665481F14CED362",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\096_控制打断.png",
+      "bytes": 375288,
+      "sha256": "88D207399A87E7AB12617716E690EF5B17602A4DE94C515FA9C5544251C7B213",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\097_护甲受击但未破.png",
+      "bytes": 458351,
+      "sha256": "C0EFDB4FDBBDBB29867D094328E5BC64EDE36A7342DF352D0B533E8EB487440E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\098_破膜成功.png",
+      "bytes": 381096,
+      "sha256": "5570E069F832F0B4DE0785BE645842A319197C59216C7D6F5EB8343448EE7BF3",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\099_群落感应连线.png",
+      "bytes": 837009,
+      "sha256": "77200E7C2488619E5BD0410B922F99B7C75042DE15C80975ABEF2AC55435E57B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\100_三段群落量表元素.png",
+      "bytes": 1048998,
+      "sha256": "D694166D4EAE1A1C39E86C131B6DF92D7B5495ABA6F1BF13F980441A9E6B9F1B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘_v2.png",
+      "bytes": 588722,
+      "sha256": "E3012B9913055050BAF3BDC8A45827045DDE97917CA64A2FB3B3503531CA0AD1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘.png",
+      "bytes": 724491,
+      "sha256": "4D32DF37320CE66ADF03EAF10DE93A99A7068D3C98D88BC0A158DF70DAFEFB59",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\102_孢子播散.png",
+      "bytes": 552581,
+      "sha256": "9665DCA2668CF30DD1DD0741B362DF37846F08116FE4398A4EDE4302921074AA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\103_有效应答区间.png",
+      "bytes": 541794,
+      "sha256": "9E7DE27FD05787C9AD8297CF3B6B1526F3C4DF425BD4A9BDACB0F8AE63F01308",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\104_过度炎症警告.png",
+      "bytes": 502304,
+      "sha256": "A0E3379A510D4E52642BBFBA5A5754A55E167D0BCEA38A6A620726DC38BA092C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\105_细胞因子风暴（玩法改编）.png",
+      "bytes": 1115534,
+      "sha256": "6A9C40EBEC7147306FC174C1DBE1FAF35863FADDDC06EA37BDA1E847FCCF530B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\106_发热反应_v2.png",
+      "bytes": 921965,
+      "sha256": "8746AD9FA4D15ECFB4650054CF51E32CAE1AB4FF4EE4A25B2EBF45CB4762E2B0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\106_发热反应.png",
+      "bytes": 1287835,
+      "sha256": "BED6903CFB33C167AA54473F8D3E4A364D39EDDF47EDB65F58D2578D5492B3B1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸_v2.png",
+      "bytes": 617736,
+      "sha256": "46A8ADECDCCEEE707BEA5AFFBB370DDC699ECC66AE172FB03CB79C625935687D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸.png",
+      "bytes": 650796,
+      "sha256": "8EED40296100B4CF833BEA8948E9B6D502CF609D37AC83C847E583352E0FB418",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\08_子弹与特效\\108_凝血封锁.png",
+      "bytes": 1012244,
+      "sha256": "BE591536BFC2463BB911932CE8F176142BC448F41975E40CFC3EA14902EE2A1C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\109_中性粒细胞哨兵_蓄力姿势.png",
+      "bytes": 499391,
+      "sha256": "92287C3CC8BC379E03C57FDA65F25493406A35539EDEB91AD9947565CBCD9F68",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\110_中性粒细胞哨兵_释放姿势.png",
+      "bytes": 468209,
+      "sha256": "0755CEDD89F9F9A8FAE53CD90EA8ACC8C29ADA21158AB03B61E17BF10C934462",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\111_中性粒细胞哨兵_恢复姿势.png",
+      "bytes": 437361,
+      "sha256": "F58FB2026F9DC98F039F1288724735632848295F8AD37E68F331C645C393C8C4",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\112_纤维蛋白壁垒_蓄力姿势.png",
+      "bytes": 875821,
+      "sha256": "EA32FE7BD188196A4BB0732F633031285E747C74A571778F17807C75192EF64D",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\113_纤维蛋白壁垒_释放姿势.png",
+      "bytes": 862961,
+      "sha256": "BD27EAEC7A316BC9BC3ED74039E2AB0BBEAE551197850C7552450421ADABD175",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\114_纤维蛋白壁垒_恢复姿势.png",
+      "bytes": 923553,
+      "sha256": "AE5A08CFFA60620404B2FA584243EB69E978C883E0610A3D714639909CFC710B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\115_溶酶体酸化炮_蓄力姿势.png",
+      "bytes": 628926,
+      "sha256": "5A303D3AD371DA57479FE157A73B4F21982D09D165FFE6D833C679EBA8BD0478",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\116_溶酶体酸化炮_释放姿势.png",
+      "bytes": 561910,
+      "sha256": "C2C12AC4F9614A31811CA9DEC7A6E7F6251975D39D3ED7EC1313BDBCDDA23EA6",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\117_溶酶体酸化炮_恢复姿势.png",
+      "bytes": 609313,
+      "sha256": "9494723DE5353904C77AB7B0073AC1EDDEE0777B302BCDFF563355141E26D690",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\118_神经脉冲刺突_蓄力姿势.png",
+      "bytes": 541783,
+      "sha256": "90C0C6495BB6C91998AFCDD1E1B6571014AD8ECE37BA89CC0A9A1E01F991DA43",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\119_神经脉冲刺突_释放姿势.png",
+      "bytes": 515828,
+      "sha256": "CC41469BE132B8F1CF0D55EC094CB40A9DAF5022334FD17794A148A9B57F9CB9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\120_神经脉冲刺突_恢复姿势.png",
+      "bytes": 512398,
+      "sha256": "5B4E8276261ABE9C8E4BFE531E2FBC703B0B058FBB02187E287605FBCB295C31",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\121_巨噬细胞清道夫_蓄力姿势.png",
+      "bytes": 722872,
+      "sha256": "147DF57906D6E2ABD2740823765E7761C3710C91F3F97ACA45ECF3D909F3992B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\122_巨噬细胞清道夫_释放姿势.png",
+      "bytes": 745612,
+      "sha256": "5B14EB9C1FDDEAA131A77B319C600673217478CF44CF1C2DFC00A11267C15221",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\123_巨噬细胞清道夫_恢复姿势.png",
+      "bytes": 774489,
+      "sha256": "7B7FF0C4CBB5EDEAC2F5D5681B3597931D03AD64C74D73EC52E51AFEA141D5A5",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\124_抗体B细胞中继_蓄力姿势.png",
+      "bytes": 562834,
+      "sha256": "8798381D0208A1BF981355B9A0296285095A8C2EA1D929DAACBA5F1C12B3C7A4",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\125_抗体B细胞中继_释放姿势.png",
+      "bytes": 694379,
+      "sha256": "5F17BD3B8F519422C5A4162AC7FEE2E437D68447C8259093898BC59291346ED9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\09_塔动画关键姿势\\126_抗体B细胞中继_恢复姿势.png",
+      "bytes": 574393,
+      "sha256": "847CB68723CC884FE96A31994A961C3D14AE2943002C02838A234DCA4FBA9943",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\127_葡萄球菌群_移动伸展.png",
+      "bytes": 387100,
+      "sha256": "F6EC33FB8D209F9F2B6B7F0881CB1B0728BCAAE4AE28D8B76524075528F9399B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\128_葡萄球菌群_受击压缩.png",
+      "bytes": 298654,
+      "sha256": "682BF8D38770AB60E0C5B720616CE6565A5ED0C211630E0B9C701473E0127957",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\129_葡萄球菌群_清除溶解.png",
+      "bytes": 283237,
+      "sha256": "99C104887BAC86AEA8E43E6D292C983D037C36BB75E7362F5A8C2A520FFDB938",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\130_鞭毛双球菌_移动伸展.png",
+      "bytes": 334627,
+      "sha256": "D24459D44C9DFA9AB712C55FAC2FE97099770FDED9822205EBF8A93FD962D383",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\131_鞭毛双球菌_受击压缩.png",
+      "bytes": 329502,
+      "sha256": "E718A03DBA66129AB954E088B4A63B2AEC33F9DE56B4DD4F6714403DFBEC9D38",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\132_鞭毛双球菌_清除溶解.png",
+      "bytes": 390468,
+      "sha256": "298585414492F9E2E862B4619E098932651343B72C7BBAADD27B573FA2AA13D0",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\133_重甲芽孢杆菌_移动伸展.png",
+      "bytes": 528205,
+      "sha256": "663774D34B279DDDF06FFB5041553F8950A545CF067594924F0402BC879B0EFA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\134_重甲芽孢杆菌_受击压缩.png",
+      "bytes": 395539,
+      "sha256": "95C2AE7B1194528980EB6D706724267B4633BE8620E8C6149867AD084D704C38",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\135_重甲芽孢杆菌_清除溶解.png",
+      "bytes": 571517,
+      "sha256": "D716A7131DF79345B764A82D56366716D9766D6A16F666BF59CC06C8AC42D7E2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\136_变异超级真菌_移动伸展.png",
+      "bytes": 1167558,
+      "sha256": "8F893DA548C92F082CC8F059322B152976B40BFD0ECAE3B9FBE5B4CD82645324",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\137_变异超级真菌_受击压缩.png",
+      "bytes": 966719,
+      "sha256": "23545E659725C48251470B00315443C39B71B3C5E73F6E3CFBC56465E2BCFD89",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\138_变异超级真菌_清除溶解.png",
+      "bytes": 1017262,
+      "sha256": "91269DF743FE274CCBB1D0EF07049E2DE76BE9DE5174C4814CE028DE23B58067",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\139_细菌生物膜核心_移动伸展.png",
+      "bytes": 1011595,
+      "sha256": "FBFE619588999D1868A34C5E3E005552A07A66FF427B0CFB0F0DBA1DD185D908",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\140_细菌生物膜核心_受击压缩.png",
+      "bytes": 943526,
+      "sha256": "0AEB031232E3AF2ADE6A09EEFBF7612C2EC946DC2FA1CE37384C6D98AF46140E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\141_细菌生物膜核心_清除溶解.png",
+      "bytes": 1088195,
+      "sha256": "1693258CB7699946784B10D019F1E883315DB1ABCD7AD0B8F1C07B020B74DB68",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\142_病毒母体_移动伸展.png",
+      "bytes": 864948,
+      "sha256": "141E20ED80E7B3E12F5271F0AA18C128CD7A439F84897BE2E184C905A418672E",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\143_病毒母体_受击压缩.png",
+      "bytes": 861344,
+      "sha256": "75B5651FC727ED5CE23C05E1E53226E8632F6FD8C735B5F3545A404686074CEE",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\10_敌人动画关键姿势\\144_病毒母体_清除溶解.png",
+      "bytes": 997575,
+      "sha256": "E6F58EEAC7A04DC325F233885ECBC815941BDDA03E9C68E64C71D6488445F215",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\145_近路吞噬塔位.png",
+      "bytes": 623266,
+      "sha256": "42313B3F9F7D96F531886BB57E14A821C26CBBD74C226B8B4389F31EF773AB49",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\146_信号枢纽塔位.png",
+      "bytes": 615930,
+      "sha256": "6F7569FAB336398A0CB3B38D06CE0703C05AA367D97806F2AECCEA673259C2AD",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\147_活性组织塔位.png",
+      "bytes": 720547,
+      "sha256": "287C669AF5D5B4641240D1799F4702E234EE526273551DF0B36BAE70ED15D40B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\148_感染塔位.png",
+      "bytes": 717158,
+      "sha256": "B4EADC75E9CE2F92C6C94242CE04ED3CE69F2EBEEFC431F34FD5CED4FDA5FDD8",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\149_ATP资源图标.png",
+      "bytes": 258520,
+      "sha256": "B14EB9136674F3BD97A534CCE2789156907427CD77ECD82C93A71A4320CB8B90",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\150_免疫记忆点图标.png",
+      "bytes": 686509,
+      "sha256": "B36D07F7177F8EF04A157B64CC47B055BA321D8A17266259498C777D8B2FF8E1",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\151_发热反应技能图标.png",
+      "bytes": 624079,
+      "sha256": "CE4F7D9D5D728A2F2EDDF835EC001CA529E5EA61BA5F6702657AA7929DD3D34B",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\152_抗体轰炸技能图标.png",
+      "bytes": 445709,
+      "sha256": "2E0FCC8F5A3550CC8BEBF004BD2D3472C37934CC6CC39193581449330EE8CFDB",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\153_凝血封锁技能图标.png",
+      "bytes": 504207,
+      "sha256": "621E90B29E42B611C618D3CA6DBC39F3415DE2AFCD31C584175C029176C32064",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\154_伤口入口覆盖层.png",
+      "bytes": 426872,
+      "sha256": "079C3EF33C360D280F131BB72143483F26C4688E838D8B0C88453269C3AF8DDA",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "2026-09-28_完整补图\\11_塔位资源与技能\\155_深层组织保护目标.png",
+      "bytes": 535357,
+      "sha256": "634F0F3F28F5FAE2794905B1C5986A36223EEE1049D14A54CBAF46D08BD77C74",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\胞卫战_主界面_v1_说明.json",
+      "bytes": 879,
+      "sha256": "17D38FC7A0AD938F630E7FC87F4DF342FA535B75D8E9B1EC264A8BBA9418DDDF",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\胞卫战_主界面_v1_提示词.txt",
+      "bytes": 3585,
+      "sha256": "E3EEA27386AC1DE64A8E06D5C38AF9B40C0D15B382EEC92BE76CBC42E469B37C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\胞卫战_主界面_v1.png",
+      "bytes": 2065642,
+      "sha256": "725F74A974EF1A2E8DE8BADC8E1B3DDC2B371F733FE6786CEFF9400AE6FE4760",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\按钮_v1\\01_开始游戏_v1.png",
+      "bytes": 804489,
+      "sha256": "51339E57703EE062AE666FE260309B0CAFA697699E314673A377E7CB8A95CC7A",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\按钮_v1\\02_细胞图鉴_v1.png",
+      "bytes": 643480,
+      "sha256": "3AB99BC0BE35BF25F38A50A77729DB38687C005D14F6103A4BD20B8D4FAA10F2",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\按钮_v1\\03_设置_v1.png",
+      "bytes": 591813,
+      "sha256": "D9DE34F0F06D070717A47037E96625B42D82AC600F6B9699ABA8BE2AD3BFAE24",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\按钮_v1\\04_退出游戏_v1.png",
+      "bytes": 647251,
+      "sha256": "2096B4FF6D7A850849974708A1CA65F25A128FDC8CFF055E2F92ED7F2561D303",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\按钮_v1\\绘制提示词.txt",
+      "bytes": 7714,
+      "sha256": "A5A2A1FCBFACFFF8916A822F99074F43D7E92B26EC83DE4DBF82A2918A358F8C",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "主界面\\按钮_v1\\素材清单.json",
+      "bytes": 3207,
+      "sha256": "8F8A8614EF506F9E220B1C5AE2EA623DE1D6B29F02798879C3F9BE634E42F8D9",
+      "action": "reused-identical",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\动画预览.html",
+      "bytes": 4117,
+      "sha256": "9A4B0E40852E776E64398B9A8FF7BD7EEE1E6E370923EB0BE0FA264CD6B9B2A2",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\提示词汇总.txt",
+      "bytes": 33079,
+      "sha256": "89DDAC8162D756906A84EC65AA5768557A843AD0B917FFE04A6FBE1BBF2E2236",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\batch-plan.json",
+      "bytes": 34569,
+      "sha256": "2D39F008FAA33677D2E13C30EF29560888BB99D6D79C20C06448674D76105B4C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\build-animation.lua",
+      "bytes": 6162,
+      "sha256": "24E753660470D2387D4238ECACC9B026ACD604733FFF9B9E8673384FE77745BE",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\gallery.js",
+      "bytes": 4237,
+      "sha256": "29EB888F93580E8706DB30FA94C049139564E0B511C692624F91A3A1175B1EB1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\generation-log.jsonl",
+      "bytes": 4812,
+      "sha256": "6EB78B02279D229A35E50DA4821133E37FE633A3E86B1634889EFB151EFEE3C8",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\manifest.json",
+      "bytes": 6885,
+      "sha256": "5EE712CA136607F43F136A76A431731F8B67C26BEE79D1D9F91F96CF2320D852",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\Pack-Clip.ps1",
+      "bytes": 3206,
+      "sha256": "AE37319933FE75831C161F3BCA46038A4577F499CC2F654BA653B5C164421B18",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\README.md",
+      "bytes": 4567,
+      "sha256": "05FD5F226F6BF544C1FEE62F101BD657283290E468E09B0F86FABF56B88E667F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\verify-animation.lua",
+      "bytes": 1321,
+      "sha256": "DB551A65B782FC46E25A21D33362C4863F69E4B67DB479CAB059F408A601FD9A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation_sheet.png",
+      "bytes": 96030,
+      "sha256": "63671B6E6E89699DAEDE9EDC04A18CD67C3B3D58C66192903C35CF32A4106C66",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation.aseprite",
+      "bytes": 110464,
+      "sha256": "63B38D75D83CBD296449F7EBB161E196D798A7D515F9A1A46A31F6941F8587D8",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation.json",
+      "bytes": 4538,
+      "sha256": "50C6762E3D6B9065DA6DCCF822120BC398CD0B2CBECD6702129D76352F03E098",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\preview.gif",
+      "bytes": 109056,
+      "sha256": "6500C964D9F7C3019E370399C7F9B207E86A8BD034081CD2731F8A28159C6F4E",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_01.png",
+      "bytes": 12123,
+      "sha256": "17BB5FA6F248C7182E10E2169011A8B19153CE34B032DA73E794BC43B3FC0BF8",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_02.png",
+      "bytes": 11947,
+      "sha256": "DA56F8123D4CA522CE732D0F614C860F6E9BB9D85025B4D58B2EB0810199622A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_03.png",
+      "bytes": 13005,
+      "sha256": "BC3FB9834FE8746559B78648F213436F4F8A04DC79E6E15884CEF2B24486D3D7",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_04.png",
+      "bytes": 12403,
+      "sha256": "8F98AB563119AB85FDBE7FF13BEB3763E96BCD2000812211D117437286F0EB22",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_05.png",
+      "bytes": 12221,
+      "sha256": "2E94BDFF60C931DAF03068B7CB27016552244C57CAA82F8B2172721D95F09E68",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_06.png",
+      "bytes": 12171,
+      "sha256": "7781FF21A439C9B1086CF718B78A4C93ACDE2A7ECC66B46FCF10FDFBA8AC6353",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_07.png",
+      "bytes": 12232,
+      "sha256": "6F38FDD54CC01D4B275E72667CA961F5AB7381EF55A17B5232EF34114BA59B7A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_08.png",
+      "bytes": 12153,
+      "sha256": "47B197E688FE8A6B23C30795C6299CABCDBE64E8DD0F98716CFB6C2D9587B548",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\source\\generated-poses.png",
+      "bytes": 1203455,
+      "sha256": "70F9D0F91E7973DEDF500CB7D66A41377F6E79DF47F39D1E8832B60018602953",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\source\\prompt.txt",
+      "bytes": 2397,
+      "sha256": "5AC1A71C7FCE3E211EE15EA8E639018DD61B647C78798D61E240E81B7FF445A1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation_sheet.png",
+      "bytes": 59622,
+      "sha256": "32BC29E93BA3A3351D3BA750C5D89F91BD81E8206A353D4CAF9560F329F2AF69",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation.aseprite",
+      "bytes": 62397,
+      "sha256": "7ACC49A03C259CE7D1C3874B89D8895B0E7C233487EA8E8A660F62B5907D249A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation.json",
+      "bytes": 4531,
+      "sha256": "5E798885050F3EC889C3D23A065A27720674169E14A3B820959F6C0A463F2321",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\preview.gif",
+      "bytes": 81254,
+      "sha256": "F612B9B8F6F9B90851BA9A9BD28F202B9E0895E093D672608E3E2C16DF0439D0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_01.png",
+      "bytes": 7059,
+      "sha256": "EE3E3B2494F28805C6474611DE4498F02513C225D99F964EBC609491809D95DD",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_02.png",
+      "bytes": 6823,
+      "sha256": "610791E1042E4EB3101F08E905AE9C5D77B7D91151288CB91978E0BBF0980B17",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_03.png",
+      "bytes": 8540,
+      "sha256": "C33775833C60673A86C0F2E8234C6C6358CA490C076D08BA52EB4AD2EB0BA220",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_04.png",
+      "bytes": 9243,
+      "sha256": "DD66E67006145167E192E9E56BBF67DBA1BF4AB90E642DCDD748E6A904385B76",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_05.png",
+      "bytes": 8546,
+      "sha256": "26C45F47D48531060B4A7F467798F5EB354227CCCDCAC40E1246A789F3240765",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_06.png",
+      "bytes": 6952,
+      "sha256": "420215E8E3D269406B5F4E4F932F002356FF48B1C0E85BC67C327A3065B87C99",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_07.png",
+      "bytes": 7116,
+      "sha256": "DACBFE9F16730DD600E4559D53F828B7A6083CE87746CF699F2EF2C27B1EBD20",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_08.png",
+      "bytes": 7170,
+      "sha256": "D8317EBB79F43688E5D166E734B934B06DF29F4927CCDB873A71E1719400C4A0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\source\\generated-poses.png",
+      "bytes": 762434,
+      "sha256": "3DB73DBD043721310288C0B42FD51AD376A569025730552539281BA757F256C4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\source\\prompt.txt",
+      "bytes": 2956,
+      "sha256": "45DC3E6BE619C4E185FA8B716FD33BB79C961F789C14FD21E77E0A145BB741F2",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation_sheet.png",
+      "bytes": 123250,
+      "sha256": "EAB38DE430305063C93CA2F8C08F29DE2B3535EB9A792DB35999221DEC07ACAC",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation.aseprite",
+      "bytes": 138137,
+      "sha256": "7E32A0DFB136F46646D791D3E25C42773D8B9EAE3750D7B4A41798E9C82EB86D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation.json",
+      "bytes": 4526,
+      "sha256": "70493F01474CC5968410D24119594B78103176D3F18E889A613CB729CDF1EBDC",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\preview.gif",
+      "bytes": 138576,
+      "sha256": "661C794181B8925AE789B29A30C0B95679A333E092F3479C91E173E8087DB19D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_01.png",
+      "bytes": 15162,
+      "sha256": "EAAB9A890016B0C6D276F2D2A24E81FB22E48F34D9E1656850BEE29BF8E30A3E",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_02.png",
+      "bytes": 14738,
+      "sha256": "EC1271B8F20CF6BE0839A1A07986410AA9BF8CAD3CEE8E02F66D077A69B37C40",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_03.png",
+      "bytes": 15320,
+      "sha256": "C16EF0E46A08671B971470A2F14F3E507984C0FCBEFB679786704A06CD98D31F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_04.png",
+      "bytes": 17641,
+      "sha256": "5F3B0F189F87F11D48CE1CD8CC1CBE39E069F8CFF0C5F5AE41C04BBE04C42C14",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_05.png",
+      "bytes": 15760,
+      "sha256": "E9B126598BE55724D516ECBD86461A563C3E7ED9C5E2B5D7E0201171AF469772",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_06.png",
+      "bytes": 16284,
+      "sha256": "3A71B7B021EE2AD2BA1C2A2C589758B66D847CFC52C9C59B9FE641FD893F6615",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_07.png",
+      "bytes": 15629,
+      "sha256": "47F277C94B722BF02807037352775F608A5432210AD5009E36D1B8F5EB6AE08B",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_08.png",
+      "bytes": 15167,
+      "sha256": "BAF011D01D65A8F1DE1ED0A93F540398913CFE1AE53D08AF91DCE08FADA713A5",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\source\\generated-poses.png",
+      "bytes": 1269198,
+      "sha256": "A93C5B1A62441B53456E2E68F6D651D5489AA56CB2F4E903993E33BAB260EB61",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\source\\prompt.txt",
+      "bytes": 2392,
+      "sha256": "1016D82B9144E54D43D768170BEEC64E48A679C026EBF6A06509C839826F35AE",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation_sheet.png",
+      "bytes": 89754,
+      "sha256": "2839286BE2B9559FC857B26AD82B4126280342992B24F2B971A56EA830734686",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation.aseprite",
+      "bytes": 91302,
+      "sha256": "48FBD41AFD4FB72585712B16629E87BF74104AEA7C713DE26495DC1C876D9A80",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation.json",
+      "bytes": 4528,
+      "sha256": "B331FFE9E062ACA3F6899AEB8CA4D6CE7922987E7B99F70178E6C55264D4DFFE",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\preview.gif",
+      "bytes": 119055,
+      "sha256": "7AF715F6F1DA365FF296044F8B497F822BC9465707661C0E91F0226AB36281D4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_01.png",
+      "bytes": 10698,
+      "sha256": "160112321EBFE5791CDB2CAD8F97F3E1820C5A0D520AE3E03738E337CBA96D39",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_02.png",
+      "bytes": 11614,
+      "sha256": "250FE52431424DB5AD25EA78D7F3383E21994D9CD709646745F671E61B5AE963",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_03.png",
+      "bytes": 11958,
+      "sha256": "CD13FABCBF1C4B6E67B0538490B6DDEA3EFC1B3D00FA1815629F6852D4519A39",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_04.png",
+      "bytes": 13578,
+      "sha256": "66F3C470893F37081F1188C62606F18584FA86856448265ABCBF21ADA288B2D2",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_05.png",
+      "bytes": 12037,
+      "sha256": "90DBF182E887F705B4E6BAD80718E7099333D1189BB2E0D34725B824AAD36788",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_06.png",
+      "bytes": 10818,
+      "sha256": "7D2DE23D412F9CBB12B13617F375B120960C77A339CCF8B96D504F6BC2524AA4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_07.png",
+      "bytes": 10784,
+      "sha256": "3A1549FFC5EFEA54E6FD3F5397E56285484F2401EA31C3FBB88FF3E36D138578",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_08.png",
+      "bytes": 10594,
+      "sha256": "808C2AFBCBCFEB630E815EC5A69135797BBE772E1D35FD623E1CA3117A3CB592",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\source\\generated-poses.png",
+      "bytes": 1122307,
+      "sha256": "2244DF05ED817182311A2334C452F5C624496938807F5E0E17039B797C5058C0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\source\\prompt.txt",
+      "bytes": 2344,
+      "sha256": "FEF4DB3E3012494E052E26949F8DD45A75137C279628DD4FB02DF9564EC939AA",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation_sheet.png",
+      "bytes": 102964,
+      "sha256": "B84681615FBF2CC5B264B330B59168465BDC1C3D8CA10D1F111A46345463F47D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation.aseprite",
+      "bytes": 108443,
+      "sha256": "F76CE14C05A9B0E1C13B3724BA9A81F9A4A2115BC8C55050B3A40A8175802283",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation.json",
+      "bytes": 4527,
+      "sha256": "C7A8D5B05A00AE8B78C67CB1D2D94BA8870057056CFC2A80C8F691788C386CC2",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\preview.gif",
+      "bytes": 125890,
+      "sha256": "5612738725F9F608EEA1ABDC6DB4D1DEEFF15BA29C13E7D81A88B29D60C64CC9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_01.png",
+      "bytes": 13362,
+      "sha256": "6F1B927FB5F5A0684ED64AF87436AE5EDFA70D22C56708DF815B48487C1F73A0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_02.png",
+      "bytes": 13208,
+      "sha256": "5B54437124BF432614CD8A30E0D06095D4E70D67F9ED4621F7C71AFF73542351",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_03.png",
+      "bytes": 13229,
+      "sha256": "097F764C1CD1DC7284121CB9658F9EBAC98ACE383127CCB363B214E86D66700C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_04.png",
+      "bytes": 11940,
+      "sha256": "86456121F7065B1BCF10AF8C27718253D8042C8267A09833CFE25A3ABDA837B3",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_05.png",
+      "bytes": 11379,
+      "sha256": "6C80EE7DD152DD22E680539C81EDB25CD6761A679AD172CEC9DC657130C1BD72",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_06.png",
+      "bytes": 13895,
+      "sha256": "9B4C505A4D34DB8A0DBFAFBA1E0647600A896025021E57D9C6457A2CB4D74B5F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_07.png",
+      "bytes": 13884,
+      "sha256": "0B85A029085DE15EBA3825D51B086F107267BBAABEBA2533AFCBEDE13A6842B4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_08.png",
+      "bytes": 13994,
+      "sha256": "843951853D3FB0FAE39E958DB8E36C4F864C322BF56DB6B0233D19174BAF13A0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\source\\generated-poses.png",
+      "bytes": 1236764,
+      "sha256": "85C71C09022B97FFB498598FFF832B4215A91D8570194F108EBB7520FF99680C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\source\\prompt.txt",
+      "bytes": 2424,
+      "sha256": "96B6708756B6D4F5D4D1DA73ECC4CFE5C3A102F12F759F310AFB17E7D5B7AB3F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation_sheet.png",
+      "bytes": 133760,
+      "sha256": "FF2D569E455FC154FD4BB5020730FA124D31EC615D2D2707404174C6279269C5",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation.aseprite",
+      "bytes": 141385,
+      "sha256": "349003B3022085793947D3B4FF14C9BC30DFBE27E853A516238A5DB57A65CE94",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation.json",
+      "bytes": 4529,
+      "sha256": "D62720A455055C09F574619A355611128CB208253EAE0F2258962460E19B33F0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\preview.gif",
+      "bytes": 160901,
+      "sha256": "4AE2C2E9F1CB1288952A90FB80A5323CF5B546EE239AD1805E72378F67436548",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_01.png",
+      "bytes": 17352,
+      "sha256": "163047B953973217FFDB1DC94F1DD4FB4E94355D4D2121E6BBBD80A568EC1D22",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_02.png",
+      "bytes": 16899,
+      "sha256": "89B8A0143453ECE4B56B18E67FD198D50B26A4784C5E9D8DA091860162A1BD34",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_03.png",
+      "bytes": 17172,
+      "sha256": "F54B0F14BF0F6D6D67E05DEE30DBAE800B566F23A9C9FF90248744E4AC3D997B",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_04.png",
+      "bytes": 16996,
+      "sha256": "5AB5830291D3E19768AA70BC006BF40EDC45A2369819DD2AA6D7C09B0E067A71",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_05.png",
+      "bytes": 16989,
+      "sha256": "653B856976267B4EDE991D546B42AA86B91A2DD34C4829D4A981EAA95DE249B9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_06.png",
+      "bytes": 17200,
+      "sha256": "72E71E0477AB6E2F832F37830A45084A28A0D0D429BED1873355BAAAB970D719",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_07.png",
+      "bytes": 17154,
+      "sha256": "98DE9DC1AD5F8B3E92FD1A32DB25EB4AD3462485E32126BD4805B9DDC163365C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_08.png",
+      "bytes": 17124,
+      "sha256": "A04376789C7A328C50249F8E0144EEE6358DECE4EBAD6E16F60A67287C11A75F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\source\\generated-poses.png",
+      "bytes": 1149768,
+      "sha256": "4FBC7913D3F01C01B17608776585749735200D8752F78C1D469267C11024D832",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\source\\prompt.txt",
+      "bytes": 3036,
+      "sha256": "ED43149021FA4D8BD30A8ECB948D0817EF4CDE1F1A019CD800A98F3EAC6FE26B",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation_sheet.png",
+      "bytes": 91579,
+      "sha256": "3B19D55995D4774457EBB26FB3A1724F25430AAD8E8BD52740ADF3B67D61D150",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation.aseprite",
+      "bytes": 119021,
+      "sha256": "036D5134F533B3C124BEE6B3FCCBB4AB2ED417BE8DF70528CED70CAFBD6D0953",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation.json",
+      "bytes": 7592,
+      "sha256": "C0B311B174FD6A580DA0C19D50F6C079F92E34862EECCC5F48CFED3C2823FC86",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\preview.gif",
+      "bytes": 119456,
+      "sha256": "D3ED246D0C811874D2BB7C752C4E396CA71459B4715BD15DB65E7452957059DA",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_01.png",
+      "bytes": 12002,
+      "sha256": "921E0E2D438332614C7CE702AA2FFCB7C3499B7F72788C0C1A9E62C5A1E7A7F1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_02.png",
+      "bytes": 11617,
+      "sha256": "ADA8F127BBF64A66A156A815F524996035EFD35F3A7A1307FD93CE7C2E67E8C9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_03.png",
+      "bytes": 11142,
+      "sha256": "DC29C336C3DAF3A8B5C0A5619EEB7FFEDD31836AF4E3E4C0A152A6EE76D21B57",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_04.png",
+      "bytes": 11995,
+      "sha256": "37D427E12CB485B12F55EA5F06E6017696956256A9F481F7072A804E4F25104F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_05.png",
+      "bytes": 11951,
+      "sha256": "581D561B1482C536A4B3E527F608600DC2090AFA15F09310E4562232DFA6FCC1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_06.png",
+      "bytes": 11510,
+      "sha256": "4F07EF1D4185D0FFD0863B5BB46B0E321F71215E91FAD017896232B0AF9C55D9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_07.png",
+      "bytes": 11588,
+      "sha256": "348BBEF3EBA3C0EA55C4207F17433B9A8FE062077B779D21B66B4E3E5975A035",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_08.png",
+      "bytes": 11862,
+      "sha256": "0F8DF34A43B26996B1B8D10D5B9172C56C6FFDF753B02FAEEF08D185D20D31E3",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\source\\generated-poses.png",
+      "bytes": 878046,
+      "sha256": "6B52F8524802F4E0F8AFDB08911D23976FE34676408A00A7F1B2C6C617494670",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\source\\prompt.txt",
+      "bytes": 3573,
+      "sha256": "E7EB61169A8807C745F766D49B489BB08B5066402959B28EEB51847C499161F0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation_sheet.png",
+      "bytes": 96088,
+      "sha256": "47A11942870310B7B5B7E1F5E59C5ED2A7EDFE266F1D70C6238082A5C36BA839",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation.aseprite",
+      "bytes": 124494,
+      "sha256": "2DAFF16F9809EF4C89186330D6E622745372E2B8FB10EEF9D17D505E9ED5D55C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation.json",
+      "bytes": 4562,
+      "sha256": "9AFE1B38B792E19A9F31560C8E620C4521A0948037C49EE3B42989C802B71B92",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\preview.gif",
+      "bytes": 124682,
+      "sha256": "26B933D78A35271E7166A80B77C1D1004412811409B82514E73B5B40033EB2D4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_01.png",
+      "bytes": 12055,
+      "sha256": "972B174A3DE27F60DE05F234AE0E3EAA5714C808C6A76B401FF9EA12B3F72F42",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_02.png",
+      "bytes": 11827,
+      "sha256": "5131BEDA9528C8A4961C58A732FD56FA798036CE3898BB4B06B50C265CABE3D7",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_03.png",
+      "bytes": 13037,
+      "sha256": "38A50CF4DDDB5ED626D61ED8644310234F747BD66492D92C5C52B415D3F487E4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_04.png",
+      "bytes": 12575,
+      "sha256": "704D440B119D8150C2E604B477EFC2B1AF11B44728DB8A3D74EE960826471AEB",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_05.png",
+      "bytes": 12395,
+      "sha256": "637C0404F3B36DFA2236AF0D541728FEFA3F16192CBBCF3228B348EF86A29740",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_06.png",
+      "bytes": 12142,
+      "sha256": "2B3C32C3835C07AD14497CBABC5542C98E2AE1DE59E179768EBE81C9695DCF93",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_07.png",
+      "bytes": 12404,
+      "sha256": "5D53D5C9E84E8B5B33C2F7EF802A7A05C273931AFE3D9488C022EFFB2963B044",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_08.png",
+      "bytes": 12215,
+      "sha256": "A54B233D84B65905F339446C080A53EEB6AF48EE40D44CEDC909CECF20FC6685",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\source\\generated-poses.png",
+      "bytes": 857585,
+      "sha256": "63350E7F22468F1E160B341501679ECF48327C45D1F8F4D2E6CCFA288BB1A5F0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\source\\prompt.txt",
+      "bytes": 2507,
+      "sha256": "0415945DB9960872D82D9A3900F464ADD4D92AF18773C6BF47AC15FDAA12F113",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation_sheet.png",
+      "bytes": 48513,
+      "sha256": "04235D08AC0AE14ECD8EFC8D617315789079E7C7B6720EA1816FAC1CEA7E5428",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation.aseprite",
+      "bytes": 52042,
+      "sha256": "2B73281A098529780252BF4E20867CB8521071DF306B7C6C3F495342737A0A43",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation.json",
+      "bytes": 4516,
+      "sha256": "DA9932587F7040510918EB257062FFA2AA069DCE23369932D64ACFE071F7FA78",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\preview.gif",
+      "bytes": 68467,
+      "sha256": "EEEC48122EA0463B93A81DECB26D2231A5553FCB3C5A8D9BB4425094769462E0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_01.png",
+      "bytes": 6109,
+      "sha256": "B7849F1C8CA7BA09C895F8225910001A3EC3E73DAA3C21E89AFCFD39B79059BD",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_02.png",
+      "bytes": 6240,
+      "sha256": "F382FA5DFD82D9470C4ED68098C93AC639042F3E41FDEDC6D6DD997EAA599771",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_03.png",
+      "bytes": 6363,
+      "sha256": "805C707FD9A6C0641357FE02EFF1A191B127186E6FDD4254B356E0B00B531E17",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_04.png",
+      "bytes": 6261,
+      "sha256": "74CFCDB10A3042074528D8B7FBC2A255B6616EF517043058FAE1215730E2683C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_05.png",
+      "bytes": 6214,
+      "sha256": "432D2D7127ABB0E9F5FD5EAE3198EFE7904BCE3E8BF2EDDA83A2B56B507FC22D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_06.png",
+      "bytes": 6402,
+      "sha256": "0D438266AB4E5A6698FD9B7CBAA5060FDD6E3A0558604F06D380089B8F99C452",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_07.png",
+      "bytes": 6379,
+      "sha256": "8CC6FB1D2C8079C70DF19DAAC314EDD89BBFDA0E5D6A35D24B82837F6564EE08",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_08.png",
+      "bytes": 6359,
+      "sha256": "E886254A861900685561DB9903B0BB00C7320171FA7CBEABFC819DBE9B5D1025",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\source\\generated-poses.png",
+      "bytes": 703586,
+      "sha256": "5D20587BAD6D2CA278457263DF03CD8080E63511F8177E0CE7048A4253BEB45B",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\source\\prompt.txt",
+      "bytes": 2494,
+      "sha256": "E4F488365C1698914465865E63014844DC3F83B4A36363B68382D7823D942E97",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation_sheet.png",
+      "bytes": 43723,
+      "sha256": "8D3F9CDE29CDDF8C9918191CC67AA59007B875C65EF087EBBC5D34C3A7FEECA3",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation.aseprite",
+      "bytes": 47059,
+      "sha256": "ED339919D8EC2CAC0C98738C31C61F3F477CA18E93838D5B74EF82BD757DFBB4",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation.json",
+      "bytes": 4522,
+      "sha256": "F2AD50525FD846E921C654867D77902352C8D5788C53A00EEEA2CEFDFFBF6F67",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\preview.gif",
+      "bytes": 64172,
+      "sha256": "E87BFE1779469C55DB941A12BDB719282DAE9332E2328245C6E6B9FB48BDEEE1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_01.png",
+      "bytes": 5623,
+      "sha256": "F45A4933B19FBD87EA25FF5BC534C854562E830AD223BED5A7D54FDA8B4896BC",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_02.png",
+      "bytes": 5471,
+      "sha256": "8F64C16E1F890979C36C6C111C89692B2EE96FA06733F72AA79E6736F502C5AA",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_03.png",
+      "bytes": 6000,
+      "sha256": "C7FC18D350601D54351F968117FF43511068FD1BAFC78B7EAB83BE920DAFA062",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_04.png",
+      "bytes": 5656,
+      "sha256": "CF7B32ACDC857A15022C7C4F8A9B099E97B111D61C91774378FFEDD2A5DB8EB0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_05.png",
+      "bytes": 5894,
+      "sha256": "909E2D773920B3DFA5B4B4DBB755AE974D3F1A846A5A6B7558B6A00D67F9B20F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_06.png",
+      "bytes": 5714,
+      "sha256": "F2E1764BC13EF3ABE2F02962598EDF0210A039C2EC8D00484C634AE034603896",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_07.png",
+      "bytes": 5640,
+      "sha256": "A75BAA4215A519B0332C4A4627F95950A71D41FC05B9586C9028F6329596C126",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_08.png",
+      "bytes": 5638,
+      "sha256": "D6AA14D473D1BEB4A213783933827774399A0318C2927D3E39328EFB0CE8F0B1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\source\\generated-poses.png",
+      "bytes": 709897,
+      "sha256": "2284958524373A0B82C642F6B0B2FC34B150CB9C26A4389A1C062816DCCB6A0A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\source\\prompt.txt",
+      "bytes": 2471,
+      "sha256": "29C05F5C0FBA186F640A18A9BA3128BC4A9C00E88E86A1B19824F71FBDE8BFCF",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation_sheet.png",
+      "bytes": 86370,
+      "sha256": "60C2C153138124AE5DFA71124A66D4EB389FB6D5727C95A9AF776C37368BE87E",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation.aseprite",
+      "bytes": 104637,
+      "sha256": "1BE23E45EF6FC15D2B26BFE4C7FCFAB686CBE4AA7817B09DA57B9CA41580481B",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation.json",
+      "bytes": 4410,
+      "sha256": "2C4E152B3294E7CE6D3B31F460744DA529B9D63DA9CC0958F2C988CFF9E6533A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\preview.gif",
+      "bytes": 118508,
+      "sha256": "D3ABF2AD41EBC9959E2BB4E978198820374DB2474CFDCD9F84F2928551A9E3FC",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_01.png",
+      "bytes": 10972,
+      "sha256": "E75CD0E65C859585C6A017438582B43FEB1B144C290EE9655F3EEBEB50BE4985",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_02.png",
+      "bytes": 10791,
+      "sha256": "5631FF78643FCAB8BED510085CEFE22103A9AD0F1725EDC5986170D449AD2534",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_03.png",
+      "bytes": 10726,
+      "sha256": "A7A160747DFE48414F294027A2EA95F9552648C80BBE2E6170D22CB4B492A70D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_04.png",
+      "bytes": 10980,
+      "sha256": "5973127C1E071F24DDE4186ACCBFA78896EBE328B96712BF4F5A09C7B89DC2CB",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_05.png",
+      "bytes": 11580,
+      "sha256": "F8A856896093EEFBB0EB2B3D232AB05D86379EC0B0D594A430CA6DE3CF43F34C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_06.png",
+      "bytes": 10995,
+      "sha256": "A0AE4ED9A9AD4FEEE4CF1B344D1FC1CF1FB49BD372FB99181A81FB3BF9C91035",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_07.png",
+      "bytes": 11401,
+      "sha256": "F539B0BFB5BFB8CE35BE93D6C9F226A96018032D629F12B3607242543DB7F82A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_08.png",
+      "bytes": 10945,
+      "sha256": "B0D92DF0824D954744F62392A32839611917CE6114AE2375BE86BB686D2F7CAD",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\source\\generated-poses.png",
+      "bytes": 957294,
+      "sha256": "C7ADD1EDB56A1AB2CC49B5D0ACE518DB9E99F46F4D3CE4EE8CFB7048556EC6B8",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\source\\prompt.txt",
+      "bytes": 2514,
+      "sha256": "4F65633E8C9805A501EE032F3E682CF0D13938058F563250FAA4A4B6076EE276",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation_sheet.png",
+      "bytes": 93277,
+      "sha256": "F45A6380CB77C07A9EEFE51203B5E5807C78E6F19907691BF75027FA6ECAA53F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation.aseprite",
+      "bytes": 115396,
+      "sha256": "C1B6680A3042B76E22126EBA73D456D7CF6E8401F69DC9298702E858340BD5C0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation.json",
+      "bytes": 4458,
+      "sha256": "1737DC8D6A723CAF844C11860C57A63C262A446E36397FF751E12BFE9456D9A5",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\preview.gif",
+      "bytes": 124845,
+      "sha256": "CAAE0138D3566C06094FFC2ADDC00D0A9B1DB1B0B214BA621E7142D4080F6A51",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\validation.json",
+      "bytes": 443,
+      "sha256": "FD45E608932C9FBC9C1C7D4FBA5A8A6996A7D3C4F334E1C80FE466AD6421BA62",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_01.png",
+      "bytes": 11477,
+      "sha256": "DE58704DEF5CEC410C9CF9DE8F71A23067B60BB126C5E08ADB8F838C3CEE7988",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_02.png",
+      "bytes": 11105,
+      "sha256": "BC4DE56F2A4229A19BD24E24513F16CC70074E2818E905BEEE745313AF8A7500",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_03.png",
+      "bytes": 12259,
+      "sha256": "C0081B511279D555148F6C660C09DF0F90720B6DF96AB8862D692CF97379E95D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_04.png",
+      "bytes": 12882,
+      "sha256": "D2F584A0C6ABA6C1DC595C5B87C715F67DD88B078AA059027125A0B70ED9B14F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_05.png",
+      "bytes": 11930,
+      "sha256": "9C7626C96E734A19120F30F580939B885495BC1D3B635865D329E763D97C5322",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_06.png",
+      "bytes": 12169,
+      "sha256": "C78BB440ECF93C255986DF798FAD614FA29FB9F42739C27E5FBAF9E9A0AD630F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_07.png",
+      "bytes": 11799,
+      "sha256": "55BFABDFF97F2B77FC94567681B5C06CC77991EF811A7C4CFDE717335AB73AFD",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_08.png",
+      "bytes": 11414,
+      "sha256": "8625F501A2842B3ADC72C2FB5E665F1AE8DB7C734CD8A0274AB9A1B1FAB96E95",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\source\\generated-poses.png",
+      "bytes": 767187,
+      "sha256": "1E907A37EDBA4DE7FC826292FCBCD81363C8071E0BBA36938E38EF35DDE8FD60",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\source\\prompt.txt",
+      "bytes": 3089,
+      "sha256": "B9AF510502DCCF5600A004E7F4181950447227A0010D0665FBA17EC6CE5887DC",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\01_neutrophil_attack.json",
+      "bytes": 2870,
+      "sha256": "965097876172C0B5DA92F4E5484EA3332073A5E44C21A7BBA6189DA22428E20C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\02_fibrin_attack.json",
+      "bytes": 3417,
+      "sha256": "32A8FF607B34D645F728ADE47195DD074A37798196A12120D106F211A61A4AA9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\03_lysosome_attack.json",
+      "bytes": 2856,
+      "sha256": "6DF779441EBE7AD6D261E61EC27B0288E6FE723CCC178CC14227763DDE591640",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\04_neural_attack.json",
+      "bytes": 2803,
+      "sha256": "245ECABC651F38F0FC28EE3F4113C25639C7892F944130E6F4086242AC83A6A8",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\05_phagocyte_attack.json",
+      "bytes": 2895,
+      "sha256": "60B17B8DAA5BC0930DC8507AE6B5040D4ECED9DCBC8096A962C042B48D516900",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\06_antibody_attack.json",
+      "bytes": 3502,
+      "sha256": "8C530DAA981A77DCC045B76E2DAC90A56C18675E9B5D398918C1B7D88DE8CCE8",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\08_staph_attack.json",
+      "bytes": 3000,
+      "sha256": "2BEA667AD69B523D6DC63070B1F829E612044858FC6D162CE73238ECC6F50F5D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\09_diplococcus_move.json",
+      "bytes": 2968,
+      "sha256": "C3181D2ED25B548B0AD220F959632399B6453D7561FA124639533A2602F4AF71",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\10_diplococcus_attack.json",
+      "bytes": 2949,
+      "sha256": "70C554B2A949AEA49391EB7115EA3342A3F4BF337CA6B6BCFFA4D0EB201092D2",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\11_bacillus_move.json",
+      "bytes": 2988,
+      "sha256": "26D2C227950B5CC76C2C2C403311E30B79DD73C7DA11EC632027AE6177BBB912",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\六塔与普通敌人_v1\\jobs\\12_bacillus_attack.json",
+      "bytes": 3595,
+      "sha256": "41D05AE063FAE976E0DE25DEB58E849C8DBFC0AECAA4C22A4DB221B2AA09A182",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\animation.json",
+      "bytes": 4257,
+      "sha256": "9C7282B44EC75538328395D9BB1AD5D3200A204B0A65A39EABEAD457FC9BE57F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\build-animation.lua",
+      "bytes": 4997,
+      "sha256": "EA7A62CFDE33A9CB226E3CD2D4BFD2FCEAFA179C01DF8EF60FB59C7830D636A5",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\README.md",
+      "bytes": 3311,
+      "sha256": "3E38894865B78CB31EB2CCDD5BE87B1BFB58C528188F6BD4B7F2947A8FE352EF",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\staph_move_preview.gif",
+      "bytes": 119456,
+      "sha256": "D3ED246D0C811874D2BB7C752C4E396CA71459B4715BD15DB65E7452957059DA",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\staph_move_sheet.png",
+      "bytes": 91579,
+      "sha256": "3B19D55995D4774457EBB26FB3A1724F25430AAD8E8BD52740ADF3B67D61D150",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\staph_move.aseprite",
+      "bytes": 119021,
+      "sha256": "036D5134F533B3C124BEE6B3FCCBB4AB2ED417BE8DF70528CED70CAFBD6D0953",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\validation.json",
+      "bytes": 355,
+      "sha256": "2C3E1DF4CC20EAD5ED180F413B0671655DE90F96FE9E54BDB75E7498B9E3055D",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\verify-animation.lua",
+      "bytes": 1287,
+      "sha256": "1D0D2B3DF728986A6F2DA5F6A9CE9428B2F3210063E30534CA450DD56FFBAF31",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_01.png",
+      "bytes": 12002,
+      "sha256": "921E0E2D438332614C7CE702AA2FFCB7C3499B7F72788C0C1A9E62C5A1E7A7F1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_02.png",
+      "bytes": 11617,
+      "sha256": "ADA8F127BBF64A66A156A815F524996035EFD35F3A7A1307FD93CE7C2E67E8C9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_03.png",
+      "bytes": 11142,
+      "sha256": "DC29C336C3DAF3A8B5C0A5619EEB7FFEDD31836AF4E3E4C0A152A6EE76D21B57",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_04.png",
+      "bytes": 11995,
+      "sha256": "37D427E12CB485B12F55EA5F06E6017696956256A9F481F7072A804E4F25104F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_05.png",
+      "bytes": 11951,
+      "sha256": "581D561B1482C536A4B3E527F608600DC2090AFA15F09310E4562232DFA6FCC1",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_06.png",
+      "bytes": 11510,
+      "sha256": "4F07EF1D4185D0FFD0863B5BB46B0E321F71215E91FAD017896232B0AF9C55D9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_07.png",
+      "bytes": 11588,
+      "sha256": "348BBEF3EBA3C0EA55C4207F17433B9A8FE062077B779D21B66B4E3E5975A035",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_08.png",
+      "bytes": 11862,
+      "sha256": "0F8DF34A43B26996B1B8D10D5B9172C56C6FFDF753B02FAEEF08D185D20D31E3",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\source\\generated-poses.png",
+      "bytes": 878046,
+      "sha256": "6B52F8524802F4E0F8AFDB08911D23976FE34676408A00A7F1B2C6C617494670",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "帧动画\\葡萄球菌群_移动_v1\\source\\prompt.txt",
+      "bytes": 3573,
+      "sha256": "E7EB61169A8807C745F766D49B489BB08B5066402959B28EEB51847C499161F0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\01_空面板.png",
+      "bytes": 826427,
+      "sha256": "D72A96C84A1426F73E4190B836BD3887789107275A257C494B6AFF2F8E7AFAD7",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\02_返回游戏_未选中.png",
+      "bytes": 926957,
+      "sha256": "E5B939520C2F11D02C21541DEDB7FDA3BE4953DE895DB803E59F608E97ABDA0F",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\03_返回游戏_选中.png",
+      "bytes": 808749,
+      "sha256": "651D240FA04A2234AA167AE11AED652E829628EBD41670E15B3B47A73F4AC962",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\04_退出到主菜单_未选中.png",
+      "bytes": 618678,
+      "sha256": "15D7305F064C3639372E60A68D8E8DA472BB42A80737FD7B6CE66E92515E167E",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\05_退出到主菜单_选中.png",
+      "bytes": 668054,
+      "sha256": "65D364D9604CA41B26AFD4773107C84EE802DA76BC1FAA71144E3FD7BD46D542",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\06_设置_未选中_v2.png",
+      "bytes": 560337,
+      "sha256": "93412D7CE013E0DA20306065C783B0273FBCE0A0EC8D07BB6E6CA8D66F9FDFC9",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\07_设置_选中_v2.png",
+      "bytes": 713132,
+      "sha256": "D49FF362F15662EA081EE21333225EAA1327087E6B0A1A7A7AB8CAEBA1F08900",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\绘制提示词.txt",
+      "bytes": 11110,
+      "sha256": "FCBF0586F349D6779CFC64BAB2489B4B41357EFD329F7B64DBF99AE7E833AB88",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\使用说明.md",
+      "bytes": 1462,
+      "sha256": "BE8530E2D58775F171529102FDBB9C2930A373E1BC077765A084302C2B843448",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\素材清单.json",
+      "bytes": 14139,
+      "sha256": "059950A6B30FA6A8F67E5622C9D02E90C75E3BB7BC03D7232A3C8F0168667E6C",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\图片检查.json",
+      "bytes": 1502,
+      "sha256": "697C3039F57344F5ACC95DCA2C0AD73F05F5AB88ED8EEB485722EF5EB59D6E94",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\字体修正记录.json",
+      "bytes": 4461,
+      "sha256": "FA1BE1F570C10E4C26C92BC5111651FA2EB218FF7465EFC6BC6F0BF112C21163",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\旧版\\06_设置_未选中.png",
+      "bytes": 547811,
+      "sha256": "A8C2A5FF2956761DD89636447B39AA3FFD10C06FB58A0FAB0289135C93414D65",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "暂停菜单_v1\\旧版\\07_设置_选中.png",
+      "bytes": 675095,
+      "sha256": "CF97495783DB5E825FD9791AC174D621C19F8B1DE1B65F60CA425FAA66E8534A",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "选关界面\\胞卫战_选关界面_v1_提示词.txt",
+      "bytes": 4521,
+      "sha256": "450DC37B672A92CACC931B2B5860F7E055E764D7BA5664D0AA2C91954CEF0BD0",
+      "action": "copied-new",
+      "verified": true
+    },
+    {
+      "relativePath": "选关界面\\胞卫战_选关界面_v1.png",
+      "bytes": 2050059,
+      "sha256": "4F0C2063A05EF8B0049EAE4B6B418E8708B1657C2A902597406815E5C68F8073",
+      "action": "copied-new",
+      "verified": true
+    }
+  ],
+  "deletedAt": "2026-09-30T13:25:48.0624262+08:00",
+  "unityNewPngsImported": 140,
+  "verification": "All 595 source and destination SHA-256 hashes rechecked immediately before deletion; no source reparse points; all 140 new PNG Unity meta files present."
+}

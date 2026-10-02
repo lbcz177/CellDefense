@@ -1,0 +1,21 @@
+{
+  "method": "内置 image_gen 局部重绘文字",
+  "changes": [
+    {
+      "id": "settings_normal_v2",
+      "filename": "06_设置_未选中_v2.png",
+      "state": "未选中",
+      "reference": "D:\\Desktop\\细胞绘制\\暂停菜单_v1\\06_设置_未选中.png",
+      "prompt": "Use case: text-localization.\nTask: Correct the malformed Chinese lettering in this settings button. Input image is the EDIT TARGET. The two characters must read EXACTLY “设置” in correct standard Simplified Chinese, using a conventional upright bold Chinese sans-serif / 黑体 typeface, not experimental pixel lettering.\nOnly replace the two text glyphs. Preserve the existing transparent 2172x724 canvas, button outer silhouette, border, bevel, all colors, placement and margins exactly. Do not redesign or widen the button.\nCorrect glyph anatomy is the main goal:\n“设” uses the LEFT radical “讠” (two strokes: the top dot AND the complete lower horizontal-turn-down-up stroke; do not omit either). Its RIGHT component is “殳”, with the top 几-like shape and complete 又 beneath. It is 设, NOT 没, 投, 役, or an invented symbol.\n“置” uses a fully closed flat “罒” across the top, with two short internal verticals, and a complete “直” below; preserve every horizontal line and the bottom stroke. No missing, broken, melted or overlapping strokes.\nRender both characters as clear typeset Simplified Chinese HeiTi / Noto Sans CJK SC Heavy glyphs with comfortable spacing, equal cap height and a common baseline. Keep the text centered with generous side margins. Prefer Chinese glyph accuracy over chunky pixel stylization. No handwriting, calligraphy, decorative stroke cuts or faux glyphs.\nUnselected cream state: correct letters filled solid dark-indigo, with no additional outline or colored interior. Keep the existing cream body untouched.\nExactly one button with exactly the label “设置”. No extra text, no icons, no watermark. Outside remains genuinely transparent, no checkerboard, no colored background.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-935d47c1-9e8d-4429-aca2-9f8165a5225a.png"
+    },
+    {
+      "id": "settings_selected_v2",
+      "filename": "07_设置_选中_v2.png",
+      "state": "选中",
+      "reference": "D:\\Desktop\\细胞绘制\\暂停菜单_v1\\07_设置_选中.png",
+      "prompt": "Use case: text-localization.\nTask: Correct the malformed Chinese lettering in this settings button. Input image is the EDIT TARGET. The two characters must read EXACTLY “设置” in correct standard Simplified Chinese, using a conventional upright bold Chinese sans-serif / 黑体 typeface, not experimental pixel lettering.\nOnly replace the two text glyphs. Preserve the existing transparent 2172x724 canvas, button outer silhouette, border, bevel, all colors, placement and margins exactly. Do not redesign or widen the button.\nCorrect glyph anatomy is the main goal:\n“设” uses the LEFT radical “讠” (two strokes: the top dot AND the complete lower horizontal-turn-down-up stroke; do not omit either). Its RIGHT component is “殳”, with the top 几-like shape and complete 又 beneath. It is 设, NOT 没, 投, 役, or an invented symbol.\n“置” uses a fully closed flat “罒” across the top, with two short internal verticals, and a complete “直” below; preserve every horizontal line and the bottom stroke. No missing, broken, melted or overlapping strokes.\nRender both characters as clear typeset Simplified Chinese HeiTi / Noto Sans CJK SC Heavy glyphs with comfortable spacing, equal cap height and a common baseline. Keep the text centered with generous side margins. Prefer Chinese glyph accuracy over chunky pixel stylization. No handwriting, calligraphy, decorative stroke cuts or faux glyphs.\nSelected blue state: correct letters filled pale cream-white, with a slim consistent dark-indigo outline. ALL parts of both glyphs, including the dot and the lower stroke of 讠, must use the same white fill. Keep the existing blue/cyan body untouched.\nExactly one button with exactly the label “设置”. No extra text, no icons, no watermark. Outside remains genuinely transparent, no checkerboard, no colored background.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-820c530a-af3c-45bc-b3bf-9554e1d3f899.png"
+    }
+  ]
+}

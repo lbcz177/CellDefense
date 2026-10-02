@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: "\u5DE8\u566C\u7EC6\u80DE"
   prefab: {fileID: -7672387684028090219, guid: c77e7d4a7d7955345ab1fbe783f05c2f, type: 3}
+  buildIcon: {fileID: 21300000, guid: a06b8342318df514ab56a4e939eb9a2f, type: 3}
   placementKind: 1
   projectilePrefab: {fileID: 0}
   buildCost: 25

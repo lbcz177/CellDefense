@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnemyImmuneState : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer bodyRenderer;
+    [SerializeField] private SpriteRenderer markRingRenderer;
     [SerializeField] private Color markedColor = new Color(1f, 0.85f, 0.25f, 1f);
 
     private Color normalColor;
@@ -33,10 +34,7 @@ public class EnemyImmuneState : MonoBehaviour
     {
         markedUntil = 0f;
         wasMarked = false;
-        if (bodyRenderer != null)
-        {
-            bodyRenderer.color = normalColor;
-        }
+        SetMarkedVisual(false);
     }
 
     public void ApplyMark(float duration)
@@ -50,6 +48,12 @@ public class EnemyImmuneState : MonoBehaviour
         {
             markedUntil = Time.time + duration;
         }
+
+        if (!wasMarked && IsMarked)
+        {
+            wasMarked = true;
+            SetMarkedVisual(true);
+        }
     }
 
     private void Update()
@@ -61,9 +65,18 @@ public class EnemyImmuneState : MonoBehaviour
         }
 
         wasMarked = isMarked;
+        SetMarkedVisual(isMarked);
+    }
+
+    private void SetMarkedVisual(bool isMarked)
+    {
         if (bodyRenderer != null)
         {
             bodyRenderer.color = isMarked ? markedColor : normalColor;
+        }
+        if (markRingRenderer != null)
+        {
+            markRingRenderer.enabled = isMarked;
         }
     }
 }

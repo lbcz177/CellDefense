@@ -16,10 +16,21 @@ public class BuildSlot : MonoBehaviour
     private TowerController currentTower;
     [SerializeField]
     private BuildSlot[] signalNeighbors = Array.Empty<BuildSlot>();
+    [SerializeField]
+    private AntigenSignalFeedback signalFeedback;
     public BuildPlacementKind PlacementKind => placementKind;
     public TowerController CurrentTower => currentTower;
 
     public event Action<BuildSlot> Clicked;
+
+    private void Awake()
+    {
+        if (signalFeedback == null)
+        {
+            signalFeedback = GetComponent<AntigenSignalFeedback>();
+        }
+    }
+
     public bool CanBuild()
     {
         if(CurrentTower == null)
@@ -69,6 +80,10 @@ public class BuildSlot : MonoBehaviour
             if (antibody != null)
             {
                 antibody.RememberAntigen(antigenId, duration);
+                if (signalFeedback != null && currentTower != null)
+                {
+                    signalFeedback.Show(currentTower.transform, neighbor.CurrentTower.transform);
+                }
             }
         }
     }

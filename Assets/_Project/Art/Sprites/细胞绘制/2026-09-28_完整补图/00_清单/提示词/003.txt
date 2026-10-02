@@ -1,0 +1,16 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 中性粒细胞哨兵_LV3B_精准趋化
+a living neutrophil sentinel organoid designed as a defensive tower for a cell-themed strategy game,
+compact round immune cell body leaning slightly forward, a clearly visible three-lobed deep-blue nucleus,
+three to five short soft receptor feelers scanning the path, tiny lime antigen sample vesicles held near its back,
+a small directional membrane pore for firing harmless-looking cyan micro-pulses, not a gun,
+alert but friendly personality expressed only through posture, no human face,
+immune-white body, cool cyan membrane rim, blue nucleus, lime sample accents,
+strong compact silhouette readable at 80 pixels, living organic anatomy rather than machinery
+UPGRADE VARIANT:
+upgrade variant focused on precision sampling:
+keep most feelers folded, extend one elegant long receptor cone with a bright lime sensor tip,
+enlarge and clarify the segmented nucleus, narrower forward-pointing silhouette,
+calm specialist posture, no scope, no rifle, no mechanical sniper references
+FINAL FORMAT: One isolated complete subject on a genuine transparent alpha background, centered with 12% empty margin. 70–75 degree top-down game view. Friendly large shapes, minimum substructure. Target appearance: native 96x96 grid (Boss 160x160), enlarged only with nearest-neighbor. No ground plane or background.
+Draw this single requested asset only. Do not render this prompt as text.

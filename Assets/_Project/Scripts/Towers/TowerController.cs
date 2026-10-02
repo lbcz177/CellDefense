@@ -11,6 +11,8 @@ public class TowerController : MonoBehaviour
     public int UpgradeCostPaid { get; private set; }
     public bool IsUpgraded { get; private set; }
     public const int UpgradeDamageBonusPercent = 50;
+    public float CurrentDamage => Definition == null ? 0f :
+        Definition.Damage * (IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f);
     private const float UpgradeVisualScale = 1.15f;
     [SerializeField]
     private LayerMask enemyLayerMask;
@@ -246,8 +248,7 @@ public class TowerController : MonoBehaviour
 
     private void Attack(EnemyController target)
     {
-        float damageMultiplier = IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f;
-        float damage = Definition.Damage * damageMultiplier;
+        float damage = CurrentDamage;
         if (attackBehaviour != null)
         {
             attackBehaviour.Attack(target, damage, projectilePool);

@@ -1,0 +1,13 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 第三关_氛围概念图
+wide concept art of a stylized blood-vessel defense network from strict orthographic top-down,
+a broad dark-rose vascular channel enters from the left, forks cleanly into upper and lower curved branches at center,
+then rejoins once near the right before reaching a healthy microcirculation exit,
+vessel walls are soft layered membranes rather than a pool of blood,
+two clear valve-like tissue folds sit at the branch entrances,
+cyan-white immune signal fibers run along the vessel wall and split with the route,
+twelve pale attachment niches are integrated into the wall, two with warm-orange active-tissue accents,
+deep plum surroundings, rose vessel interior, cyan signals and sparse gold highlights,
+strategic, urgent, clean and non-gory, no red blood cells filling the gameplay lane, 16:9
+FINAL FORMAT: One full edge-to-edge 16:9 landscape map, strict orthographic top-down, no perspective. Consistent pixel grid, target 640x360 pixel appearance with nearest-neighbor enlargement. Broad simple tissue shapes and low contrast edges, no busy cell texture. Continuous comfortably wide routes, no pinches. No HUD, labels, text, magic portals or caves.
+All older vector/gradient/soft-blur language is overridden by crisp cartoon pixel art. Draw only the requested asset.

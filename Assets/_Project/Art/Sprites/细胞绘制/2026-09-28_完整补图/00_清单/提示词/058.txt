@@ -1,0 +1,15 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 第二关_生产背景
+production-ready top-down background for a deep connective-tissue level,
+two continuous uniform-width organic lanes entering at upper-left and lower-left,
+the lanes remain clearly separate and merge exactly once at the central-right,
+one continuous final lane reaches the middle-right exit,
+large soft collagen ribbons and rounded extracellular-matrix fields in muted rose and burgundy,
+ten to twelve empty attachment clearings with two subtly discolored infected clearings,
+one quiet central signal-hub clearing with faint cyan fibers leading to both route regions,
+no baked glow, no shield, no characters, no tower icons, no arrows, no text,
+low-detail safe bands behind top HUD and bottom tower bar, orthographic 16:9
+Critical layout: maintain the upper route immediately BEFORE its merge at a moderate and readable width: neither a narrow bottleneck nor an oversized plaza. Both entry channels must have comparable width.
+Only background candidate. Do not bake in cyan tower pads, brackets, infection patches, signal lines, endpoint icons or active effects. Quiet empty attachment clearings only.
+FINAL FORMAT: One full edge-to-edge 16:9 landscape map, strict orthographic top-down, no perspective. Consistent pixel grid, target 640x360 pixel appearance with nearest-neighbor enlargement. Broad simple tissue shapes and low contrast edges, no busy cell texture. Continuous comfortably wide routes, no pinches. No HUD, labels, text, magic portals or caves.
+All older vector/gradient/soft-blur language is overridden by crisp cartoon pixel art. Draw only the requested asset.

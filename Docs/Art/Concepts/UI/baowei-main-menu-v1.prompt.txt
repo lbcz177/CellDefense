@@ -1,0 +1,19 @@
+Use case: ui-mockup.
+Asset type: a finished 16:9 PC game title screen / main menu concept, edge-to-edge screen artwork, not a device mockup.
+EDIT TARGET: the supplied existing CellDefense promotional key art. Transform this illustration into a polished main menu for the SAME game. Preserve its recognizable cartoon pixel-art biology, peach-pink tissue environment, white/cyan/blue immune cells, dark plum outlines, golden Y-shaped antibodies and magenta pathogens. Recompose and simplify where needed to make the menu excellent.
+
+PRIMARY REQUEST: The game's Chinese name is exactly "胞卫战". A playful biological tower-defense game, with pathogens entering through a wound and immune cells defending tissue. Match the established friendly game art; no realistic anatomy or gore.
+
+COMPOSITION: Clean, confidently designed title screen. A calm left column occupies roughly 40% of the frame: large readable game logo near its upper third, four vertically aligned menu buttons below it, plenty of breathing room. The right 60% is the lively miniature battlefield, with a readable winding rose-pink passage through peach tissue, several distinct blue-white immune defenders, a few small purple/magenta bacteria approaching from a small wound near the upper-right edge. Let a big friendly macrophage-like blue cell and a golden-antibody cell anchor the right foreground. Keep background scenery and characters away from the menu text. Reduce the source illustration's excessive tiny enemies, glowing network lines, tall tissue pillars and dense textures. Only two or three clear visual depth layers, broad simple shapes. The path is pink like the established maps, with purple limited to pathogens and a small invasion area. No empty cyan tower-placement pads on the title screen.
+
+TYPOGRAPHY AND EXACT TEXT: Render ONLY the following five text strings, all in correct Simplified Chinese:
+Logo: "胞卫战"
+Primary button: "开始游戏"
+Second button: "细胞图鉴"
+Third button: "设置"
+Fourth button: "退出游戏"
+Proofread the title character-by-character: 胞 (月 plus 包), 卫, 战. Do not substitute 保 for 胞. No extra slogan, subtitles, English, version number, labels or annotations.
+Logo is a memorable, bold custom pixel-game wordmark, warm ivory block lettering with a clean dark-plum outline and cyan stepped shadow, very readable. The primary button has the strongest cyan/cream contrast and a tiny gold play triangle. Secondary buttons are quieter cream/peach pixel panels with dark navy lettering. Consistent pixel-step corner treatment, clear spacing, modest 2D inset shading. Do not put the whole menu inside a giant box.
+
+ART STYLE: Cohesive charming 2D cartoon pixel art, matching the input game art. Crisp regular square pixel clusters, stepped silhouettes and minimal shading. Clean enough to read as an actual game screen at normal display size. Chunky pixel motifs, no smooth vector UI, no antialiased typography, no painterly blur, no photorealism, no glossy 3D, no dense particle effects. Warm tissue background; cool blue/cyan defenders; golden highlights; magenta/violet enemies. Gentle highlights from upper-left.
+CONSTRAINTS: One complete standalone main-menu screen. Landscape 16:9, high resolution suitable for a 1920x1080 design preview. Opaque background all the way to the four corners. No external frame, browser chrome, cursor, mockup board, collage, explanatory arrows, diagram labels, promotional poster layout, watermark or additional pages. Make this feel like the actual opening screen of a finished indie pixel-art tower-defense game.

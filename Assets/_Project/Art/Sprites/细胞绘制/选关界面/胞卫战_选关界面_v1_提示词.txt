@@ -1,0 +1,46 @@
+Use case: ui-mockup.
+Asset type: a finished single-screen 16:9 landscape LEVEL SELECTION menu concept for the Chinese indie tower-defense game "胞卫战". This is the actual full-screen game UI, not a presentation board or device mockup.
+
+Input images:
+Image 1: EDIT TARGET / approved main-menu art direction. Transform this screen into a level-selection screen for the SAME game. Match its warm salmon-pink tissue, ivory panels, dark plum stepped outlines, cyan primary controls, golden highlights, and friendly cartoon pixel-art cells.
+Image 2: supporting content reference for the FIRST level thumbnail, a simple wound entering a single winding tissue passage.
+Image 3: supporting content reference for the SECOND level thumbnail, two pink invasion passages merging into one; preserve the unmistakable Y-shaped route.
+Image 4: supporting content reference for the THIRD level thumbnail, deep purple tissue, branching loop route, two cyan valve structures.
+Recreate these thumbnail motifs inside their respective cards without importing any external screenshot borders.
+
+LAYOUT:
+A polished, spacious, readable opening-game UI with exactly THREE large level cards in a single horizontal row. Keep all three cards fully visible.
+Background: simplified peach and pink tissue surface, low contrast, large broad cell shapes, only two or three visual layers. Just a few cream collagen fibers near the outer edges and one small blue immune-cell mascot near the lower-left. Leave the central UI area calm; no active battlefield, gore, floating debris, elaborate scenery or crowd of characters.
+Top-left: modest cream pixel button with left-arrow icon and the word "返回".
+Top center: prominent heading "选择关卡", warm ivory lettering with a dark plum outline and subtle cyan stepped shadow, smaller and simpler than the title-screen logo.
+Top-right: small readable game name "胞卫战", without a giant logo illustration.
+Middle: three ivory/cream cards with chunky plum pixel outlines and restrained peach bevels. Each contains a short level heading above a large landscape map thumbnail and a compact status area below. Match the established menu-button design. Cards do not overlap. The CENTER card is selected: slightly taller than the others, bright cyan double outline, tiny gold selection marker, and full-color thumbnail. The first card is completed; third is locked and visibly subdued.
+Left card:
+ heading "第一关"
+ subtitle "单路防守"
+ thumbnail based on image 2
+ three small golden pixel stars in the footer and status "已通关".
+Center card:
+ heading "第二关"
+ subtitle "双路夹击"
+ thumbnail based on image 3; the merging routes are clear and sufficiently wide
+ footer status "已选择", accented in cyan.
+Right card:
+ heading "第三关"
+ subtitle "深层防线"
+ thumbnail based on image 4, desaturated lavender and lowered contrast but still recognizable
+ a clear ivory/slate pixel padlock centered over the thumbnail
+ footer text "通关第二关解锁". No bright gold completion stars on this locked card.
+Bottom: directly beneath the selected middle card, one large cyan primary button with a golden play triangle and exact label "开始防守". Above the button, one concise dark-plum line "双路入侵，守住汇合处". Leave breathing room below and around it.
+Do not put everything inside one enclosing panel. Keep cards, heading and button distinct. Symmetric balanced composition with the selected center card as the visual focus, readable at game scale.
+
+EXACT SIMPLIFIED CHINESE TEXT only:
+"返回", "选择关卡", "胞卫战",
+"第一关", "单路防守", "已通关",
+"第二关", "双路夹击", "已选择",
+"第三关", "深层防线", "通关第二关解锁",
+"双路入侵，守住汇合处", "开始防守".
+Use each string only in its specified place. Correct characters, no gibberish, no extra labels, no English, no fake resource counters, no version number, no developer annotations.
+
+ART: charming crisp 2D cartoon pixel art faithful to image 1, consistent coarse square pixel clusters, stepped silhouettes, limited clear shading, dark readable Chinese pixel typography. Warm ivory/plum UI, salmon tissue, cool cyan selection, small golden accents. No smooth vector panels, modern website UI, glassmorphism, perspective UI, photorealistic anatomy, shiny 3D, painted blur, noisy micro-detail or heavy bloom.
+One complete cohesive opaque screen, edge-to-edge 16:9, suitable for a 1920x1080 preview. No cursor, watermark, surrounding monitor or extra pages.

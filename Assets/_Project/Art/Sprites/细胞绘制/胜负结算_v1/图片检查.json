@@ -1,0 +1,82 @@
+[
+  {
+    "filename": "01_胜利界面_无按钮.png",
+    "kind": "panel",
+    "width": 1122,
+    "height": 1402,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 1409967,
+    "sha256": "7A19991AD4FB2A1E7B611C4213841B2A0A9AC69EC95A06C6164AD9D180B58223"
+  },
+  {
+    "filename": "02_失败界面_无按钮.png",
+    "kind": "panel",
+    "width": 1122,
+    "height": 1402,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 1342913,
+    "sha256": "694CFE782A435BF97097F99AC1FF6D6A1EEAE451205BC13C47C2D5B561A7D49A"
+  },
+  {
+    "filename": "03_下一关_未选中.png",
+    "kind": "button",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 605702,
+    "sha256": "6F3C6AF7F507F2505C1128911C053E1F7ABCF0A7E4E8D922ED6548886B3C7BFB"
+  },
+  {
+    "filename": "04_下一关_选中.png",
+    "kind": "button",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 698521,
+    "sha256": "C538382A2D58292B3E5CF097A06201EF524AF1A9C4CCC140BB8EDC655D51A206"
+  },
+  {
+    "filename": "05_重新挑战_未选中.png",
+    "kind": "button",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 648469,
+    "sha256": "9C82428EC8B4A3EC61F044886ECFD51C132A87BC6EA6764B0A0548A6CCD91235"
+  },
+  {
+    "filename": "06_重新挑战_选中.png",
+    "kind": "button",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 739068,
+    "sha256": "A45124FD466DB6CE22ADCA985F668FD803BA189AC0C28E1C8D47D93EDA32BD53"
+  },
+  {
+    "filename": "07_返回主菜单_未选中.png",
+    "kind": "button",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 647483,
+    "sha256": "87399CAB1A4237D42752B6A4824997E580903931ECFC23BA754C5276A4EAFA8F"
+  },
+  {
+    "filename": "08_返回主菜单_选中.png",
+    "kind": "button",
+    "width": 2173,
+    "height": 724,
+    "transparentCorners": true,
+    "pixelFormat": "Format32bppArgb",
+    "bytes": 664735,
+    "sha256": "85200E74F1638EE5F35DD07DDD00B67398F57231279FD208450DB65C1D85E962"
+  }
+]

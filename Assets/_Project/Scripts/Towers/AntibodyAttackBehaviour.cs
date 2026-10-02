@@ -5,6 +5,7 @@ using UnityEngine;
 public class AntibodyAttackBehaviour : TowerAttackBehaviour
 {
     [SerializeField, Min(0.01f)] private float markDuration = 4f;
+    [SerializeField] private TimedSpriteIndicator memoryIndicator;
     private readonly Dictionary<AntigenId, float> knownAntigens = new Dictionary<AntigenId, float>();
 
     public void RememberAntigen(AntigenId antigenId, float duration)
@@ -15,6 +16,10 @@ public class AntibodyAttackBehaviour : TowerAttackBehaviour
         }
 
         knownAntigens[antigenId] = Time.time + duration;
+        if (memoryIndicator != null)
+        {
+            memoryIndicator.ShowFor(duration);
+        }
     }
 
     private bool KnowsAntigen(AntigenId antigenId)

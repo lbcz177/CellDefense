@@ -1,0 +1,14 @@
+﻿Use case: stylized-concept. Cell Defense: Wound Invasion, a cohesive friendly microscopic biological tower-defense game. Authentic cartoon low-resolution pixel art, uniform coarse square pixel clusters, clean stepped dark-plum (#382E45) contours, 2–3 discrete shades per material, no antialiasing, no continuous gradients, no blur, no tiny random texture, upper-left block highlights. Use immune white #F6FBFF/cyan #62D4E6/blue #4B78D1 for defenders, magenta #C84078/violet #7546A8 for pathogens, lime #BDE36A sample accents, gold #FFD166 antibodies, orange #FF8A3D inflammation. Non-gory playful biology, strong simplified silhouette. All older wording about vector, flat illustration, soft gradients or soft glow is overridden by this pixel-art requirement. No lettering, labels, numbers, logo or watermark. Exactly ONE asset or one explicitly requested cohesive effect per image, no montage, no multi-object contact sheet. Do not draw a title or filename. Preserve theme and biological structures; no metal weapons, castles, photorealism or horror.
+ASSET: 巨噬细胞清道夫_释放姿势
+a large living macrophage cleaner organoid for a microscopic defense game,
+broad irregular immune cell body resting close to the tissue path,
+two soft wrapping pseudopods form an open protective cradle around a visible internal digestion chamber,
+one off-center deep-blue nucleus and several small recycling vesicles,
+the opening is a membrane pocket with no teeth, tongue, or monster mouth,
+strong wide asymmetrical silhouette suggesting engulfing and cleanup,
+creamy immune-white body, cyan membrane edges, deep blue-violet chamber,
+two tiny gold-lime enzyme droplets stored safely near the rear,
+gentle but powerful, non-gory, not a creature with a face
+KEY POSE ONLY: biological attack release, restrained forward body extension and one small local membrane emission appropriate to this tower; retain anatomy and palette, no separate target or big environment effect.
+FINAL FORMAT: One complete isolated subject on genuine transparent alpha, 70–75 degree top-down game view. Native 96x96 pixel appearance (Boss 160x160), large clear square clusters, centered with 12% empty margin. Single requested pose only, not an animation sheet or composite.
+All older vector/gradient/soft-blur language is overridden by crisp cartoon pixel art. Draw only the requested asset.

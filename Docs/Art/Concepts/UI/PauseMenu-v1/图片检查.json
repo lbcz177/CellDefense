@@ -1,0 +1,51 @@
+[
+  {
+    "filename": "01_空面板.png",
+    "width": 1122,
+    "height": 1402,
+    "transparentCorners": true,
+    "sha256": "D72A96C84A1426F73E4190B836BD3887789107275A257C494B6AFF2F8E7AFAD7"
+  },
+  {
+    "filename": "02_返回游戏_未选中.png",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "sha256": "E5B939520C2F11D02C21541DEDB7FDA3BE4953DE895DB803E59F608E97ABDA0F"
+  },
+  {
+    "filename": "03_返回游戏_选中.png",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "sha256": "651D240FA04A2234AA167AE11AED652E829628EBD41670E15B3B47A73F4AC962"
+  },
+  {
+    "filename": "04_退出到主菜单_未选中.png",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "sha256": "15D7305F064C3639372E60A68D8E8DA472BB42A80737FD7B6CE66E92515E167E"
+  },
+  {
+    "filename": "05_退出到主菜单_选中.png",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "sha256": "65D364D9604CA41B26AFD4773107C84EE802DA76BC1FAA71144E3FD7BD46D542"
+  },
+  {
+    "filename": "06_设置_未选中_v2.png",
+    "width": 2172,
+    "height": 724,
+    "transparentCorners": true,
+    "sha256": "93412D7CE013E0DA20306065C783B0273FBCE0A0EC8D07BB6E6CA8D66F9FDFC9"
+  },
+  {
+    "filename": "07_设置_选中_v2.png",
+    "width": 2171,
+    "height": 724,
+    "transparentCorners": true,
+    "sha256": "D49FF362F15662EA081EE21333225EAA1327087E6B0A1A7A7AB8CAEBA1F08900"
+  }
+]

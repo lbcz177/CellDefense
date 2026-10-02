@@ -1,0 +1,399 @@
+{
+  "commonScale": 0.2594594594594595,
+  "durationSeconds": 0.8,
+  "fps": 10,
+  "frameCount": 8,
+  "frames": [
+    {
+      "duration": 100,
+      "filename": "animation_01",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 334,
+          "w": 322,
+          "x": 73,
+          "y": 82
+        },
+        "sourceCell": {
+          "h": 443,
+          "w": 443,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 128
+      },
+      "visibleBounds": {
+        "h": 86,
+        "w": 83,
+        "x": 23,
+        "y": 26
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_02",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 300,
+          "w": 341,
+          "x": 64,
+          "y": 102
+        },
+        "sourceCell": {
+          "h": 443,
+          "w": 444,
+          "x": 443,
+          "y": 0
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 128
+      },
+      "visibleBounds": {
+        "h": 77,
+        "w": 88,
+        "x": 20,
+        "y": 35
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_03",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 276,
+          "w": 344,
+          "x": 55,
+          "y": 111
+        },
+        "sourceCell": {
+          "h": 443,
+          "w": 443,
+          "x": 887,
+          "y": 0
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 128
+      },
+      "visibleBounds": {
+        "h": 71,
+        "w": 89,
+        "x": 20,
+        "y": 41
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_04",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 331,
+          "w": 330,
+          "x": 64,
+          "y": 82
+        },
+        "sourceCell": {
+          "h": 443,
+          "w": 444,
+          "x": 1330,
+          "y": 0
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 128
+      },
+      "visibleBounds": {
+        "h": 85,
+        "w": 85,
+        "x": 22,
+        "y": 27
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_05",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 368,
+          "w": 285,
+          "x": 98,
+          "y": 30
+        },
+        "sourceCell": {
+          "h": 444,
+          "w": 443,
+          "x": 0,
+          "y": 443
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 0,
+        "y": 0
+      },
+      "visibleBounds": {
+        "h": 95,
+        "w": 73,
+        "x": 28,
+        "y": 17
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_06",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 337,
+          "w": 299,
+          "x": 84,
+          "y": 54
+        },
+        "sourceCell": {
+          "h": 444,
+          "w": 444,
+          "x": 443,
+          "y": 443
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 128,
+        "y": 0
+      },
+      "visibleBounds": {
+        "h": 87,
+        "w": 77,
+        "x": 26,
+        "y": 25
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_07",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 315,
+          "w": 325,
+          "x": 65,
+          "y": 74
+        },
+        "sourceCell": {
+          "h": 444,
+          "w": 443,
+          "x": 887,
+          "y": 443
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 256,
+        "y": 0
+      },
+      "visibleBounds": {
+        "h": 81,
+        "w": 84,
+        "x": 22,
+        "y": 31
+      }
+    },
+    {
+      "duration": 100,
+      "filename": "animation_08",
+      "frame": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "source": {
+        "sourceBounds": {
+          "h": 322,
+          "w": 327,
+          "x": 66,
+          "y": 67
+        },
+        "sourceCell": {
+          "h": 444,
+          "w": 444,
+          "x": 1330,
+          "y": 443
+        }
+      },
+      "unityRect": {
+        "h": 128,
+        "w": 128,
+        "x": 384,
+        "y": 0
+      },
+      "visibleBounds": {
+        "h": 83,
+        "w": 84,
+        "x": 22,
+        "y": 29
+      }
+    }
+  ],
+  "loop": true,
+  "method": "Built-in image_gen poses; Aseprite nearest-neighbor normalization, bottom alignment and sprite-sheet assembly",
+  "name": "葡萄球菌群_移动",
+  "order": "left-to-right then top-to-bottom",
+  "sheet": {
+    "cellHeight": 128,
+    "cellWidth": 128,
+    "columns": 4,
+    "height": 256,
+    "padding": 0,
+    "rows": 2,
+    "width": 512
+  },
+  "sourceHeight": 887,
+  "sourceWidth": 1774,
+  "transitions": [
+    {
+      "from": 1,
+      "rgbaDifference": 0.14618522748905388,
+      "silhouetteChange": 0.1541747572815534,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "rgbaDifference": 0.13659504950890522,
+      "silhouetteChange": 0.14015074353228762,
+      "to": 3
+    },
+    {
+      "from": 3,
+      "rgbaDifference": 0.1976425177489561,
+      "silhouetteChange": 0.22669930333270571,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "rgbaDifference": 0.1795971360312327,
+      "silhouetteChange": 0.2085809806835067,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "rgbaDifference": 0.1253259719729476,
+      "silhouetteChange": 0.12669226106284098,
+      "to": 6
+    },
+    {
+      "from": 6,
+      "rgbaDifference": 0.1276052976971722,
+      "silhouetteChange": 0.13225152129817444,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "rgbaDifference": 0.053790000848824376,
+      "silhouetteChange": 0.04926819212533498,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "rgbaDifference": 0.08563793708338206,
+      "silhouetteChange": 0.07654075546719682,
+      "to": 1
+    }
+  ],
+  "unityPivot": {
+    "x": 0.5,
+    "y": 0.125
+  },
+  "reusedApprovedAsset": true,
+  "action": "Move"
+}

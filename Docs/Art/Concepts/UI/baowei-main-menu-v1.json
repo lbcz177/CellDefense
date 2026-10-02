@@ -1,0 +1,21 @@
+{
+  "title": "胞卫战",
+  "asset": "主菜单效果图",
+  "version": 1,
+  "date": "2026-09-29",
+  "method": "built-in image_gen",
+  "sourceImage": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-46fd70bc-9b83-4940-882f-d4cd9aee206d.png",
+  "referenceImage": "D:\\Desktop\\细胞绘制\\2026-09-28_完整补图\\07_地图与覆盖层\\069__宣传主视觉_v2.png",
+  "projectImage": "E:\\unity\\CellDefense\\Docs\\Art\\Concepts\\UI\\baowei-main-menu-v1.png",
+  "desktopImage": "D:\\Desktop\\细胞绘制\\主界面\\胞卫战_主界面_v1.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "725F74A974EF1A2E8DE8BADC8E1B3DDC2B371F733FE6786CEFF9400AE6FE4760",
+  "menu": [
+    "开始游戏",
+    "细胞图鉴",
+    "设置",
+    "退出游戏"
+  ],
+  "format": "单张主菜单视觉稿，按钮与背景尚未拆层"
+}

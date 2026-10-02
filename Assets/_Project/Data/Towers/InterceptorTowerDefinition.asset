@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: 拦截塔
   prefab: {fileID: -7672387684028090219, guid: c4d01993e8b9467da4bd65b1a2f7c38e, type: 3}
+  buildIcon: {fileID: 21300000, guid: 27af5d86e210a0544b8d6c71a4347a73, type: 3}
   projectilePrefab: {fileID: 11400000, guid: 9d8c4c2a4b8748dd96b25bd87df0584a, type: 3}
   buildCost: 40
   attackRange: 3

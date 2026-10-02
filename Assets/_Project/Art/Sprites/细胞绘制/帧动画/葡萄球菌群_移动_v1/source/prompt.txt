@@ -1,0 +1,27 @@
+Use case: precise-object-edit.
+Asset type: production animation sprite sheet, ONE enemy's eight-frame seamless looping movement animation for Unity.
+Input image 1 is the existing 葡萄球菌群 enemy and the EDIT TARGET. Animate this EXACT creature; preserve its identity, colors, seven spherical bacteria, two lime-green surface marks, dark plum outlines and upper-left highlights. Do not design a new enemy.
+
+OUTPUT IS ONE TRANSPARENT SPRITE SHEET, NOT A POSTER:
+Landscape canvas with exactly 4 columns x 2 rows of equally sized square frame cells. Target canvas 2048 x 1024, each frame cell 512 x 512. No drawn cell boundaries, no frame numbers, no text, no labels. Genuine alpha transparency throughout all empty space.
+Place ONE complete copy of the enemy within EACH of the EIGHT cells. Each stays centered around the same anchor relative to its cell, similar approximately 300-pixel height inside the 512-pixel cell; generous equal transparent margins. Do not clip or cross cells. Keep all frames identically lit and identically detailed.
+Reading order left to right across top row = frames 1 2 3 4, then left to right across bottom row = frames 5 6 7 8.
+
+SUBJECT IDENTITY:
+Seven connected glossy magenta/pink bacteria clustered like the reference, grape-like asymmetric silhouette, same dark purple lower-right shading. The big upper bacterium, left-middle bacterium, central bacterium, right-middle bacterium, lower-left bacterium, lower-center bacterium and tiny lower-right bacterium stay the same identifiable seven objects in every frame. Lime-green markings remain on the same two bacteria. No faces, eyes, legs, appendages, weapon, shadow ellipse or new bubbles. No bacteria appear, disappear, swap places, pop off or change color.
+
+ANIMATION:
+A restrained soft-bodied crawling/jiggling cycle IN PLACE, as the game engine supplies translation along the path. Do not rotate the entire cluster or turn it into a ball. Keep the overall centroid stationary.
+Frame 1: neutral grape cluster.
+Frame 2: begin compressing vertically by roughly 4%, spread sideways slightly; small connected spheres wobble a little.
+Frame 3: maximal modest squash, about 8% shorter and 7% wider, with all seven spheres still clear.
+Frame 4: rebound nearly neutral, upper sphere lifts a little, smaller right-side spheres lag behind.
+Frame 5: maximal modest stretch, about 8% taller and 6% narrower, connected cells gently drawn together.
+Frame 6: begin relaxing from stretch, a subtle opposite wobble through the small spheres.
+Frame 7: mostly neutral height, tiny side-to-side settling in the individual spheres.
+Frame 8: close to frame 1, approximately halfway between frame 7 and the neutral pose, so frame 8 -> frame 1 loops smoothly.
+Changes must be modest and coherent, NOT eight different designs, NOT drastic rotation, NOT dramatic deformation. All frames share identical scale, ground anchor and pixel size. Smooth continuous squash-and-stretch as a living cluster.
+
+PIXEL ART:
+Clean coarse game pixel art faithful to the reference, regular square pixel clusters, stepped edges, 1-2 logical-pixel dark outline, only 4-6 colors per material, no antialiasing, no soft gradient or painterly blur. Draw as if each frame will be used at 128 x 128 native pixels, then enlarged with nearest neighbor; avoid unnecessary tiny details. Distinct magenta highlights, plum shadows, lime-green spots.
+No background scene, tissue, UI, caption, checkerboard painted into the image, watermark, decorative frame or additional elements. EXACTLY eight frames in a perfectly regular 4 x 2 grid.

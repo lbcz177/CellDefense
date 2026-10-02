@@ -1,0 +1,114 @@
+{
+  "game": "胞卫战",
+  "assetSet": "胜负结算_v1",
+  "method": "内置 image_gen 逐项绘制；参考项目内既有主菜单与暂停菜单素材。",
+  "totalImages": 8,
+  "panelsIncludeButtons": false,
+  "files": [
+    {
+      "id": "01_victory_panel",
+      "filename": "01_胜利界面_无按钮.png",
+      "name": "胜利界面",
+      "kind": "panel",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\01_空面板.png",
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\胞卫战_主界面_v1.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset: ONE standalone result PANEL sprite for 胞卫战, a cheerful cartoon pixel-art cell-defense game.\nImage 1 is the EMPTY PANEL edit target. Image 2 is a STYLE reference for the biological pixel-art world ONLY; do not recreate its whole scene or words.\nPreserve the panel's portrait 4:5 composition, approximately 1122x1402 transparent canvas, front-facing stepped rectangular silhouette, thick dark-plum border, simple ivory membrane-like rim and generous uncut transparent margin. No perspective.\nTurn this empty pause panel into a results overlay panel. ALL illustration and title belong in the upper 35% of the panel. Keep the lower 60% a large quiet EMPTY pale cream field for independent Unity buttons and dynamic statistics. No slots, rectangles, buttons, labels, numbers, progress bars or rows baked into the lower area.\nPixel-art UI matching the provided game: crisp square clusters and stepped edges, compact readable silhouettes, restrained 3-tone shading, soft biological motifs, no photorealism or gore. Simple hierarchy with a single centered title, one small centered biological emblem, and only a few small decorative pixels.\nThe only text must be the exact two Chinese characters specified below, set in conventional correct bold Simplified Chinese sans-serif / 黑体 glyphs, NOT distorted decorative pseudo-Chinese. Readable complete strokes are more important than excessive pixel stylization.\nGenuinely transparent outside the panel; opaque cream interior. No black/colored rectangular background or checkerboard. Exactly one panel, no duplicate or comparison, no full-screen scene, no game logo, no button images, no watermark.\nResult: VICTORY. Exact title: “胜利” (胜 利), large and centered in the upper third, light cream/gold fill, deep indigo outline and a short cyan pixel offset, matching the main-menu title's chunky but correct type. Ensure the 月 and 生 in 胜, and 禾 and 刂 in 利 are complete.\nAt top center above the title, a small intact white/cyan immune-cell emblem with a blue nucleus, gently surrounded by two small golden Y-shaped antibodies. A few tiny gold/cyan sparkles signal success, all attached to the header area and inside the silhouette.\nUse cyan/blue rim accents and a very restrained golden highlight. Make the composition feel calm, victorious and friendly. No trophy cup, numeric score, star rating, ribbon with secondary text, celebratory characters or confetti in the empty lower area.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-a626fe46-cbea-47e1-ad4b-1fc71079a1ca.png"
+    },
+    {
+      "id": "02_defeat_panel",
+      "filename": "02_失败界面_无按钮.png",
+      "name": "失败界面",
+      "kind": "panel",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\01_空面板.png",
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\胞卫战_主界面_v1.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset: ONE standalone result PANEL sprite for 胞卫战, a cheerful cartoon pixel-art cell-defense game.\nImage 1 is the EMPTY PANEL edit target. Image 2 is a STYLE reference for the biological pixel-art world ONLY; do not recreate its whole scene or words.\nPreserve the panel's portrait 4:5 composition, approximately 1122x1402 transparent canvas, front-facing stepped rectangular silhouette, thick dark-plum border, simple ivory membrane-like rim and generous uncut transparent margin. No perspective.\nTurn this empty pause panel into a results overlay panel. ALL illustration and title belong in the upper 35% of the panel. Keep the lower 60% a large quiet EMPTY pale cream field for independent Unity buttons and dynamic statistics. No slots, rectangles, buttons, labels, numbers, progress bars or rows baked into the lower area.\nPixel-art UI matching the provided game: crisp square clusters and stepped edges, compact readable silhouettes, restrained 3-tone shading, soft biological motifs, no photorealism or gore. Simple hierarchy with a single centered title, one small centered biological emblem, and only a few small decorative pixels.\nThe only text must be the exact two Chinese characters specified below, set in conventional correct bold Simplified Chinese sans-serif / 黑体 glyphs, NOT distorted decorative pseudo-Chinese. Readable complete strokes are more important than excessive pixel stylization.\nGenuinely transparent outside the panel; opaque cream interior. No black/colored rectangular background or checkerboard. Exactly one panel, no duplicate or comparison, no full-screen scene, no game logo, no button images, no watermark.\nResult: DEFEAT. Exact title: “失败” (失 败), large and centered in the upper third, pale cream fill with a deep muted-plum outline and a short coral offset. Conventional correct bold Chinese glyphs: 失 must not become 夫; 败 must have the full 贝 on the left and 攵 on the right.\nAt top center above the title, a small tired, slightly compressed white/lavender immune-cell emblem with a blue nucleus and lowered two tiny membrane feelers. Beside it, one small purple pathogen bead suggests a breached defense. The cell is intact and cute; no death, blood, gore, skull, severed parts or angry face. One restrained broken cyan signal arc may sit behind the emblem.\nUse muted lavender/plum and coral accents on the same cream frame. Match the victory-panel geometry and hierarchy, but with a subdued, encouraging mood. Do not crack the entire frame or scatter debris. No secondary wording, score, star rating, retry icon or other decorations in the empty lower area.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-19f400ac-e17d-40ae-9f9e-62dc69b816e9.png"
+    },
+    {
+      "id": "03_next_normal",
+      "filename": "03_下一关_未选中.png",
+      "name": "下一关（未选中）",
+      "kind": "button",
+      "state": "normal",
+      "label": "下一关",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\04_退出到主菜单_未选中.png"
+      ],
+      "prompt": "Use case: text-localization.\nAsset: ONE standalone UNSELECTED menu button for the result screen of 胞卫战.\nInput image is the EDIT TARGET. Keep its 2172x724 transparent landscape canvas and preserve the exact centered rectangular button body, stepped pixel corners, dark-plum border, ivory/cream face, white top highlight and salmon-coral short bottom bevel. Front view, no perspective. Keep the button's placement and transparent margins.\nChange ONLY the Chinese label to the exact new text specified below. Render it as correctly formed conventional bold Simplified Chinese 黑体 / sans-serif, solid dark indigo, centered on one line, approximately 180–200 pixels glyph height on this canvas. All strokes must be complete. Keep comfortable side padding and even spacing. Do not invent strokes to imitate pixel art. Correct Chinese text takes priority.\nMatch the existing pixel-game UI border, crisp square clusters and regular stepped silhouette, simple restrained flat shading. No icons, triangle, gear, arrow, star, character, header, secondary text, glow, added texture or shadow extension.\nBackground genuinely transparent outside the button. Exactly one button, no scene, no panel, no state comparison or duplicates.\nExact text: “下一关” (下 一 关). Replace the old label completely with these characters, with no inserted spaces and no other wording.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-e82a910d-5ba2-4f36-a733-69bef929bd82.png"
+    },
+    {
+      "id": "03_next_selected",
+      "filename": "04_下一关_选中.png",
+      "name": "下一关（选中）",
+      "label": "下一关",
+      "kind": "button",
+      "state": "selected",
+      "references": [
+        "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-e82a910d-5ba2-4f36-a733-69bef929bd82.png",
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\05_退出到主菜单_选中.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nTask: Create exactly ONE BLUE SELECTED STATE of the first image's button for 胞卫战.\nImage 1 is the EDIT TARGET (normal/cream state). Image 2 is only a cyan-blue STATE COLOR reference; do not copy its label.\nStrict paired-state invariant: keep exactly Image 1's 2172x724 transparent canvas, button position, silhouette, pixel-step corners, border/bevel dimensions, transparent padding, letter shapes, text size, baseline and spacing. No widening, recentering, resizing or new ornament. Change ONLY the state colors.\nCream face becomes saturated clear cyan/sky blue. White/coral edging becomes bright turquoise top highlights and royal-blue bottom bevel. Outer border deep indigo. Recolor the existing text to pale cream-white with a narrow dark indigo outline for contrast; preserve all correct Chinese strokes from Image 1.\nText must remain EXACTLY “下一关”, on one centered line. Complete and correctly formed standard Simplified Chinese bold sans-serif / 黑体. No changed word, missing stroke, invented glyph, inserted spaces or extra text. Every letter stroke has the same cream-white interior.\nMatch the provided game's simple pixel UI: square clusters and stepped borders, restrained flat shading. No glow, blurred edges, gradients, realistic materials, textures, additional icons or body size changes.\nOutside stays genuinely transparent. No checkerboard, panel, scene, cursor, grid, duplicate buttons or multiple states. One independent selected button image.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-36aa159b-0954-40aa-a3f8-c3e81158c12b.png"
+    },
+    {
+      "id": "05_retry_normal",
+      "filename": "05_重新挑战_未选中.png",
+      "name": "重新挑战（未选中）",
+      "kind": "button",
+      "state": "normal",
+      "label": "重新挑战",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\04_退出到主菜单_未选中.png"
+      ],
+      "prompt": "Use case: text-localization.\nAsset: ONE standalone UNSELECTED menu button for the result screen of 胞卫战.\nInput image is the EDIT TARGET. Keep its 2172x724 transparent landscape canvas and preserve the exact centered rectangular button body, stepped pixel corners, dark-plum border, ivory/cream face, white top highlight and salmon-coral short bottom bevel. Front view, no perspective. Keep the button's placement and transparent margins.\nChange ONLY the Chinese label to the exact new text specified below. Render it as correctly formed conventional bold Simplified Chinese 黑体 / sans-serif, solid dark indigo, centered on one line, approximately 180–200 pixels glyph height on this canvas. All strokes must be complete. Keep comfortable side padding and even spacing. Do not invent strokes to imitate pixel art. Correct Chinese text takes priority.\nMatch the existing pixel-game UI border, crisp square clusters and regular stepped silhouette, simple restrained flat shading. No icons, triangle, gear, arrow, star, character, header, secondary text, glow, added texture or shadow extension.\nBackground genuinely transparent outside the button. Exactly one button, no scene, no panel, no state comparison or duplicates.\nExact text: “重新挑战” (重 新 挑 战). Replace the old label completely with these characters, with no inserted spaces and no other wording.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-6fb9ae75-69f7-4df7-80b8-78a6cb7375dd.png"
+    },
+    {
+      "id": "05_retry_selected",
+      "filename": "06_重新挑战_选中.png",
+      "name": "重新挑战（选中）",
+      "label": "重新挑战",
+      "kind": "button",
+      "state": "selected",
+      "references": [
+        "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-6fb9ae75-69f7-4df7-80b8-78a6cb7375dd.png",
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\05_退出到主菜单_选中.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nTask: Create exactly ONE BLUE SELECTED STATE of the first image's button for 胞卫战.\nImage 1 is the EDIT TARGET (normal/cream state). Image 2 is only a cyan-blue STATE COLOR reference; do not copy its label.\nStrict paired-state invariant: keep exactly Image 1's 2172x724 transparent canvas, button position, silhouette, pixel-step corners, border/bevel dimensions, transparent padding, letter shapes, text size, baseline and spacing. No widening, recentering, resizing or new ornament. Change ONLY the state colors.\nCream face becomes saturated clear cyan/sky blue. White/coral edging becomes bright turquoise top highlights and royal-blue bottom bevel. Outer border deep indigo. Recolor the existing text to pale cream-white with a narrow dark indigo outline for contrast; preserve all correct Chinese strokes from Image 1.\nText must remain EXACTLY “重新挑战”, on one centered line. Complete and correctly formed standard Simplified Chinese bold sans-serif / 黑体. No changed word, missing stroke, invented glyph, inserted spaces or extra text. Every letter stroke has the same cream-white interior.\nMatch the provided game's simple pixel UI: square clusters and stepped borders, restrained flat shading. No glow, blurred edges, gradients, realistic materials, textures, additional icons or body size changes.\nOutside stays genuinely transparent. No checkerboard, panel, scene, cursor, grid, duplicate buttons or multiple states. One independent selected button image.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-21077d49-c99e-4bed-a70b-47047a046665.png"
+    },
+    {
+      "id": "07_menu_normal",
+      "filename": "07_返回主菜单_未选中.png",
+      "name": "返回主菜单（未选中）",
+      "kind": "button",
+      "state": "normal",
+      "label": "返回主菜单",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\04_退出到主菜单_未选中.png"
+      ],
+      "prompt": "Use case: text-localization.\nAsset: ONE standalone UNSELECTED menu button for the result screen of 胞卫战.\nInput image is the EDIT TARGET. Keep its 2172x724 transparent landscape canvas and preserve the exact centered rectangular button body, stepped pixel corners, dark-plum border, ivory/cream face, white top highlight and salmon-coral short bottom bevel. Front view, no perspective. Keep the button's placement and transparent margins.\nChange ONLY the Chinese label to the exact new text specified below. Render it as correctly formed conventional bold Simplified Chinese 黑体 / sans-serif, solid dark indigo, centered on one line, approximately 180–200 pixels glyph height on this canvas. All strokes must be complete. Keep comfortable side padding and even spacing. Do not invent strokes to imitate pixel art. Correct Chinese text takes priority.\nMatch the existing pixel-game UI border, crisp square clusters and regular stepped silhouette, simple restrained flat shading. No icons, triangle, gear, arrow, star, character, header, secondary text, glow, added texture or shadow extension.\nBackground genuinely transparent outside the button. Exactly one button, no scene, no panel, no state comparison or duplicates.\nExact text: “返回主菜单” (返 回 主 菜 单). Replace the old label completely with these characters, with no inserted spaces and no other wording.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-90076b5c-9edd-479e-9bcf-17a0e626230b.png"
+    },
+    {
+      "id": "07_menu_selected",
+      "filename": "08_返回主菜单_选中.png",
+      "name": "返回主菜单（选中）",
+      "label": "返回主菜单",
+      "kind": "button",
+      "state": "selected",
+      "references": [
+        "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-90076b5c-9edd-479e-9bcf-17a0e626230b.png",
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\05_退出到主菜单_选中.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nTask: Create exactly ONE BLUE SELECTED STATE of the first image's button for 胞卫战.\nImage 1 is the EDIT TARGET (normal/cream state). Image 2 is only a cyan-blue STATE COLOR reference; do not copy its label.\nStrict paired-state invariant: keep exactly Image 1's 2172x724 transparent canvas, button position, silhouette, pixel-step corners, border/bevel dimensions, transparent padding, letter shapes, text size, baseline and spacing. No widening, recentering, resizing or new ornament. Change ONLY the state colors.\nCream face becomes saturated clear cyan/sky blue. White/coral edging becomes bright turquoise top highlights and royal-blue bottom bevel. Outer border deep indigo. Recolor the existing text to pale cream-white with a narrow dark indigo outline for contrast; preserve all correct Chinese strokes from Image 1.\nText must remain EXACTLY “返回主菜单”, on one centered line. Complete and correctly formed standard Simplified Chinese bold sans-serif / 黑体. No changed word, missing stroke, invented glyph, inserted spaces or extra text. Every letter stroke has the same cream-white interior.\nMatch the provided game's simple pixel UI: square clusters and stepped borders, restrained flat shading. No glow, blurred edges, gradients, realistic materials, textures, additional icons or body size changes.\nOutside stays genuinely transparent. No checkerboard, panel, scene, cursor, grid, duplicate buttons or multiple states. One independent selected button image.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-086a013c-e494-4152-b371-a0c6ce52b20c.png"
+    }
+  ]
+}

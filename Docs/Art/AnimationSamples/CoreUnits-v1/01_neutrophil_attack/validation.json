@@ -1,0 +1,27 @@
+{
+  "equalSheetFrames": 8,
+  "frameDurationMs": 100,
+  "frameSize": 128,
+  "passed": true,
+  "reopenedFrames": 8,
+  "sheetHeight": 256,
+  "sheetWidth": 512,
+  "transparentFrameEdges": true,
+  "gif": {
+    "height": 384,
+    "durationsMs": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "frames": 8,
+    "loopCount": 0,
+    "width": 384
+  },
+  "uniqueFrames": 8
+}
