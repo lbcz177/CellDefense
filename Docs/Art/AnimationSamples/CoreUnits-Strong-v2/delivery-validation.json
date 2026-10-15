@@ -1,0 +1,131 @@
+{
+  "Passed": true,
+  "Clips": 11,
+  "TowerAttackClips": 5,
+  "EnemyMoveClips": 3,
+  "EnemyAttackClips": 3,
+  "Frames": 88,
+  "SpriteSheets": 11,
+  "AsepriteFiles": 11,
+  "GIFs": 13,
+  "TextureMetas": 101,
+  "GIFChecks": [
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\敌人移动与攻击总览.gif",
+      "Width": 512,
+      "Height": 768,
+      "Frames": 80,
+      "Loop": 0,
+      "CycleMs": 4000.0,
+      "Bytes": 1375323
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\塔攻击总览.gif",
+      "Width": 768,
+      "Height": 512,
+      "Frames": 20,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 341128
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\02_fibrin_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 65316
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\03_lysosome_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 102883
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\04_neural_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 115113
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\05_phagocyte_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 120217
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\06_antibody_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 127117
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\07_staph_move\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 800.0,
+      "Bytes": 115208
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\08_staph_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 106983
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\09_diplococcus_move\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 800.0,
+      "Bytes": 90692
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\10_diplococcus_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 77709
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\11_bacillus_move\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 800.0,
+      "Bytes": 120753
+    },
+    {
+      "Path": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_强化动画_v2\\12_bacillus_attack\\preview.gif",
+      "Width": 384,
+      "Height": 384,
+      "Frames": 8,
+      "Loop": 0,
+      "CycleMs": 1000.0,
+      "Bytes": 109762
+    }
+  ]
+}

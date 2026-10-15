@@ -1,0 +1,2392 @@
+{
+  "root": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制",
+  "work": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03",
+  "created": "2026-10-03T10:19:00.6989172+08:00",
+  "jobs": [
+    {
+      "id": "001",
+      "relative": "2026-09-28_完整补图\\00_已有素材\\巨噬细胞清道夫_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\巨噬细胞清道夫_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\00_已有素材\\巨噬细胞清道夫_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "002",
+      "relative": "2026-09-28_完整补图\\00_已有素材\\抗体B细胞中继_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\抗体B细胞中继_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\00_已有素材\\抗体B细胞中继_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "003",
+      "relative": "2026-09-28_完整补图\\00_已有素材\\溶酶体酸化炮_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\溶酶体酸化炮_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\00_已有素材\\溶酶体酸化炮_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "004",
+      "relative": "2026-09-28_完整补图\\00_已有素材\\神经脉冲刺突_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\神经脉冲刺突_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\00_已有素材\\神经脉冲刺突_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "005",
+      "relative": "2026-09-28_完整补图\\00_已有素材\\纤维蛋白壁垒_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\纤维蛋白壁垒_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\00_已有素材\\纤维蛋白壁垒_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "006",
+      "relative": "2026-09-28_完整补图\\00_已有素材\\中性粒细胞哨兵_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\中性粒细胞哨兵_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\00_已有素材\\中性粒细胞哨兵_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "007",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\001_中性粒细胞哨兵_LV2_趋化强化.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\001_中性粒细胞哨兵_LV2_趋化强化.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\001_中性粒细胞哨兵_LV2_趋化强化.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "008",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\002_中性粒细胞哨兵_LV3A_NET捕获.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\002_中性粒细胞哨兵_LV3A_NET捕获.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\002_中性粒细胞哨兵_LV3A_NET捕获.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "009",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\003_中性粒细胞哨兵_LV3B_精准趋化.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\003_中性粒细胞哨兵_LV3B_精准趋化.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\003_中性粒细胞哨兵_LV3B_精准趋化.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "010",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\005_纤维蛋白壁垒_LV2_纤维致密.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\005_纤维蛋白壁垒_LV2_纤维致密.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\005_纤维蛋白壁垒_LV2_纤维致密.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "011",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\006_纤维蛋白壁垒_LV3A_隔离纤维.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\006_纤维蛋白壁垒_LV3A_隔离纤维.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\006_纤维蛋白壁垒_LV3A_隔离纤维.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "012",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\007_纤维蛋白壁垒_LV3B_稳态凝固.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\007_纤维蛋白壁垒_LV3B_稳态凝固.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\007_纤维蛋白壁垒_LV3B_稳态凝固.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "013",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\009_溶酶体酸化炮_LV2_囊泡储备.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\009_溶酶体酸化炮_LV2_囊泡储备.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\009_溶酶体酸化炮_LV2_囊泡储备.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "014",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\010_溶酶体酸化炮_LV3A_破膜酸化.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\010_溶酶体酸化炮_LV3A_破膜酸化.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\010_溶酶体酸化炮_LV3A_破膜酸化.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "015",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\011_溶酶体酸化炮_LV3B_定向囊泡.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\011_溶酶体酸化炮_LV3B_定向囊泡.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\011_溶酶体酸化炮_LV3B_定向囊泡.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "016",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\013_神经脉冲刺突_LV2_传导增幅.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\013_神经脉冲刺突_LV2_传导增幅.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\013_神经脉冲刺突_LV2_传导增幅.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "017",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\014_神经脉冲刺突_LV3A_信号封锁.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\014_神经脉冲刺突_LV3A_信号封锁.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\014_神经脉冲刺突_LV3A_信号封锁.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "018",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\015_神经脉冲刺突_LV3B_同步电弧.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\015_神经脉冲刺突_LV3B_同步电弧.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\015_神经脉冲刺突_LV3B_同步电弧.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "019",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\017_巨噬细胞清道夫_LV2_伪足加速.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\017_巨噬细胞清道夫_LV2_伪足加速.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\017_巨噬细胞清道夫_LV2_伪足加速.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "020",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\018_巨噬细胞清道夫_LV3A_消化回收.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\018_巨噬细胞清道夫_LV3A_消化回收.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\018_巨噬细胞清道夫_LV3A_消化回收.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "021",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\019_巨噬细胞清道夫_LV3B_巨物裂解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\019_巨噬细胞清道夫_LV3B_巨物裂解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\019_巨噬细胞清道夫_LV3B_巨物裂解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "022",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\021_抗体B细胞中继_LV2_亲和成熟.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\021_抗体B细胞中继_LV2_亲和成熟.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\021_抗体B细胞中继_LV2_亲和成熟.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "023",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\022_抗体B细胞中继_LV3A_克隆记忆.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\022_抗体B细胞中继_LV3A_克隆记忆.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\022_抗体B细胞中继_LV3A_克隆记忆.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "024",
+      "relative": "2026-09-28_完整补图\\01_塔升级\\023_抗体B细胞中继_LV3B_连续中继.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\01_塔升级\\023_抗体B细胞中继_LV3B_连续中继.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\01_塔升级\\023_抗体B细胞中继_LV3B_连续中继.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "025",
+      "relative": "2026-09-28_完整补图\\02_塔图标\\004_中性粒细胞哨兵_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\004_中性粒细胞哨兵_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\02_塔图标\\004_中性粒细胞哨兵_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "026",
+      "relative": "2026-09-28_完整补图\\02_塔图标\\008_纤维蛋白壁垒_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\008_纤维蛋白壁垒_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\02_塔图标\\008_纤维蛋白壁垒_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "027",
+      "relative": "2026-09-28_完整补图\\02_塔图标\\012_溶酶体酸化炮_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\012_溶酶体酸化炮_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\02_塔图标\\012_溶酶体酸化炮_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "028",
+      "relative": "2026-09-28_完整补图\\02_塔图标\\016_神经脉冲刺突_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\016_神经脉冲刺突_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\02_塔图标\\016_神经脉冲刺突_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "029",
+      "relative": "2026-09-28_完整补图\\02_塔图标\\020_巨噬细胞清道夫_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\020_巨噬细胞清道夫_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\02_塔图标\\020_巨噬细胞清道夫_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "030",
+      "relative": "2026-09-28_完整补图\\02_塔图标\\024_抗体B细胞中继_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\024_抗体B细胞中继_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\02_塔图标\\024_抗体B细胞中继_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "031",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\025_葡萄球菌群_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\025_葡萄球菌群_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\025_葡萄球菌群_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "032",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\026_葡萄球菌群_群落聚集.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\026_葡萄球菌群_群落聚集.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\026_葡萄球菌群_群落聚集.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "033",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\027_葡萄球菌群_生物膜软适应.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\027_葡萄球菌群_生物膜软适应.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\027_葡萄球菌群_生物膜软适应.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "034",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\029_鞭毛双球菌_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\029_鞭毛双球菌_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\029_鞭毛双球菌_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "035",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\030_鞭毛双球菌_集群冲刺状态.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\030_鞭毛双球菌_集群冲刺状态.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\030_鞭毛双球菌_集群冲刺状态.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "036",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\031_鞭毛双球菌_被凝血隔离状态.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\031_鞭毛双球菌_被凝血隔离状态.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\031_鞭毛双球菌_被凝血隔离状态.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "037",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\033_重甲芽孢杆菌_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\033_重甲芽孢杆菌_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\033_重甲芽孢杆菌_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "038",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\034_重甲芽孢杆菌_破膜状态.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\034_重甲芽孢杆菌_破膜状态.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\034_重甲芽孢杆菌_破膜状态.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "039",
+      "relative": "2026-09-28_完整补图\\03_普通敌人与状态\\035_重甲芽孢杆菌_吞噬阈值状态.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\035_重甲芽孢杆菌_吞噬阈值状态.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\03_普通敌人与状态\\035_重甲芽孢杆菌_吞噬阈值状态.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "040",
+      "relative": "2026-09-28_完整补图\\04_敌人图标\\028_葡萄球菌群_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\04_敌人图标\\028_葡萄球菌群_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\04_敌人图标\\028_葡萄球菌群_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "041",
+      "relative": "2026-09-28_完整补图\\04_敌人图标\\032_鞭毛双球菌_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\04_敌人图标\\032_鞭毛双球菌_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\04_敌人图标\\032_鞭毛双球菌_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "042",
+      "relative": "2026-09-28_完整补图\\04_敌人图标\\036_重甲芽孢杆菌_图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\04_敌人图标\\036_重甲芽孢杆菌_图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\04_敌人图标\\036_重甲芽孢杆菌_图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "043",
+      "relative": "2026-09-28_完整补图\\04_敌人图标\\041_变异超级真菌_Boss图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\04_敌人图标\\041_变异超级真菌_Boss图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\04_敌人图标\\041_变异超级真菌_Boss图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "044",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\037_变异超级真菌_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\037_变异超级真菌_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\037_变异超级真菌_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "045",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\038_变异超级真菌_阶段一：休眠侵入.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\038_变异超级真菌_阶段一：休眠侵入.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\038_变异超级真菌_阶段一：休眠侵入.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "046",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\039_变异超级真菌_阶段二：孢子播散.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\039_变异超级真菌_阶段二：孢子播散.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\039_变异超级真菌_阶段二：孢子播散.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "047",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\040_变异超级真菌_阶段三：菌丝干扰.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\040_变异超级真菌_阶段三：菌丝干扰.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\040_变异超级真菌_阶段三：菌丝干扰.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "048",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\042_细菌生物膜核心_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\042_细菌生物膜核心_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\042_细菌生物膜核心_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "049",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\043_细菌生物膜核心_护盾脉冲状态.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\043_细菌生物膜核心_护盾脉冲状态.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\043_细菌生物膜核心_护盾脉冲状态.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "050",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\044_细菌生物膜核心_破膜状态.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\044_细菌生物膜核心_破膜状态.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\044_细菌生物膜核心_破膜状态.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "051",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\045_病毒母体_基础.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\045_病毒母体_基础.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\045_病毒母体_基础.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "052",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\046_病毒母体_复制阶段.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\046_病毒母体_复制阶段.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\046_病毒母体_复制阶段.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "053",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\047_病毒母体_变异阶段.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\047_病毒母体_变异阶段.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\047_病毒母体_变异阶段.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "054",
+      "relative": "2026-09-28_完整补图\\05_Boss与阶段\\048_病毒母体_劫持阶段.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\048_病毒母体_劫持阶段.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\05_Boss与阶段\\048_病毒母体_劫持阶段.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "055",
+      "relative": "2026-09-28_完整补图\\06_状态图标\\049_已采样.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\06_状态图标\\049_已采样.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\06_状态图标\\049_已采样.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "056",
+      "relative": "2026-09-28_完整补图\\06_状态图标\\050_已标记.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\06_状态图标\\050_已标记.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\06_状态图标\\050_已标记.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "057",
+      "relative": "2026-09-28_完整补图\\06_状态图标\\051_群落感应.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\06_状态图标\\051_群落感应.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\06_状态图标\\051_群落感应.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "058",
+      "relative": "2026-09-28_完整补图\\06_状态图标\\052_生物膜.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\06_状态图标\\052_生物膜.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\06_状态图标\\052_生物膜.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "059",
+      "relative": "2026-09-28_完整补图\\06_状态图标\\053_集群冲刺.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\06_状态图标\\053_集群冲刺.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\06_状态图标\\053_集群冲刺.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "060",
+      "relative": "2026-09-28_完整补图\\06_状态图标\\054_孢子播散.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\06_状态图标\\054_孢子播散.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\06_状态图标\\054_孢子播散.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "061",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\070_单体子弹.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\070_单体子弹.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\070_单体子弹.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "062",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\071_高频曳光.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\071_高频曳光.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\071_高频曳光.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "id": "063",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\072_命中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\072_命中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\072_命中.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "064",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\073_已采样碎片.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\073_已采样碎片.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\073_已采样碎片.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "065",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\074_基础减速群落隔离环.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\074_基础减速群落隔离环.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\074_基础减速群落隔离环.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "066",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\075_群落信号切断.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\075_群落信号切断.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\075_群落信号切断.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "067",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\076_稳态降炎脉冲.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\076_稳态降炎脉冲.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\076_稳态降炎脉冲.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "068",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\077_慢速酸化囊泡弹.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\077_慢速酸化囊泡弹.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\077_慢速酸化囊泡弹.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1321,
+      "height": 1191
+    },
+    {
+      "id": "069",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\078_囊泡飞行拖尾.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\078_囊泡飞行拖尾.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\078_囊泡飞行拖尾.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "070",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\079_囊泡落地命中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\079_囊泡落地命中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\079_囊泡落地命中.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "071",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\080_酸化区域.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\080_酸化区域.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\080_酸化区域.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1302,
+      "height": 1208
+    },
+    {
+      "id": "072",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\081_生物膜裂纹.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\081_生物膜裂纹.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\081_生物膜裂纹.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "073",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\082_单段电弧.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\082_单段电弧.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\082_单段电弧.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "074",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\083_群落连锁路径.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\083_群落连锁路径.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\083_群落连锁路径.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "id": "075",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\084_信号封锁命中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\084_信号封锁命中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\084_信号封锁命中.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "076",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\085_电击无障碍替代.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\085_电击无障碍替代.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\085_电击无障碍替代.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "077",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\086_伪足包裹弧.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\086_伪足包裹弧.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\086_伪足包裹弧.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1374,
+      "height": 1145
+    },
+    {
+      "id": "078",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\087_清除收缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\087_清除收缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\087_清除收缩.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "079",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\088_生物酶回收滴.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\088_生物酶回收滴.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\088_生物酶回收滴.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "080",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\089_免疫记忆脉冲.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\089_免疫记忆脉冲.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\089_免疫记忆脉冲.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "081",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\090_抗体标记环.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\090_抗体标记环.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\090_抗体标记环.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "082",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\091_样本传递光点.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\091_样本传递光点.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\091_样本传递光点.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "id": "083",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\092_连续中继.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\092_连续中继.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\092_连续中继.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "084",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\093_护盾加速剥离.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\093_护盾加速剥离.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\093_护盾加速剥离.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "085",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\094_物理微脉冲命中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\094_物理微脉冲命中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\094_物理微脉冲命中.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "086",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\095_化学持续伤害Tick.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\095_化学持续伤害Tick.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\095_化学持续伤害Tick.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "087",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\096_控制打断.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\096_控制打断.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\096_控制打断.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "088",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\097_护甲受击但未破.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\097_护甲受击但未破.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\097_护甲受击但未破.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1402,
+      "height": 1122
+    },
+    {
+      "id": "089",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\098_破膜成功.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\098_破膜成功.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\098_破膜成功.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1402,
+      "height": 1122
+    },
+    {
+      "id": "090",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\099_群落感应连线.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\099_群落感应连线.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\099_群落感应连线.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "091",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\100_三段群落量表元素.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\100_三段群落量表元素.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\100_三段群落量表元素.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "092",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘_v2.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘_v2.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘_v2.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1312,
+      "height": 1199
+    },
+    {
+      "id": "093",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\101_生物膜共享边缘.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1312,
+      "height": 1199
+    },
+    {
+      "id": "094",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\102_孢子播散.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\102_孢子播散.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\102_孢子播散.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1230,
+      "height": 1278
+    },
+    {
+      "id": "095",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\103_有效应答区间.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\103_有效应答区间.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\103_有效应答区间.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "096",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\104_过度炎症警告.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\104_过度炎症警告.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\104_过度炎症警告.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "097",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\105_细胞因子风暴（玩法改编）.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\105_细胞因子风暴（玩法改编）.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\105_细胞因子风暴（玩法改编）.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "098",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\106_发热反应_v2.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\106_发热反应_v2.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\106_发热反应_v2.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "099",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\106_发热反应.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\106_发热反应.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\106_发热反应.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "100",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸_v2.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸_v2.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸_v2.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "101",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\107_抗体轰炸.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "102",
+      "relative": "2026-09-28_完整补图\\08_子弹与特效\\108_凝血封锁.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\08_子弹与特效\\108_凝血封锁.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\08_子弹与特效\\108_凝血封锁.png",
+      "kind": "effect",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1230,
+      "height": 1278
+    },
+    {
+      "id": "103",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\109_中性粒细胞哨兵_蓄力姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\109_中性粒细胞哨兵_蓄力姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\109_中性粒细胞哨兵_蓄力姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "104",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\110_中性粒细胞哨兵_释放姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\110_中性粒细胞哨兵_释放姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\110_中性粒细胞哨兵_释放姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "105",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\111_中性粒细胞哨兵_恢复姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\111_中性粒细胞哨兵_恢复姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\111_中性粒细胞哨兵_恢复姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "106",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\112_纤维蛋白壁垒_蓄力姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\112_纤维蛋白壁垒_蓄力姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\112_纤维蛋白壁垒_蓄力姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "107",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\113_纤维蛋白壁垒_释放姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\113_纤维蛋白壁垒_释放姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\113_纤维蛋白壁垒_释放姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "108",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\114_纤维蛋白壁垒_恢复姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\114_纤维蛋白壁垒_恢复姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\114_纤维蛋白壁垒_恢复姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "109",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\115_溶酶体酸化炮_蓄力姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\115_溶酶体酸化炮_蓄力姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\115_溶酶体酸化炮_蓄力姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "110",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\116_溶酶体酸化炮_释放姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\116_溶酶体酸化炮_释放姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\116_溶酶体酸化炮_释放姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "111",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\117_溶酶体酸化炮_恢复姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\117_溶酶体酸化炮_恢复姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\117_溶酶体酸化炮_恢复姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "112",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\118_神经脉冲刺突_蓄力姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\118_神经脉冲刺突_蓄力姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\118_神经脉冲刺突_蓄力姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "113",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\119_神经脉冲刺突_释放姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\119_神经脉冲刺突_释放姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\119_神经脉冲刺突_释放姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "114",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\120_神经脉冲刺突_恢复姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\120_神经脉冲刺突_恢复姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\120_神经脉冲刺突_恢复姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "115",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\121_巨噬细胞清道夫_蓄力姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\121_巨噬细胞清道夫_蓄力姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\121_巨噬细胞清道夫_蓄力姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "116",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\122_巨噬细胞清道夫_释放姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\122_巨噬细胞清道夫_释放姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\122_巨噬细胞清道夫_释放姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "117",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\123_巨噬细胞清道夫_恢复姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\123_巨噬细胞清道夫_恢复姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\123_巨噬细胞清道夫_恢复姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "118",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\124_抗体B细胞中继_蓄力姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\124_抗体B细胞中继_蓄力姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\124_抗体B细胞中继_蓄力姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "119",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\125_抗体B细胞中继_释放姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\125_抗体B细胞中继_释放姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\125_抗体B细胞中继_释放姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "120",
+      "relative": "2026-09-28_完整补图\\09_塔动画关键姿势\\126_抗体B细胞中继_恢复姿势.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\09_塔动画关键姿势\\126_抗体B细胞中继_恢复姿势.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\09_塔动画关键姿势\\126_抗体B细胞中继_恢复姿势.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "121",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\127_葡萄球菌群_移动伸展.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\127_葡萄球菌群_移动伸展.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\127_葡萄球菌群_移动伸展.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "122",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\128_葡萄球菌群_受击压缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\128_葡萄球菌群_受击压缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\128_葡萄球菌群_受击压缩.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "123",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\129_葡萄球菌群_清除溶解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\129_葡萄球菌群_清除溶解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\129_葡萄球菌群_清除溶解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "124",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\130_鞭毛双球菌_移动伸展.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\130_鞭毛双球菌_移动伸展.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\130_鞭毛双球菌_移动伸展.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "125",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\131_鞭毛双球菌_受击压缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\131_鞭毛双球菌_受击压缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\131_鞭毛双球菌_受击压缩.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "126",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\132_鞭毛双球菌_清除溶解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\132_鞭毛双球菌_清除溶解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\132_鞭毛双球菌_清除溶解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "127",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\133_重甲芽孢杆菌_移动伸展.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\133_重甲芽孢杆菌_移动伸展.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\133_重甲芽孢杆菌_移动伸展.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "128",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\134_重甲芽孢杆菌_受击压缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\134_重甲芽孢杆菌_受击压缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\134_重甲芽孢杆菌_受击压缩.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "129",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\135_重甲芽孢杆菌_清除溶解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\135_重甲芽孢杆菌_清除溶解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\135_重甲芽孢杆菌_清除溶解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "130",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\136_变异超级真菌_移动伸展.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\136_变异超级真菌_移动伸展.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\136_变异超级真菌_移动伸展.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "131",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\137_变异超级真菌_受击压缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\137_变异超级真菌_受击压缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\137_变异超级真菌_受击压缩.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "132",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\138_变异超级真菌_清除溶解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\138_变异超级真菌_清除溶解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\138_变异超级真菌_清除溶解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "133",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\139_细菌生物膜核心_移动伸展.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\139_细菌生物膜核心_移动伸展.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\139_细菌生物膜核心_移动伸展.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "134",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\140_细菌生物膜核心_受击压缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\140_细菌生物膜核心_受击压缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\140_细菌生物膜核心_受击压缩.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "135",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\141_细菌生物膜核心_清除溶解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\141_细菌生物膜核心_清除溶解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\141_细菌生物膜核心_清除溶解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "136",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\142_病毒母体_移动伸展.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\142_病毒母体_移动伸展.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\142_病毒母体_移动伸展.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "137",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\143_病毒母体_受击压缩.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\143_病毒母体_受击压缩.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\143_病毒母体_受击压缩.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "138",
+      "relative": "2026-09-28_完整补图\\10_敌人动画关键姿势\\144_病毒母体_清除溶解.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\10_敌人动画关键姿势\\144_病毒母体_清除溶解.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\10_敌人动画关键姿势\\144_病毒母体_清除溶解.png",
+      "kind": "unit",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "139",
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\149_ATP资源图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\11_塔位资源与技能\\149_ATP资源图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\11_塔位资源与技能\\149_ATP资源图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "140",
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\150_免疫记忆点图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\11_塔位资源与技能\\150_免疫记忆点图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\11_塔位资源与技能\\150_免疫记忆点图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "141",
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\151_发热反应技能图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\11_塔位资源与技能\\151_发热反应技能图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\11_塔位资源与技能\\151_发热反应技能图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "142",
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\152_抗体轰炸技能图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\11_塔位资源与技能\\152_抗体轰炸技能图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\11_塔位资源与技能\\152_抗体轰炸技能图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "143",
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\153_凝血封锁技能图标.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\11_塔位资源与技能\\153_凝血封锁技能图标.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\2026-09-28_完整补图\\11_塔位资源与技能\\153_凝血封锁技能图标.png",
+      "kind": "icon",
+      "colors": 256,
+      "medianLimit": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "144",
+      "relative": "主界面\\胞卫战_主界面_v1.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\胞卫战_主界面_v1.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\主界面\\胞卫战_主界面_v1.png",
+      "kind": "screen",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "145",
+      "relative": "主界面\\按钮_v1\\01_开始游戏_v1.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\按钮_v1\\01_开始游戏_v1.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\主界面\\按钮_v1\\01_开始游戏_v1.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "146",
+      "relative": "主界面\\按钮_v1\\02_细胞图鉴_v1.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\按钮_v1\\02_细胞图鉴_v1.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\主界面\\按钮_v1\\02_细胞图鉴_v1.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2069,
+      "height": 760
+    },
+    {
+      "id": "147",
+      "relative": "主界面\\按钮_v1\\03_设置_v1.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\按钮_v1\\03_设置_v1.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\主界面\\按钮_v1\\03_设置_v1.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "148",
+      "relative": "主界面\\按钮_v1\\04_退出游戏_v1.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\主界面\\按钮_v1\\04_退出游戏_v1.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\主界面\\按钮_v1\\04_退出游戏_v1.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2070,
+      "height": 760
+    },
+    {
+      "id": "149",
+      "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "150",
+      "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "151",
+      "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "152",
+      "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "153",
+      "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "154",
+      "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "155",
+      "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "156",
+      "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "157",
+      "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "158",
+      "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "159",
+      "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "160",
+      "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\animation.aseprite",
+      "gifRelative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\preview.gif",
+      "framesRelative": [
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_01.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_02.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_03.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_04.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_05.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_06.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_07.png",
+        "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_08.png"
+      ]
+    },
+    {
+      "id": "161",
+      "relative": "帧动画\\葡萄球菌群_移动_v1\\staph_move_sheet.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\葡萄球菌群_移动_v1\\staph_move_sheet.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\帧动画\\葡萄球菌群_移动_v1\\staph_move_sheet.png",
+      "kind": "animation",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 512,
+      "height": 256,
+      "aseRelative": "帧动画\\葡萄球菌群_移动_v1\\staph_move.aseprite",
+      "gifRelative": "帧动画\\葡萄球菌群_移动_v1\\staph_move_preview.gif",
+      "framesRelative": [
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_01.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_02.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_03.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_04.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_05.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_06.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_07.png",
+        "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_08.png"
+      ]
+    },
+    {
+      "id": "162",
+      "relative": "暂停菜单_v1\\01_空面板.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\01_空面板.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\01_空面板.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "id": "163",
+      "relative": "暂停菜单_v1\\02_返回游戏_未选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\02_返回游戏_未选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\02_返回游戏_未选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "164",
+      "relative": "暂停菜单_v1\\03_返回游戏_选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\03_返回游戏_选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\03_返回游戏_选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "165",
+      "relative": "暂停菜单_v1\\04_退出到主菜单_未选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\04_退出到主菜单_未选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\04_退出到主菜单_未选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "166",
+      "relative": "暂停菜单_v1\\05_退出到主菜单_选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\05_退出到主菜单_选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\05_退出到主菜单_选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "167",
+      "relative": "暂停菜单_v1\\06_设置_未选中_v2.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\06_设置_未选中_v2.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\06_设置_未选中_v2.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "168",
+      "relative": "暂停菜单_v1\\07_设置_选中_v2.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停菜单_v1\\07_设置_选中_v2.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\暂停菜单_v1\\07_设置_选中_v2.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2171,
+      "height": 724
+    },
+    {
+      "id": "169",
+      "relative": "胜负结算_v1\\01_胜利界面_无按钮.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\01_胜利界面_无按钮.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\01_胜利界面_无按钮.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "id": "170",
+      "relative": "胜负结算_v1\\02_失败界面_无按钮.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\02_失败界面_无按钮.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\02_失败界面_无按钮.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "id": "171",
+      "relative": "胜负结算_v1\\03_下一关_未选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\03_下一关_未选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\03_下一关_未选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "172",
+      "relative": "胜负结算_v1\\04_下一关_选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\04_下一关_选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\04_下一关_选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "173",
+      "relative": "胜负结算_v1\\05_重新挑战_未选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\05_重新挑战_未选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\05_重新挑战_未选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "174",
+      "relative": "胜负结算_v1\\06_重新挑战_选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\06_重新挑战_选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\06_重新挑战_选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "175",
+      "relative": "胜负结算_v1\\07_返回主菜单_未选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\07_返回主菜单_未选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\07_返回主菜单_未选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2172,
+      "height": 724
+    },
+    {
+      "id": "176",
+      "relative": "胜负结算_v1\\08_返回主菜单_选中.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\胜负结算_v1\\08_返回主菜单_选中.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\胜负结算_v1\\08_返回主菜单_选中.png",
+      "kind": "ui",
+      "colors": 256,
+      "medianLimit": 6,
+      "width": 2173,
+      "height": 724
+    },
+    {
+      "id": "177",
+      "relative": "选关界面\\胞卫战_选关界面_v1.png",
+      "input": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\选关界面\\胞卫战_选关界面_v1.png",
+      "output": "E:\\unity\\CellDefense\\Docs\\Art\\AsepriteCleanup\\2026-10-03\\staged\\选关界面\\胞卫战_选关界面_v1.png",
+      "kind": "screen",
+      "colors": 256,
+      "medianLimit": 4,
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "excluded": [
+    {
+      "relative": "2026-09-28_完整补图\\00_已有素材\\第二关_双入口最新调整.png",
+      "reason": "map or terrain element",
+      "sha256": "01C53A0D0FF33DCA6AEF9DCE1242BF68CEA39C9252847EFF1D2EF44E8C2D8C9F"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\00_已有素材\\第一关_六塔位确认版.png",
+      "reason": "map or terrain element",
+      "sha256": "3055857DF71F57A77246E11EC0F6D7C266B61900F114A143A3044E9CFCB561B9"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\00_已有素材\\早期普通病原体_概念留档.png",
+      "reason": "original source or archive",
+      "sha256": "C184C072872225BDA5DD45842154541AEB2E2C76F742DD2E74580D40FE9C1B36"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\055_第一关_生产背景_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "F11D198DB742679489767BC11D0F9462C8A1FB0C1EA8B92D306FD92C3E7E0C1C"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\055_第一关_生产背景.png",
+      "reason": "map or terrain element",
+      "sha256": "FE1F6616BD1AD65BB5BDF836950C1920FC770200FF991F634F145C9C95C32620"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\056_第一关_路径蒙版参考.png",
+      "reason": "map or terrain element",
+      "sha256": "A8EEA1BFD3C18ECCED4A7568FC7658326207CBC2639B36F711AFD176523FE7ED"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\057_第一关_关卡选择卡_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "6F1605894C7F8C869701B4A6C4C1DB4C60D640BD7E022011E178E76C24C3DD14"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\057_第一关_关卡选择卡.png",
+      "reason": "map or terrain element",
+      "sha256": "7569899F39DE1C19F09112E34E82FCA2F2911D308E2D13B396673B094DDC6939"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\058_第二关_生产背景_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "9D4A0F90BADB418C307FA6C44BDD10B98093BAB2A065D022E00DD8F530999308"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\058_第二关_生产背景.png",
+      "reason": "map or terrain element",
+      "sha256": "733223459AA983ADC59550E7C68C65C4376A96E399A8555D7B0DC4A8E6095AC0"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\059_第二关_双路线蒙版参考.png",
+      "reason": "map or terrain element",
+      "sha256": "BD4779E35B4D05F105367E494228B35F2264E94A8792C864404D9F8C52372888"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\060_第二关_感染覆盖层.png",
+      "reason": "map or terrain element",
+      "sha256": "C348785A2160DC44C254DDF0C4ED7095290033CA5B167C40A65E5C1F0BA42B7B"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\061_第二关_关卡选择卡_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "994EF3D7BB11F12E99D52437EFA7593CBCA8D74B0B4E3833D39FE24E64C9A96D"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\061_第二关_关卡选择卡.png",
+      "reason": "map or terrain element",
+      "sha256": "2FDB3DBA1F30E9BA36D899FD559651B993AF22FCBE3D48DB5F174FCECC583B2A"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\062_第三关_氛围概念图_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "58061D6BA0D544BC146B3E5BB97BBCBDF29F55EEDB8183F53F29EA18C6E08A77"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\062_第三关_氛围概念图.png",
+      "reason": "map or terrain element",
+      "sha256": "D947F19912DF6187261A66D8EF19B2B3C75EA9EC1E1A28B6A47089731F9B369E"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\063_第三关_生产背景_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "F9DEC70F59F3E0415ECFAAD067D79E71BB6DE646D130C4AFA53E2484C22F9AF8"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\063_第三关_生产背景.png",
+      "reason": "map or terrain element",
+      "sha256": "C86B989857B50140469228F90085809C48F17459EDC7E4434A3C2D08D0C7D8B0"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\064_第三关_分叉路线蒙版参考.png",
+      "reason": "map or terrain element",
+      "sha256": "02C88C25089DCAE2E9FB7A41A2FF25C2526835561098CF75CAF5CD060B0690D0"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\065_第三关_血管阀门覆盖层.png",
+      "reason": "map or terrain element",
+      "sha256": "796765E6E8A844AD15CFEEC1752533211A13A55B246D0614395945AAE5D721E1"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\066_第三关_关卡选择卡_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "142E15FCE5D9CB2024BD31AD25C2C692E6E5A5C48B45780853FB5BB25715F447"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\066_第三关_关卡选择卡.png",
+      "reason": "map or terrain element",
+      "sha256": "59DAB809A33D2AEF9F5C7598E18652D1DBE24D33676AE33C8B95B25D0519BD70"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\067__信号节点底图.png",
+      "reason": "map or terrain element",
+      "sha256": "25F1F05BA171781CDB8CE9B575B691BC1E158967991BEC9AD76FEA41DFDE126A"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\068__信号纤维纹理.png",
+      "reason": "map or terrain element",
+      "sha256": "734C7D667D7CB46F45B6C49D707B5D094F819238CE547B129B6DE6EB202564A8"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\069__宣传主视觉_v2.png",
+      "reason": "map or terrain element",
+      "sha256": "A289AC0D63591576B3861982A87524E1B627C182740FA71118B982904313B20F"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\07_地图与覆盖层\\069__宣传主视觉.png",
+      "reason": "map or terrain element",
+      "sha256": "4726C36213422A93D862EC52CDF955DEBF0AE2BD79966CCCA9AD5FEAAEF4F559"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\145_近路吞噬塔位.png",
+      "reason": "map or terrain element",
+      "sha256": "42313B3F9F7D96F531886BB57E14A821C26CBBD74C226B8B4389F31EF773AB49"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\146_信号枢纽塔位.png",
+      "reason": "map or terrain element",
+      "sha256": "6F7569FAB336398A0CB3B38D06CE0703C05AA367D97806F2AECCEA673259C2AD"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\147_活性组织塔位.png",
+      "reason": "map or terrain element",
+      "sha256": "287C669AF5D5B4641240D1799F4702E234EE526273551DF0B36BAE70ED15D40B"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\148_感染塔位.png",
+      "reason": "map or terrain element",
+      "sha256": "B4EADC75E9CE2F92C6C94242CE04ED3CE69F2EBEEFC431F34FD5CED4FDA5FDD8"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\154_伤口入口覆盖层.png",
+      "reason": "map or terrain element",
+      "sha256": "079C3EF33C360D280F131BB72143483F26C4688E838D8B0C88453269C3AF8DDA"
+    },
+    {
+      "relative": "2026-09-28_完整补图\\11_塔位资源与技能\\155_深层组织保护目标.png",
+      "reason": "map or terrain element",
+      "sha256": "634F0F3F28F5FAE2794905B1C5986A36223EEE1049D14A54CBAF46D08BD77C74"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "70F9D0F91E7973DEDF500CB7D66A41377F6E79DF47F39D1E8832B60018602953"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "3DB73DBD043721310288C0B42FD51AD376A569025730552539281BA757F256C4"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "A93C5B1A62441B53456E2E68F6D651D5489AA56CB2F4E903993E33BAB260EB61"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "2244DF05ED817182311A2334C452F5C624496938807F5E0E17039B797C5058C0"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "85C71C09022B97FFB498598FFF832B4215A91D8570194F108EBB7520FF99680C"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "4FBC7913D3F01C01B17608776585749735200D8752F78C1D469267C11024D832"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "6B52F8524802F4E0F8AFDB08911D23976FE34676408A00A7F1B2C6C617494670"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "63350E7F22468F1E160B341501679ECF48327C45D1F8F4D2E6CCFA288BB1A5F0"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "5D20587BAD6D2CA278457263DF03CD8080E63511F8177E0CE7048A4253BEB45B"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "2284958524373A0B82C642F6B0B2FC34B150CB9C26A4389A1C062816DCCB6A0A"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "C7ADD1EDB56A1AB2CC49B5D0ACE518DB9E99F46F4D3CE4EE8CFB7048556EC6B8"
+    },
+    {
+      "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "1E907A37EDBA4DE7FC826292FCBCD81363C8071E0BBA36938E38EF35DDE8FD60"
+    },
+    {
+      "relative": "帧动画\\葡萄球菌群_移动_v1\\source\\generated-poses.png",
+      "reason": "original source or archive",
+      "sha256": "6B52F8524802F4E0F8AFDB08911D23976FE34676408A00A7F1B2C6C617494670"
+    },
+    {
+      "relative": "暂停菜单_v1\\旧版\\06_设置_未选中.png",
+      "reason": "original source or archive",
+      "sha256": "A8C2A5FF2956761DD89636447B39AA3FFD10C06FB58A0FAB0289135C93414D65"
+    },
+    {
+      "relative": "暂停菜单_v1\\旧版\\07_设置_选中.png",
+      "reason": "original source or archive",
+      "sha256": "CF97495783DB5E825FD9791AC174D621C19F8B1DE1B65F60CA425FAA66E8534A"
+    },
+    {
+      "relative": "试玩关_完整地图_v1\\试玩关_开放组织大地图.png",
+      "reason": "map or terrain element",
+      "sha256": "DD99C9E99F861C33C14EB2E7EBB25FD69AF7792DE1AC38F6AA7A3FD28293E17F"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\01_普通组织地块.png",
+      "reason": "map or terrain element",
+      "sha256": "050762EC846F34D6781116EB04DA7E096E7672FBD7441C7475973C4D7BF36B60"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\02_细胞纹理地块.png",
+      "reason": "map or terrain element",
+      "sha256": "11E8E30652F44A34FE1DDB8046CC11878A7E9129D0403F5259106C0B1E710449"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\03_纤维纹理地块.png",
+      "reason": "map or terrain element",
+      "sha256": "6BBAF81A329AB0B4A71492A562F63D0F15C5D11EEE4FFC50EF7B7DBE40D07CE8"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\制作记录~\\preview_3x3.png",
+      "reason": "map or terrain element",
+      "sha256": "34B676D2D49DCF3B034E520F0334025892BCE6171F7EA1A21D455FFBCEF11EB1"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\制作记录~\\preview_samples.png",
+      "reason": "map or terrain element",
+      "sha256": "FA89531BA9571B67AF33E58DCF849313D65E6B67F8E8D336A9938AACD8CAD022"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\制作记录~\\source_tissue_cells.png",
+      "reason": "map or terrain element",
+      "sha256": "48A62C9C8D9DD17F62BB723CA87E91D15838E9AE5A5C7BA87D51788861F993F0"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\制作记录~\\source_tissue_fiber.png",
+      "reason": "map or terrain element",
+      "sha256": "F79CB3E7BA592CCA60D4757A91A9108B59EDF78396F4DC84F07C92AD57579244"
+    },
+    {
+      "relative": "试玩关_方块样块_v1\\制作记录~\\source_tissue_plain.png",
+      "reason": "map or terrain element",
+      "sha256": "2A5ECF9A01DF0E1472A154DE790E45B64997DF0C05A54A9DFDE4073B3B2413F6"
+    }
+  ]
+}

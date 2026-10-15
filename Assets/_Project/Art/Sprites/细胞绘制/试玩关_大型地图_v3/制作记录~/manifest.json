@@ -1,0 +1,32 @@
+[
+  {
+    "file": "01_大型地图_错位组织岛.png",
+    "width": 1448,
+    "height": 1086,
+    "pixelsPerUnit": 60.333333333333336,
+    "worldWidth": 24,
+    "worldHeight": 18.0,
+    "sha256": "D0CAFBDB7DE7DFE3F8BDE80321E08E6ECC9BA266322D317C40540D3B8DB6D789",
+    "method": "Built-in image_gen"
+  },
+  {
+    "file": "02_大型地图_分段组织屏障.png",
+    "width": 1448,
+    "height": 1086,
+    "pixelsPerUnit": 60.333333333333336,
+    "worldWidth": 24,
+    "worldHeight": 18.0,
+    "sha256": "39AD3D320215D9BDFD7C915073904B4D2F0D022C04008A1467D3B5BF23E8D220",
+    "method": "Built-in image_gen"
+  },
+  {
+    "file": "03_大型地图_宽阔回廊.png",
+    "width": 1448,
+    "height": 1086,
+    "pixelsPerUnit": 60.333333333333336,
+    "worldWidth": 24,
+    "worldHeight": 18.0,
+    "sha256": "49A7F5688FA0D7074AEBDCA896421DBD0CDB4E055E9C09B36264E303EB015137",
+    "method": "Built-in image_gen"
+  }
+]

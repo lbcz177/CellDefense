@@ -8,6 +8,15 @@ public class AntibodyAttackBehaviour : TowerAttackBehaviour
     [SerializeField] private TimedSpriteIndicator memoryIndicator;
     private readonly Dictionary<AntigenId, float> knownAntigens = new Dictionary<AntigenId, float>();
 
+    public override bool RequiresProjectile => true;
+    public override bool RequiresDamage => false;
+
+    public override void Initialize(TowerDefinition definition, LayerMask enemyLayers)
+    {
+        EnemyRangeQuery.RequirePositive(markDuration, nameof(markDuration));
+        knownAntigens.Clear();
+    }
+
     public void RememberAntigen(AntigenId antigenId, float duration)
     {
         if (duration <= 0f)
@@ -36,7 +45,7 @@ public class AntibodyAttackBehaviour : TowerAttackBehaviour
     public override int GetTargetPriority(EnemyController target)
     {
         if (target == null || target.Definition == null ||
-            !KnowsAntigen(target.Definition.AntigenId))
+            !KnowsAntigen(target.CurrentAntigenId))
         {
             return 0;
         }
@@ -61,13 +70,18 @@ public class AntibodyAttackBehaviour : TowerAttackBehaviour
         }
 
         bool canMark = target.Definition != null &&
-            KnowsAntigen(target.Definition.AntigenId);
-        if (canMark && target.GetComponent<EnemyImmuneState>() == null)
+            KnowsAntigen(target.CurrentAntigenId);
+        if (!canMark)
         {
-            throw new InvalidOperationException("Enemy prefab needs an EnemyImmuneState component for antibody attacks.");
+            return;
+        }
+        EnemyImmuneState immuneState = target.GetComponent<EnemyImmuneState>();
+        if (immuneState == null || !immuneState.isActiveAndEnabled)
+        {
+            throw new InvalidOperationException("Enemy prefab needs an enabled EnemyImmuneState component for antibody attacks.");
         }
 
         Projectile projectile = projectilePool.Get(transform.position);
-        projectile.Initialize(target, damage, canMark ? markDuration : 0f);
+        projectile.InitializeMark(target, markDuration);
     }
 }

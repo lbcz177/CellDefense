@@ -1,0 +1,13 @@
+{
+  "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\试玩关_绕路地图_v2\\试玩关_底部双入口_中央障碍.png",
+  "width": 1464,
+  "height": 1074,
+  "sha256": "18D680CE9BAD8C1A21DE9C7FB14BFBD805DCDB9CEC097A8F24558FF5FCF5E9D4",
+  "method": "Built-in image_gen",
+  "entrances": 2,
+  "obstacles": 3,
+  "core": "center",
+  "unitySpriteMode": "Single",
+  "filter": "Point",
+  "pixelsPerUnit": 100
+}

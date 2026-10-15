@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9243595e57a7f3b4eb2d61719149c47c, type: 3}
+  m_Name: EnemyRoster03_Wave03
+  m_EditorClassIdentifier:
+  enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+  enemyCount: 73
+  spawnInterval: 0.08
+  burstSize: 6
+  burstInterval: 1.6
+  groups:
+  - enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 7244d815e36874629ac9b3bc7aa9504f, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: b5eceeafab1560a762e4a95f77263bea, type: 2}
+    count: 4
+    burstSize: 4
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 7244d815e36874629ac9b3bc7aa9504f, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: b5eceeafab1560a762e4a95f77263bea, type: 2}
+    count: 4
+    burstSize: 4
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: bce234a749f403c314814b6c5e33cf3f, type: 2}
+    count: 1
+    burstSize: 1
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 7244d815e36874629ac9b3bc7aa9504f, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: b5eceeafab1560a762e4a95f77263bea, type: 2}
+    count: 4
+    burstSize: 4
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 7244d815e36874629ac9b3bc7aa9504f, type: 2}
+    count: 2
+    burstSize: 2
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: b5eceeafab1560a762e4a95f77263bea, type: 2}
+    count: 4
+    burstSize: 4
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+    count: 6
+    burstSize: 6
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: 43aa2b17a523f47c83dac17ce46c39f5, type: 2}
+    count: 5
+    burstSize: 5
+    afterDelay: 1.6
+  - enemy: {fileID: 11400000, guid: bdabe8d6172f8c87cc39ca74bed7b30d, type: 2}
+    count: 1
+    burstSize: 1
+    afterDelay: 1.6

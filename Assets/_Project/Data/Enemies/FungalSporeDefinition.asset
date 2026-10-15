@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d4742dd96d5e346bf7912855a9a839, type: 3}
+  m_Name: FungalSporeDefinition
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1548251395116818521, guid: bb746026de66d72a3e7a73ef56f098c3, type: 3}
+  maxHealth: 30
+  killReward: 0
+  displayName: 真菌孢子
+  baseMoveSpeed: 2.4
+  leakDamage: 1
+  antigenId: 5
+  engulfImmune: 0
+  isBoss: 0
+  armorReduction: 0
+  armorBreakDuration: 3
+  initialShield: 0
+  slowEffectiveness: 1
+  stunEffectiveness: 1
+  stunRecoveryDuration: 0.5

@@ -1,0 +1,37 @@
+{
+  "VerifiedNativeCopies": [
+    {
+      "Path": "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+      "Hash": "BFBF69ADA2DB7B631CAE5C6CADBBC489DE48B9C413D42A22235892B7332C8C67",
+      "OriginalMetaPreserved": true
+    },
+    {
+      "Path": "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+      "Hash": "D21E4F5B3A34031400652D1F7FF324516F9DAD3F55F73760C6EEAB1E069EF268",
+      "OriginalMetaPreserved": true
+    },
+    {
+      "Path": "Assets/_Project/Scenes/Prototype.unity",
+      "Hash": "8B3E958B41A755C4F20F533DD23B5633519B6A8651A331C9429F54E4056D98B1",
+      "OriginalMetaPreserved": true
+    },
+    {
+      "Path": "Assets/_Project/Scenes/Level02.unity",
+      "Hash": "B7C605554DD01BCFF4DFD2DCAD76343260A87FF081FA28A60CEA2B158262A017",
+      "OriginalMetaPreserved": true
+    },
+    {
+      "Path": "Assets/_Project/Prefabs/Towers/Tower.prefab",
+      "Hash": "18FFA164D625A157047360B334D58AA36E1F5EFCA0BD057696BD21E2DA41011E",
+      "OriginalMetaPreserved": true
+    },
+    {
+      "Path": "Assets/_Project/Prefabs/Enemies/Enemy.prefab",
+      "Hash": "75E2F8D8A348EE940E4F6344EEE945F0D0291558D3D2B3938C8F530F1666B8A5",
+      "OriginalMetaPreserved": true
+    }
+  ],
+  "ExistingLevelCount": 4,
+  "DemoSceneInAssets": false,
+  "AnimationAssetsMatchNativeValidation": true
+}

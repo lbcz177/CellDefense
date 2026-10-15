@@ -1,0 +1,27 @@
+Tool: built-in image_gen; 2026-10-14.
+Style reference: 试玩关_绕路地图_v2/试玩关_底部双入口_中央障碍.png
+Final image: 第三关_开放入口_双竖短墙_v1.png
+
+Initial composition prompt:
+Use case: stylized-concept / pixel-art game environment.
+Create a THIRD LEVEL VARIANT derived from the referenced CellDefense map. The input is a STYLE REFERENCE and environment reference; rearrange its gameplay composition according to the instructions below.
+Deliver ONE complete landscape top-down map, approximately 1536x1024, opaque background, no frame outside the map. Match the existing game's warm peach-pink wound-interior floor, rounded coral tissue masses, cream collagen rims, turquoise outline around the protected core, cheerful stylized pixel art. Do not make it realistic or anatomically detailed. Consistent crisp block-shaped pixels and clean limited-color shading, no soft focus or grain.
+
+CRITICAL LAYOUT:
+- Protected core remains exactly in the CENTER of the image. Same simple three pale-pink cell cluster enclosed by a teal/turquoise membrane, small enough to leave spacious playable floor around it.
+- EXACTLY TWO enemy entrances, located at the MIDPOINT of the LEFT edge and the MIDPOINT of the RIGHT edge, facing inward horizontally. They are recognizable dark magenta wound openings splitting the outer cream tissue border. NO entrances on the bottom or top edge.
+- EXACTLY TWO short freestanding VERTICAL tissue WALLS, one just inside the left entrance at x=26% of image width, and one just inside the right entrance at x=74%. Both centered vertically at y=50%. Each wall runs north-south from approximately y=36% to y=64%, has rounded ends and is only about 6% of map width in thickness. They look like several tidy pink tissue cells stacked vertically, wrapped with a simple cream collagen outline. They are obstacles made from the same tissue art as the reference, NOT brick walls, stone, fences or buildings.
+- These walls BLOCK the direct straight line from each side entrance to the central core; an incoming unit must initially turn upward or downward and walk around a wall end, then turn toward the center.
+- Walls must be visibly separate from the outer border, with WIDE CLEAR navigable space around BOTH ends. Do not connect them to the outer perimeter. Leave broad buildable floor in the middle, upper and lower zones. The two walls and core must not overlap.
+- Remove the reference map's bottom central horizontal wall and small isolated obstacle islands. Keep the THIRD LEVEL simple: only these two short vertical walls and the central core inside the playable arena.
+- Outer perimeter can have small rounded tissue clusters and cream fiber accents; interior floor has sparse low-contrast cell patches, clean and quiet, no high-density texture. Both side wounds should be clearly distinct from perimeter decoration.
+
+Full usable background for an existing Unity 2D tower-defense game. Orthographic top-down, modest shallow tissue shading consistent with reference. No pathways painted as bright stripes, no arrows, route lines, grid, labels, letters, title, user interface, tower placement rings, towers, enemies, numbers or watermark. Prioritize the two side entrances and their two short vertical blocking walls.
+
+Final entrance correction prompt:
+Edit the referenced third-level CellDefense map. Change ONLY the two entrances at the middle LEFT and middle RIGHT image edges. Preserve the central turquoise-rimmed core, both short vertical tissue walls, every other perimeter section, floor art, palette, and top-down pixel style.
+
+The user says both side entrances must be OPEN. Make each entry a clearly OPEN PASSAGE cut entirely through the map's outer tissue border, horizontally connecting the outside edge to the interior arena. The upper perimeter and lower perimeter must terminate separately above and below each entry mouth. NO collagen strand, tissue membrane, cell bulge, door, gate, plug, rounded bowl rim, or pink strip may cross or seal the entry passage. These must NOT look like enclosed round dark holes or dead-end pockets.
+At the LEFT midpoint carve a wide horizontal mouth from the LEFT IMAGE EDGE extending into the playable peach-pink floor. Mirror on the RIGHT midpoint. Passage vertical extent approximately y=43% to y=57% at each side, with obviously separated cut wound edges ABOVE and BELOW. Within the passage use a flat traversable magenta/coral wound FLOOR leading continuously and gently into the peach arena floor, not a black cavity. Both passages reach the cropped image edge with no visible closed wall at that edge. Keep them wide enough for multiple small enemies.
+Keep both internal tissue walls unchanged: one at x=26%, the other x=74%, vertical, centered halfway down; both ends stay freely walkable. Core remains centered. Do not add pathways elsewhere, towers, enemies, text, arrows, grids or UI.
+ONE finished map, same landscape dimensions, opaque background.

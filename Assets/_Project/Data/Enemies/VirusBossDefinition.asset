@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d4742dd96d5e346bf7912855a9a839, type: 3}
+  m_Name: VirusBossDefinition
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1548251395116818521, guid: d3ca6efc2bf64a926a641c809c634f72, type: 3}
+  maxHealth: 2000
+  killReward: 150
+  displayName: 病毒母体
+  baseMoveSpeed: 0.8
+  leakDamage: 8
+  antigenId: 7
+  engulfImmune: 1
+  isBoss: 1
+  contactDamage: 25
+  contactAttackInterval: 1
+  armorReduction: 0
+  armorBreakDuration: 3
+  initialShield: 0
+  slowEffectiveness: 0.5
+  stunEffectiveness: 0.5
+  stunRecoveryDuration: 1

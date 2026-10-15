@@ -1,0 +1,39 @@
+{
+  "method": "Built-in image_gen; Aseprite batch technical normalization and PNG export.",
+  "purpose": "Three complete square sample tiles, for approval before expanding terrain art.",
+  "sourcePlan": "Docs/OPEN_FIELD_THREE_ROUND_PROTOTYPE.md",
+  "tileSize": 128,
+  "pixelsPerUnit": 128,
+  "jobs": [
+    {
+      "id": "tissue_plain",
+      "name": "方块样块 1：普通组织地面",
+      "filename": "01_普通组织地块.png",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\第二关_双入口最新调整.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nTransform the supplied game map style into ONE COMPLETE SQUARE GROUND TILE for Unity Tilemap, not a whole map. The reference is only the tissue palette and pixel-art style.\nThe ENTIRE square canvas IS one single grid block, filled edge-to-edge by an opaque top-down tissue floor. Target artwork is a logical 128x128 pixel tile; it may be delivered enlarged, but every contour must use crisp regular square clusters, 2-3 flat shade bands, limited colors and clean stepped curves. Absolutely no transparent area, floating chunk, isometric platform, separated border strip, UI frame, bevel around the square, soft focus or photorealism.\nThis is a small tile the player can paint directly as one cell with Unity Tilemap. Make the texture legible at 128px, with a few medium-size simple shapes, a compact readable pixel-art language and no fine noise. Match the original cheerful warm peach/coral cell-world, not ordinary soil, stone, grass or dungeon bricks.\nUse a COMMON flat warm salmon-peach background #F5A58D. Keep the outer 8 logical pixels on all four sides this identical flat background color, no border line and no detail crossing the tile edge. The center texture ends naturally before this flat connector area. All three sample tile types share these exact four edge colors for mixing.\nStrict 90-degree top-down, flat walkable floor, no perspective side face or cast shadow. No tower socket, core objective, enemy, fixed route, arrows, text, numbers, collage, grid guide or other tile. ONE complete full-square image only, fully opaque.\nTile type 1 — plain soft tissue floor. Across the middle place three broad irregular peach cell impressions, with one simple angular salmon outline fragment on each and a few 2x2 logical-pixel coral flecks. Keep overall contrast restrained but visibly more defined than a nearly blank texture. Large flat shapes in #FBB699, subtle salmon #EE937F and base peach. No separate closed cell character or raised boulder.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-8f5234bf-c066-4bee-900c-7eed15d9b92a.png"
+    },
+    {
+      "id": "tissue_cells",
+      "name": "方块样块 2：细胞纹理地面",
+      "filename": "02_细胞纹理地块.png",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\第二关_双入口最新调整.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nTransform the supplied game map style into ONE COMPLETE SQUARE GROUND TILE for Unity Tilemap, not a whole map. The reference is only the tissue palette and pixel-art style.\nThe ENTIRE square canvas IS one single grid block, filled edge-to-edge by an opaque top-down tissue floor. Target artwork is a logical 128x128 pixel tile; it may be delivered enlarged, but every contour must use crisp regular square clusters, 2-3 flat shade bands, limited colors and clean stepped curves. Absolutely no transparent area, floating chunk, isometric platform, separated border strip, UI frame, bevel around the square, soft focus or photorealism.\nThis is a small tile the player can paint directly as one cell with Unity Tilemap. Make the texture legible at 128px, with a few medium-size simple shapes, a compact readable pixel-art language and no fine noise. Match the original cheerful warm peach/coral cell-world, not ordinary soil, stone, grass or dungeon bricks.\nUse a COMMON flat warm salmon-peach background #F5A58D. Keep the outer 8 logical pixels on all four sides this identical flat background color, no border line and no detail crossing the tile edge. The center texture ends naturally before this flat connector area. All three sample tile types share these exact four edge colors for mixing.\nStrict 90-degree top-down, flat walkable floor, no perspective side face or cast shadow. No tower socket, core objective, enemy, fixed route, arrows, text, numbers, collage, grid guide or other tile. ONE complete full-square image only, fully opaque.\nTile type 2 — packed tissue-cell pattern. In the central 70% arrange two or three irregular broad flattened cell plates joined by a couple of short stepped dusty-coral membrane creases. Very low relief, no dark pits; pale peach interiors, thin warm rose creases. This is background cellular texture, no nuclei, faces, thick borders or raised separate rocks. Keep some smooth base ground around the pattern so it can mix naturally with the plain tile.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-349c72fc-0007-4394-969e-63b8086cbb5a.png"
+    },
+    {
+      "id": "tissue_fiber",
+      "name": "方块样块 3：纤维纹理地面",
+      "filename": "03_纤维纹理地块.png",
+      "references": [
+        "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\第二关_双入口最新调整.png"
+      ],
+      "prompt": "Use case: precise-object-edit.\nTransform the supplied game map style into ONE COMPLETE SQUARE GROUND TILE for Unity Tilemap, not a whole map. The reference is only the tissue palette and pixel-art style.\nThe ENTIRE square canvas IS one single grid block, filled edge-to-edge by an opaque top-down tissue floor. Target artwork is a logical 128x128 pixel tile; it may be delivered enlarged, but every contour must use crisp regular square clusters, 2-3 flat shade bands, limited colors and clean stepped curves. Absolutely no transparent area, floating chunk, isometric platform, separated border strip, UI frame, bevel around the square, soft focus or photorealism.\nThis is a small tile the player can paint directly as one cell with Unity Tilemap. Make the texture legible at 128px, with a few medium-size simple shapes, a compact readable pixel-art language and no fine noise. Match the original cheerful warm peach/coral cell-world, not ordinary soil, stone, grass or dungeon bricks.\nUse a COMMON flat warm salmon-peach background #F5A58D. Keep the outer 8 logical pixels on all four sides this identical flat background color, no border line and no detail crossing the tile edge. The center texture ends naturally before this flat connector area. All three sample tile types share these exact four edge colors for mixing.\nStrict 90-degree top-down, flat walkable floor, no perspective side face or cast shadow. No tower socket, core objective, enemy, fixed route, arrows, text, numbers, collage, grid guide or other tile. ONE complete full-square image only, fully opaque.\nTile type 3 — sparse collagen floor. The same solid warm peach ground fills the whole square. Across its center, place two short gently bending cream-peach fiber strands, about 3 logical pixels thick, running diagonally with stepped pixels. Both strands end inside the center region and do not touch the tile borders. Add only a couple of tiny soft coral mottles. They lie flat in the floor and must not read as a wall, raised rope, bridge or obstacle. No transparency: the peach floor remains behind every fiber.",
+      "sourcePath": "C:\\Users\\a\\.codex\\generated_images\\01a084f1-f69d-7a33-8c71-b97bcc527387\\exec-f6455253-c725-48f8-8e50-a4e8b8fc25be.png"
+    }
+  ]
+}

@@ -21,4 +21,7 @@ MonoBehaviour:
   attackRange: 2.5
   damage: 25
   attackInterval: 1
-  targetingMode: 0
+  targetingMode: 1
+  blocksEnemyRoute: 0
+  maxHealth: 250
+  interceptCapacity: 2

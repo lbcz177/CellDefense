@@ -1,0 +1,17 @@
+Use case: ui-mockup / pixel-art UI asset. Create ONE standalone LEVEL DETAILS PANEL for the existing cartoon biological tower-defense game 胞卫战. This is the panel opened AFTER selecting level1 on the arm selection screen. Image1 is the STYLE reference for the cream/coral/cyan/plum pixel interface. Image2 is the ACTUAL LEVEL1 MAP thumbnail reference. This is not a new gameplay map. One individual panel, no montage. Landscape panel, about1536x1024canvas, generous transparent margins, TRUE TRANSPARENT alpha outside the panel.
+
+Panel design: large pale warm cream rounded RECTANGULAR panel with clean stepped pixel corners, restrained dark-plum outline, slim coral lower rim and ivory highlight; same family as established buttons, polished and readable. Keep ornament sparse. Small cyan chapter tab centered above header with exact Chinese “第一关”. Main dark-plum pixel title below, exact “守住伤口”. Title should be large and clear.
+
+Main content split into two readable columns:
+LEFT approximately8%..53% of panel width: a large landscape map preview in a simple inset coral/cream frame. Faithfully reproduce image2's key layout in the preview: exactly ONE OPEN left-middle entrance cut through the edge, ONE small center-left tissue island, ONE teal-outlined three-cell core on the right. No added enemies, towers or routes. Do not seal the left opening or add a right opening. Small exact label beneath preview: “地图预览”.
+RIGHT approximately60%..92% of panel width: three neatly aligned short sections with ample spacing. All Simplified Chinese, dark-plum, legible thick pixel font, use exact text:
+Heading1 “关卡目标”
+Body1 “守住核心，清除病原体”
+Heading2 “地形特点”
+Body2 on two lines:
+“左侧单入口”
+“组织岛两侧可绕行”
+Heading3 “教学重点”
+Body3 “前排拦截，后排输出”
+Use small cyan accent bars or tiny simple bullet diamonds for section headings only, no extra decorative characters or icons. Prioritize correct Chinese glyphs with no malformed strokes.
+BOTTOM center: reserve a calm blank cream area suitable for placing a separate Start button later. Do NOT draw a start button, back button, close button, button outline, dashed placeholder, or any footer text on this panel. No stars, currency, difficulty numbers, rewards, percentages or invented stats. Keep all content well inside borders. Crisp consistent pixel blocks, controlled limited shading, no blur, no photorealism, no 3D render, no watermark. Outside panel must be transparent, not a checkerboard painting.

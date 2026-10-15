@@ -1,0 +1,21 @@
+POLISH the referenced existing CellDefense level-selection screen into version2. The user APPROVES this concept: a skin SIDE CROSS-SECTION showing a journey from OUTSIDE, through an OPEN WOUND, into progressively DEEPER TISSUE. Preserve that successful composition, the5neutral numbered markers, the friendly warm pixel art and the existing title/back-icon family. This is refinement, NOT a different concept.
+
+ONE full1672x941-style16:9 landscape opaque game interface.
+
+KEEP INVARIANTS:
+- Exterior cream space at top, horizontal skin surface near y30%, wound breach near x30–38% opening down into tissue.
+- Exactly5markers labelled1,2,3,4,5; each successive number is LOWER/deeper than the previous. One continuous progression through the wound toward the deepest lower-right region.
+- All5 have IDENTICAL DEFAULT ivory/coral/plum styling, same size, no selected ring, glow, arrow, crown, locks, stars or tooltip.
+- Exact Chinese title “关卡选择” at top center; one existing small back-arrow icon at top-left.
+- No extra words, stage names, intro/details, start button, additional buttons, units or gameplay cards.
+- No arm/hand, no surface-only scratch view, no floating slab or perspective.
+
+REFINEMENTS:
+1. CLEANER, MORE GAME-LIKE ART. Reduce tiny texture and small cell/nucleus clutter by roughly60%. Use FEWER, LARGER, deliberately placed rounded biological shapes and2–3 clean pixel shade clusters per material. Avoid dirty random stippling, noise, fine hatching or granular painterly flecks. Keep square pixel steps and confident soft organic silhouettes. Do not blur.
+2. CLEAR DEPTH HIERARCHY. A thin pale peach superficial cell layer, a warm soft-coral middle tissue layer, a restrained rose connective layer with only2–3 broad cream fibers, and a deeper muted mauve-rose bottom layer. They are broad gently undulating bands, clearly different but not striped flat-colored classroom blocks. Decorative cell interiors LOW CONTRAST; dark nuclei sparse and subdued. Especially simplify the background behind the progression path. No anatomical labels.
+3. WOUND READABILITY. Keep the surface breach clearly OPEN, with left/right skin lips ending separately, a small soft dark-rose cleft and a gentle curve extending just below the skin. Make wound shape simpler and tidy; no shiny red smear, bloody splatter or exposed wet anatomy. The entry must be visibly connected to outside space and accessible from node1.
+4. ROUTE COMPOSITION. Give the progression trail a graceful VERY GENTLE S curve as it descends, with uniformly spaced ivory dots and a subtle muted-rose1pixel shadow for readability against pale collagen. Markers follow roughly1:(x29%,y29%),2:(x39%,y43%),3:(x51%,y57%),4:(x64%,y71%),5:(x76%,y84%). Keep approximately even perceived distances and comfortable space around each node. Route stays over tissue as a map overlay, NOT a carved road or tunnel.
+5. VISUAL PRIORITY. Nodes and dotted progression are the sharpest high-contrast elements. Each node has a tidy plum pixel outline, ivory face, coral lower bevel, bold clean dark-plum numeral, about95pixels diameter on this canvas. No special color on any node. No fiber or border line crossing a numeral.
+6. TITLE AND BREATHING ROOM. Reduce the current oversized title by about15%, keep the same exact readable Chinese title and tiny cyan lower accent, centered in the exterior top area. The upper cream background should be calm and mostly plain, remove most floating peach blotches. Keep visible gap between title and node1, and enough bottom margin below node5. Balanced polished interface rather than a dense scientific diagram.
+
+Friendly peach/coral/cream/rose palette, matte tissue, top-to-bottom outside-to-inside spatial story, understated layered depth and broad clean pixel shapes. No realistic gore, blood pools, pus, 3D, blur, heavy cast shadow, noisy cell wallpaper, extra labels, selected state or added controls.

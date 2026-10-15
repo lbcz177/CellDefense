@@ -1,0 +1,43 @@
+{
+  "Date": "2026-10-15",
+  "Tool": "built-in image_gen",
+  "Specification": "Docs/LevelPlanning/FIRST_FIVE_MAPS_DISCUSSION_2026-10-15.md",
+  "VisualReview": "制作记录~/自查记录.md",
+  "Files": [
+    {
+      "Name": "01_守住伤口.png",
+      "Width": 1536,
+      "Height": 1024,
+      "SHA256": "516A4A180348481D83BFFF955C5A6296144ADAE67FA89BB99A2B3BA316183AA9",
+      "GUID": "bcf6adb5ecb84adea15ba0d3db2ae342"
+    },
+    {
+      "Name": "02_集中清除.png",
+      "Width": 1536,
+      "Height": 1024,
+      "SHA256": "5B8B0E10FBC14CE67066B85559DAF7A7643CA6C613DD4BE6083030A559E09E52",
+      "GUID": "4606d8df18684723a2d08ebbaa28f6ca"
+    },
+    {
+      "Name": "03_认出敌人.png",
+      "Width": 1536,
+      "Height": 1024,
+      "SHA256": "2C5FA2A95D60F5ADD223CE98547873F7281F2CDCB8D558A2C6B4273ABDE71738",
+      "GUID": "75ae2d16cd134c63b87bde18c0fdaafa"
+    },
+    {
+      "Name": "04_两侧告急.png",
+      "Width": 1536,
+      "Height": 1024,
+      "SHA256": "7660267AD83813A83C9C178179436A9F3A9A1523B990EA231A9D7C80DFC28315",
+      "GUID": "babd037c4d22459c80ab50903e658001"
+    },
+    {
+      "Name": "05_感染加剧.png",
+      "Width": 1536,
+      "Height": 1024,
+      "SHA256": "72E92F31816FBBEC467AB3CB0DF13CDA88A0FEEFA74BFAF8B27D3976FF3C67D3",
+      "GUID": "f27cb04aae87434198bb51ab3a287bb8"
+    }
+  ]
+}

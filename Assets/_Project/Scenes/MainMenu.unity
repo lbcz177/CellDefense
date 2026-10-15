@@ -513,6 +513,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6bfa379d97afa4eafd6a51b107a54a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 1157981673}
+  menuFont: {fileID: 11400000, guid: 1a81cdaa4d03de24daeeeea164dda6c6, type: 2}
+  levelArtwork:
+  - {fileID: 21300000, guid: bcf6adb5ecb84adea15ba0d3db2ae342, type: 3}
+  - {fileID: 21300000, guid: 4606d8df18684723a2d08ebbaa28f6ca, type: 3}
+  - {fileID: 21300000, guid: 75ae2d16cd134c63b87bde18c0fdaafa, type: 3}
+  - {fileID: 21300000, guid: babd037c4d22459c80ab50903e658001, type: 3}
+  - {fileID: 21300000, guid: f27cb04aae87434198bb51ab3a287bb8, type: 3}
 --- !u!1 &1899787245
 GameObject:
   m_ObjectHideFlags: 0

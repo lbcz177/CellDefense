@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d4742dd96d5e346bf7912855a9a839, type: 3}
+  m_Name: FungalBossDefinition
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1548251395116818521, guid: 9c2e110eeaee5e63bb8fc3c331722e70, type: 3}
+  maxHealth: 800
+  killReward: 60
+  displayName: 变异超级真菌
+  baseMoveSpeed: 0.7
+  leakDamage: 5
+  antigenId: 5
+  engulfImmune: 1
+  isBoss: 1
+  contactDamage: 25
+  contactAttackInterval: 1
+  armorReduction: 0
+  armorBreakDuration: 3
+  initialShield: 0
+  slowEffectiveness: 0.5
+  stunEffectiveness: 0.5
+  stunRecoveryDuration: 1

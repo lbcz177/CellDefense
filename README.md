@@ -1,104 +1,57 @@
-# 细胞防卫战：伤口入侵
+# 胞卫战：开放地图核心防御
 
-> Unity 2D 塔防学习项目
->
-> Unity `2022.3.53f1c1` · Windows PC
->
-> 当前里程碑：`v0.1.0` 首个可玩纵向切片
+Unity 2D 免疫主题塔防学习项目，当前使用 Unity `2022.3.53f1c1`，优先完善 Windows PC 体验。
 
-《细胞防卫战：伤口入侵》是一款以免疫系统为主题的 2D 横屏塔防原型。当前版本使用一条固定路线、一类敌人、一座塔和少量固定塔位，完整跑通建造、攻击、奖励、泄露、胜负、暂停与重新开始。
+当前主线已有三张开放地图、每张三轮防御，包含六塔基础能力和混合敌群，仍待完整试玩调节。当前策划案 **v0.13（2026-10-14）** 确认“有限改路、自由布置、通道内承伤”：一种专用塔以独立有限额度改变道路，普通细胞负责输出与免疫协作，在通道内接敌承伤。现有代码仍为全塔挡路，新规则尚未接入；完整方向、待定细节和实现状态见 [策划案](Docs/GAME_DESIGN_FRAMEWORK.md)。
 
-## 当前可玩内容
+## 当前实现
 
-- 敌人沿固定路径移动，并以 `Killed / Leaked / Cleared` 三种互斥原因退出。
-- 固定塔位点击建造，ATP 不足或塔位占用时拒绝建造。
-- 防御塔选择最近目标，按攻击间隔发射投射物并造成伤害。
-- 击杀敌人获得 ATP；敌人泄露扣除基地生命。
-- `WaveDefinition` 驱动敌人数量、生成间隔与敌人配置。
-- 游戏流程包含 `Ready / Running / Paused / Victory / Defeat`。
-- HUD 显示 ATP、基地生命和当前状态。
-- 支持暂停、恢复、胜利、失败和终局后重新开始。
-- 已生成并运行验证 Windows x64 独立版本。
+- 15 × 11 逻辑格、中央核心；第一关从左 / 右 / 上进入，第二关从底部双入口进入并带固定组织障碍。
+- 布置阶段选择现有三种塔；不能占用入口或核心，也不能封死入口到核心的道路。
+- 手动开始每轮，进攻期关闭建造；同入口敌人共用本轮路径。
+- 击杀获得 ATP，敌人抵达核心扣生命；前两轮结束发放轮间资源。
+- 第三轮清场且核心存活时胜利，核心生命归零时失败。
+- 手绘地图、格子提示、塔虚影和射程预览。
+- 已接入原 Victory / Defeat 预制体，提供重新挑战、返回主菜单，以及第一关胜利后进入第二关。
 
-## 操作方式
+布置 HUD 仍为临时 IMGUI；主菜单开始按钮已改为进入 OpenFieldPrototype，正式 HUD 和暂停列入后续工作。旧 Prototype / Level02 场景继续保留。
 
-- 点击空塔位：建造当前测试塔。
-- 点击“暂停／继续”：切换暂停状态。
-- 胜利或失败后点击“重新开始”：重载当前关卡。
-- `Alt + F4`：退出 Windows 版本。
+## 运行与操作
 
-## 运行项目
-
-1. 使用 Unity `2022.3.53f1c1` 打开项目。
-2. 打开 `Assets/_Project/Scenes/Prototype.unity`。
-3. 进入 Play Mode。
-
-## 构建 Windows 版本
-
-1. 打开 `File → Build Settings`。
-2. 选择 `PC, Mac & Linux Standalone`。
-3. 设置 `Target Platform = Windows`、`Architecture = x86_64`。
-4. 确认 `Prototype.unity` 是 Scenes In Build 中第一个启用场景。
-5. 构建到 `Builds/Windows/CellDefense.exe`。
-
-`Builds/` 不进入 Git。发布时应压缩完整 Windows 构建目录，不能只分发 exe，并排除 `CellDefense_BurstDebugInformation_DoNotShip`。
-
-当前 Windows zip 仅用于本地里程碑验证，尚未作为公开 Release 分发。
+1. 用对应 Unity 版本打开工程，打开 [OpenFieldPrototype 场景](Assets/_Project/Scenes/OpenFieldPrototype.unity)。
+2. 也可先打开 MainMenu，从开始游戏按钮进入新场景。如果检出版本尚无该场景，使用菜单 `Cell Defense > Create Open Field Prototype Scene` 创建。
+3. 进入 Play；数字键 1 / 2 / 3 或顶部按钮选塔，鼠标指向格子预览，点击有效格建造。
+4. 按空格或 Start assault 开战；前两轮结束后再次布置，手动开始下一轮。
+5. 结算后 Again 重开，Return 返回主菜单；第一关胜利后按 Next 进入 [第二关场景](Assets/_Project/Scenes/OpenFieldLevel02.unity)。也可以直接打开第二关场景 Play。
 
 ## 技术结构
 
-- **组合根**：`GameplayCompositionRoot` 统一创建普通 C# 服务并注入场景组件。
-- **静态配置**：`EnemyDefinition`、`TowerDefinition`、`WaveDefinition` 使用 ScriptableObject。
-- **运行时服务**：`EconomyService` 与 `LifeService` 不依赖 GameObject 生命周期。
-- **游戏流程**：`GameFlowController` 统一管理合法状态转换和终局优先级。
-- **事件驱动 UI**：HUD 订阅资源、生命和状态事件；重新启用时主动读取当前快照。
-- **事务式建造**：建造失败时回滚 ATP，终局和暂停状态拒绝操作。
-- **生命周期清理**：组件停用或销毁时取消事件与按钮订阅。
+- OpenFieldPrototypeController：当前输入、建造、回合、出敌和结果 UI 的集中编排。
+- OpenFieldGridModel：固定障碍、占用格、从核心开始的 BFS 距离场、封路检查和路径提取。
+- OpenFieldPresentation：背景、调试格、建造虚影与射程。
+- TowerController、特殊攻击行为、EnemyController、PathFollower 和 ProjectilePool：复用既有战斗模块。
+- ScriptableObject 保存塔、敌人和波次配置；EconomyService / LifeService 保存本局状态。
 
-## 已完成验证
+总控制器的职责拆分尚未实施。具体依赖、数据流、生命周期、BFS 分配与跨路线锁敌风险见 [技术架构](Docs/TECHNICAL_ARCHITECTURE.md)。
 
-- 全部敌人退出且生命大于 0时进入胜利。
-- 生命归零时失败优先于波次完成。
-- 暂停期间敌人停止，建造被拒绝；恢复后继续运行。
-- 胜利和失败后均不能继续建塔。
-- 胜利和失败结算后可以重新开始。
-- Windows Player 中完成 `Ready → Running → Victory → 重载 → Ready → Running`。
-- 最新 Windows Player 日志中字体缺字警告为 0、运行时异常为 0。
+## 验证与发布状态
 
-独立版本日志位于：
+用户已试玩并认可开放地图方向；第二关场景、固定障碍和 Next 接线于 2026-10-04 完成静态检查，跨场景和第二关完整 Play 验证仍待完成。本次没有运行构建，也没有取得新场景的完整性能数据。
 
-```text
-%USERPROFILE%\AppData\LocalLow\ichen\CellDefense\Player.log
-```
+旧固定路线 v0.1.0 曾有独立 Windows 运行验证记录，该结果不覆盖当前开放地图版本。发布新版本前需重新验证主菜单进入新场景、结算、重开和返回的全流程。
 
-## 当前限制
+## AI 协作与学习
 
-- 仅有一类敌人、一座测试塔和一段短波次。
-- 仅支持固定塔位和鼠标点击，尚未加入升级、出售、技能和完整菜单。
-- 暂未加入对象池、压力测试和正式 Profiler 对比数据。
-- 美术和 UI 仍以原型可读性为主。
-- Android、iOS 和多分辨率适配尚未完成。
-- 当前中文字体在公开分发前仍需确认授权范围。
+AI 可完成普通业务样板、接线、文档和排错。开发者负责理解与独立修改核心规则、Unity 编辑器操作、运行验证和面试解释；明确选为手写练习的核心任务先说明变量与生命周期再动手。
 
-## AI 协作说明
+不把 AI 实现或计划中的功能直接当作个人已掌握能力，也不把未测量的性能收益写进简历。
 
-本项目使用 AI 辅助完成部分样板、事件接线、机械重构、文档与排错。开发者负责核心规则取舍、关键方法实现、Unity 场景配置、运行验证和面试解释。
+## 文档入口
 
-简历与面试只描述已经完成并能独立解释、修改和验证的内容，不把计划功能写成已实现。
-
-## 文档导航
-
-| 主题 | 文档 |
-|---|---|
-| 游戏设计与范围 | [Docs/GAME_DESIGN_FRAMEWORK.md](Docs/GAME_DESIGN_FRAMEWORK.md) |
-| 技术架构 | [Docs/TECHNICAL_ARCHITECTURE.md](Docs/TECHNICAL_ARCHITECTURE.md) |
-| 求职学习路线 | [Docs/UNITY_JOB_LEARNING_ROADMAP.md](Docs/UNITY_JOB_LEARNING_ROADMAP.md) |
-| 敌人性能专项 | [Docs/PERFORMANCE_MANY_ENEMIES.md](Docs/PERFORMANCE_MANY_ENEMIES.md) |
-| 美术方向 | [Docs/ART_DIRECTION.md](Docs/ART_DIRECTION.md) |
-| 文档总入口 | [Docs/README.md](Docs/README.md) |
-
-## 下一步
-
-1. 为 `v0.1.0` 补充截图和短演示视频。
-2. 增加一个真正不同的塔或锁敌策略，练习需求变更与策略边界。
-3. 在敌人规模足够后实现对象池，并用 Profiler 记录优化前后证据。
+- [文档导航](Docs/README.md)
+- [游戏策划](Docs/GAME_DESIGN_FRAMEWORK.md)
+- [技术架构](Docs/TECHNICAL_ARCHITECTURE.md)
+- [三轮试玩说明](Docs/OPEN_FIELD_THREE_ROUND_PROTOTYPE.md)
+- [学习路线](Docs/UNITY_JOB_LEARNING_ROADMAP.md)
+- [性能专题](Docs/PERFORMANCE_MANY_ENEMIES.md)
+- [美术规范](Docs/ART_DIRECTION.md)

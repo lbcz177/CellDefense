@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Unity.Profiling;
 
@@ -5,13 +6,16 @@ public class TowerController : MonoBehaviour
 {
     private static readonly ProfilerMarker SpawnProjectileMarker =
         new ProfilerMarker("CellDefense.Projectile.Spawn");
+    private static readonly ProfilerMarker TargetingMarker =
+        new ProfilerMarker("CellDefense.Targeting.Query");
 
     public TowerDefinition Definition{ get; private set; }
     public int BuildCostPaid { get; private set; }
     public int UpgradeCostPaid { get; private set; }
     public bool IsUpgraded { get; private set; }
     public const int UpgradeDamageBonusPercent = 50;
-    public float CurrentDamage => Definition == null ? 0f :
+    public float CurrentDamage => Definition == null ||
+        (attackBehaviour != null && !attackBehaviour.RequiresDamage) ? 0f :
         Definition.Damage * (IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f);
     private const float UpgradeVisualScale = 1.15f;
     [SerializeField]
@@ -22,9 +26,24 @@ public class TowerController : MonoBehaviour
     private float antigenMemoryDuration = 8f;
     private float attackCooldown = 0f;
     private EnemyController currentTarget;
+    private uint currentTargetSpawnVersion;
+    private readonly List<Collider2D> targetCandidates = new List<Collider2D>(64);
+    private ContactFilter2D targetFilter;
     private ProjectilePool projectilePool;
     private TowerAttackBehaviour attackBehaviour;
     private BuildSlot occupiedSlot;
+    private static readonly int AttackTrigger = Animator.StringToHash("Attack");
+    private Animator animator;
+    [SerializeField] private bool releaseOnAnimationEvent;
+    [SerializeField] private Vector2 muzzleLocalOffset;
+    [SerializeField] private bool aimVisualAtTarget;
+    private SpriteRenderer bodyRenderer;
+    [SerializeField] private Sprite projectileVisual;
+    [SerializeField, Min(0.01f)] private float projectileVisualSize = 0.18f;
+    private bool awaitingAttackRelease;
+    private EnemyController pendingAttackTarget;
+    private uint pendingAttackSpawnVersion;
+    private float attackReleaseTimeout;
 
     public void Initialize(TowerDefinition definition, ProjectilePool pool, BuildSlot slot)
     {
@@ -43,15 +62,19 @@ public class TowerController : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException(nameof(definition.AttackRange), "Attack range must be greater than zero.");
         }
-        if(definition.Damage <= 0f)
+        bool requiresDamage = attackBehaviour == null || attackBehaviour.RequiresDamage;
+        if (float.IsNaN(definition.Damage) || float.IsInfinity(definition.Damage) ||
+            definition.Damage < 0f || (requiresDamage && definition.Damage == 0f))
         {
-            throw new System.ArgumentOutOfRangeException(nameof(definition.Damage), "Damage must be greater than zero.");
+            throw new System.ArgumentOutOfRangeException(nameof(definition.Damage),
+                requiresDamage ? "Damage must be finite and greater than zero." :
+                "Support tower damage must be finite and non-negative; it is ignored.");
         }
         if(definition.AttackInterval <= 0f)
         {
             throw new System.ArgumentOutOfRangeException(nameof(definition.AttackInterval), "Attack interval must be greater than zero.");
         }
-        if((attackBehaviour == null || attackBehaviour is AntibodyAttackBehaviour) &&
+        if((attackBehaviour == null || attackBehaviour.RequiresProjectile) &&
             definition.ProjectilePrefab == null)
         {
             throw new System.ArgumentException("Projectile prefab must be set.", nameof(definition.ProjectilePrefab));
@@ -84,6 +107,18 @@ public class TowerController : MonoBehaviour
         occupiedSlot = slot;
         attackCooldown = 0f;
         currentTarget = null;
+        currentTargetSpawnVersion = 0;
+        targetFilter = new ContactFilter2D();
+        targetFilter.SetLayerMask(enemyLayerMask);
+        animator = GetComponent<Animator>();
+        bodyRenderer = GetComponent<SpriteRenderer>();
+        CancelPendingAttack();
+        attackBehaviour?.Initialize(definition, enemyLayerMask);
+        if (releaseOnAnimationEvent && animator != null && animator.runtimeAnimatorController != null)
+        {
+            animator.Rebind();
+            animator.Update(0f);
+        }
     }
 
     public bool TryUpgrade(int upgradeCostPaid)
@@ -121,31 +156,94 @@ public class TowerController : MonoBehaviour
         if (currentTarget != null && !IsCurrentTargetValid())
         {
             currentTarget = null;
+            currentTargetSpawnVersion = 0;
         }
 
         attackCooldown -= Time.deltaTime;
-        if (attackCooldown > 0f)
+        if (awaitingAttackRelease)
+        {
+            attackReleaseTimeout -= Time.deltaTime;
+            if (attackReleaseTimeout <= 0f)
+            {
+                CancelPendingAttack();
+            }
+        }
+        if (attackCooldown > 0f || awaitingAttackRelease)
         {
             return;
         }
-        if (attackBehaviour != null && !attackBehaviour.CanAttack)
+        if (attackBehaviour != null &&
+            (!attackBehaviour.isActiveAndEnabled || !attackBehaviour.CanAttack))
         {
             return;
         }
 
-        // Specialized towers reevaluate priority after each cooldown so newly marked
-        // enemies and unmarked antibody targets can take precedence.
-        if (attackBehaviour != null || currentTarget == null)
-        {
-            currentTarget = FindTarget();
-        }
+        // Reevaluate before every attack so a surviving target cannot keep priority
+        // over another enemy that is now closer to reaching the end of its route.
+        currentTarget = FindTarget();
+        currentTargetSpawnVersion = currentTarget != null ? currentTarget.SpawnVersion : 0;
         if(currentTarget == null)
         {
             return;
         }
 
-        Attack(currentTarget);
         attackCooldown = Definition.AttackInterval;
+        if (aimVisualAtTarget && bodyRenderer != null)
+        {
+            Vector3 direction = currentTarget.transform.position - transform.position;
+            if (Mathf.Abs(direction.x) > 0.05f) bodyRenderer.flipX = direction.x > 0f;
+            if (Mathf.Abs(direction.y) > 0.05f) bodyRenderer.flipY = direction.y > 0f;
+        }
+        if (releaseOnAnimationEvent && animator != null && animator.isActiveAndEnabled &&
+            animator.runtimeAnimatorController != null)
+        {
+            pendingAttackTarget = currentTarget;
+            pendingAttackSpawnVersion = currentTarget.SpawnVersion;
+            awaitingAttackRelease = true;
+            attackReleaseTimeout = 0.6f;
+            animator.SetTrigger(AttackTrigger);
+        }
+        else
+        {
+            Attack(currentTarget);
+            // Unity's missing/destroyed component check must use its overloaded null comparison.
+            if (animator != null && animator.isActiveAndEnabled &&
+                animator.runtimeAnimatorController != null)
+            {
+                animator.SetTrigger(AttackTrigger);
+            }
+        }
+    }
+
+    // Invoked by the release pose in the attack clip.
+    public void ReleaseAttack()
+    {
+        if (!awaitingAttackRelease)
+        {
+            return;
+        }
+        EnemyController target = pendingAttackTarget;
+        uint spawnVersion = pendingAttackSpawnVersion;
+        CancelPendingAttack();
+        if (target == null || !target.isActiveAndEnabled || !target.CanBeTargeted ||
+            target.SpawnVersion != spawnVersion)
+        {
+            return;
+        }
+        Attack(target);
+    }
+
+    private void CancelPendingAttack()
+    {
+        awaitingAttackRelease = false;
+        pendingAttackTarget = null;
+        pendingAttackSpawnVersion = 0;
+        attackReleaseTimeout = 0f;
+    }
+
+    private void OnDisable()
+    {
+        CancelPendingAttack();
     }
 
     private bool IsCurrentTargetValid()
@@ -158,42 +256,61 @@ public class TowerController : MonoBehaviour
         {
             return false;
         }
+        if (currentTarget.SpawnVersion != currentTargetSpawnVersion)
+        {
+            return false;
+        }
         if (!currentTarget.CanBeTargeted)
         {
             return false;
         }
-        if ((currentTarget.transform.position - transform.position).sqrMagnitude <= Definition.AttackRange * Definition.AttackRange)
-        {
-            return true;
-        }
-        return false;
+        return GetTargetCenterDistanceSquared(currentTarget) <=
+               Definition.AttackRange * Definition.AttackRange;
     }
 
     private EnemyController FindTarget()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, Definition.AttackRange, enemyLayerMask);
-        EnemyController bestTarget = null;
-        float bestDistanceSquared = float.PositiveInfinity;
-        foreach (var collider in colliders)
+        using (TargetingMarker.Auto())
         {
-            EnemyController candidate = collider.GetComponentInParent<EnemyController>();
-            if(candidate == null || !candidate.CanBeTargeted)
+            int candidateCount = Physics2D.OverlapCircle(
+                transform.position, Definition.AttackRange, targetFilter, targetCandidates);
+            EnemyController bestTarget = null;
+            float bestDistanceSquared = float.PositiveInfinity;
+            float rangeSquared = Definition.AttackRange * Definition.AttackRange;
+            for (int i = 0; i < candidateCount; i++)
             {
-                continue;
-            }
+                Collider2D collider = targetCandidates[i];
+                EnemyController candidate = collider.GetComponentInParent<EnemyController>();
+                if (candidate == null || !candidate.CanBeTargeted)
+                {
+                    continue;
+                }
 
-            float candidateDistanceSquared = (candidate.transform.position - transform.position).sqrMagnitude;
-            if (bestTarget == null || IsCandidateBetter(
-                    candidate,
-                    candidateDistanceSquared,
-                    bestTarget,
-                    bestDistanceSquared))
-            {
-                bestDistanceSquared = candidateDistanceSquared;
-                bestTarget = candidate;
+                // Physics overlap includes a collider when its edge enters the circle.
+                // The preview measures the distance between the two object centers.
+                float candidateDistanceSquared = GetTargetCenterDistanceSquared(candidate);
+                if (candidateDistanceSquared > rangeSquared)
+                {
+                    continue;
+                }
+                if (bestTarget == null || IsCandidateBetter(
+                        candidate,
+                        candidateDistanceSquared,
+                        bestTarget,
+                        bestDistanceSquared))
+                {
+                    bestDistanceSquared = candidateDistanceSquared;
+                    bestTarget = candidate;
+                }
             }
+            return bestTarget;
         }
-        return bestTarget;
+    }
+
+    private float GetTargetCenterDistanceSquared(EnemyController target)
+    {
+        Vector2 offset = (Vector2)target.transform.position - (Vector2)transform.position;
+        return offset.sqrMagnitude;
     }
 
     private bool IsCandidateBetter(
@@ -202,6 +319,18 @@ public class TowerController : MonoBehaviour
         EnemyController currentBest,
         float currentBestDistanceSquared)
     {
+        if (Definition.TargetingMode == TargetingMode.FarthestAlongPath)
+        {
+            // Different entrances can have routes of different lengths. Compare
+            // remaining world distance, not waypoint indices or traveled percentage.
+            float candidateRemaining = candidate.RemainingPathDistance;
+            float currentRemaining = currentBest.RemainingPathDistance;
+            if (!Mathf.Approximately(candidateRemaining, currentRemaining))
+            {
+                return candidateRemaining < currentRemaining;
+            }
+        }
+
         if (attackBehaviour != null)
         {
             int candidatePriority = attackBehaviour.GetTargetPriority(candidate);
@@ -215,35 +344,12 @@ public class TowerController : MonoBehaviour
         switch (Definition.TargetingMode)
         {
             case TargetingMode.NearestToTower:
-                return candidateDistanceSquared < currentBestDistanceSquared;
-
             case TargetingMode.FarthestAlongPath:
-                float candidateProgress = GetPathProgress(candidate);
-                float currentBestProgress = GetPathProgress(currentBest);
-                if (candidateProgress > currentBestProgress)
-                {
-                    return true;
-                }
-                if (Mathf.Approximately(candidateProgress, currentBestProgress))
-                {
-                    return candidateDistanceSquared < currentBestDistanceSquared;
-                }
-                return false;
+                return candidateDistanceSquared < currentBestDistanceSquared;
 
             default:
                 throw new System.ArgumentOutOfRangeException(nameof(Definition.TargetingMode));
         }
-    }
-
-    private static float GetPathProgress(EnemyController enemy)
-    {
-        PathFollower pathFollower = enemy.GetComponent<PathFollower>();
-        if (pathFollower == null)
-        {
-            throw new System.InvalidOperationException("Target enemy must have a PathFollower component.");
-        }
-
-        return pathFollower.Progress;
     }
 
     private void Attack(EnemyController target)
@@ -251,15 +357,27 @@ public class TowerController : MonoBehaviour
         float damage = CurrentDamage;
         if (attackBehaviour != null)
         {
+            if (!attackBehaviour.isActiveAndEnabled) return;
             attackBehaviour.Attack(target, damage, projectilePool);
             return;
         }
 
         using (SpawnProjectileMarker.Auto())
         {
-            Projectile projectile = projectilePool.Get(transform.position);
+            Vector3 muzzle = muzzleLocalOffset;
+            if (aimVisualAtTarget && bodyRenderer != null)
+            {
+                if (bodyRenderer.flipX) muzzle.x = -muzzle.x;
+                if (bodyRenderer.flipY) muzzle.y = -muzzle.y;
+            }
+            Projectile projectile = projectilePool.Get(transform.TransformPoint(muzzle));
+            if (projectileVisual != null)
+            {
+                projectile.SetVisual(projectileVisual, Color.white, projectileVisualSize);
+            }
             projectile.Initialize(target, damage, 0f,
                 samplesAntigenOnHit ? HandleAntigenSample : null);
+            CombatHitFeedback.Shot(projectile.transform.position);
         }
     }
 
@@ -271,6 +389,6 @@ public class TowerController : MonoBehaviour
             return;
         }
 
-        occupiedSlot.ShareAntigen(target.Definition.AntigenId, antigenMemoryDuration);
+        occupiedSlot.ShareAntigen(target.CurrentAntigenId, antigenMemoryDuration);
     }
 }

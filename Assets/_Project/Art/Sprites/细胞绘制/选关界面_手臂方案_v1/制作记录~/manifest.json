@@ -1,0 +1,25 @@
+{
+  "Date": "2026-10-15",
+  "Tool": "built-in image_gen",
+  "Files": [
+    {
+      "Name": "01_手臂选关主界面.png",
+      "Width": 1672,
+      "Height": 941,
+      "Transparent": false,
+      "CornerAlpha": 255,
+      "GUID": "c73a84c47fde431e8427806fbfe7561c",
+      "SHA256": "5A0ACB8139E790720F256C4D52615F225216C77987068BD55EE25200E3BD87F1"
+    },
+    {
+      "Name": "02_第一关_介绍面板.png",
+      "Width": 1536,
+      "Height": 1024,
+      "Transparent": true,
+      "CornerAlpha": 0,
+      "GUID": "3f309984e86f4bb7b86226bdf2e1091c",
+      "SHA256": "133EE9637E47172B560CACBAB8FAD8826C73C9D71345200D37C88AC34BE7439E"
+    }
+  ],
+  "SceneIntegrated": false
+}

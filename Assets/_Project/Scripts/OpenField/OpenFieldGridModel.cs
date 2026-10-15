@@ -8,7 +8,8 @@ public enum OpenFieldPlacementResult
     OutsideMap,
     ReservedCell,
     OccupiedCell,
-    BlocksRoute
+    BlocksRoute,
+    BlockedCell
 }
 
 public sealed class OpenFieldGridModel
@@ -22,6 +23,8 @@ public sealed class OpenFieldGridModel
     };
 
     private readonly bool[,] occupied;
+    private readonly bool[,] routeBlocked;
+    private readonly bool[,] blocked;
     private readonly Vector2Int[] spawnCells;
     private int[,] distances;
 
@@ -29,8 +32,10 @@ public sealed class OpenFieldGridModel
     public int Height { get; }
     public Vector2Int CoreCell { get; }
     public int SpawnCount => spawnCells.Length;
+    public int Revision { get; private set; }
 
-    public OpenFieldGridModel(int width, int height, Vector2Int coreCell, Vector2Int[] spawnCells)
+    public OpenFieldGridModel(int width, int height, Vector2Int coreCell, Vector2Int[] spawnCells,
+        Vector2Int[] blockedCells = null)
     {
         if (width < 3 || height < 3)
         {
@@ -60,7 +65,27 @@ public sealed class OpenFieldGridModel
         }
 
         occupied = new bool[width, height];
+        routeBlocked = new bool[width, height];
+        blocked = new bool[width, height];
+        if (blockedCells != null)
+        {
+            foreach (Vector2Int cell in blockedCells)
+            {
+                if (!Contains(cell) || IsReserved(cell) || blocked[cell.x, cell.y])
+                {
+                    throw new ArgumentException("Blocked cells must be distinct, inside the grid, and outside the core and spawns.", nameof(blockedCells));
+                }
+                blocked[cell.x, cell.y] = true;
+            }
+        }
         distances = CalculateDistances();
+        foreach (Vector2Int spawn in this.spawnCells)
+        {
+            if (distances[spawn.x, spawn.y] < 0)
+            {
+                throw new ArgumentException("Every spawn must have a route to the core.", nameof(blockedCells));
+            }
+        }
     }
 
     public Vector2Int GetSpawnCell(int index)
@@ -82,6 +107,11 @@ public sealed class OpenFieldGridModel
         return Contains(cell) && occupied[cell.x, cell.y];
     }
 
+    public bool IsBlocked(Vector2Int cell)
+    {
+        return Contains(cell) && blocked[cell.x, cell.y];
+    }
+
     public bool IsReserved(Vector2Int cell)
     {
         if (cell == CoreCell)
@@ -98,7 +128,7 @@ public sealed class OpenFieldGridModel
         return false;
     }
 
-    public OpenFieldPlacementResult CheckPlacement(Vector2Int cell)
+    public OpenFieldPlacementResult CheckPlacement(Vector2Int cell, bool blocksRoute = true)
     {
         if (!Contains(cell))
         {
@@ -108,12 +138,17 @@ public sealed class OpenFieldGridModel
         {
             return OpenFieldPlacementResult.ReservedCell;
         }
+        if (blocked[cell.x, cell.y])
+        {
+            return OpenFieldPlacementResult.BlockedCell;
+        }
         if (occupied[cell.x, cell.y])
         {
             return OpenFieldPlacementResult.OccupiedCell;
         }
 
-        occupied[cell.x, cell.y] = true;
+        if (!blocksRoute) return OpenFieldPlacementResult.Valid;
+        routeBlocked[cell.x, cell.y] = true;
         int[,] candidateDistances;
         try
         {
@@ -121,7 +156,7 @@ public sealed class OpenFieldGridModel
         }
         finally
         {
-            occupied[cell.x, cell.y] = false;
+            routeBlocked[cell.x, cell.y] = false;
         }
 
         foreach (Vector2Int spawn in spawnCells)
@@ -134,14 +169,16 @@ public sealed class OpenFieldGridModel
         return OpenFieldPlacementResult.Valid;
     }
 
-    public bool TryOccupy(Vector2Int cell)
+    public bool TryOccupy(Vector2Int cell, bool blocksRoute = true)
     {
-        if (CheckPlacement(cell) != OpenFieldPlacementResult.Valid)
+        if (CheckPlacement(cell, blocksRoute) != OpenFieldPlacementResult.Valid)
         {
             return false;
         }
         occupied[cell.x, cell.y] = true;
-        distances = CalculateDistances();
+        routeBlocked[cell.x, cell.y] = blocksRoute;
+        if (blocksRoute) distances = CalculateDistances();
+        Revision++;
         return true;
     }
 
@@ -152,7 +189,12 @@ public sealed class OpenFieldGridModel
             throw new ArgumentException("Cell is not occupied.", nameof(cell));
         }
         occupied[cell.x, cell.y] = false;
-        distances = CalculateDistances();
+        Revision++;
+        if (routeBlocked[cell.x, cell.y])
+        {
+            routeBlocked[cell.x, cell.y] = false;
+            distances = CalculateDistances();
+        }
     }
 
     public bool TryGetPath(Vector2Int start, List<Vector2Int> result)
@@ -194,6 +236,27 @@ public sealed class OpenFieldGridModel
         return true;
     }
 
+    public bool TryGetPreviewPath(Vector2Int start, Vector2Int barrier, List<Vector2Int> result)
+    {
+        if (CheckPlacement(barrier) != OpenFieldPlacementResult.Valid)
+        {
+            result.Clear();
+            return false;
+        }
+        int[,] savedDistances = distances;
+        routeBlocked[barrier.x, barrier.y] = true;
+        try
+        {
+            distances = CalculateDistances();
+            return TryGetPath(start, result);
+        }
+        finally
+        {
+            routeBlocked[barrier.x, barrier.y] = false;
+            distances = savedDistances;
+        }
+    }
+
     private int[,] CalculateDistances()
     {
         int[,] result = new int[Width, Height];
@@ -214,7 +277,7 @@ public sealed class OpenFieldGridModel
             foreach (Vector2Int direction in Directions)
             {
                 Vector2Int next = cell + direction;
-                if (!Contains(next) || occupied[next.x, next.y] || result[next.x, next.y] >= 0)
+                if (!Contains(next) || blocked[next.x, next.y] || routeBlocked[next.x, next.y] || result[next.x, next.y] >= 0)
                 {
                     continue;
                 }

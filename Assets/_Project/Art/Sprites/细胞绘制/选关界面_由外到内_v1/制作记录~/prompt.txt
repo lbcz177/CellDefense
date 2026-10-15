@@ -1,0 +1,20 @@
+COMPLETELY REDESIGN the referenced game level-select screen to express “FROM OUTSIDE THE BODY INTO DEEPER TISSUE”. The old image has the wrong top-down surface-only concept. Keep ONLY its cartoon pixel palette, title style and neutral1–5 marker design. Replace the whole world-map illustration.
+
+ONE complete16:9 landscape game screen, approximately1672x941, in the established friendly CellDefense pixel art style.
+
+CRITICAL VIEW AND STORY:
+Draw a SIDE CUTAWAY / CROSS-SECTION of skin and tissue, like a charming simplified2D biological storybook map. It must instantly read as ABOVE THE SKIN at the top, a wound breaking through the SKIN SURFACE, then progressively DEEPER INTERNAL TISSUE toward the bottom. Not a top-down scratch. No human arm or hand.
+The TOP approximately24% is calm pale cream exterior space holding the title. A clearly visible skin-surface boundary runs across the screen at about y=29%, with a WIDE OPEN WOUND in it near x=33%. Left and right lips of this wound end separately, making a clear open gap from the outside into the tissue beneath. This breach is the START of the journey, not a closed scar or a hole sealed by collagen.
+Below the surface, show3–4 broad softly undulating distinct tissue-depth bands: a thin light-peach superficial skin band, warmer coral tissue cells below, deeper pink connective tissue with sparse broad cream collagen strands, and a muted rose lower tissue zone. The cutaway fills the canvas below the surface, to the left/right/bottom edges; NOT a floating slab, not a museum specimen on a table. Rounded cell clusters and a few cream fibers establish biological depth; no text labels for layers, no anatomical precision needed. All in clean stylized pixel clusters, quiet low-contrast areas around the markers.
+
+PROGRESSION MUST RUN DOWNWARD INTO THE BODY:
+Exactly FIVE identical neutral ivory/coral round level nodes numbered1,2,3,4,5 linked by one subtle dotted cream trail.
+Node1 sits OUTSIDE at the wound lip, about(x32%,y27%).
+Node2 is just INSIDE / BELOW the skin opening, about(x39%,y41%).
+Node3 is in the middle tissue, about(x53%,y55%).
+Node4 is deeper, about(x64%,y69%).
+Node5 is the deepest, about(x72%,y83%).
+Each successive node must be visibly LOWER / DEEPER than the previous. One gently winding trail passes THROUGH THE OPEN WOUND then crosses successive tissue layers. This outside-to-inside relationship is the main point of the image; do not arrange all5 along a surface scratch or in a horizontal row. Nodes float as interface markers over the tissue illustration; no stone road, no tunnels carved into chambers, no game-platform ledges, no buildings. Preserve ample open surroundings so the chain reads clearly.
+All5 markers have same size/default colors. No blue selected ring, no glow, no pointer, no status, no locks, no selected level name or details. Only title and numbers.
+
+TOP CENTER exact Chinese “关卡选择” in large ivory pixel letters with dark plum outlines and a restrained cyan lower accent, spaced comfortably from the wound. Keep one small cream back-arrow icon top-left. No start button, no additional buttons, no detail card, no instruction text, no anatomical labels or legend. No enemies or towers. No gore, blood pools, pus, wet flesh, exposed organs, photorealism, microscope, petri dish, arm silhouette, skin-surface-only view, 3D rendering or dense noisy texture. Friendly simplified coral/peach/cream cellular game world with crisp square pixels and clear large shapes.

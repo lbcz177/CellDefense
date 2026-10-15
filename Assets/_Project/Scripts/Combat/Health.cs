@@ -12,7 +12,7 @@ public class Health : MonoBehaviour, IDamageable
 
     public void Initialize(float maxHealth)
     {
-        if(maxHealth <= 0)
+        if(float.IsNaN(maxHealth) || float.IsInfinity(maxHealth) || maxHealth <= 0)
         {
             throw new ArgumentOutOfRangeException(nameof(maxHealth), "Max health must be greater than zero.");
         }
@@ -29,7 +29,7 @@ public class Health : MonoBehaviour, IDamageable
             return;
         }
 
-        if(amount <= 0)
+        if(float.IsNaN(amount) || float.IsInfinity(amount) || amount <= 0)
         {
             throw new ArgumentOutOfRangeException(nameof(amount), "Damage amount must be greater than zero.");
         }
@@ -39,6 +39,16 @@ public class Health : MonoBehaviour, IDamageable
         {
             Die();
         }
+    }
+
+    public float Heal(float amount)
+    {
+        EnemyRangeQuery.RequirePositive(amount, nameof(amount));
+        if (IsDead || CurrentHealth <= 0f || MaxHealth <= 0f) return 0f;
+        float previous = CurrentHealth;
+        CurrentHealth = Mathf.Min(MaxHealth, CurrentHealth + amount);
+        if (CurrentHealth > previous) HealthChanged?.Invoke(CurrentHealth, MaxHealth);
+        return CurrentHealth - previous;
     }
 
     private void Die()

@@ -65,15 +65,9 @@ public class PhagocyteAttackBehaviour : TowerAttackBehaviour
 
         if (ShouldEngulf(target))
         {
-            Health health = target.GetComponent<Health>();
-            if (health == null)
-            {
-                throw new InvalidOperationException("Engulf target needs a Health component.");
-            }
-
             ShowFeedback(engulfFlashColor);
             digestionUntil = Time.time + digestionDuration;
-            target.TakeDamage(health.CurrentHealth);
+            target.TryEngulf(GetEngulfThreshold(target));
             return;
         }
 
@@ -139,6 +133,12 @@ public class PhagocyteAttackBehaviour : TowerAttackBehaviour
         bool isMarked = enemy != null && enemy.IsMarked;
         float threshold = isMarked? markedEngulfHealth : baseEngulfHealth;
 
-        return health.CurrentHealth <= threshold;
+        return target.CanEngulf(threshold);
+    }
+
+    private float GetEngulfThreshold(EnemyController target)
+    {
+        EnemyImmuneState state = target.GetComponent<EnemyImmuneState>();
+        return state != null && state.IsMarked ? markedEngulfHealth : baseEngulfHealth;
     }
 }

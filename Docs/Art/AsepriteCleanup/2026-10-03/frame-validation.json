@@ -1,0 +1,626 @@
+[
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\01_neutrophil_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\02_fibrin_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\03_lysosome_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\04_neural_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\05_phagocyte_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\06_antibody_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\07_staph_move\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\08_staph_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\09_diplococcus_move\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\10_diplococcus_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\11_bacillus_move\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\六塔与普通敌人_v1\\12_bacillus_attack\\frames\\animation_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_01.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_02.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_03.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_04.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_05.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_06.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_07.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  },
+  {
+    "relative": "帧动画\\葡萄球菌群_移动_v1\\frames\\staph_move_08.png",
+    "width": 128.0,
+    "height": 128.0,
+    "alphaErrors": 0.0
+  }
+]

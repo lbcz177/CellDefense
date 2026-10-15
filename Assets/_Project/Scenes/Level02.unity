@@ -290,6 +290,7 @@ MonoBehaviour:
   currentTower: {fileID: 0}
   signalNeighbors:
   - {fileID: 1519726161}
+  signalFeedback: {fileID: 0}
 --- !u!1 &315963127
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +339,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &315963130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -996,6 +998,7 @@ MonoBehaviour:
   placementKind: 1
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &637650049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1388,6 +1391,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1437921323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &812710429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812710431}
+  - component: {fileID: 812710430}
+  m_Layer: 0
+  m_Name: Combat Feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &812710430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812710429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3b097c8d5845b4e9b072721e8dfc6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSparkCount: 6
+  hitDuration: 0.18
+  pixelSize: 0.06
+  soundEnabled: 1
+  soundVolume: 0.14
+--- !u!4 &812710431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812710429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &825130331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1533,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!1 &849799365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1644,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &975331368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1827,6 +1881,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &1160117438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2137,6 +2192,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!1 &1309668994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,6 +2241,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &1309668997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2401,6 +2458,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &1489740090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2539,6 +2597,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!1 &1530586234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,6 +3107,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!61 &1728418865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3472,6 +3532,7 @@ MonoBehaviour:
   placementKind: 0
   currentTower: {fileID: 0}
   signalNeighbors: []
+  signalFeedback: {fileID: 0}
 --- !u!1 &1860951206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5727850086240025178, guid: d70ea5f2ecbf246438b26f3f8b94ea9c, type: 3}
@@ -3990,3 +4051,4 @@ SceneRoots:
   - {fileID: 1023870940}
   - {fileID: 396928240}
   - {fileID: 1249563636}
+  - {fileID: 812710431}

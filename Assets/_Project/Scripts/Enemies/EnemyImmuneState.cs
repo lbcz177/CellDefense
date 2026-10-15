@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyImmuneState : MonoBehaviour
 {
+    public const int MarkDamageBonusPercent = 15;
     [SerializeField] private SpriteRenderer bodyRenderer;
     [SerializeField] private SpriteRenderer markRingRenderer;
     [SerializeField] private Color markedColor = new Color(1f, 0.85f, 0.25f, 1f);
@@ -11,7 +12,8 @@ public class EnemyImmuneState : MonoBehaviour
     private float markedUntil;
     private bool wasMarked;
 
-    public bool IsMarked => Time.time < markedUntil;
+    public bool IsMarked => isActiveAndEnabled && Time.time < markedUntil;
+    public float DamageTakenMultiplier => IsMarked ? 1f + MarkDamageBonusPercent / 100f : 1f;
 
     private void Awake()
     {
@@ -30,6 +32,11 @@ public class EnemyImmuneState : MonoBehaviour
         ResetState();
     }
 
+    private void OnDisable()
+    {
+        ResetState();
+    }
+
     public void ResetState()
     {
         markedUntil = 0f;
@@ -39,7 +46,7 @@ public class EnemyImmuneState : MonoBehaviour
 
     public void ApplyMark(float duration)
     {
-        if (duration <= 0f)
+        if (float.IsNaN(duration) || float.IsInfinity(duration) || duration <= 0f)
         {
             throw new ArgumentOutOfRangeException(nameof(duration));
         }
