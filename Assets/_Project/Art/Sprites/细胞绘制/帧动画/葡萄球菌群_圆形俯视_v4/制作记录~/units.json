@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "07_staph",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\关卡动画_v1\\葡萄球菌群移动.png",
+    "PrefabHash": "F9E5E82E54E03EAA18C2CF7DE26EFD934160E41682F7D6811944AAF0969E6667",
+    "MetaHash": "377E92E295B1A21B15D549565D7D5BEF6B66F345F280671A9FE5FFC2D7FDA412"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-20",
+  "playmode": {
+    "passed": "32",
+    "total": "32",
+    "failed": "0"
+  },
+  "captureExistingTest": {
+    "passed": "1",
+    "total": "1"
+  },
+  "observedSpriteStates": 20,
+  "sourceFilesMatched": 96,
+  "originalPngsPreserved": 6,
+  "existingGuidsPreserved": 6,
+  "apkRebuilt": false,
+  "platformModified": false,
+  "previewDirectory": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/接入验证~"
+}

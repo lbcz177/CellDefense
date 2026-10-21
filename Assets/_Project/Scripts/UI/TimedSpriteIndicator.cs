@@ -41,6 +41,12 @@ public class TimedSpriteIndicator : MonoBehaviour
         indicatorRenderer.enabled = true;
     }
 
+    public void Hide()
+    {
+        visibleUntil = 0f;
+        if (indicatorRenderer != null) indicatorRenderer.enabled = false;
+    }
+
     private void Update()
     {
         if (indicatorRenderer.enabled && Time.time >= visibleUntil)

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1785083665661685500}
   - component: {fileID: -7672387684028090219}
   - component: {fileID: -7922307027125182902}
+  - component: {fileID: 6262240110302194453}
   m_Layer: 0
   m_Name: NeuralPulseTower
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 860453341
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e47e1b5c7d331745a2fb5ce491fd1ff, type: 3}
+  m_Sprite: {fileID: 4138848172959368440, guid: 75ce84fe61e7421aa1c0ea0217a92b18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +104,11 @@ MonoBehaviour:
     m_Bits: 8
   samplesAntigenOnHit: 0
   antigenMemoryDuration: 8
-  releaseOnAnimationEvent: 0
+  releaseOnAnimationEvent: 1
+  muzzleLocalOffset: {x: 4.181751, y: 0}
+  aimVisualAtTarget: 1
+  projectileVisual: {fileID: 0}
+  projectileVisualSize: 0.18
 --- !u!114 &-7922307027125182902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,3 +125,24 @@ MonoBehaviour:
   chainRadius: 2.5
   damageRetention: 0.8
   stunDuration: 0.2
+--- !u!95 &6262240110302194453
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6035396076855405381}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4583f0127a2696645b45ac16d35752f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

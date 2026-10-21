@@ -1,0 +1,21 @@
+{
+    "result": "Succeeded",
+    "unity": "2022.3.53f1c1",
+    "apk": "E:\\unity\\CellDefense\\Logs\\CodexTradingTests\\Builds\\Android\\CellDefense.apk",
+    "identifier": "com.celldefense.game",
+    "version": "0.1.1",
+    "backend": "IL2CPP",
+    "architectures": "ARMv7, ARM64",
+    "orientation": "AutoRotation",
+    "utc": "2026-10-19T15:36:44.4455430Z",
+    "versionCode": 2,
+    "scenes": [
+        "Assets/_Project/Scenes/MainMenu.unity",
+        "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel03.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel04.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel05.unity"
+    ],
+    "bytes": 73204696
+}

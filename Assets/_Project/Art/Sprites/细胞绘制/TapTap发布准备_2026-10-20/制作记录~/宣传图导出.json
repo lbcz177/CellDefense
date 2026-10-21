@@ -1,0 +1,15 @@
+{
+  "userApprovedMethod": "沿用现有图，代码排版导出",
+  "source": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/07_地图与覆盖层/069__宣传主视觉_v2.png",
+  "sourceSha256": "a289ac0d63591576b3861982a87524e1b627c182740fa71118b982904313b20f",
+  "font": "Assets/_Project/Fonts/FZFS_GBK.ttf",
+  "title": "胞卫战",
+  "titleFontSize": 194,
+  "output": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/宣传图_胞卫战_1920x1080.png",
+  "width": 1920,
+  "height": 1080,
+  "bytes": 2597582,
+  "method": "Uniform fit with minimal edge crop; existing illustration preserved; title typeset with project font",
+  "originalImageModified": false,
+  "uploaded": false
+}

@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-20",
+  "target": {
+    "developerId": "338749",
+    "appId": "986196"
+  },
+  "platformReadCompleted": true,
+  "platformDraft": "V-20261019",
+  "platformStatus": "draft",
+  "boundApkVersion": "0.1.0",
+  "boundApkSha256": "fc0325f0f8e929ee89a54efa67fdd6408655e7fbfa4f856f1747bd695fc70c72",
+  "boundApkMatchesOriginalLocal010": true,
+  "beforeBlockers": [
+    "promotion_material_type",
+    "banner_4",
+    "screenshots",
+    "gameplay_demo_video"
+  ],
+  "beforeWarnings": [],
+  "candidate": {
+    "status": "uploaded-and-bound-to-draft",
+    "appId": "986196",
+    "developerId": "338749",
+    "apk": "Builds/Android/CellDefense-0.1.2.apk",
+    "versionName": "0.1.2",
+    "versionCode": 3,
+    "packageName": "com.celldefense.game",
+    "productName": "胞卫战",
+    "bytes": 59780812,
+    "sha256": "11c2fac3b389db8fb16b35b163b18e559dbf7cbb6caa30b0d1a7f534bb44ad72",
+    "development": false,
+    "sameSigningCertificateAsPreviousLocalBuilds": true,
+    "fixedVersionDeviceTested": false,
+    "platformWriteApproved": true,
+    "updateNote": "《胞卫战》v0.1.2 试玩版更新\n- 修复 Android 横屏战斗中，地图上方及屏幕边缘残留上一页界面的显示问题。\n- 手机安装名称统一为“胞卫战”，并使用游戏图标。\n- 移除开发版标记，提供新的试玩安装包。"
+  },
+  "media": {
+    "source": "E:\\unity\\CellDefense\\Logs\\StoreCapture\\2026-10-20\\take-003720",
+    "screenshots": [
+      {
+        "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/01_免疫协作_第三关.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1538610,
+        "sha256": "0319a5c09fc621aff2a9327050202c01f81df5e53bbdcdc16c67a473ff69a8e5",
+        "source": "03-immune-cooperation.png",
+        "pixelsEdited": false
+      },
+      {
+        "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/02_两侧告急_第四关.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1526412,
+        "sha256": "8f5dce74f9a869730ffdc76b38dae4ba1d6f5aaff0199ee1e7391ce697aeea82",
+        "source": "04-two-fronts.png",
+        "pixelsEdited": false
+      },
+      {
+        "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/03_感染加剧_第五关.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1607839,
+        "sha256": "650e448fe37630f1dd526fb77ffbcff15fb1f8b48a55a473987c26ff835ce831",
+        "source": "05-three-entrances.png",
+        "pixelsEdited": false
+      }
+    ],
+    "video": {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/演示视频~/胞卫战_实机演示_1080p.mp4",
+      "bytes": 7951051,
+      "sha256": "2ade18136f18b8c1a431fa5b6682430dc1e19cb6f0d2003b2f87188823628a36",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "seconds": 30.0,
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "audioTrack": false,
+      "runtimeSource": "Unity Editor PlayMode with mobile layout; not Android device recording",
+      "modelGenerated": false,
+      "extraCaptions": false
+    },
+    "frameAlias720": "same native frame file, no pixel edits"
+  },
+  "uploadPreviewsPassed": 6,
+  "textPreviewPending": false,
+  "sourceComparison": {
+    "files": 96,
+    "unchanged": 95,
+    "changed": [
+      "Assets/_Project/Editor/CellDefenseAndroidBuild.cs"
+    ]
+  },
+  "baselineGameplayTests": {
+    "editMode": "127/127",
+    "playMode": "32/32",
+    "rerunThisTurn": false
+  },
+  "platformWriteApproved": true,
+  "platformWritesPerformed": true,
+  "reviewRequested": false,
+  "published": false,
+  "textPreviewPassed": true,
+  "currentBoundApkVersion": "0.1.2",
+  "execution": {
+    "date": "2026-10-20",
+    "scope": {
+      "developerId": "338749",
+      "appId": "986196"
+    },
+    "status": "draft-saved-awaiting-user-review",
+    "approved": true,
+    "uploadsSucceeded": 6,
+    "mediaFieldsReadbackPassed": 3,
+    "textFieldsReadbackPassed": 4,
+    "changedFields": [
+      "banner_4",
+      "gameplay_demo_video",
+      "screenshots",
+      "promotion_material_type",
+      "promotion_text",
+      "developer_message",
+      "apk_whatsnew"
+    ],
+    "unapprovedFieldsUnchanged": true,
+    "apkVersion": "0.1.2",
+    "apkVersionCode": 3,
+    "apkId": 1067115,
+    "mainBindingVerified": true,
+    "reviewRequested": false,
+    "reviewSubmitted": false,
+    "published": false,
+    "deviceTested": false,
+    "platformApkMd5MatchesLocal": true,
+    "packageLibraryConfigStatus": "warning",
+    "analysis": {
+      "blockers": [],
+      "suggestions": [],
+      "warnings": []
+    },
+    "draftVersion": "V-20261019"
+  }
+}

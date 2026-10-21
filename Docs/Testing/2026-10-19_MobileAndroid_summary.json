@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "results": {
+    "editmode": {
+      "result": "Passed",
+      "total": "126",
+      "passed": "126",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "playmode": {
+      "result": "Passed",
+      "total": "30",
+      "passed": "30",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "landscape": {
+      "result": "Passed",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    }
+  },
+  "matchingCodeFiles": 15,
+  "sha256": {
+    "Assets/_Project/Scripts/UI/MobileDisplay.cs": "0686e74803f7a808ce13b70093f420ade0fa2a6c64c930d14d3fba2b07ed3c74",
+    "Assets/_Project/Scripts/UI/MobileSafeFrame.cs": "809871496ac237b28a07497f52e58b0c35490a75979c3a26891f692963ff669a",
+    "Assets/_Project/Scripts/OpenField/BoardTapGesture.cs": "b061f3b55c13c602f688a2968280463ce4c014d2227b9a662e80d12588900a1e",
+    "Assets/_Project/Editor/CellDefenseAndroidBuild.cs": "28e880a44b274793df7cb0d89b4517a8da3d500f55b536f85a0e6f97207643b1",
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "63eb162933bdb30e17d1fb71a7bb53f5bf77b149a021ac5be17594278e7e73fc",
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "96fe1124561f319a0eeab357254e541f85ce70d647ef57bb384288a28c5c90ba",
+    "Assets/_Project/Scripts/UI/GameSettingsPanel.cs": "9501df715a7350f400e5f1accc203cc7dc76e0214ad65cd0f2ca7aa4a9c339ac",
+    "Assets/_Project/Scripts/UI/OpenFieldBattleHud.cs": "e892cfe8f431247ff30541ce67761b60146397720ffd15e4ec688df50c4e4675",
+    "Assets/_Project/Scripts/UI/OpenFieldBuildMenu.cs": "3ecda8f0b536a98baaba6828eba396ddc694f23e6df05f59b4b4314d18f317d8",
+    "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs": "9e1c9917a6ebe46fd154f9c0ac740d0bf319ee32962d914a215f986057422f3d",
+    "Assets/_Project/Scripts/UI/OpenFieldPlaybackControls.cs": "82f322131f2dafe026371c155b88b7fed0c5036a838411c521bcdb4618ec2734",
+    "Assets/_Project/Scripts/UI/OpenFieldEntranceWaveButtons.cs": "6991c69d4db11f87a88ca573c7946b2343ba854218fdf06862075bbec77108f3",
+    "Assets/_Project/Scripts/UI/EnemyStatusHud.cs": "69db1e126da15642c5280729c8a6f52ae683f043870bd37f5b8df0dbce4c3a62",
+    "Assets/_Project/Tests/EditMode/MobileInputTests.cs": "28043bbfb0720cbed946c8ad37cdc99164c1e1038b87f0494ca4d1a347ba9172",
+    "Assets/_Project/Tests/PlayMode/MobilePlayModeTests.cs": "d76d00a778d21eb8d9b8d4196fc870e412bb115db5d3144c1f6ea65786aae3d7"
+  },
+  "landscapeSizes": [
+    [
+      1280,
+      720
+    ],
+    [
+      1600,
+      720
+    ],
+    [
+      1920,
+      1080
+    ]
+  ],
+  "androidBuildPerformed": false,
+  "reason": "用户选择暂不安装 Android Build Support / SDK / NDK / OpenJDK。",
+  "limitations": [
+    "无 APK / Android IL2CPP 或 Gradle 构建",
+    "无 Android 真机或模拟器验收",
+    "无手机性能、旋转、音频焦点验证"
+  ]
+}

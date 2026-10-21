@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "execution": "Logs/CodexTradingTests isolated copy; PlayMode hidden D3D11",
+  "run": {
+    "platform": "PlayMode",
+    "result": "Passed",
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "skipped": 0,
+    "started": "2026-10-19 00:11:21Z",
+    "ended": "2026-10-19 00:11:31Z"
+  },
+  "editModeRerun": false,
+  "sourceFilesMatched": 4,
+  "sha256": [
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettingsPanel.cs",
+      "sha256": "B71C94C14CDA765D73A4DD207BB17EDA0F0C120B39B2BCDCB324D5307975C2EF",
+      "copySha256": "B71C94C14CDA765D73A4DD207BB17EDA0F0C120B39B2BCDCB324D5307975C2EF"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldUiResources.cs",
+      "sha256": "76BFDDAC157FEE823B75EACF0CD026630179761C52E074BA1BFDBCD4E1EFD618",
+      "copySha256": "76BFDDAC157FEE823B75EACF0CD026630179761C52E074BA1BFDBCD4E1EFD618"
+    },
+    {
+      "file": "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "sha256": "4F1CFE817D69BA0300429B1B3EAEE0D50CFFA3B8DE521983AC8AC8EFEFBF9673",
+      "copySha256": "4F1CFE817D69BA0300429B1B3EAEE0D50CFFA3B8DE521983AC8AC8EFEFBF9673"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "ECBB21F368A494C86ECD2CCB92DE4B028B249E22DF25A9BBBAF33982D37582D6",
+      "copySha256": "ECBB21F368A494C86ECD2CCB92DE4B028B249E22DF25A9BBBAF33982D37582D6"
+    }
+  ],
+  "unchangedArtworkFiles": 15,
+  "artwork": [
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\01_恢复默认_空框_未选中.png",
+      "sha256": "9D5756AA42079FA8821732BAA59A8CC3782D9CB6E553D455C34B81ED89A1B5F6"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\01_恢复默认_空框_未选中.png.meta",
+      "sha256": "5DFFA44B1837C1C68220410C96D38BCD3E9320BAFB2FD92211DA709329C00CE8"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\02_恢复默认_空框_蓝色选中.png",
+      "sha256": "CB13A2721F2E83BA9952B0754385A13C9D2B069844CA453687D6C4C658513630"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\02_恢复默认_空框_蓝色选中.png.meta",
+      "sha256": "187DCC57BD2B1E44B383E3BB807AA4F4DA5539337D2EA20DDB13A8A678F8A037"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\03_返回_空框_未选中.png",
+      "sha256": "9D5756AA42079FA8821732BAA59A8CC3782D9CB6E553D455C34B81ED89A1B5F6"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\03_返回_空框_未选中.png.meta",
+      "sha256": "EE2ADA83BFD030D306D68B4ABD6262EEC389C96FC3FAF50FA1F70D5F29674647"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\04_返回_空框_蓝色选中.png",
+      "sha256": "CB13A2721F2E83BA9952B0754385A13C9D2B069844CA453687D6C4C658513630"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\04_返回_空框_蓝色选中.png.meta",
+      "sha256": "43DDEC052D2079AAC7F5B4935E2272E3C139D708979CAF7DBCEE7CB060C8D0A8"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\按钮空框_预览.png",
+      "sha256": "4BD24E42C38CFF5D881B76224ABE89D3C711926425DEC1D87B4C50D154FC4750"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\按钮空框_预览.png.meta",
+      "sha256": "8417E9498BAC7CAEB15A5FAAC6B9FFC391550B8A458FAE692B0A46F6BE7DC694"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\恢复默认与返回_按钮框.aseprite",
+      "sha256": "73179A6EB0847CD2F5FB0CC308CADD40F1E5A095507EB7DC18042207C4F5E5CA"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\恢复默认与返回_组合参考.aseprite",
+      "sha256": "3588174A27084CA1426D78BC2F59EE172B35C7AEFF8D89764CFBA4BE42BB55B8"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\恢复默认与返回_组合预览.png",
+      "sha256": "C16C3D442EA23A7DB480A9D62F5965BBB426F7E9934F214D377D03EDCFB6E235"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\恢复默认与返回_组合预览.png.meta",
+      "sha256": "CE3DD85A0843790F187D54D82CAF0E51BC1A236AB113E059A9DD74A62F626ACB"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\使用说明.md",
+      "sha256": "382268D9D4F8DF786B2AA0E4A9E115A0E42BEAC4FA9B7EB3818C6C3B8616C158"
+    }
+  ],
+  "previews": [
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\接入验证~\\设置按钮框_普通_Unity预览_640x480.png",
+      "sha256": "E36528EB7DCB28F61A9EE30D4DD433A4B2943E54450C61B29090CC23318BB5A1"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\接入验证~\\设置按钮框_恢复默认选中_Unity预览_640x480.png",
+      "sha256": "525DD4D897F33A646722F9D38C492A28B171ED2251DD196550EA8704BD4AE258"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_按钮空框_v1\\接入验证~\\设置按钮框_返回选中_Unity预览_640x480.png",
+      "sha256": "94B9B590F6853516F1579EE7F8ABB08CB30A7E2BF8195D62879C8E78CC80DC79"
+    }
+  ],
+  "buildPerformed": false,
+  "profilerPerformed": false
+}

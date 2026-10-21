@@ -1,0 +1,1 @@
+这些脚本是本轮制作与验证的源代码留档。工作入口位于 Logs/ArtOptimization20261021；Python 脚本的相对路径以该工作目录为准，不在此处直接执行。两份 PixelRefinement*Tests.cs 只存在于隔离验证工程，未添加到游戏工程。

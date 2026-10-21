@@ -1,0 +1,46 @@
+{
+  "unity": "2022.3.53f1c1",
+  "project": "isolated copy in Temp/CodexLiveBuildTests",
+  "runs": {
+    "editmode": {
+      "total": "67",
+      "passed": "67",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "1.0069034",
+      "start-time": "2026-10-16 04:52:34Z",
+      "end-time": "2026-10-16 04:52:35Z",
+      "fixtures": {
+        "EconomyServiceTests": "5",
+        "EnemyCombatTests": "21",
+        "LifeServiceTests": "1",
+        "OpenFieldLiveBuildHudTests": "22",
+        "OpenFieldWaveFlowTests": "18"
+      }
+    },
+    "playmode": {
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "1.4316341",
+      "start-time": "2026-10-16 04:54:22Z",
+      "end-time": "2026-10-16 04:54:23Z",
+      "fixtures": {
+        "OpenFieldLiveBuildSmokeTests": "1"
+      }
+    }
+  },
+  "sha256": {
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "83b8220b86cc759db0c51520327072894b26e9f38f47951088f7462a1a0a4c96",
+    "Assets/_Project/Scripts/OpenField/OpenFieldGridModel.cs": "0e856746909ecbdb2f6f61e4cb510d48940cd523affe3a8e72b6c1963282176b",
+    "Assets/_Project/Scripts/Paths/PathFollower.cs": "96305611ee120d045a5505b22840d914d40d6e508dba9c6ef33d6dedc450e5e8",
+    "Assets/_Project/Scripts/UI/OpenFieldBattleHud.cs": "c1ab9ddd5d5d9bf6f380d4d973a7bb8553a748eedf4a38519aee584cebeec2d7",
+    "Assets/_Project/Scripts/UI/HudSpriteNumber.cs": "b720bda952089a26ae1451bd0645ae2c2f38fc43f9e3ca3baa8e9271889f2141",
+    "Assets/_Project/Tests/EditMode/OpenFieldLiveBuildHudTests.cs": "23be4ffbacdce49d8a7ff8b6fdad67136d7cef57ec243d6bc88cbbd64489beb8",
+    "Assets/_Project/Tests/PlayMode/OpenFieldLiveBuildSmokeTests.cs": "ff4dbb707fc86048d31eea5f59bcb51f7498d6266ca1bcf30a24c757f5d94abc",
+    "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab": "169842acfbaf0a062bdf676f55aabff4a2e2c07b99fde3f81ce619a58aa8af41"
+  },
+  "buildPerformed": false,
+  "visualAcceptance": "Headless automated tests; manual visual QA still pending."
+}

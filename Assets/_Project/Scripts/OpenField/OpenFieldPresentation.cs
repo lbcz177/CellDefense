@@ -116,6 +116,7 @@ public sealed class OpenFieldPresentation : MonoBehaviour
 
         Color tint = valid ? ValidColor : InvalidColor;
         previewRoot.transform.position = position;
+        cellHintRenderer.enabled = true;
         ghostRenderer.enabled = true;
         rangeRenderer.enabled = true;
         cellHintRenderer.color = new Color(tint.r, tint.g, tint.b, 0.2f);
@@ -146,11 +147,20 @@ public sealed class OpenFieldPresentation : MonoBehaviour
     {
         if (previewRoot == null) return;
         previewRoot.transform.position = position;
+        cellHintRenderer.enabled = true;
         Color tint = valid ? ValidColor : InvalidColor;
         cellHintRenderer.color = new Color(tint.r, tint.g, tint.b, 0.3f);
         ghostRenderer.enabled = false;
         rangeRenderer.enabled = false;
         previewRoot.SetActive(true);
+    }
+
+    public void ShowBuiltTower(TowerController tower)
+    {
+        if (tower == null) { HidePreview(); return; }
+        ShowPreview(tower.Definition, tower.transform.position, true);
+        ghostRenderer.enabled = false;
+        cellHintRenderer.enabled = false;
     }
 
     public void HidePreview()

@@ -18,6 +18,7 @@ public sealed class EnemyContactCombat : MonoBehaviour
     private float nextHitAt;
     private float damage;
     private float interval;
+    private bool attackPrepared;
     public TowerCombatState Target => target;
 
     public void Initialize(EnemyController unit, float cellSize,
@@ -61,8 +62,16 @@ public sealed class EnemyContactCombat : MonoBehaviour
             ReleaseTarget();
             return;
         }
-        if ((stun != null && stun.IsStunned) || now < nextHitAt) return;
+        if (stun != null && stun.IsStunned) return;
+        enemy.FaceTowards(target.transform.position);
+        if (!attackPrepared && now >= nextHitAt - 0.16f)
+        {
+            enemy.PlayContactAttackAnimation(target.transform.position);
+            attackPrepared = true;
+        }
+        if (now < nextHitAt) return;
         nextHitAt = now + interval; // No accumulated burst after pause or a long frame.
+        attackPrepared = false;
         target.TakeDamage(damage);
         if (target != null && !target.CanTakeContact) ReleaseTarget();
     }
@@ -99,13 +108,25 @@ public sealed class EnemyContactCombat : MonoBehaviour
         float distance = Vector3.Distance(from, candidate.transform.position);
         if (distance > contactRadius)
             transform.position = Vector3.MoveTowards(from, candidate.transform.position, distance - contactRadius);
+        enemy.FaceTowards(candidate.transform.position);
         return false;
     }
 
     private void ReleaseTarget()
     {
-        if (target != null) target.Release(enemy, version);
+        if (target != null)
+        {
+            target.Release(enemy, version);
+            if (enemy != null) enemy.ResumeMovementAnimation();
+        }
+        attackPrepared = false;
         target = null;
+    }
+
+    public void ReleaseDefender(TowerCombatState defender)
+    {
+        if (target == defender) ReleaseTarget();
+        if (bypassed == defender) bypassed = null;
     }
 
     public void ResetState()

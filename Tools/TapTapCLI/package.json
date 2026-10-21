@@ -1,0 +1,9 @@
+{
+  "name": "celldefense-taptap-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Project-local TapTap publishing CLI; remote writes require explicit user approval.",
+  "dependencies": {
+    "@taptap/cli": "2026.10.19"
+  }
+}

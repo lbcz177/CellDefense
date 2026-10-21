@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "execution": "Logs/CodexTradingTests isolated copy; EditMode nographics; PlayMode hidden D3D11",
+  "runs": [
+    {
+      "platform": "EditMode",
+      "result": "Passed",
+      "total": 117,
+      "passed": 117,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-19 00:36:19Z",
+      "ended": "2026-10-19 00:36:20Z"
+    },
+    {
+      "platform": "PlayMode",
+      "result": "Passed",
+      "total": 26,
+      "passed": 26,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-19 00:39:13Z",
+      "ended": "2026-10-19 00:39:22Z"
+    }
+  ],
+  "sourceFilesMatched": 8,
+  "sha256": [
+    {
+      "file": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "4BA623EA5B055B35CD57898E43B42756774E2841C6B6069678F6453E90A1A43E",
+      "copySha256": "4BA623EA5B055B35CD57898E43B42756774E2841C6B6069678F6453E90A1A43E"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs",
+      "sha256": "8E1F14A5BC481EED717F646315B9C0429D0E5DA75E3497674C6D3F3CDB15A2B1",
+      "copySha256": "8E1F14A5BC481EED717F646315B9C0429D0E5DA75E3497674C6D3F3CDB15A2B1"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerController.cs",
+      "sha256": "4CA84667A2F6638F4AC012A6ED199B8B0E9C835E3BB1DB93905D8EED4675D984",
+      "copySha256": "4CA84667A2F6638F4AC012A6ED199B8B0E9C835E3BB1DB93905D8EED4675D984"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs",
+      "sha256": "D1D442AC918E8C6756992E95B2BC8EBC14D75020AC3E28B0C80DDA04E83FC5C8",
+      "copySha256": "D1D442AC918E8C6756992E95B2BC8EBC14D75020AC3E28B0C80DDA04E83FC5C8"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/TowerEconomyRules.cs",
+      "sha256": "979086710815DD60CAE9B5F9867E025EDC574AC2BA146535F000640D6DDD8303",
+      "copySha256": "979086710815DD60CAE9B5F9867E025EDC574AC2BA146535F000640D6DDD8303"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/TowerTradingTests.cs",
+      "sha256": "5DE48405841C52BF47ED0E36E37ED177196931984A4346D76FBFCD51568B7A29",
+      "copySha256": "5DE48405841C52BF47ED0E36E37ED177196931984A4346D76FBFCD51568B7A29"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/TowerTradingPlayModeTests.cs",
+      "sha256": "EFD49AB90D8B9206C0C3BF46613735BC6B728A1B115996852B50C296453A901D",
+      "copySha256": "EFD49AB90D8B9206C0C3BF46613735BC6B728A1B115996852B50C296453A901D"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs",
+      "sha256": "8E051E75DB103CB03A21EFB5EF5787D8A260486C27D5B70B5BBB7F42D7032412",
+      "copySha256": "8E051E75DB103CB03A21EFB5EF5787D8A260486C27D5B70B5BBB7F42D7032412"
+    }
+  ],
+  "previews": [
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\升级接入_2026-10-19\\接入验证~\\塔升级前_Unity预览_640x480.png",
+      "sha256": "E1A949587C3F824D0291E6E514A75CFC0825A3AFDFC61605CD3E04BDE8FA446C"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\升级接入_2026-10-19\\接入验证~\\塔升级后_Unity预览_640x480.png",
+      "sha256": "F140130914B811B2C89A0CBBDFA8EB69529454AE069ACDCD3312CA4D12620959"
+    }
+  ],
+  "standaloneQuit": {
+    "scope": "MainMenu-only Windows x64 Mono smoke build; helper only in isolated copy and removed before regression",
+    "headless": true,
+    "buildResult": "Succeeded",
+    "quitRequested": true,
+    "quittingEvent": true,
+    "exitCode": 0,
+    "exeSha256": "A07EE734B8A8B25D4AB5B3CA94CFE2C1852FBE83AD385073667618FF5F9CF270"
+  },
+  "fullGameBuildPerformed": false,
+  "profilerPerformed": false
+}

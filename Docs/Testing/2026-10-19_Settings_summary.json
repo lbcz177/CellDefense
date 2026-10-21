@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "execution": "Logs/CodexTradingTests isolated copy; EditMode nographics; PlayMode hidden D3D11",
+  "runs": [
+    {
+      "platform": "EditMode",
+      "result": "Passed",
+      "total": 109,
+      "passed": 109,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-18 16:04:50Z",
+      "ended": "2026-10-18 16:04:51Z"
+    },
+    {
+      "platform": "PlayMode",
+      "result": "Passed",
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-18 16:03:18Z",
+      "ended": "2026-10-18 16:03:26Z"
+    }
+  ],
+  "sourceFilesMatched": 6,
+  "sha256": [
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettings.cs",
+      "sha256": "F8BD948F9D07968D9C782A6EEB2FEAD98FC3B7C4D500A9B51B7BDA5A6EAE0404",
+      "copySha256": "F8BD948F9D07968D9C782A6EEB2FEAD98FC3B7C4D500A9B51B7BDA5A6EAE0404"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettingsPanel.cs",
+      "sha256": "DA5AC66A711D068B087441B60C291577A47E120C8EA0C5C55D577B68456417E6",
+      "copySha256": "DA5AC66A711D068B087441B60C291577A47E120C8EA0C5C55D577B68456417E6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldPlaybackControls.cs",
+      "sha256": "FE6B741574CCE990C00A858F9913BE4986B35AB38DEAD5D48701F1FB87BA3A68",
+      "copySha256": "FE6B741574CCE990C00A858F9913BE4986B35AB38DEAD5D48701F1FB87BA3A68"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs",
+      "sha256": "BF1BFEC170AC6D8AB02DFCEF6898C1740E032C13458861E812936A76ADE691DB",
+      "copySha256": "BF1BFEC170AC6D8AB02DFCEF6898C1740E032C13458861E812936A76ADE691DB"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/GameSettingsTests.cs",
+      "sha256": "1A298040DB15D7CD0029E32D3AA0E7840A39DDE14BCBF42951AA56E3EEC52165",
+      "copySha256": "1A298040DB15D7CD0029E32D3AA0E7840A39DDE14BCBF42951AA56E3EEC52165"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "B82C54EF44ED362AF1087EA62A1BC8806B80A387276A70D247B3CE33EC0AD149",
+      "copySha256": "B82C54EF44ED362AF1087EA62A1BC8806B80A387276A70D247B3CE33EC0AD149"
+    }
+  ],
+  "unchangedArtworkFiles": 31,
+  "artwork": [
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\01_空面板.png",
+      "sha256": "015BF496A12F2A787603A703999C3298FAB2C199125AAC0B189754B2016AFB96"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\01_空面板.png.meta",
+      "sha256": "892494775488D4C61CD2075C1B8170ED09777AE83F5489ABCA52BE83891618BE"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\02_游戏暂停_标题.png",
+      "sha256": "9FE31247725F1B34484271A8231A488AD1C09184DA5D8161D2BB34704C31BA9C"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\02_游戏暂停_标题.png.meta",
+      "sha256": "138E64ABD24849B4DF65D1140B6186242B869D8387877CF25CC6D89234C3FD96"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_分层源文件.aseprite",
+      "sha256": "B13CAEE3C07B4495379F583EC3F7528435327A6996828BE85C96178E6B1EF619"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_全部未选中.png",
+      "sha256": "0023B326E6E92C19BFD80410B1C84BD183A10F4648BC7A32B85CCF0D37C9559A"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_全部未选中.png.meta",
+      "sha256": "B294E9040535BB490D59035AE995D4C7435569A9B2E895E3248C3DD079438B0E"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_预览.png",
+      "sha256": "F8ED899F230686B146C3AFBFA5B03C7DADC34F38CAC0F9E806CF6676BFAFE8AE"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_预览.png.meta",
+      "sha256": "D592044DA407A2855B611232551B939DAE4027EB2DD7146818E54FF9278605CF"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_组合透明.png",
+      "sha256": "DC419D582ACE20AC511BDD45FDCBDA61FC87B86682046EA7C63C6B6F3A873D1F"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\暂停界面_组合透明.png.meta",
+      "sha256": "40A3476F3F5D5378EC05789B5DCA5BAC46DA99A8171D3AAF3CCC8FF6E76633EB"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\menu_normal_source.png",
+      "sha256": "8C6414765E96AE49E4A4D6C42E7E40F0B10230D8ACF68F9F70D14DB97B81E10B"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\menu_selected_source.png",
+      "sha256": "9B7FC67863D9B8DE4A1BEFFFB9C999531847630FE8F0432D19AA99298072EEB8"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\panel_source.png",
+      "sha256": "5455DC559FBE558F44BF8817840078BB07E2D95A20B89723D817104C6CB420AA"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\resume_normal_source.png",
+      "sha256": "2BC1E5D0AF0204BB642543522402A4D08B56E6E6144D2817E5B3AEC8DE58DFAA"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\resume_selected_source.png",
+      "sha256": "75AFB46F9CC55166312AAB2AABA8BB1E6D291D6379B63681F04BDD94344091E4"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\settings_normal_source.png",
+      "sha256": "C0F21DA7BEAEA2BAA4915B0F35558BDDFAFDC4CE0B693FCCB919503CDE541E8E"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\settings_selected_source.png",
+      "sha256": "7B074699974C06D97B019E03823A5B5A67D7EA54E88165E171EBCBA9D1FCE2E8"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\制作记录~\\title_source.png",
+      "sha256": "EAE6706E4C2367A34136CEEB4923A216B7C9E08714A05E69FC6FD20455E5324B"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\01_返回游戏_未选中.png",
+      "sha256": "A5BEC1121663C4E7556EDBD1522783B040ECEA16D938A9348C0EFC66B937A05F"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\01_返回游戏_未选中.png.meta",
+      "sha256": "642A27C1287FADD6B84347CF1D2D90FB6B1613C5C06345ED128D363A96634A4E"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\02_返回游戏_蓝色选中.png",
+      "sha256": "6BD384E87FDF2549A4D0362DA923F1A8B8BF9B5CDF838E309706C4DDEF992550"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\02_返回游戏_蓝色选中.png.meta",
+      "sha256": "5D40186A8AF01D0760F60522DF4A762405149CF34D9352E32FD395D9B45CFABD"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\03_设置_未选中.png",
+      "sha256": "73D571E1344896C15F8AE092CAD463A6D57CA5915C0A8FA66E171EEBE6486C8B"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\03_设置_未选中.png.meta",
+      "sha256": "D765B52E09CAEC566FA1C4BAAC6A7F9EA195711C6B4A52982F642E2D5409952D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\04_设置_蓝色选中.png",
+      "sha256": "950EEBF2E3C791589FC46E75598306D2D7F979D8865B866C11597F92C6563C9B"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\04_设置_蓝色选中.png.meta",
+      "sha256": "E964ED4B87C6803976A0D5F6E4362A9B191EF900C688D7045476A9278C5C0C78"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\05_退出到主菜单_未选中.png",
+      "sha256": "4F9B1AC3BA4922FC5CBB5C142B9DD92A735CBAE4AB295D9FE117E1102733CCB9"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\05_退出到主菜单_未选中.png.meta",
+      "sha256": "432043EB606A4A318BAF3E8CE8D0CDC1272BAEBAA22F947C4376817BB0FF7235"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\06_退出到主菜单_蓝色选中.png",
+      "sha256": "E2C1D5E9A987986CAF0B01BC639258E4F1E2F1F02748C41676D9B4D3826E187C"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\暂停界面_v2_2026-10-18\\按钮\\06_退出到主菜单_蓝色选中.png.meta",
+      "sha256": "2889AD9A23BD744520D8BFFD977B224022439F33F97D9EB9ED32EEB835A48681"
+    }
+  ],
+  "preview": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_2026-10-19\\接入验证~\\设置界面_临时控件_Unity预览_640x480.png",
+  "previewSha256": "F97EA863C36AF8972D58243B3BEB402D4C1CD4D8FAF657FE0AFD3FF81B8E2FF0",
+  "settingsArtwork": "Sound/slider artwork location pending user confirmation; temporary controls",
+  "playerFullscreenVerified": false,
+  "buildPerformed": false,
+  "profilerPerformed": false
+}

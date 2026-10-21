@@ -1,0 +1,2187 @@
+{
+  "textures": [
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/08_子弹与特效/089_免疫记忆脉冲.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/特效/089_免疫记忆脉冲.png",
+      "kind": "effect",
+      "group": "effect_0",
+      "colors": 64,
+      "oldGuid": "281425ecca8112440ba86731b7ea0a9a",
+      "newGuid": "1e54d85ce4fb4569b214391a4de9cc15",
+      "sourceSha256": "5d4aaa1052263dcd806b38ef2ae5e3fa11cb06e7887720c72322cba001ba08ef",
+      "sourceMetaSha256": "1575870752476123b91381a9b9000ffcc67e4e2b5263f51e268b9c0d94b76640",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/08_子弹与特效/090_抗体标记环.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/特效/090_抗体标记环.png",
+      "kind": "effect",
+      "group": "effect_1",
+      "colors": 64,
+      "oldGuid": "26b34f399643cd04e9a1ca8509bb456b",
+      "newGuid": "49dd3137da8641fb953d3faa35e601c5",
+      "sourceSha256": "1738e3d196cc88bd6fcf9d1ee895dfa962af5aa747f17182e3753176bf24a2bb",
+      "sourceMetaSha256": "bccb2961895e7d2e13818323f71c8697a61c64306065fa6c24ff12f68217b1a7",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/Enemy.prefab",
+        "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+        "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+        "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+        "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+        "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+        "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+        "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+        "Assets/_Project/Prefabs/Enemies/VirusClone.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/主界面/胞卫战_主界面_v1.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/主界面/胞卫战_主界面_v1.png",
+      "kind": "import",
+      "group": "menu",
+      "colors": 64,
+      "oldGuid": "12db36b7114085d418178f8f0f368bbd",
+      "newGuid": "655a454fca5c41b6af5e8ef355e248c2",
+      "sourceSha256": "962404dba4e161e5d3192b736bb7192beec24b1415f69fa37f24351b10558e50",
+      "sourceMetaSha256": "fd2a8ada67798b8a81e697d870b7255c8b96427485b96f335cdb6c3ff30a7ddd",
+      "sourceDimensions": [
+        1672,
+        941
+      ],
+      "parents": [
+        "Assets/_Project/Scenes/MainMenu.unity"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/01_neutrophil_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/01_neutrophil_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "01_neutrophil",
+      "colors": 96,
+      "oldGuid": "b08ca7147c9a54a4ab5f63f802757f25",
+      "newGuid": "b3f97fa49ea44cf28f90d32f4a68e83b",
+      "sourceSha256": "6226e8a4d7b6751b5e3774ebac7eaeb04642eb81b569d5faa73ef25f7ab96b2c",
+      "sourceMetaSha256": "0dc1e79e2d3560544f2953a8248c9ae7db6acdabcf979456e6cf7f154a094356",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/Tower.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/01_neutrophil_Idle.anim",
+        "Assets/_Project/Art/Animations/TopDown10_v3/01_neutrophil_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/02_fibrin_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/02_fibrin_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "02_fibrin",
+      "colors": 96,
+      "oldGuid": "007abc6e894d3984a8741ea4fecf21ba",
+      "newGuid": "f4c729bbf8b24f33bd199cc8fc084d4c",
+      "sourceSha256": "8dd390c9c9021dcbea70ebed06eba8c16feff51b54a136e77ccaba959b0a881c",
+      "sourceMetaSha256": "a6aa068e704a6c2a94b0d77f25a698916f0e8b7b04361ca3c1241221969141ca",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/FibrinTower.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/02_fibrin_Idle.anim",
+        "Assets/_Project/Art/Animations/TopDown10_v3/02_fibrin_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/03_lysosome_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/03_lysosome_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "03_lysosome",
+      "colors": 96,
+      "oldGuid": "c15dfe664771b484ea5163f90f87d349",
+      "newGuid": "6277d861200749f39cfe9ec8b8d0621c",
+      "sourceSha256": "7e13225e78ad4fc7d271f584f0ced16f780ed06f8f9d7a4ca5dc388b8ccec8cc",
+      "sourceMetaSha256": "3de8b14d1a797d0dea748fdc1d7ac0480375042a87c466a4f0e5d28f64b8f7e3",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/AcidTower.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/03_lysosome_Attack.anim",
+        "Assets/_Project/Art/Animations/TopDown10_v3/03_lysosome_Idle.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/04_neural_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/04_neural_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "04_neural",
+      "colors": 96,
+      "oldGuid": "f98ca8e8192b3a349bb7fdbd4893d1ab",
+      "newGuid": "75ce84fe61e7421aa1c0ea0217a92b18",
+      "sourceSha256": "b82e5544fc3657f450704dfeae385c7d7a9f08a2448b0640b37c65a9c4bb2aae",
+      "sourceMetaSha256": "a1ca655548b2b85bf10262169c95dcabc20db0d4db92d0a3c50d5a8038b1a7a8",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/NeuralPulseTower.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/04_neural_Idle.anim",
+        "Assets/_Project/Art/Animations/TopDown10_v3/04_neural_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/05_phagocyte_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/05_phagocyte_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "05_phagocyte",
+      "colors": 96,
+      "oldGuid": "3a61857a3319ec246986e117fc8e2a2e",
+      "newGuid": "02ecaa9cd1a34808a75abec97e91e6e7",
+      "sourceSha256": "e8536b4d06119bb813edd5b6e40289d718e01d55b51e6e4878eed8c3f2f36c9d",
+      "sourceMetaSha256": "8831c2d069e35b251c6b71ad7563d26f56e48b042dbb46d3454a47a80452cd30",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/Tower 1.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/05_phagocyte_Attack.anim",
+        "Assets/_Project/Art/Animations/TopDown10_v3/05_phagocyte_Idle.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/06_antibody_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/06_antibody_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "06_antibody",
+      "colors": 96,
+      "oldGuid": "735b6e48c93dda64cba39b7cfa453d9e",
+      "newGuid": "641ba34541784e7a8a9c3908a3a7a6d9",
+      "sourceSha256": "6e37a68e98a2faa6407de7f60ba1ba373c95c6e5c685c7b79e2f984564108f94",
+      "sourceMetaSha256": "d58b3936035bc7b76c5778c39d230b2e1a6de99135ade5190b9d9a58e0d588a5",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/06_antibody_Idle.anim",
+        "Assets/_Project/Art/Animations/TopDown10_v3/06_antibody_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/07_staph_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/07_staph_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "07_staph",
+      "colors": 96,
+      "oldGuid": "3968bf27782ded9409085b2454946566",
+      "newGuid": "6fcee805037f4fc7a16734775fc3284e",
+      "sourceSha256": "8d2dc19a4f1c17c5083639cee8fdf6421554db16564b7d935ba5dbbe98484139",
+      "sourceMetaSha256": "6979199a15f46cabdf9dc6a1c59acc1e789211b63ac18438c16a302d9a6ae0fd",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/07_staph_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/07_staph_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/07_staph_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "07_staph",
+      "colors": 96,
+      "oldGuid": "447855e4836f679468be0f0a20453689",
+      "newGuid": "2e5f1d666dbb40878a7527500f0f35f8",
+      "sourceSha256": "aeab22679078d1168cf172599e74410c9d31bc91ca084848fe103e1e5e62c90f",
+      "sourceMetaSha256": "459265abec9b9781bce1ca820378ba95ea733350f1ef4c0a5591973962e4e148",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/07_staph_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/08_flagellate_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/08_flagellate_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "08_flagellate",
+      "colors": 96,
+      "oldGuid": "8acdb85a8e7a7c848a26759cc2b255be",
+      "newGuid": "a6fb564ea39145de8c98b582e03533cf",
+      "sourceSha256": "f4ef9c91b2b4d5fa291923bba17f39c301b98bb525bb9989b5ab1b6a0ef07886",
+      "sourceMetaSha256": "565d2dda30c67448b6fecfc64cfbe73537ff58dc02b3761c710ca0277f6ccad0",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/08_flagellate_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/08_flagellate_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/08_flagellate_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "08_flagellate",
+      "colors": 96,
+      "oldGuid": "fdd87bfe36f9fb34a88cff5c89b4458c",
+      "newGuid": "8bd5f38045c14da3a372a1d34b82cac4",
+      "sourceSha256": "e0761d3a48174982b6c75edaaa4450b1706862ec3f431b4408439fec58b9cf45",
+      "sourceMetaSha256": "c47a3738820a955fb1345b4f466d8495790af57cb8615e518f86e64ea1fdf2e1",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/08_flagellate_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/09_bacillus_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/09_bacillus_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "09_bacillus",
+      "colors": 96,
+      "oldGuid": "29caa8f7076b6a746aed21005f1dd68f",
+      "newGuid": "f4b1932ac43c4078b99644b8af197d03",
+      "sourceSha256": "6a63519e096d4b816b508ffe67455dc3d15b94adc73a7116b901141a1a8b780d",
+      "sourceMetaSha256": "12b353e4e285c00b6f5d3b4ad7df3f1ca3b7909503451d786266073d3d919339",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/09_bacillus_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/09_bacillus_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/09_bacillus_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "09_bacillus",
+      "colors": 96,
+      "oldGuid": "3fa9b7ebe70bed34691c11d7f5c9a72d",
+      "newGuid": "9e141f2675174971bb482fa88e1bc673",
+      "sourceSha256": "a98f184c721e4af7dd4bd92efc13c001c686a79236b72edf71d199c7d008be4f",
+      "sourceMetaSha256": "aea3465e324dcce00eabb3f2b54bf7404ccb30bdb4d610583d37f85fa718b2d4",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/09_bacillus_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/10_fungal_spore_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/10_fungal_spore_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "10_fungal_spore",
+      "colors": 96,
+      "oldGuid": "cf6501da91eeb324ca396b8a92ef484c",
+      "newGuid": "48693b1085d3428a9c928f1cd974bd81",
+      "sourceSha256": "a622b79cbb63bd568f2e7f8e6697b9b54106c43756d58c92fc54881f465129f2",
+      "sourceMetaSha256": "0660dc397a3dcd1c299a1be77de7768eb5309f0ba32bbd59a85272ccb7b14dd1",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/10_fungal_spore_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/10_fungal_spore_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/10_fungal_spore_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "10_fungal_spore",
+      "colors": 96,
+      "oldGuid": "89720d6a5acea1b4299d909e3fc87e74",
+      "newGuid": "b11d909305954c2ebd86c88a79e16aaa",
+      "sourceSha256": "d653bdb41d8e6e328aab0217a80c96649c80d2de9252de4e475f610c60375dfa",
+      "sourceMetaSha256": "6606a99738bc146b0c8ac5590acb1bb9d000c8c102446ca78f1817e8c670fd3f",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/10_fungal_spore_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/11_virus_clone_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/11_virus_clone_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "11_virus_clone",
+      "colors": 96,
+      "oldGuid": "4ac6a544d51f66143bdcb9251b551700",
+      "newGuid": "b7fa1465aaaf4881b0e408585e06d61b",
+      "sourceSha256": "4ed7aa9357fde8f8d82b4643ae06f344d8de9156899985f30c74d54afd3f4ebe",
+      "sourceMetaSha256": "04cba80e87b27b3ae652c9f1fe30a84eec6f023f25328bd27427179e3052009e",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/11_virus_clone_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/11_virus_clone_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/11_virus_clone_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "11_virus_clone",
+      "colors": 96,
+      "oldGuid": "e327de0f797be6b4d9cc7b951bdf2977",
+      "newGuid": "62bcfcd9019044aca6ec2fd36f8fb3ab",
+      "sourceSha256": "aca73b55da0c8b79628bf9d0d168f718f7ef783765eafba4fcb372bfcf0784cb",
+      "sourceMetaSha256": "ff1348171f4843a074498b4fcdeb48760570aff5f49ddd8b28cc2b2da1a30ada",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/VirusClone.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/11_virus_clone_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/12_fungal_boss_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/12_fungal_boss_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "12_fungal_boss",
+      "colors": 96,
+      "oldGuid": "1704af512f3d66443b20c5f5a4e43808",
+      "newGuid": "41f4b2fa08b34c85a57d72b860bcaa5f",
+      "sourceSha256": "ede51bffff3927a9941252aa1ecf49f9f78da24028435f113aaf79b15c6ed2fe",
+      "sourceMetaSha256": "e38f90d5c0fad5b2b07e3d4e2ec91543b3505f540ff85155322f6a2b5a9e3315",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/12_fungal_boss_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/12_fungal_boss_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/12_fungal_boss_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "12_fungal_boss",
+      "colors": 96,
+      "oldGuid": "ef8521e333df3224a81c0afc1e47be16",
+      "newGuid": "4b790976f24c4d50b4f79196c747f691",
+      "sourceSha256": "8573836f86e8d69f1a3850bf7b7e55a25d6867bc9c4b4b5b1b671c779d867f99",
+      "sourceMetaSha256": "02a2a3a5cda4a0b2912ed6f132816dc5e74b3c079a3614a9cdf06f625b97311b",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/12_fungal_boss_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/13_membrane_boss_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/13_membrane_boss_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "13_membrane_boss",
+      "colors": 96,
+      "oldGuid": "772aba204db1dbe4088d910386b7e7bb",
+      "newGuid": "bde9695c580a4d70adaae371a96b34b6",
+      "sourceSha256": "03fddf3b620c513bd5a1f9ae6f006fbca8b1bdb5a7c253d95699648a53b8d0f9",
+      "sourceMetaSha256": "07d9c540ef8db1ffe0d47ffc8a65e4e42a5b9e1b375c07ec23561302d0ee51f7",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/13_membrane_boss_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/13_membrane_boss_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/13_membrane_boss_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "13_membrane_boss",
+      "colors": 96,
+      "oldGuid": "bff831b9acfb1784cb6d5b058ffb3d86",
+      "newGuid": "a42ec5685ba74f11bdcf1939f3a8ddf9",
+      "sourceSha256": "227e9a552247f00dadf67b10077706ce4041a2c3b56dca446da81d7dee98c8d6",
+      "sourceMetaSha256": "71c426f2b636f5a33e800da42efc671b9ab7e9ac4028ae74bce676ad0f63fbaf",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/13_membrane_boss_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/14_virus_boss_attack/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/14_virus_boss_attack/animation_sheet.png",
+      "kind": "animation",
+      "group": "14_virus_boss",
+      "colors": 96,
+      "oldGuid": "c8b979ecbae2efa40b7cf71028d327f7",
+      "newGuid": "021e6c2391f244cd9cb6bbe630952b1f",
+      "sourceSha256": "2f5724d45a1db827928dbad3b3613d5021b6eeb38b9cab4bcf7b4946c3dcc37a",
+      "sourceMetaSha256": "23689cb4acdf6440102b0a9af94c0031a041b374bf698b8cc03dc7abe212f4a9",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Art/Animations/TopDown10_v3/14_virus_boss_Attack.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/14_virus_boss_move/animation_sheet.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/14_virus_boss_move/animation_sheet.png",
+      "kind": "animation",
+      "group": "14_virus_boss",
+      "colors": 96,
+      "oldGuid": "e7959c4ba3afb5e4c880aeaa8cc4ff52",
+      "newGuid": "1b9b0334c1f0428087e729fca121cda2",
+      "sourceSha256": "ee337ef99f577eaf420a99ab2d531204bdc206181012ad09da34cc1786e74760",
+      "sourceMetaSha256": "1c51fe5a3f3d6ead6d9deca7b61ed1351d7d5645369f8cce783f7713d1feb476",
+      "sourceDimensions": [
+        640,
+        256
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+        "Assets/_Project/Art/Animations/TopDown10_v3/14_virus_boss_Move.anim"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/ATP字样.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/ATP字样.png",
+      "kind": "ui",
+      "group": "ui_25",
+      "colors": 48,
+      "oldGuid": "bb9f63ed5a7642fc80a36386321c36eb",
+      "newGuid": "8a6d3b66b83c4019bdd4335333082952",
+      "sourceSha256": "4f740e42653b59c16d54b97bdaba70b1335307965b504abfc05a65a53ff71cd2",
+      "sourceMetaSha256": "e435cab6d911357d8e3e5adc973e749f7881803b363f63a4819a308f97ef23fe",
+      "sourceDimensions": [
+        192,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/ATP标识.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/ATP标识.png",
+      "kind": "ui",
+      "group": "ui_26",
+      "colors": 48,
+      "oldGuid": "8293b7876a7f4647bf0f1bedee92cb4d",
+      "newGuid": "a80344bae3f44612817be350da9a9525",
+      "sourceSha256": "519e0710c499b45bc27e683251df12783786b5ac41152842d827418d7099e6bb",
+      "sourceMetaSha256": "871cdf3689fc46aaba24ca9aa0e588f4ecdeb3067fc3025233187056fe3a6caa",
+      "sourceDimensions": [
+        128,
+        128
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/0.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/0.png",
+      "kind": "ui",
+      "group": "ui_27",
+      "colors": 48,
+      "oldGuid": "1c23d786c2db4aadb3316e06cef612d5",
+      "newGuid": "680fee61c0f043519b739c6b2c2bf5f8",
+      "sourceSha256": "12970465717ed609910103bb6c6d39ffd1c088e327622ba78b589774c4a9fa17",
+      "sourceMetaSha256": "7b9203283b8797532e8dfaa2eee36f8b92b82d00baeb39146f926bed87baac4f",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/1.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/1.png",
+      "kind": "ui",
+      "group": "ui_28",
+      "colors": 48,
+      "oldGuid": "83f56344668e4165a53d59dd16e8c5c2",
+      "newGuid": "37a0697672d54125bede7d3e70105483",
+      "sourceSha256": "f5eb95beba5839527e4b601f0402d44d9d639f209d0a051f95a84dfba1e14311",
+      "sourceMetaSha256": "628255ce4280a32d5cf927c20b144423f63c850c7aa9c968566360360587731b",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/2.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/2.png",
+      "kind": "ui",
+      "group": "ui_29",
+      "colors": 48,
+      "oldGuid": "4434e361b5094c2c97a24921b9e10c6c",
+      "newGuid": "b24036d56e0e48bbb05d8f37cc67a16c",
+      "sourceSha256": "555e05e2989f4090047f1a15a85eafeac6e3b5d3758a711cb5d7d73f6b2db310",
+      "sourceMetaSha256": "ba2b738961525b8105cfd44124dfa6638b99ba1ddaa621d7c5e8d5c2a0a33482",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/3.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/3.png",
+      "kind": "ui",
+      "group": "ui_30",
+      "colors": 48,
+      "oldGuid": "2ad34f2f1c294db887a0d8e6a706471f",
+      "newGuid": "43f2ced8b3a74dce972a70f4354fd741",
+      "sourceSha256": "ba1c82438efceebe5d3d29a6812a0f4c22b08aafb614fe3c37d65a82644cd6c4",
+      "sourceMetaSha256": "dceadd1bdd0f88268d68885a91fed3e0fdcf1417580014e5b8246290c05bb5b2",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/4.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/4.png",
+      "kind": "ui",
+      "group": "ui_31",
+      "colors": 48,
+      "oldGuid": "cf0b4d0df13844a3a855b9fa7b319cca",
+      "newGuid": "8b9fc8b14b3a4ce68673dde8a829803a",
+      "sourceSha256": "7231f437170558de7b4e5810a14d4180df2c84330ebe01564f46272575189e95",
+      "sourceMetaSha256": "817b0735215d273c334a24568e875efc6f28f4c09d98e3c513d4d779407324ec",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/5.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/5.png",
+      "kind": "ui",
+      "group": "ui_32",
+      "colors": 48,
+      "oldGuid": "0f07926010c54d8984ef61b00c8d1192",
+      "newGuid": "07f47a64df9a491987b43401a6d9cc62",
+      "sourceSha256": "7b27369fc1df5c66b7d0280acbf835d4e329a41a5c7bacbd82477899934c5cce",
+      "sourceMetaSha256": "e753b010e98c4d4dbbcdbe1d6178f9262aeae07b50e1428f223039c6582c4dde",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/6.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/6.png",
+      "kind": "ui",
+      "group": "ui_33",
+      "colors": 48,
+      "oldGuid": "029875c221cf4d419dc202a429946c32",
+      "newGuid": "c745f621a2754750a8d5e1d56cb4d2fd",
+      "sourceSha256": "6df5f0d5a259be46e194361bfff53a42f69b69eec2644d7bd62e505494f2e5ff",
+      "sourceMetaSha256": "bde3c00e6277185064567464f0c08befa4461a04433f28827832774c3fc58fe3",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/7.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/7.png",
+      "kind": "ui",
+      "group": "ui_34",
+      "colors": 48,
+      "oldGuid": "f8281dae6cee4646a934cef28d4e497a",
+      "newGuid": "712be53b906647109a3458eeb656f673",
+      "sourceSha256": "ae4a095ef98e2f43e3c6f0ddc21cddfe8238fddaff9ed98fea8f22ba764e5116",
+      "sourceMetaSha256": "08bdcd137beaa919a3529ed7df9f2e353ccddfa9e70ab72905dea3db5961153e",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/8.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/8.png",
+      "kind": "ui",
+      "group": "ui_35",
+      "colors": 48,
+      "oldGuid": "a99aa322b2ff45d9860a44621dd13d92",
+      "newGuid": "cee40964fce645fbb9087299a707a04d",
+      "sourceSha256": "74868052960f53f797e0ea1e55e545e24ee226c1accf134afcae7fe4d9512253",
+      "sourceMetaSha256": "a133f5e849a0e2601865cd9d835ff96d095b1ea7659437cc3bcee54490118680",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/9.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/9.png",
+      "kind": "ui",
+      "group": "ui_36",
+      "colors": 48,
+      "oldGuid": "e5dff02832c24e6bb49ed30b9fb524c9",
+      "newGuid": "db60350af9d64620b5f7f1a2a9a210f3",
+      "sourceSha256": "223571a6371818ad2e7bef9d052f50438866451472e97b0448823d83d8e0cf9b",
+      "sourceMetaSha256": "34433fe3a56cc0738ea96945b77763ff35bd2d685f09c21be8d71a5bcb4421b5",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/下一波按钮_v1/下一波_圆形细胞按钮.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/下一波按钮_v1/下一波_圆形细胞按钮.png",
+      "kind": "ui",
+      "group": "ui_37",
+      "colors": 48,
+      "oldGuid": "67b76b5e63e8408082593966f218b157",
+      "newGuid": "7578f9504f07492d964d8a760b7863bd",
+      "sourceSha256": "7bdef889be8efd662a54a558c59fdb29a45f8abf80e8820f083907c55084d7bc",
+      "sourceMetaSha256": "932c0c90252af9661c78230e9c8c6e916dfd871f15e9c85d55b268ea3a709814",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "parents": [
+        "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel03.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel04.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel05.unity",
+        "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/HUD三栏空框.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/HUD三栏空框.png",
+      "kind": "ui",
+      "group": "ui_38",
+      "colors": 48,
+      "oldGuid": "f88cf6d69cfd4f0e8f8753f026c94df6",
+      "newGuid": "8de748d8bc334a7f8a3924454ffdd0d9",
+      "sourceSha256": "ab6f2ea283cf21b98912b2af8b7fec92052fc8d74dac5df4b38b47b65cfe8d03",
+      "sourceMetaSha256": "40c0684719ae6f53ef379348a978d5f7aa4f2c9f4203d09ea4fec995be4a0f3a",
+      "sourceDimensions": [
+        1280,
+        208
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/数值分隔符_斜杠.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/数值分隔符_斜杠.png",
+      "kind": "ui",
+      "group": "ui_39",
+      "colors": 48,
+      "oldGuid": "93efbd0183c743549cdc98bdd6aae688",
+      "newGuid": "933174977cc94efd888e7bcacfc39291",
+      "sourceSha256": "aa448c898156d9a85b2bd29ab3c67401a9de7028a5444b062927fa7ea1fe031c",
+      "sourceMetaSha256": "b5766b0fb5b251b0cadbd27b84a37f338053acc038a2217374b1b01c7cce9401",
+      "sourceDimensions": [
+        64,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/波次字样.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/波次字样.png",
+      "kind": "ui",
+      "group": "ui_40",
+      "colors": 48,
+      "oldGuid": "f7a671e6a4634f33815a415731b0a49b",
+      "newGuid": "235fa70825b5459ab473b99b1628eda6",
+      "sourceSha256": "8b630ab5b22cfcd8a58a377b00d3271deb722f63bb0723b62dc06a2f54f8fe0a",
+      "sourceMetaSha256": "980e13f9d4a76032b3bffdf6cd681eff60b8fe8a3ab383adfe2efc9c57670f62",
+      "sourceDimensions": [
+        160,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/波次标识_敌群.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/波次标识_敌群.png",
+      "kind": "ui",
+      "group": "ui_41",
+      "colors": 48,
+      "oldGuid": "6eac5c8e14de423b8da91cc9a984ec7a",
+      "newGuid": "a2951a3ffa4b4d0884f6cba84fdc70d4",
+      "sourceSha256": "68cc0128e9de207b00d9c8e37577e3a37f08d288017158ffc50bfb7248b51b85",
+      "sourceMetaSha256": "59bb083b4303e581bf980e4da49377d7a05c57b837914d7195fab7d16e01e37c",
+      "sourceDimensions": [
+        128,
+        128
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/生命字样.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/生命字样.png",
+      "kind": "ui",
+      "group": "ui_42",
+      "colors": 48,
+      "oldGuid": "8b4617b55bda4d18b3c4d65b46b1841a",
+      "newGuid": "bbb1c4271d0645d092ea4a4d345e9d4d",
+      "sourceSha256": "c7e9fe77a001c65b3cbbf0e9d9789c84b909e7ab699ae57a75f8d561aa659c60",
+      "sourceMetaSha256": "80a35235625b9919771e587e4872dcba3432c3992b280cd673b4c329a92495d8",
+      "sourceDimensions": [
+        160,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/生命标识_爱心.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/生命标识_爱心.png",
+      "kind": "ui",
+      "group": "ui_43",
+      "colors": 48,
+      "oldGuid": "8be91c85a55b4eaaaeb87c601af8b7c9",
+      "newGuid": "07c3844555e541768f5a10a267b34641",
+      "sourceSha256": "a1f946b8148bf8419ff71b6821e4e3f65e8fc98fb476eec5b245f69ddd362835",
+      "sourceMetaSha256": "446828c2c15db193cf9486d7db733382f88f6bdc75eecb7cc63351c8c3df6f19",
+      "sourceDimensions": [
+        128,
+        128
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset",
+        "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/01_空面板.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/01_空面板.png",
+      "kind": "ui",
+      "group": "ui_44",
+      "colors": 48,
+      "oldGuid": "59c71dfe8db74805868531c8f47c72cd",
+      "newGuid": "3b1c7f07d52a49ea99c0d9cb1bfcdc27",
+      "sourceSha256": "015bf496a12f2a787603a703999c3298fab2c199125aac0b189754b2016afb96",
+      "sourceMetaSha256": "892494775488d4c61cd2075c1b8170ed09777ae83f5489abca52be83891618be",
+      "sourceDimensions": [
+        640,
+        800
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/02_游戏暂停_标题.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/02_游戏暂停_标题.png",
+      "kind": "ui",
+      "group": "ui_45",
+      "colors": 48,
+      "oldGuid": "ce2abec885194afd8acae44fb75d101b",
+      "newGuid": "a57f191f330b42e8b7f36a9ef576ef8e",
+      "sourceSha256": "9fe31247725f1b34484271a8231a488ad1c09184da5d8161d2bb34704c31ba9c",
+      "sourceMetaSha256": "138e64abd24849b4df65d1140b6186242b869d8387877cf25cc6d89234c3fd96",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/01_返回游戏_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/01_返回游戏_未选中.png",
+      "kind": "ui",
+      "group": "ui_46",
+      "colors": 48,
+      "oldGuid": "5b4c87918e1a4cbfbf902c47c298bf6d",
+      "newGuid": "da60b1b45d2e4765a0d1b7e7c0f84c89",
+      "sourceSha256": "a5bec1121663c4e7556edbd1522783b040ecea16d938a9348c0efc66b937a05f",
+      "sourceMetaSha256": "642a27c1287fadd6b84347cf1d2d90fb6b1613c5c06345ed128d363a96634a4e",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/02_返回游戏_蓝色选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/02_返回游戏_蓝色选中.png",
+      "kind": "ui",
+      "group": "ui_47",
+      "colors": 48,
+      "oldGuid": "4b46041c9ff84dfbb87eda46f27d3a48",
+      "newGuid": "a1b357cdfb7b4eaf9ce80c36645d61c2",
+      "sourceSha256": "6bd384e87fdf2549a4d0362da923f1a8b8bf9b5cdf838e309706c4ddef992550",
+      "sourceMetaSha256": "5d40186a8af01d0760f60522df4a762405149cf34d9352e32fd395d9b45cfabd",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/03_设置_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/03_设置_未选中.png",
+      "kind": "ui",
+      "group": "ui_48",
+      "colors": 48,
+      "oldGuid": "e27f3897d51443a5814ec8a42a67564d",
+      "newGuid": "22e0570789ba4decb7ec326a7ebdeb7f",
+      "sourceSha256": "73d571e1344896c15f8ae092cad463a6d57ca5915c0a8fa66e171eebe6486c8b",
+      "sourceMetaSha256": "d765b52e09caec566fa1c4baac6a7f9ea195711c6b4a52982f642e2d5409952d",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/04_设置_蓝色选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/04_设置_蓝色选中.png",
+      "kind": "ui",
+      "group": "ui_49",
+      "colors": 48,
+      "oldGuid": "fd0a3170f8d546a2a185441ca9d743f7",
+      "newGuid": "84773e510bc043ce8d4b51bbe5f5eaed",
+      "sourceSha256": "950eebf2e3c791589fc46e75598306d2d7f979d8865b866c11597f92c6563c9b",
+      "sourceMetaSha256": "e964ed4b87c6803976a0d5f6e4362a9b191ef900c688d7045476a9278c5c0c78",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/05_退出到主菜单_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/05_退出到主菜单_未选中.png",
+      "kind": "ui",
+      "group": "ui_50",
+      "colors": 48,
+      "oldGuid": "691470a8836848fd9fce584f7e4a8adc",
+      "newGuid": "45044c213fd84f2fa5bc2212af7c3afd",
+      "sourceSha256": "4f9b1ac3ba4922fc5cbb5c142b9dd92a735cbae4ab295d9fe117e1102733ccb9",
+      "sourceMetaSha256": "432043eb606a4a318baf3e8ce8d0cdc1272baebaa22f947c4376817bb0ff7235",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/06_退出到主菜单_蓝色选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/06_退出到主菜单_蓝色选中.png",
+      "kind": "ui",
+      "group": "ui_51",
+      "colors": 48,
+      "oldGuid": "8d221a9eb3104f06a7e54f6978c3a78f",
+      "newGuid": "6dd96dddb2fa40d99bb0ff4e36372b86",
+      "sourceSha256": "e2c1d5e9a987986caf0b01bc639258e4f1e2f1f02748c41676d9b4d3826e187c",
+      "sourceMetaSha256": "2889ad9a23bd744520d8bffd977b224022439f33f97d9eb9ed32eeb835a48681",
+      "sourceDimensions": [
+        448,
+        112
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/01_胜利界面_无按钮.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/01_胜利界面_无按钮.png",
+      "kind": "ui",
+      "group": "ui_52",
+      "colors": 48,
+      "oldGuid": "a94b9faa75f10d44ea788111529c6172",
+      "newGuid": "6a6d3789f8d24b85ad53504c1676194b",
+      "sourceSha256": "c837019bfecc78fa56ba48435088becdd56db261943678e025daf9f8541ec833",
+      "sourceMetaSha256": "035bfebab41bcf33bac1c506e5d28714968796dface7fd87405391603ba682ed",
+      "sourceDimensions": [
+        1122,
+        1402
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Menu/Victory.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/02_失败界面_无按钮.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/02_失败界面_无按钮.png",
+      "kind": "ui",
+      "group": "ui_53",
+      "colors": 48,
+      "oldGuid": "03ac511b60f47874aa2d1dfb8860b4b4",
+      "newGuid": "276cd86c2c4948c9810f4d0d9dd6b888",
+      "sourceSha256": "6d58dd073d3bb4c2d968a8688df12b6378ac1efda50db378afef34facebe1172",
+      "sourceMetaSha256": "32d41234cf1841a2b949ae3bb618b2007c488b58889d8433cb1a2c0cac9ac7cb",
+      "sourceDimensions": [
+        1122,
+        1402
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Menu/Defeat.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/03_下一关_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/03_下一关_未选中.png",
+      "kind": "ui",
+      "group": "ui_54",
+      "colors": 48,
+      "oldGuid": "028a145524eae8249bc12f1fb78fe1c2",
+      "newGuid": "20936ae6f0fc469693148daf9ec42a53",
+      "sourceSha256": "a8a966aa2db2d2ce4d7f2e833ba362966242e81320bc2cc3974ead688a788b2c",
+      "sourceMetaSha256": "b9f431633e436f476d43cac69ef955c2f5399f1e4bf792f3910bef96debf5ee0",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Menu/Victory.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/05_重新挑战_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/05_重新挑战_未选中.png",
+      "kind": "ui",
+      "group": "ui_55",
+      "colors": 48,
+      "oldGuid": "8377880efc93e7e4d9aad592671fe6ba",
+      "newGuid": "602f567cda9a4af8a6529412aa1611e0",
+      "sourceSha256": "e634cc73de430cf2a8ceef7abb9b98075f68e4a4536e289a36097f90cced720f",
+      "sourceMetaSha256": "36f7e268f4f52d1545ffafe142ca8592270633c60d4249f8d659ff6aa844fe9d",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+        "Assets/_Project/Prefabs/Menu/Victory.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/07_返回主菜单_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/07_返回主菜单_未选中.png",
+      "kind": "ui",
+      "group": "ui_56",
+      "colors": 48,
+      "oldGuid": "7f29d445490bbd84fbc40cc4a7974f63",
+      "newGuid": "1e5b3d93ba1b4229aa977267d56ddd12",
+      "sourceSha256": "334c8b4a861490b9bb9ef3251f0012c1437d7f41bab78120640703cca1c0ffaa",
+      "sourceMetaSha256": "84fd840f9cfc0cee34609533fbc7ed85617b175b38dabb26ea10afc2f877b04a",
+      "sourceDimensions": [
+        2172,
+        724
+      ],
+      "parents": [
+        "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+        "Assets/_Project/Prefabs/Menu/Victory.prefab"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/01_声音图标.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/01_声音图标.png",
+      "kind": "ui",
+      "group": "ui_57",
+      "colors": 48,
+      "oldGuid": "bb74e12f50f044a0b4d022e6b567bf4e",
+      "newGuid": "f1c7a4c3fc6d43ce907173d5c62e280a",
+      "sourceSha256": "ce83ad3450b381b5605568f504b64086abdf41de63532a337643c3fd5558d5c4",
+      "sourceMetaSha256": "e32e945f8679bbacac70188e3c741cc2478d6cb0bf5c143caaee35aa2820e120",
+      "sourceDimensions": [
+        128,
+        128
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/02_静音图标.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/02_静音图标.png",
+      "kind": "ui",
+      "group": "ui_58",
+      "colors": 48,
+      "oldGuid": "890ba96af2ef4472803ff4a8c41ed282",
+      "newGuid": "e42a5d20bd29437e9de339292b56a09b",
+      "sourceSha256": "6c47bbb5cd61ba752536baad343249d1cb556b4de4ff9f06a1ea6f2b7c72d0b1",
+      "sourceMetaSha256": "b602e8f782f8608223799a13a7ae8e7cea24937dffd41b60fd7678992d837c61",
+      "sourceDimensions": [
+        128,
+        128
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/03_音量槽_底条.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/03_音量槽_底条.png",
+      "kind": "ui",
+      "group": "ui_59",
+      "colors": 48,
+      "oldGuid": "dc217ebb0c6c41489c76f214edf117aa",
+      "newGuid": "9b41565836154686a159f3ed8c88f38b",
+      "sourceSha256": "1bbc521b5643d2d50a998c0c4babe75de151615a695eee96b15f692b4e09faee",
+      "sourceMetaSha256": "3c625e9fbd03a67924ecbc1f70fafab59e28d21d3fbf282c567ff0ebf7cd054f",
+      "sourceDimensions": [
+        448,
+        48
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/04_音量条_蓝色填充.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/04_音量条_蓝色填充.png",
+      "kind": "ui",
+      "group": "ui_60",
+      "colors": 48,
+      "oldGuid": "9d492598e72e478cab4c390a538599f1",
+      "newGuid": "4c41bf0179024fc5a3fc9ceaabf7125e",
+      "sourceSha256": "b9d6cf86877b135f51051d1849f24fcc9ae72d69ef0aacfb4da69a129cd99f7f",
+      "sourceMetaSha256": "e06ca46e9389dd191bb60e96d7ef16375e3ba6e51c9234a210ffbc5b13213e2e",
+      "sourceDimensions": [
+        432,
+        32
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/05_音量滑块_拖动柄.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/05_音量滑块_拖动柄.png",
+      "kind": "ui",
+      "group": "ui_61",
+      "colors": 48,
+      "oldGuid": "dc5d304753eb4597a8b7f17ecb3798c0",
+      "newGuid": "1d03647549964ba9bea812046cd5291f",
+      "sourceSha256": "043e68cb9e199c242ddbf9e7868f306f03469f0ae9f0413f9d96f57326c1646d",
+      "sourceMetaSha256": "39b007b670df4e46614e3658d350a1050fb5f0801ffd68ffd2c17d34da5641ac",
+      "sourceDimensions": [
+        48,
+        64
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/01_恢复默认_空框_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/01_恢复默认_空框_未选中.png",
+      "kind": "ui",
+      "group": "ui_62",
+      "colors": 48,
+      "oldGuid": "5abab07b96c4415b9957db43feb72a08",
+      "newGuid": "71b0b59194a444a6b18411902af5ca44",
+      "sourceSha256": "9d5756aa42079fa8821732baa59a8cc3782d9cb6e553d455c34b81ed89a1b5f6",
+      "sourceMetaSha256": "5dffa44b1837c1c68220410c96d38bcd3e9320bafb2fd92211da709329c00ce8",
+      "sourceDimensions": [
+        448,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/02_恢复默认_空框_蓝色选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/02_恢复默认_空框_蓝色选中.png",
+      "kind": "ui",
+      "group": "ui_63",
+      "colors": 48,
+      "oldGuid": "d7080994c81644cbb3fa56eda52ec946",
+      "newGuid": "205d9d67ca0e4476a8dafcd034d978e6",
+      "sourceSha256": "cb13a2721f2e83ba9952b0754385a13c9d2b069844ca453687d6c4c658513630",
+      "sourceMetaSha256": "187dcc57bd2b1e44b383e3bb807aa4f4da5539337d2ea20ddb13a8a678f8a037",
+      "sourceDimensions": [
+        448,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/03_返回_空框_未选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/03_返回_空框_未选中.png",
+      "kind": "ui",
+      "group": "ui_64",
+      "colors": 48,
+      "oldGuid": "6f23f0ae56f340ffab057abbc241ad0b",
+      "newGuid": "c9a72a0a44f443d9b1cde2b51fc837e6",
+      "sourceSha256": "9d5756aa42079fa8821732baa59a8cc3782d9cb6e553d455c34b81ed89a1b5f6",
+      "sourceMetaSha256": "ee2ada83bfd030d306d68b4abd6262eec389c96fc3faf50fa1f70d5f29674647",
+      "sourceDimensions": [
+        448,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/04_返回_空框_蓝色选中.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/04_返回_空框_蓝色选中.png",
+      "kind": "ui",
+      "group": "ui_65",
+      "colors": 48,
+      "oldGuid": "cc54b56afdf8421a809675250b494a2c",
+      "newGuid": "747c476867514f97ace429a77ed51a68",
+      "sourceSha256": "cb13a2721f2e83ba9952b0754385a13c9d2b069844ca453687d6c4c658513630",
+      "sourceMetaSha256": "43ddec052d2079aac7f5b4935e2272e3c139d708979caf7dbcee7cb060c8d0a8",
+      "sourceDimensions": [
+        448,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/01_设置.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/01_设置.png",
+      "kind": "ui",
+      "group": "ui_66",
+      "colors": 48,
+      "oldGuid": "c7f428b2f285423c976ed68499bae837",
+      "newGuid": "77e646cc9e5c47eea8a979b912471bca",
+      "sourceSha256": "bd983a5a9d2885501591e5c1504b467a1d33b8245951b40cea756e532bbc3134",
+      "sourceMetaSha256": "c2fc0cde46a53deb0b51ffaeb41af6fc3fb7a0739807b3035eda88eb506db3f0",
+      "sourceDimensions": [
+        160,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/02_总音量.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/02_总音量.png",
+      "kind": "ui",
+      "group": "ui_67",
+      "colors": 48,
+      "oldGuid": "2744b6054cfd490ba74312411c10211c",
+      "newGuid": "3e536df83a434e0bbad7fe6475e5cfb2",
+      "sourceSha256": "03576a418704d858239df79e945e31e04a7815e2259ae8af47458004d536db35",
+      "sourceMetaSha256": "d2adac0834daba034066b7a67be3c3408cf7e129ffa3a8d2cceced7dd7c93766",
+      "sourceDimensions": [
+        224,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/04_全屏.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/04_全屏.png",
+      "kind": "ui",
+      "group": "ui_68",
+      "colors": 48,
+      "oldGuid": "252ad6fe10a04062bd7cf2a576534efe",
+      "newGuid": "340ff8e84e5f467dafbc8406174ff1d7",
+      "sourceSha256": "766c02c812de7919fc652fd92508f835d4f7cee9141538031fa010b1fd242dd1",
+      "sourceMetaSha256": "71eea6ff363b34ca534bf0352df4b98ab682239116a4e5d854445eaffbb6889a",
+      "sourceDimensions": [
+        160,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/05_恢复默认.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/05_恢复默认.png",
+      "kind": "ui",
+      "group": "ui_69",
+      "colors": 48,
+      "oldGuid": "9631fc91fb654f5e93741514ec70b6d5",
+      "newGuid": "9f1a2dd857b64fda9c7df97833fc3a0a",
+      "sourceSha256": "2ece2e72ecb39f3b951e1611e52092150e5ec44d9121ce79a694087bd414dcd9",
+      "sourceMetaSha256": "3f29509c5eb930477e826b88a063cd8cb467633ae062227b960213c264086cae",
+      "sourceDimensions": [
+        288,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/06_返回.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/06_返回.png",
+      "kind": "ui",
+      "group": "ui_70",
+      "colors": 48,
+      "oldGuid": "ff84d859bfe24373a88409611f2f53e5",
+      "newGuid": "6a51dd466dfc4198a0590b8dd3c6ac8d",
+      "sourceSha256": "60ad046aaffeb31d2a8610bebb3a64443d87e668c8fcd72752f5d817e1970a82",
+      "sourceMetaSha256": "042b8919ed6a7c54ba4c5ca36b395c28df970b508218b205166b39205251d9c5",
+      "sourceDimensions": [
+        160,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/07_点击喇叭切换静音.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/07_点击喇叭切换静音.png",
+      "kind": "ui",
+      "group": "ui_71",
+      "colors": 48,
+      "oldGuid": "3f9c67136c9c45e8b69851b144174308",
+      "newGuid": "2a3e1075d6a34ae3b36d706503ae0216",
+      "sourceSha256": "6addad392ff6caee6defe252e6b33ef124642a1e59c37e9be39adfd6a7198e2b",
+      "sourceMetaSha256": "31b2cc9afd1ba5e0192262375ba3888c04a93fd7295d047042d2bf9b63bab36a",
+      "sourceDimensions": [
+        336,
+        48
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/08_关闭全屏后使用窗口模式.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/08_关闭全屏后使用窗口模式.png",
+      "kind": "ui",
+      "group": "ui_72",
+      "colors": 48,
+      "oldGuid": "cd9d5461596f44c4b87a88a406241588",
+      "newGuid": "c517810d16f64c4f9e370a76f1a9a665",
+      "sourceSha256": "cd067d739eec2c5056abf29a05b2b33a3b0975ef893acce5a142f2ea076a56d6",
+      "sourceMetaSha256": "6fb9d1eaf19239462922af3cfe3c5424b2a5fabbf6f76433ecd7fef47b295f98",
+      "sourceDimensions": [
+        456,
+        48
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/09_全屏切换在独立运行时生效.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/09_全屏切换在独立运行时生效.png",
+      "kind": "ui",
+      "group": "ui_73",
+      "colors": 48,
+      "oldGuid": "14c0e6b8b2b74837903b03510a0720f3",
+      "newGuid": "0cd5818c2532435cbcd4475e888c6fa1",
+      "sourceSha256": "08faa7475e4a465f6ec7b2bb58b304a4bc300520a4d4ecaaa4e79d5f63a8d203",
+      "sourceMetaSha256": "260368f68dd7044ff33757bcfe4345ccba33084cd0ae29c58cf55909db1007d6",
+      "sourceDimensions": [
+        496,
+        48
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    },
+    {
+      "source": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/10_百分号.png",
+      "destination": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/10_百分号.png",
+      "kind": "ui",
+      "group": "ui_74",
+      "colors": 48,
+      "oldGuid": "78a62c8f0e654fe69892c612165dadfe",
+      "newGuid": "a26988a2fa664828bab5f56f17da5aaf",
+      "sourceSha256": "36d93f47007b60a7e6d96e5c91bdb885ccf86e1945915b31d7247b43f754aa85",
+      "sourceMetaSha256": "1e9862a21efc0560d1e7dd252b71400bcbc055306e9986f1f5e49e503c59d300",
+      "sourceDimensions": [
+        80,
+        80
+      ],
+      "parents": [
+        "Assets/_Project/Resources/OpenFieldUiResources.asset"
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "group": "01_neutrophil",
+      "path": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/01_近卫.png",
+      "unit": 1,
+      "newGuid": "37ebca3541fe4876bfc369f7497faf07"
+    },
+    {
+      "group": "02_fibrin",
+      "path": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/02_纤维蛋白壁垒.png",
+      "unit": 2,
+      "newGuid": "33bff931945b436ebc131742c5d0b5d9"
+    },
+    {
+      "group": "03_lysosome",
+      "path": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/03_酸化炮.png",
+      "unit": 3,
+      "newGuid": "44d3050715a546dfb6e6c25c75ade12d"
+    },
+    {
+      "group": "04_neural",
+      "path": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/04_神经脉冲.png",
+      "unit": 4,
+      "newGuid": "78c834b52bbc42a4972e3567ca31c632"
+    },
+    {
+      "group": "05_phagocyte",
+      "path": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/05_巨噬细胞.png",
+      "unit": 5,
+      "newGuid": "c3efbe5fdf83421d94c8bdc112def7c2"
+    },
+    {
+      "group": "06_antibody",
+      "path": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/06_抗体细胞.png",
+      "unit": 6,
+      "newGuid": "4f59e844afdc4c3a85d99aaa1723d7b6"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab",
+      "beforeSha256": "9776ed05260cb93897714b312d84a6e4d73abd609576d5e2018e903969567d63",
+      "afterSha256": "3de2cd83dd6e3daa4336e40ddd361131a9b9048431c1ba3145c13f5e4390aa7a"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/Enemy.prefab",
+      "beforeSha256": "75e2f8d8a348ee940e4f6344eee945f0d0291558d3d2b3938c8f530f1666b8a5",
+      "afterSha256": "4b3c6018859ee76742122416078f0b8cecf4dc29bf63af773e7ee21c5b966b47"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+      "beforeSha256": "e895b60d644bd3f312fa72f3a3158f4cfb297202e9dbbf1071ffbd8e2ceab240",
+      "afterSha256": "c77f9ade151a9f94524f1aa629279926c61e596322c67560ba308dc358718582"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+      "beforeSha256": "4a1589d52f9c7da091afa8f115b0cb9f24f415228335dd8efd7597fc8e52b117",
+      "afterSha256": "0bc6a2792df5cab8fa4cd69f521a5ab20860009b0f0e289b672a2f7fd18eb31b"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+      "beforeSha256": "4352076bcb4b4f3062741b6174a7830e9c6536bbfdaeea47818c6b865361214b",
+      "afterSha256": "401b4fce7d1b2293b5952482cee4c66d28c63951f212025f6722b4cfb417f76d"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+      "beforeSha256": "da76a840f333c89b204e87357cd8c2fd0d0d85e333e312baa1093b3d09140115",
+      "afterSha256": "0cd98deb40096a216c7e4ee3b52e2984a592ae71cabab23452454a2d853ef6b1"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+      "beforeSha256": "39c87747cd0cfb5be86c3aef89568fa4d0b633b21ef9496c7cce9d24b8422b9c",
+      "afterSha256": "c835da4082e067866bce2c58fa9068d9690dcf8b2ac1407eeaacc671f032cb48"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+      "beforeSha256": "52c90f78f9540d3c60bf2e17ecc3295037fc06d97e4b21147093bdd283c28891",
+      "afterSha256": "f8d14fde1a04bab0b98a4a48cb126a40b9d96919b6486685df665fb8c7924477"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+      "beforeSha256": "83a95f3f2364928ba0e8820f20b265b1c3fa14ac762d2a45bbadc52e12c20e07",
+      "afterSha256": "9f84fa67b94e324860c143be4a7f355c02b6c886f9a59ae4280c5414946d6cee"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Enemies/VirusClone.prefab",
+      "beforeSha256": "79011c5eeabfdb245b2ab86621e7929db2c235ef5077bc961be71c54545a53ec",
+      "afterSha256": "d4dc3150ac9c7a4b83c068498b8bea24b9fc72cd0698a61434003ad4a9c3d727"
+    },
+    {
+      "path": "Assets/_Project/Scenes/MainMenu.unity",
+      "beforeSha256": "675c7acc1952794e51004fe02126a8abb1c273129b5374c17756e455a11fd1ca",
+      "afterSha256": "f1dd865f44b923529803f988eb17a17cf4731a90b1d1005cc9486b5e3c132ce9"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Towers/Tower.prefab",
+      "beforeSha256": "0f7267510a656918276999889eca47c2ccb2ed28d66daa127eab737d7869cf44",
+      "afterSha256": "7be281dcc7bedaf738974fc85544a97bc6bd05d89c6559792cca831f6ae3d691"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/01_neutrophil_Idle.anim",
+      "beforeSha256": "8cbc25d345bb19aebaa9cb8eb30e298b1faa79bb092361ef081c260ea8a2cc37",
+      "afterSha256": "a4d8ace413fa6851e2213600b0ae449b8f27d31ce79c69e9403028e98d1382e3"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/01_neutrophil_Attack.anim",
+      "beforeSha256": "d08bff7d79aff4a1f3115c1eba874774fdab5a51c37776efb23b89def7440d90",
+      "afterSha256": "94ec78a47d53da80f9876e9cc627b3eb5628cc938968e308fa2fd13eb8b841f7"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Towers/FibrinTower.prefab",
+      "beforeSha256": "3d2dafca1a9f94935ab806b941dcd0a7366bb80d40f8eaa5f281f2813cccf668",
+      "afterSha256": "526f81a63ea6c6bd89c4278c4b2e4d04bfbf2d7a65d7725f99bed2002c25a76b"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/02_fibrin_Idle.anim",
+      "beforeSha256": "14f1c657b31a0ec6b247041d7a79fa85e2d104f10d7624e5c01c1c7c3df0932a",
+      "afterSha256": "b6bb94c0846b752e7a3bc854a3fb27331aa733eafecd99960c7eb8c4f1b792f3"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/02_fibrin_Attack.anim",
+      "beforeSha256": "24956f2a3a9ff0e9718a3d52ac57168035ce9922749740f82aa768961912ec5e",
+      "afterSha256": "c09b0fe6579965569adf807a0c04dad250c4c3cb7cad877e97cca42cb6384fbc"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Towers/AcidTower.prefab",
+      "beforeSha256": "a3be1b53d4a1f4b429a7d55061742a96786987e1a6692d2963417f6988afb885",
+      "afterSha256": "4a8780ec72aca8fb936bd4425c4988c9fe45e18a33074fab94e97a611d25d678"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/03_lysosome_Attack.anim",
+      "beforeSha256": "e1a4862db83e68845b1f8c6a4c302b59163503f0a34b9df6f8a842d7bcc012fe",
+      "afterSha256": "b435ecad0521688921d2aa4c0c59b922caaf5c2ade50bd4af096443731b72d89"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/03_lysosome_Idle.anim",
+      "beforeSha256": "8f870b5f6dd7858bfa0046d0bbc11e0b1a9f16178b8f58794085df009870b9b1",
+      "afterSha256": "71021ebb3ea04b6e5d5a67abb6e498160045cd20a52633a76d34b469b6f7b73f"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Towers/NeuralPulseTower.prefab",
+      "beforeSha256": "91207cf2dc7a21299599c2bcf6976685445e951b968add49d1f3f19318802e47",
+      "afterSha256": "86bf110ef2f2f9306198403f1afa5aa6c7878575a1ce83ce868172aa0d248285"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/04_neural_Idle.anim",
+      "beforeSha256": "0dd1c3f351f445fef3d34a422d08dcab494217532405673483d943e22c298dbb",
+      "afterSha256": "b7b14add75da6e48735391443effb52dd638a79acf9d8f575282ac5375446915"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/04_neural_Attack.anim",
+      "beforeSha256": "a149decb60695e36074f834964b16679c88be9aee6de8df78273d7c6d69e57bc",
+      "afterSha256": "ead7edb5948f875864d3028a8ca1f5fe271bca3d2df67aa70808f4ad63a1e8db"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Towers/Tower 1.prefab",
+      "beforeSha256": "b926cf7b3f2e09f9642f3a144c47199485667b89b5c385ff6c5cd89470bfca60",
+      "afterSha256": "7d4b97aa16af5043286b92ca13071958663e67b5ca530c28df3d464c1e098984"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/05_phagocyte_Attack.anim",
+      "beforeSha256": "c8a8150d6857db911e63d08512cdfdda4e8861ee8a5a4e8f4807b417f1b489aa",
+      "afterSha256": "7dadd5b1974e12c9bfcf14b5ad14e3a010a6a8fde72d32bff7e521175d3f5876"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/05_phagocyte_Idle.anim",
+      "beforeSha256": "2e2456f08002e9ec8caeebdb2e6af59ddbb3e281b8f215a7d8c9b02dad0b8b34",
+      "afterSha256": "7482aa2b213b1936d6669fd58453dac795dfa2265708744f508bf18d1fc164cd"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/06_antibody_Idle.anim",
+      "beforeSha256": "a74e741cb5f02bff5d5a4ca1bf53429b99116f4c4af09708955fce17d56d2122",
+      "afterSha256": "d48b481725c4e34a9986782d14e9d348e7d3b6f957798a0c5443f2ef614fde56"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/06_antibody_Attack.anim",
+      "beforeSha256": "6a93148544a7fb8b871699953428a2bf2cc3cda6f3f49e61f0c0340c4a16a244",
+      "afterSha256": "1859dec7af3ee6c89cf2586e6275664506dd1d58f169173a4e002f855f7e4d3b"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/07_staph_Attack.anim",
+      "beforeSha256": "897a75bec352559b37950cc116c4f1236a61a1197d27756710ed65cd487a26a3",
+      "afterSha256": "ded87fe9635cdb8cbe41befba8d58ddee37c82b38e37f748b46c8023416c6115"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/07_staph_Move.anim",
+      "beforeSha256": "0411cae6c03d549717c3019e4fc7fc29e071e93e4e4e5f387c9c7413a07f9e6c",
+      "afterSha256": "88a7031c3c80e49027fb25c4283672ff3be716b59473d03c1509250250813aac"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/08_flagellate_Attack.anim",
+      "beforeSha256": "2b2f00c6899c0542fbcd4851a55180006d38e1b7e09832d55c7cab5396822477",
+      "afterSha256": "a2e15e8a1e0ced264cea6a14a1d7dd4680ad71bf8482da705e8af944e06a1cbf"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/08_flagellate_Move.anim",
+      "beforeSha256": "6c3a807821ee96808df27b8fcff08654ce86b749cf373ba6527007475135bb47",
+      "afterSha256": "c1648f4d25f64e46ddcec0699c7ff6fc552affb919a34847ef31685fa7f7dfc2"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/09_bacillus_Attack.anim",
+      "beforeSha256": "b8a6ea4b3548130767dd82d5ab68f0fc790671d40107e89983892bcee31f0848",
+      "afterSha256": "e1046a20dd867147cb5432387fc13d5acfea4c833f9f7940a3fadd33cbaa78c6"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/09_bacillus_Move.anim",
+      "beforeSha256": "aefd67e3e06a588226d9bffbee4296bd1c1722b49561480e442477bd02d7abb9",
+      "afterSha256": "1ee2ba9c768aefb4c76d53769f80af1ca306e0d73e088d3a58344d84860e7df5"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/10_fungal_spore_Attack.anim",
+      "beforeSha256": "854f74a1f3643b8041cbf512d44bfcf11e192afc15a3aeb2f01ce0cb2431d967",
+      "afterSha256": "53bebfccab8c183b4df3cbb97fa4d68e09d0c7e345d670f50132411d3f2ea547"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/10_fungal_spore_Move.anim",
+      "beforeSha256": "42d21adb2198422568868df7937effabed2b30e956f08259e1fc7af07035738d",
+      "afterSha256": "5616d09d4dbfa6a2467c0f9f01089991f6862dc5d8318121b89cbb1d033acb40"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/11_virus_clone_Attack.anim",
+      "beforeSha256": "d0e52afcd28bcf685914a4d87cd1c4963c73f661067f87f8964920e31e4b04b9",
+      "afterSha256": "b06cc74cb2c08b7e31e1c4284cebedcab8ea4e2a88ef6a1255f080adeeea70b9"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/11_virus_clone_Move.anim",
+      "beforeSha256": "10bddbcd3af84963c7ce2a2f48c95ea651be4c3d5c87f241c0f19060a2520617",
+      "afterSha256": "e47cdd3822f0da9954ec0ce2bad8dd46c7290fa2018176a95463497647e5799b"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/12_fungal_boss_Attack.anim",
+      "beforeSha256": "43f290e00faa670e6e1f178889dca93eccff31df6f2c24bbb97510050c8cb8f6",
+      "afterSha256": "8fb95ac6dcebdf23681a0f6e6de8955b900f46cf429758b6852ebce5bee4c126"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/12_fungal_boss_Move.anim",
+      "beforeSha256": "76641f419bec48bf97e7f7044c55f23b66fe1bc0579fe76a051f082a7c15c8ed",
+      "afterSha256": "24d59bb02884fcd1e6e3ee7d9d06ad159fe53e104f9b4802988ca73e2c9cc394"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/13_membrane_boss_Attack.anim",
+      "beforeSha256": "1263a20fb089a64da3b5a6f5f870b8977be4a68344a76f2b5c99e20fb6cdebb2",
+      "afterSha256": "21fec3b53c2043bf5bca36ee3ce49c00e3631226bf9bfa2eeea5ced2d42aa3dd"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/13_membrane_boss_Move.anim",
+      "beforeSha256": "300d80c116b13df7861ac17c1d0bbbdaf048930aff0a00181f5f9785ba3816c3",
+      "afterSha256": "945b9aacd19d068d58d1fea1124ba36b6293490cff42027d828248a18447f7a0"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/14_virus_boss_Attack.anim",
+      "beforeSha256": "78bccb2e15a6dd3a50bcc56a1d7dcae475bee6e8fb6b17d0b6929cdee522ff49",
+      "afterSha256": "4d2d9e238bfc96fc4862203d32b5369d9f89564e4277c92c438883ffffb92a1c"
+    },
+    {
+      "path": "Assets/_Project/Art/Animations/TopDown10_v3/14_virus_boss_Move.anim",
+      "beforeSha256": "42d69f72c90b30a5175a326510d6d3739cb3e0aa784643a5da32e41bd1c423af",
+      "afterSha256": "94f080323e77fd439a322e59e4a0cd24acd6534968d4dd55bc8b5bb2549f4831"
+    },
+    {
+      "path": "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "beforeSha256": "214e03efd28eb63c317633371d42db90f7f2c097655cd4968b90ef99e8c9c8f9",
+      "afterSha256": "10214d78aeecb5ba5014fe4bda89965388ae70701c205c10dea90636c3cafc80"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab",
+      "beforeSha256": "74fdeafb0d5b65c3c32a35fe61ab1bd99bb3ccef6bf9603777f0987173c05843",
+      "afterSha256": "5aa767a43478a029a9558f8d5a231f571d997bc9e94cf4ac1a22cc86fa8191c1"
+    },
+    {
+      "path": "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+      "beforeSha256": "a21835f6b239747c1c9ab6dd003b30d61b89f9b1c5f273202ec4041517c906fe",
+      "afterSha256": "315a66a632a8a9fe26a9dca38156148d5d472380573f3d46e04d493e35fc9d72"
+    },
+    {
+      "path": "Assets/_Project/Scenes/OpenFieldLevel03.unity",
+      "beforeSha256": "22641a6ec892dff0d30290da3ff3165637bb419318231cbbdf56b1e8c2337659",
+      "afterSha256": "90e33dfeb1c1d3ee94ffe4488bca79ab9593c4ffd44a7d58579a7149fb5fe09b"
+    },
+    {
+      "path": "Assets/_Project/Scenes/OpenFieldLevel04.unity",
+      "beforeSha256": "9d8ae43e26411fc17aabb2f91c103176840108b510a009f7807e4e9ce757d986",
+      "afterSha256": "194ba598175c761d07668e095ee82f0ec0bbb31f77dc711638b185b0814d04f5"
+    },
+    {
+      "path": "Assets/_Project/Scenes/OpenFieldLevel05.unity",
+      "beforeSha256": "3f17d8cec08a573fcafb7db0749f7712584bf3dcbb587857b92ca585d9b8c2de",
+      "afterSha256": "198a759092d04fcc274beea8a5495007795270e73f39b36609baf66739bb8e8a"
+    },
+    {
+      "path": "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+      "beforeSha256": "5223a6f9e2a56bdb2f4c521e8aa71dc5d480b6becca35dd9d295200585ebb3c4",
+      "afterSha256": "93e1e8f6baf6114debeacecae5cc00daa5edcf8523b950ae228beffb1e6bec53"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Menu/Victory.prefab",
+      "beforeSha256": "fa03e0a141747529717928acc75ba1708c03cdef727af0b1106d914bda20dd1b",
+      "afterSha256": "247071f1cd9bd514fbee05dfd9f81ee0dc9ecdf005fc16b24d55e1b02a8cc184"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+      "beforeSha256": "a714a928acdbd767730fb2e803cc00bf539e69f980bcc27ebae449776cf835c7",
+      "afterSha256": "fc029e3a7317244eb0e7bf33ec188e600ed713237c9c284b9bc2bd7d54c4bdcd"
+    },
+    {
+      "path": "Assets/_Project/Data/Towers/AcidTowerDefinition.asset",
+      "beforeSha256": "c57147b6f69a55ad83ad2c576528146ab9eb42f4108545be1f10a57f80fa8783",
+      "afterSha256": "03cb3185fdfb5824971e25de433210af4c176c02ce3886815994bf663b0a84b7"
+    },
+    {
+      "path": "Assets/_Project/Data/Towers/FibrinTowerDefinition.asset",
+      "beforeSha256": "bf655021dfd7fc523c2e4d701e506b14ada09c7cbf91a83936a43d40a623e8e8",
+      "afterSha256": "a224d46d4701a5ff3144bef28e50791ce2f22a4b7685f4f2d845e2fb5266a8a2"
+    },
+    {
+      "path": "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset",
+      "beforeSha256": "fd84b6786a2deb9194c106d177eea6825e8860b24d9d90803d46189291e20368",
+      "afterSha256": "06365a97ed6b043cfea9d910798c36c32323014f3e65c07eb1026d05ed3500ca"
+    },
+    {
+      "path": "Assets/_Project/Data/Towers/NeuralPulseTowerDefinition.asset",
+      "beforeSha256": "c7b50968075a03a101fc2ef9af385c6bd38a8873426b89bf48563cdcae405eb3",
+      "afterSha256": "5289581992de92f8e32d79b04b334df5df5fb166a51c19513b52da4dac766f92"
+    },
+    {
+      "path": "Assets/_Project/Data/Towers/TowerDefinition 1.asset",
+      "beforeSha256": "92f08acb5d80ee8d325854afb9e90981bbfb2b4be0763b89806e426996004024",
+      "afterSha256": "b22cefc4670f2ae410082e9b3d43738ef843f9633bc496ecba99ba554d8df1fe"
+    },
+    {
+      "path": "Assets/_Project/Data/Towers/TowerDefinition.asset",
+      "beforeSha256": "1a8bdf2d40654eff2a18eccc0bba4ca1b83a24f7cc878f2f656e081a1d67be74",
+      "afterSha256": "ce7b43d128e239324ee58fe530f8822f06933d8368f7e91a2aed93df91473d9a"
+    }
+  ],
+  "metrics": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/特效/089_免疫记忆脉冲.png",
+      "colorsBefore": 103220,
+      "colorsAfter": 5227,
+      "sha256": "07e75018236bbec6d69bc190d1c6f9f5eb3a4d5a43e6ece74750f9fb815ed1c4"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/特效/090_抗体标记环.png",
+      "colorsBefore": 53893,
+      "colorsAfter": 2132,
+      "sha256": "d56de31d4ad340cd1425d9e8256669d9351a3f6311cfe4c2c8250fe014cb467e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/主界面/胞卫战_主界面_v1.png",
+      "colorsBefore": 365269,
+      "colorsAfter": 365269,
+      "sha256": "962404dba4e161e5d3192b736bb7192beec24b1415f69fa37f24351b10558e50"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/01_neutrophil_attack/animation_sheet.png",
+      "colorsBefore": 20491,
+      "colorsAfter": 97,
+      "sha256": "0a8cda39625beccac8c2c086ca3328267697cef59e07916b0471a1cb1b97f309"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/02_fibrin_attack/animation_sheet.png",
+      "colorsBefore": 20940,
+      "colorsAfter": 94,
+      "sha256": "1f805b805aace844999ed0cf71612171e3c360fadaf1fdef45619fb353c58a52"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/03_lysosome_attack/animation_sheet.png",
+      "colorsBefore": 31182,
+      "colorsAfter": 97,
+      "sha256": "9fe756a174ca140de56a194a3f009faa5f5e13a7fc69a43855550086102b1386"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/04_neural_attack/animation_sheet.png",
+      "colorsBefore": 19192,
+      "colorsAfter": 97,
+      "sha256": "d4f5f8a7250f48240dc7f525372fc4625d617274df8ee3621d18ad5823aa0180"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/05_phagocyte_attack/animation_sheet.png",
+      "colorsBefore": 15827,
+      "colorsAfter": 97,
+      "sha256": "86e4bd511f361973d704dc7b1dd362df92eacd31c37af909be40bb9fb2e899fd"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/06_antibody_attack/animation_sheet.png",
+      "colorsBefore": 20680,
+      "colorsAfter": 97,
+      "sha256": "e51eb624a7f5f3b027f297bbbc99dfefa10bf2cfef490275cffd0f30f9840f00"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/07_staph_attack/animation_sheet.png",
+      "colorsBefore": 19573,
+      "colorsAfter": 97,
+      "sha256": "7023cdf267cdf1564ede08a3fe970c6ab9dffa1fbe9f9deefafe4f7e0b0d790e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/07_staph_move/animation_sheet.png",
+      "colorsBefore": 19255,
+      "colorsAfter": 97,
+      "sha256": "8b3db4fd4642115df1043cf124bb2d54369f402d306fc7004015efc1b51672e7"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/08_flagellate_attack/animation_sheet.png",
+      "colorsBefore": 10579,
+      "colorsAfter": 97,
+      "sha256": "51efcccf9e26270ba9c827b0e27d40d441bb43d6105a47b7aefd02f905cfb607"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/08_flagellate_move/animation_sheet.png",
+      "colorsBefore": 10799,
+      "colorsAfter": 96,
+      "sha256": "4d95de37ab387cb04c153cd7298aab3bf011491a0822cf731d0372eb4ecbd041"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/09_bacillus_attack/animation_sheet.png",
+      "colorsBefore": 17810,
+      "colorsAfter": 97,
+      "sha256": "cd675f7d386df327243ed07db16aec24d3b0fec12d76f033c16b6f7aad41fa52"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/09_bacillus_move/animation_sheet.png",
+      "colorsBefore": 17915,
+      "colorsAfter": 97,
+      "sha256": "522d656cb82b3875791e43d1fa0833d21d1efd122bdfa16b9f425d3460c37140"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/10_fungal_spore_attack/animation_sheet.png",
+      "colorsBefore": 23349,
+      "colorsAfter": 97,
+      "sha256": "b0ff14beb86407b30f762c6223f6fe443dc77a42fe775788c2179e63bd0cec47"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/10_fungal_spore_move/animation_sheet.png",
+      "colorsBefore": 23510,
+      "colorsAfter": 96,
+      "sha256": "78f5fc53a7e60565c88d55b2661e416081ef79d7c4469f80a6f72cef5431c1d6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/11_virus_clone_attack/animation_sheet.png",
+      "colorsBefore": 30773,
+      "colorsAfter": 97,
+      "sha256": "47f4d79d9b34155282070caa284577c23fd06bd7ca4a0530954dcd857127493b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/11_virus_clone_move/animation_sheet.png",
+      "colorsBefore": 30794,
+      "colorsAfter": 97,
+      "sha256": "69aeaf89aa98628f3183d22bf3eaf295c08daef52ec8925c1d2066da209841c6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/12_fungal_boss_attack/animation_sheet.png",
+      "colorsBefore": 34928,
+      "colorsAfter": 97,
+      "sha256": "786dbbc7f210f590f4fa549929eb6ccab5cc7d73b9676e5163a89cfc21726be0"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/12_fungal_boss_move/animation_sheet.png",
+      "colorsBefore": 34706,
+      "colorsAfter": 97,
+      "sha256": "5ec22f006dfbfe0b3be08f01ce59bb3a528ce5215207d48074c77be64a21f5cc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/13_membrane_boss_attack/animation_sheet.png",
+      "colorsBefore": 47619,
+      "colorsAfter": 97,
+      "sha256": "0065b49af3f1238fff62527f32433705f930435b4384b1fab1468133627a75b9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/13_membrane_boss_move/animation_sheet.png",
+      "colorsBefore": 48171,
+      "colorsAfter": 97,
+      "sha256": "958108a591c25052eb4f2a8461339a58c2d3ea2e2124c02fa1a9034c211a8070"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/14_virus_boss_attack/animation_sheet.png",
+      "colorsBefore": 35496,
+      "colorsAfter": 97,
+      "sha256": "94c1ccfa387a2355cd59c2c6899f85d15f0bf8e20a780eda9c50934c7d8f0dcb"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/14_virus_boss_move/animation_sheet.png",
+      "colorsBefore": 34801,
+      "colorsAfter": 97,
+      "sha256": "5ab4621a3aac45286a9fdfe610b039c44a92843ed2732b43ede0dcdb2d03a4b9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/ATP字样.png",
+      "colorsBefore": 1065,
+      "colorsAfter": 47,
+      "sha256": "ccaefff88e81896f6690b9bac928f05f31305678370c08bd9b9a54c54b558a41"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/ATP标识.png",
+      "colorsBefore": 1064,
+      "colorsAfter": 48,
+      "sha256": "26630912c02da1887721656f953dd48131cea9c28149c3f3761ec237b63647a3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/0.png",
+      "colorsBefore": 995,
+      "colorsAfter": 48,
+      "sha256": "ae12c0935f973610e70a4c835493274f722e11c340db048a0f49033a830b9ee4"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/1.png",
+      "colorsBefore": 822,
+      "colorsAfter": 49,
+      "sha256": "93620fa99efd57783d7374be50f9c897c73427891c36ce6a25240e4b95d70b6d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/2.png",
+      "colorsBefore": 1041,
+      "colorsAfter": 47,
+      "sha256": "664f850cef3a0ae8264fcc26180a6413fb380eef2e9733c72fc30d1621a10bd4"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/3.png",
+      "colorsBefore": 1112,
+      "colorsAfter": 47,
+      "sha256": "8b492bca585cdb4df8525fd991b0600908ef0181c8e3ac87310870b317352c26"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/4.png",
+      "colorsBefore": 971,
+      "colorsAfter": 47,
+      "sha256": "507e543ac37c05189b6db5682e6b6e4399bbd5b89e8cba42a6c955291547c195"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/5.png",
+      "colorsBefore": 866,
+      "colorsAfter": 49,
+      "sha256": "7a9f91871dcb54d0982476e60c81ddaa79cba982f1506a41871bda19bb42bf27"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/6.png",
+      "colorsBefore": 979,
+      "colorsAfter": 48,
+      "sha256": "a880fe76e8c3df2a974d4583893d20d74913c1dd32182bec46e9485c83d6ce4e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/7.png",
+      "colorsBefore": 842,
+      "colorsAfter": 48,
+      "sha256": "b66db1d5286f606025ae900c809c2fe46ad67713cccc097ec084213762cc405b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/8.png",
+      "colorsBefore": 1032,
+      "colorsAfter": 47,
+      "sha256": "46e9748a2e70eb74f9d949fe737db16a1431a9e3290da8100b924519e26eb05a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/ATP像素数值_v1/数字/9.png",
+      "colorsBefore": 1006,
+      "colorsAfter": 47,
+      "sha256": "f87a2955aa04665171eee4c307d72a710af0c16220abc1c21578eee6156342f3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/下一波按钮_v1/下一波_圆形细胞按钮.png",
+      "colorsBefore": 52523,
+      "colorsAfter": 49,
+      "sha256": "ab1c875dc163b01daa18f4434f90f85860a64a165b55ce6069b9b085d6c0eaa8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/HUD三栏空框.png",
+      "colorsBefore": 7823,
+      "colorsAfter": 48,
+      "sha256": "2029dfa2f513305459cfb954eeff303213f1ead27c30d36a87edebba08ce52ec"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/数值分隔符_斜杠.png",
+      "colorsBefore": 338,
+      "colorsAfter": 49,
+      "sha256": "b6485248ad743412896a95c3bd9123306cb35bd7be5353d305fc38d55d6753c4"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/波次字样.png",
+      "colorsBefore": 1575,
+      "colorsAfter": 49,
+      "sha256": "ad3ccd971e5127d781dc2fd080038309952835c85bfe633c7b1a5a29a35ced82"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/波次标识_敌群.png",
+      "colorsBefore": 1693,
+      "colorsAfter": 48,
+      "sha256": "7203a150be8677411d352369f0960765c7b0823253fe57347d320be3501b3c0d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/生命字样.png",
+      "colorsBefore": 1258,
+      "colorsAfter": 49,
+      "sha256": "5972056db62e9c3860032bc46fffd7a5663e4e1dffa10c5809258364f13cbb7c"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/战斗UI/生命波次与HUD框_v1/生命标识_爱心.png",
+      "colorsBefore": 665,
+      "colorsAfter": 49,
+      "sha256": "1dbbfc97c626c97f5b561b0bc37a024c0aa090dcb5dfb03ac2ab41e78bdc8251"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/01_空面板.png",
+      "colorsBefore": 10347,
+      "colorsAfter": 49,
+      "sha256": "fcfebb090cdd0041d2523989c9acb986813ac0ccf1878a911c0ddd1a3fc56ca0"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/02_游戏暂停_标题.png",
+      "colorsBefore": 5295,
+      "colorsAfter": 49,
+      "sha256": "ca1b80802077378f4a56e173d86d37cc3a4a0e5be7330b036ef121f737753cbd"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/01_返回游戏_未选中.png",
+      "colorsBefore": 2939,
+      "colorsAfter": 49,
+      "sha256": "3c1adc504e5064259e5d094e34b8671dcb8dbb202902f40c3f7cab5ff4e76f38"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/02_返回游戏_蓝色选中.png",
+      "colorsBefore": 4935,
+      "colorsAfter": 48,
+      "sha256": "79422bf02c1ffbc17967dc866cd63b32bf8292582a11361370c11060f95202b0"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/03_设置_未选中.png",
+      "colorsBefore": 2730,
+      "colorsAfter": 48,
+      "sha256": "8f1789398d32ec480c37d03370be80e156e936a0897e6cae26efa25b5c741334"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/04_设置_蓝色选中.png",
+      "colorsBefore": 3393,
+      "colorsAfter": 46,
+      "sha256": "2a0e80f1dcc56880de63f6d1eb899fbd48f4fdd14fc479b3fc9e2931c66f9bdc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/05_退出到主菜单_未选中.png",
+      "colorsBefore": 3796,
+      "colorsAfter": 49,
+      "sha256": "ae44f442634231ef40287673ef17f02572397323bc9d4c1088c7f92d51735630"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/暂停界面_v2_2026-10-18/按钮/06_退出到主菜单_蓝色选中.png",
+      "colorsBefore": 5800,
+      "colorsAfter": 49,
+      "sha256": "3f0b2f24c40f962b7737ad08a13516d94c2559d9f82a3d36a0519a22ae5401b6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/01_胜利界面_无按钮.png",
+      "colorsBefore": 140924,
+      "colorsAfter": 49,
+      "sha256": "cd1743fe7cbdb2fd42e5ed212a6438065c63ee0c41deb0c1496c8c2594396c52"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/02_失败界面_无按钮.png",
+      "colorsBefore": 128466,
+      "colorsAfter": 49,
+      "sha256": "35a9ab4d4c809de43b1d6fecf92374fa7d1a5b16fd4adb437fb3cde89df537b8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/03_下一关_未选中.png",
+      "colorsBefore": 27784,
+      "colorsAfter": 49,
+      "sha256": "b3109ed5aae74a9c8448d084b1977703a4800d1ba33c5b95c0beffb9a317df1f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/05_重新挑战_未选中.png",
+      "colorsBefore": 37205,
+      "colorsAfter": 49,
+      "sha256": "ce79892628b8cf8a6c4fce13985ecf3cf71c48427028e2e4a7929f75f5303dd5"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/胜负结算_v1/07_返回主菜单_未选中.png",
+      "colorsBefore": 38332,
+      "colorsAfter": 49,
+      "sha256": "9bf7d4fc8090023c3b67be00e072035b744096959646eb34c7c622df91d4d8d3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/01_声音图标.png",
+      "colorsBefore": 900,
+      "colorsAfter": 47,
+      "sha256": "12b9c0a8f4175ca83ec5c4d1b08f9b4e020dfcf47d184982671466386032eeb8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/02_静音图标.png",
+      "colorsBefore": 713,
+      "colorsAfter": 48,
+      "sha256": "29d0fb6c8d3f8d112f866cca2bd655ac35da6f4d8ae1e78ffbbd0a2770d6598b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/03_音量槽_底条.png",
+      "colorsBefore": 1450,
+      "colorsAfter": 49,
+      "sha256": "665946e43a738c324fcbc8d6c082c4be5eb17fd6b7336a21910ce3dacd370ea8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/04_音量条_蓝色填充.png",
+      "colorsBefore": 535,
+      "colorsAfter": 26,
+      "sha256": "740ed0e68bc17dbf08d9dfb8674a379932c593dfe0bf036d045b0a8222d16539"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_声音与拉条_v1/05_音量滑块_拖动柄.png",
+      "colorsBefore": 297,
+      "colorsAfter": 42,
+      "sha256": "c2802aec4d0382ac83a0fcea4681f48ceefab9e7367c3a169322b46cf87f1a3f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/01_恢复默认_空框_未选中.png",
+      "colorsBefore": 775,
+      "colorsAfter": 49,
+      "sha256": "2a0139d9488e8d8f7d354a15c304365827018895e46c27896a8f13e10e1d2a54"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/02_恢复默认_空框_蓝色选中.png",
+      "colorsBefore": 758,
+      "colorsAfter": 48,
+      "sha256": "fabd0e38f2c3bcc45e96a067e2dad07bbad9348d773cca3470643cc658b6e149"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/03_返回_空框_未选中.png",
+      "colorsBefore": 775,
+      "colorsAfter": 49,
+      "sha256": "2a0139d9488e8d8f7d354a15c304365827018895e46c27896a8f13e10e1d2a54"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_按钮空框_v1/04_返回_空框_蓝色选中.png",
+      "colorsBefore": 758,
+      "colorsAfter": 48,
+      "sha256": "fabd0e38f2c3bcc45e96a067e2dad07bbad9348d773cca3470643cc658b6e149"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/01_设置.png",
+      "colorsBefore": 1993,
+      "colorsAfter": 48,
+      "sha256": "c894f1066274a472a695623015d518dfa8b34e5cb0e34a2170259c9fff35a18c"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/02_总音量.png",
+      "colorsBefore": 2397,
+      "colorsAfter": 49,
+      "sha256": "d7549a530a91e8dfe2e1f93bf7c1efee4766cf1e379181e785abd7848fe36fb9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/04_全屏.png",
+      "colorsBefore": 1829,
+      "colorsAfter": 49,
+      "sha256": "e9df88fa05b180fac52322a35bfddc16fcf652b99ab61493451d9e4b2ad0732a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/05_恢复默认.png",
+      "colorsBefore": 3460,
+      "colorsAfter": 49,
+      "sha256": "ff74f3316d9a9edab50fbb88ddec980071e8742df6616f597c36fa60be75def9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/06_返回.png",
+      "colorsBefore": 1803,
+      "colorsAfter": 49,
+      "sha256": "a2171ef892f99bee0de7a0390c86fe0a2d92b6f9d342546ba87b0fd1cd6d856e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/07_点击喇叭切换静音.png",
+      "colorsBefore": 2635,
+      "colorsAfter": 49,
+      "sha256": "148c9eef0a19062b4360fc8f584592afae783b9470a445974bfbf45021497b29"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/08_关闭全屏后使用窗口模式.png",
+      "colorsBefore": 3657,
+      "colorsAfter": 49,
+      "sha256": "3f5a827c217d458e328380469668cedca14daf708aacc3bbf2a3050bd2d0de5f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/09_全屏切换在独立运行时生效.png",
+      "colorsBefore": 3977,
+      "colorsAfter": 49,
+      "sha256": "2a4832b83885580caf5617c763dd3dc73f7d591a3ed63280a2108c443f7ce39b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/界面/设置界面_文字素材_v1/10_百分号.png",
+      "colorsBefore": 818,
+      "colorsAfter": 48,
+      "sha256": "7a5e6bf2d8cb92770d586f1883946bfb405f2acfadf19d7928ea77198c9fe217"
+    }
+  ]
+}

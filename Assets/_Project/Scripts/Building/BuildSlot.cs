@@ -73,22 +73,23 @@ public class BuildSlot : MonoBehaviour
         {
             return;
         }
+        if (currentTower == null || !currentTower.isActiveAndEnabled) return;
 
         foreach (BuildSlot neighbor in signalNeighbors)
         {
-            if (neighbor == null || neighbor == this || neighbor.CurrentTower == null)
+            if (neighbor == null || neighbor == this || neighbor.CurrentTower == null ||
+                !neighbor.CurrentTower.isActiveAndEnabled)
             {
                 continue;
             }
 
             AntibodyAttackBehaviour antibody = neighbor.CurrentTower.GetComponent<AntibodyAttackBehaviour>();
-            if (antibody != null)
+            if (antibody != null && antibody.isActiveAndEnabled)
             {
                 antibody.RememberAntigen(antigenId, duration);
-                if (signalFeedback != null && currentTower != null)
-                {
-                    signalFeedback.Show(currentTower.transform, neighbor.CurrentTower.transform);
-                }
+                // Open-field build slots are created at runtime and have no scene-wired feedback.
+                if (signalFeedback == null) signalFeedback = gameObject.AddComponent<AntigenSignalFeedback>();
+                signalFeedback.Show(currentTower.transform, neighbor.CurrentTower.transform);
             }
         }
     }

@@ -1,0 +1,37 @@
+[
+  {
+    "sha256": "c33c30ea118987587c74063f17e3774e66c774336089b9bbe44523d2e02f6086",
+    "archive": "ROOT_README.md",
+    "source": "README.md"
+  },
+  {
+    "sha256": "b45980bf402cbc689348d8ebd3a38ac94b9bdd62680942439650aabd71a100d7",
+    "archive": "DOCS_README.md",
+    "source": "Docs/README.md"
+  },
+  {
+    "sha256": "cb73ffc86e8350472258160e717cad84c97b4913cb6e0a0b5586492c94b452e7",
+    "archive": "PROJECT_STATUS.md",
+    "source": "Docs/PROJECT_STATUS.md"
+  },
+  {
+    "sha256": "9f20cceb43614e747dd4e86ee2a23b328956e198de60d3758efb331409f4984c",
+    "archive": "GAME_DESIGN_FRAMEWORK.md",
+    "source": "Docs/GAME_DESIGN_FRAMEWORK.md"
+  },
+  {
+    "sha256": "a75f02cf6ff1b049b238ec7c694ea3753f1d8774cbf3418ec9a7d5297ec1b806",
+    "archive": "TECHNICAL_ARCHITECTURE.md",
+    "source": "Docs/TECHNICAL_ARCHITECTURE.md"
+  },
+  {
+    "sha256": "11b99d20a0ad8c53a88d9692ec27a5d4cbc37a7264ca1faf4fac6bb125430e23",
+    "archive": "OPEN_FIELD_THREE_ROUND_PROTOTYPE.md",
+    "source": "Docs/OPEN_FIELD_THREE_ROUND_PROTOTYPE.md"
+  },
+  {
+    "sha256": "8b04e0910f0885cbdbac4d1f241454e65c159637a9add2b679e6352d1995a9f4",
+    "archive": "PAUSE_PLAYBACK.md",
+    "source": "Docs/PAUSE_PLAYBACK.md"
+  }
+]

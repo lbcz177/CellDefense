@@ -13,6 +13,9 @@ public abstract class TowerAttackBehaviour : MonoBehaviour
     // Additional readiness gate. TowerController still owns the regular attack cooldown.
     public virtual bool CanAttack => true;
 
+    // Filter ineligible units before applying the shared front-first ordering.
+    public virtual bool CanTarget(EnemyController target) => true;
+
     // In front-first targeting, this only breaks ties in remaining route distance.
     public virtual int GetTargetPriority(EnemyController target)
     {

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="22" result="Passed" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-19 00:19:44Z" end-time="2026-10-19 00:19:53Z" duration="8.4998826">
+  <test-suite type="TestSuite" id="1000" name="CellDefense" fullname="CellDefense" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-19 00:19:44Z" end-time="2026-10-19 00:19:53Z" duration="8.499883" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1028" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-19 00:19:44Z" end-time="2026-10-19 00:19:53Z" duration="8.495437" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="54600" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="MainMenuSettingsPlayModeTests" fullname="MainMenuSettingsPlayModeTests" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-19 00:19:44Z" end-time="2026-10-19 00:19:45Z" duration="0.582852" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1003" name="DisableClosesOverlaysAndDestroyRemovesRuntimeUi" fullname="MainMenuSettingsPlayModeTests.DisableClosesOverlaysAndDestroyRemovesRuntimeUi" methodname="DisableClosesOverlaysAndDestroyRemovesRuntimeUi" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" seed="198828042" result="Passed" start-time="2026-10-19 00:19:44Z" end-time="2026-10-19 00:19:44Z" duration="0.287140" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1002" name="MainMenuEntryBlocksBackgroundAndSharesPreferencesWithBattle" fullname="MainMenuSettingsPlayModeTests.MainMenuEntryBlocksBackgroundAndSharesPreferencesWithBattle" methodname="MainMenuEntryBlocksBackgroundAndSharesPreferencesWithBattle" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" seed="173105596" result="Passed" start-time="2026-10-19 00:19:44Z" end-time="2026-10-19 00:19:45Z" duration="0.287926" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1004" name="OpenFieldLiveBuildSmokeTests" fullname="OpenFieldLiveBuildSmokeTests" classname="OpenFieldLiveBuildSmokeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-19 00:19:45Z" end-time="2026-10-19 00:19:45Z" duration="0.353180" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1005" name="FirstLevelSupportsBuildingAndSummonsAfterLiveReroute" fullname="OpenFieldLiveBuildSmokeTests.FirstLevelSupportsBuildingAndSummonsAfterLiveReroute" methodname="FirstLevelSupportsBuildingAndSummonsAfterLiveReroute" classname="OpenFieldLiveBuildSmokeTests" runstate="Runnable" seed="874027351" result="Passed" start-time="2026-10-19 00:19:45Z" end-time="2026-10-19 00:19:45Z" duration="0.349527" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1006" name="OpenFieldPlaybackPlayModeTests" fullname="OpenFieldPlaybackPlayModeTests" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-19 00:19:45Z" end-time="2026-10-19 00:19:47Z" duration="1.861991" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1011" name="DoubleSpeedAdvancesGameClockTwiceAsFastAndSceneTransitionsResetIt" fullname="OpenFieldPlaybackPlayModeTests.DoubleSpeedAdvancesGameClockTwiceAsFastAndSceneTransitionsResetIt" methodname="DoubleSpeedAdvancesGameClockTwiceAsFastAndSceneTransitionsResetIt" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="317930242" result="Passed" start-time="2026-10-19 00:19:45Z" end-time="2026-10-19 00:19:46Z" duration="0.394272" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1008" name="FiveLevelsWireButtonsAndPauseBlocksBuildSellAndWaveWithHudStillVisible" fullname="OpenFieldPlaybackPlayModeTests.FiveLevelsWireButtonsAndPauseBlocksBuildSellAndWaveWithHudStillVisible" methodname="FiveLevelsWireButtonsAndPauseBlocksBuildSellAndWaveWithHudStillVisible" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="695671008" result="Passed" start-time="2026-10-19 00:19:46Z" end-time="2026-10-19 00:19:46Z" duration="0.233595" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1007" name="PauseArtworkLoadsSeparateLayersHighlightsAtZeroTimeAndKeepsPanelInsideSafeArea" fullname="OpenFieldPlaybackPlayModeTests.PauseArtworkLoadsSeparateLayersHighlightsAtZeroTimeAndKeepsPanelInsideSafeArea" methodname="PauseArtworkLoadsSeparateLayersHighlightsAtZeroTimeAndKeepsPanelInsideSafeArea" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="174851479" result="Passed" start-time="2026-10-19 00:19:46Z" end-time="2026-10-19 00:19:46Z" duration="0.169214" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1010" name="PauseFreezesMovementSpawningProjectilesAndAntigenTimersThenResumes" fullname="OpenFieldPlaybackPlayModeTests.PauseFreezesMovementSpawningProjectilesAndAntigenTimersThenResumes" methodname="PauseFreezesMovementSpawningProjectilesAndAntigenTimersThenResumes" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="83165841" result="Passed" start-time="2026-10-19 00:19:46Z" end-time="2026-10-19 00:19:46Z" duration="0.480811" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1012" name="ResultsAndDisabledControllerClearPauseAndHideControls" fullname="OpenFieldPlaybackPlayModeTests.ResultsAndDisabledControllerClearPauseAndHideControls" methodname="ResultsAndDisabledControllerClearPauseAndHideControls" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="658830859" result="Passed" start-time="2026-10-19 00:19:46Z" end-time="2026-10-19 00:19:47Z" duration="0.114356" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1009" name="SettingsControlsApplySaveAndReturnWithoutResumingTheBattle" fullname="OpenFieldPlaybackPlayModeTests.SettingsControlsApplySaveAndReturnWithoutResumingTheBattle" methodname="SettingsControlsApplySaveAndReturnWithoutResumingTheBattle" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="290105472" result="Passed" start-time="2026-10-19 00:19:47Z" end-time="2026-10-19 00:19:47Z" duration="0.468611" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1013" name="TowerAbilityPlayModeTests" fullname="TowerAbilityPlayModeTests" classname="TowerAbilityPlayModeTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-19 00:19:47Z" end-time="2026-10-19 00:19:52Z" duration="5.346732" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1019" name="AcidDisableCancelsFieldsAndPendingProjectileFieldCreation" fullname="TowerAbilityPlayModeTests.AcidDisableCancelsFieldsAndPendingProjectileFieldCreation" methodname="AcidDisableCancelsFieldsAndPendingProjectileFieldCreation" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="1041689995" result="Passed" start-time="2026-10-19 00:19:47Z" end-time="2026-10-19 00:19:47Z" duration="0.484141" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1015" name="AntibodySkipsUnknownFrontEnemyAndDoesNotSpendIdleCooldown" fullname="TowerAbilityPlayModeTests.AntibodySkipsUnknownFrontEnemyAndDoesNotSpendIdleCooldown" methodname="AntibodySkipsUnknownFrontEnemyAndDoesNotSpendIdleCooldown" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="1880656866" result="Passed" start-time="2026-10-19 00:19:47Z" end-time="2026-10-19 00:19:48Z" duration="0.084719" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1017" name="FibrinUsesStrongestAuraAndRejectsColliderEdgeOnlyTargets" fullname="TowerAbilityPlayModeTests.FibrinUsesStrongestAuraAndRejectsColliderEdgeOnlyTargets" methodname="FibrinUsesStrongestAuraAndRejectsColliderEdgeOnlyTargets" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="1214066404" result="Passed" start-time="2026-10-19 00:19:48Z" end-time="2026-10-19 00:19:48Z" duration="0.377530" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1018" name="LethalAcidHitLeavesFieldsAndOverlappingFieldsDealExactlySixtyDamage" fullname="TowerAbilityPlayModeTests.LethalAcidHitLeavesFieldsAndOverlappingFieldsDealExactlySixtyDamage" methodname="LethalAcidHitLeavesFieldsAndOverlappingFieldsDealExactlySixtyDamage" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="1748587758" result="Passed" start-time="2026-10-19 00:19:48Z" end-time="2026-10-19 00:19:52Z" duration="3.639702" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1016" name="MemoryRingExpiresAndDisablingStrategyClearsMemory" fullname="TowerAbilityPlayModeTests.MemoryRingExpiresAndDisablingStrategyClearsMemory" methodname="MemoryRingExpiresAndDisablingStrategyClearsMemory" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="1725916926" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:52Z" duration="0.142861" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1020" name="NeuralChainHitsOnlyThreeUniqueTargetsAndShowsTheCommittedPath" fullname="TowerAbilityPlayModeTests.NeuralChainHitsOnlyThreeUniqueTargetsAndShowsTheCommittedPath" methodname="NeuralChainHitsOnlyThreeUniqueTargetsAndShowsTheCommittedPath" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="255970136" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:52Z" duration="0.322359" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1021" name="NeuralChainSkipsReusedNeighborAfterLethalFirstHit" fullname="TowerAbilityPlayModeTests.NeuralChainSkipsReusedNeighborAfterLethalFirstHit" methodname="NeuralChainSkipsReusedNeighborAfterLethalFirstHit" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="1497504378" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:52Z" duration="0.025451" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1014" name="SamplingMarksAndAmplifiesDamageThenEnablesEngulf" fullname="TowerAbilityPlayModeTests.SamplingMarksAndAmplifiesDamageThenEnablesEngulf" methodname="SamplingMarksAndAmplifiesDamageThenEnablesEngulf" classname="TowerAbilityPlayModeTests" runstate="Runnable" seed="759914191" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:52Z" duration="0.265557" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1022" name="TowerTradingPlayModeTests" fullname="TowerTradingPlayModeTests" classname="TowerTradingPlayModeTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:53Z" duration="0.349450" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1026" name="DeadTowerConfirmationCannotSellReplacementTower" fullname="TowerTradingPlayModeTests.DeadTowerConfirmationCannotSellReplacementTower" methodname="DeadTowerConfirmationCannotSellReplacementTower" classname="TowerTradingPlayModeTests" runstate="Runnable" seed="1236013499" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:52Z" duration="0.031642" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1023" name="FiveLevelsUseSelectBuyInspectCancelAndConfirmSaleFlow" fullname="TowerTradingPlayModeTests.FiveLevelsUseSelectBuyInspectCancelAndConfirmSaleFlow" methodname="FiveLevelsUseSelectBuyInspectCancelAndConfirmSaleFlow" classname="TowerTradingPlayModeTests" runstate="Runnable" seed="421995853" result="Passed" start-time="2026-10-19 00:19:52Z" end-time="2026-10-19 00:19:53Z" duration="0.210973" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1024" name="SaleImmediatelyReleasesHeldEnemyWithoutResettingItsRoute" fullname="TowerTradingPlayModeTests.SaleImmediatelyReleasesHeldEnemyWithoutResettingItsRoute" methodname="SaleImmediatelyReleasesHeldEnemyWithoutResettingItsRoute" classname="TowerTradingPlayModeTests" runstate="Runnable" seed="516591423" result="Passed" start-time="2026-10-19 00:19:53Z" end-time="2026-10-19 00:19:53Z" duration="0.053770" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1025" name="SellingBarrierDuringWaveRepathsSurvivorsAndFutureSpawns" fullname="TowerTradingPlayModeTests.SellingBarrierDuringWaveRepathsSurvivorsAndFutureSpawns" methodname="SellingBarrierDuringWaveRepathsSurvivorsAndFutureSpawns" classname="TowerTradingPlayModeTests" runstate="Runnable" seed="887729894" result="Passed" start-time="2026-10-19 00:19:53Z" end-time="2026-10-19 00:19:53Z" duration="0.026521" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1027" name="TerminalStateClosesConfirmationAndBlocksSale" fullname="TowerTradingPlayModeTests.TerminalStateClosesConfirmationAndBlocksSale" methodname="TerminalStateClosesConfirmationAndBlocksSale" classname="TowerTradingPlayModeTests" runstate="Runnable" seed="1752726125" result="Passed" start-time="2026-10-19 00:19:53Z" end-time="2026-10-19 00:19:53Z" duration="0.024619" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,15 @@
+{
+  "developerId": "338749",
+  "appId": "986196",
+  "providedDraftReference": "V-20261019",
+  "sourceUrl": "https://developer.taptap.cn/338749/app/986196/update-app-v2?panel=basic_info&version=V-20261019",
+  "remoteStateVerified": true,
+  "requireUserConfirmationBeforeRemoteWrites": true,
+  "candidateVersion": "0.1.2",
+  "candidateVersionCode": 3,
+  "remoteStateVerifiedDate": "2026-10-20",
+  "currentDraftReference": "V-20261019",
+  "currentStatus": "draft",
+  "currentBoundApkVersion": "0.1.0",
+  "candidateManifest": "Docs/Publishing/0.1.2_manifest.json"
+}

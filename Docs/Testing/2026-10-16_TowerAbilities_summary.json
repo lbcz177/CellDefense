@@ -1,0 +1,52 @@
+{
+  "unity": "2022.3.53f1c1",
+  "execution": "Current project, no interactive Unity process before hidden batch test launches. No Player build.",
+  "runs": {
+    "editmode": {
+      "total": "78",
+      "passed": "78",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "1.1372344",
+      "start-time": "2026-10-16 11:50:01Z",
+      "end-time": "2026-10-16 11:50:02Z",
+      "fixtures": {
+        "EconomyServiceTests": "5",
+        "EnemyCombatTests": "21",
+        "LifeServiceTests": "1",
+        "OpenFieldLiveBuildHudTests": "22",
+        "OpenFieldWaveFlowTests": "18",
+        "TowerSupportTests": "11"
+      }
+    },
+    "playmode": {
+      "total": "9",
+      "passed": "9",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "9.8276451",
+      "start-time": "2026-10-16 11:47:06Z",
+      "end-time": "2026-10-16 11:47:15Z",
+      "fixtures": {
+        "OpenFieldLiveBuildSmokeTests": "1",
+        "TowerAbilityPlayModeTests": "8"
+      }
+    }
+  },
+  "artworkAndMetadataFilesUnchangedInFinalVerification": 2663,
+  "sha256": {
+    "Assets/_Project/Scripts/Towers/TowerAttackBehaviour.cs": "4f4521edee3c02bf2ca71855feb464e6db157007c13d43305ed1712e3a607423",
+    "Assets/_Project/Scripts/Towers/TowerController.cs": "161c67434a0f81943b9063d9e8acb5e72df8270dff810e2649d6a5500626f46f",
+    "Assets/_Project/Scripts/Towers/AntibodyAttackBehaviour.cs": "7c0b282ffa91c8cc3e80888de1ccfe60d4a0fc2ae3ab1be5a5368c5bc1498b62",
+    "Assets/_Project/Scripts/Towers/NeuralPulseAttackBehaviour.cs": "e099f098ae1835df681ff31c7297b2a25f2dc3e28881677e35c2dd980020cffc",
+    "Assets/_Project/Scripts/Towers/PhagocyteAttackBehaviour.cs": "75c1df10138c4974a065f156a8324eb7e7e4593ff3233d916220422bac41e7a4",
+    "Assets/_Project/Scripts/Building/BuildSlot.cs": "ce076e13988e66b66062a7764c42e73d30a1206b21f097c793b4c0edb61dd1d7",
+    "Assets/_Project/Scripts/Building/AntigenSignalFeedback.cs": "119c5330b508e5b871b6d38b0995713848eb9d3dcc19497ec6477b8a4242346c",
+    "Assets/_Project/Scripts/UI/TimedSpriteIndicator.cs": "3f2018284003432055ec2788a294e087f5fe00f989936f088eecdfadff932c6a",
+    "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab": "9776ed05260cb93897714b312d84a6e4d73abd609576d5e2018e903969567d63",
+    "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset": "fd84b6786a2deb9194c106d177eea6825e8860b24d9d90803d46189291e20368",
+    "Assets/_Project/Tests/EditMode/TowerSupportTests.cs": "31bdc0e7fc9b2bd036885b1479d9a4a8f11808399a26b741dfbd010109092bdf",
+    "Assets/_Project/Tests/PlayMode/TowerAbilityPlayModeTests.cs": "64ba53b051cf27e450dccd6872b4333703969bc2f5cc60cded204d30827a42b7"
+  },
+  "visualAcceptance": "Headless behavioral/asset tests passed; manual visual QA pending."
+}

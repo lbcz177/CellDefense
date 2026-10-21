@@ -1,0 +1,19 @@
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: ec15bd61f24106331d2a438314a5688de63bf83fd63257058b68b456c5bb9ae2
+Signer #1 certificate SHA-1 digest: 46600fce1423e8078d94f7d91c4dc9e24918c053
+Signer #1 certificate MD5 digest: fc97aa1535bcaf59571ea07613faf220
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 26563dca070bfcec61899d00c6c600473046782aad89c3df1aa3384b9e08ad02
+Signer #1 public key SHA-1 digest: dd3045bf5b0c08fce63293c1ef2abd7de37e0aee
+Signer #1 public key MD5 digest: a251d33cbc3efefc1fb32651ac479c90
+WARNING: META-INF/com/android/build/gradle/app-metadata.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+WARNING: META-INF/com.android.games.engine.build_fingerprint not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.

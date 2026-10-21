@@ -115,25 +115,22 @@ public static class PlanningConfigValidation
                 current.FindProperty("betweenRoundATP").intValue < 0)
                 errors.Add("开局 ATP 和轮间奖励不能为负数。");
             if (current.FindProperty("initialCoreLife").intValue < 1) errors.Add("核心生命必须至少为 1。");
-            if (current.FindProperty("barrierBuildLimit").intValue < 0) errors.Add("壁垒额度不能为负数。");
+            Range(current.FindProperty("sellRefundPercent").intValue, 0f, 100f, "出售返还比例必须为 0%–100%。", errors);
             if (current.FindProperty("projectilePool").objectReferenceValue == null ||
                 current.FindProperty("gameplayCamera").objectReferenceValue == null ||
                 current.FindProperty("buildMenuFont").objectReferenceValue == null)
                 errors.Add("关卡缺少子弹池、摄像机或中文字体引用，请检查场景配置。");
             SerializedProperty towers = current.FindProperty("towerDefinitions");
-            int barrierTypes = 0;
             var unique = new HashSet<TowerDefinition>();
             for (int i = 0; i < towers.arraySize; i++)
             {
                 TowerDefinition tower = towers.GetArrayElementAtIndex(i).objectReferenceValue as TowerDefinition;
                 if (tower == null) { errors.Add($"第 {i + 1} 个可建细胞未配置。"); continue; }
                 if (!unique.Add(tower)) { errors.Add("可建细胞列表含有重复配置。"); continue; }
-                if (tower.BlocksEnemyRoute) barrierTypes++;
                 var towerErrors = new List<string>();
                 CheckTower(tower, towerErrors);
                 foreach (string message in towerErrors) errors.Add(tower.DisplayName + "：" + message);
             }
-            if (barrierTypes != 1) errors.Add("每关必须恰好有一种改变路线的塔。");
             WaveSequenceDefinition sequence = current.FindProperty("waveSequence").objectReferenceValue as WaveSequenceDefinition;
             if (sequence == null || sequence.WaveCount != 3) errors.Add("关卡必须引用一个包含三轮的顺序资源。");
             else

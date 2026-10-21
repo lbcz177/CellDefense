@@ -1,0 +1,56 @@
+{
+  "capturedDate": "2026-10-20",
+  "target": {
+    "developerId": "338749",
+    "appId": "986196"
+  },
+  "version": "V-20261019",
+  "status": "draft",
+  "statusLabel": "未发布",
+  "fields": {
+    "basic-info": {
+      "description": "《胞卫战》是一款以人体免疫防御为主题的策略塔防游戏。你将深入微观世界，消耗 ATP 部署免疫细胞，利用采样、标记与吞噬的协作机制，配合有限的纤维蛋白壁垒调整入侵路线，抵御细菌、真菌与病毒的进攻。在五个关卡中灵活建造、升级与调整防线，用有限的资源守住核心，打赢这场细胞之间的保卫战。",
+      "icon": "https://img-tc.tapimg.com/market/images/28e084c7bb9ad2815fc6936bae17ab54.png",
+      "title": "胞卫战"
+    },
+    "assets-upload": {
+      "banner_4": null,
+      "gameplay_demo_video": null,
+      "screenshots": null
+    },
+    "profile-promotion": {
+      "promotion_material_type": null,
+      "promotion_text": null
+    },
+    "developer-info": {
+      "developer_message": null
+    },
+    "package": {
+      "apk_whatsnew": "《胞卫战》v0.1.0 试玩版更新日志｜2026年10月19日\n本次更新完善了战斗操作与设置功能，并推出首个 Android 横屏试玩包。\n- 新增暂停与倍速：支持暂停、继续及 1× / 2× 战斗速度，继续游戏时保留暂停前的倍率。\n- 新增设置功能：主菜单和暂停界面均可调整音量、切换静音、恢复默认设置，设置自动保存；电脑版支持全屏切换。\n- 完善界面美术：接入暂停、设置、声音、音量拉条及文字图片，补齐返回与恢复默认按钮框。\n- 新增细胞升级：近卫、巨噬、酸性和神经细胞支持单次升级，费用等于建造时实付价格，伤害提升 50%。\n- 完善退出功能：主菜单可正常退出游戏。\n- 适配 Android 横屏：加入触屏点选、安全区布局及切到后台自动暂停，调整手机端按钮和结算界面。\n- 修复画面拉伸：地图与战斗单位按实际视口等比显示，改善宽屏下细胞变宽、变扁的问题。\n- 完成首次打包：Android 试玩包约 70 MB，包含主菜单及五个关卡，支持 ARMv7 和 ARM64。"
+    },
+    "release-settings": {
+      "release_schedule": null,
+      "release_time": null
+    },
+    "platform-status": {
+      "app_platforms": [
+        "MOBILE"
+      ],
+      "region_flag_android": 4,
+      "region_flag_ios": 1
+    }
+  },
+  "boundApk": {
+    "version": "0.1.0",
+    "versionCode": 1,
+    "label": "CellDefense",
+    "sha256": "fc0325f0f8e929ee89a54efa67fdd6408655e7fbfa4f856f1747bd695fc70c72"
+  },
+  "blockers": [
+    "promotion_material_type",
+    "banner_4",
+    "screenshots",
+    "gameplay_demo_video"
+  ],
+  "remoteWritesPerformed": false
+}

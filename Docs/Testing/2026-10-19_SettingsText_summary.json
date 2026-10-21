@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "execution": "Logs/CodexTradingTests isolated copy; EditMode nographics; PlayMode hidden D3D11",
+  "runs": [
+    {
+      "platform": "EditMode",
+      "result": "Passed",
+      "total": 109,
+      "passed": 109,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-18 16:44:51Z",
+      "ended": "2026-10-18 16:44:52Z"
+    },
+    {
+      "platform": "PlayMode",
+      "result": "Passed",
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-18 16:44:05Z",
+      "ended": "2026-10-18 16:44:13Z"
+    }
+  ],
+  "sourceFilesMatched": 5,
+  "sha256": [
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettingsPanel.cs",
+      "sha256": "AB753168A13035509AA9561DA4FF0A86BEB3084A4BB687400B729FABC6484431",
+      "copySha256": "AB753168A13035509AA9561DA4FF0A86BEB3084A4BB687400B729FABC6484431"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldUiResources.cs",
+      "sha256": "DFF5B588F2D7590D2EEE4A52F937B1BCC92676B7E1FDCCC9EC4E03A92D01940D",
+      "copySha256": "DFF5B588F2D7590D2EEE4A52F937B1BCC92676B7E1FDCCC9EC4E03A92D01940D"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldPlaybackControls.cs",
+      "sha256": "AA4B386D2C68DCD7BC1BAFD0100EAAB4B3C42FE29630B005826113ABC5883D06",
+      "copySha256": "AA4B386D2C68DCD7BC1BAFD0100EAAB4B3C42FE29630B005826113ABC5883D06"
+    },
+    {
+      "file": "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "sha256": "C1890CA3AD1FD1EB414442D2A1E9F1CA0B8D894C28E4C31C1351CB926201892D",
+      "copySha256": "C1890CA3AD1FD1EB414442D2A1E9F1CA0B8D894C28E4C31C1351CB926201892D"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "49ADEE38847099AE117254F784D262F949A275871170F19E3676CEF3030C5014",
+      "copySha256": "49ADEE38847099AE117254F784D262F949A275871170F19E3676CEF3030C5014"
+    }
+  ],
+  "unchangedTextFiles": 26,
+  "unchangedArtworkFiles": 42,
+  "artwork": [
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\01_设置.png",
+      "sha256": "BD983A5A9D2885501591E5C1504B467A1D33B8245951B40CEA756E532BBC3134"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\01_设置.png.meta",
+      "sha256": "C2FC0CDE46A53DEB0B51FFAEB41AF6FC3FB7A0739807B3035EDA88EB506DB3F0"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\02_总音量.png",
+      "sha256": "03576A418704D858239DF79E945E31E04A7815E2259AE8AF47458004D536DB35"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\02_总音量.png.meta",
+      "sha256": "D2ADAC0834DABA034066B7A67BE3C3408CF7E129FFA3A8D2CCECED7DD7C93766"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\03_静音.png",
+      "sha256": "EBE8F495998EB950D2409A52C48B62456E05ABEB75D2700701436A2ADD96A5C9"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\03_静音.png.meta",
+      "sha256": "EB3A875C340F0D3A37F492B91AF044200EA3E1D0977212418EC500C1E063008D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\04_全屏.png",
+      "sha256": "766C02C812DE7919FC652FD92508F835D4F7CEE9141538031FA010B1FD242DD1"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\04_全屏.png.meta",
+      "sha256": "71EEA6FF363B34CA534BF0352DF4B98AB682239116A4E5D854445EAFFBB6889A"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\05_恢复默认.png",
+      "sha256": "2ECE2E72ECB39F3B951E1611E52092150E5EC44D9121CE79A694087BD414DCD9"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\05_恢复默认.png.meta",
+      "sha256": "3F29509C5EB930477E826B88A063CD8CB467633AE062227B960213C264086CAE"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\06_返回.png",
+      "sha256": "60AD046AAFFEB31D2A8610BEBB3A64443D87E668C8FCD72752F5D817E1970A82"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\06_返回.png.meta",
+      "sha256": "042B8919ED6A7C54BA4C5CA36B395C28DF970B508218B205166B39205251D9C5"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\07_点击喇叭切换静音.png",
+      "sha256": "6ADDAD392FF6CAEE6DEFE252E6B33EF124642A1E59C37E9BE39ADFD6A7198E2B"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\07_点击喇叭切换静音.png.meta",
+      "sha256": "31B2CC9AFD1BA5E0192262375BA3888C04A93FD7295D047042D2BF9B63BAB36A"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\08_关闭全屏后使用窗口模式.png",
+      "sha256": "CD067D739EEC2C5056ABF29A05B2B33A3B0975EF893ACCE5A142F2EA076A56D6"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\08_关闭全屏后使用窗口模式.png.meta",
+      "sha256": "6FB9D1EAF19239462922AF3CFE3C5424B2A5FABBF6F76433ECD7FEF47B295F98"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\09_全屏切换在独立运行时生效.png",
+      "sha256": "08FAA7475E4A465F6EC7B2BB58B304A4BC300520A4D4ECAAA4E79D5F63A8D203"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\09_全屏切换在独立运行时生效.png.meta",
+      "sha256": "260368F68DD7044FF33757BCFE4345CCBA33084CD0AE29C58CF55909DB1007D6"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\10_百分号.png",
+      "sha256": "36D93F47007B60A7E6D96E5C91BDB885CCF86E1945915B31D7247B43F754AA85"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\10_百分号.png.meta",
+      "sha256": "1E9862A21EFC0560D1E7DD252B71400BCBC055306E9986F1F5E49E503C59D300"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\设置文字_分层源文件.aseprite",
+      "sha256": "8627614F8CAA1C81CCA9F8528639D36F59B190544C06B872640DB7C7EEC7F311"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\设置文字_透明总览.png",
+      "sha256": "B0A571A2A8F71DA1924F2ACA798F9E1F073D268E5BFB828BD8C508F84A18E16D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\设置文字_透明总览.png.meta",
+      "sha256": "2CFC2E0AAF690E9BDCD9239C96DD3F9B37EB17CE749A2310F8D2D2E1A9DA453E"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\设置文字_预览.png",
+      "sha256": "8E2F235ADDA184E83F4F8077DE6ECA166A86DC19CD0460B0C03B4877D70073E0"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\设置文字_预览.png.meta",
+      "sha256": "9090B66070746FC6A51BDA9ADFCDDF240876F5E37740EC632741E5D30BA13EDE"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\使用说明.md",
+      "sha256": "17F4DF8A719DC4A615CF88EDEB42A5F468F265BBB0808A29856313DED3852D65"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\01_声音图标.png",
+      "sha256": "CE83AD3450B381B5605568F504B64086ABDF41DE63532A337643C3FD5558D5C4"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\01_声音图标.png.meta",
+      "sha256": "E32E945F8679BBACAC70188E3C741CC2478D6CB0BF5C143CAAEE35AA2820E120"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\02_静音图标.png",
+      "sha256": "6C47BBB5CD61BA752536BAAD343249D1CB556B4DE4FF9F06A1EA6F2B7C72D0B1"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\02_静音图标.png.meta",
+      "sha256": "B602E8F782F8608223799A13A7AE8E7CEA24937DFFD41B60FD7678992D837C61"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\03_音量槽_底条.png",
+      "sha256": "1BBC521B5643D2D50A998C0C4BABE75DE151615A695EEE96B15F692B4E09FAEE"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\03_音量槽_底条.png.meta",
+      "sha256": "3C625E9FBD03A67924ECBC1F70FAFAB59E28D21D3FBF282C567FF0EBF7CD054F"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\04_音量条_蓝色填充.png",
+      "sha256": "B9D6CF86877B135F51051D1849F24FCC9AE72D69EF0AACFB4DA69A129CD99F7F"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\04_音量条_蓝色填充.png.meta",
+      "sha256": "E06CA46E9389DD191BB60E96D7EF16375E3BA6E51C9234A210FFBC5B13213E2E"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\05_音量滑块_拖动柄.png",
+      "sha256": "043E68CB9E199C242DDBF9E7868F306F03469F0AE9F0413F9D96F57326C1646D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\05_音量滑块_拖动柄.png.meta",
+      "sha256": "39B007B670DF4E46614E3658D350A1050FB5F0801FFD68FFD2C17D34DA5641AC"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_分层源文件.aseprite",
+      "sha256": "89949F016D0465F41EB8B3A46EAB68C3A7708F12F3F118C48D7E3F6CE68D0F77"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_预览.png",
+      "sha256": "4A8108DABC9D00C78DD99132F1BA1BB8FB4FC371B30ECB8F46D19DEB279C16F6"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_预览.png.meta",
+      "sha256": "D5339C8EAB1232E94947425D07BC90D4ADD7ADC482A6D5EC732E79976267F366"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_组合透明.png",
+      "sha256": "FDF43F69F4CBC09DA6D6A9471584F4CE859D1D80D318F582B1FE71A54558FDDD"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_组合透明.png.meta",
+      "sha256": "41351992FAB15B879FAE280B9D8DD89FBA95C6186DC30E9804083F53E6E4105D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\使用说明.md",
+      "sha256": "F23AF087CCC66DE4FAAD4C9AF123469A3CDCD5B05915CE804DC21582FF29E04F"
+    }
+  ],
+  "previews": [
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\接入验证~\\设置字图_声音开启_Unity预览_640x480.png",
+      "sha256": "BADA62B579F0DD8DCCBA253ABE476492FC37FA8ECC62C3A9130E1A24014D6382"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\接入验证~\\设置字图_静音_Unity预览_640x480.png",
+      "sha256": "7AB8B68ED203D1D69F78DCDD51E281CB5D69B4A3A3A76AEC8C8EB2A02D6945FA"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\接入验证~\\设置字图_零音量_Unity预览_640x480.png",
+      "sha256": "72ED3EF22D6BBE79823C637D873BBF72F365DBC6AF7E24D2B9C8750E5DE7BF36"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_文字素材_v1\\接入验证~\\设置字图_满音量_Unity预览_640x480.png",
+      "sha256": "111C17EE86F966861042A4D5948560E3B722E17D7E2A0ED7A41E024BA40CF45D"
+    }
+  ],
+  "playerFullscreenVerified": false,
+  "buildPerformed": false,
+  "profilerPerformed": false
+}

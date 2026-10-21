@@ -1,284 +1,133 @@
-# 《胞卫战》技术架构：开放地图核心防御
+# 《胞卫战》技术架构：当前实现
 
-2026-10-15 v0.14 更新（优先于下文历史快照）：用户已指定纤维蛋白壁垒为唯一改路塔，每关累计限建 6 座、仍花 30 ATP；普通细胞生命 100 / 容量 1，巨噬 250 / 2，敌人每秒伤害 10、Boss 25。占位 / 通行分离、承伤 / 溢出通行 / 死亡清理、路线预览与额度反馈均已接入，第一、二关增加壁垒选择。保留 15% 调速与第三关末尾真菌 Boss：倍率 0.85 / 0.6375 / 0.6375，第三关末轮 73。运行 / 测试源码静态检查通过，现有 EnemyCombatTests 共 21 项尚未执行；不运行 Unity、Play、Runner、构建或 Profiler。详见 [v0.14 接入与用户验证](LIMITED_ROUTE_DEFENSE_IMPLEMENTATION.md)。
+> 2026-10-20 壁垒最终回归：EditMode **128/128**、PlayMode **33/33**，0 失败 / 跳过；八敌共同攻墙、自然破裂 / 出售放行、暂停保持和超过六次建造均通过。在隔离副本验证，未重打 APK。见 [壁垒验证](Testing/2026-10-20_FibrinBarrier.md)。
 
-> 架构基线：v0.8 · 2026-10-15
-> 引擎：Unity 2022.3.53f1c1
-> 配套：[当前策划 v0.14](GAME_DESIGN_FRAMEWORK.md) · [试玩说明](OPEN_FIELD_THREE_ROUND_PROTOTYPE.md) · [性能专题](PERFORMANCE_MANY_ENEMIES.md) · [最新交接](CHAT_HANDOFF_2026-10-13.md)
+> 2026-10-20 本地源码更新：壁垒改为可破坏的原路拦截物，500 生命、30 ATP，拦截全部经过敌人；取消累计建造额度和改路拒建。旧改路代码保留但不启用、界面不展示。本次不重打 APK 或修改 TapTap；既有 0.1.2 包和远程草稿不包含此变更。见 [壁垒说明](FIBRIN_BARRIER.md)。
 
-## 1. 文档边界
+> Android 首包已生成：0.1.0，Development / IL2CPP，ARMv7 + ARM64，包含主菜单与五关；73,175,093 字节（69.79 MiB），签名与结构校验通过，尚未真机安装验收。见 [打包说明](ANDROID_APK_BUILD.md)和[构建证据](Testing/2026-10-19_AndroidApk.md)。
 
-本文分别描述当前代码、已知限制和下一阶段的目标职责。没有对应脚本或运行证据的设计均标为待实现，不能据此声称已完成重构或性能优化。
+> 投影修复阶段回归：EditMode **127/127**、PlayMode **31/31**，0 失败 / 跳过。世界图形按实际视口等比显示，覆盖圆形、165 格点选和暂停时窗口变化。见 [验证报告](Testing/2026-10-19_ViewportAspect.md)和[修复说明](VIEWPORT_ASPECT.md)。Android 组件已安装且首个 APK 已生成，尚未真机验收。
 
-玩法主线已转为开放地图、轮间选格建塔、三轮守核心。旧 `Prototype / Level02` 的 `GameplayCompositionRoot + GameFlowController + BuildController + WaveController + HudController` 仍服务旧场景；新场景使用独立编排，复用塔、敌人、投射物与配置。两套流程暂时并存，但同一新场景不同时运行两套流程控制器。
+> 手机适配阶段回归：EditMode **126/126**、PlayMode **30/30**，0 失败 / 跳过；另独立横屏验证 1/1。覆盖三种实际横屏尺寸和五关触控 / 结算。见 [验证报告](Testing/2026-10-19_MobileAndroid.md)。Android 首个 APK 已生成，尚未真机验收。
 
-改版前的完整架构方案保留在 [历史快照](TECHNICAL_ARCHITECTURE_PRE_OPEN_FIELD.md)。其中的 Bootstrap、GameSession、EnemyRegistry、SignalNetwork、HomeostasisService 等目标类不能直接当作当前已有代码。
+> 架构基线：v0.16 · 2026-10-20；配套 [策划 v0.22](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。
+> 当前已接入暂停 / 倍速逻辑与用户 v2 暂停美术，通过共享 Resources 引用八张 Sprite，未改场景、原图或 .meta。此前临时 UI 阶段见 [接图前快照](History/2026-10-18_before_pause_art/TECHNICAL_ARCHITECTURE.md)，v0.9 及更早原文仍保留。
 
-## 2. 当前代码的实际分工
+## 1. 场景与配置边界
 
-2026-10-14 敌人接入补充：EnemyDefinition 新增速度 / 泄露伤害 / 防御 / 控制配置，EnemyController 提供实例抗原与统一伤害、防御、治疗和专用吞噬入口。BossPhaseController 按最低到达的生命比例排队执行阶段，独立 Fungal / Membrane / Virus 能力组件负责有限召唤和支援；EnemySpawnRequest 由关卡验证母体 / 版本 / 当前路径后注册子单位，使用 InitializeAt 保留中段进度。WaveDefinition.groups 驱动三关混合波次，旧字段保留兼容。EnemyStatusHud 每关创建一个 UGUI Canvas、按敌人实例复用血条 / 盾条并显示阶段预告。完整模块和验证见 [敌人接入](ENEMY_IMPLEMENTATION.md)，尚无 Play / Profiler 结果。
+Unity 2022.3.53f1c1。当前五个 OpenField 场景共用开放地图编排，MainMenuController 创建五关选择 UI，StartGame 打开选关。旧 Prototype / Level02 使用 GameplayCompositionRoot、GameFlowController、BuildController、WaveController、HudController；新场景不并挂旧流程控制器。
 
-| 文件 / 模块 | 当前职责 | 不应误解为 |
-|---|---|---|
-| [OpenFieldPrototypeController](../Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs) | 组装格子模型、经济、生命和画面；处理输入、建造事务、三轮流程、出敌、敌人退出、局部信号连边、临时 UI 与结果按钮 | 已经拆分完毕的长期总管理器 |
-| [OpenFieldGridModel](../Assets/_Project/Scripts/OpenField/OpenFieldGridModel.cs) | 格子占用、保留格、BFS 距离场、放置可达性检查、路径提取 | 可见 Tilemap 或运行时 NavMesh |
-| [OpenFieldPresentation](../Assets/_Project/Scripts/OpenField/OpenFieldPresentation.cs) | 背景 Sprite、调试格、悬停格、塔虚影和射程圈 | 战斗规则与资源结算 |
-| [OpenFieldBuildMenu](../Assets/_Project/Scripts/UI/OpenFieldBuildMenu.cs) | 运行时 UGUI 图标 / 价格选择框、可用状态、悬停回调、屏幕边缘定位与换行 | 自己扣费、提交格子占用或选择伤害策略 |
-| [OpenFieldPrototypeSceneCreator](../Assets/_Project/Editor/OpenFieldPrototypeSceneCreator.cs) | 编辑器菜单创建场景、配置相机 / 池 / 资源，放入结果 Prefab 和 EventSystem，加入构建列表 | 每次运行时生成整套工程的脚本 |
-| TowerController + TowerAttackBehaviour | 每轮攻击前选敌、冷却、动画释放、普通攻击与抗体 / 巨噬行为 | 塔受伤、拦截敌人或新场景流程控制 |
-| EnemyController + Health + EnemyImmuneState | 生命、互斥退出、标记状态及反馈 | 直接决定玩家 ATP 或整局胜负 |
-| WaypointPath + PathFollower | 接收共享路点、缓存剩余距离、沿路移动、应用场景速度倍率并报告抵达 | 自己为每个敌人做 BFS |
-| Projectile + ProjectilePool | 命中结算、标记 / 采样回调、投射物复用 | 已覆盖敌人和所有特效的通用池 |
-| BuildSlot | 关联塔与格子位置，为现有采样链提供一跳邻居 | 新场景必须预先摆在地图上的固定塔位 |
-| EconomyService / LifeService | 保存与修改本局 ATP / 核心生命 | ScriptableObject 配置 |
-| Tower / Enemy / Wave Definition | 静态数值、Prefab 与波次引用 | 本局当前生命、冷却、占用或阶段 |
+场景保存地图尺寸、核心 / 入口 / 固定障碍、初始与轮间经济、生命、速度倍率、退款比例及资源引用。TowerDefinition / EnemyDefinition / WaveDefinition / WaveSequenceDefinition 保存共享静态配置；当前生命、ATP、目标、冷却、抗原记忆和阶段保存在运行实例。三至五关共用 EnemyRoster03_WaveSequence，调整它会影响三关；第一、二关分别引用 EnemyRoster01 / 02。
 
-GridModel 是不继承 MonoBehaviour 的规则类，但使用 Unity 的 Vector2Int 值类型；不能宣称已经完全脱离 Unity 程序集。
+## 2. 实际职责
 
-```mermaid
-flowchart TD
-    C["OpenFieldPrototypeController：当前编排"] --> G["OpenFieldGridModel：占用和 BFS"]
-    C --> P["OpenFieldPresentation：地图和预览"]
-    C --> EL["EconomyService / LifeService"]
-    C --> T["BuildSlot + TowerController"]
-    C --> E["EnemyController + Health"]
-    G --> WP["格子路径 → WaypointPath"]
-    WP --> PF["PathFollower"]
-    E --> PF
-    T --> A["攻击行为 → ProjectilePool / 直接伤害"]
-    E -. "Exited 事件" .-> C
-    C --> UI["临时 IMGUI + Victory / Defeat Prefab"]
-    SO["ScriptableObject 配置"] --> C
-```
-
-图中的“格子路径 → WaypointPath”转换由控制器完成；GridModel 不创建 Unity 对象。
-
-## 3. 场景、对象与生命周期
-
-### 3.1 当前场景入口
-
-| 场景 | 当前作用 |
+| 模块 | 当前职责 |
 |---|---|
-| OpenFieldPrototype | 主线玩法原型；主菜单开始按钮已改为进入此场景 |
-| OpenFieldLevel02 | 开放地图第二关；第一关胜利面板 Next 加载此场景，复用同一控制器和战斗模块 |
-| OpenFieldLevel03 | 开放地图第三关；第二关 Next 加载，左右入口、两侧短墙、六种塔及可减速 / 停顿的独立敌人 Prefab |
-| MainMenu | 主菜单；StartGame 加载 OpenFieldPrototype，保留原按钮绑定 |
-| Prototype / Level02 | 固定路线版本，保留验证及复用参考 |
+| MobileDisplay / MobileSafeFrame | 移动端判断、横屏 / 目标帧率、Canvas 高度缩放、安全区与共用图片 / 按钮容器；Editor 预览 |
+| BoardTapGesture | 独立手势状态机；单指抬起提交，UI / 移动 / 多指 / 系统取消失效 |
+| CellDefenseAndroidBuild | Editor APK 菜单、六场景清单、Android 架构与脚本后端配置；缺组件时明确失败 |
+| MainMenuController | 设置 / 退出透明入口、QuitRequested 防重复与 Save / Quit；独立 Canvas 复用 GameSettingsPanel；与选关互斥，底层门控、焦点恢复和动态 UI 清理 |
+| OpenFieldPrototypeController | 组合根、输入、建造与出售事务、细胞注册、波次 / 结果、敌人池、地形路径、信号邻接；仍为集中编排 |
+| OpenFieldGridModel | 规则类；occupied 建造占位、blocked 地形与 BFS 距离场；旧 routeBlocked / 可达性检查保留，当前防御单位不使用 |
+| OpenFieldPresentation | 地图、调试格、虚影 / 射程与地形路线；旧候选改路预览保留但不调用 |
+| OpenFieldBuildMenu / OpenFieldTowerMenu | 建造、属性 / 射程、升级费用 / 效果 / 资格、二次确认出售、遮挡与定位；交易规则由控制器执行 |
+| OpenFieldBattleHud / HudSpriteNumber | 场景 HUD 预制体的数据绑定、安全区布局、仅数值变化时更新数字 |
+| OpenFieldEntranceWaveButtons | 入口投影、可开波时显隐、同一开波意图 |
+| OpenFieldPlaybackControls | 六张暂停 / 当前倍率工具条图片、v2 暂停独立图层、安全区、Sprite Swap、全屏射线遮挡；管理暂停菜单 / 设置页切换；CanvasScaler 更新后渲染前校正布局 |
+| GameSettings / GameSettingsPanel | 首场景前读取共享偏好，AudioListener 总音量 / 静音、桌面 Player 显示模式与 PlayerPrefs 保存；五张声音 / 拉条图通过 Resources 引用，固定填充裁切、滑块内槽对齐；设置页不改变战斗时间 |
+| TowerController / TowerAttackBehaviour | 索敌、冷却、动画释放；默认投射物或至多一个策略组件定义效果 |
+| TowerCombatState / EnemyContactCombat | 细胞生命 / 容量、壁垒无限人数接敌；路径段内停留、逐敌伤害、普通溢出和释放 |
+| EnemyController / Health / 状态组件 | 入场版本、伤害 / 护盾 / 护甲 / 标记、吞噬、互斥退出与状态重置 |
+| BossPhaseController / 三类 BossAbilityBehaviour | 最低到达血量触发阶段、预告、有限召唤、支援、抗原变化 |
+| WaypointPath / PathFollower | 路点距离缓存、移动、控制倍率、接敌门控、保持当前段的 Reroute |
+| Projectile / ProjectilePool | 跟踪、命中回调、伤害 / 标记、版本检查与复用 |
+| BuildSlot / AntigenSignalFeedback | 动态格子与塔引用、一跳抗原传递、可复用多条连线 |
+| EconomyService / LifeService / TowerEconomyRules | 本局 ATP / 核心生命；新旧场景共享价格与实付退款计算 |
+| PlanningConfigWindow / Validation | 编辑塔 / 敌人 / 波次 / 关卡；SerializedObject、Undo、定向保存与只读校验 |
 
-新场景保存相机、主控制器、子弹池、Victory / Defeat 预制体实例和 EventSystem。地图显示对象、建造预览、塔位适配对象和每轮路点在运行时创建。
+GridModel 虽不继承 MonoBehaviour，仍依赖 Unity Vector2Int。EnemyRegistry、SignalNetwork、空间桶、专用 OpenFieldLevelDefinition、集中 Tick 调度和 ECS 尚未实现。
 
-### 3.2 当前初始化顺序
+## 3. 初始化与对象生命周期
 
-1. 控制器 Awake 校验三轮配置、塔列表、池、相机和关键参数。
-2. 创建 GridModel；初始化 ProjectilePool、EconomyService、LifeService。
-3. 重置轮索引与选择塔，进入 Planning。
-4. 创建并初始化 OpenFieldPresentation 与 OpenFieldBuildMenu；三场景引用已有中文 TMP 字体。选择框初始隐藏，只在点击有效空格时打开。
-   同时创建本局 Enemy Pool 子节点，按首波数量预热最多 16 个敌人；各 Prefab 的闲置栈由当前控制器持有。
-5. 若两套结果面板均已引用，则绑定 Again、Return；配置了有效下一场景时，胜利面板 Next 绑定 LoadNextLevel。第一关指向第二关，第二关指向第三关，第三关无下一关并隐藏 Next。
-6. Start 将 Time.timeScale 设为 1。
+Awake 验证三波序列、至少一种塔、子弹池、中文字体、按钮 / HUD 资源和退款比例；选择相机并创建 GridModel，设置棋盘视口映射，初始化经济 / 生命 / 子弹池。随后创建 Presentation、建造 / 塔菜单、敌人状态及入口按钮，绑定场景 HUD；缺少 HUD 场景引用时可实例化默认 Prefab。UI Resources 提供按钮与 HUD 素材回退，运行时不依赖 AssetDatabase。
 
-这里的控制器同时承担“组合根”和“运行流程”。它当前确实在 Awake 组装外部对象，不能把旧目标文档中的“Awake 只缓存自身组件”写成已经遵守的事实。
+敌人池按 Prefab 保存闲置栈，首波总预热预算最多 16，每种 Prefab 最多保留 128 个闲置实例；不足时继续创建，128 不是活跃或总实例上限。控制器在生成前订阅 Exited / SummonRequested，入场递增 SpawnVersion，重置生命、路线、抗原、控制、防御、阶段与接敌状态。正常退出后移除活跃集合、取消订阅再回池；终局先取消订阅，直接回收剩余单位，无奖励。
 
-### 3.3 退出与清理
+塔锁敌、动画待释放目标、子弹和范围目标快照校验 SpawnVersion；同一 Unity 对象再次入场视为新一代，延迟引用不能直接沿用。召唤请求同时核对母体版本、活跃资格和当前有效路径，子单位使用 InitializeAt 继承中段进度。
 
-- EnemyController 在 OnEnable 订阅自身 Health / PathFollower，OnDisable 取消订阅。
-- 控制器订阅每个入场敌人的 Exited；正常结算时移出 activeEnemies、取消订阅并 ReturnEnemy。每种 Prefab 最多保留 128 个闲置实例，超过时销毁。这是闲置上限，不是活跃或总创建上限。
-- FinishRun 停止生成协程，解除剩余敌人的外部退出订阅并直接回收敌人，清空活跃集合、销毁路点、隐藏预览、显示结果。敌人池随单场景卸载销毁。
-- EnemyController.Initialize 每次入场递增 SpawnVersion。塔的锁定目标、动画待释放目标和子弹目标都记录版本，防止旧引用命中新一轮复用的实例。
-- 重开与返回使用 SceneManager 单场景加载，并恢复 timeScale；重开时重新创建本局状态。
-- Presentation.OnDestroy 释放自行创建的 Sprite 与射程 Material。
-- 控制器 OnDisable 清空建造选择、关闭选择框和预览；开战 / 终局也会清理选择。本轮清场没有集中释放所有在飞投射物，仍未建立覆盖所有运行对象的统一退出清理。
+OnDisable 隐藏菜单 / HUD / 入口及预览。场景重载恢复 timeScale；Presentation 和特殊效果组件各自释放创建的材质 / 网格 / 视觉对象。当前终局未统一集中释放所有在飞投射物；完整幂等清理仍是待整理职责，场景卸载不能代替生命周期契约。
 
-## 4. 地图与寻路实现
+## 4. 建造、出售与动态寻路
 
-### 4.1 数据结构
+GridModel 从核心进行四邻接 BFS，均等代价格生成距离场；TryGetPath 每步取距离减 1 的邻格，顺序为上、右、下、左。一次 BFS 时间 / 辅助空间 O(宽×高)，路径为共享 WaypointPath，不是每敌人 A*。
 
-GridModel 保存 bool[,] occupied、bool[,] blocked、int[,] distances、核心格及复制后的入口数组。核心和入口是保留格；入口必须在地图内、不重复且不等于核心。第二关从场景序列化固定障碍，初始化时检查障碍合法且两个入口均可到达核心。
+所有当前可建单位均调用 Grid.CheckPlacement(cell, false) / TryOccupy(cell, false)，不写 routeBlocked；不再检查累计额度或战中下一格可达性，也不生成黄色候选改路线。路线由固定地形确定。
 
-CalculateDistances 从核心开始做四邻接 BFS：核心距离为 0，障碍和不可达格保持 -1。单位格子代价相同时，距离值表示最少需要经过的格数。
+建造链：CanBuild / 配置 / 格子 / ATP 检查 → TrySpend → 创建 BuildSlot / 塔 → Initialize / Occupy → Grid.TryOccupy → 注册 TowerCombatState / 邻接。异常回滚 ATP、占用和实例。五个场景不再序列化 barrierBuildLimit。
 
-TryGetPath 从入口开始，每次选择距离值减 1 的邻格，直到核心。当前邻居顺序固定为上、右、下、左，因此同等长度路线使用确定的取路顺序。
+TowerDefinition.InterceptsAllEnemies 为独立配置，纤维蛋白为 true、MaxHealth=500；普通细胞沿用 InterceptCapacity。TowerCombatState 按 SpawnVersion 记录每个接敌，壁垒跳过容量上限，其余接敌 / 伤害链共用 EnemyContactCombat。每个敌人按自身间隔攻击，墙没有共享伤害限流。
 
-### 4.2 放塔不能封路
+出售 / 死亡通过 RemovePlacedTower 立即禁用并释放每个敌人的 Target、格子和邻接，不替换路径，不重置敌人的生命或 SpawnVersion；死亡无退款。退款仍使用 TowerEconomyRules 和实付金额。
 
-CheckPlacement 先检查越界、保留格、固定障碍和已占格，再临时占用候选格，计算候选距离场，并在 finally 中恢复占用。只要任一入口距离小于 0，返回 BlocksRoute。
+旧改路能力按用户要求保留：TowerDefinition.BlocksEnemyRoute 为隐藏字段；GridModel 的临时阻挡 / 可达性 / 预览、CheckLegacyRoutePlacement 的候选缓存、RebuildAssaultRoutes 的分阶段替换、PathFollower.Reroute 的当前段保持都保留。当前建造、出售、死亡与配置面板没有启用入口，未来改路塔需另行设计并接线。保留代码不代表“大蒜”已经实现。
 
-TryOccupy 再次验证并正式提交占用，重算实际距离场。Release 用于释放占用并重算，目前主要用于异常回滚；存在 Release 方法不代表新场景已经开放出售。
+## 5. 波次与结算
 
-### 4.3 与原移动系统衔接
+Phase 为 Planning / Assault / Victory / Defeat。CanBuild 在前两种状态且未暂停时成立，包含建造、升级与出售。CanStartWave 同样要求未暂停，且处于 Planning，或处于 Assault 且本波计划出完、仍有下一波。
 
-开战时控制器为每个入口提取一条格子路径，转为格子中心的 Transform 路点，再调用 WaypointPath.Configure。敌人初始化时取得对应 WaypointPath，继续使用原 PathFollower。
+新增 IsPaused 与 PlaybackSpeed（1 / 2），不向 Phase 增加暂停值；HasActiveRun 表示 Planning / Assault，CanBuild / CanStartWave 另要求未暂停。Pause 将 timeScale 置零并清空选择，Resume 恢复原倍率，同帧屏蔽地图输入；HUD 按 HasActiveRun 保持可见。Awake、终局和场景切换入口 / OnDisable 重置暂停和倍率。assaultCheck 保持原 Phase 条件，暂停不释放接敌；PathFollower 在 deltaTime=0 时不执行 BeforeMove，避免新接敌。UI 自动创建并接线，八张 v2 素材由共享 Resources 引用，状态逻辑与表现分开，接口见 [暂停与倍速](PAUSE_PLAYBACK.md)。
 
-WaypointPath 为每个路点缓存到终点的剩余世界距离；Configure 重建缓存。PathFollower.RemainingDistance 用当前位置到下一点的距离加该点的缓存值，供多入口锁敌比较。运行中移动路点后必须重新配置，当前进攻期路径保持静止。第二关的 enemySpeedMultiplier 为 0.75，每次入场设置到 PathFollower，避免池复用后遗漏场景调速。
+正常清场：出完且 activeEnemies 为空 → 最后一波则胜利，否则 AdvanceRound 发一次轮间 ATP → Planning。提前开波：保留旧敌人和路径 → AdvanceRound 发一次 ATP → 清零 allEnemiesSpawned → 开下一波，Phase 继续 Assault。最终清场包含全部召唤物。核心归零检查先于完成检查。
 
-这是“距离场生成共享路点路径”的实现。当前没有让所有敌人逐帧直接采样距离场，也没有每敌人 A*、物理避障、拥挤处理、敌人互相阻挡或拆塔规则。进攻阶段禁止修改地图，使当轮路径保持稳定。
+WaveDefinition 支持混合 groups，每组可配敌人、count、burstSize 和 afterDelay；组内 / 组间 WaitForSeconds 按波次复用，组切换与 Boss 预告可单独等待。旧 WaveController 仍是固定路线顺序生成，不自动获得新分组规则。
 
-### 4.4 复杂度与实际开销
+敌人 hasResolved 保证一次退出，控制器 HashSet.Remove 再防重复结算。Killed 发 EnemyDefinition.KillReward；Leaked 扣 LeakDamage，非固定 1；Cleared 不发奖励或扣生命。核心动作期间不可锁敌，CompleteCoreAttack 动画事件或 0.75 秒超时触发一次泄露；塔释放等待上限为 0.6 秒，两者不同。
 
-一次 BFS 的时间和辅助空间为 O(宽 × 高)；一次路径提取与路径长度相关。每次成功建塔后重建信号邻接使用 O(塔数²) 的两两距离检查。
+## 6. 攻击、伤害和协作
 
-空格悬停结果缓存到鼠标移入另一格或建造改变占用；选塔悬停锁定已通过可达检查的格子，不逐按钮执行 BFS。点击打开选择框和最终提交仍调用 CheckPlacement，每次分配候选距离数组与 Queue。建造还会重复验证和重算；不能声称所有 BFS 只在建塔成功时执行，也没有 Profiler 性能数据。
+每轮攻击开始前查询 Physics2D.OverlapCircle，复用 List（初始容量 64，允许扩容），按敌人中心精确检查射程。策略 CanTarget 先排除无效候选，再比较剩余实际路程最短；GetTargetPriority 仅处理并列，最终按到塔距离。
 
-优先改进候选格和地图占用版本的缓存，仅在输入相关条件改变时更新预览；再依据 Profiler 决定是否复用数组 / 队列或减少提交重算。当前尚无优化前后性能数据。
+CanAttack 是额外就绪条件，没有目标不消耗新冷却。默认塔立即出手或记录 pendingAttackTarget / SpawnVersion 进入动画，ReleaseAttack 校验活跃、可攻击和版本，再执行 Attack。释放不重新检查射程，也不换承诺目标；策略仍可拒绝失效资格。每塔最多一个特殊策略，不能同时开启近卫采样开关。
 
-## 5. 关键业务链路
+伤害统一进入 EnemyController.TakeDamage：酸伤先破壳 → 护甲倍率与标记倍率 → 护盾吸收 → 剩余扣 Health → Died → Exited → 场景奖励 / 回池。TryEngulf 使用专用资格及 Health 死亡链，不直接 Destroy。标记子弹允许零伤害并快照发射抗原，命中时核对，防病毒变异后误标记。
 
-### 5.1 建造事务
+近卫命中将当前抗原传给半径 3 格的一跳抗体邻居；每次建造 / 移除重建邻接，复杂度 O(塔数²)。BuildSlot 首次实际传递时懒创建 AntigenSignalFeedback，多条连线复用。抗体记忆 8 秒、标记 4 秒、易伤 15%；状态禁用 / 重入清除。酸区禁用后清理，延迟命中用施法版本防重新生成旧区；神经先快照完整连锁，防致命首击后对象复用误伤。
 
-```text
-鼠标屏幕坐标 → 相机世界坐标 → 逻辑格坐标
-→ Planning / 塔配置 / 格子可达性 / ATP 检查
-→ EconomyService.TrySpend
-→ 创建 BuildSlot 与塔实例
-→ TowerController.Initialize → BuildSlot.Occupy
-→ GridModel.TryOccupy → 记录 placedSlots → 重建信号邻接
-```
+ProjectilePool 仍由 Inspector 指定统一模板，TowerDefinition.ProjectilePrefab 不自动选择池；视觉可覆盖。共享 TowerController 的旧单次升级逻辑不代表五关已有升级 UI。
 
-发生异常时，当前实现会归还 ATP、销毁已创建对象；若占用已提交，还会 Release 并移除字典记录。下一阶段拆分仍须保证失败不留资金、占用或塔对象残留。未来若给邻接更新增加会失败的步骤，还应检查其是否需要整体重建以完成回滚。
+## 7. 工具、表现与后续职责
 
-旧 BuildController 对 TowerSite / RoadSite 的匹配规则没有参与新场景的建造；新场景通过临时 BuildSlot 复用塔的占用引用和信号接口。
+策划配置工具已存在，无须再规划“首版不做编辑器”。它编辑共享 Definition 与场景字段，Play 模式禁用修改，Undo 与保存分开；SaveAssetIfDirty / SaveScene 定向保存。特殊效果细节仍由 Prefab 组件配置。第四、五关共享波次需先复制再独立调节。
 
-### 5.2 出敌与三轮状态
+当前 UGUI HUD、建造菜单、塔菜单与入口按钮已拆出表现类；OpenFieldPrototypeController 仍集中承担输入 / 建造 / 回合 / 生成 / 路线。后续可按真实改动拆分这些规则，统一清理、场景配置与结果 UI 引用。拟议类名不能当作已有架构。
 
-```text
-StartAssault：仅允许 Planning
-→ 为各入口创建本轮路径
-→ allEnemiesSpawned = false，Phase = Assault
-→ 启动 SpawnRound 协程
-→ 复用敌人池实例，Initialize 后设置当前场景速度倍率
-→ 第 i 个敌人选择 i % 入口数 的路径
-→ 组内使用 SpawnInterval，组尾到下一组使用 BurstInterval
-→ 生成完毕后 allEnemiesSpawned = true
-→ 同时满足 activeEnemies 为空才完成本轮
-```
+技术债包括集中编排、保留的旧候选 BFS 分配、O(塔数²) 邻接、固定池模板、结果按钮路径耦合、未统一的终局投射物清理和图片 / 网格独立来源。没有 Profiler 前后数据，当前没有空间桶、分频调度、Jobs / Burst / ECS、Addressables 或热更新。只在需求和测量支持时引入。
 
-当前硬性校验 WaveCount == 3，界面也显示 /3。WaveSequenceDefinition 的 interWaveDelay 在新控制器中未使用：前两轮结束后自动回到 Planning，但下一轮仍需玩家手动开始。
+## 8. 验证与决策记录
 
-WaveDefinition 增加 BurstSize / BurstInterval；BurstSize 为 1（包括旧资产缺字段）时保持原逐个生成间隔。旧 WaveController 不使用分组字段。SpawnRound 每轮复用两份 WaitForSeconds，不再为每个敌人新建等待对象。
+最新测试：[退出与升级 117/26](Testing/2026-10-19_QuitUpgrade.md)，涵盖新旧回归与 Windows 退出链路。单独构建仅含主菜单的验证 Player，非完整五关发布；未执行 Profiler，桌面系统全屏切换、全部窗口比例、五关试玩和平衡仍待验证。旧阶段测试按原结果保留。
 
-### 5.3 敌人退出与终局
+- OF-01 保留：等代价格、多入口共同终点使用 BFS 距离场与共享路点。
+- OF-03 已被替代：原“仅布置期修改占用”是历史决策；当前允许 Assault 建造 / 出售并重建剩余路线。
+- OF-04 保留并补齐：BuildSlot 复用格子引用与一跳信号，已增加连线反馈。
+- OF-06 保留：旧场景独立编排，不与开放流程同时结算。
+- OF-07 保留：敌人 / 子弹闲置池，容量语义和代际校验明确；收益待测。
+- 2026-10-15：占位 / 通行分离、细胞承伤与有限拦截。
+- 2026-10-16：UGUI HUD、提前开波、战中改路及六塔反馈。
+- 2026-10-17：购售共用实付退款规则。
+- 2026-10-18：v0.9 文档归并，历史原文保留。
+- 2026-10-18 后续：v0.10，暂停与倍率独立于波次状态，临时 UI / 输入保护 / 生命周期重置，实际测试通过。
+- 2026-10-18 美术接入：通过共享 Resources 组装八张 v2 图片，设置未实现故置灰；原暂停 / 倍速接口保持，图形回归和渲染检查通过。
+- 2026-10-19：v0.11，新增共享 GameSettings 与独立设置页，启动时应用偏好，修改后保存；Esc 优先关闭设置，恢复不改变倍率。修正初次显示时 CanvasScaler 更新先后导致的小面板问题。
+- 2026-10-19 随后：Resources 引用五张声音 / 拉条图片，416 像素内槽裁切固定填充，滑块沿同范围移动，喇叭作为静音 Toggle；五关统一接入，未改写原图或 .meta。
+- 2026-10-19 设置字图：Resources 引用九张当前使用的字图，设置页移除 TMP 标签，百分比以三个可复用数字 Image 和独立百分号右对齐组合；字图不拦截射线，按钮动作保持。见 [最新测试](Testing/2026-10-19_SettingsText.md)。
+- 2026-10-19 主菜单设置：v0.12，MainMenuController 复用 GameSettingsPanel，独立根 Canvas 避开主菜单 CanvasGroup 门控；与选关互斥，禁用关闭 / 销毁清理，偏好沿用同一 GameSettings 实例。
+- 2026-10-19 退出与升级：v0.13，开放控制器加入 GetUpgradeCost / CanUpgradeAt / TryUpgradeAt，复用 TowerController 单次伤害升级和实付退款；不重新 Initialize。主菜单 QuitGame 保存后调用 Application.Quit，Editor 只记录请求。
 
-EnemyController.TryExit 用 hasResolved 保证单个敌人只退出一次；控制器通过 HashSet.Remove 的结果拒绝再次结算。
+- 2026-10-19 Android 首版：v0.14，Android 横屏适配代码已接入，包含单指点选 / 滑动与双指取消、安全区布局、地图等比显示、后台自动暂停和编辑器手机预览；用户暂不安装构建组件，尚无 APK 或真机验收。见 [适配与源码学习](MOBILE_ANDROID.md)。
 
-Killed 发放配置中的 ATP，Leaked 扣 1 核心生命，Cleared 不发奖励也不扣生命。控制器先检查核心归零，再检查本轮完成，因此最后一只敌人泄露导致归零时进入 Defeat。
+- 2026-10-19 画面比例修复：去除桌面固定 15:11 投影；统一按 pixelRect 宽高比等比完整显示，暂停时窗口变化继续更新。见 [修复说明](VIEWPORT_ASPECT.md)。
 
-当前终局清理采用“取消外部订阅后直接回收剩余敌人”；它不通过每个敌人的 Clear 方法统一退出。后续整合清理入口时应明确 Cleared 的业务含义并保持无奖励。已配置核心攻击动画的敌人在抵达时停止移动，动画事件 CompleteCoreAttack 或 0.6 秒超时触发一次 Leaked 结算；该动作阶段 CanBeTargeted 为 false。
+- 2026-10-19 首次 Android 打包：安装官方匹配组件后，完成 0.1.0 主菜单 + 五关的 Development / IL2CPP ARMv7 + ARM64 APK；签名、CRC、原生库架构与清单验证通过，未真机安装。玩法代码和策划规则未变。
 
-### 5.4 局部信号与特殊攻击
-
-近卫塔命中回调读取 AntigenId，经 occupiedSlot.ShareAntigen 把样本交给一跳邻居中的 AntibodyAttackBehaviour。新场景按格坐标半径自动配邻居；由于两两都检查，距离关系是对称的，但实际传递仍由采样塔的命中触发。
-
-B 塔仅在认识目标抗原时发射纯标记子弹，InitializeMark 不造成伤害。EnemyImmuneState 记录标记结束时间，EnemyController.TakeDamage 在结算时统一应用一次 15% 易伤；重复标记不叠加倍率，回池和 Initialize 清除。巨噬行为按剩余生命与标记选择普通伤害或吞噬。第三关追加减速光环、固定酸区与神经连锁，见对应接线文档。
-
-### 5.4.1 前排选敌与动画出手
-
-现有三塔的 TargetingMode 均为 FarthestAlongPath，保留序列化数值 1，但指标改为剩余实际路径距离最短。每轮攻击开始前重新查询射程内敌人；前排距离并列时才使用 TowerAttackBehaviour.GetTargetPriority，最终按到塔距离破同分。NearestToTower 仍作为可配置模式保留。
-
-FindTarget 用 Physics2D.OverlapCircle 的 List 重载复用 targetCandidates（初始容量 64），保留敌人中心精确距离过滤。候选超过容量时允许扩容，因此不能写成任何情况下都零分配。查询的 Marker 为 CellDefense.Targeting.Query。
-
-默认攻击从场景 ProjectilePool 取子弹；挂一个 TowerAttackBehaviour 时由策略执行一次攻击。CurrentDamage 已包含升级加成。近卫 Prefab 启用 releaseOnAnimationEvent：记录目标与版本、触发 Attack，动画事件 ReleaseAttack 才发射，超过 0.6 秒未释放则取消。准备期间死亡或回池复用会取消出手；当前 ReleaseAttack 不再检查射程，也不会在该事件里临时换目标。
-
-新增塔的阅读与接入步骤见 [源码课程 T01](tutorial.md)。当前每座塔最多一个攻击策略组件；samplesAntigenOnHit 与特殊策略不能同时启用。ProjectilePool 使用其 Inspector 固定 Prefab，TowerDefinition.ProjectilePrefab 不负责自动切换子弹池。选择框按场景 towerDefinitions 创建选项，第一、二关三项，第三关六项；数字键只在选择空格后建造。
-
-当前 BuildSlot 运行时只添加了自身组件，没有自动添加 AntigenSignalFeedback，因此逻辑邻接存在不等于信号连线已经可见。
-
-### 5.5 结果 UI 与输入
-
-结果面板以场景引用传给控制器，Awake 用固定子路径查找按钮并绑定；FinishRun 根据 Phase 控制显示。结果面板可用时，OnGUI 在终局直接返回，避免同时显示两套结果操作。
-
-布置输入排除临时 IMGUI 工具栏、选择框实际矩形及 EventSystem 遮挡，避免 EventSystem 更新顺序使点击选项穿透地图。selectedBuildCell 是固定建造位置，hoveredBuildIndex 只控制该位置的预览。点击选择后调用既有 TryBuildAt 扣费、初始化与占用事务；成功关闭，失败保留选择且按原规则退费。右键、Esc、取消、开战、终局和禁用均关闭选择。结果按钮仍按固定子路径查找，后续可改为独立 UI 引用。
-
-## 6. 配置与运行时状态的边界
-
-| 当前配置来源 | 内容 |
-|---|---|
-| 场景中的控制器 Inspector | 地图尺寸、格大小、核心 / 入口、固定障碍、初始与轮间 ATP、生命、敌人速度倍率、信号半径、资源和 UI 引用 |
-| TowerDefinition 资产 | Prefab、图标、价格、射程、伤害、间隔、锁敌模式 |
-| EnemyDefinition 资产 | Prefab、最大生命、击杀奖励、抗原和吞噬相关属性 |
-| WaveDefinition / WaveSequenceDefinition | 单轮敌人配置、数量、组内 / 组间间隔、组大小和轮序列 |
-| 塔 / 敌人 Prefab 组件 | 标记时间、吞噬 / 消化参数、视觉组件、移动速度等 |
-
-当前 ATP、当前生命、阶段、敌人集合、格子占用、冷却和抗原记忆均属于运行时状态，不能写回共享 SO。
-
-第一关目前复用原三波资产；第二关使用独立的 OpenField02_WaveSequence 与三个 WaveDefinition。下一阶段可建立独立的 OpenFieldLevelDefinition（暂定名，尚无此文件），归集地图、静态障碍、入口和初始资源，并让第一关波次也独立，避免调新玩法数值时影响旧关卡。首版不必同时做通用配置编辑器。
-
-## 7. 下一阶段目标职责（均待实现）
-
-| 拟拆出的组件 / 规则 | 负责什么 | 为什么现在值得拆 |
-|---|---|---|
-| OpenFieldInputController | 选塔、指针转格、UI 遮挡、取消和开战意图 | 正式 UGUI 与将来的触控需要共同的命令入口 |
-| OpenFieldBuildService | 建造检查、扣费 / 退款、生成与占用、通知邻接更新 | 保留建造事务边界，避免输入层直接扣钱 |
-| OpenFieldRoundController | Planning / Assault / Victory / Defeat、轮间奖励、终局优先级 | 能独立解释和验证状态转换 |
-| OpenFieldEnemySpawner | 单轮生成协程、入口分配、停止生成 | 混合波次或入口配置变化不应修改 UI |
-| OpenFieldHud / ResultUI | 订阅状态，显示资源、面板，转发按钮意图 | 移除总控制器里的 IMGUI 和按名称找按钮 |
-| 轻量组合根 | 创建本局对象、传引用、统一 Dispose / 清理 | 明确谁创建谁销毁，总控制器不继续增长 |
-
-这些是目标职责名，可随真实代码边界调整；不要求每项都引入接口或继承层。GridModel 与现有战斗模块优先保留，通过 Initialize、构造参数或 Inspector 显式传引用。
-
-建议顺序为：结果 UI / HUD 与输入拆分 → 建造事务 → 回合和出敌 → 统一清理与独立配置。每一步保持同一个场景可运行；完成后再决定是否改名或统一新旧入口。不要在同一场景并挂新旧 WaveController 处理同一批敌人。
-
-## 8. Unity 学习与技术引入条件
-
-| 技术 | 当前状态 / 引入条件 | 应形成的证据 |
-|---|---|---|
-| UGUI、Prefab、序列化 | 已用；下一步独立 UI 组件、事件与 Inspector 引用 | 按钮绑定、缩放、UI 点击不穿透 |
-| BFS / 距离场 | 已实现开放格子规则，待独立理解和修改 | 能解释临时占用、入口可达性和共享路径 |
-| 状态与 C# 事件 | 目前枚举 + 条件判断，敌人退出为事件 | 合法转换、双条件清场、失败优先、取消订阅 |
-| ScriptableObject | 已有塔、敌人、波次配置 | 配置与当前状态分离，新旧关卡配置不串改 |
-| 对象池 | 投射物与开放场景敌人已池化；旧 WaveController 仍直接生成和销毁 | 重置、事件取消、SpawnVersion、闲置上限和活跃上限的区别 |
-| Profiler / Memory Profiler | 根据预览检查、索敌和生成的实际开销安排测量 | 相同规模和设备的前后对比，无虚构收益 |
-| Tilemap / 编辑器工具 | 需要可编辑固定障碍或重复地图制作时引入 | 可见地形与逻辑占用一致，入口始终可达 |
-| Input System | 需要触控、手柄或重映射时引入 | 相同命令接口支持不同输入方式 |
-| Jobs / Burst / ECS | 大量实体造成可测瓶颈且数据整理有收益时做隔离实验 | 与当前实现比较 CPU、GC、内存和改造成本 |
-| Addressables / 引擎升级 | 有加载、资源管理或版本迁移学习目标时另开实验 | 依赖、加载卸载与兼容性证据 |
-
-目前没有使用 ECS，也不能把“引入 ECS”直接等同于减少内存。先定位耗时或分配来源，再选择技术；三轮玩法本身已经提供图算法、状态约束、配置管理、事务与生命周期的学习材料。
-
-核心手写任务沿用当前学习约定：先说明变量名、类型、用途、读写和重置时机，再由开发者写或独立改核心逻辑；普通样板可由 AI 实现。Notion 记录项目事实与决策，不记录个人作答和评分。
-
-## 9. 具体技术债与验证风险
-
-1. **总控制器过重**：输入、生成、规则和 UI 混合；按第 7 节逐步拆。
-2. **预览重复 BFS 与分配**：当前每帧候选检查，需缓存与 Profiler 证据。
-3. **动画释放约束**：事件等待上限固定 0.6 秒、释放时无二次射程检查；新增慢前摇塔需要先决定目标承诺和超时规则。最新前排锁敌已实现，尚待完整 Play 回归。
-4. **结束清理分散**：敌人已经回池，仍需统一幂等清理和集中处理活跃投射物，不能把加入池当作完整的生命周期治理。
-5. **地图图片不参与逻辑**：画上的障碍、塔的碰撞体和占用数组不是同一数据来源。未来需要障碍定义与地图对齐工具。
-6. **旧数据共享**：新原型仍用旧波次资产；分离关卡配置后再扩内容。
-7. **表现与交互仍有缺口**：临时 HUD、缺路线 / 信号可视化、无新场景暂停入口；主菜单入口已切到新场景，完整循环仍待 Play 验证。
-8. **性能仍待测量**：目标查询已复用 List、路径距离已缓存，列表扩容、预览 BFS、IMGUI 字符串及表现开销仍需 Profiler 定位；没有稳态零 GC 或帧率提升数据。
-9. **菜单和新塔接入**：当前仅显示前三种塔；特殊策略、采样开关与固定子弹池模板容易产生错误组合。
-10. **IDE 诊断不同步**：用户报告 CS1061（SpawnVersion 不存在），磁盘中实际已定义且 csproj 包含正确文件；优先刷新语言服务和检查 F12 跳转，刷新后的红线结果待确认。
-
-上述为当前代码审查结论及待测风险。本文记录已落盘的密集生成、池化、前排选敌和动画事件，不宣称它们已有性能收益或全部完成运行验收。
-
-## 10. 验证边界与下一次重构验收
-
-本次交接只核对代码并更新文档、扩展接口注释，没有运行 Play、构建或 Profiler。用户反馈塔动画感觉跑通；工作区既有动画反馈报告早于最新选敌代码，不能证明最新前排优先、多入口切换、完整三轮与所有按钮已经验收。报告范围见 Docs/Art/AnimationIntegration/2026-10-12/gameplay/level-validation.json。
-
-重构时重点守住：
-
-- 占用一个格后所有入口仍可达；查询候选格不改变正式占用。
-- 失败建造的资金、塔对象和格子记录保持一致。
-- 一个敌人只奖励或扣血一次，清理不发奖励。
-- 出完且清空才结束本轮；核心归零始终失败优先。
-- 状态变更、UI 点击、场景重开和退出不重复回调。
-- 地图表现、引用和旧场景共享的战斗行为不因拆分丢失。
-
-纯格子规则、资金回滚和终局优先级适合在改动它们时增加少量有意义的测试；普通文档 / 接线改动不默认扩展测试体系。Profiler 采样应记录设备、版本、地图、塔 / 敌人数、操作和测量结果。
-
-## 11. 架构决策记录
-
-| 编号 | 决策 | 原因与边界 |
-|---|---|---|
-| OF-01 | 开放地图规则使用格子占用和从核心出发的 BFS | 当前为等代价格、多入口、共同终点；不需要每个敌人独立搜索 |
-| OF-02 | 每轮生成共享 WaypointPath | 保留既有 PathFollower，降低玩法改版成本 |
-| OF-03 | 只在布置期修改占用 | 进攻路径稳定，暂不处理运行中被堵和拆塔 |
-| OF-04 | BuildSlot 作为战斗信号适配对象 | 复用近卫采样与 B 塔记忆，同时改为距离邻接 |
-| OF-05 | 当前原型控制器集中编排，下一步渐进拆分 | 玩法已经得到认可，正式 UI 和内容扩展开始产生独立变化点 |
-| OF-06 | 保留旧场景，但新场景只保留一套流程编排 | 支持回归和对照，防止重复生成 / 结算 |
-| OF-07 | 投射物复用现有池，开放场景敌人加入按 Prefab 的闲置池 | 密集波次减少重复创建，闲置上限不等于活跃上限；性能效果待测 |
-| OF-08 | 原 Prefab 复用于胜败 UI，后续独立 UI 组件持有引用 | 保留美术成果，降低总控制器与层级名称的耦合 |
-
-2026-10-03：以实际开放地图代码替换旧目标架构作为正文，保留历史快照；新增当前 / 目标职责对照、BFS 实际调用边界、共享数据风险、跨路线锁敌风险与求职学习路径。
-
-2026-10-13：按当前源码更新敌人池、分组波次、速度倍率、剩余距离锁敌、动画释放与新塔扩展边界；塔生命和拆塔讨论没有改变现有格子通行规则。
+- 2026-10-20：壁垒改为 500 生命、30 ATP 的全部拦截单位，取消累计额度和当前改路玩法；旧改路代码隐藏保留；回归 128/33。

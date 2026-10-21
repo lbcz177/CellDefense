@@ -17,7 +17,8 @@ public class WaypointPath : MonoBehaviour
         }
     }
 
-    // Paths are static during an assault. Configure rebuilds the shared distance cache.
+    // Individual paths stay immutable while followers use them. Route changes replace
+    // the path and rebind followers; Configure builds the new shared distance cache.
     public float GetRemainingDistanceFromPoint(int index)
     {
         if (index < 0 || index >= PointCount)

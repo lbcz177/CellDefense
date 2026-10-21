@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Health and limited contact capacity for open-field cells only.
+// Health and contact ownership for open-field cells, including breakable barriers.
 [DisallowMultipleComponent]
 public sealed class TowerCombatState : MonoBehaviour
 {
@@ -13,10 +13,11 @@ public sealed class TowerCombatState : MonoBehaviour
     public float CurrentHealth { get; private set; }
     public float MaxHealth { get; private set; }
     public int Capacity { get; private set; }
+    public bool InterceptsAllEnemies => Tower != null && Tower.Definition.InterceptsAllEnemies;
     public int ContactCount => contacts.Count;
     public bool IsAlive => isActiveAndEnabled && CurrentHealth > 0f && Tower != null &&
         Tower.isActiveAndEnabled;
-    public bool CanTakeContact => IsAlive && !Tower.Definition.BlocksEnemyRoute;
+    public bool CanTakeContact => IsAlive;
 
     public void Initialize(TowerController tower, Vector2Int cell)
     {
@@ -39,7 +40,7 @@ public sealed class TowerCombatState : MonoBehaviour
             if (version == enemy.SpawnVersion) return true;
             contacts.Remove(enemy);
         }
-        if (contacts.Count >= Capacity) return false;
+        if (!InterceptsAllEnemies && contacts.Count >= Capacity) return false;
         contacts.Add(enemy, enemy.SpawnVersion);
         return true;
     }

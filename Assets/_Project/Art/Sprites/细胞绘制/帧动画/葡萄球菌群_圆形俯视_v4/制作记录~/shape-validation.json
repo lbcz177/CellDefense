@@ -1,0 +1,1 @@
+{"attackFrames": 10, "comparisonOrder": ["old", "new"], "directionOrder": ["right", "down", "left", "up"], "mirroring": false, "moveFrames": 10, "nativePoseChecks": true, "newMaximumAspect": 1.0810810810810811, "oldMaximumAspect": 1.4166666666666667, "passed": true, "previewRotation": "clockwise quarter-turns, equivalent to world Z clockwise rotation"}

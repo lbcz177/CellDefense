@@ -4,6 +4,7 @@ using UnityEngine;
 public class PathFollower : MonoBehaviour
 {
     public event Action ReachedEnd;
+    public event Action<Vector3> Moved;
     [SerializeField, Min(0.01f)] private float moveSpeed = 2f;
     private float speedMultiplier = 1f;
     private EnemySlowState slowState;
@@ -91,6 +92,19 @@ public class PathFollower : MonoBehaviour
         targetPointIndex = nextPointIndex;
     }
 
+    // The replacement starts with a duplicate of the current target node. Keep the
+    // current segment, movement/contact gate, speed modifiers and stopped state intact.
+    public void Reroute(WaypointPath replacement)
+    {
+        if (replacement == null || replacement.PointCount < 2)
+            throw new ArgumentException("Replacement route needs at least two points.", nameof(replacement));
+        if (path == null || Vector3.SqrMagnitude(replacement.GetPoint(1).position -
+            path.GetPoint(targetPointIndex).position) > 0.000001f)
+            throw new ArgumentException("Replacement must preserve the next route node.", nameof(replacement));
+        path = replacement;
+        targetPointIndex = 1;
+    }
+
     public void SetBaseSpeed(float speed)
     {
         EnemyRangeQuery.RequirePositive(speed, nameof(speed));
@@ -123,7 +137,7 @@ public class PathFollower : MonoBehaviour
 
     private void Update()
     {
-        if (!isMoving || (stunState != null && stunState.IsStunned))
+        if (!isMoving || Time.deltaTime <= 0f || (stunState != null && stunState.IsStunned))
         {
             return;
         }
@@ -139,7 +153,10 @@ public class PathFollower : MonoBehaviour
             transform.position, targetPoint.position,
             moveSpeed * speedMultiplier * abilitySpeedMultiplier * slowMultiplier * Time.deltaTime);
         if (BeforeMove != null && !BeforeMove(nextPosition)) return;
+        Vector3 displacement = nextPosition - transform.position;
         transform.position = nextPosition;
+        // Publish the final segment before ReachedEnd starts the core attack.
+        if (displacement.sqrMagnitude > 0f) Moved?.Invoke(displacement);
         if (transform.position != targetPoint.position)
         {
             return;

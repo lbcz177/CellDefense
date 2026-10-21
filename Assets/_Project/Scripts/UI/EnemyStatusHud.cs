@@ -10,8 +10,6 @@ public sealed class EnemyStatusHud : MonoBehaviour
     private Camera camera;
     private TMP_FontAsset font;
     private IEnumerable<TowerCombatState> defenders;
-    private System.Func<string> defenseStatus;
-    private TextMeshProUGUI defenseText;
     private readonly Dictionary<TowerCombatState, Row> defenderRows = new Dictionary<TowerCombatState, Row>();
     private readonly List<TowerCombatState> expiredDefenders = new List<TowerCombatState>();
     private RectTransform canvasRect;
@@ -23,13 +21,12 @@ public sealed class EnemyStatusHud : MonoBehaviour
     private float allowEmptyHintUntil;
 
     public void Initialize(HashSet<EnemyController> activeEnemies, Camera gameplayCamera, TMP_FontAsset textFont,
-        IEnumerable<TowerCombatState> cells = null, System.Func<string> getDefenseStatus = null)
+        IEnumerable<TowerCombatState> cells = null)
     {
         enemies = activeEnemies;
         camera = gameplayCamera;
         font = textFont;
         defenders = cells;
-        defenseStatus = getDefenseStatus;
         GameObject obj = new GameObject("Enemy Status Canvas", typeof(RectTransform),
             typeof(Canvas), typeof(CanvasScaler));
         obj.transform.SetParent(transform, false);
@@ -41,18 +38,8 @@ public sealed class EnemyStatusHud : MonoBehaviour
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1280f, 720f);
         scaler.matchWidthOrHeight = 0.5f;
+        MobileDisplay.ConfigureCanvas(canvas);
         canvasRect = obj.GetComponent<RectTransform>();
-        GameObject defense = new GameObject("Defense Status", typeof(RectTransform), typeof(TextMeshProUGUI));
-        defense.transform.SetParent(canvasRect, false);
-        defense.layer = obj.layer;
-        defenseText = defense.GetComponent<TextMeshProUGUI>();
-        defenseText.font = font;
-        defenseText.fontSize = 18f;
-        defenseText.raycastTarget = false;
-        defenseText.rectTransform.anchorMin = defenseText.rectTransform.anchorMax = new Vector2(0f, 1f);
-        defenseText.rectTransform.pivot = new Vector2(0f, 1f);
-        defenseText.rectTransform.anchoredPosition = new Vector2(16f, -118f);
-        defenseText.rectTransform.sizeDelta = new Vector2(380f, 52f);
         GameObject notice = new GameObject("Enemy Introduction", typeof(RectTransform), typeof(Image));
         notice.transform.SetParent(canvasRect, false);
         notice.layer = obj.layer;
@@ -108,13 +95,6 @@ public sealed class EnemyStatusHud : MonoBehaviour
     private void LateUpdate()
     {
         if (enemies == null || camera == null) return;
-        defenseText.rectTransform.anchoredPosition = new Vector2(16f,
-            -112f / canvasRect.GetComponent<Canvas>().scaleFactor);
-        if (defenseStatus != null)
-        {
-            string status = defenseStatus();
-            if (defenseText.text != status) defenseText.text = status;
-        }
         if (hint.transform.parent.gameObject.activeSelf && Time.time >= hintUntil)
             hint.transform.parent.gameObject.SetActive(false);
         if (!hint.transform.parent.gameObject.activeSelf && hints.Count > 0 &&
@@ -129,7 +109,14 @@ public sealed class EnemyStatusHud : MonoBehaviour
             hints.Clear();
             hint.transform.parent.gameObject.SetActive(false);
         }
-        Vector3 screenMouse = Input.mousePosition;
+        if (MobileDisplay.IsActive)
+        {
+            Rect safe = MobileDisplay.LocalSafeArea(canvasRect);
+            RectTransform notice = (RectTransform)hint.transform.parent;
+            notice.anchoredPosition = new Vector2(safe.xMax - canvasRect.rect.xMax - 12f,
+                safe.yMax - canvasRect.rect.yMax - 92f);
+        }
+        Vector3 screenMouse = Input.touchCount > 0 ? (Vector3)Input.GetTouch(0).position : Input.mousePosition;
         screenMouse.z = -camera.transform.position.z;
         Vector3 worldMouse = camera.ScreenToWorldPoint(screenMouse);
         int frame = Time.frameCount;
@@ -137,7 +124,7 @@ public sealed class EnemyStatusHud : MonoBehaviour
         {
             if (enemy == null || !enemy.isActiveAndEnabled || !enemy.CanBeTargeted ||
                 enemy.Definition == null) continue;
-            bool hovered = enemy.ContainsVisualPoint(worldMouse);
+            bool hovered = (!MobileDisplay.IsActive || Input.touchCount > 0) && enemy.ContainsVisualPoint(worldMouse);
             bool boss = enemy.Definition.IsBoss;
             if (!boss && !hovered && !enemy.HasShield && enemy.CurrentHealth >= enemy.MaxHealth) continue;
             if (!rows.TryGetValue(enemy, out Row row))
@@ -190,7 +177,8 @@ public sealed class EnemyStatusHud : MonoBehaviour
         foreach (TowerCombatState defender in defenders)
         {
             if (defender == null || !defender.IsAlive) continue;
-            bool hovered = (defender.transform.position - worldMouse).sqrMagnitude < 0.3f;
+            bool hovered = (!MobileDisplay.IsActive || Input.touchCount > 0) &&
+                (defender.transform.position - worldMouse).sqrMagnitude < 0.3f;
             bool visible = hovered || defender.ContactCount > 0 || defender.CurrentHealth < defender.MaxHealth;
             if (!defenderRows.TryGetValue(defender, out Row row))
             {
@@ -211,7 +199,7 @@ public sealed class EnemyStatusHud : MonoBehaviour
             {
                 row.LastHealth = defender.CurrentHealth;
                 row.LastShield = defender.ContactCount;
-                string role = defender.Tower.Definition.BlocksEnemyRoute ? "改路壁垒" :
+                string role = defender.InterceptsAllEnemies ? $"拦截 {defender.ContactCount} · 无上限" :
                     $"接敌 {defender.ContactCount}/{defender.Capacity}";
                 row.Label.text = $"{defender.CurrentHealth:0}/{defender.MaxHealth:0}  {role}";
             }

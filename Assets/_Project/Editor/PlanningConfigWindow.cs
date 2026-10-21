@@ -256,10 +256,10 @@ public sealed class PlanningConfigWindow : EditorWindow
             new[] { "离塔最近", "距核心剩余路程最短" });
         Section("承伤与拦截");
         Field(current, "maxHealth", "细胞最大生命");
-        Field(current, "interceptCapacity", "最多同时接敌");
-        Field(current, "blocksEnemyRoute", "改变敌人路线",
-            "每张开放关卡只能有一种改路塔；改路塔不参与当前近战接敌。");
-        EditorGUILayout.HelpBox("壁垒额度在关卡页设置。修改改路职责后，请检查各关是否仍只有一种改路塔。", MessageType.None);
+        Field(current, "interceptsAllEnemies", "拦截全部经过的敌人",
+            "壁垒在原路接敌并承伤，破裂后放行，不改变寻路。");
+        Field(current, "interceptCapacity", "普通细胞接敌容量", "开启全部拦截时不使用人数上限。");
+        EditorGUILayout.HelpBox("壁垒在原路接敌承伤，建造由 ATP、地形和占位决定。", MessageType.None);
         advanced = EditorGUILayout.Foldout(advanced, "资源引用（高级）", true);
         if (advanced)
         {
@@ -411,7 +411,7 @@ public sealed class PlanningConfigWindow : EditorWindow
         Field(current, "initialATP", "开局 ATP");
         Field(current, "betweenRoundATP", "轮间奖励 ATP");
         Field(current, "initialCoreLife", "核心初始生命");
-        Field(current, "barrierBuildLimit", "整关壁垒建造额度");
+        Field(current, "sellRefundPercent", "出售返还比例（%）");
         Field(current, "enemySpeedMultiplier", "敌人速度倍率");
         Field(current, "signalRadiusCells", "抗原共享半径（格）");
         Field(current, "showDebugGrid", "显示调试格子");

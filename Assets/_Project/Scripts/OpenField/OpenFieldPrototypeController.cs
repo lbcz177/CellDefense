@@ -51,11 +51,13 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     [SerializeField] private TowerDefinition[] towerDefinitions;
     [SerializeField] private ProjectilePool projectilePool;
     [SerializeField, Min(0.1f)] private float signalRadiusCells = 3f;
-    [SerializeField, Min(0)] private int barrierBuildLimit = 6;
+    [SerializeField, Range(0, 100)] private int sellRefundPercent = TowerEconomyRules.DefaultSellRefundPercent;
     [SerializeField] private Camera gameplayCamera;
 
     [Header("Build UI")]
     [SerializeField] private TMP_FontAsset buildMenuFont;
+    [SerializeField] private Sprite waveButtonArtwork;
+    [SerializeField] private OpenFieldBattleHud battleHud;
 
     [Header("Result UI")]
     [SerializeField] private GameObject victoryPanel;
@@ -69,6 +71,13 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private readonly Dictionary<EnemyController, Stack<EnemyController>> inactiveEnemiesByPrefab =
         new Dictionary<EnemyController, Stack<EnemyController>>();
     private readonly List<WaypointPath> roundPaths = new List<WaypointPath>();
+    // Retained routing infrastructure for a future tower; current defenders never invoke it.
+    private readonly List<WaypointPath> reroutedPaths = new List<WaypointPath>();
+    private readonly List<Vector2Int> activeRouteStarts = new List<Vector2Int>();
+    private readonly List<Vector2Int> cachedActiveRouteStarts = new List<Vector2Int>();
+    private Vector2Int? cachedBarrierCell;
+    private int cachedBarrierRevision = -1;
+    private OpenFieldPlacementResult cachedBarrierPlacement;
     private readonly List<Vector2Int> pathCells = new List<Vector2Int>();
     private readonly EconomyService economy = new EconomyService();
     private readonly LifeService life = new LifeService();
@@ -76,8 +85,16 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private OpenFieldGridModel grid;
     private OpenFieldPresentation presentation;
     private OpenFieldBuildMenu buildMenu;
+    private OpenFieldTowerMenu towerMenu;
+    private OpenFieldEntranceWaveButtons entranceWaveButtons;
     private EnemyStatusHud enemyHud;
+    private OpenFieldPlaybackControls playbackControls;
+    private Camera viewportBackgroundCamera;
+    private int playbackInputBlockedFrame = -1;
+    private readonly BoardTapGesture boardTap = new BoardTapGesture();
+    private readonly List<RaycastResult> boardUiHits = new List<RaycastResult>();
     private Vector2Int? selectedBuildCell;
+    private Vector2Int? selectedTowerCell;
     private int hoveredBuildIndex = -1;
     private Vector2Int? previewCell;
     private bool previewCellValid;
@@ -86,19 +103,37 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private int roundIndex;
     private int selectedTowerIndex;
     private bool allEnemiesSpawned;
-    private int barriersBuilt;
     private Func<Vector3, TowerCombatState> defenderLookup;
     private Func<bool> assaultCheck;
-    private Vector2Int? cachedBarrierCell;
-    private int cachedBarrierRevision = -1;
-    private OpenFieldPlacementResult cachedBarrierPlacement;
 
     public OpenFieldPhase Phase { get; private set; }
     public int CurrentRound => roundIndex + 1;
     public int CurrentATP => economy.CurrentATP;
     public int CurrentCoreLife => life.CurrentLife;
-    public int RemainingBarrierBuilds => Mathf.Max(0, barrierBuildLimit - barriersBuilt);
-    public string DefenseStatusText => $"壁垒剩余建造额度 {RemainingBarrierBuilds}/{barrierBuildLimit}";
+    public bool IsPaused { get; private set; }
+    public int PlaybackSpeed { get; private set; } = 1;
+    public bool HasActiveRun => Phase == OpenFieldPhase.Planning || Phase == OpenFieldPhase.Assault;
+    public bool CanBuild => HasActiveRun && !IsPaused;
+    public Vector2Int? SelectedTowerCell => selectedTowerCell;
+    public TowerController SelectedTower => selectedTowerCell.HasValue &&
+        TryGetLivingTower(selectedTowerCell.Value, out TowerController tower) ? tower : null;
+    public Rect BattleHudScreenRect => battleHud != null ? battleHud.ScreenRect : default;
+    public int TotalRounds => waveSequence != null ? waveSequence.WaveCount : 0;
+    public int UpcomingRound => Phase == OpenFieldPhase.Planning ? CurrentRound : CurrentRound + 1;
+    public bool CanStartWave => !IsPaused && waveSequence != null && roundIndex >= 0 && roundIndex < TotalRounds &&
+        (Phase == OpenFieldPhase.Planning ||
+         (Phase == OpenFieldPhase.Assault && allEnemiesSpawned && roundIndex < TotalRounds - 1));
+    public int UpcomingEntranceCount
+    {
+        get
+        {
+            if (Phase != OpenFieldPhase.Planning && Phase != OpenFieldPhase.Assault) return 0;
+            int index = Phase == OpenFieldPhase.Planning ? roundIndex : roundIndex + 1;
+            return grid != null && index >= 0 && index < TotalRounds
+                ? Mathf.Min(grid.SpawnCount, waveSequence.GetWave(index).ScheduledEnemyCount) : 0;
+        }
+    }
+    public string DefenseStatusText => "壁垒可承伤 · 拦截全部经过的敌人";
 
     private void Awake()
     {
@@ -118,16 +153,15 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         {
             throw new InvalidOperationException("Assign the build menu's Chinese font.");
         }
+        waveButtonArtwork = OpenFieldUiResources.ResolveWaveButtonArtwork(waveButtonArtwork);
+        if (waveButtonArtwork == null)
+            throw new InvalidOperationException("Entrance wave button artwork is missing from the scene and default UI resources.");
         if (cellSize <= 0f || signalRadiusCells <= 0f)
         {
             throw new InvalidOperationException("Cell size and signal radius must be positive.");
         }
-        if (barrierBuildLimit < 0) throw new InvalidOperationException("Barrier quota cannot be negative.");
-        HashSet<TowerDefinition> barrierTypes = new HashSet<TowerDefinition>();
-        foreach (TowerDefinition definition in towerDefinitions)
-            if (definition != null && definition.BlocksEnemyRoute) barrierTypes.Add(definition);
-        if (barrierTypes.Count != 1)
-            throw new InvalidOperationException("Open-field levels require exactly one barrier tower type.");
+        if (sellRefundPercent < 0 || sellRefundPercent > 100)
+            throw new InvalidOperationException("Sell refund percent must be between 0 and 100.");
         defenderLookup = FindDefender;
         assaultCheck = () => isActiveAndEnabled && Phase == OpenFieldPhase.Assault;
 
@@ -138,10 +172,12 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
 
         grid = new OpenFieldGridModel(width, height, coreCell, spawnCells, blockedCells);
+        ConfigureMapViewport();
         for (int i = 0; i < waveSequence.WaveCount; i++) waveSequence.GetWave(i).Validate();
         projectilePool.Initialize();
         economy.Initialize(initialATP);
         life.Initialize(initialCoreLife);
+        ResetPlayback();
         roundIndex = 0;
         selectedTowerIndex = 0;
         Phase = OpenFieldPhase.Planning;
@@ -151,14 +187,27 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         presentation = viewObject.AddComponent<OpenFieldPresentation>();
         presentation.Initialize(grid, CellToWorld, cellSize, mapArtwork, showDebugGrid);
         presentation.ShowRoutes(grid, CellToWorld, cellSize);
+        if (battleHud == null)
+        {
+            OpenFieldUiResources defaults = OpenFieldUiResources.LoadDefaults();
+            if (defaults == null || defaults.BattleHudPrefab == null)
+                throw new InvalidOperationException("Assign the battle HUD scene instance or default prefab.");
+            battleHud = Instantiate(defaults.BattleHudPrefab, transform);
+        }
+        battleHud.Initialize(this);
         buildMenu = viewObject.AddComponent<OpenFieldBuildMenu>();
         buildMenu.Initialize(towerDefinitions, buildMenuFont, gameplayCamera,
             CanBuildChoice, TryBuildSelectedChoice, PreviewBuildChoice, ClearBuildSelection,
             index => selectedBuildCell.HasValue ? GetBuildRejection(towerDefinitions[index],
-                selectedBuildCell.Value) : string.Empty);
+                selectedBuildCell.Value) : string.Empty, () => BattleHudScreenRect);
+        towerMenu = viewObject.AddComponent<OpenFieldTowerMenu>();
+        towerMenu.Initialize(this, buildMenuFont, gameplayCamera);
         enemyHud = viewObject.AddComponent<EnemyStatusHud>();
-        enemyHud.Initialize(activeEnemies, gameplayCamera, buildMenuFont, cellDefenders.Values,
-            () => DefenseStatusText);
+        enemyHud.Initialize(activeEnemies, gameplayCamera, buildMenuFont, cellDefenders.Values);
+        entranceWaveButtons = viewObject.AddComponent<OpenFieldEntranceWaveButtons>();
+        entranceWaveButtons.Initialize(this, grid, CellToWorld, buildMenuFont, gameplayCamera, waveButtonArtwork);
+        playbackControls = viewObject.AddComponent<OpenFieldPlaybackControls>();
+        playbackControls.Initialize(this, buildMenuFont);
 
         enemyPoolRoot = new GameObject("Enemy Pool").transform;
         enemyPoolRoot.SetParent(transform, false);
@@ -168,32 +217,49 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         {
             ConfigureResultPanel(victoryPanel, true);
             ConfigureResultPanel(defeatPanel, false);
+            FitResultForMobile(victoryPanel);
+            FitResultForMobile(defeatPanel);
             victoryPanel.SetActive(false);
             defeatPanel.SetActive(false);
         }
     }
 
-    private void Start()
-    {
-        Time.timeScale = 1f;
-    }
-
     private void Update()
     {
-        if (Phase != OpenFieldPhase.Planning)
+        ConfigureMapViewport();
+        // A resume click must not also select the board underneath in the same frame.
+        if (Time.frameCount == playbackInputBlockedFrame) return;
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
+            HandleEscape();
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && StartAssault()) return;
+
+        if (!CanBuild)
+        {
+            boardTap.Reset();
             presentation.HidePreview();
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Do not also process Unity's simulated mouse click for the same touch.
+        if (Input.touchCount > 0 || (MobileDisplay.IsActive && !Application.isEditor))
         {
-            StartAssault();
+            if (Input.touchCount == 0) boardTap.Reset();
+            else
+            {
+                Touch touch = Input.GetTouch(0);
+                ProcessBoardTouch(Input.touchCount, touch.fingerId, touch.phase, touch.position);
+            }
+            RefreshSelectedBuildPreview();
             return;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
+
+        if (Input.GetMouseButtonDown(1))
         {
-            ClearBuildSelection();
+            if (towerMenu != null && towerMenu.IsConfirming) towerMenu.CancelSell();
+            else ClearBuildSelection();
             return;
         }
         if (selectedBuildCell.HasValue)
@@ -206,7 +272,10 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha6)) TryBuildSelectedChoice(5);
         }
 
-        if (PointerOverToolbar() || buildMenu.ContainsPointer(Input.mousePosition) ||
+        if (battleHud.ContainsPointer(Input.mousePosition) || buildMenu.ContainsPointer(Input.mousePosition) ||
+            (playbackControls != null && playbackControls.ContainsPointer(Input.mousePosition)) ||
+            (towerMenu != null && towerMenu.ContainsPointer(Input.mousePosition)) ||
+            entranceWaveButtons.ContainsPointer(Input.mousePosition) ||
             (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()))
         {
             RefreshSelectedBuildPreview();
@@ -225,9 +294,9 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            SelectBuildCell(cell);
+            SelectCell(cell);
         }
-        else if (selectedBuildCell.HasValue)
+        else if (selectedBuildCell.HasValue || selectedTowerCell.HasValue)
         {
             RefreshSelectedBuildPreview();
         }
@@ -242,10 +311,50 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
     }
 
+    public bool ProcessBoardTouch(int touchCount, int fingerId, TouchPhase phase, Vector2 position)
+    {
+        if (!CanBuild || Time.frameCount == playbackInputBlockedFrame) { boardTap.Reset(); return false; }
+        float threshold = Mathf.Max(18f, Screen.dpi > 0f ? Screen.dpi * .08f : 18f);
+        bool blocked = !MobileDisplay.SafeArea.Contains(position) || IsBoardPointerBlocked(position);
+        if (!boardTap.Process(touchCount, fingerId, phase, position, blocked, threshold)) return false;
+        Vector3 screen = new Vector3(position.x, position.y, transform.position.z - gameplayCamera.transform.position.z);
+        Vector2Int cell = WorldToCell(gameplayCamera.ScreenToWorldPoint(screen));
+        if (!grid.Contains(cell)) { ClearSelection(); return false; }
+        return SelectCell(cell);
+    }
+
+    private bool IsBoardPointerBlocked(Vector2 position)
+    {
+        if (battleHud.ContainsPointer(position) || buildMenu.ContainsPointer(position) ||
+            playbackControls.ContainsPointer(position) || towerMenu.ContainsPointer(position) ||
+            entranceWaveButtons.ContainsPointer(position)) return true;
+        if (EventSystem.current == null) return false;
+        boardUiHits.Clear();
+        EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current) { position = position }, boardUiHits);
+        foreach (RaycastResult hit in boardUiHits)
+            if (hit.module is GraphicRaycaster) return true;
+        return false;
+    }
+
+    private void OnApplicationPause(bool paused)
+    {
+        if (!MobileDisplay.IsActive || !paused) return;
+        boardTap.Reset();
+        PlayerPrefs.Save();
+        Pause();
+    }
+
+    private void OnApplicationFocus(bool focused)
+    {
+        if (!MobileDisplay.IsActive || focused) return;
+        boardTap.Reset();
+        Pause();
+    }
+
     public bool SelectBuildCell(Vector2Int cell)
     {
         ClearBuildSelection();
-        if (Phase != OpenFieldPhase.Planning ||
+        if (!CanBuild ||
             grid.CheckPlacement(cell, false) != OpenFieldPlacementResult.Valid) return false;
         selectedBuildCell = cell;
         buildMenu.Show(CellToWorld(cell));
@@ -253,9 +362,144 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         return true;
     }
 
+    public bool SelectCell(Vector2Int cell)
+    {
+        if (placedSlots.ContainsKey(cell)) return SelectPlacedTower(cell);
+        if (selectedBuildCell == cell) { ClearBuildSelection(); return false; }
+        return SelectBuildCell(cell);
+    }
+
+    public bool SelectPlacedTower(Vector2Int cell)
+    {
+        bool alreadySelected = selectedTowerCell == cell;
+        ClearBuildSelection();
+        if (!CanBuild || alreadySelected || !TryGetLivingTower(cell, out TowerController tower)) return false;
+        selectedTowerCell = cell;
+        if (towerMenu != null) towerMenu.Show(tower);
+        RefreshSelectedBuildPreview();
+        return true;
+    }
+
+    public void ClearSelection() => ClearBuildSelection();
+
+    // Pause is orthogonal to the round phase: keep the spawn coroutine, paths and contacts intact.
+    public bool Pause()
+    {
+        if (!HasActiveRun || IsPaused) return false;
+        IsPaused = true;
+        boardTap.Reset();
+        Time.timeScale = 0f;
+        playbackInputBlockedFrame = Time.frameCount;
+        ClearBuildSelection();
+        RefreshPlaybackUi();
+        return true;
+    }
+
+    public bool Resume()
+    {
+        if (!HasActiveRun || !IsPaused) return false;
+        IsPaused = false;
+        Time.timeScale = PlaybackSpeed;
+        playbackInputBlockedFrame = Time.frameCount;
+        RefreshPlanningRoutes();
+        RefreshPlaybackUi();
+        return true;
+    }
+
+    public bool SetPlaybackSpeed(int speed)
+    {
+        if (!HasActiveRun || IsPaused || (speed != 1 && speed != 2)) return false;
+        PlaybackSpeed = speed;
+        Time.timeScale = speed;
+        RefreshPlaybackUi();
+        return true;
+    }
+
+    public bool TogglePlaybackSpeed() => SetPlaybackSpeed(PlaybackSpeed == 1 ? 2 : 1);
+
+    public void HandleEscape()
+    {
+        if (playbackControls != null && playbackControls.IsSettingsVisible)
+        {
+            playbackControls.CloseSettings();
+            return;
+        }
+        if (IsPaused) { Resume(); return; }
+        if (!HasActiveRun) return;
+        if (towerMenu != null && towerMenu.IsConfirming) towerMenu.CancelSell();
+        else if (selectedBuildCell.HasValue || selectedTowerCell.HasValue) ClearBuildSelection();
+        else Pause();
+    }
+
+    private void ResetPlayback()
+    {
+        IsPaused = false;
+        PlaybackSpeed = 1;
+        Time.timeScale = 1f;
+    }
+
+    private void RefreshPlaybackUi()
+    {
+        if (playbackControls != null) playbackControls.Refresh();
+        if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
+    }
+
+    private bool TryGetLivingTower(Vector2Int cell, out TowerController tower)
+    {
+        tower = null;
+        if (!placedSlots.TryGetValue(cell, out BuildSlot slot) || slot == null || slot.CurrentTower == null ||
+            !cellDefenders.TryGetValue(cell, out TowerCombatState defender) || defender == null ||
+            !defender.IsAlive || defender.Tower != slot.CurrentTower) return false;
+        tower = slot.CurrentTower;
+        return true;
+    }
+
+    public int GetSellRefund(Vector2Int cell)
+    {
+        return TryGetLivingTower(cell, out TowerController tower)
+            ? TowerEconomyRules.GetSellRefund(tower, sellRefundPercent) : 0;
+    }
+
+    public int GetUpgradeCost(Vector2Int cell)
+    {
+        return TryGetLivingTower(cell, out TowerController tower) && !tower.IsUpgraded && tower.SupportsDamageUpgrade
+            ? Mathf.Max(0, tower.BuildCostPaid) : 0;
+    }
+
+    public bool CanUpgradeAt(Vector2Int cell)
+    {
+        int cost = GetUpgradeCost(cell);
+        return CanBuild && cost > 0 && economy.CurrentATP >= cost;
+    }
+
+    public bool TryUpgradeAt(Vector2Int cell)
+    {
+        if (!CanUpgradeAt(cell) || !TryGetLivingTower(cell, out TowerController tower)) return false;
+        int cost = tower.BuildCostPaid;
+        if (!economy.TrySpend(cost)) return false;
+        if (!tower.TryUpgrade(cost))
+        {
+            economy.AddATP(cost);
+            return false;
+        }
+        // Do not reinitialize: health, contacts, antigen memory, cooldowns and routes stay intact.
+        if (towerMenu != null) towerMenu.Refresh();
+        RefreshSelectedBuildPreview();
+        return true;
+    }
+
+    public bool TrySellAt(Vector2Int cell)
+    {
+        if (!CanBuild || !TryGetLivingTower(cell, out TowerController tower)) return false;
+        int refund = TowerEconomyRules.GetSellRefund(tower, sellRefundPercent);
+        RemovePlacedTower(cellDefenders[cell]);
+        if (refund > 0) economy.AddATP(refund);
+        return true;
+    }
+
     private bool CanBuildChoice(int index)
     {
-        if (Phase != OpenFieldPhase.Planning || !selectedBuildCell.HasValue ||
+        if (!CanBuild || !selectedBuildCell.HasValue ||
             index < 0 || index >= towerDefinitions.Length) return false;
         return string.IsNullOrEmpty(GetBuildRejection(towerDefinitions[index], selectedBuildCell.Value));
     }
@@ -263,20 +507,8 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private string GetBuildRejection(TowerDefinition definition, Vector2Int cell)
     {
         if (definition == null || definition.Prefab == null || definition.BuildCost <= 0) return "未配置";
-        if (definition.BlocksEnemyRoute && RemainingBarrierBuilds == 0) return "壁垒额度已用尽";
-        OpenFieldPlacementResult placement;
-        if (definition.BlocksEnemyRoute)
-        {
-            if (cachedBarrierCell != cell || cachedBarrierRevision != grid.Revision)
-            {
-                cachedBarrierCell = cell;
-                cachedBarrierRevision = grid.Revision;
-                cachedBarrierPlacement = grid.CheckPlacement(cell);
-            }
-            placement = cachedBarrierPlacement;
-        }
-        else placement = grid.CheckPlacement(cell, false);
-        if (placement == OpenFieldPlacementResult.BlocksRoute) return "会封死入口";
+        // Defenders occupy build cells, but never alter the terrain's routes.
+        OpenFieldPlacementResult placement = grid.CheckPlacement(cell, false);
         if (placement != OpenFieldPlacementResult.Valid) return "该格不能建造";
         return economy.CurrentATP < definition.BuildCost ? "ATP 不足" : string.Empty;
     }
@@ -287,22 +519,80 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         return defender;
     }
 
+    // Kept for future routing towers, deliberately not called by GetBuildRejection.
+    private OpenFieldPlacementResult CheckLegacyRoutePlacement(Vector2Int cell)
+    {
+        if (Phase == OpenFieldPhase.Assault)
+        {
+            activeRouteStarts.Clear();
+            foreach (EnemyController enemy in activeEnemies)
+            {
+                if (enemy == null || !enemy.isActiveAndEnabled) continue;
+                PathFollower follower = enemy.GetComponent<PathFollower>();
+                Vector2Int next = WorldToCell(follower.CurrentPath.GetPoint(follower.NextPointIndex).position);
+                if (cell == next || cell == WorldToCell(enemy.transform.position))
+                    return OpenFieldPlacementResult.OccupiedCell;
+                activeRouteStarts.Add(next);
+            }
+            bool sameStarts = activeRouteStarts.Count == cachedActiveRouteStarts.Count;
+            for (int i = 0; sameStarts && i < activeRouteStarts.Count; i++)
+                sameStarts = activeRouteStarts[i] == cachedActiveRouteStarts[i];
+            if (!sameStarts || cachedBarrierCell != cell || cachedBarrierRevision != grid.Revision)
+            {
+                cachedBarrierCell = cell;
+                cachedBarrierRevision = grid.Revision;
+                cachedActiveRouteStarts.Clear();
+                cachedActiveRouteStarts.AddRange(activeRouteStarts);
+                cachedBarrierPlacement = grid.CheckPlacementKeepingRoutes(cell, true, activeRouteStarts);
+            }
+        }
+        else if (cachedBarrierCell != cell || cachedBarrierRevision != grid.Revision || cachedActiveRouteStarts.Count > 0)
+        {
+            cachedBarrierCell = cell;
+            cachedBarrierRevision = grid.Revision;
+            cachedActiveRouteStarts.Clear();
+            cachedBarrierPlacement = grid.CheckPlacement(cell);
+        }
+        return cachedBarrierPlacement;
+    }
+
     private void HandleDefenderDied(TowerCombatState defender)
+    {
+        RemovePlacedTower(defender);
+    }
+
+    private void RemovePlacedTower(TowerCombatState defender)
     {
         defender.Died -= HandleDefenderDied;
         Vector2Int cell = defender.Cell;
         if (!cellDefenders.TryGetValue(cell, out TowerCombatState registered) || registered != defender) return;
+        defender.gameObject.SetActive(false);
+        foreach (EnemyController enemy in activeEnemies)
+        {
+            if (enemy == null) continue;
+            EnemyContactCombat contact = enemy.GetComponent<EnemyContactCombat>();
+            if (contact != null) contact.ReleaseDefender(defender);
+        }
+        if (selectedTowerCell == cell) ClearBuildSelection();
         cellDefenders.Remove(cell);
         if (placedSlots.TryGetValue(cell, out BuildSlot slot))
         {
             slot.Release();
+            slot.gameObject.SetActive(false);
             placedSlots.Remove(cell);
-            Destroy(slot.gameObject);
+            DestroyPlacedObject(slot.gameObject);
         }
         grid.Release(cell);
         previewCell = null;
         RebuildSignalLinks();
-        Destroy(defender.gameObject);
+        RefreshPlanningRoutes();
+        DestroyPlacedObject(defender.gameObject);
+    }
+
+    private static void DestroyPlacedObject(GameObject obj)
+    {
+        if (Application.isPlaying) Destroy(obj);
+        else DestroyImmediate(obj);
     }
 
     private void TryBuildSelectedChoice(int index)
@@ -322,20 +612,25 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private void RefreshPlanningRoutes()
     {
         if (presentation == null || grid == null) return;
-        if (!isActiveAndEnabled || Phase != OpenFieldPhase.Planning)
+        if (!isActiveAndEnabled || !CanBuild ||
+            (Phase == OpenFieldPhase.Assault && !selectedBuildCell.HasValue))
         {
             presentation.HideRoutes();
             return;
         }
-        Vector2Int? candidate = selectedBuildCell.HasValue && hoveredBuildIndex >= 0 &&
-            hoveredBuildIndex < towerDefinitions.Length && towerDefinitions[hoveredBuildIndex].BlocksEnemyRoute &&
-            CanBuildChoice(hoveredBuildIndex) ? selectedBuildCell : null;
-        presentation.ShowRoutes(grid, CellToWorld, cellSize, candidate);
+        presentation.ShowRoutes(grid, CellToWorld, cellSize);
     }
 
     private void RefreshSelectedBuildPreview()
     {
-        if (!selectedBuildCell.HasValue || Phase != OpenFieldPhase.Planning)
+        if (presentation == null) return;
+        TowerController selectedTower = SelectedTower;
+        if (selectedTower != null && CanBuild)
+        {
+            presentation.ShowBuiltTower(selectedTower);
+            return;
+        }
+        if (!selectedBuildCell.HasValue || !CanBuild)
         {
             presentation.HidePreview();
             return;
@@ -350,18 +645,28 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private void ClearBuildSelection()
     {
         selectedBuildCell = null;
+        selectedTowerCell = null;
         hoveredBuildIndex = -1;
         previewCell = null;
         if (buildMenu != null) buildMenu.Hide();
+        if (towerMenu != null) towerMenu.Hide();
         if (presentation != null) presentation.HidePreview();
         RefreshPlanningRoutes();
     }
 
-    private void OnDisable() => ClearBuildSelection();
+    private void OnDisable()
+    {
+        boardTap.Reset();
+        ResetPlayback();
+        if (playbackControls != null) playbackControls.Hide();
+        ClearBuildSelection();
+        if (battleHud != null) battleHud.Hide();
+        if (entranceWaveButtons != null) entranceWaveButtons.Hide();
+    }
 
     public void SelectTower(int index)
     {
-        if (Phase != OpenFieldPhase.Planning || index < 0 || index >= towerDefinitions.Length ||
+        if (!CanBuild || index < 0 || index >= towerDefinitions.Length ||
             towerDefinitions[index] == null)
         {
             return;
@@ -372,17 +677,17 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     public bool TryBuildAt(Vector2Int cell)
     {
         TowerDefinition definition = GetSelectedTower();
-        if (Phase != OpenFieldPhase.Planning || definition == null || definition.Prefab == null ||
-            !string.IsNullOrEmpty(GetBuildRejection(definition, cell)) ||
-            !economy.TrySpend(definition.BuildCost))
+        if (!CanBuild || definition == null || definition.Prefab == null ||
+            !string.IsNullOrEmpty(GetBuildRejection(definition, cell)))
         {
             return false;
         }
 
+        int buildCost = TowerEconomyRules.GetBuildCost(definition);
+        if (!economy.TrySpend(buildCost)) return false;
         GameObject slotObject = null;
         TowerController tower = null;
         bool occupied = false;
-        bool quotaConsumed = false;
         try
         {
             Vector3 position = CellToWorld(cell);
@@ -394,7 +699,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             tower = Instantiate(definition.Prefab, position, Quaternion.identity);
             tower.Initialize(definition, projectilePool, slot);
             slot.Occupy(tower);
-            if (!grid.TryOccupy(cell, definition.BlocksEnemyRoute))
+            if (!grid.TryOccupy(cell, false))
             {
                 throw new InvalidOperationException("The build cell became invalid during placement.");
             }
@@ -406,17 +711,11 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             defender.Died += HandleDefenderDied;
             cellDefenders.Add(cell, defender);
             RebuildSignalLinks();
-            if (definition.BlocksEnemyRoute)
-            {
-                barriersBuilt++;
-                quotaConsumed = true;
-            }
             ClearBuildSelection();
             return true;
         }
         catch (Exception exception)
         {
-            if (quotaConsumed) barriersBuilt--;
             if (occupied)
             {
                 grid.Release(cell);
@@ -425,7 +724,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             }
             if (tower != null) Destroy(tower.gameObject);
             if (slotObject != null) Destroy(slotObject);
-            economy.AddATP(definition.BuildCost);
+            economy.AddATP(buildCost);
             Debug.LogException(exception, this);
             return false;
         }
@@ -433,30 +732,47 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
     public bool StartAssault()
     {
-        if (Phase != OpenFieldPhase.Planning)
-        {
-            return false;
-        }
+        if (!TryPrepareAssault()) return false;
+        spawnRoutine = StartCoroutine(SpawnRound(waveSequence.GetWave(roundIndex)));
+        if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
+        return true;
+    }
 
+    private bool TryPrepareAssault()
+    {
+        if (!CanStartWave) return false;
+        if (Phase == OpenFieldPhase.Assault)
+        {
+            // Survivors and their summons still reference these paths; reuse them until all clear.
+            AdvanceRound();
+        }
+        else CreateRoundPaths();
         ClearBuildSelection();
-        CreateRoundPaths();
         allEnemiesSpawned = false;
         Phase = OpenFieldPhase.Assault;
-        presentation.HideRoutes();
-        presentation.HidePreview();
-        spawnRoutine = StartCoroutine(SpawnRound(waveSequence.GetWave(roundIndex)));
+        if (presentation != null)
+        {
+            presentation.HideRoutes();
+            presentation.HidePreview();
+        }
         return true;
+    }
+
+    private void AdvanceRound()
+    {
+        roundIndex++;
+        if (betweenRoundATP > 0) economy.AddATP(betweenRoundATP);
     }
 
     public void RestartPrototype()
     {
-        Time.timeScale = 1f;
+        ResetPlayback();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ReturnToMainMenu()
     {
-        Time.timeScale = 1f;
+        ResetPlayback();
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -468,7 +784,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             return;
         }
 
-        Time.timeScale = 1f;
+        ResetPlayback();
         SceneManager.LoadScene(nextSceneName);
     }
 
@@ -485,6 +801,65 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             (cell.x - (width - 1) * 0.5f) * cellSize,
             (cell.y - (height - 1) * 0.5f) * cellSize,
             0f);
+    }
+
+    private void ConfigureMapViewport()
+    {
+        Rect viewport = new Rect(0f, 0f, 1f, 1f);
+        if (MobileDisplay.IsActive)
+        {
+            // Reserve the mobile HUD row inside the device's safe area.
+            Rect safe = MobileDisplay.SafeArea;
+            viewport = new Rect(safe.x / Screen.width,
+                (safe.y + safe.height * (12f / 720f)) / Screen.height,
+                safe.width / Screen.width, safe.height * (1f - 148f / 720f) / Screen.height);
+        }
+        if (gameplayCamera.rect != viewport) gameplayCamera.rect = viewport;
+        ConfigureViewportBackground(viewport);
+
+        // Projection must match the actual pixel rectangle, not the board's 15:11 ratio.
+        // Fit the complete board while keeping cells, sprites and range circles undistorted.
+        Rect pixels = gameplayCamera.pixelRect;
+        float aspect = Mathf.Max(1f, pixels.width) / Mathf.Max(1f, pixels.height);
+        float halfHeight = Mathf.Max(height * cellSize * .5f, width * cellSize / (2f * aspect));
+        if (!gameplayCamera.orthographic || !Mathf.Approximately(gameplayCamera.aspect, aspect) ||
+            !Mathf.Approximately(gameplayCamera.orthographicSize, halfHeight))
+        {
+            gameplayCamera.orthographic = true;
+            gameplayCamera.aspect = aspect;
+            gameplayCamera.orthographicSize = halfHeight;
+            gameplayCamera.ResetProjectionMatrix();
+        }
+        Vector3 position = gameplayCamera.transform.position;
+        position.x = transform.position.x;
+        position.y = transform.position.y;
+        if (gameplayCamera.transform.position != position) gameplayCamera.transform.position = position;
+    }
+
+    private void ConfigureViewportBackground(Rect viewport)
+    {
+        bool needsBackground = viewport != new Rect(0f, 0f, 1f, 1f);
+        if (viewportBackgroundCamera == null && needsBackground)
+        {
+            // A partial camera clears only its viewport. Clear the whole display first,
+            // otherwise mobile back buffers can retain pixels from menus or result UI.
+            GameObject background = new GameObject("Viewport Background Camera", typeof(Camera));
+            background.transform.SetParent(gameplayCamera.transform, false);
+            viewportBackgroundCamera = background.GetComponent<Camera>();
+            viewportBackgroundCamera.clearFlags = CameraClearFlags.SolidColor;
+            viewportBackgroundCamera.cullingMask = 0;
+            viewportBackgroundCamera.rect = new Rect(0f, 0f, 1f, 1f);
+            viewportBackgroundCamera.orthographic = true;
+            viewportBackgroundCamera.allowHDR = false;
+            viewportBackgroundCamera.allowMSAA = false;
+            viewportBackgroundCamera.useOcclusionCulling = false;
+        }
+        if (viewportBackgroundCamera == null) return;
+        viewportBackgroundCamera.backgroundColor = gameplayCamera.backgroundColor;
+        viewportBackgroundCamera.depth = gameplayCamera.depth - 1f;
+        viewportBackgroundCamera.targetDisplay = gameplayCamera.targetDisplay;
+        viewportBackgroundCamera.targetTexture = gameplayCamera.targetTexture;
+        viewportBackgroundCamera.enabled = needsBackground && gameplayCamera.enabled;
     }
 
     private Vector2Int WorldToCell(Vector3 world)
@@ -517,26 +892,68 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     {
         DestroyRoundPaths();
         for (int spawnIndex = 0; spawnIndex < grid.SpawnCount; spawnIndex++)
-        {
-            if (!grid.TryGetPath(grid.GetSpawnCell(spawnIndex), pathCells) || pathCells.Count < 2)
-            {
-                throw new InvalidOperationException($"No route from spawn {spawnIndex} to the core.");
-            }
+            roundPaths.Add(CreateRoute(grid.GetSpawnCell(spawnIndex)));
+    }
 
-            GameObject pathObject = new GameObject($"Round {CurrentRound} Route {spawnIndex + 1}");
-            pathObject.transform.SetParent(transform);
-            WaypointPath path = pathObject.AddComponent<WaypointPath>();
-            Transform[] points = new Transform[pathCells.Count];
-            for (int i = 0; i < pathCells.Count; i++)
-            {
-                GameObject point = new GameObject($"Point {i}");
-                point.transform.SetParent(pathObject.transform);
-                point.transform.position = CellToWorld(pathCells[i]);
-                points[i] = point.transform;
-            }
-            path.Configure(points);
-            roundPaths.Add(path);
+    private WaypointPath CreateRoute(Vector2Int start, bool keepNextNode = false)
+    {
+        if (!grid.TryGetPath(start, pathCells) || pathCells.Count == 0)
+            throw new InvalidOperationException($"No route from {start} to the core.");
+        GameObject obj = new GameObject($"Round {CurrentRound} Route {start.x},{start.y}");
+        obj.transform.SetParent(transform);
+        WaypointPath route = obj.AddComponent<WaypointPath>();
+        int prefix = keepNextNode ? 1 : 0;
+        Transform[] points = new Transform[pathCells.Count + prefix];
+        for (int i = 0; i < points.Length; i++)
+        {
+            GameObject point = new GameObject($"Point {i}");
+            point.transform.SetParent(obj.transform);
+            point.transform.position = CellToWorld(pathCells[Mathf.Max(0, i - prefix)]);
+            points[i] = point.transform;
         }
+        route.Configure(points);
+        return route;
+    }
+
+    // Preserved for a future routing tower; no current build, sale or death calls it.
+    private void RebuildAssaultRoutes()
+    {
+        List<WaypointPath> newSpawns = new List<WaypointPath>();
+        Dictionary<Vector2Int, WaypointPath> fromCells = new Dictionary<Vector2Int, WaypointPath>();
+        Dictionary<PathFollower, WaypointPath> replacements = new Dictionary<PathFollower, WaypointPath>();
+        try
+        {
+            for (int i = 0; i < grid.SpawnCount; i++) newSpawns.Add(CreateRoute(grid.GetSpawnCell(i)));
+            foreach (EnemyController enemy in activeEnemies)
+            {
+                if (enemy == null || !enemy.isActiveAndEnabled) continue;
+                PathFollower follower = enemy.GetComponent<PathFollower>();
+                Vector2Int next = WorldToCell(follower.CurrentPath.GetPoint(follower.NextPointIndex).position);
+                if (!fromCells.TryGetValue(next, out WaypointPath route))
+                {
+                    route = CreateRoute(next, true);
+                    fromCells.Add(next, route);
+                }
+                replacements.Add(follower, route);
+            }
+        }
+        catch
+        {
+            foreach (WaypointPath route in newSpawns) DestroyRoute(route);
+            foreach (WaypointPath route in fromCells.Values) DestroyRoute(route);
+            throw;
+        }
+        foreach (KeyValuePair<PathFollower, WaypointPath> pair in replacements) pair.Key.Reroute(pair.Value);
+        DestroyRoundPaths();
+        roundPaths.AddRange(newSpawns);
+        reroutedPaths.AddRange(fromCells.Values);
+    }
+
+    private static void DestroyRoute(WaypointPath route)
+    {
+        if (route == null) return;
+        if (Application.isPlaying) Destroy(route.gameObject);
+        else DestroyImmediate(route.gameObject);
     }
 
     private IEnumerator SpawnRound(WaveDefinition wave)
@@ -575,6 +992,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         spawnRoutine = null;
         allEnemiesSpawned = true;
         FinishRoundIfReady();
+        if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
     }
 
     private EnemyController SpawnEnemy(EnemyDefinition definition, WaypointPath path, EnemySpawnRequest? request)
@@ -617,7 +1035,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             if (Phase != OpenFieldPhase.Assault || request.Parent == null ||
                 request.Parent.SpawnVersion != request.ParentVersion || !request.Parent.isActiveAndEnabled ||
                 !request.Parent.CanBeTargeted || !activeEnemies.Contains(request.Parent) ||
-                request.Path == null || !roundPaths.Contains(request.Path)) return;
+                request.Path == null || (!roundPaths.Contains(request.Path) && !reroutedPaths.Contains(request.Path))) return;
             if (SpawnEnemy(request.Definition, request.Path, request) == null)
             {
                 FinishRun(OpenFieldPhase.Defeat);
@@ -666,16 +1084,20 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             return;
         }
 
-        roundIndex++;
-        if (betweenRoundATP > 0) economy.AddATP(betweenRoundATP);
+        AdvanceRound();
         Phase = OpenFieldPhase.Planning;
         enemyHud.ClearHints();
         RefreshPlanningRoutes();
+        if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
     }
 
     private void FinishRun(OpenFieldPhase result)
     {
         Phase = result;
+        ResetPlayback();
+        if (playbackControls != null) playbackControls.Hide();
+        if (battleHud != null) battleHud.Hide();
+        if (entranceWaveButtons != null) entranceWaveButtons.Hide();
         ClearBuildSelection();
         enemyHud.ClearHints();
         if (spawnRoutine != null)
@@ -732,13 +1154,41 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
     }
 
+    private void FitResultForMobile(GameObject panel)
+    {
+        if (!MobileDisplay.IsActive) return;
+        Canvas resultCanvas = panel.transform.Find("Canvas").GetComponent<Canvas>();
+        CanvasScaler scaler = resultCanvas.GetComponent<CanvasScaler>();
+        Transform content = MobileSafeFrame.Wrap(resultCanvas, scaler.referenceResolution);
+        List<Button> activeActions = new List<Button>();
+        foreach (Button button in content.GetComponentsInChildren<Button>())
+            if (button.gameObject.activeSelf) activeActions.Add(button);
+        Button[] actions = activeActions.ToArray();
+        for (int i = 0; i < actions.Length; i++)
+        {
+            RectTransform rect = actions[i].GetComponent<RectTransform>();
+            rect.localScale = Vector3.one;
+            rect.sizeDelta = new Vector2(512f, 96f);
+            rect.anchoredPosition = new Vector2(0f, actions.Length == 3 ? 10f - i * 116f : -70f - i * 130f);
+        }
+        foreach (Image image in content.GetComponentsInChildren<Image>())
+        {
+            if (image.GetComponent<Button>() != null) continue;
+            image.rectTransform.localScale = Vector3.one;
+            image.rectTransform.sizeDelta = new Vector2(600f, 600f);
+            image.preserveAspect = true;
+        }
+    }
+
     private void DestroyRoundPaths()
     {
         foreach (WaypointPath path in roundPaths)
         {
-            if (path != null) Destroy(path.gameObject);
+            DestroyRoute(path);
         }
         roundPaths.Clear();
+        foreach (WaypointPath path in reroutedPaths) DestroyRoute(path);
+        reroutedPaths.Clear();
     }
 
     private void PrewarmEnemies()
@@ -794,50 +1244,4 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         return inactive;
     }
 
-    private Rect ToolbarRect()
-    {
-        float width = Mathf.Max(0f, Mathf.Min(Screen.width - 16f, 760f));
-        return new Rect(8f, 8f, width, 100f);
-    }
-
-    private bool PointerOverToolbar()
-    {
-        Vector2 mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
-        return ToolbarRect().Contains(mouse);
-    }
-
-    private void OnGUI()
-    {
-        if ((Phase == OpenFieldPhase.Victory || Phase == OpenFieldPhase.Defeat) &&
-            victoryPanel != null && defeatPanel != null)
-        {
-            return;
-        }
-
-        Rect toolbar = ToolbarRect();
-        GUI.Box(toolbar, "");
-        GUI.Label(new Rect(18f, 12f, 720f, 24f),
-            $"Round {CurrentRound}/3    Core {CurrentCoreLife}    ATP {CurrentATP}    {Phase}");
-
-        if (Phase == OpenFieldPhase.Planning)
-        {
-            if (GUI.Button(new Rect(16f, 46f, Mathf.Min(160f, toolbar.width - 16f), 30f),
-                "Start assault (Space)"))
-            {
-                StartAssault();
-            }
-            GUI.Label(new Rect(18f, 80f,
-                Mathf.Max(0f, toolbar.width - 20f), 22f),
-                "Click an empty cell, then choose a tower. Right-click / Esc cancels.");
-        }
-        else if (Phase == OpenFieldPhase.Victory || Phase == OpenFieldPhase.Defeat)
-        {
-            GUI.Label(new Rect(18f, 46f, 180f, 30f), Phase == OpenFieldPhase.Victory ? "Victory!" : "Core lost.");
-            if (GUI.Button(new Rect(210f, 46f, 130f, 30f), "Restart")) RestartPrototype();
-            if (GUI.Button(new Rect(350f, 46f, 150f, 30f), "Main menu")) ReturnToMainMenu();
-            if (Phase == OpenFieldPhase.Victory && !string.IsNullOrWhiteSpace(nextSceneName) &&
-                Application.CanStreamedLevelBeLoaded(nextSceneName) &&
-                GUI.Button(new Rect(510f, 46f, 130f, 30f), "Next level")) LoadNextLevel();
-        }
-    }
 }

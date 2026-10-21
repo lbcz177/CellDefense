@@ -18,6 +18,16 @@ public class PhagocyteAttackBehaviour : TowerAttackBehaviour
 
     public override bool CanAttack => Time.time >= digestionUntil;
 
+    public override void Initialize(TowerDefinition definition, LayerMask enemyLayers)
+    {
+        if (float.IsNaN(baseEngulfHealth) || float.IsInfinity(baseEngulfHealth) || baseEngulfHealth < 0f ||
+            float.IsNaN(markedEngulfHealth) || float.IsInfinity(markedEngulfHealth) || markedEngulfHealth < baseEngulfHealth)
+            throw new InvalidOperationException("Marked engulf health must be finite and at least the base threshold.");
+        EnemyRangeQuery.RequirePositive(digestionDuration, nameof(digestionDuration));
+        digestionUntil = 0f;
+        ResetFeedback();
+    }
+
     private void Awake()
     {
         if (bodyRenderer == null)
@@ -40,6 +50,7 @@ public class PhagocyteAttackBehaviour : TowerAttackBehaviour
 
     private void OnDisable()
     {
+        digestionUntil = 0f;
         ResetFeedback();
     }
 

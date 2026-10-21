@@ -1,0 +1,48 @@
+{
+  "source": "E:\\unity\\CellDefense\\Logs\\StoreCapture\\2026-10-20\\take-003720",
+  "screenshots": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/01_免疫协作_第三关.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1538610,
+      "sha256": "0319a5c09fc621aff2a9327050202c01f81df5e53bbdcdc16c67a473ff69a8e5",
+      "source": "03-immune-cooperation.png",
+      "pixelsEdited": false
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/02_两侧告急_第四关.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1526412,
+      "sha256": "8f5dce74f9a869730ffdc76b38dae4ba1d6f5aaff0199ee1e7391ce697aeea82",
+      "source": "04-two-fronts.png",
+      "pixelsEdited": false
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/03_感染加剧_第五关.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1607839,
+      "sha256": "650e448fe37630f1dd526fb77ffbcff15fb1f8b48a55a473987c26ff835ce831",
+      "source": "05-three-entrances.png",
+      "pixelsEdited": false
+    }
+  ],
+  "video": {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/演示视频~/胞卫战_实机演示_1080p.mp4",
+    "bytes": 7951051,
+    "sha256": "2ade18136f18b8c1a431fa5b6682430dc1e19cb6f0d2003b2f87188823628a36",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "seconds": 30.0,
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audioTrack": false,
+    "runtimeSource": "Unity Editor PlayMode with mobile layout; not Android device recording",
+    "modelGenerated": false,
+    "extraCaptions": false
+  },
+  "frameAlias720": "same native frame file, no pixel edits"
+}

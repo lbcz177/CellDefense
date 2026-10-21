@@ -10,6 +10,7 @@ Shader "CellDefense/SpriteHitFlash"
         [PerRendererData] _AlphaTex ("External Alpha", 2D) = "white" {}
         [PerRendererData] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
         [PerRendererData] _FlashAmount ("Hit Flash", Range(0,1)) = 0
+        [PerRendererData] _StateTint ("Animated State Tint", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -30,9 +31,11 @@ Shader "CellDefense/SpriteHitFlash"
             #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
             #include "UnitySprites.cginc"
             float _FlashAmount;
+            fixed4 _StateTint;
             fixed4 FlashFrag(v2f input) : SV_Target
             {
                 fixed4 color = SampleSpriteTexture(input.texcoord) * input.color;
+                color.rgb *= _StateTint.rgb;
                 color.rgb = lerp(color.rgb, input.color.rgb, saturate(_FlashAmount));
                 color.rgb *= color.a;
                 return color;

@@ -1,0 +1,72 @@
+[
+  {
+    "source": "README.md",
+    "archive": "ROOT_README.md",
+    "sha256": "9a3b03ced4a29231d781038efba2e0e5daf03eae5b85f650aaf4cec945891b7d"
+  },
+  {
+    "source": "Docs/README.md",
+    "archive": "DOCS_README.md",
+    "sha256": "fb08ad65e58b851b6a36d1f2a428f549a409c6cc599b8ae9b66bcf2791553196"
+  },
+  {
+    "source": "Docs/GAME_DESIGN_FRAMEWORK.md",
+    "archive": "GAME_DESIGN_FRAMEWORK.md",
+    "sha256": "74cdb4a8bfb2a6f983b69ab07faa397afb5fedf418745e0140113f4dac33122a"
+  },
+  {
+    "source": "Docs/TECHNICAL_ARCHITECTURE.md",
+    "archive": "TECHNICAL_ARCHITECTURE.md",
+    "sha256": "02c8ccd534995701831e19c4d21344dbd0224b735a193550a262dda960800483"
+  },
+  {
+    "source": "Docs/OPEN_FIELD_THREE_ROUND_PROTOTYPE.md",
+    "archive": "OPEN_FIELD_THREE_ROUND_PROTOTYPE.md",
+    "sha256": "da99044874ab698f22fdeb7950c79e096cdcd8c9f3e73b14d14ff4c9abcc7c54"
+  },
+  {
+    "source": "Docs/CHAT_HANDOFF_2026-10-13.md",
+    "archive": "CHAT_HANDOFF_2026-10-13.md",
+    "sha256": "b0358de6a500a8cd2be864e01efd6db160772426b85783eac5e76b5b2821680b"
+  },
+  {
+    "source": "Docs/PERFORMANCE_MANY_ENEMIES.md",
+    "archive": "PERFORMANCE_MANY_ENEMIES.md",
+    "sha256": "d443669803e4eed0fbbac85cd6fd0b754fd9cec35f76af2d0605498e784c9d1a"
+  },
+  {
+    "source": "Docs/ENEMY_DESIGN.md",
+    "archive": "ENEMY_DESIGN.md",
+    "sha256": "0fa6644a27386b046dd97217a039481375a95b4b18066a5f692a2011193c4391"
+  },
+  {
+    "source": "Docs/ENEMY_IMPLEMENTATION.md",
+    "archive": "ENEMY_IMPLEMENTATION.md",
+    "sha256": "78b5c72fdde08c9057af7e55e13009f60e2311303363666ff656467542a2b84f"
+  },
+  {
+    "source": "Docs/LIMITED_ROUTE_DEFENSE_IMPLEMENTATION.md",
+    "archive": "LIMITED_ROUTE_DEFENSE_IMPLEMENTATION.md",
+    "sha256": "2e0cd81ca163b4c422d4b6a757904f4e4a7ede506d9dd6601870ef44dd1996b5"
+  },
+  {
+    "source": "Docs/SLOW_TOWER_SETUP.md",
+    "archive": "SLOW_TOWER_SETUP.md",
+    "sha256": "ec09e97270debadd2a7ca4d3c9f841320bc9242dbf60682893ccfbf8d90bed29"
+  },
+  {
+    "source": "Docs/REMAINING_TOWERS_SETUP.md",
+    "archive": "REMAINING_TOWERS_SETUP.md",
+    "sha256": "00c9d1bb65ceedf95918cbd37b55cb786caf4fbbf10567e7e184c0f6086d6e5c"
+  },
+  {
+    "source": "Docs/tutorial.md",
+    "archive": "tutorial.md",
+    "sha256": "d8a8d13b1a92a022c254aa50aa24c07ff1594351486286ce7559dfad49abc270"
+  },
+  {
+    "source": "Docs/UNITY_JOB_LEARNING_ROADMAP.md",
+    "archive": "UNITY_JOB_LEARNING_ROADMAP.md",
+    "sha256": "b07bf151ab440039d05525868f561f0210bf5d476610633886a9149e875d3439"
+  }
+]

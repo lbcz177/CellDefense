@@ -14,6 +14,8 @@ public class TowerController : MonoBehaviour
     public int UpgradeCostPaid { get; private set; }
     public bool IsUpgraded { get; private set; }
     public const int UpgradeDamageBonusPercent = 50;
+    public bool SupportsDamageUpgrade => Definition != null && Definition.Damage > 0f &&
+        (attackBehaviour == null || attackBehaviour.RequiresDamage);
     public float CurrentDamage => Definition == null ||
         (attackBehaviour != null && !attackBehaviour.RequiresDamage) ? 0f :
         Definition.Damage * (IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f);
@@ -110,8 +112,15 @@ public class TowerController : MonoBehaviour
         currentTargetSpawnVersion = 0;
         targetFilter = new ContactFilter2D();
         targetFilter.SetLayerMask(enemyLayerMask);
+        targetFilter.useTriggers = true;
         animator = GetComponent<Animator>();
         bodyRenderer = GetComponent<SpriteRenderer>();
+        if (aimVisualAtTarget) transform.rotation = Quaternion.identity;
+        if (bodyRenderer != null)
+        {
+            bodyRenderer.flipX = false;
+            bodyRenderer.flipY = false;
+        }
         CancelPendingAttack();
         attackBehaviour?.Initialize(definition, enemyLayerMask);
         if (releaseOnAnimationEvent && animator != null && animator.runtimeAnimatorController != null)
@@ -158,6 +167,7 @@ public class TowerController : MonoBehaviour
             currentTarget = null;
             currentTargetSpawnVersion = 0;
         }
+        if (currentTarget != null) AimAtTarget(currentTarget);
 
         attackCooldown -= Time.deltaTime;
         if (awaitingAttackRelease)
@@ -188,12 +198,7 @@ public class TowerController : MonoBehaviour
         }
 
         attackCooldown = Definition.AttackInterval;
-        if (aimVisualAtTarget && bodyRenderer != null)
-        {
-            Vector3 direction = currentTarget.transform.position - transform.position;
-            if (Mathf.Abs(direction.x) > 0.05f) bodyRenderer.flipX = direction.x > 0f;
-            if (Mathf.Abs(direction.y) > 0.05f) bodyRenderer.flipY = direction.y > 0f;
-        }
+        AimAtTarget(currentTarget);
         if (releaseOnAnimationEvent && animator != null && animator.isActiveAndEnabled &&
             animator.runtimeAnimatorController != null)
         {
@@ -230,7 +235,14 @@ public class TowerController : MonoBehaviour
         {
             return;
         }
+        AimAtTarget(target);
         Attack(target);
+    }
+
+    private void AimAtTarget(EnemyController target)
+    {
+        if (aimVisualAtTarget)
+            TopDownFacing.FaceDirection(transform, bodyRenderer, target.transform.position - transform.position);
     }
 
     private void CancelPendingAttack()
@@ -264,6 +276,7 @@ public class TowerController : MonoBehaviour
         {
             return false;
         }
+        if (attackBehaviour != null && !attackBehaviour.CanTarget(currentTarget)) return false;
         return GetTargetCenterDistanceSquared(currentTarget) <=
                Definition.AttackRange * Definition.AttackRange;
     }
@@ -285,6 +298,7 @@ public class TowerController : MonoBehaviour
                 {
                     continue;
                 }
+                if (attackBehaviour != null && !attackBehaviour.CanTarget(candidate)) continue;
 
                 // Physics overlap includes a collider when its edge enters the circle.
                 // The preview measures the distance between the two object centers.
@@ -357,7 +371,7 @@ public class TowerController : MonoBehaviour
         float damage = CurrentDamage;
         if (attackBehaviour != null)
         {
-            if (!attackBehaviour.isActiveAndEnabled) return;
+            if (!attackBehaviour.isActiveAndEnabled || !attackBehaviour.CanTarget(target)) return;
             attackBehaviour.Attack(target, damage, projectilePool);
             return;
         }
@@ -365,10 +379,13 @@ public class TowerController : MonoBehaviour
         using (SpawnProjectileMarker.Auto())
         {
             Vector3 muzzle = muzzleLocalOffset;
-            if (aimVisualAtTarget && bodyRenderer != null)
+            if (aimVisualAtTarget)
             {
-                if (bodyRenderer.flipX) muzzle.x = -muzzle.x;
-                if (bodyRenderer.flipY) muzzle.y = -muzzle.y;
+                // Convert world aim back to local space so body rotation is not applied twice.
+                Vector3 direction = transform.InverseTransformDirection(target.transform.position - transform.position);
+                direction.z = 0f;
+                if (direction.sqrMagnitude > 0.0001f)
+                    muzzle = direction.normalized * muzzleLocalOffset.magnitude;
             }
             Projectile projectile = projectilePool.Get(transform.TransformPoint(muzzle));
             if (projectileVisual != null)

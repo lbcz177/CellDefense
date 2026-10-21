@@ -1,0 +1,13 @@
+{
+  "Passed": true,
+  "MoveFrames": 10,
+  "AttackFrames": 10,
+  "UnityActionClipsChecked": 22,
+  "NativeUnityImportPassed": true,
+  "OriginalMetaGUIDsAndSpriteIDsPreserved": true,
+  "RuntimePNGMetasByteUnchanged": true,
+  "AsepriteImporterUpdatedPackingRects": true,
+  "OriginalPrefabAndClipsPreserved": true,
+  "PlayModeRun": false,
+  "NewMaximumMovementAspect": 1.08108108108108
+}

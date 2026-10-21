@@ -1,0 +1,5 @@
+{
+  "name": "CellDefense.Tests.PlayMode",
+  "references": [],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

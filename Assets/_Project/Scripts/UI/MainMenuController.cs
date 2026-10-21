@@ -21,9 +21,13 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private TMP_FontAsset menuFont;
     [SerializeField] private Sprite[] levelArtwork;
 
+    private Transform menuContent;
+    private RectTransform selectionPanel;
     private GameObject selectionCanvas;
+    private GameObject settingsCanvas;
+    private GameSettingsPanel settingsPanel;
     private CanvasGroup menuInteraction;
-    private Button selectionEntry;
+    private Button selectionEntry, settingsEntry, quitEntry;
     private Button[] levelButtons;
     private RectTransform listViewport;
     private GridLayoutGroup levelGrid;
@@ -33,6 +37,8 @@ public class MainMenuController : MonoBehaviour
     private bool loadingLevel;
     private bool previousInteractable;
     private bool previousBlocksRaycasts;
+    public bool IsSettingsOpen => settingsCanvas != null && settingsCanvas.activeSelf;
+    public bool QuitRequested { get; private set; }
 
     private void Awake()
     {
@@ -46,17 +52,44 @@ public class MainMenuController : MonoBehaviour
         menuInteraction = menuCanvas.GetComponent<CanvasGroup>();
         if (menuInteraction == null) menuInteraction = menuCanvas.gameObject.AddComponent<CanvasGroup>();
 
-        selectionEntry = CreateButton("Level Selection Entry", menuCanvas.transform, "选择关卡");
+        menuContent = MobileDisplay.IsActive ? MobileSafeFrame.Wrap(menuCanvas, new Vector2(1920f, 1080f)) : menuCanvas.transform;
+        selectionEntry = CreateButton("Level Selection Entry", menuContent, "选择关卡");
         SetRect(selectionEntry.GetComponent<RectTransform>(), Vector2.right, Vector2.right,
             new Vector2(1f, 0f), new Vector2(-48f, 36f), new Vector2(320f, 76f));
         selectionEntry.onClick.AddListener(OpenLevelSelection);
         CreateLevelSelection();
+        // The background already contains the Settings artwork. Match its normalized
+        // rectangle so the hit area follows the same stretch at every window size.
+        GameObject settingsHitArea = CreateUI("Settings Entry", menuContent, typeof(Image), typeof(Button));
+        settingsHitArea.GetComponent<Image>().color = Color.clear;
+        settingsEntry = settingsHitArea.GetComponent<Button>();
+        settingsEntry.targetGraphic = settingsHitArea.GetComponent<Image>();
+        settingsEntry.transition = Selectable.Transition.None;
+        settingsEntry.navigation = new Navigation { mode = Navigation.Mode.None };
+        SetRect(settingsEntry.GetComponent<RectTransform>(), new Vector2(.093f, .216f),
+            new Vector2(.345f, .322f), Vector2.one * .5f, Vector2.zero, Vector2.zero);
+        settingsEntry.onClick.AddListener(OpenSettings);
+        GameObject quitHitArea = CreateUI("Quit Entry", menuContent, typeof(Image), typeof(Button));
+        quitHitArea.GetComponent<Image>().color = Color.clear;
+        quitEntry = quitHitArea.GetComponent<Button>();
+        quitEntry.targetGraphic = quitHitArea.GetComponent<Image>();
+        quitEntry.transition = Selectable.Transition.None;
+        quitEntry.navigation = new Navigation { mode = Navigation.Mode.None };
+        SetRect(quitEntry.GetComponent<RectTransform>(), new Vector2(.093f, .096f),
+            new Vector2(.345f, .202f), Vector2.one * .5f, Vector2.zero, Vector2.zero);
+        quitEntry.onClick.AddListener(QuitGame);
+        CreateSettings();
     }
 
     private void Update()
     {
-        if (selectionCanvas != null && selectionCanvas.activeSelf && Input.GetKeyDown(KeyCode.Escape))
-            CloseLevelSelection();
+        if (Input.GetKeyDown(KeyCode.Escape)) HandleEscape();
+    }
+
+    public void HandleEscape()
+    {
+        if (IsSettingsOpen) CloseSettings();
+        else if (selectionCanvas != null && selectionCanvas.activeSelf) CloseLevelSelection();
     }
 
     private void LateUpdate()
@@ -66,17 +99,25 @@ public class MainMenuController : MonoBehaviour
 
     public void StartGame()
     {
-        LoadLevel(0);
+        OpenLevelSelection();
+    }
+
+    public void QuitGame()
+    {
+        if (!isActiveAndEnabled || loadingLevel || QuitRequested || IsSettingsOpen ||
+            (selectionCanvas != null && selectionCanvas.activeSelf)) return;
+        PlayerPrefs.Save();
+        QuitRequested = true;
+#if UNITY_EDITOR
+        Debug.Log("退出请求已触发；独立运行时关闭游戏窗口。", this);
+#endif
+        Application.Quit();
     }
 
     public void OpenLevelSelection()
     {
-        if (selectionCanvas == null || selectionCanvas.activeSelf || loadingLevel) return;
-        previousSelection = EventSystem.current != null ? EventSystem.current.currentSelectedGameObject : null;
-        previousInteractable = menuInteraction.interactable;
-        previousBlocksRaycasts = menuInteraction.blocksRaycasts;
-        menuInteraction.interactable = false;
-        menuInteraction.blocksRaycasts = false;
+        if (!isActiveAndEnabled || selectionCanvas == null || selectionCanvas.activeSelf || loadingLevel || IsSettingsOpen) return;
+        BlockMenu();
         selectionCanvas.SetActive(true);
         levelScroll.verticalNormalizedPosition = 1f;
         Canvas.ForceUpdateCanvases();
@@ -90,16 +131,49 @@ public class MainMenuController : MonoBehaviour
     {
         if (selectionCanvas == null || !selectionCanvas.activeSelf || loadingLevel) return;
         selectionCanvas.SetActive(false);
+        RestoreMenu(selectionEntry);
+    }
+
+    public void OpenSettings()
+    {
+        if (!isActiveAndEnabled || settingsCanvas == null || IsSettingsOpen || loadingLevel ||
+            (selectionCanvas != null && selectionCanvas.activeSelf)) return;
+        BlockMenu();
+        settingsCanvas.SetActive(true);
+        settingsPanel.Show();
+        Canvas.ForceUpdateCanvases();
+        PositionSettings();
+    }
+
+    public void CloseSettings()
+    {
+        if (!IsSettingsOpen) return;
+        settingsPanel.Hide();
+        settingsCanvas.SetActive(false);
+        RestoreMenu(settingsEntry);
+    }
+
+    private void BlockMenu()
+    {
+        previousSelection = EventSystem.current != null ? EventSystem.current.currentSelectedGameObject : null;
+        previousInteractable = menuInteraction.interactable;
+        previousBlocksRaycasts = menuInteraction.blocksRaycasts;
+        menuInteraction.interactable = false;
+        menuInteraction.blocksRaycasts = false;
+    }
+
+    private void RestoreMenu(Button fallback)
+    {
         menuInteraction.interactable = previousInteractable;
         menuInteraction.blocksRaycasts = previousBlocksRaycasts;
         if (EventSystem.current != null)
             EventSystem.current.SetSelectedGameObject(previousSelection != null
-                ? previousSelection : selectionEntry.gameObject);
+                ? previousSelection : fallback != null ? fallback.gameObject : null);
     }
 
     public void LoadLevel(int index)
     {
-        if (loadingLevel || index < 0 || index >= LevelScenes.Length) return;
+        if (!isActiveAndEnabled || loadingLevel || IsSettingsOpen || index < 0 || index >= LevelScenes.Length) return;
         string sceneName = LevelScenes[index];
         if (!Application.CanStreamedLevelBeLoaded(sceneName))
         {
@@ -125,12 +199,14 @@ public class MainMenuController : MonoBehaviour
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1280f, 720f);
         scaler.matchWidthOrHeight = 0.5f;
+        MobileDisplay.ConfigureCanvas(canvas);
 
         // A full-screen raycast target prevents clicks from reaching the original Start button.
         GameObject shade = CreateUI("Backdrop", selectionCanvas.transform, typeof(Image));
         Stretch(shade.GetComponent<RectTransform>());
         shade.GetComponent<Image>().color = new Color(0.16f, 0.04f, 0.1f, 0.94f);
         GameObject panel = CreateUI("Level Selection", shade.transform, typeof(Image));
+        selectionPanel = panel.GetComponent<RectTransform>();
         SetRect(panel.GetComponent<RectTransform>(), new Vector2(0.04f, 0.05f),
             new Vector2(0.96f, 0.95f), new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.zero);
         panel.GetComponent<Image>().color = new Color(0.28f, 0.1f, 0.17f, 1f);
@@ -196,14 +272,60 @@ public class MainMenuController : MonoBehaviour
                 new Vector2(0.5f, 1f), new Vector2(0f, -10f), new Vector2(-20f, 128f));
         }
 
-        TextMeshProUGUI footer = CreateLabel("Footer", panel.transform, "Esc 返回主菜单", 16f);
+        TextMeshProUGUI footer = CreateLabel("Footer", panel.transform,
+            MobileDisplay.IsActive ? "滑动浏览关卡 · 返回键关闭" : "Esc 返回主菜单", 16f);
         SetRect(footer.rectTransform, Vector2.zero, Vector2.right,
             new Vector2(0.5f, 0f), new Vector2(0f, 10f), new Vector2(-40f, 24f));
         selectionCanvas.SetActive(false);
     }
 
+    private void CreateSettings()
+    {
+        settingsCanvas = new GameObject("Main Menu Settings Canvas", typeof(RectTransform),
+            typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
+        settingsCanvas.layer = LayerMask.NameToLayer("UI");
+        SceneManager.MoveGameObjectToScene(settingsCanvas, gameObject.scene);
+        Canvas canvas = settingsCanvas.GetComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvas.sortingOrder = 60;
+        canvas.pixelPerfect = true;
+        CanvasScaler scaler = settingsCanvas.GetComponent<CanvasScaler>();
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1280f, 720f);
+        scaler.matchWidthOrHeight = .5f;
+        MobileDisplay.ConfigureCanvas(canvas);
+        GameObject backdrop = CreateUI("Settings Backdrop", settingsCanvas.transform, typeof(Image));
+        Stretch(backdrop.GetComponent<RectTransform>());
+        backdrop.GetComponent<Image>().color = new Color(0f, 0f, 0f, .6f);
+        settingsPanel = settingsCanvas.AddComponent<GameSettingsPanel>();
+        settingsPanel.Initialize(backdrop.transform, OpenFieldUiResources.LoadDefaults(), CloseSettings);
+        settingsCanvas.SetActive(false);
+    }
+
+    private void PositionSettings()
+    {
+        if (!IsSettingsOpen) return;
+        Canvas canvas = settingsCanvas.GetComponent<Canvas>();
+        float scale = Mathf.Max(.01f, canvas.scaleFactor);
+        Rect safe = MobileDisplay.SafeArea;
+        float fit = Mathf.Clamp01(Mathf.Min((safe.width / scale - 24f) / 640f,
+            (safe.height / scale - 24f) / 800f));
+        Camera eventCamera = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(settingsCanvas.GetComponent<RectTransform>(),
+            safe.center, eventCamera, out Vector2 center);
+        settingsPanel.Position(center, fit);
+    }
+
     private void RefreshCardLayout()
     {
+        if (MobileDisplay.IsActive)
+        {
+            Rect safe = MobileDisplay.SafeArea;
+            selectionPanel.anchorMin = new Vector2((safe.x + safe.width * .04f) / Screen.width,
+                (safe.y + safe.height * .05f) / Screen.height);
+            selectionPanel.anchorMax = new Vector2((safe.xMax - safe.width * .04f) / Screen.width,
+                (safe.yMax - safe.height * .05f) / Screen.height);
+        }
         float width = listViewport.rect.width;
         if (width <= 0f || Mathf.Abs(width - lastListWidth) < 1f) return;
         lastListWidth = width;
@@ -271,8 +393,16 @@ public class MainMenuController : MonoBehaviour
         rect.sizeDelta = size;
     }
 
+    private void OnEnable()
+    {
+        // Subscribe after Awake creates CanvasScaler, so layout uses its updated scale.
+        Canvas.preWillRenderCanvases += PositionSettings;
+    }
+
     private void OnDisable()
     {
+        Canvas.preWillRenderCanvases -= PositionSettings;
+        CloseSettings();
         CloseLevelSelection();
     }
 
@@ -280,5 +410,8 @@ public class MainMenuController : MonoBehaviour
     {
         if (selectionCanvas != null) Destroy(selectionCanvas);
         if (selectionEntry != null) Destroy(selectionEntry.gameObject);
+        if (settingsCanvas != null) Destroy(settingsCanvas);
+        if (settingsEntry != null) Destroy(settingsEntry.gameObject);
+        if (quitEntry != null) Destroy(quitEntry.gameObject);
     }
 }

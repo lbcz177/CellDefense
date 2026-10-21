@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="21" result="Passed" total="21" passed="21" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.3421092">
+  <test-suite type="TestSuite" id="1036" name="CellDefense" fullname="CellDefense" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.342109" total="21" passed="21" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1067" name="CellDefense.Tests.EditMode.dll" fullname="E:/unity/CellDefense/Library/ScriptAssemblies/CellDefense.Tests.EditMode.dll" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.318785" total="21" passed="21" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="4400" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1043" name="EnemyCombatTests" fullname="EnemyCombatTests" classname="EnemyCombatTests" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.315399" total="21" passed="21" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1045" name="Acid_BreaksArmorBeforeDamage_AndMarkAppliesOnce" fullname="EnemyCombatTests.Acid_BreaksArmorBeforeDamage_AndMarkAppliesOnce" methodname="Acid_BreaksArmorBeforeDamage_AndMarkAppliesOnce" classname="EnemyCombatTests" runstate="Runnable" seed="2099673702" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.060368" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1059" name="BarrierPreview_ReroutesAndRestoresActualGrid" fullname="EnemyCombatTests.BarrierPreview_ReroutesAndRestoresActualGrid" methodname="BarrierPreview_ReroutesAndRestoresActualGrid" classname="EnemyCombatTests" runstate="Runnable" seed="2023465665" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.020328" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1060" name="BarrierQuotaExhaustion_BlocksOnlyBarrierChoices" fullname="EnemyCombatTests.BarrierQuotaExhaustion_BlocksOnlyBarrierChoices" methodname="BarrierQuotaExhaustion_BlocksOnlyBarrierChoices" classname="EnemyCombatTests" runstate="Runnable" seed="100837817" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.008584" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1052" name="Boss_KilledDuringWarning_DoesNotSummon" fullname="EnemyCombatTests.Boss_KilledDuringWarning_DoesNotSummon" methodname="Boss_KilledDuringWarning_DoesNotSummon" classname="EnemyCombatTests" runstate="Runnable" seed="246352456" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.090147" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1055" name="BossControlResistance_UsesStrongestSlowAndRecoveryWindow" fullname="EnemyCombatTests.BossControlResistance_UsesStrongestSlowAndRecoveryWindow" methodname="BossControlResistance_UsesStrongestSlowAndRecoveryWindow" classname="EnemyCombatTests" runstate="Runnable" seed="18128516" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.007728" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1061" name="ContactCapacity_RejectsOverflowAndPreservesVersionOwnership" fullname="EnemyCombatTests.ContactCapacity_RejectsOverflowAndPreservesVersionOwnership" methodname="ContactCapacity_RejectsOverflowAndPreservesVersionOwnership" classname="EnemyCombatTests" runstate="Runnable" seed="1617435961" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.009646" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1064" name="ContactDamage_WaitsOneInterval_NoCatchUpBurst_AndStunPreventsHit" fullname="EnemyCombatTests.ContactDamage_WaitsOneInterval_NoCatchUpBurst_AndStunPreventsHit" methodname="ContactDamage_WaitsOneInterval_NoCatchUpBurst_AndStunPreventsHit" classname="EnemyCombatTests" runstate="Runnable" seed="421428150" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.010013" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1063" name="EnemyExitAndReuse_ClearContactAndMovementGate" fullname="EnemyCombatTests.EnemyExitAndReuse_ClearContactAndMovementGate" methodname="EnemyExitAndReuse_ClearContactAndMovementGate" classname="EnemyCombatTests" runstate="Runnable" seed="1301312549" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.005045" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1046" name="Engulf_BypassesArmor_AndExitsOnlyOnce" fullname="EnemyCombatTests.Engulf_BypassesArmor_AndExitsOnlyOnce" methodname="Engulf_BypassesArmor_AndExitsOnlyOnce" classname="EnemyCombatTests" runstate="Runnable" seed="2129265060" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.004129" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1051" name="FungalBoss_ThresholdJump_HasOnlyTwoBoundedBatches" fullname="EnemyCombatTests.FungalBoss_ThresholdJump_HasOnlyTwoBoundedBatches" methodname="FungalBoss_ThresholdJump_HasOnlyTwoBoundedBatches" classname="EnemyCombatTests" runstate="Runnable" seed="1322894572" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.006094" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1048" name="Healing_IsCapped_AndCannotReviveAnExitedEnemy" fullname="EnemyCombatTests.Healing_IsCapped_AndCannotReviveAnExitedEnemy" methodname="Healing_IsCapped_AndCannotReviveAnExitedEnemy" classname="EnemyCombatTests" runstate="Runnable" seed="200220130" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.002250" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1057" name="HealingFromZeroHealthNotification_CannotPreventDeath" fullname="EnemyCombatTests.HealingFromZeroHealthNotification_CannotPreventDeath" methodname="HealingFromZeroHealthNotification_CannotPreventDeath" classname="EnemyCombatTests" runstate="Runnable" seed="1202927712" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.003563" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1056" name="MembraneSupport_SelectsThreeNearest_AndShieldDoesNotStack" fullname="EnemyCombatTests.MembraneSupport_SelectsThreeNearest_AndShieldDoesNotStack" methodname="MembraneSupport_SelectsThreeNearest_AndShieldDoesNotStack" classname="EnemyCombatTests" runstate="Runnable" seed="264446519" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.016099" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1054" name="OldAntibodyProjectile_DoesNotMarkMutatedTarget" fullname="EnemyCombatTests.OldAntibodyProjectile_DoesNotMarkMutatedTarget" methodname="OldAntibodyProjectile_DoesNotMarkMutatedTarget" classname="EnemyCombatTests" runstate="Runnable" seed="715287666" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.009218" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1058" name="OrdinaryCell_IsOccupiedButKeepsChokePointTraversable" fullname="EnemyCombatTests.OrdinaryCell_IsOccupiedButKeepsChokePointTraversable" methodname="OrdinaryCell_IsOccupiedButKeepsChokePointTraversable" classname="EnemyCombatTests" runstate="Runnable" seed="117108985" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.002505" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1062" name="OverflowCommitsToPassing_AndTowerDeathReleasesHeldEnemy" fullname="EnemyCombatTests.OverflowCommitsToPassing_AndTowerDeathReleasesHeldEnemy" methodname="OverflowCommitsToPassing_AndTowerDeathReleasesHeldEnemy" classname="EnemyCombatTests" runstate="Runnable" seed="514672149" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.007346" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1049" name="Reinitialize_ResetsDefenseMarkAndSpawnIdentity" fullname="EnemyCombatTests.Reinitialize_ResetsDefenseMarkAndSpawnIdentity" methodname="Reinitialize_ResetsDefenseMarkAndSpawnIdentity" classname="EnemyCombatTests" runstate="Runnable" seed="131930749" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.003488" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1044" name="Shield_ExactHit_DoesNotSendZeroDamageToHealth" fullname="EnemyCombatTests.Shield_ExactHit_DoesNotSendZeroDamageToHealth" methodname="Shield_ExactHit_DoesNotSendZeroDamageToHealth" classname="EnemyCombatTests" runstate="Runnable" seed="1645937839" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.001975" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1047" name="Shield_PreventsEngulf_UntilItIsConsumed" fullname="EnemyCombatTests.Shield_PreventsEngulf_UntilItIsConsumed" methodname="Shield_PreventsEngulf_UntilItIsConsumed" classname="EnemyCombatTests" runstate="Runnable" seed="791584507" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.002041" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1050" name="Summon_InheritsCurrentSegmentAndPosition" fullname="EnemyCombatTests.Summon_InheritsCurrentSegmentAndPosition" methodname="Summon_InheritsCurrentSegmentAndPosition" classname="EnemyCombatTests" runstate="Runnable" seed="1377111462" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.007226" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1053" name="VirusMutation_ClearsOnlyMotherMark_AndSnapshotsCloneAntigen" fullname="EnemyCombatTests.VirusMutation_ClearsOnlyMotherMark_AndSnapshotsCloneAntigen" methodname="VirusMutation_ClearsOnlyMotherMark_AndSnapshotsCloneAntigen" classname="EnemyCombatTests" runstate="Runnable" seed="1077396040" result="Passed" start-time="2026-10-16 00:40:08Z" end-time="2026-10-16 00:40:08Z" duration="0.006061" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

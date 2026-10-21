@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-19 15:31:19Z" end-time="2026-10-19 15:31:21Z" duration="1.2051361">
+  <test-suite type="TestSuite" id="1000" name="CellDefense" fullname="CellDefense" runstate="Runnable" testcasecount="32" result="Failed" site="Child" start-time="2026-10-19 15:31:19Z" end-time="2026-10-19 15:31:21Z" duration="1.205136" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1040" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="32" result="Failed" site="Child" start-time="2026-10-19 15:31:19Z" end-time="2026-10-19 15:31:21Z" duration="1.195103" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="66448" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1009" name="ZzMobileLandscapePlayModeTests" fullname="ZzMobileLandscapePlayModeTests" classname="ZzMobileLandscapePlayModeTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-19 15:31:19Z" end-time="2026-10-19 15:31:21Z" duration="1.193860" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1010" name="MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges" fullname="ZzMobileLandscapePlayModeTests.MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges" methodname="MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges" classname="ZzMobileLandscapePlayModeTests" runstate="Runnable" seed="1978525019" result="Failed" start-time="2026-10-19 15:31:19Z" end-time="2026-10-19 15:31:21Z" duration="1.186434" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="MobileLandscape" />
+          </properties>
+          <failure>
+            <message><![CDATA[  OpenFieldPrototype (1280, 720) safe variant 0: previous UI pixels survived at (640.00, 643.04).
+  Expected: less than 0.0299999993f
+  But was:  1.30926955f
+]]></message>
+            <stack-trace><![CDATA[at ZzMobileLandscapePlayModeTests+<MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges>d__1.MoveNext () [0x0074a] in E:\unity\CellDefense\Logs\CodexTradingTests\Assets\_Project\Tests\PlayMode\MobilePlayModeTests.cs:287
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1.1.33\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:46
+]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

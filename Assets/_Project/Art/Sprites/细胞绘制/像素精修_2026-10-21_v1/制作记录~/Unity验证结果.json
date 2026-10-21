@@ -1,0 +1,80 @@
+{
+  "EditMode": {
+    "result": "Passed",
+    "total": "129",
+    "passed": "129",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "PlayMode": {
+    "result": "Passed",
+    "total": "34",
+    "passed": "34",
+    "failed": "0",
+    "skipped": "0"
+  },
+  "screenshots": [
+    {
+      "file": "refined-build-menu.png",
+      "sha256": "f45f07a2949ea2e7ac5de5685aaa7cfaf778b91e41286aa62c4afabd41f10ba5",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/refined-build-menu.png"
+    },
+    {
+      "file": "refined-main-menu.png",
+      "sha256": "76950637e75adeab4b3d59a1b3b843db865f97b16f5653bd4839569dad18bf9e",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/refined-main-menu.png"
+    },
+    {
+      "file": "pause-menu.png",
+      "sha256": "82ddca2136994c0971807f8e7855ab50647632eb735a504548c37588269897bb",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/pause-menu.png"
+    },
+    {
+      "file": "settings-art.png",
+      "sha256": "de10f2f8b6606a31a4a7a43477fa4e533923bf409273ded17693287264394b80",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/settings-art.png"
+    },
+    {
+      "file": "settings-frames-default-hover.png",
+      "sha256": "5ab705d91bf500acb76ee6df9ad7a66bfb1aed0b9c7c57f06879c348d243db73",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/settings-frames-default-hover.png"
+    },
+    {
+      "file": "settings-frames-back-hover.png",
+      "sha256": "d3384a90249f41e28cc81e6dc4ca858db78df10082c2fd814c4dc5c22612fb56",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/settings-frames-back-hover.png"
+    },
+    {
+      "file": "settings-art-muted.png",
+      "sha256": "f6b3339301f5fd4dbd9049c4b08541d75a3419e5d22241635365733f343c3c10",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/settings-art-muted.png"
+    },
+    {
+      "file": "settings-art-zero.png",
+      "sha256": "b2ac5e0d84fb48991038b6bbb9fc582245e4e426b6f25d99b02c51e8aef0fdc0",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/settings-art-zero.png"
+    },
+    {
+      "file": "settings-art-full.png",
+      "sha256": "50a69c55b9897c7a3f453435da73cb6d2d31afc64935432ae616dc9fd0b8ab26",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/settings-art-full.png"
+    },
+    {
+      "file": "fibrin-barrier-holding.png",
+      "sha256": "3d1a284b380929a052544ed7720e4b32fd72dc2021657633c9bd8d16547047ac",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/fibrin-barrier-holding.png"
+    },
+    {
+      "file": "mobile-pause-1920x1080.png",
+      "sha256": "751fb0023fe0d2cd5eea10eaf1aac801b99fbf25dbf80c6243bc986b0e238133",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/mobile-pause-1920x1080.png"
+    },
+    {
+      "file": "mobile-pause-1600x720.png",
+      "sha256": "06cff80de7b4f445c505960aa2e68e219a38a5d16c2ee1d34ac2434e8d5acefc",
+      "source": "Logs/CodexTradingTests/Logs/PauseArtwork/mobile-pause-1600x720.png"
+    }
+  ],
+  "mainProjectImport": "Unity 2022.3.53f1c1 Android batchmode: exit code 0",
+  "testProject": "Logs/CodexTradingTests"
+}

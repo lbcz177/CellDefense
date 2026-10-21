@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-19 15:30:28Z" end-time="2026-10-19 15:30:31Z" duration="2.7487809">
+  <test-suite type="TestSuite" id="1000" name="CellDefense" fullname="CellDefense" runstate="Runnable" testcasecount="32" result="Passed" start-time="2026-10-19 15:30:28Z" end-time="2026-10-19 15:30:31Z" duration="2.748781" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1040" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="32" result="Passed" start-time="2026-10-19 15:30:28Z" end-time="2026-10-19 15:30:31Z" duration="2.738298" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="58508" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1009" name="ZzMobileLandscapePlayModeTests" fullname="ZzMobileLandscapePlayModeTests" classname="ZzMobileLandscapePlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-19 15:30:28Z" end-time="2026-10-19 15:30:31Z" duration="2.736651" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1010" name="MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges" fullname="ZzMobileLandscapePlayModeTests.MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges" methodname="MobileViewportErasesPreviousScenePixelsAcrossFiveMapsAndSafeAreaChanges" classname="ZzMobileLandscapePlayModeTests" runstate="Runnable" seed="544615582" result="Passed" start-time="2026-10-19 15:30:28Z" end-time="2026-10-19 15:30:31Z" duration="2.725373" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Category" value="MobileLandscape" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

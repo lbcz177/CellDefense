@@ -1,71 +1,60 @@
 # 《胞卫战》文档导航
 
-> 文档基线：2026-10-15
-> 当前引擎：Unity 2022.3.53f1c1
-> 当前方向：开放地图核心防御，五张图各三轮、第三至第五关六塔、ATP 经济
+> 2026-10-20 壁垒最终回归：EditMode **128/128**、PlayMode **33/33**，0 失败 / 跳过；八敌共同攻墙、自然破裂 / 出售放行、暂停保持和超过六次建造均通过。在隔离副本验证，未重打 APK。见 [壁垒验证](Testing/2026-10-20_FibrinBarrier.md)。
 
-主线 OpenFieldPrototype → OpenFieldLevel02 → OpenFieldLevel03 → OpenFieldLevel04 → OpenFieldLevel05，均已接入 2026-10-15 新绘制的地图、入口、核心和固定障碍。第四、五关沿用第三关的战斗配置；五关均点击有效空位后选择塔，悬停选项显示虚影和射程。最新五关流程与贴图 / 网格对齐仍待用户 Play，性能收益仍无 Profiler 实测。Prototype / Level02 保留为旧版参考。
+> 2026-10-20 本地源码更新：壁垒改为可破坏的原路拦截物，500 生命、30 ATP，拦截全部经过敌人；取消累计建造额度和改路拒建。旧改路代码保留但不启用、界面不展示。本次不重打 APK 或修改 TapTap；既有 0.1.2 包和远程草稿不包含此变更。见 [壁垒说明](FIBRIN_BARRIER.md)。
 
-2026-10-15 v0.14 更新（优先于下文历史快照）：用户已指定纤维蛋白壁垒为唯一改路塔，每关累计限建 6 座、仍花 30 ATP；普通细胞生命 100 / 容量 1，巨噬 250 / 2，敌人每秒伤害 10、Boss 25。占位 / 通行分离、承伤 / 溢出通行 / 死亡清理、路线预览与额度反馈均已接入，第一、二关增加壁垒选择。保留 15% 调速与第三关末尾真菌 Boss：倍率 0.85 / 0.6375 / 0.6375，第三关末轮 73。运行 / 测试源码静态检查通过，现有 EnemyCombatTests 共 21 项尚未执行；不运行 Unity、Play、Runner、构建或 Profiler。详见 [v0.14 接入与用户验证](LIMITED_ROUTE_DEFENSE_IMPLEMENTATION.md)。
+> 当前本地上架候选为 Android 0.1.2 / Code 3，57.01 MiB，安装名“胞卫战”、游戏图标、非 Development；已有30秒运行视频、3张截图和宣传图。TapTap草稿已按用户确认完成上传、绑定与填写，资料体检无缺失；待用户检查，未提审或发布。见 [检查页](Publishing/Review/2026-10-20/index.html)和[证据](Testing/2026-10-20_StorePreparation.md)。
 
-## 1. 从哪里开始阅读
+> Android 0.1.1 修复包已生成：修复手机地图外的旧 UI 残影，约 69.81 MiB，支持覆盖 0.1.0。该阶段 EditMode 127/127、PlayMode 32/32；签名与完整性校验通过，等待用户在原手机上复测。见 [修复说明](MOBILE_UI_RESIDUE_FIX.md)和[验证记录](Testing/2026-10-19_MobileUiResidue.md)。
 
-| 主题 | 文档 | 内容 |
-|---|---|---|
-| 新对话首先阅读 | [2026-10-13 交接](CHAT_HANDOFF_2026-10-13.md) | 已实现 / 讨论方案 / 验证边界、Git 状态、学习偏好和下一步 |
-| 当前玩法与范围 | [游戏策划 v0.14](GAME_DESIGN_FRAMEWORK.md) | 已确认有限改路、自由布置、通道内承伤；六塔与混合敌群，壁垒额度与有限拦截；新增五关地图见下方接入记录，待运行验收 |
-| 集中修改策划数值 | [策划配置工具](PLANNING_CONFIG_TOOL.md) | Unity 顶部“胞卫战 → 策划配置”；塔、敌人、关卡、波次，保存、撤销与配置检查 |
-| 前五关新地图与选关 | [地图接入记录](LevelPlanning/FIRST_FIVE_MAPS_IMPLEMENTATION_2026-10-15.md) | 主菜单五关预览与直接进入、背景 / 核心 / 入口 / 障碍格、沿用的战斗配置和用户验证 |
-| 有限改路和细胞承伤 | [v0.14 接入与验证](LIMITED_ROUTE_DEFENSE_IMPLEMENTATION.md) | 额度、生命、接敌容量、死亡清理、路线反馈和用户 Play 步骤 |
-| 当前代码与后续拆分 | [技术架构 v0.8](TECHNICAL_ARCHITECTURE.md) | 总控制器、BFS、敌人池、混合波次、Boss能力、选塔框、动画与生命周期 |
-| 自己写下一座塔 | [源码课程 T01](tutorial.md) | 从建造到命中的调用链、策略扩展点、动画与子弹池限制、IDE 诊断 |
-| 减速塔资源接线 | [纤维蛋白壁垒](SLOW_TOWER_SETUP.md) | 已接入的减速代码、敌人组件与第四种塔的 Unity 接线 |
-| 剩余两塔基础逻辑 | [酸化炮与神经脉冲](REMAINING_TOWERS_SETUP.md) | 酸区、连锁伤害、短暂停顿、六塔入口和待用户验证范围 |
-| 完整敌人设计与实现 | [敌人设计 v0.1](ENEMY_DESIGN.md) · [代码接入](ENEMY_IMPLEMENTATION.md) | 八种敌人（含三名Boss）、九轮混合构成、独立资产、静态证据和用户运行验证 |
-| 在 Unity 中试玩 | [三轮场景说明](OPEN_FIELD_THREE_ROUND_PROTOTYPE.md) | 场景、操作、地图素材、胜败 UI 和验收 |
-| 求职学习参考 | [学习路线](UNITY_JOB_LEARNING_ROADMAP.md) | 知识范围与证据要求；当前分工以最新策划第 9 节为准 |
-| 性能专题 | [性能文档](PERFORMANCE_MANY_ENEMIES.md) | 测量方法与候选优化；预算不是已取得的结果 |
-| 美术与提示词 | [美术规范](ART_DIRECTION.md) · [塔](Prompts/TOWERS_IMAGE_PROMPTS.md) · [敌人](Prompts/ENEMIES_IMAGE_PROMPTS.md) · [地图](Prompts/MAPS_IMAGE_PROMPTS.md) · [特效](Prompts/PROJECTILES_VFX_IMAGE_PROMPTS.md) | 制作参考；旧固定路线 / 六塔说明不代表当前内容已实现 |
+> 整理日期：2026-10-19；Unity 2022.3.53f1c1。
+> 当前范围：五关各三轮、承伤壁垒全部拦截、普通细胞有限接敌、六塔、混合敌群与 ATP 购售。
 
-## 2. 已确认的当前范围
+先读 [当前实现与验证状态](PROJECT_STATUS.md)，再读 [策划 v0.22](GAME_DESIGN_FRAMEWORK.md) 和 [技术架构 v0.16](TECHNICAL_ARCHITECTURE.md)。五关核心 / 入口、数量和共享配置以状态页、场景和引用资产核对；旧日期交接不代表当前进度。
 
-- 在布置阶段于有效格子建塔；核心、入口、固定障碍和占用格不可建，不得封死任何入口。
-- 玩家手动开始每轮；进攻期不能改建，完成前两轮后回到布置并发轮间 ATP。
-- 第一关从左、右、上三个入口轮流出敌；第二关从底部两个入口轮流出敌，绕过固定组织障碍前往中央核心。
-- 保留近卫采样、抗体标记、巨噬吞噬的一跳协作。2026-10-14 抗体塔已改为零伤害辅助，标记期间目标受到其他塔伤害增加 15%，待用户 Play 验证。
-- 第二关三波 30 / 48 / 72，每组 6 个，移动倍率 0.6375；初始 ATP 200、轮间 60、核心生命 20。
-- 开放场景敌人复用闲置池；塔查询复用 List；SpawnVersion 防旧引用命中复用实例。尚无 Profiler 前后性能数据。
-- v0.14：纤维蛋白壁垒每关限建 6、仍花 30 ATP；普通细胞生命 100 / 容量 1，巨噬 250 / 2；通道内承伤和有限拦截已接入，动态拆壁垒与完全封路未启用。
-- 第三轮清场且核心存活为胜利；生命归零为失败，最后一个敌人泄露时也遵守失败优先。
-- 原胜负 Prefab 已接入，其他局内界面仍为临时 IMGUI。
-- 当前优先 PC；三关六塔基础已接入，移动端、复杂成长和 ECS 为候选扩展。
+| 目的 | 文档 |
+|---|---|
+| Android 横屏、触控 / 安全区 / 后台暂停、APK 与学习路径 | [手机适配说明](MOBILE_ANDROID.md) |
+| 战斗地图 / 细胞 / 射程圈拉伸修复 | [等比显示说明](VIEWPORT_ASPECT.md) |
+| 最新测试 | [承伤壁垒 128/33](Testing/2026-10-20_FibrinBarrier.md) |
+| 手机地图外残留上一页 UI | [清屏修复说明](MOBILE_UI_RESIDUE_FIX.md) |
+| TapTap 发布协作 / 先确认再修改平台内容 | [发布流程](Publishing/TAPTAP_WORKFLOW.md)、[0.1.2 检查页](Publishing/Review/2026-10-20/index.html) |
+| Android APK 输出 / 重打包 / 安装试玩 | [打包说明](ANDROID_APK_BUILD.md)、[首次构建证据](Testing/2026-10-19_AndroidApk.md) |
+| 当前状态、五关参数、已有测试和未覆盖项 | [PROJECT_STATUS](PROJECT_STATUS.md) |
+| 当前规则与候选范围 | [策划](GAME_DESIGN_FRAMEWORK.md) |
+| 真实职责、路径、生命周期和技术债 | [架构](TECHNICAL_ARCHITECTURE.md) |
+| 启动、建造、开波、出售与手动验收 | [试玩说明](OPEN_FIELD_THREE_ROUND_PROTOTYPE.md) |
+| 暂停 / 继续、1x / 2x 与 v2 图片界面 | [代码与操作](PAUSE_PLAYBACK.md) |
+| 音量 / 静音 / 桌面全屏 / 默认值、本地保存、声音拉条和字图 | [设置说明](SETTINGS.md)、[字图接入测试](Testing/2026-10-19_SettingsText.md) |
+| 五关地图、选关、坐标和共享波次 | [地图接入](LevelPlanning/FIRST_FIVE_MAPS_IMPLEMENTATION_2026-10-15.md) |
+| 当前承伤壁垒 / 旧改路保留范围 | [壁垒说明](FIBRIN_BARRIER.md) |
+| 战中建造的历史改路实现 | [历史实现](LIVE_BUILD_IMPLEMENTATION.md) |
+| 购买 / 确认出售与退款 | [购售实现](OPEN_FIELD_TRADING.md) |
+| 主菜单退出与四种伤害塔单次升级 | [操作与规则](QUIT_AND_UPGRADE.md)、[验证](Testing/2026-10-19_QuitUpgrade.md) |
+| 入口开波 / 提前开波 / 等比显示 | [开波说明](ENTRANCE_WAVE_BUTTONS.md) |
+| HUD 素材接入 | [图片 HUD](BATTLE_HUD_ART_IMPLEMENTATION.md) |
+| 六塔基础能力 / 反馈 | [塔能力](TOWER_ABILITIES_STATUS.md) |
+| 壁垒 / 承伤 / 容量的实现过程 | [有限改路记录](LIMITED_ROUTE_DEFENSE_IMPLEMENTATION.md) |
+| 敌人规则及实现过程 | [设计](ENEMY_DESIGN.md)、[实现](ENEMY_IMPLEMENTATION.md) |
+| 策划配置工具与源码学习 | [工具](PLANNING_CONFIG_TOOL.md)、[课程](PlanningConfigTool/tutorial.md) |
+| 塔攻击源码与旧接口演进 | [T01](tutorial.md)、[减速塔](SLOW_TOWER_SETUP.md)、[酸化 / 神经](REMAINING_TOWERS_SETUP.md) |
+| 性能当前措施与候选测量目标 | [性能](PERFORMANCE_MANY_ENEMIES.md) |
+| 求职学习方法 | [学习路线](UNITY_JOB_LEARNING_ROADMAP.md) |
+| 热更新学习大纲，尚未实现 | [课程大纲](HotUpdate/tutorial.md) |
+| 美术和素材提示词参考 | [美术规范](ART_DIRECTION.md)、[塔](Prompts/TOWERS_IMAGE_PROMPTS.md)、[敌人](Prompts/ENEMIES_IMAGE_PROMPTS.md)、[地图](Prompts/MAPS_IMAGE_PROMPTS.md)、[特效](Prompts/PROJECTILES_VFX_IMAGE_PROMPTS.md) |
+| 手机接入阶段测试 | [手机适配 126/30](Testing/2026-10-19_MobileAndroid.md)，另横屏 1/1 |
+| 历史阶段测试 | [退出与升级 117/26](Testing/2026-10-19_QuitUpgrade.md)；此前 [主菜单设置](Testing/2026-10-19_MainMenuSettings.md)、[字图](Testing/2026-10-19_SettingsText.md)和更早报告保留 |
+| 本次文档整理与 Notion 同步 | [同步记录](NOTION_SYNC_2026-10-18.md) |
 
-## 3. 状态与文档优先级
+## 文档和历史规则
 
-2026-10-14 本地补充：第三关场景已创建，加入构建列表并接通第二关 Next；六塔选择和三个新塔的 Prefab / Definition 已接线，第三关独立敌人加入减速 / 停顿组件。第一、二关保留原三塔，三关统一空位选塔框。新图片及旧素材 .meta 均未改动；旧原型资产和用户未提交修改保留。新场景、资源导入和交互仍待用户 Unity 验证，不代表六塔升级、群落、生物膜或炎症已实现。
+当前实现、目标设计和验证证据分别记录；看到“尚未运行”必须结合日期理解。退出与升级阶段 EditMode 117/117、PlayMode 26/26，升级前后画面已查看；Windows 主菜单验证程序已构建并实测退出，不代表完整五关发布。系统全屏、五关通关、全窗口比例 / 平衡及 Profiler 收益仍待验证。
 
-策划负责“当前决定做什么”，代码和场景负责“实际已经有什么”，Play / 构建 / Profiler 证据负责“验证到了什么程度”。发生差异时记录缺口，不把设计目标或静态检查写成完成验收。
+历史原文完整保存在 [整理前快照](History/2026-10-18_before_sync/README.md)，[10月13日交接](CHAT_HANDOFF_2026-10-13.md)保留为历史。旧三关地图 / 入口、全塔挡路、仅布置期建造、无出售、临时 IMGUI 等描述均已被当前正文取代。专项历史和课程开头注明适用范围，原有代码与知识材料保留。
 
-2026-10-03 已同步到 Notion：[策划 v0.8](https://app.notion.com/p/3b8c4f9516208182bdf1f2b106c7ba75)、[技术架构 v0.4](https://app.notion.com/p/3b8c4f95162081d88119fc7a3b5da58f)、[项目总览](https://app.notion.com/p/3b8c4f9516208114a5bfc964cc2a5ed2)，写入成功后已回读核对。辅助专题中涉及旧范围的内容保留为学习参考；具体玩法、版本范围和协作要求以最新确认的基线为准。历史交接与旧验收记录只能证明对应版本。
+素材保存在 Assets/_Project/Art/Sprites/细胞绘制/，保留原图和 .meta；课程和美术早期参考不自动增加当前功能范围。个人答题、评分和推测掌握等级不写入 Notion。
 
-2026-10-13 已按当前磁盘代码整理最新交接、策划 v0.10、架构 v0.5 与源码课程。用户认为塔动画跑通；工作区已有第二关动画反馈的有限运行报告，早于最新锁敌变更。完整三轮、最新前排锁敌及 IDE 红线刷新仍待确认。本次未运行构建或 Profiler。
+手机适配阶段回归：EditMode **126/126**、PlayMode **30/30**，0 失败 / 跳过；另独立横屏验证 1/1。覆盖三种实际横屏尺寸和五关触控 / 结算。见 [验证报告](Testing/2026-10-19_MobileAndroid.md)。Android 首个 APK 已生成，尚未真机验收。
 
-本次 Notion 同步已成功并回读核对：项目总览、策划、架构、[性能专题](https://app.notion.com/p/3b8c4f95162081bb92f7f4c33714edae)和学习路线开头加入 2026-10-13 最新快照；原有正文与子页面保留。Git 功能改动仍在本地工作区，本次没有 commit / push。
-
-## 4. 历史资料
-
-- [改版前本地策划](GAME_DESIGN_FRAMEWORK_PRE_OPEN_FIELD.md)
-- [改版前本地架构](TECHNICAL_ARCHITECTURE_PRE_OPEN_FIELD.md)
-- [2026-09-30 交接](CHAT_HANDOFF_2026-09-30.md)：保留当时的事实、学习分工和代码链路，不再用其中的 Git 状态或待办判断当前进度。
-
-Notion 原策划、架构与总览页面的开头已更新为新基线，下方保留旧正文作为历史区，避免丢失此前的设计和学习记录。
-
-## 5. 维护约定
-
-玩法和参数变化更新策划，职责或生命周期变化更新架构。数值以实际场景 / 资产为准，文档表格注明快照日期。
-
-2026-10-14 当前策划案为 v0.13：一种专用塔负责改路，整关挡路额度独立且不随 ATP 收入增长；普通细胞自由布置，在通道内会接敌承伤。具体类型、额度、承伤与拦截细则待定。当前代码仍为全塔挡路，本次仅更新策划和文档入口；旧版本与交接中的描述按对应时间理解。
-
-2026-10-14 [Notion 策划页](https://app.notion.com/p/3b8c4f9516208182bdf1f2b106c7ba75)已同步 v0.13 的当前方向、待定细节、实现缺口与验证顺序，并回读核对；v0.10、v0.8 和更早正文保留为历史记录。
-
-不记录开发者个人答题或评分；学习掌握只通过能解释、独立修改、调试和验证的证据判断。性能收益必须带测量条件。Git 提交、远端同步和构建状态按真实执行结果单独报告。
+投影修复阶段回归：EditMode **127/127**、PlayMode **31/31**，0 失败 / 跳过。世界图形按实际视口等比显示，覆盖圆形、165 格点选和暂停时窗口变化。见 [验证报告](Testing/2026-10-19_ViewportAspect.md)和[修复说明](VIEWPORT_ASPECT.md)。Android 组件已安装且首个 APK 已生成，尚未真机验收。

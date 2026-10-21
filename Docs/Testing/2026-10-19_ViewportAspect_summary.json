@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "results": {
+    "editmode": {
+      "result": "Passed",
+      "total": "127",
+      "passed": "127",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "playmode": {
+      "result": "Passed",
+      "total": "31",
+      "passed": "31",
+      "failed": "0",
+      "skipped": "0"
+    }
+  },
+  "matchingCodeFiles": 3,
+  "sha256": {
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "b92593848e57262c9a479425c3e87c2601e3a157d333418aa23d4666aea7a02b",
+    "Assets/_Project/Tests/EditMode/OpenFieldWaveFlowTests.cs": "b65e997651b8b60ca89949e6e539a1e8b08f564cd43377bfa44e82ea1c864414",
+    "Assets/_Project/Tests/PlayMode/MobilePlayModeTests.cs": "76f90f5c9b8b700999213a5e9f17f1b077ddf56d99ab540d229d2af579d0d03f"
+  },
+  "androidBuildPerformed": false,
+  "scope": "实际像素比例投影；完整棋盘 / 圆形 / 格子映射 / 暂停时动态窗口；背景原图继续按既有网格对齐。"
+}

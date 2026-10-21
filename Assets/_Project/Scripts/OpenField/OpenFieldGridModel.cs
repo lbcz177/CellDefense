@@ -129,6 +129,12 @@ public sealed class OpenFieldGridModel
     }
 
     public OpenFieldPlacementResult CheckPlacement(Vector2Int cell, bool blocksRoute = true)
+        => CheckPlacementKeepingRoutes(cell, blocksRoute, null);
+
+    // Active units may be beyond an entrance choke point. Their remaining route
+    // must stay reachable too, even when every entrance still has another exit.
+    public OpenFieldPlacementResult CheckPlacementKeepingRoutes(Vector2Int cell, bool blocksRoute,
+        IEnumerable<Vector2Int> requiredStarts)
     {
         if (!Contains(cell))
         {
@@ -166,6 +172,10 @@ public sealed class OpenFieldGridModel
                 return OpenFieldPlacementResult.BlocksRoute;
             }
         }
+        if (requiredStarts != null)
+            foreach (Vector2Int start in requiredStarts)
+                if (!Contains(start) || candidateDistances[start.x, start.y] < 0)
+                    return OpenFieldPlacementResult.BlocksRoute;
         return OpenFieldPlacementResult.Valid;
     }
 

@@ -1,0 +1,22 @@
+{
+  "apk": "E:\\unity\\CellDefense\\Builds\\Android\\CellDefense-0.1.2.apk",
+  "bytes": 59780812,
+  "sizeMiB": 57.01,
+  "sha256": "11c2fac3b389db8fb16b35b163b18e559dbf7cbb6caa30b0d1a7f534bb44ad72",
+  "zipCrcValid": true,
+  "entries": 182,
+  "nativeLibraries": {
+    "lib/armeabi-v7a/libil2cpp.so": 20364840,
+    "lib/armeabi-v7a/libunity.so": 9138956,
+    "lib/arm64-v8a/libil2cpp.so": 23751200,
+    "lib/arm64-v8a/libunity.so": 12657904
+  },
+  "deviceInstallTested": false,
+  "buildOutput": "E:\\unity\\CellDefense\\Logs\\CodexTradingTests\\Builds\\Android\\CellDefense-0.1.2.apk",
+  "latestAlias": "E:\\unity\\CellDefense\\Builds\\Android\\CellDefense.apk",
+  "versionName": "0.1.2",
+  "versionCode": 3,
+  "productName": "胞卫战",
+  "development": false,
+  "sameSigningCertificateAsPreviousLocalBuilds": true
+}

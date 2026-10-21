@@ -1,0 +1,71 @@
+{
+  "square_and_opaque": true,
+  "png_exports": [
+    {
+      "path": "导出尺寸/icon_16.png",
+      "size": 16,
+      "sha256": "994809389b76fe65ae6c338719ca5a5dc7f4ecbbb0f3c7ce0d7662c45865e80d"
+    },
+    {
+      "path": "导出尺寸/icon_32.png",
+      "size": 32,
+      "sha256": "981e9f63b57de7e51bc320a52de532f1562ff1d47b7ec0bc6f04c1988445ef68"
+    },
+    {
+      "path": "导出尺寸/icon_48.png",
+      "size": 48,
+      "sha256": "0b2b4af1b8e1c30f97757b3f76ff3fc17471c57a51db21654d66da0313cf6926"
+    },
+    {
+      "path": "导出尺寸/icon_64.png",
+      "size": 64,
+      "sha256": "77faf9e5226d84de6572a790e1c63b5499d7e91eb2646e4154beb2d2175f9f54"
+    },
+    {
+      "path": "导出尺寸/icon_128.png",
+      "size": 128,
+      "sha256": "adfc734079c0c37eb5cd358fd8e5550c3aff8776385712b9af0a1c9be53a5dbc"
+    },
+    {
+      "path": "导出尺寸/icon_256.png",
+      "size": 256,
+      "sha256": "d261c014ffea2791183c6fc46fe0f75c8c75f930d6088620a4d007e4284cd6b7"
+    },
+    {
+      "path": "导出尺寸/icon_512.png",
+      "size": 512,
+      "sha256": "a8299ccc33fae7707d93c8972ef61f9b6a355299264e16a6532e033a203705ac"
+    },
+    {
+      "path": "导出尺寸/icon_1024.png",
+      "size": 1024,
+      "sha256": "46f3ad4bbca79e34df252dabac0db13dfb43c7b8896c16b6dd7c1c9b7d39c1d6"
+    }
+  ],
+  "ico_sizes": [
+    [
+      16,
+      16
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      48,
+      48
+    ],
+    [
+      64,
+      64
+    ],
+    [
+      128,
+      128
+    ],
+    [
+      256,
+      256
+    ]
+  ]
+}

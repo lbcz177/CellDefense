@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e77729d64c94381b2de17e0232c9671, type: 3}
+  m_Name: OpenFieldUiResources
+  m_EditorClassIdentifier:
+  playbackPauseNormal: {fileID: 21300000, guid: aca252f30b6f2c0438f1037ce975b189, type: 3}
+  playbackPauseHighlighted: {fileID: 21300000, guid: 2524effc61c1b5a41acafbd3d6b1b44c, type: 3}
+  playbackNormalSpeedNormal: {fileID: 21300000, guid: 23eccadfb755bb34b867999a595c8992, type: 3}
+  playbackNormalSpeedHighlighted: {fileID: 21300000, guid: 0d5d35622c5b9694a985253e955c2a9e, type: 3}
+  playbackDoubleSpeedNormal: {fileID: 21300000, guid: 3dd77b3e7eb98b44f9e1bb57f241f479, type: 3}
+  playbackDoubleSpeedHighlighted: {fileID: 21300000, guid: 6f527d3143f64fc40955e2a38c758b4c, type: 3}
+  settingsDefaultsFrame: {fileID: 21300000, guid: 5abab07b96c4415b9957db43feb72a08, type: 3}
+  settingsDefaultsFrameSelected: {fileID: 21300000, guid: d7080994c81644cbb3fa56eda52ec946, type: 3}
+  settingsBackFrame: {fileID: 21300000, guid: 6f23f0ae56f340ffab057abbc241ad0b, type: 3}
+  settingsBackFrameSelected: {fileID: 21300000, guid: cc54b56afdf8421a809675250b494a2c, type: 3}
+  settingsTitle: {fileID: 21300000, guid: c7f428b2f285423c976ed68499bae837, type: 3}
+  settingsVolumeLabel: {fileID: 21300000, guid: 2744b6054cfd490ba74312411c10211c, type: 3}
+  settingsFullscreenLabel: {fileID: 21300000, guid: 252ad6fe10a04062bd7cf2a576534efe, type: 3}
+  settingsDefaultsLabel: {fileID: 21300000, guid: 9631fc91fb654f5e93741514ec70b6d5, type: 3}
+  settingsBackLabel: {fileID: 21300000, guid: ff84d859bfe24373a88409611f2f53e5, type: 3}
+  settingsMuteHint: {fileID: 21300000, guid: 3f9c67136c9c45e8b69851b144174308, type: 3}
+  settingsWindowHint: {fileID: 21300000, guid: cd9d5461596f44c4b87a88a406241588, type: 3}
+  settingsEditorHint: {fileID: 21300000, guid: 14c0e6b8b2b74837903b03510a0720f3, type: 3}
+  settingsPercent: {fileID: 21300000, guid: 78a62c8f0e654fe69892c612165dadfe, type: 3}
+  settingsSoundIcon: {fileID: 21300000, guid: bb74e12f50f044a0b4d022e6b567bf4e, type: 3}
+  settingsMutedIcon: {fileID: 21300000, guid: 890ba96af2ef4472803ff4a8c41ed282, type: 3}
+  settingsVolumeTrack: {fileID: 21300000, guid: dc217ebb0c6c41489c76f214edf117aa, type: 3}
+  settingsVolumeFill: {fileID: 21300000, guid: 9d492598e72e478cab4c390a538599f1, type: 3}
+  settingsVolumeHandle: {fileID: 21300000, guid: dc5d304753eb4597a8b7f17ecb3798c0, type: 3}
+  pausePanel: {fileID: 21300000, guid: 59c71dfe8db74805868531c8f47c72cd, type: 3}
+  pauseTitle: {fileID: 21300000, guid: ce2abec885194afd8acae44fb75d101b, type: 3}
+  pauseResumeNormal: {fileID: 21300000, guid: 5b4c87918e1a4cbfbf902c47c298bf6d, type: 3}
+  pauseResumeSelected: {fileID: 21300000, guid: 4b46041c9ff84dfbb87eda46f27d3a48, type: 3}
+  pauseSettingsNormal: {fileID: 21300000, guid: e27f3897d51443a5814ec8a42a67564d, type: 3}
+  pauseSettingsSelected: {fileID: 21300000, guid: fd0a3170f8d546a2a185441ca9d743f7, type: 3}
+  pauseMenuNormal: {fileID: 21300000, guid: 691470a8836848fd9fce584f7e4a8adc, type: 3}
+  pauseMenuSelected: {fileID: 21300000, guid: 8d221a9eb3104f06a7e54f6978c3a78f, type: 3}
+  battleHudPrefab: {fileID: 100217, guid: 01bb404995df44b882a76825eb81b3c0, type: 3}
+  waveButtonArtwork: {fileID: 21300000, guid: 67b76b5e63e8408082593966f218b157, type: 3}
+  hudFrame: {fileID: 21300000, guid: f88cf6d69cfd4f0e8f8753f026c94df6, type: 3}
+  atpIcon: {fileID: 21300000, guid: 8293b7876a7f4647bf0f1bedee92cb4d, type: 3}
+  atpLabel: {fileID: 21300000, guid: bb9f63ed5a7642fc80a36386321c36eb, type: 3}
+  lifeIcon: {fileID: 21300000, guid: 8be91c85a55b4eaaaeb87c601af8b7c9, type: 3}
+  lifeLabel: {fileID: 21300000, guid: 8b4617b55bda4d18b3c4d65b46b1841a, type: 3}
+  waveIcon: {fileID: 21300000, guid: 6eac5c8e14de423b8da91cc9a984ec7a, type: 3}
+  waveLabel: {fileID: 21300000, guid: f7a671e6a4634f33815a415731b0a49b, type: 3}
+  numberSlash: {fileID: 21300000, guid: 93efbd0183c743549cdc98bdd6aae688, type: 3}
+  digits:
+  - {fileID: 21300000, guid: 1c23d786c2db4aadb3316e06cef612d5, type: 3}
+  - {fileID: 21300000, guid: 83f56344668e4165a53d59dd16e8c5c2, type: 3}
+  - {fileID: 21300000, guid: 4434e361b5094c2c97a24921b9e10c6c, type: 3}
+  - {fileID: 21300000, guid: 2ad34f2f1c294db887a0d8e6a706471f, type: 3}
+  - {fileID: 21300000, guid: cf0b4d0df13844a3a855b9fa7b319cca, type: 3}
+  - {fileID: 21300000, guid: 0f07926010c54d8984ef61b00c8d1192, type: 3}
+  - {fileID: 21300000, guid: 029875c221cf4d419dc202a429946c32, type: 3}
+  - {fileID: 21300000, guid: f8281dae6cee4646a934cef28d4e497a, type: 3}
+  - {fileID: 21300000, guid: a99aa322b2ff45d9860a44621dd13d92, type: 3}
+  - {fileID: 21300000, guid: e5dff02832c24e6bb49ed30b9fb524c9, type: 3}

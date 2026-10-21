@@ -7,7 +7,7 @@ public class BuildController : MonoBehaviour
     [SerializeField]
     private BuildSlot[] slots;
     [SerializeField, Range(0, 100)]
-    private int sellRefundPercent = 50;
+    private int sellRefundPercent = TowerEconomyRules.DefaultSellRefundPercent;
     private EconomyService economyService;
     private GameFlowController gameFlowController;
     private ProjectilePool projectilePool;
@@ -82,11 +82,7 @@ public class BuildController : MonoBehaviour
         {
             throw new InvalidOperationException("Cannot build a tower without a prefab.");
         }
-        int buildCost = definition.BuildCost;
-        if(buildCost <= 0)
-        {
-            throw new InvalidOperationException("Tower build cost must be greater than zero.");
-        }
+        int buildCost = TowerEconomyRules.GetBuildCost(definition);
         if(!economyService.TrySpend(buildCost))
         {
             return false;
@@ -180,9 +176,7 @@ public class BuildController : MonoBehaviour
         {
             return 0;
         }
-        TowerController tower = slot.CurrentTower;
-        long totalSpent = (long)tower.BuildCostPaid + tower.UpgradeCostPaid;
-        return (int)(totalSpent * sellRefundPercent / 100);
+        return TowerEconomyRules.GetSellRefund(slot.CurrentTower, sellRefundPercent);
     }
 
     public bool TrySell(BuildSlot slot)

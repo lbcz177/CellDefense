@@ -1,0 +1,1551 @@
+{
+  "date": "2026-10-20",
+  "designVersion": "v0.22",
+  "unity": "2022.3.53f1c1",
+  "project": "Logs/CodexTradingTests",
+  "tests": {
+    "EditMode": {
+      "result": "Passed",
+      "total": "128",
+      "passed": "128",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "0.4898776"
+    },
+    "PlayMode": {
+      "result": "Passed",
+      "total": "33",
+      "passed": "33",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "21.6355107"
+    }
+  },
+  "sourceFilesMatched": 380,
+  "sourceFiles": [
+    {
+      "file": "Assets/_Project/Scripts/Building.meta",
+      "sha256": "0219a5645af2652745e933dab7452483421ea5c531f1c61b5ce22a717494a4b0"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat.meta",
+      "sha256": "3ab1cce32a4689f8fc2b53f68f52ca7d46220450737ab5e23130741ef266a5a4"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core.meta",
+      "sha256": "7dcfa5c84f552558f65dc9001aadcf42f80930f9e727d1d51270076cf6289c60"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data.meta",
+      "sha256": "9f09e02607d4a954bfe9f89e61811ae4052dc8224ceaa8d5fd54ed5f2719299e"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Economy.meta",
+      "sha256": "837548bedddc577316cb47207a1d34ac77e5e8b660f0730055955ee4a5c0df69"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies.meta",
+      "sha256": "a6feec9d5dc3f334fa74bec7bfb25acc1b53c769fde6c8177a7404fefc7a4e10"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Life.meta",
+      "sha256": "a2c9946dc5a37b0f3578c895ec46efc0bd4f24800c94602b14a68d4ae6462c5d"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField.meta",
+      "sha256": "a7cf5e773ae83292c0d77e53b046b0afa9751d446edd3926b7b3319f1fbd31d1"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Paths.meta",
+      "sha256": "ace2296ff6c31518a8ef718abfe4a4b7e57859bc7f82e2b034d1183755cfc159"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers.meta",
+      "sha256": "43876c941c782368b4811cb5ddba02a71f6b10a2b41dd85bb9962835a378cad7"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI.meta",
+      "sha256": "c5ca942dba73d48eeb867ec85ae3f0217f3dcc683abf92cab7b8f8d1058c0a6e"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Waves.meta",
+      "sha256": "25397897f9f507bf56d68c4641394f176728e40938d6f41fbf582ce5516fa841"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/AntigenSignalFeedback.cs",
+      "sha256": "119c5330b508e5b871b6d38b0995713848eb9d3dcc19497ec6477b8a4242346c"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/AntigenSignalFeedback.cs.meta",
+      "sha256": "c40e47fe575792b39ab7e935a32085653b1e3823bd5e8d2e1ee7a3e8478c0243"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/BuildController.cs",
+      "sha256": "9c8bf03e6b46a16d470e3745b6f91f818f0dfb40602e32bab796913154f00150"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/BuildController.cs.meta",
+      "sha256": "bde4b5991b2476f2bd28f404670812886fa8ac8fec990816338f044b887fd31a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/BuildSlot.cs",
+      "sha256": "ce076e13988e66b66062a7764c42e73d30a1206b21f097c793b4c0edb61dd1d7"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/BuildSlot.cs.meta",
+      "sha256": "36335f0fc7122b575cf377ceb2cff30b057c00aa34cf8af101c00405a3759c65"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/TowerBuildPreview.cs",
+      "sha256": "fc1867ed1c3f7a4c355ada25f426e5d52e8aba54294680eb3ba9ef4e64f6fc85"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/TowerBuildPreview.cs.meta",
+      "sha256": "269b387a37f6c54c2935fabe081b4a88c5ce2553b5c454a6bd7924e9730c7577"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/TowerEconomyRules.cs",
+      "sha256": "979086710815dd60cae9b5f9867e025edc574ac2ba146535f000640d6ddd8303"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Building/TowerEconomyRules.cs.meta",
+      "sha256": "d3990f20c5a09b6ffe7bed1c0cfa54459d770c813af0e8d27a403ae107990aef"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/AcidFieldVisual.cs",
+      "sha256": "34fda8b1956259a94082a1f6be3331a391fc530f54d85b447eaeeb8b5e530d54"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/AcidFieldVisual.cs.meta",
+      "sha256": "fc38d86b10c3fec2df363204ef04d93925bb55b7f8e5b24abf99309d1053ee5d"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/CombatHitFeedback.cs",
+      "sha256": "23cc2cffdae02533993476b302d8cfa103de725622ca595c8430e95fc1fa3c40"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/CombatHitFeedback.cs.meta",
+      "sha256": "1b0da2c1fff1dc81384e76a934d09632da948c316b9d47bb4827a87d0ceb504c"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/EnemyDamageContext.cs",
+      "sha256": "93a5cbfbc50faf55e97b5116bd43a86550776c2fdae5e2ecddd22d9959d94d2c"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/EnemyDamageContext.cs.meta",
+      "sha256": "2ec77ebfb4ffbd16bb89cd75e17efbfc4fe6c17ec2711eb743a36f7e2f35dbdf"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/EnemyRangeQuery.cs",
+      "sha256": "e2f4c764568a15cac1a06b0324621ad50cb060b02278a92b00929aeb20ac773e"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/EnemyRangeQuery.cs.meta",
+      "sha256": "a92b8bb5e1ee397cec9b146079cc469890031806ee088c5e407cf821337f9dfc"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/Health.cs",
+      "sha256": "1a28aa3a77e6f2327420f4d793e71d1f79ff7411e23163b7cd63463ac2d0a801"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/Health.cs.meta",
+      "sha256": "9279eba02157cbee6fe241c15eca13c6fcfc05f9cbf3d290fd26ff411e1d5b6d"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/IDamageable.cs",
+      "sha256": "97a7ede1ec08a9c4fe99eedb3b0e29cc45e7658020f9af2406a0e4abd9f787d0"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/IDamageable.cs.meta",
+      "sha256": "450971dfe52645384dc1eb5d15dacad9afee7a1925d73b90001ec1b15aefe790"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/Projectile.cs",
+      "sha256": "497709bb44f10d96c47c96dd394d59f7449879c6601e11034779e28788bab143"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/Projectile.cs.meta",
+      "sha256": "01432de5694e168af861a72fbb0c1ed54a913b8f3c67ebf7901cc561775c7a38"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/ProjectilePool.cs",
+      "sha256": "9a09b9657a990afe720302d239bad49432143520925a698d13390a532f7a8bab"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/ProjectilePool.cs.meta",
+      "sha256": "d6d87102c62f9996033090b39377c3f84b0c5d926c8d5708d8b5a4fc0b75e4b8"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/SpriteHitFlash.cs",
+      "sha256": "9df48572e3b9f44f4f61f01af33936a05281818777b2e834d8659422c3f84111"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/SpriteHitFlash.cs.meta",
+      "sha256": "4ef70c9ba03e51224d2d7772134e8dc1cf5c7f22deb3a77c2ed658d5da037c37"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/TopDownFacing.cs",
+      "sha256": "fb9581cde2a48b2e25aa5a3a6572903d8a43c8c16d4295a42e62c5d31d2a586f"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Combat/TopDownFacing.cs.meta",
+      "sha256": "a1c652875f0c8c8a8105012aca8fbc3a759332e31b15e6cf1fd1d5454849a2e1"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core/GameFlowController.cs",
+      "sha256": "817ee6447b5b186a0c447884f75ece86111b641f16467e8cb78ab1c02800e2eb"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core/GameFlowController.cs.meta",
+      "sha256": "a4f5239fbd51eda45c1d36645f33fd8d58f2ae5b1c3f75f600e3abdd04f7d418"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core/GameplayCompositionRoot.cs",
+      "sha256": "425e70169c9d004865c12f50aff13f20d12d236f08dfa8529c42b15210a10cc6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core/GameplayCompositionRoot.cs.meta",
+      "sha256": "960d1d5e6e753ca64ea15cebf72111ba7bd3ff5826eed71f7787f7a903173ca1"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core/GameState.cs",
+      "sha256": "fbea6e3d2c2883772020785f8edf83deeab3c924556d292ea91e1f37eccd3252"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Core/GameState.cs.meta",
+      "sha256": "559498580b5c94b72289a756b249be7df067d2253ff8ebafd134a39abfa704d5"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/AntigenId.cs",
+      "sha256": "527c145103cf6dfe9b0637e9715556298a6e9e60a7b0821d5a31b2546aadf8b3"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/AntigenId.cs.meta",
+      "sha256": "1dee3243522759886ad91749487b3b03a3b84a2795b90dd7fb06f3e87fb0d9bd"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/EnemyDefinition.cs",
+      "sha256": "091849175ba837f9e3b3d3f944d501a3f31b408737e48e0729f646ddc9d3bf81"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/EnemyDefinition.cs.meta",
+      "sha256": "0244973623b67636d57d7eef054a304d618681ab1ac11405d5ac02fa79f3a1bb"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/TowerDefinition.cs",
+      "sha256": "d9eaa658045ee9e4e4ed41707cafedab908b447fb2204fd7b38a3300ce8f2255"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/TowerDefinition.cs.meta",
+      "sha256": "aec6006ac21d5194ec5c45e3cb9041e00eb9fe6f4b90c30d1a97d34cc128162f"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/WaveDefinition.cs",
+      "sha256": "d0a588d5f8b31e91ede4efed7c37eee6ad7833cc206547ba4a50ea201b52de46"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/WaveDefinition.cs.meta",
+      "sha256": "02626e96f28b75a4a0bd2485845af74bc2001c36d8d1fa7292d8ca02addb61dc"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/WaveSequenceDefinition.cs",
+      "sha256": "75f8b7f1cf8b1852142d8f6871dc2887668d38bc7f1ef91836b225a147128591"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Data/WaveSequenceDefinition.cs.meta",
+      "sha256": "64092b73bafa1da51d9daf6e59a1851ae317da9902cd59b49bfcd083505a8de7"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Economy/CellDefense.Economy.asmdef",
+      "sha256": "cd1d576533e1de909f1dddc0f1e9ecff1286c82a3d54f626aa10795255adedcd"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Economy/CellDefense.Economy.asmdef.meta",
+      "sha256": "6c4d510fe50d2a5b74dbf8f6eea6b2c8f8db06735ad80f51ccf0321b497d5472"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Economy/EconomyService.cs",
+      "sha256": "05782ca212584418ebd8c0428093a8e272f3b7c0b25d2b4c892b5778dfa35e6f"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Economy/EconomyService.cs.meta",
+      "sha256": "54d9d4100db719f57dcf1adf197e7dc7da58037af43217c8972d128cc99cb4f3"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/BossAbilityBehaviour.cs",
+      "sha256": "acb2c4243fd7aaef758c332c6e2bc0958efc91f21ecf9df5f60c203a51fd5461"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/BossAbilityBehaviour.cs.meta",
+      "sha256": "a8a31a3e21f65e578bc83137ad82a30392a90a7ab164516f8c0e474835b73beb"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/BossPhaseController.cs",
+      "sha256": "8c21386a013a85fbcb9a41b2fd60f0407985afb01c730b357fab721ba5340f65"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/BossPhaseController.cs.meta",
+      "sha256": "ff9e129358947b7b4453d91dd06db0bd09a00af5ad55d8daf21f7dac8ed66764"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyArmorState.cs",
+      "sha256": "664886451a71b036c84e3f8fb1175ee4052eb657f3b4784981651cbc5cc0afa3"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyArmorState.cs.meta",
+      "sha256": "4aa470b9522a7b5490ecc806b3eca8d168dbcfdbd5c30f0409cea353b5da650b"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyBehaviour.cs",
+      "sha256": "f247d64ff4c8c6859746ed0ccaece60ca2d52ac3865acd989122210bc1a6dad9"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyBehaviour.cs.meta",
+      "sha256": "a01805cbd05cf2f242699b26ff8e3921523e32c0fce3501eb49257b8636ab840"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyContactCombat.cs",
+      "sha256": "6c0663cf4dcb3878fe85643a00827e0d56b3ddf7c1960ea39fed9ce674ce9d5a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyContactCombat.cs.meta",
+      "sha256": "1edaf252a10f547d118e1450a9f2be9f4bbb63d25a93fdc8e2593a2d5a2dc8bc"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyController.cs",
+      "sha256": "54a00e30466dc0312119eac80d868a43fc3a9f9b2f7d7404e0e9ffa1186f4956"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyController.cs.meta",
+      "sha256": "5bb4ef6089e8b831396243bd5a5266a5484b9e39bf68646cf8775fe0943c3463"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyExitReason.cs",
+      "sha256": "fbd04235c125bbd857c063c2da656b86c1bf9536db9f16eb49425e71a986b8bf"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyExitReason.cs.meta",
+      "sha256": "970b677304df110df29cf4dfdb9e155eda13210d421b0742964c7bbca27f93c6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyImmuneState.cs",
+      "sha256": "a93dbfa8851f1018b4745a7e45c34b4b138c8574fa965eecfb93ad75ec1a67e5"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyImmuneState.cs.meta",
+      "sha256": "e9c3e33073093fa48d31cab2204d570627562c0eff17c1b55b8d1dce78efea79"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyShieldState.cs",
+      "sha256": "6d6a01fd9b168e0ba5b1571e5ef212922e948e73fc60d29f74abacf0bc47bfb6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyShieldState.cs.meta",
+      "sha256": "533da99a37a738b03c26001837ca74fa6a66203ac0cede57a458a3d76e17edaa"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemySlowState.cs",
+      "sha256": "688163b1a0121cf03e530ddd5877991ac64f788e2583899833f836d3b2d4c0ea"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemySlowState.cs.meta",
+      "sha256": "f96cdacbed4586cf5bb01baafaeba7a29b019344c04349773db187d581b221c1"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemySpawnRequest.cs",
+      "sha256": "f446ffdb4813256ed3c3be9771293218d73dd7c04886e6c827586e8f7386fc88"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemySpawnRequest.cs.meta",
+      "sha256": "4dad17ad594ba008a95ab3c86e294aafd73aff7be25cf610ef3e6b6b480924a9"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyStunState.cs",
+      "sha256": "45bdc98f6113d018c7357b8ec56027a8f515a8207e65117b638e8e5223040cd4"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyStunState.cs.meta",
+      "sha256": "879e2482a7b9b729a2f8b122aee8f0376a600a923ba6166bd15889c3bf4342d9"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyVisualState.cs",
+      "sha256": "149facd8fa4b3f6f7e5f310f6a9dfcd38e268f6c1fdbc9c4b93ce7d1927e14a1"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/EnemyVisualState.cs.meta",
+      "sha256": "b13e9fadc85625c7a98f7fa9b2a606838cce87d9603a709424776188b45da898"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/FungalBossBehaviour.cs",
+      "sha256": "facc1fc0c4a88fe438ba0be0637ff3e88d9da328f19e84bfa6eb1249c5ac8197"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/FungalBossBehaviour.cs.meta",
+      "sha256": "d80377a449c1455c5efeefe6b9acce4d12ed5b1c83960f8c850dde151c5b5a99"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/MembraneBossBehaviour.cs",
+      "sha256": "2071416d2c6fc52793973c667bf6b0b7f9cb6325c60240c0f6f4fff6f5d81957"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/MembraneBossBehaviour.cs.meta",
+      "sha256": "2d946359b248e0fa91b0028794987a3ad58b3b4b209cf4425ebb0fcf9c50f340"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/SlowEntry.cs",
+      "sha256": "ec1a1ec596296e90ae6b807db865b8369c3792d1c7a8761734e4c4a9c17ec127"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/SlowEntry.cs.meta",
+      "sha256": "68f69243ba461a262fa7addeb687bebe4b4ad58cda86f5f3d4a24a903a0a0377"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/VirusBossBehaviour.cs",
+      "sha256": "b7c70daa36c001406d9191b6c89a99cbe4f5517c4ced367888ba7e0bc715c151"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Enemies/VirusBossBehaviour.cs.meta",
+      "sha256": "4cf64049c1fa1d54ae35c15893c680d62eb4f3efe675bd61d70b9d92df4745db"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Life/CellDefense.Life.asmdef",
+      "sha256": "96ef0b04283b8bc17d91f982bfba2be6550d4185a04d84369a7eb8187f230279"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Life/CellDefense.Life.asmdef.meta",
+      "sha256": "2f1812121fa2ff613c51622c05c4ff0af8b8a35500756ffc90d356b3d8e49bac"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Life/LifeService.cs",
+      "sha256": "bcf578edf22e2d5cf18864fde05c5e4bd7dfe86450e3451e6f85751d5e203643"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Life/LifeService.cs.meta",
+      "sha256": "dfefff39f7e668b12020ab9864c22cc576ccf75c39db82e8a8fdcd7ce3c85353"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/BoardTapGesture.cs",
+      "sha256": "b061f3b55c13c602f688a2968280463ce4c014d2227b9a662e80d12588900a1e"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/BoardTapGesture.cs.meta",
+      "sha256": "ca28619091638ff74323ae1b27008e4b9b307963c29f1ef1afee71fe1e4d041f"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldGridModel.cs",
+      "sha256": "0e856746909ecbdb2f6f61e4cb510d48940cd523affe3a8e72b6c1963282176b"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldGridModel.cs.meta",
+      "sha256": "2b4673a52c258bfcc2963eac748d1a78670681fe34b41ff5552e94a54b937496"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldPresentation.cs",
+      "sha256": "d42a05f60506bf57f407655ea07d2be1ccb53ea25ecda6a6b8ecab8683b13a59"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldPresentation.cs.meta",
+      "sha256": "20634d3c0ac5af897485462ce351a57c1559a7c18c3fbe9af3a236a23c2c18c5"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs",
+      "sha256": "e14693d3336b7b70e5fa50c4b4021428fcd4c3bc638a216d6a09495ac6f585e5"
+    },
+    {
+      "file": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs.meta",
+      "sha256": "47f5c8a5f266627d6acd8599e7c8a81550e7ab7c45806e43e5e2f82fdc1ddfc5"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Paths/PathFollower.cs",
+      "sha256": "876e79dcb1541598b0c65c84d96330778cff615d751e0430813e5cc2c3577a86"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Paths/PathFollower.cs.meta",
+      "sha256": "dd0a87b2f9b85257c59bcdea26bffe28f923830783523cba95b203a6353c56c6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Paths/WaypointPath.cs",
+      "sha256": "5bbd2937a6abd823f60350dfb1de24b8d9ac0b99c268db4b755c99aad423c4dd"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Paths/WaypointPath.cs.meta",
+      "sha256": "4164cb8f9e81378b3813254e0d34a7b603c32fac2e9a9d0bcc24fb910feaba03"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/AcidAttackBehaviour.cs",
+      "sha256": "99a5428115c1c3f523a5afb5a7a14ec6af12431f6668b9008126f3e2bd64ae7a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/AcidAttackBehaviour.cs.meta",
+      "sha256": "c23f12596f5709199264bef89406dea631cb5499d77a5a56c24a9e3d58d3aafc"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/AntibodyAttackBehaviour.cs",
+      "sha256": "7c0b282ffa91c8cc3e80888de1ccfe60d4a0fc2ae3ab1be5a5368c5bc1498b62"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/AntibodyAttackBehaviour.cs.meta",
+      "sha256": "edbd30f2d9919b1e4b41f941cfbfc05d0927fc6a4ad9e40f63472f10afed96bc"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/FibrinSlowAura.cs",
+      "sha256": "228c5bd311c552a1ae4693087cb4be7714f587b583d18a24b50ff20fea3c7b7a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/FibrinSlowAura.cs.meta",
+      "sha256": "c400c25b778ed290d8e11357056a52391d6f926ac5e35dc7e7d61578fd6f0f09"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/NeuralPulseAttackBehaviour.cs",
+      "sha256": "e099f098ae1835df681ff31c7297b2a25f2dc3e28881677e35c2dd980020cffc"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/NeuralPulseAttackBehaviour.cs.meta",
+      "sha256": "5539138dd40b870f222191c6b5a8c33475f51da66f5f167ddef8abc2f4718723"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/PhagocyteAttackBehaviour.cs",
+      "sha256": "75c1df10138c4974a065f156a8324eb7e7e4593ff3233d916220422bac41e7a4"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/PhagocyteAttackBehaviour.cs.meta",
+      "sha256": "0ea058d2dda02320ddff2e67bad9d8ac0dec0f7ecac265a2a67f6ba3686ffc1a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerAttackBehaviour.cs",
+      "sha256": "4f4521edee3c02bf2ca71855feb464e6db157007c13d43305ed1712e3a607423"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerAttackBehaviour.cs.meta",
+      "sha256": "881d8376bcf378f15a0cfee3300d487d2684ce08d2bea3afaf2b43ce017aa656"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerCombatState.cs",
+      "sha256": "bd847b5d3eff3a2aa6b685134f3b1b0de3e0c5e9672ecfc7c07e9286f5289ff3"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerCombatState.cs.meta",
+      "sha256": "2a0499893d56c634e07cf035ddf24ed097b2412b535682073ba3d01530510a0a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerController.cs",
+      "sha256": "4ca84667a2f6638f4ac012a6ed199b8b0e9c835e3bb1db93905d8eed4675d984"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Towers/TowerController.cs.meta",
+      "sha256": "8e1aa331561738f359196c4c4b1b1dc62bc3df763c8fcf3d6ef324642ad64d16"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/EnemyStatusHud.cs",
+      "sha256": "2107161ecb5b9b441a946e57f82b967f19b52ac7ed3697736b7b712a5bba6a33"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/EnemyStatusHud.cs.meta",
+      "sha256": "63003ce2bb93f9edb4aaa68e0a470ab4ae69df8b03bddf57d332920869ecaaf7"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettings.cs",
+      "sha256": "f8bd948f9d07968d9c782a6eeb2fead98fc3b7c4d500a9b51b7bda5a6eae0404"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettings.cs.meta",
+      "sha256": "6dac3871d9e4c9003c0e0c901b909fcd9104bbf162df9eb29fd259d0c8bc0767"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettingsPanel.cs",
+      "sha256": "9501df715a7350f400e5f1accc203cc7dc76e0214ad65cd0f2ca7aa4a9c339ac"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettingsPanel.cs.meta",
+      "sha256": "2d36649e7842b10c24718482a5bb34b3254583e3b574948d2d2100cc39f11d9b"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/HudController.cs",
+      "sha256": "a1e1097adc5a312c75406b9561a6f508683b24561239d48e2a027b299d602fcf"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/HudController.cs.meta",
+      "sha256": "b2b73cbae407cafc0fbff1871c636c5fcdaed32c3db681d91d39f699763717fb"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/HudSpriteNumber.cs",
+      "sha256": "b720bda952089a26ae1451bd0645ae2c2f38fc43f9e3ca3baa8e9271889f2141"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/HudSpriteNumber.cs.meta",
+      "sha256": "5631f704b6ec7f75f2f3e4486d5286454542de066cd8a564ea360d6d0a5380db"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "96fe1124561f319a0eeab357254e541f85ce70d647ef57bb384288a28c5c90ba"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/MainMenuController.cs.meta",
+      "sha256": "f008cd058c9fcd92480d28a41e23ed5722a6e4f02580d27096cef1112479b3cf"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/MobileDisplay.cs",
+      "sha256": "0686e74803f7a808ce13b70093f420ade0fa2a6c64c930d14d3fba2b07ed3c74"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/MobileDisplay.cs.meta",
+      "sha256": "762ed38241aaf8aa1bb68297c66ab5b099a1e2091520be0a171b95f509cf0452"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/MobileSafeFrame.cs",
+      "sha256": "809871496ac237b28a07497f52e58b0c35490a75979c3a26891f692963ff669a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/MobileSafeFrame.cs.meta",
+      "sha256": "1f26f9ca480910dd40b5a312ca9107618908a123997720b681abb554d561a5d4"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldBattleHud.cs",
+      "sha256": "f9ca3b61571c2acc90217a16c3d61857a7d7959b666e199d05eaa15721193c07"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldBattleHud.cs.meta",
+      "sha256": "9373e019f0adb09c65039babedd3e6f66fbc279a50165cb3f7f0eb67b17b4a33"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldBuildMenu.cs",
+      "sha256": "ba97abff003c1211384f20dfab3c65d77ffd474b05bd9e0849dce1c2f80f2886"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldBuildMenu.cs.meta",
+      "sha256": "11040eadd66cd2679bf004ae2285a81cf08ab0812447eaf9babbbab63bb45d46"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldEntranceWaveButtons.cs",
+      "sha256": "6991c69d4db11f87a88ca573c7946b2343ba854218fdf06862075bbec77108f3"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldEntranceWaveButtons.cs.meta",
+      "sha256": "d7a1a61c0431621de269f8375fd162dba1029dcddbbcce4555ea71c080fc216f"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldPlaybackControls.cs",
+      "sha256": "cb2828fefebf24fc97135ecf5c9b2ebfee799537da688a3aebb131ca134b1972"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldPlaybackControls.cs.meta",
+      "sha256": "f6083e07396e1603603c67db9ad59674e08109bbe446b70cb496b4a8bdc0aa23"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs",
+      "sha256": "1379e87cda78081149f562e189bdb9d82f9540574a673d74e6f32f20f9809d89"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs.meta",
+      "sha256": "29dda5b0e9792d7efecab664d997716258b76923b3ff21fbb2ea871cc026c39b"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldUiResources.cs",
+      "sha256": "6902b231daaf1817862adeb8fef5a6fc41b58b0c6d4cfa5720ba09953dfd46ee"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldUiResources.cs.meta",
+      "sha256": "b1c0a3439833d790c5a0083f355029be972c2b6df919fef4bc5b6813471e2793"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/TimedSpriteIndicator.cs",
+      "sha256": "3f2018284003432055ec2788a294e087f5fe00f989936f088eecdfadff932c6a"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/TimedSpriteIndicator.cs.meta",
+      "sha256": "107cc0c5c6e79a30919e04ca6a1bcefd93b8ef27e297dd95b8eb72582a4573eb"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/TowerBuildChoiceHover.cs",
+      "sha256": "12fcbcde043e4d35ab48033f650024cb197dcef66808524442c8eab3dc10a9d6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/TowerBuildChoiceHover.cs.meta",
+      "sha256": "22dcede5cd3b629df45d7c09246ca7721204d276dcb621f92b6c23099df01a53"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Waves/WaveController.cs",
+      "sha256": "695779cbcb4ea45f2a6d8049e2bcce4165e0aa5b016525ba4f1a5c80eda125f6"
+    },
+    {
+      "file": "Assets/_Project/Scripts/Waves/WaveController.cs.meta",
+      "sha256": "fd762941116030fe9cf40804fb437e0ccefd77d3b624d07bccf94303505dd25a"
+    },
+    {
+      "file": "Assets/_Project/Editor/CellDefenseAndroidBuild.cs",
+      "sha256": "d65b68dff400a08070d14509548b0915243dfa9cbda4907132f1d24367cf2c4d"
+    },
+    {
+      "file": "Assets/_Project/Editor/CellDefenseAndroidBuild.cs.meta",
+      "sha256": "708d5f413a4ffafd0d6ed4d3a9f3e9a5010dfaf3ee37f67bf0839484ce16dfbd"
+    },
+    {
+      "file": "Assets/_Project/Editor/CombatAnimationSampleInstaller.cs",
+      "sha256": "ae771f90522cbae14eaf7aa3099b0d0f57197629bc5df7efdcf9dd39f83322e4"
+    },
+    {
+      "file": "Assets/_Project/Editor/CombatAnimationSampleInstaller.cs.meta",
+      "sha256": "82f230e6b3fa517b986ac21a757d8aa54f5ffd8530c83a9ecfa9c4b38b0f0671"
+    },
+    {
+      "file": "Assets/_Project/Editor/CombatGameplayLevelVerifier.cs",
+      "sha256": "4baab494023056b9c8852dbf6a85efbb94f0d6ec9c43a5e41dba09e456232f6c"
+    },
+    {
+      "file": "Assets/_Project/Editor/CombatGameplayLevelVerifier.cs.meta",
+      "sha256": "059de3b58b499e6a69e1f030a00dee63c0b282f70ab1ba5ff0b3527cc0913cf9"
+    },
+    {
+      "file": "Assets/_Project/Editor/OpenFieldPrototypeSceneCreator.cs",
+      "sha256": "eeb72914e5a262c0d9ef9ddab7c884f0ced2948afcf86e647afc1cb11945a8ab"
+    },
+    {
+      "file": "Assets/_Project/Editor/OpenFieldPrototypeSceneCreator.cs.meta",
+      "sha256": "22c8e7276952c5b6ffd2792c3071249a2ae8d5c64ca58f7b65b111f869f3915e"
+    },
+    {
+      "file": "Assets/_Project/Editor/PlanningConfigValidation.cs",
+      "sha256": "1f9aa7895bf819314338afc677921326d225396c73c8a1029d6dc3d0c4e02606"
+    },
+    {
+      "file": "Assets/_Project/Editor/PlanningConfigValidation.cs.meta",
+      "sha256": "5d47b678683cfeeafc2a7149c0617909509c01990b9d781f9d78b92e2a0a6b34"
+    },
+    {
+      "file": "Assets/_Project/Editor/PlanningConfigWindow.cs",
+      "sha256": "a19bf3f9274a4c7ffb8cb69e9f92dde0cdf63b9509109bfcdeaf5caf4455e4b9"
+    },
+    {
+      "file": "Assets/_Project/Editor/PlanningConfigWindow.cs.meta",
+      "sha256": "e80e7bcf827ae2c7a7ad894a3c293f000b3afef178ab3ac3e4ade774b8ce8a84"
+    },
+    {
+      "file": "Assets/_Project/Editor/TopDownAnimationInstaller.cs",
+      "sha256": "be0ec6bd2bc9959b7803469d2e75bcfb4b50a5de04cb15777e21ef98b917939d"
+    },
+    {
+      "file": "Assets/_Project/Editor/TopDownAnimationInstaller.cs.meta",
+      "sha256": "f18a58c5e2aef517dd2921836978c831cadefa774822861e1f243f7a47a9677e"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode.meta",
+      "sha256": "03313b51de6bfe2b507a21a4e345ee634603a9bd2133020cef546ceac77684a7"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode.meta",
+      "sha256": "7955b4c34460cd43fdfdab9e895f090cc55adde23564cd261fc8cac9547efa66"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/CellDefense.Tests.EditMode.asmdef",
+      "sha256": "420c219fbf7ed1c37a9a7fe9eb3a9aac7611f1870534a93722a16265e4953866"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/CellDefense.Tests.EditMode.asmdef.meta",
+      "sha256": "51a9179aa8b64d45bf5c2c06113eb9039134877f223a2ab65a7ebb6c267970ea"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/EconomyServiceTests.cs",
+      "sha256": "0e294334f91b9f02042f056ad9f6a7b8e8f78ba34d9e5640c410012477357267"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/EconomyServiceTests.cs.meta",
+      "sha256": "9ebefb2914d641be90687a8d6b3a0a29089ebb1d3eed027cc242e6af974622f4"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/EnemyCombatTests.cs",
+      "sha256": "759e39b4329d2daeda3c5a7859901f3f83773e355de0dc562a8ce80bfa0a2c5a"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/EnemyCombatTests.cs.meta",
+      "sha256": "2d8dd8ed62f5f1f7dae27d7dff333f3fd27faa15aef55228d26de33180a880e0"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/GameSettingsTests.cs",
+      "sha256": "1a298040db15d7cd0029e32d3aa0e7840a39dde14bcbf42951aa56e3eec52165"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/GameSettingsTests.cs.meta",
+      "sha256": "9a1ca104f7a1fb4a5c387661a1b4277c695c31386f6f90e4598a94e9c33a5184"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/LifeServiceTests.cs",
+      "sha256": "d4fc846b51bcd3001dff9ea7bb718d057116162912337480f4a432b3627dbc54"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/LifeServiceTests.cs.meta",
+      "sha256": "3e5fb02aa5db1eac315a275fab2bc46d6e18fd1b1ce279bded6ca63fdc87113c"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/MobileInputTests.cs",
+      "sha256": "28043bbfb0720cbed946c8ad37cdc99164c1e1038b87f0494ca4d1a347ba9172"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/MobileInputTests.cs.meta",
+      "sha256": "bf2d0080c9d05c9457ccd0a649fc847ad7c9c604e6177ceeee8fc7013930c000"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/OpenFieldLiveBuildHudTests.cs",
+      "sha256": "0dd9ad30791d49fb903a9cf79cc0b51a1e42ee2ff1b93d06b50c0dc4abe15b7c"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/OpenFieldLiveBuildHudTests.cs.meta",
+      "sha256": "bb5e260b6d5a60e1b1c2ff7641b8a5c65eb2e62e5993e542c2a353d923957af8"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/OpenFieldPlaybackTests.cs",
+      "sha256": "85a39e1a2e2584579a61ca0cabedcdb920daed0feb7c713899d1558eb244d0e1"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/OpenFieldPlaybackTests.cs.meta",
+      "sha256": "17207b5222b9e2c2c070aef836c03e6d741793c520a1b081fbc87c318645dc3c"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/OpenFieldWaveFlowTests.cs",
+      "sha256": "b65e997651b8b60ca89949e6e539a1e8b08f564cd43377bfa44e82ea1c864414"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/OpenFieldWaveFlowTests.cs.meta",
+      "sha256": "a1cd56d7109fffdb3485b615ef187442725fbc2261388c14e8d1f0d6d5012649"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/TowerSupportTests.cs",
+      "sha256": "31bdc0e7fc9b2bd036885b1479d9a4a8f11808399a26b741dfbd010109092bdf"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/TowerSupportTests.cs.meta",
+      "sha256": "3495ef1268c32c3e05d25cf1cd00cc82cf3de15f7417f0ff370009015a60a43d"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/TowerTradingTests.cs",
+      "sha256": "cfc9e7f8450e49d42750fb88f6a436475ceb9bc55a2abce349bce7e381c7790c"
+    },
+    {
+      "file": "Assets/_Project/Tests/EditMode/TowerTradingTests.cs.meta",
+      "sha256": "3b2848d15dead1ac040259fc878b727547876fc1664f2cfbaf962bf672f6b314"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/CellDefense.Tests.PlayMode.asmdef",
+      "sha256": "9c66514993c33fbc1eae51c76efafc12873f1a9f5849050beefd361476ddfdfd"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/CellDefense.Tests.PlayMode.asmdef.meta",
+      "sha256": "d404902f692d93c0ecc26bfecba7affb387c9eb67fe972ba515ca906ac5a77e7"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs",
+      "sha256": "8e051e75db103cb03a21efb5ef5787d8a260486c27d5b70b5bbb7f42d7032412"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs.meta",
+      "sha256": "a5d598dd7c07ff183a35312debf13fab963f7e820c071bbe7101d262dd0297a8"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MobilePlayModeTests.cs",
+      "sha256": "1462c59665c163ec3c5e5cdb3fe507f72baae7f613634712cfaa4982abd87329"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MobilePlayModeTests.cs.meta",
+      "sha256": "5fb79cd87c7ea559f55bc25055298e5d11c1bac1cf55e38e28dd928a6eb02b96"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldLiveBuildSmokeTests.cs",
+      "sha256": "163d013d245d57b6d0b7f81033378f9df1e7bbb2967d58b5c5165b84e479178b"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldLiveBuildSmokeTests.cs.meta",
+      "sha256": "1fd760aacfb7a6f9e4b624c7189b073d4a32f5e0fc81bb79fedb61d82841af22"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "dc6d0db923b49850c4ec5ebcc353283da1e278847ec7d7a44c641a747debcd91"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs.meta",
+      "sha256": "22241421dcd068c37a06b70ca82a75f28f3a86e610e98752239a311ea5cc99de"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/TowerAbilityPlayModeTests.cs",
+      "sha256": "64ba53b051cf27e450dccd6872b4333703969bc2f5cc60cded204d30827a42b7"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/TowerAbilityPlayModeTests.cs.meta",
+      "sha256": "efe157c30bd08790e305efd5de0d7ad975b830995a90d066a56bb89610d9c1af"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/TowerTradingPlayModeTests.cs",
+      "sha256": "d572fd2f7a298803274ed05b755289491085262ec388b0c187eb1604f1c39ead"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/TowerTradingPlayModeTests.cs.meta",
+      "sha256": "8e03332e76c3d62298e604e6ebbfa91d6657b024d40998e5f338df7effdcf12e"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies.meta",
+      "sha256": "a646bd32d1c69afd1f710668ca2285aa9b9f4f87836fc85724497034d57510de"
+    },
+    {
+      "file": "Assets/_Project/Data/Levels.meta",
+      "sha256": "c0490a173c9df7bd047b88040941d23f3f85e42ba081f3b0a8dde41333a1bbfe"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers.meta",
+      "sha256": "aec4172caced07ad6a1552bda225d257d8855318f2359e442df5ecb9b8efa67e"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves.meta",
+      "sha256": "594b385046f0dbf3b61c9ce71fe6e1b8d310fe208c70a572985f1293f4ea1bfd"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/ArmoredBacillusDefinition.asset",
+      "sha256": "95e19afad71f80b38f6b44115fffb22bed54eb9c7fac4c3276b455139280831e"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/ArmoredBacillusDefinition.asset.meta",
+      "sha256": "b7926518bd3c62103a407f1ab704ef71b4962c6c2a50a62de28045af493b59be"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/EnemyDefinition.asset",
+      "sha256": "c8cd3a3ac6b654fb45766e8e2a012518465f41af51572ab6dfd7ce6a36a26e41"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/EnemyDefinition.asset.meta",
+      "sha256": "c515388dedfec3e22d78944a8aef23263653224292b63856ffefe6ebc51ed3c3"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/FlagellateDefinition.asset",
+      "sha256": "4c5cd82a8601a6b8ee34185273873acae7e64fe91f5be11c444cc457140cb20f"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/FlagellateDefinition.asset.meta",
+      "sha256": "92260ae16db133d140287c2bf9b9aa4b2ca2b75ffafaf530aeeaf0b4454b652a"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/FungalBossDefinition.asset",
+      "sha256": "91a9483100172e9481190fbcea006510d27496fadee54fc983ee8d7d9bbdb3c5"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/FungalBossDefinition.asset.meta",
+      "sha256": "4f50a60b869b73b9b8dfba4b1bd3f9c62f434156f61d5ee2939cdbc3fb870881"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/FungalSporeDefinition.asset",
+      "sha256": "eeb92945dc234c0625c2c5d4bcb801b1a1233d66a2f582a39e1eac831da2e0d4"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/FungalSporeDefinition.asset.meta",
+      "sha256": "454f6d077d6c49af54c58cdebae5ddd3f3f5fb507f0b9be52ac37c13eb91dd6b"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/MembraneBossDefinition.asset",
+      "sha256": "3a6341a9ef8fbc6cfc8404eb87bd1ba16c3298b6d1cab92399f646d6d107785c"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/MembraneBossDefinition.asset.meta",
+      "sha256": "e5e135a6e10922ff7b2be756b984387d98f73c3a2cece1ec68f2caee44b49752"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/OpenField03EnemyDefinition.asset",
+      "sha256": "446d5c7464ad4ba297a199a94da8f17c851653de55037e1594dbc62b211f0c3b"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/OpenField03EnemyDefinition.asset.meta",
+      "sha256": "710f3459a481661db9b508c3f0837ca305c09d59d84fac37ac575907c2eb11f5"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/StaphylococcusDefinition.asset",
+      "sha256": "baa0d09183deedeefc599ea37c50e96b5598f5bfd79860453e3d4a671cd5a57e"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/StaphylococcusDefinition.asset.meta",
+      "sha256": "3f7eb9d6ce80045896f805ac4b4329c60e82854e4774390eec93ca0897208ea8"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/VirusBossDefinition.asset",
+      "sha256": "3aa8fcfdaf89abe68f90cd470b708d7647f84ad6b813ba83a8591e0b85cd1809"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/VirusBossDefinition.asset.meta",
+      "sha256": "d81e90e19a7e111d8c800963499d25abd3dde176101447c54ddd2e174428f607"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/VirusCloneDefinition.asset",
+      "sha256": "25ffbaf3de5b9981622fbceab906ad7e8341e0cd2f24480e6d653111c274e26c"
+    },
+    {
+      "file": "Assets/_Project/Data/Enemies/VirusCloneDefinition.asset.meta",
+      "sha256": "ac18ad98dc81e37cca314178852adf6f6b726f0b4c4b1b48360dac0e6dcc6fcf"
+    },
+    {
+      "file": "Assets/_Project/Data/Levels/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/AcidTowerDefinition.asset",
+      "sha256": "c57147b6f69a55ad83ad2c576528146ab9eb42f4108545be1f10a57f80fa8783"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/AcidTowerDefinition.asset.meta",
+      "sha256": "20c8dec9ade12ca438a8f41384b2033bdae03fb97579b8faf1de3bfab2abb116"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/FibrinTowerDefinition.asset",
+      "sha256": "bf655021dfd7fc523c2e4d701e506b14ada09c7cbf91a83936a43d40a623e8e8"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/FibrinTowerDefinition.asset.meta",
+      "sha256": "452a77d7f64fbcdfcf1d321c1369de0ac639d49681f3cfc34401776dc52be850"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset",
+      "sha256": "fd84b6786a2deb9194c106d177eea6825e8860b24d9d90803d46189291e20368"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset.meta",
+      "sha256": "a3b3d1e65b2b86600816db792f1d1b6cc613a7b04dff0dc696c2aa4f68101e56"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/NeuralPulseTowerDefinition.asset",
+      "sha256": "c7b50968075a03a101fc2ef9af385c6bd38a8873426b89bf48563cdcae405eb3"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/NeuralPulseTowerDefinition.asset.meta",
+      "sha256": "dd00cf5196cfdf4c80bd43a46771615078b93f3dd0c9c58616fe6ba50cbe1ed1"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/TowerDefinition 1.asset",
+      "sha256": "92f08acb5d80ee8d325854afb9e90981bbfb2b4be0763b89806e426996004024"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/TowerDefinition 1.asset.meta",
+      "sha256": "542b35358107ea1c9c7e004bdb584ef76a76f9ab294c1021be2b1e9e78e0f749"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/TowerDefinition.asset",
+      "sha256": "1a8bdf2d40654eff2a18eccc0bba4ca1b83a24f7cc878f2f656e081a1d67be74"
+    },
+    {
+      "file": "Assets/_Project/Data/Towers/TowerDefinition.asset.meta",
+      "sha256": "326ba7b7297fdc8fa739eda0457ec2aeded90f0208d08a51a1d7990e80911525"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_Wave01.asset",
+      "sha256": "d80fb70a7ba4ffa651a492ff3028cded06f21275da1b5c74e21106e714615b1e"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_Wave01.asset.meta",
+      "sha256": "1d9e6a8592874a184d2aff8f3e55749f032227a7dc73b2b4bff669d74d9f732b"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_Wave02.asset",
+      "sha256": "f355333681c4ea2281ef73baf0590bb3e95c3b4a5f95c448a5a07b808a9d08a1"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_Wave02.asset.meta",
+      "sha256": "c08507dcf808e78fb000da5af6ea44cc69df4cb4e9cfcb0b54ef87cba221d46c"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_Wave03.asset",
+      "sha256": "03eceab3698d280ef1391626d861f792dd2d8de7837d961838468b1314872489"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_Wave03.asset.meta",
+      "sha256": "d5171100354b8508466f89e859dd653412188fd6ac264f51e53e34752316612d"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_WaveSequence.asset",
+      "sha256": "ea3462d14a8b3e04e9b200def0979988225e1f6ae5a26f951d2ba828d60c77c7"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster01_WaveSequence.asset.meta",
+      "sha256": "f7962e75375acc12133677b5811300631d82a065bf5cd9e3f92eff7fe1719b95"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_Wave01.asset",
+      "sha256": "e850f27202b8fd3165512cb5d106ed552930108652ce6bd940bc45acab5871a2"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_Wave01.asset.meta",
+      "sha256": "91fe3e49a87fb4b974477ae4c39b5a28dfbf3adbf29b1e0da636ab3e6a830d43"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_Wave02.asset",
+      "sha256": "65ed4492c7109a980763a08d8b00872886916d484d415aa358aa3d9ec09cfa8a"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_Wave02.asset.meta",
+      "sha256": "47a7ca6e101aaa573610d5b0cb54f95d193a3e87ebb5c1fe328eef649d3deebb"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_Wave03.asset",
+      "sha256": "bfa681236f748374c5182aa40d6a5c2a656f857fe328917eb1ffc0f23ec1df07"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_Wave03.asset.meta",
+      "sha256": "dbd923ea3b3be12f5a00d4a685a267f0c13364865cb5426da89618fe4ecbc305"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_WaveSequence.asset",
+      "sha256": "571c2ff3928da0a0bf90b2ce2ca95dcf764953dc0b72206c57a51015a552d591"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster02_WaveSequence.asset.meta",
+      "sha256": "6eef7af934d6d74aeffb53e64212a6999b835ded276dea8b4401edaa3e18da2f"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_Wave01.asset",
+      "sha256": "f7e994726cbaf0871cd3b59075372824b0227545cfc66046f180c0715bf297b1"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_Wave01.asset.meta",
+      "sha256": "bd4745917afb74b7c658ca33d56a64dab78ed914761369ad9ea1433af44072f5"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_Wave02.asset",
+      "sha256": "338264bd85efba2eb450112a7874d4d5a432c89ad5f6617ce1dd64a439e4f4db"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_Wave02.asset.meta",
+      "sha256": "ba29e44708f5c5833403d0af1abb0103872d6c7470585a9d20638607f0225a06"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_Wave03.asset",
+      "sha256": "a3ae51ca3b954b94e035a8f2155872b5e183f5e22c770f6e332b5d67742bd09a"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_Wave03.asset.meta",
+      "sha256": "af63a23090cc7553367f4a583784769390a203db8d37c56e949aa06f53c3ea6e"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_WaveSequence.asset",
+      "sha256": "907da4c9a8a5c72606aef88c92fc7449f8f9bd22088ad94882db8ca1012ba3d5"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/EnemyRoster03_WaveSequence.asset.meta",
+      "sha256": "44f970598ef54df5e690bb1b2861950c3dfa5fa55ae2acd21d9937e80a291aa7"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_Wave01.asset",
+      "sha256": "4ab4887692c7900d20afb68aeddb875d63ae26cc52a739ef455d97266f11afce"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_Wave01.asset.meta",
+      "sha256": "b4e7f1abe325a88690b1402dea2045b074ce386cc548eaa5daf958b19225a714"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_Wave02.asset",
+      "sha256": "ecf29e29dff69b6ea9dd18e2ee9bc63d5c66979c5b794fdd434cf0694d7e6a93"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_Wave02.asset.meta",
+      "sha256": "7307c9277523b28d8c7b25136c1b18dc66a8302f2ae91b4d120bc86f887fd316"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_Wave03.asset",
+      "sha256": "ebdea3b1f1dd5d2a62e62fcc49746a7f2792fe40a3aaf9727457cfc6565fbc25"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_Wave03.asset.meta",
+      "sha256": "044c43c3da09c365ab5aed0d08a4c0f8337e1199254ff6cfd49ace9f2e4c48f9"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_WaveSequence.asset",
+      "sha256": "41f42d1aca4fd2ca2b2ddd5673ca96978c3e5ce5439ccebe36c5d2970b33eed2"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/Level02_WaveSequence.asset.meta",
+      "sha256": "b2674540ce5223851ef57ce8be6bb2bbf2c55e06096710b32f05f807dbf13e00"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_Wave01.asset",
+      "sha256": "59c322b29d8b31e9dc68bf54ee83b4c3d585eac3010003c49ff8f5b81fb744fd"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_Wave01.asset.meta",
+      "sha256": "141a9e0bd8dc359c33bc8fc3920b02998cf357cec4a66a50ea7d5135a9f0737b"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_Wave02.asset",
+      "sha256": "ed18522ffe80adbcf3ed1f2f2e160290b2c99853578ba6311465a1d4c90939c9"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_Wave02.asset.meta",
+      "sha256": "dd866a5ba82ad1c8f5f9d5bdba14b648752a204689ee65dde35a31e88ddf4669"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_Wave03.asset",
+      "sha256": "b0a7259dff8e90ee618aa4e4a8748d0c8046564a76ade4610b927e6e496e8583"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_Wave03.asset.meta",
+      "sha256": "a6da5fa3797bbf03d7ff586d463bfef55c098a2e684289417575c73eeadfcfcc"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_WaveSequence.asset",
+      "sha256": "49d564a8bdfee4b15fceb09b6d691cc025bd17d253daa52da24836e73c40787f"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField02_WaveSequence.asset.meta",
+      "sha256": "9492a510444f3c50e49f28e314e0b62fcb3913d3e4bf65845120886234d2ff5b"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_Wave01.asset",
+      "sha256": "05cbfdfc66cc573aad9a2c7d5bd63fe5fc440d9b88fd7110aeb0969ec8bfd790"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_Wave01.asset.meta",
+      "sha256": "482df82cd99a97f30155b9d27e941a4bb85ab31c02bbb657be3c3b1b725006cc"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_Wave02.asset",
+      "sha256": "072999070c0e736efc7e8c933a039e0e4ab900e9916f226f3aeb929665a39cc4"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_Wave02.asset.meta",
+      "sha256": "7515cc93028a7dcc176192bb99347821bd96b5baa10c485fe2736b7550a5c06a"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_Wave03.asset",
+      "sha256": "4bf1b41f50156ae85049152b68253106b5248d763f3c06d1981b3642af46f87a"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_Wave03.asset.meta",
+      "sha256": "7a6f61797a89cd87319010f050fd6426b83648a8a38aedc819f9d275f0a22a86"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_WaveSequence.asset",
+      "sha256": "45a82e87f16d6adf6829c03dd0c305c5c4fa015a832f0062da740d030042b14a"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/OpenField03_WaveSequence.asset.meta",
+      "sha256": "d7d043ee5d3618b376f7ee3d09eb602f3972fb7c1992b1b877c6c27eefbfc98c"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveDefinition.asset",
+      "sha256": "54c18f66f9b3fc06f93001c41b3dbc0d917846787cb1c96c39e31024a61e7eae"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveDefinition.asset.meta",
+      "sha256": "84eed62971f6ffeda6cc736589079d831598cc2eb21aa4b6162f25fedb1d2d84"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveDefinition_02.asset",
+      "sha256": "b030f7138f71c66306dfcbfe76e76f4cb489b5920965ef6cd4eebc826af89047"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveDefinition_02.asset.meta",
+      "sha256": "9d861e4732e204313b3689c0c2f88b3031dc8ddde5291ea5b980ce8f1a13dca8"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveDefinition_03.asset",
+      "sha256": "5551fdfcf90f942ca5b3ab5751b7ec122a27c8795e0ce023f12d0ef2cf00a6aa"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveDefinition_03.asset.meta",
+      "sha256": "cbe1aed34e10170e6853d1b5f68987373e927d9c83fb723e9e9fa5f86beaecd2"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveSequenceDefinition.asset",
+      "sha256": "83be7adabf3cc1fec059288d3b0d955abbf109296bf4420b8934b9b7cb6c3a7b"
+    },
+    {
+      "file": "Assets/_Project/Data/Waves/WaveSequenceDefinition.asset.meta",
+      "sha256": "611f1957689f168041a36b53b3dbf33ac6abafb4893a2a1fbcc2a3c626ffe020"
+    },
+    {
+      "file": "Assets/_Project/Scenes/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Scenes/Level02.unity",
+      "sha256": "b7c605554dd01bcff4dfd2dcad76343260a87ff081fa28a60cea2b158262a017"
+    },
+    {
+      "file": "Assets/_Project/Scenes/Level02.unity.meta",
+      "sha256": "b9577780f25e1cfb9f6d47cf32027779fe1a6b389d05ee48f4355a23edd85474"
+    },
+    {
+      "file": "Assets/_Project/Scenes/MainMenu.unity",
+      "sha256": "675c7acc1952794e51004fe02126a8abb1c273129b5374c17756e455a11fd1ca"
+    },
+    {
+      "file": "Assets/_Project/Scenes/MainMenu.unity.meta",
+      "sha256": "2b672cf9a80793c263c0fc806326a3467fc461118708c6e7b58fb88259ca4d22"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+      "sha256": "a21835f6b239747c1c9ab6dd003b30d61b89f9b1c5f273202ec4041517c906fe"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel02.unity.meta",
+      "sha256": "9018f134c14f75ad89267e700117856bfbf9f20d5b9791f24929843ac2d6e465"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel03.unity",
+      "sha256": "22641a6ec892dff0d30290da3ff3165637bb419318231cbbdf56b1e8c2337659"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel03.unity.meta",
+      "sha256": "475de0229dee040973348193a5229021640a6f3f5d501a441f3769d4c75e5c49"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel04.unity",
+      "sha256": "9d8ae43e26411fc17aabb2f91c103176840108b510a009f7807e4e9ce757d986"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel04.unity.meta",
+      "sha256": "e2a8238acd57995e79acbf30fbd95d725d0b66090bf0de3a9d694c3af2a1efc3"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel05.unity",
+      "sha256": "3f17d8cec08a573fcafb7db0749f7712584bf3dcbb587857b92ca585d9b8c2de"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldLevel05.unity.meta",
+      "sha256": "ce014ceaa24e6584da2d6932977959e473dfbc0dc7acd4f08b0b719dc9051a58"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+      "sha256": "5223a6f9e2a56bdb2f4c521e8aa71dc5d480b6becca35dd9d295200585ebb3c4"
+    },
+    {
+      "file": "Assets/_Project/Scenes/OpenFieldPrototype.unity.meta",
+      "sha256": "34fa4e4ed97414ea00a8f489cc6e07d9093bfe249cfc55a202a5af30cd1b1d81"
+    },
+    {
+      "file": "Assets/_Project/Scenes/Prototype.unity",
+      "sha256": "8b3e958b41a755c4f20f533dd23b5633519b6a8651a331c9429f54e4056d98b1"
+    },
+    {
+      "file": "Assets/_Project/Scenes/Prototype.unity.meta",
+      "sha256": "b1e185ad56f95b6357443604d5a6bf712f7426173c6d92459360f2db5992be7b"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies.meta",
+      "sha256": "a9753a8aa9f4645c1d8c05cea772ed62f78b81aab5b3e21c631672c664d72b5a"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu.meta",
+      "sha256": "0d97926f07b5444a417097ed49a187efa0b31710a5cf3ceee24fb078ffafa115"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Projectiles.meta",
+      "sha256": "f3492e7ac7f3fb279a2f9eb7160f7d4bf9d3e7f3cb0da0c5cd18efb98dc3ec3f"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers.meta",
+      "sha256": "826c9d1ec7ef0b030e0e4eb7dc99a0a7c39b0779784283e812b74c9c4d507844"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+      "sha256": "4352076bcb4b4f3062741b6174a7830e9c6536bbfdaeea47818c6b865361214b"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab.meta",
+      "sha256": "d0c80f399371dceb59ed4303f4cc5b39e13f67d8e3fb55a742c7d2e57a23610a"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/Enemy.prefab",
+      "sha256": "75e2f8d8a348ee940e4f6344eee945f0d0291558d3d2b3938c8f530f1666b8a5"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/Enemy.prefab.meta",
+      "sha256": "1cb709a37fff0ab704c40d5b420d603fbb7685d9a6b1ed3caa53992d4a1f81db"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+      "sha256": "4a1589d52f9c7da091afa8f115b0cb9f24f415228335dd8efd7597fc8e52b117"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/Flagellate.prefab.meta",
+      "sha256": "54a20bb31f8640719a90f87feab80434223717b59ad0213ce6d884c80d5c9623"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+      "sha256": "39c87747cd0cfb5be86c3aef89568fa4d0b633b21ef9496c7cce9d24b8422b9c"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab.meta",
+      "sha256": "85a3c80a9d58c3c18340236d8264ede566ccab89569126c8fe7130655d206a58"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+      "sha256": "83a95f3f2364928ba0e8820f20b265b1c3fa14ac762d2a45bbadc52e12c20e07"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab.meta",
+      "sha256": "f2a90cee502f1d715f6dce473c3adce72099b37fec806f9e2ae8d2099bc47fb2"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+      "sha256": "da76a840f333c89b204e87357cd8c2fd0d0d85e333e312baa1093b3d09140115"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab.meta",
+      "sha256": "3453a1c9d459565507f745ff4cc5885b1c48426a111ba61c24aa1f70f4769d67"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/OpenField03Enemy.prefab",
+      "sha256": "95c945d25350eb553bc4dd223ce3c01ad7fd4f9f62e6f4b0ebe564d2924f40cb"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/OpenField03Enemy.prefab.meta",
+      "sha256": "060719a50c9a0d4470df70202a57ef3a9d631c2cd3f0217bb560d6df48537a92"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+      "sha256": "e895b60d644bd3f312fa72f3a3158f4cfb297202e9dbbf1071ffbd8e2ceab240"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab.meta",
+      "sha256": "377e92e295b1a21b15d549565d7d5bef6b66f345f280671a9fe5ffc2d7fda412"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+      "sha256": "52c90f78f9540d3c60bf2e17ecc3295037fc06d97e4b21147093bdd283c28891"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab.meta",
+      "sha256": "885d625c5c94d814e630fdf532b611b1053c081241606da2458211a06f919c1c"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/VirusClone.prefab",
+      "sha256": "79011c5eeabfdb245b2ab86621e7929db2c235ef5077bc961be71c54545a53ec"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Enemies/VirusClone.prefab.meta",
+      "sha256": "ab433e93ae83045dd92560103ac610b932c3dc23a14d1cd721f1a6819bedb28e"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+      "sha256": "a714a928acdbd767730fb2e803cc00bf539e69f980bcc27ebae449776cf835c7"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/Defeat.prefab.meta",
+      "sha256": "913cf7be8d1c258d85646c9bb7a5b69131695ed39b75d8a04eff7d04271c49bb"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/Menu.prefab",
+      "sha256": "ba6a0b7b2bf3e6d490baa1a9bd09db2bd413753c834f5361194dc3cc2b1cc443"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/Menu.prefab.meta",
+      "sha256": "2a4b724da241668e5dbc8494613efd2461186e02b1fcb9f3f1fa5e309da311c2"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab",
+      "sha256": "74fdeafb0d5b65c3c32a35fe61ab1bd99bb3ccef6bf9603777f0987173c05843"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab.meta",
+      "sha256": "f8892b02c9c5edc16205642f875b3f25841c37983a2c790cbe6c523478618c1e"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/Victory.prefab",
+      "sha256": "fa03e0a141747529717928acc75ba1708c03cdef727af0b1106d914bda20dd1b"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Menu/Victory.prefab.meta",
+      "sha256": "ed470894bf53d6549a8440b4682d2b5cb96055bedaf9026ffcf60f1968217335"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Projectiles/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Projectiles/Projectile.prefab",
+      "sha256": "bb594a7a6492c09cb7288e6db54cae090b3e5919a10af182d818d7a110078321"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Projectiles/Projectile.prefab.meta",
+      "sha256": "feb4be33b6e783a94eb7d614eda9a7cf35f59594f2057dd5bafae9ba008f7b77"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/AcidTower.prefab",
+      "sha256": "a3be1b53d4a1f4b429a7d55061742a96786987e1a6692d2963417f6988afb885"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/AcidTower.prefab.meta",
+      "sha256": "ac9b3d7bd21231e799efa950097eaa44c708422d2bbd21a205d4329dc7083f12"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/FibrinTower.prefab",
+      "sha256": "3d2dafca1a9f94935ab806b941dcd0a7366bb80d40f8eaa5f281f2813cccf668"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/FibrinTower.prefab.meta",
+      "sha256": "07ac733d1cdc5b9ff943487b9a01a1aabb59d97ce73f673ffc5a329f03ced72c"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab",
+      "sha256": "9776ed05260cb93897714b312d84a6e4d73abd609576d5e2018e903969567d63"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab.meta",
+      "sha256": "28f5ca9c10fcffa713c2da1dd6e9df33d591302237d43fab5c1293463f30e9e7"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/NeuralPulseTower.prefab",
+      "sha256": "91207cf2dc7a21299599c2bcf6976685445e951b968add49d1f3f19318802e47"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/NeuralPulseTower.prefab.meta",
+      "sha256": "bc3fc85d6d473f8ebd3c25291ec6258b114e9784b08c457e5cb1541b69adf804"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/Tower 1.prefab",
+      "sha256": "b926cf7b3f2e09f9642f3a144c47199485667b89b5c385ff6c5cd89470bfca60"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/Tower 1.prefab.meta",
+      "sha256": "cb3afeaa57dc00aa20750b36d70f82d3e14f651908509419ca4c5a0bea53777d"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/Tower.prefab",
+      "sha256": "0f7267510a656918276999889eca47c2ccb2ed28d66daa127eab737d7869cf44"
+    },
+    {
+      "file": "Assets/_Project/Prefabs/Towers/Tower.prefab.meta",
+      "sha256": "a8bb81dd1cc0af0b1dae86a22c20d3ec24c248e441636d8482586d835e8220fd"
+    },
+    {
+      "file": "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "sha256": "214e03efd28eb63c317633371d42db90f7f2c097655cd4968b90ef99e8c9c8f9"
+    },
+    {
+      "file": "Assets/_Project/Resources/OpenFieldUiResources.asset.meta",
+      "sha256": "ad08ad8d1b70b51d397cb4a20f85e2c85013bc3262ffd1d6a188ab0db7491d7a"
+    }
+  ],
+  "preview": "Assets/_Project/Art/Sprites/细胞绘制/壁垒接入_2026-10-20/接入验证~/壁垒八敌接敌_Unity预览_640x480.png",
+  "previewSha256": "82083e9e0c8c819754bd60a3af282214ebd6ed365207c519f5064dbfa8e76a78",
+  "apkRebuilt": false,
+  "remotePlatformChanged": false
+}

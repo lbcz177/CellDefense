@@ -1,0 +1,37 @@
+{
+  "cliVersion": "2026.10.19",
+  "contract": "3",
+  "nodeVersion": "24.21.0",
+  "installLocation": "Tools/TapTapCLI",
+  "installScriptsDisabled": true,
+  "installationSucceeded": true,
+  "localVersionAndHelpVerified": true,
+  "commandContractChecks": 8,
+  "packageIntegrity": {
+    "version": "2026.10.19",
+    "officialTarball": "https://registry.npmjs.org/@taptap/cli/-/cli-2026.10.19.tgz",
+    "downloadSource": "https://registry.npmmirror.com/@taptap/cli/-/cli-2026.10.19.tgz",
+    "expectedIntegrity": "sha512-9nfKVKWnCzn1CwBUq9r9c29XZsYVeFIVMErUAEarmVJqCt8Cf/2ghB0xLYHtWDVrgJkWO5OkFk6uY474rDBmGA==",
+    "actualIntegrity": "sha512-9nfKVKWnCzn1CwBUq9r9c29XZsYVeFIVMErUAEarmVJqCt8Cf/2ghB0xLYHtWDVrgJkWO5OkFk6uY474rDBmGA==",
+    "verified": true
+  },
+  "candidate": {
+    "status": "local-candidate-not-uploaded",
+    "appId": "986196",
+    "developerId": "338749",
+    "apk": "Builds/Android/CellDefense-0.1.1.apk",
+    "versionName": "0.1.1",
+    "versionCode": 2,
+    "packageName": "com.celldefense.game",
+    "bytes": 73204696,
+    "sha256": "2dee1d7d46cc79631d336595728dffde19be3182a3092b06efdb3da791698dc4",
+    "updateNote": "修复 Android 横屏战斗中，地图上方及屏幕边缘残留上一页界面的显示问题。",
+    "fixedVersionDeviceTested": false,
+    "platformWriteApproved": false
+  },
+  "userPlansLoginTomorrow": true,
+  "loginStarted": false,
+  "credentialsRequested": false,
+  "authenticatedRemoteReadPerformed": false,
+  "platformWritePerformed": false
+}

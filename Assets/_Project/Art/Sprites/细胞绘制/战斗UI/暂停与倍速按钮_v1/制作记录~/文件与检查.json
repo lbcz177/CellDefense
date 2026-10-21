@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-19",
+  "six_exports_verified": true,
+  "common_silhouette": true,
+  "alpha_is_binary": true,
+  "source_round_trip": "Aseprite rendered both frames and compared with exported PNGs",
+  "tool": "built-in image_gen + Aseprite 1.3.18.6",
+  "files": [
+    {
+      "file": "01_暂停_常态.png",
+      "width": 128,
+      "height": 64,
+      "bbox": [
+        5,
+        5,
+        123,
+        59
+      ],
+      "sha256": "94f44227ea854a451d298fc47196595a57daed9061e86cd32ceb5053cb12642e"
+    },
+    {
+      "file": "01_暂停_高亮.png",
+      "width": 128,
+      "height": 64,
+      "bbox": [
+        5,
+        5,
+        123,
+        59
+      ],
+      "sha256": "0c2a37c0a11593245bee62daecef89a2baad6b6a8d0e5fad3d0ad8f8afdd0cff"
+    },
+    {
+      "file": "02_正常速度_1x_常态.png",
+      "width": 128,
+      "height": 64,
+      "bbox": [
+        5,
+        5,
+        123,
+        59
+      ],
+      "sha256": "d4c0f1a61142ec7209a57ed9f511b828370b2163aeb677c40036d438859da330"
+    },
+    {
+      "file": "02_正常速度_1x_高亮.png",
+      "width": 128,
+      "height": 64,
+      "bbox": [
+        5,
+        5,
+        123,
+        59
+      ],
+      "sha256": "c4e7ccf1c78b9d2504627cb44a9f16ea260b3e9d69901eac2efab37f11a9ea51"
+    },
+    {
+      "file": "03_双倍速度_2x_常态.png",
+      "width": 128,
+      "height": 64,
+      "bbox": [
+        5,
+        5,
+        123,
+        59
+      ],
+      "sha256": "c92cc59b27653010f22647b5ae55372b18fc16371fd7759d877378a7afaf3791"
+    },
+    {
+      "file": "03_双倍速度_2x_高亮.png",
+      "width": 128,
+      "height": 64,
+      "bbox": [
+        5,
+        5,
+        123,
+        59
+      ],
+      "sha256": "b7952c9682df1caee8940c43d71bef3a43e5ffd596a71d07452d2647b025fb8a"
+    },
+    {
+      "file": "Aseprite源文件/六态展示.aseprite",
+      "sha256": "98d70907b435066f126deedd890268c12a0881ad5de245f561812de0ebb90ccb"
+    },
+    {
+      "file": "Aseprite源文件/双倍速度_2x.aseprite",
+      "sha256": "6ad7d7d89641664b6e944a0981ca316de308dec1e078662b7c5c44d3146ccad0"
+    },
+    {
+      "file": "Aseprite源文件/暂停.aseprite",
+      "sha256": "5284dd4c7e756b896787166aaa2fa2eba62031bcf20a57dff1a41d9ba05663d3"
+    },
+    {
+      "file": "Aseprite源文件/正常速度_1x.aseprite",
+      "sha256": "4ae0f444fd420155d283a04f3433da38873b6fea9d177faee935f39c53df70c4"
+    }
+  ]
+}

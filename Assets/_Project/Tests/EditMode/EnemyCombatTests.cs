@@ -359,9 +359,9 @@ public sealed class EnemyCombatTests
     {
         ScriptableObject definition = ScriptableObject.CreateInstance(Runtime("TowerDefinition"));
         owned.Add(definition);
-        Set(definition, "maxHealth", capacity == 2 ? 250f : 100f);
+        Set(definition, "maxHealth", barrier ? 500f : capacity == 2 ? 250f : 100f);
         Set(definition, "interceptCapacity", capacity);
-        Set(definition, "blocksEnemyRoute", barrier);
+        Set(definition, "interceptsAllEnemies", barrier);
         GameObject obj = Host("Defense Cell");
         Component tower = obj.AddComponent(Runtime("TowerController"));
         Set(tower, "<Definition>k__BackingField", definition);
@@ -419,24 +419,51 @@ public sealed class EnemyCombatTests
     }
 
     [Test]
-    public void BarrierQuotaExhaustion_BlocksOnlyBarrierChoices()
+    public void BarrierCanOccupyOnlyChokeWithoutSealingTerrainRoute()
     {
         GameObject obj = Host("Quota Controller");
         Component controller = obj.AddComponent(Runtime("OpenFieldPrototypeController"));
-        object grid = Activator.CreateInstance(Runtime("OpenFieldGridModel"), 5, 3,
-            new Vector2Int(4, 1), new[] { new Vector2Int(0, 1) }, null);
+        object grid = Activator.CreateInstance(Runtime("OpenFieldGridModel"), 3, 3,
+            new Vector2Int(1, 0), new[] { new Vector2Int(1, 2) },
+            new[] { new Vector2Int(0, 1), new Vector2Int(2, 1) });
         Set(controller, "grid", grid);
-        Set(controller, "barrierBuildLimit", 6);
-        Set(controller, "barriersBuilt", 6);
         Call(controller.GetType().GetField("economy", Flags).GetValue(controller), "Initialize", 1000);
         Component defender = CreateDefender(barrier: true);
         object definition = Get(Get(defender, "Tower"), "Definition");
         Set(definition, "prefab", Get(defender, "Tower"));
-        Assert.That(Get(controller, "RemainingBarrierBuilds"), Is.EqualTo(0));
-        Assert.That(Call(controller, "GetBuildRejection", definition, new Vector2Int(1, 1)),
-            Is.EqualTo("壁垒额度已用尽"));
-        Set(definition, "blocksEnemyRoute", false);
         Assert.That(Call(controller, "GetBuildRejection", definition, new Vector2Int(1, 1)), Is.EqualTo(""));
+        Assert.That(Call(grid, "TryOccupy", new Vector2Int(1, 1), false), Is.True);
+        List<Vector2Int> route = new List<Vector2Int>();
+        Assert.That(Call(grid, "TryGetPath", new Vector2Int(1, 2), route), Is.True);
+        Assert.That(route, Has.Member(new Vector2Int(1, 1)));
+    }
+
+    [Test]
+    public void BarrierHoldsWholeGroup_EachEnemyDamagesIt_AndDeathReleasesMovement()
+    {
+        Component defender = CreateDefender(barrier: true);
+        var contacts = new List<Component>();
+        for (int i = 0; i < 8; i++)
+        {
+            Component contact = CreateContact(Create(), defender);
+            contacts.Add(contact);
+            Assert.That(Call(contact, "TryMove", Vector3.right * 10f), Is.False);
+            Assert.That(Get(contact, "Target"), Is.SameAs(defender));
+        }
+        Assert.That(Get(defender, "ContactCount"), Is.EqualTo(8));
+        Assert.That(Get(defender, "InterceptsAllEnemies"), Is.True);
+        float entered = Time.time;
+        foreach (Component contact in contacts) Call(contact, "Tick", entered + .5f);
+        Assert.That(Get(defender, "CurrentHealth"), Is.EqualTo(500f));
+        foreach (Component contact in contacts) Call(contact, "Tick", entered + 2f);
+        Assert.That(Get(defender, "CurrentHealth"), Is.EqualTo(420f));
+        Call(defender, "TakeDamage", 420f);
+        foreach (Component contact in contacts)
+        {
+            Assert.That(Call(contact, "TryMove", Vector3.right * 10f), Is.True);
+            Assert.That(Get(contact, "Target"), Is.Null);
+        }
+        Assert.That(Get(defender, "ContactCount"), Is.Zero);
     }
 
     [Test]

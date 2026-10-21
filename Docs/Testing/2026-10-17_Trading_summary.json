@@ -1,0 +1,102 @@
+{
+  "unity": "2022.3.53f1c1",
+  "date": "2026-10-17",
+  "execution": "Isolated Logs/CodexTradingTests; matching core Unity modules, UGUI, TMP, Test Framework and NUnit; unrelated optional editor packages omitted. Main interactive project left open.",
+  "runs": {
+    "editmode": {
+      "total": "95",
+      "passed": "95",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "0.5147099",
+      "start-time": "2026-10-17 03:08:44Z",
+      "end-time": "2026-10-17 03:08:45Z",
+      "fixtures": {
+        "EconomyServiceTests": "5",
+        "EnemyCombatTests": "21",
+        "LifeServiceTests": "1",
+        "OpenFieldLiveBuildHudTests": "22",
+        "OpenFieldWaveFlowTests": "18",
+        "TowerSupportTests": "11",
+        "TowerTradingTests": "17"
+      }
+    },
+    "playmode": {
+      "total": "14",
+      "passed": "14",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "6.2928916",
+      "start-time": "2026-10-17 03:13:08Z",
+      "end-time": "2026-10-17 03:13:14Z",
+      "fixtures": {
+        "OpenFieldLiveBuildSmokeTests": "1",
+        "TowerAbilityPlayModeTests": "8",
+        "TowerTradingPlayModeTests": "5"
+      }
+    }
+  },
+  "staticDiagnostics": {
+    "sourceCount": 83,
+    "errors": 0,
+    "emit": false
+  },
+  "matchingArtworkAndMetadataFiles": 2663,
+  "testedPackages": {
+    "com.unity.test-framework": "1.1.33",
+    "com.unity.textmeshpro": "3.0.7",
+    "com.unity.ugui": "1.0.0",
+    "com.unity.modules.ai": "1.0.0",
+    "com.unity.modules.androidjni": "1.0.0",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.assetbundle": "1.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.cloth": "1.0.0",
+    "com.unity.modules.director": "1.0.0",
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.physics2d": "1.0.0",
+    "com.unity.modules.screencapture": "1.0.0",
+    "com.unity.modules.terrain": "1.0.0",
+    "com.unity.modules.terrainphysics": "1.0.0",
+    "com.unity.modules.tilemap": "1.0.0",
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.uielements": "1.0.0",
+    "com.unity.modules.umbra": "1.0.0",
+    "com.unity.modules.unityanalytics": "1.0.0",
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+    "com.unity.modules.unitywebrequestaudio": "1.0.0",
+    "com.unity.modules.unitywebrequesttexture": "1.0.0",
+    "com.unity.modules.unitywebrequestwww": "1.0.0",
+    "com.unity.modules.vehicles": "1.0.0",
+    "com.unity.modules.video": "1.0.0",
+    "com.unity.modules.vr": "1.0.0",
+    "com.unity.modules.wind": "1.0.0",
+    "com.unity.modules.xr": "1.0.0",
+    "com.unity.ext.nunit": "1.0.6"
+  },
+  "sha256": {
+    "Assets/_Project/Scripts/Building/TowerEconomyRules.cs": "fced003be698277cc39d7f9f6ce63d18e3573097add48edecc301ffcdbb5de19",
+    "Assets/_Project/Scripts/Building/BuildController.cs": "9c8bf03e6b46a16d470e3745b6f91f818f0dfb40602e32bab796913154f00150",
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "ea675abea3320c6cc3fea7121d3ec0ac7416bcefd2a758c251c46d50d72f1d08",
+    "Assets/_Project/Scripts/OpenField/OpenFieldPresentation.cs": "d42a05f60506bf57f407655ea07d2be1ccb53ea25ecda6a6b8ecab8683b13a59",
+    "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs": "8af100dbd3878aa28546aaa4e31bbbe12a6bb86217754c8a2e18591d76c917ae",
+    "Assets/_Project/Scripts/Enemies/EnemyContactCombat.cs": "6c0663cf4dcb3878fe85643a00827e0d56b3ddf7c1960ea39fed9ce674ce9d5a",
+    "Assets/_Project/Editor/PlanningConfigWindow.cs": "8498fbb03f2e18446322caf0fe4bda36cc4bdc842999ebf095f2d7787c1902a9",
+    "Assets/_Project/Editor/PlanningConfigValidation.cs": "ac6439468fe3681aa0034a4bcf16e2f034227faa99349a46814bffbe3441e111",
+    "Assets/_Project/Editor/OpenFieldPrototypeSceneCreator.cs": "eeb72914e5a262c0d9ef9ddab7c884f0ced2948afcf86e647afc1cb11945a8ab",
+    "Assets/_Project/Tests/EditMode/TowerTradingTests.cs": "648e16f7a180ce6faaf504121166764a98d08a94bed65a52d60893b868b30e51",
+    "Assets/_Project/Tests/PlayMode/TowerTradingPlayModeTests.cs": "4a7b19c44d83b2520683f1bfbe2486c68a4733611b29d1f258b605cb091cd3b3",
+    "Assets\\_Project\\Scenes\\OpenFieldLevel02.unity": "5db84fcac5c81f0701ef39dc9f677e0e9a9caf4dec37c8e0341e4ba2e455ec09",
+    "Assets\\_Project\\Scenes\\OpenFieldLevel03.unity": "13803b96fd4c82f39513f31184e8f9487f3b9b34739bb90e39bebb85018d8a51",
+    "Assets\\_Project\\Scenes\\OpenFieldLevel04.unity": "a30af308617be1b8d3413630e08db10653f4b446aa3cef4f5670e5a597a49bdf",
+    "Assets\\_Project\\Scenes\\OpenFieldLevel05.unity": "087a3847b70592f96c38be403b5a3df3885c213aabbee664138fa16066582733",
+    "Assets\\_Project\\Scenes\\OpenFieldPrototype.unity": "06308cddc0f969ddcf71295601d2957db67198aad133121e68e24b5af4b69b2d"
+  },
+  "buildPerformed": false,
+  "visualAcceptance": "Headless tests verify behavior and bindings; manual appearance and full campaign playthrough remain pending."
+}

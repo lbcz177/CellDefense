@@ -1,0 +1,102 @@
+[
+  {
+    "id": "settings",
+    "text": "设置",
+    "kind": "main",
+    "file": "01_设置.png",
+    "width": 160,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-9acd6f27-2395-4dd7-a94a-ec16c991acf4.png"
+  },
+  {
+    "id": "volume",
+    "text": "总音量",
+    "kind": "main",
+    "file": "02_总音量.png",
+    "width": 224,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-8e1b054e-52e5-4c75-a983-e26fceea2642.png"
+  },
+  {
+    "id": "mute",
+    "text": "静音",
+    "kind": "main",
+    "file": "03_静音.png",
+    "width": 160,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-a500466c-d532-487f-a342-c38a87993c6b.png"
+  },
+  {
+    "id": "fullscreen",
+    "text": "全屏",
+    "kind": "main",
+    "file": "04_全屏.png",
+    "width": 160,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-18fdea98-35fe-4d61-811c-2406dc99dbc4.png"
+  },
+  {
+    "id": "defaults",
+    "text": "恢复默认",
+    "kind": "main",
+    "file": "05_恢复默认.png",
+    "width": 288,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-dec3e3aa-a2f4-4b94-aaa0-a0926e6d6f19.png"
+  },
+  {
+    "id": "back",
+    "text": "返回",
+    "kind": "main",
+    "file": "06_返回.png",
+    "width": 160,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-575f817c-6c1a-4ff4-840a-a79eb90aa055.png"
+  },
+  {
+    "id": "mute_hint",
+    "text": "点击喇叭切换静音",
+    "kind": "hint",
+    "file": "07_点击喇叭切换静音.png",
+    "width": 336,
+    "height": 48,
+    "inkHeight": 32,
+    "source": "exec-2d85dde9-f83c-4e97-a3ea-e5ab8c150100.png"
+  },
+  {
+    "id": "window_hint",
+    "text": "关闭全屏后使用窗口模式",
+    "kind": "hint",
+    "file": "08_关闭全屏后使用窗口模式.png",
+    "width": 456,
+    "height": 48,
+    "inkHeight": 32,
+    "source": "exec-519f3a05-c884-4b25-8bf5-2b35b93da44b.png"
+  },
+  {
+    "id": "fullscreen_hint",
+    "text": "全屏切换在独立运行时生效",
+    "kind": "hint",
+    "file": "09_全屏切换在独立运行时生效.png",
+    "width": 496,
+    "height": 48,
+    "inkHeight": 32,
+    "source": "exec-5ec83764-8481-49ca-892c-a2a60521d79c.png"
+  },
+  {
+    "id": "percent",
+    "text": "%",
+    "kind": "symbol",
+    "file": "10_百分号.png",
+    "width": 80,
+    "height": 80,
+    "inkHeight": 64,
+    "source": "exec-73fb9dbc-9427-4fe1-b6e9-28d485fabb98.png"
+  }
+]

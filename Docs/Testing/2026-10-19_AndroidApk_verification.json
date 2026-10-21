@@ -1,0 +1,15 @@
+{
+  "apk": "E:\\unity\\CellDefense\\Builds\\Android\\CellDefense.apk",
+  "bytes": 73175093,
+  "sizeMiB": 69.79,
+  "sha256": "fc0325f0f8e929ee89a54efa67fdd6408655e7fbfa4f856f1747bd695fc70c72",
+  "zipCrcValid": true,
+  "entries": 178,
+  "nativeLibraries": {
+    "lib/armeabi-v7a/libil2cpp.so": 20525384,
+    "lib/armeabi-v7a/libunity.so": 19794096,
+    "lib/arm64-v8a/libil2cpp.so": 23962856,
+    "lib/arm64-v8a/libunity.so": 23688312
+  },
+  "deviceInstallTested": false
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "kind": "banner",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/宣传图_胞卫战_1920x1080.png",
+    "sha256": "5a009202c44f5386ddb20c275e2546702d94e9a4b84d0707f797f69d5cc15b11",
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-20\\宣传图_胞卫战_1920x1080.png",
+    "upload": {
+      "assetId": "499981",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 2597582,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/31d57e7c6d1b0ba3a6893d59fb2c7a9b.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "screenshot",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/01_免疫协作_第三关.png",
+    "sha256": "0319a5c09fc621aff2a9327050202c01f81df5e53bbdcdc16c67a473ff69a8e5",
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-20\\截图\\01_免疫协作_第三关.png",
+    "upload": {
+      "assetId": "499983",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 1538610,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/e14bbf9e3ff2dbc7e53a0bb514b4fb78.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "screenshot",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/02_两侧告急_第四关.png",
+    "sha256": "8f5dce74f9a869730ffdc76b38dae4ba1d6f5aaff0199ee1e7391ce697aeea82",
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-20\\截图\\02_两侧告急_第四关.png",
+    "upload": {
+      "assetId": "499984",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 1526412,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/5417f786f26b95123cd23922a3aaf82d.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "screenshot",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/截图/03_感染加剧_第五关.png",
+    "sha256": "650e448fe37630f1dd526fb77ffbcff15fb1f8b48a55a473987c26ff835ce831",
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-20\\截图\\03_感染加剧_第五关.png",
+    "upload": {
+      "assetId": "499985",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 1607839,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/ffd31e4d49c11c28de4499e989c9e891.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "video",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-20/演示视频~/胞卫战_实机演示_1080p.mp4",
+    "sha256": "2ade18136f18b8c1a431fa5b6682430dc1e19cb6f0d2003b2f87188823628a36",
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-20\\演示视频~\\胞卫战_实机演示_1080p.mp4",
+    "upload": {
+      "handoff": {
+        "stage": "material_uploaded",
+        "completed": [
+          "video uploaded",
+          "video ID returned"
+        ],
+        "pending": [
+          "video ID still needs to be written into profile field \"gameplay_demo_video\""
+        ],
+        "targetField": "gameplay_demo_video",
+        "userActionRequired": true,
+        "userActionSummary": "需要将返回的 videoId 写回资料字段 \"gameplay_demo_video\"",
+        "nextActions": [
+          {
+            "id": "save_video_field",
+            "label": "将 videoId 写入资料字段 \"gameplay_demo_video\"",
+            "requiresConfirmation": true
+          }
+        ],
+        "links": [
+          {
+            "kind": "admin",
+            "label": "开发者后台资料页",
+            "url": "https://developer.taptap.cn/v3/338749/app/986196/store/update",
+            "available": true,
+            "source": "derived_from_ids"
+          }
+        ]
+      },
+      "nextStep": "video upload is complete; write videoId to app-edit field \"gameplay_demo_video\" while transcoding continues independently",
+      "targetField": "gameplay_demo_video",
+      "uploadStatus": "uploaded",
+      "validationWarnings": [
+        "实机录屏 still requires server-side duration, resolution, aspect ratio, codec, and content review"
+      ],
+      "videoId": 5991906
+    },
+    "state": "uploaded-and-field-readback-verified"
+  }
+]

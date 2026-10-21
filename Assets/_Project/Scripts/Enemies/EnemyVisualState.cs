@@ -19,6 +19,8 @@ public sealed class EnemyVisualState : EnemyBehaviour
     private float pulseUntil;
     private float pulseRadius;
     private Color pulseColor;
+    private MaterialPropertyBlock stateProperties;
+    private static readonly int StateTint = Shader.PropertyToID("_StateTint");
 
     public override void Initialize(EnemyDefinition definition)
     {
@@ -29,12 +31,14 @@ public sealed class EnemyVisualState : EnemyBehaviour
         if (baseSprite == null && body != null) baseSprite = body.sprite;
         base.Initialize(definition);
         if (body != null) body.sprite = baseSprite;
+        SetStateTint(Color.white);
     }
     public override void ResetState()
     {
         phaseSprite = null;
         pulseUntil = 0f;
         if (pulse != null) pulse.enabled = false;
+        SetStateTint(Color.white);
     }
     public void SetPhaseSprite(Sprite sprite) => phaseSprite = sprite;
 
@@ -76,19 +80,41 @@ public sealed class EnemyVisualState : EnemyBehaviour
         if (body != null)
         {
             Sprite next = phaseSprite != null ? phaseSprite : baseSprite;
-            bool overrideSprite = phaseSprite != null;
             if ((Enemy.IsArmorBroken || (Enemy.Definition.InitialShield > 0f && !Enemy.HasShield)) &&
-                brokenSprite != null) { next = brokenSprite; overrideSprite = true; }
+                brokenSprite != null) { next = brokenSprite; }
             else if (engulfSprite != null && (Enemy.CanEngulf(20f) ||
                 (immune != null && immune.IsMarked && Enemy.CanEngulf(50f))))
-                { next = engulfSprite; overrideSprite = true; }
+                { next = engulfSprite; }
             else if (slow != null && slow.SpeedMultiplier < 1f && slowedSprite != null)
-                { next = slowedSprite; overrideSprite = true; }
-            else if (Enemy.HasShield && shieldedSprite != null) { next = shieldedSprite; overrideSprite = true; }
+                { next = slowedSprite; }
+            else if (Enemy.HasShield && shieldedSprite != null) { next = shieldedSprite; }
             bool animated = animator != null && animator.isActiveAndEnabled && animator.runtimeAnimatorController != null;
-            if ((!animated || overrideSprite) && next != null && body.sprite != next) body.sprite = next;
+            if (animated)
+            {
+                // Preserve the ten-frame motion; old directional stills must not replace it.
+                Color tint = phaseSprite != null ? new Color(1f, 0.86f, 0.94f) : Color.white;
+                if (Enemy.IsArmorBroken || (Enemy.Definition.InitialShield > 0f && !Enemy.HasShield))
+                    tint = new Color(0.86f, 1f, 0.70f);
+                else if (engulfSprite != null && (Enemy.CanEngulf(20f) ||
+                    (immune != null && immune.IsMarked && Enemy.CanEngulf(50f))))
+                    tint = new Color(1f, 0.90f, 0.72f);
+                else if (slow != null && slow.SpeedMultiplier < 1f)
+                    tint = new Color(0.76f, 0.90f, 1f);
+                else if (Enemy.HasShield) tint = new Color(0.78f, 1f, 1f);
+                SetStateTint(tint);
+            }
+            else if (next != null && body.sprite != next) body.sprite = next;
         }
         if (pulse != null && Time.deltaTime > 0f) RefreshPulse(Time.time);
+    }
+
+    private void SetStateTint(Color color)
+    {
+        if (body == null) return;
+        if (stateProperties == null) stateProperties = new MaterialPropertyBlock();
+        body.GetPropertyBlock(stateProperties);
+        stateProperties.SetColor(StateTint, color);
+        body.SetPropertyBlock(stateProperties);
     }
 
     private void RefreshPulse(float now)

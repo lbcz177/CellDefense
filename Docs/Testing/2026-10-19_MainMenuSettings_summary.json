@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "execution": "Logs/CodexTradingTests isolated copy; PlayMode hidden D3D11",
+  "run": {
+    "platform": "PlayMode",
+    "result": "Passed",
+    "total": 22,
+    "passed": 22,
+    "failed": 0,
+    "skipped": 0,
+    "started": "2026-10-19 00:19:44Z",
+    "ended": "2026-10-19 00:19:53Z"
+  },
+  "editModeRerun": false,
+  "sourceFilesMatched": 4,
+  "sha256": [
+    {
+      "file": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "4542ACA48215A785EF61022733FB6B40D446121A197F3156FB356CD023A9378C",
+      "copySha256": "4542ACA48215A785EF61022733FB6B40D446121A197F3156FB356CD023A9378C"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs",
+      "sha256": "BD00E466027BA746B984BB7008A8DB6C0CFE50C115A9CF6A0A05EF198145A2AD",
+      "copySha256": "BD00E466027BA746B984BB7008A8DB6C0CFE50C115A9CF6A0A05EF198145A2AD"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs.meta",
+      "sha256": "A5D598DD7C07FF183A35312DEBF13FAB963F7E820C071BBE7101D262DD0297A8",
+      "copySha256": "A5D598DD7C07FF183A35312DEBF13FAB963F7E820C071BBE7101D262DD0297A8"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "DC6D0DB923B49850C4EC5EBCC353283DA1E278847EC7D7A44C641A747DEBCD91",
+      "copySha256": "DC6D0DB923B49850C4EC5EBCC353283DA1E278847EC7D7A44C641A747DEBCD91"
+    }
+  ],
+  "previews": [
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\主菜单设置_2026-10-19\\接入验证~\\主菜单_设置入口_Unity预览_640x480.png",
+      "sha256": "4F2CDFE474B265AAC9667B62C8EEE2CFB83CABDFD9234B89DE48CEF9C2163092"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\主菜单设置_2026-10-19\\接入验证~\\主菜单_设置弹层_Unity预览_640x480.png",
+      "sha256": "0ADBC4B2CEBB620DD0035411DF9C9C59E3E370481E5A55DDB457ACBE4232BC50"
+    }
+  ],
+  "buildPerformed": false,
+  "profilerPerformed": false,
+  "playerFullscreenVerified": false
+}

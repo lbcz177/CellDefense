@@ -20,3 +20,9 @@ PackageCache/
 # 本地配置
 UserSettings/
 Assets/TextMesh Pro/Fonts/SIMSUN SDF.asset
+
+# Project-local TapTap CLI dependencies
+Tools/TapTapCLI/node_modules/
+
+# Local media encoding dependency
+Tools/MediaCapture/python/

@@ -1,0 +1,22 @@
+{
+    "result": "Succeeded",
+    "apk": "E:\\unity\\CellDefense\\Logs\\CodexTradingTests\\Builds\\Android\\CellDefense-0.1.2.apk",
+    "unity": "2022.3.53f1c1",
+    "productName": "胞卫战",
+    "packageName": "com.celldefense.game",
+    "version": "0.1.2",
+    "backend": "IL2CPP",
+    "architectures": "ARMv7, ARM64",
+    "utc": "2026-10-20T00:43:46.1393861Z",
+    "versionCode": 3,
+    "development": false,
+    "bytes": 59780812,
+    "scenes": [
+        "Assets/_Project/Scenes/MainMenu.unity",
+        "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel03.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel04.unity",
+        "Assets/_Project/Scenes/OpenFieldLevel05.unity"
+    ]
+}

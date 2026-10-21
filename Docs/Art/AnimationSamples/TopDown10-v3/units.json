@@ -1,0 +1,114 @@
+[
+  {
+    "Id": "01_neutrophil",
+    "Kind": "Tower",
+    "Prefab": "Assets/_Project/Prefabs/Towers/Tower.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\关卡动画_v1\\中性粒细胞攻击.png",
+    "PrefabHash": "18FFA164D625A157047360B334D58AA36E1F5EFCA0BD057696BD21E2DA41011E",
+    "MetaHash": "A8BB81DD1CC0AF0B1DAE86A22C20D3EC24C248E441636D8482586D835E8220FD"
+  },
+  {
+    "Id": "02_fibrin",
+    "Kind": "Tower",
+    "Prefab": "Assets/_Project/Prefabs/Towers/FibrinTower.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\纤维蛋白壁垒_基础.png",
+    "PrefabHash": "568E5B2799C54359EF812E3B6CE8F4F0943BE87B28148DC1FB568B03999BABB5",
+    "MetaHash": "07AC733D1CDC5B9FF943487B9A01A1AABB59D97CE73F673FFC5A329F03CED72C"
+  },
+  {
+    "Id": "03_lysosome",
+    "Kind": "Tower",
+    "Prefab": "Assets/_Project/Prefabs/Towers/AcidTower.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\溶酶体酸化炮_基础.png",
+    "PrefabHash": "05AF637CDEAE45CDDA8471DF3AA12B3A373B02C7DE9BA4D7D3C301BC58AEDB5C",
+    "MetaHash": "AC9B3D7BD21231E799EFA950097EAA44C708422D2BBD21A205D4329DC7083F12"
+  },
+  {
+    "Id": "04_neural",
+    "Kind": "Tower",
+    "Prefab": "Assets/_Project/Prefabs/Towers/NeuralPulseTower.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\00_已有素材\\神经脉冲刺突_基础.png",
+    "PrefabHash": "16B99BD521C79DE9F2CAC9CF0B67DD0808DB14541971A8E28BCF18F6AEDA9465",
+    "MetaHash": "BC3FC85D6D473F8EBD3C25291EC6258B114E9784B08C457E5CB1541B69ADF804"
+  },
+  {
+    "Id": "05_phagocyte",
+    "Kind": "Tower",
+    "Prefab": "Assets/_Project/Prefabs/Towers/Tower 1.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\020_巨噬细胞清道夫_图标.png",
+    "PrefabHash": "63E4B3313AC2183FB0CD7EC562C116E91697E119B6B9A686ACD2EA3B7AC56866",
+    "MetaHash": "CB3AFEAA57DC00AA20750B36D70F82D3E14F651908509419CA4C5A0BEA53777D"
+  },
+  {
+    "Id": "06_antibody",
+    "Kind": "Tower",
+    "Prefab": "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\02_塔图标\\024_抗体B细胞中继_图标.png",
+    "PrefabHash": "8EAB8ECAF9A9688219F85F4BFF0F30AA4353DFCDB06FD5C5CDCF186AD3B95A57",
+    "MetaHash": "28F5CA9C10FCFFA713C2DA1DD6E9DF33D591302237D43FAB5C1293463F30E9E7"
+  },
+  {
+    "Id": "07_staph",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\帧动画\\关卡动画_v1\\葡萄球菌群移动.png",
+    "PrefabHash": "F9E5E82E54E03EAA18C2CF7DE26EFD934160E41682F7D6811944AAF0969E6667",
+    "MetaHash": "377E92E295B1A21B15D549565D7D5BEF6B66F345F280671A9FE5FFC2D7FDA412"
+  },
+  {
+    "Id": "08_flagellate",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\029_鞭毛双球菌_基础.png",
+    "PrefabHash": "EAC93518DC6F7599276B147CB3DDFB12A398844C6F77703EE0235AE2ABEDAB24",
+    "MetaHash": "54A20BB31F8640719A90F87FEAB80434223717B59AD0213CE6D884C80D5C9623"
+  },
+  {
+    "Id": "09_bacillus",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\03_普通敌人与状态\\033_重甲芽孢杆菌_基础.png",
+    "PrefabHash": "8FB99D32DD76873C2AD2B8EB492418536F28D510E84C1AA2E5786C3B40AFA5F0",
+    "MetaHash": "D0C80F399371DCEB59ED4303F4CC5B39E13F67D8E3FB55A742C7D2E57A23610A"
+  },
+  {
+    "Id": "10_fungal_spore",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\037_变异超级真菌_基础.png",
+    "PrefabHash": "8B82AB2559827D9898A308A3F9A1E8DB855A1E42391A3E157A8A3C63F72CD049",
+    "MetaHash": "F2A90CEE502F1D715F6DCE473C3ADCE72099B37FEC806F9E2AE8D2099BC47FB2"
+  },
+  {
+    "Id": "11_virus_clone",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/VirusClone.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\045_病毒母体_基础.png",
+    "PrefabHash": "1D113EC144A0CD661723D0AE03BFEE0D45F27C397FCB094321D00DF4176CF788",
+    "MetaHash": "AB433E93AE83045DD92560103AC610B932C3DC23A14D1CD721F1A6819BEDB28E"
+  },
+  {
+    "Id": "12_fungal_boss",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\037_变异超级真菌_基础.png",
+    "PrefabHash": "3806E5D5784BAA9C9CAF36BCF3E92E0A4AE31881AC93F7AEFAF681E16984ECEF",
+    "MetaHash": "85A3C80A9D58C3C18340236D8264EDE566CCAB89569126C8FE7130655D206A58"
+  },
+  {
+    "Id": "13_membrane_boss",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\042_细菌生物膜核心_基础.png",
+    "PrefabHash": "A96B0C6D37C88F1462ED54CFADC8950AAEB76EF46B8E51D77BD59C1477905D24",
+    "MetaHash": "3453A1C9D459565507F745FF4CC5885B1C48426A111BA61C24AA1F70F4769D67"
+  },
+  {
+    "Id": "14_virus_boss",
+    "Kind": "Enemy",
+    "Prefab": "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+    "Reference": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\2026-09-28_完整补图\\05_Boss与阶段\\045_病毒母体_基础.png",
+    "PrefabHash": "E7B2B60BF080B03B243726612D4061DEB384D5EAC7B884E6F5FCD1869172E5B5",
+    "MetaHash": "885D625C5C94D814E630FDF532B611B1053C081241606DA2458211A06F919C1C"
+  }
+]

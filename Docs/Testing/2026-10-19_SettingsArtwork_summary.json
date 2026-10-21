@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-19",
+  "unity": "2022.3.53f1c1",
+  "execution": "Logs/CodexTradingTests isolated copy; EditMode nographics; PlayMode hidden D3D11",
+  "runs": [
+    {
+      "platform": "EditMode",
+      "result": "Passed",
+      "total": 109,
+      "passed": 109,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-18 16:22:01Z",
+      "ended": "2026-10-18 16:22:01Z"
+    },
+    {
+      "platform": "PlayMode",
+      "result": "Passed",
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "started": "2026-10-18 16:21:19Z",
+      "ended": "2026-10-18 16:21:27Z"
+    }
+  ],
+  "sourceFilesMatched": 5,
+  "sha256": [
+    {
+      "file": "Assets/_Project/Scripts/UI/GameSettingsPanel.cs",
+      "sha256": "67F21EDA9B3D045F12CF6BB9BE5DBFF5C9397F7B82A062BCDF8EFECD6831CD08",
+      "copySha256": "67F21EDA9B3D045F12CF6BB9BE5DBFF5C9397F7B82A062BCDF8EFECD6831CD08"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldUiResources.cs",
+      "sha256": "D7381065D1313799917DD8BEB5DC04B14C5E4644526E50FB38B545F47ED05266",
+      "copySha256": "D7381065D1313799917DD8BEB5DC04B14C5E4644526E50FB38B545F47ED05266"
+    },
+    {
+      "file": "Assets/_Project/Scripts/UI/OpenFieldPlaybackControls.cs",
+      "sha256": "C3A6951E36EE79297CB1255B9D7FE3912D8752F428AFE87CFB2F2C41F84CA481",
+      "copySha256": "C3A6951E36EE79297CB1255B9D7FE3912D8752F428AFE87CFB2F2C41F84CA481"
+    },
+    {
+      "file": "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "sha256": "457D996EBF67162FAB07D42116C33F9F9D3B2A913E4CA72A2551AFF717C4F111",
+      "copySha256": "457D996EBF67162FAB07D42116C33F9F9D3B2A913E4CA72A2551AFF717C4F111"
+    },
+    {
+      "file": "Assets/_Project/Tests/PlayMode/OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "F9187E8742C83E389EBB428D9F8CDB2AB1A62338AD78333F3C14A3C3D36851A1",
+      "copySha256": "F9187E8742C83E389EBB428D9F8CDB2AB1A62338AD78333F3C14A3C3D36851A1"
+    }
+  ],
+  "unchangedArtworkFiles": 16,
+  "artwork": [
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\01_声音图标.png",
+      "sha256": "CE83AD3450B381B5605568F504B64086ABDF41DE63532A337643C3FD5558D5C4"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\01_声音图标.png.meta",
+      "sha256": "E32E945F8679BBACAC70188E3C741CC2478D6CB0BF5C143CAAEE35AA2820E120"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\02_静音图标.png",
+      "sha256": "6C47BBB5CD61BA752536BAAD343249D1CB556B4DE4FF9F06A1EA6F2B7C72D0B1"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\02_静音图标.png.meta",
+      "sha256": "B602E8F782F8608223799A13A7AE8E7CEA24937DFFD41B60FD7678992D837C61"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\03_音量槽_底条.png",
+      "sha256": "1BBC521B5643D2D50A998C0C4BABE75DE151615A695EEE96B15F692B4E09FAEE"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\03_音量槽_底条.png.meta",
+      "sha256": "3C625E9FBD03A67924ECBC1F70FAFAB59E28D21D3FBF282C567FF0EBF7CD054F"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\04_音量条_蓝色填充.png",
+      "sha256": "B9D6CF86877B135F51051D1849F24FCC9AE72D69EF0AACFB4DA69A129CD99F7F"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\04_音量条_蓝色填充.png.meta",
+      "sha256": "E06CA46E9389DD191BB60E96D7EF16375E3BA6E51C9234A210FFBC5B13213E2E"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\05_音量滑块_拖动柄.png",
+      "sha256": "043E68CB9E199C242DDBF9E7868F306F03469F0AE9F0413F9D96F57326C1646D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\05_音量滑块_拖动柄.png.meta",
+      "sha256": "39B007B670DF4E46614E3658D350A1050FB5F0801FFD68FFD2C17D34DA5641AC"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_分层源文件.aseprite",
+      "sha256": "89949F016D0465F41EB8B3A46EAB68C3A7708F12F3F118C48D7E3F6CE68D0F77"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_预览.png",
+      "sha256": "4A8108DABC9D00C78DD99132F1BA1BB8FB4FC371B30ECB8F46D19DEB279C16F6"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_预览.png.meta",
+      "sha256": "D5339C8EAB1232E94947425D07BC90D4ADD7ADC482A6D5EC732E79976267F366"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_组合透明.png",
+      "sha256": "FDF43F69F4CBC09DA6D6A9471584F4CE859D1D80D318F582B1FE71A54558FDDD"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\声音与拉条_组合透明.png.meta",
+      "sha256": "41351992FAB15B879FAE280B9D8DD89FBA95C6186DC30E9804083F53E6E4105D"
+    },
+    {
+      "file": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\使用说明.md",
+      "sha256": "F23AF087CCC66DE4FAAD4C9AF123469A3CDCD5B05915CE804DC21582FF29E04F"
+    }
+  ],
+  "previews": [
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\接入验证~\\设置界面_声音开启_Unity预览_640x480.png",
+      "sha256": "BD9B28F2DE36E7ABB6552A900C94503B11B0BFE93B7E8276527AF636D5A319AC"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\接入验证~\\设置界面_静音_Unity预览_640x480.png",
+      "sha256": "78B5E35CFFEFE4A1EA8BBEEA8064D00888228CF701D57BF8DC61949FB084FE46"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\接入验证~\\设置界面_零音量_Unity预览_640x480.png",
+      "sha256": "0712713A52B3E0A7BAB62CBBEE70CDA218ABCD5FD6CF33BD5267350E5D1A00AD"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\设置界面_声音与拉条_v1\\接入验证~\\设置界面_满音量_Unity预览_640x480.png",
+      "sha256": "7BBD4B5A267DFDAA18A3A594F26ABDA4689CE5E184A8C1B9195D49160E6AEB85"
+    }
+  ],
+  "playerFullscreenVerified": false,
+  "buildPerformed": false,
+  "profilerPerformed": false
+}

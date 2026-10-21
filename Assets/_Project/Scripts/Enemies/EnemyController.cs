@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private PathFollower pathFollower;
     [SerializeField] private bool playCoreAttackAnimation;
+    [SerializeField] private bool rotateBodyWithDirection;
     private static readonly int AttackTrigger = Animator.StringToHash("Attack");
     private Animator animator;
     private SpriteHitFlash hitFlash;
@@ -106,6 +107,15 @@ public class EnemyController : MonoBehaviour
         hasResolved = false;
         isAttackingCore = false;
         coreAttackTimeout = 0f;
+        if (rotateBodyWithDirection)
+        {
+            transform.rotation = Quaternion.identity;
+            if (bodyRenderer != null)
+            {
+                bodyRenderer.flipX = false;
+                bodyRenderer.flipY = false;
+            }
+        }
         if (playCoreAttackAnimation && animator != null && animator.runtimeAnimatorController != null)
         {
             animator.Rebind();
@@ -120,6 +130,14 @@ public class EnemyController : MonoBehaviour
         foreach (EnemyBehaviour behaviour in behaviours)
             if (behaviour != null && behaviour.isActiveAndEnabled) behaviour.Initialize(definition);
         isInitialized = true;
+        // Reused units and summons take their new route's direction immediately.
+        for (int i = pathFollower.NextPointIndex; rotateBodyWithDirection && i < path.PointCount; i++)
+        {
+            Vector3 direction = path.GetPoint(i).position - transform.position;
+            if (direction.sqrMagnitude <= 0.000001f) continue;
+            FaceMovementDirection(direction);
+            break;
+        }
         pathFollower.Begin();
         
     }
@@ -127,6 +145,7 @@ public class EnemyController : MonoBehaviour
     private void OnEnable()
     {
         pathFollower.ReachedEnd += HandleReachedEnd;
+        pathFollower.Moved += FaceMovementDirection;
         health.Died += HandleDeath;
     }
 
@@ -134,6 +153,7 @@ public class EnemyController : MonoBehaviour
     {
         isInitialized = false;
         pathFollower.ReachedEnd -= HandleReachedEnd;
+        pathFollower.Moved -= FaceMovementDirection;
         health.Died -= HandleDeath;
         isAttackingCore = false;
         coreAttackTimeout = 0f;
@@ -150,11 +170,43 @@ public class EnemyController : MonoBehaviour
         {
             pathFollower.Stop();
             isAttackingCore = true;
-            coreAttackTimeout = 0.6f;
+            coreAttackTimeout = 0.75f;
             animator.SetTrigger(AttackTrigger);
             return;
         }
         TryExit(EnemyExitReason.Leaked);
+    }
+
+    // Contact damage keeps its own interval; this starts the visual anticipation before contact.
+    public void PlayContactAttackAnimation(Vector3 targetPosition)
+    {
+        if (!isInitialized || hasResolved || isAttackingCore) return;
+        FaceTowards(targetPosition);
+        if (animator != null && animator.isActiveAndEnabled && animator.runtimeAnimatorController != null)
+        {
+            animator.ResetTrigger(AttackTrigger);
+            animator.Play("Attack", 0, 0f);
+        }
+    }
+
+    public void FaceTowards(Vector3 worldPosition)
+    {
+        FaceMovementDirection(worldPosition - transform.position);
+    }
+
+    private void FaceMovementDirection(Vector3 direction)
+    {
+        if (rotateBodyWithDirection) TopDownFacing.FaceDirection(transform, bodyRenderer, direction);
+    }
+
+    public void ResumeMovementAnimation()
+    {
+        if (!isInitialized || hasResolved || isAttackingCore) return;
+        if (animator != null && animator.isActiveAndEnabled && animator.runtimeAnimatorController != null)
+        {
+            animator.ResetTrigger(AttackTrigger);
+            animator.Play("Move", 0, 0f);
+        }
     }
 
     private void Update()

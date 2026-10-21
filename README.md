@@ -1,57 +1,42 @@
 # 胞卫战：开放地图核心防御
 
-Unity 2D 免疫主题塔防学习项目，当前使用 Unity `2022.3.53f1c1`，优先完善 Windows PC 体验。
+> 2026-10-20 壁垒最终回归：EditMode **128/128**、PlayMode **33/33**，0 失败 / 跳过；八敌共同攻墙、自然破裂 / 出售放行、暂停保持和超过六次建造均通过。在隔离副本验证，未重打 APK。见 [壁垒验证](Docs/Testing/2026-10-20_FibrinBarrier.md)。
 
-当前主线已有三张开放地图、每张三轮防御，包含六塔基础能力和混合敌群，仍待完整试玩调节。当前策划案 **v0.13（2026-10-14）** 确认“有限改路、自由布置、通道内承伤”：一种专用塔以独立有限额度改变道路，普通细胞负责输出与免疫协作，在通道内接敌承伤。现有代码仍为全塔挡路，新规则尚未接入；完整方向、待定细节和实现状态见 [策划案](Docs/GAME_DESIGN_FRAMEWORK.md)。
+> 2026-10-20 本地源码更新：壁垒改为可破坏的原路拦截物，500 生命、30 ATP，拦截全部经过敌人；取消累计建造额度和改路拒建。旧改路代码保留但不启用、界面不展示。本次不重打 APK 或修改 TapTap；既有 0.1.2 包和远程草稿不包含此变更。见 [壁垒说明](Docs/FIBRIN_BARRIER.md)。
+
+> 当前本地上架候选：Android 0.1.2 / Code 3，57.01 MiB，安装名“胞卫战”、游戏图标和非Development构建。宣传图、3张截图与30秒运行演示已备好；TapTap草稿已保存并读回验证，待用户检查，未提审或发布。见 [检查页](Docs/Publishing/Review/2026-10-20/index.html)。
+
+Unity 2D 免疫主题塔防学习项目，使用 Unity 2022.3.53f1c1，桌面与 Android 横屏共用玩法。当前策划 v0.22（2026-10-20）：五关各三轮、承伤壁垒 / 有限接敌、六塔协作、购售 / 单次升级、暂停 / 倍速、共享设置与主菜单退出。
 
 ## 当前实现
 
-- 15 × 11 逻辑格、中央核心；第一关从左 / 右 / 上进入，第二关从底部双入口进入并带固定组织障碍。
-- 布置阶段选择现有三种塔；不能占用入口或核心，也不能封死入口到核心的道路。
-- 手动开始每轮，进攻期关闭建造；同入口敌人共用本轮路径。
-- 击杀获得 ATP，敌人抵达核心扣生命；前两轮结束发放轮间资源。
-- 第三轮清场且核心存活时胜利，核心生命归零时失败。
-- 手绘地图、格子提示、塔虚影和射程预览。
-- 已接入原 Victory / Defeat 预制体，提供重新挑战、返回主菜单，以及第一关胜利后进入第二关。
+- 主菜单五关选择，顺序挑战 OpenFieldPrototype → OpenFieldLevel02 → OpenFieldLevel03 → OpenFieldLevel04 → OpenFieldLevel05。
+- 15×11 格，核心与入口因关卡不同；纤维蛋白壁垒每座 30 ATP、500 生命，拦截全部经过敌人，不改路、不限累计次数。
+- Planning / Assault 均可建造和出售；路线由固定地形决定；壁垒破裂或出售后，敌人沿原路继续前进。旧改路基础保留但不启用、不显示。
+- 普通细胞 100 生命 / 容量 1，巨噬 250 / 2；超额敌人通行。近卫采样 → 抗体标记 → 增伤 / 巨噬吞噬，一跳共享。
+- 壁垒减速、酸区破壳、神经连锁 / 停顿，八种单位含三名 Boss 和有限召唤。
+- UGUI HUD、选塔、属性 / 二次确认出售、入口开波和胜负。实付退款 50% 向下取整，死亡不退款。
+- 本波出怪结束后可带残敌提前开下一波，轮间 ATP 一次发放；末波清场且核心存活胜利，归零失败优先。
+- 暂停 / 继续与 1x / 2x；暂停时禁止建造 / 出售 / 开波，HUD 保留，继续恢复原倍率。已接入用户 v2 暂停面板、独立标题与按钮换图；设置提供总音量、静音、桌面全屏 / 窗口与恢复默认，自动保存。声音 / 静音图标与拉条已接入，可点击喇叭切换静音。见 [暂停操作](Docs/PAUSE_PLAYBACK.md)、[设置](Docs/SETTINGS.md)。
 
-布置 HUD 仍为临时 IMGUI；主菜单开始按钮已改为进入 OpenFieldPrototype，正式 HUD 和暂停列入后续工作。旧 Prototype / Level02 场景继续保留。
+Android 横屏适配代码已接入；可用 Unity 菜单“胞卫战 → Android → 手机布局预览（运行前切换）”在电脑中检查布局。Android 构建组件已安装，当前提供 0.1.1 修复包；用户已反馈旧包手机残影，修复包待复测。见 [适配与源码学习](Docs/MOBILE_ANDROID.md)。
 
-## 运行与操作
+## 运行与阅读
 
-1. 用对应 Unity 版本打开工程，打开 [OpenFieldPrototype 场景](Assets/_Project/Scenes/OpenFieldPrototype.unity)。
-2. 也可先打开 MainMenu，从开始游戏按钮进入新场景。如果检出版本尚无该场景，使用菜单 `Cell Defense > Create Open Field Prototype Scene` 创建。
-3. 进入 Play；数字键 1 / 2 / 3 或顶部按钮选塔，鼠标指向格子预览，点击有效格建造。
-4. 按空格或 Start assault 开战；前两轮结束后再次布置，手动开始下一轮。
-5. 结算后 Again 重开，Return 返回主菜单；第一关胜利后按 Next 进入 [第二关场景](Assets/_Project/Scenes/OpenFieldLevel02.unity)。也可以直接打开第二关场景 Play。
+用对应 Unity 版本打开工程，进入 Assets/_Project/Scenes/MainMenu.unity 后 Play，点击开始游戏并选择关卡；也可直接打开开放场景。点击空位再选塔，悬停预览；点击已有塔查看 / 出售；入口按钮或 Space 开波，右键 / Esc 取消选择。
 
-## 技术结构
+完整操作见 [试玩说明](Docs/OPEN_FIELD_THREE_ROUND_PROTOTYPE.md)。先看 [当前状态](Docs/PROJECT_STATUS.md)、[策划](Docs/GAME_DESIGN_FRAMEWORK.md)、[架构](Docs/TECHNICAL_ARCHITECTURE.md)和[文档导航](Docs/README.md)。旧 Prototype / Level02 继续保留固定路线参考。
 
-- OpenFieldPrototypeController：当前输入、建造、回合、出敌和结果 UI 的集中编排。
-- OpenFieldGridModel：固定障碍、占用格、从核心开始的 BFS 距离场、封路检查和路径提取。
-- OpenFieldPresentation：背景、调试格、建造虚影与射程。
-- TowerController、特殊攻击行为、EnemyController、PathFollower 和 ProjectilePool：复用既有战斗模块。
-- ScriptableObject 保存塔、敌人和波次配置；EconomyService / LifeService 保存本局状态。
+## 验证边界与协作
 
-总控制器的职责拆分尚未实施。具体依赖、数据流、生命周期、BFS 分配与跨路线锁敌风险见 [技术架构](Docs/TECHNICAL_ARCHITECTURE.md)。
+主菜单设置与退出均已接通；五关近卫 / 巨噬 / 酸化 / 神经脉冲可升一次，按实付造价扣费，伤害 +50%，升级费计入出售退款。抗体 / 壁垒暂不升级。见 [操作说明](Docs/QUIT_AND_UPGRADE.md)。退出与升级阶段 EditMode 117/117、PlayMode 26/26；仅主菜单的 Windows 验证程序已实测退出，见 [报告](Docs/Testing/2026-10-19_QuitUpgrade.md)。全屏切换、五关完整通关、窗口比例 / 平衡及完整五关 Player 发布仍待验证，未执行 Profiler。
 
-## 验证与发布状态
+项目服务 Unity 初级 / 客户端求职。AI 协助普通业务与文档，开发者理解调用链、独立修改核心规则、调试与验证。约定的手写练习先说明实际变量与生命周期。不把 AI 产出当作个人已掌握，也不把候选系统或性能目标写成成果。
 
-用户已试玩并认可开放地图方向；第二关场景、固定障碍和 Next 接线于 2026-10-04 完成静态检查，跨场景和第二关完整 Play 验证仍待完成。本次没有运行构建，也没有取得新场景的完整性能数据。
+旧文档原文见 [历史快照](Docs/History/2026-10-18_before_sync/README.md)。图片交付到 Assets/_Project/Art/Sprites/细胞绘制/，按用途分目录，保留已有素材及 .meta。
 
-旧固定路线 v0.1.0 曾有独立 Windows 运行验证记录，该结果不覆盖当前开放地图版本。发布新版本前需重新验证主菜单进入新场景、结算、重开和返回的全流程。
+手机接入阶段验证：EditMode 126/126、PlayMode 30/30；另独立横屏 1/1。见 [报告](Docs/Testing/2026-10-19_MobileAndroid.md)。
 
-## AI 协作与学习
+已修复桌面固定 15:11 导致的细胞 / 射程拉伸，按实际视口等比完整显示。该阶段 EditMode 127/127、PlayMode 31/31，见 [报告](Docs/Testing/2026-10-19_ViewportAspect.md)。
 
-AI 可完成普通业务样板、接线、文档和排错。开发者负责理解与独立修改核心规则、Unity 编辑器操作、运行验证和面试解释；明确选为手写练习的核心任务先说明变量与生命周期再动手。
-
-不把 AI 实现或计划中的功能直接当作个人已掌握能力，也不把未测量的性能收益写进简历。
-
-## 文档入口
-
-- [文档导航](Docs/README.md)
-- [游戏策划](Docs/GAME_DESIGN_FRAMEWORK.md)
-- [技术架构](Docs/TECHNICAL_ARCHITECTURE.md)
-- [三轮试玩说明](Docs/OPEN_FIELD_THREE_ROUND_PROTOTYPE.md)
-- [学习路线](Docs/UNITY_JOB_LEARNING_ROADMAP.md)
-- [性能专题](Docs/PERFORMANCE_MANY_ENEMIES.md)
-- [美术规范](Docs/ART_DIRECTION.md)
+Android 0.1.1 试玩修复包已生成：Builds/Android/CellDefense-0.1.1.apk（CellDefense.apk 同步更新），约 70 MB；修复地图外旧 UI 残影，支持覆盖安装。该阶段 EditMode 127/127、PlayMode 32/32，签名 / 完整性验证通过；待用户手机复测。见 [清屏修复](Docs/MOBILE_UI_RESIDUE_FIX.md)和[打包说明](Docs/ANDROID_APK_BUILD.md)。

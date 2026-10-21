@@ -10,6 +10,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
     private const float Gap = 8f;
     private RectTransform canvasRect;
     private RectTransform panelRect;
+    private Func<Rect> hudScreenRect;
     private Camera gameplayCamera;
     private TowerDefinition[] definitions;
     private Button[] buttons;
@@ -22,7 +23,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
 
     public void Initialize(TowerDefinition[] choices, TMP_FontAsset font, Camera camera,
         Func<int, bool> isAvailable, Action<int> onChoose, Action<int> onPreview, Action onCancel,
-        Func<int, string> getRejectionReason = null)
+        Func<int, string> getRejectionReason = null, Func<Rect> getHudScreenRect = null)
     {
         if (choices == null || choices.Length == 0 || font == null || camera == null ||
             isAvailable == null || onChoose == null || onPreview == null || onCancel == null)
@@ -32,6 +33,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         gameplayCamera = camera;
         canBuild = isAvailable;
         rejectionReason = getRejectionReason;
+        hudScreenRect = getHudScreenRect;
         GameObject canvasObject = new GameObject("Build Choices Canvas", typeof(RectTransform),
             typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         canvasObject.layer = LayerMask.NameToLayer("UI");
@@ -43,6 +45,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1280f, 720f);
         scaler.matchWidthOrHeight = 0.5f;
+        MobileDisplay.ConfigureCanvas(canvas);
         canvasRect = canvasObject.GetComponent<RectTransform>();
 
         GameObject panel = CreateUIObject("Tower Choices", canvasRect, typeof(Image));
@@ -100,8 +103,8 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         cancel.targetGraphic = cancelBackground;
         cancel.onClick.AddListener(() => onCancel());
         SetRect(cancel.GetComponent<RectTransform>(), new Vector2(0.5f, 0f),
-            new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 8f), new Vector2(152f, 28f));
-        TextMeshProUGUI cancelLabel = CreateLabel(cancelObject.transform, font, "取消（右键 / Esc）", 14f);
+            new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 8f), new Vector2(180f, MobileDisplay.IsActive ? 48f : 28f));
+        TextMeshProUGUI cancelLabel = CreateLabel(cancelObject.transform, font, MobileDisplay.IsActive ? "取消" : "取消（右键 / Esc）", 14f);
         cancelLabel.rectTransform.anchorMin = Vector2.zero;
         cancelLabel.rectTransform.anchorMax = Vector2.one;
         cancelLabel.rectTransform.offsetMin = cancelLabel.rectTransform.offsetMax = Vector2.zero;
@@ -144,12 +147,12 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
             if (labels[i].text != text) labels[i].text = text;
         }
 
-        Rect bounds = canvasRect.rect;
+        Rect bounds = MobileDisplay.IsActive ? MobileDisplay.LocalSafeArea(canvasRect) : canvasRect.rect;
         int columns = Mathf.Clamp(Mathf.FloorToInt((bounds.width - 32f) / (CardSize + Gap)), 1, 3);
         columns = Mathf.Min(columns, buttons.Length);
         int rows = (buttons.Length + columns - 1) / columns;
         Vector2 size = new Vector2(16f + columns * CardSize + (columns - 1) * Gap,
-            80f + rows * CardSize + (rows - 1) * Gap);
+            (MobileDisplay.IsActive ? 100f : 80f) + rows * CardSize + (rows - 1) * Gap);
         panelRect.sizeDelta = size;
         for (int i = 0; i < buttons.Length; i++)
         {
@@ -163,8 +166,14 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, null, out Vector2 local);
         float halfWidth = size.x * 0.5f;
         float halfHeight = size.y * 0.5f;
-        // Keep the panel beneath the compact planning toolbar at the top of the screen.
         float topLimit = bounds.yMax - 112f / canvasRect.GetComponent<Canvas>().scaleFactor;
+        if (hudScreenRect != null)
+        {
+            Rect hud = hudScreenRect();
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect,
+                new Vector2(hud.xMin, hud.yMin - 8f), null, out Vector2 bottom);
+            topLimit = bottom.y;
+        }
         float preferredY = local.y + halfHeight + 48f;
         if (preferredY + halfHeight > topLimit)
             preferredY = local.y - halfHeight - 48f;
@@ -182,7 +191,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         TowerDefinition definition = definitions[index];
         if (definition == null) return "未配置";
         string reason = rejectionReason != null ? rejectionReason(index) : string.Empty;
-        string role = definition.BlocksEnemyRoute ? "改路 · 消耗壁垒额度" :
+        string role = definition.InterceptsAllEnemies ? "承伤壁垒 · 拦截全部" :
             $"可承伤 · 拦截 {definition.InterceptCapacity}";
         return $"{definition.DisplayName}\n{definition.BuildCost} ATP\n" +
             (string.IsNullOrEmpty(reason) ? role : reason);

@@ -39,15 +39,19 @@ public static class OpenFieldPrototypeSceneCreator
             : null;
         Sprite mapArtwork = AssetDatabase.LoadAssetAtPath<Sprite>(
             "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/01_守住伤口.png");
+        Sprite waveButtonArtwork = AssetDatabase.LoadAssetAtPath<Sprite>(
+            "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/下一波按钮_v1/下一波_圆形细胞按钮.png");
         TMP_FontAsset buildMenuFont = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(
             "Assets/_Project/Fonts/FZFS_GBK SDF.asset");
         GameObject victoryPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(
             "Assets/_Project/Prefabs/Menu/Victory.prefab");
         GameObject defeatPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(
             "Assets/_Project/Prefabs/Menu/Defeat.prefab");
+        GameObject hudPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(
+            "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab");
         if (waves == null || waves.WaveCount != 3 || guard == null || antibody == null ||
             phagocyte == null || fibrin == null || projectile == null || victoryPrefab == null || defeatPrefab == null ||
-            buildMenuFont == null || mapArtwork == null)
+            buildMenuFont == null || mapArtwork == null || waveButtonArtwork == null || hudPrefab == null)
         {
             EditorUtility.DisplayDialog("Open Field Prototype",
                 "A wave sequence, tower, projectile, map, result UI prefab, or build menu font is missing.", "OK");
@@ -64,7 +68,7 @@ public static class OpenFieldPrototypeSceneCreator
         cameraObject.transform.position = new Vector3(0f, 0f, -10f);
         Camera camera = cameraObject.AddComponent<Camera>();
         camera.orthographic = true;
-        camera.orthographicSize = 9f;
+        camera.orthographicSize = 5.5f;
         camera.clearFlags = CameraClearFlags.SolidColor;
         camera.backgroundColor = new Color(0.045f, 0.08f, 0.11f, 1f);
         cameraObject.AddComponent<AudioListener>();
@@ -77,6 +81,7 @@ public static class OpenFieldPrototypeSceneCreator
 
         GameObject victoryPanel = (GameObject)PrefabUtility.InstantiatePrefab(victoryPrefab, scene);
         GameObject defeatPanel = (GameObject)PrefabUtility.InstantiatePrefab(defeatPrefab, scene);
+        GameObject battleHud = (GameObject)PrefabUtility.InstantiatePrefab(hudPrefab, scene);
         victoryPanel.SetActive(false);
         defeatPanel.SetActive(false);
         new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
@@ -91,7 +96,10 @@ public static class OpenFieldPrototypeSceneCreator
         controllerSerialized.FindProperty("projectilePool").objectReferenceValue = pool;
         controllerSerialized.FindProperty("gameplayCamera").objectReferenceValue = camera;
         controllerSerialized.FindProperty("mapArtwork").objectReferenceValue = mapArtwork;
+        controllerSerialized.FindProperty("waveButtonArtwork").objectReferenceValue = waveButtonArtwork;
         controllerSerialized.FindProperty("buildMenuFont").objectReferenceValue = buildMenuFont;
+        controllerSerialized.FindProperty("sellRefundPercent").intValue = TowerEconomyRules.DefaultSellRefundPercent;
+        controllerSerialized.FindProperty("battleHud").objectReferenceValue = battleHud.GetComponent<OpenFieldBattleHud>();
         controllerSerialized.FindProperty("victoryPanel").objectReferenceValue = victoryPanel;
         controllerSerialized.FindProperty("defeatPanel").objectReferenceValue = defeatPanel;
         controllerSerialized.FindProperty("nextSceneName").stringValue = "OpenFieldLevel02";

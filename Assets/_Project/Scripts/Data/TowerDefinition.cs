@@ -42,10 +42,15 @@ public class TowerDefinition : ScriptableObject
     public float Damage => damage;
     public TargetingMode TargetingMode => targetingMode;
     [Header("Open field defense")]
-    [SerializeField] private bool blocksEnemyRoute;
+    // Reserved for a future routing tower. Current build menus never enable routing.
+    [SerializeField, HideInInspector] private bool blocksEnemyRoute;
+    public bool BlocksEnemyRoute => blocksEnemyRoute;
+    [SerializeField]
+    [Tooltip("Stops every enemy crossing this cell until the defender is destroyed; does not change routes.")]
+    private bool interceptsAllEnemies;
     [SerializeField, Min(1f)] private float maxHealth = 100f;
     [SerializeField, Min(1)] private int interceptCapacity = 1;
-    public bool BlocksEnemyRoute => blocksEnemyRoute;
+    public bool InterceptsAllEnemies => interceptsAllEnemies;
     public float MaxHealth => maxHealth;
     public int InterceptCapacity => interceptCapacity;
 }

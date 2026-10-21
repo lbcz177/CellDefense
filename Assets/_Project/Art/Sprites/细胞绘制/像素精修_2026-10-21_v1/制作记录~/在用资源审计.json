@@ -1,0 +1,2914 @@
+[
+  {
+    "path": "Assets/_Project/Art/Sprites/exec-9631a0fe-8a83-422f-a1ba-fcce2b2f004e.png",
+    "size": [
+      1672,
+      941
+    ],
+    "partialAlpha": 0,
+    "visible": 1573352,
+    "bbox": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "colors": 118510,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "85adf6c51fdf334489e5873e6e4dbbd5",
+    "sha256": "3055857df71f57a77246e11ec0f6d7c266b61900f114a143a3044e9cfcb561b9",
+    "parents": [
+      "Assets/_Project/Scenes/Prototype.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/level2.png",
+    "size": [
+      1672,
+      941
+    ],
+    "partialAlpha": 0,
+    "visible": 1573352,
+    "bbox": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "colors": 155505,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "58d2f5debb617614a9770866ffd52f58",
+    "sha256": "01c53a0d0ff33dca6aef9dce1242bf68cea39c9252847eff1d2ef44e8c2d8c9f",
+    "parents": [
+      "Assets/_Project/Scenes/Level02.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/02_塔图标/004_中性粒细胞哨兵_图标.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 406544,
+    "visible": 408497,
+    "bbox": [
+      41,
+      0,
+      1230,
+      1254
+    ],
+    "colors": 28554,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "5aeb6310f2f544e439ada40406f02312",
+    "sha256": "ae32232735d976aa5656960f94aae6cc6354b477e975cc01fdab9b376716f400",
+    "parents": [
+      "Assets/_Project/Data/Towers/TowerDefinition.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/02_塔图标/008_纤维蛋白壁垒_图标.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 471875,
+    "visible": 474469,
+    "bbox": [
+      49,
+      47,
+      1170,
+      1214
+    ],
+    "colors": 27974,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "87237ff5288c0ee428d23ae87253f90d",
+    "sha256": "080e3786c01ae1971d65fac9879a2fd293fa9cd0adfa95cc8965e15da0c13bca",
+    "parents": [
+      "Assets/_Project/Data/Towers/FibrinTowerDefinition.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/02_塔图标/012_溶酶体酸化炮_图标.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 388360,
+    "visible": 391457,
+    "bbox": [
+      0,
+      53,
+      1200,
+      1196
+    ],
+    "colors": 50524,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "31e14838d94f3df4da3ee91cc27391bd",
+    "sha256": "fe3ce370a67cc9bb47f972e6944f765bc3cc6921ed5d2d574deeaf9176638aa4",
+    "parents": [
+      "Assets/_Project/Data/Towers/AcidTowerDefinition.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/02_塔图标/016_神经脉冲刺突_图标.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 211785,
+    "visible": 213966,
+    "bbox": [
+      97,
+      53,
+      1192,
+      1254
+    ],
+    "colors": 22955,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "0989f11116d547640be253e2d95778e9",
+    "sha256": "aab7ccc8908c17990155216bd85830411a84ca9649e209347dd5be6d3c7bbc7b",
+    "parents": [
+      "Assets/_Project/Data/Towers/NeuralPulseTowerDefinition.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/02_塔图标/020_巨噬细胞清道夫_图标.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 438691,
+    "visible": 441658,
+    "bbox": [
+      208,
+      53,
+      1198,
+      1254
+    ],
+    "colors": 26824,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "a06b8342318df514ab56a4e939eb9a2f",
+    "sha256": "b84c7675f564a032a137b7ff56cc8871ac40f92fb7fa8ea60041dd031a2c9bea",
+    "parents": [
+      "Assets/_Project/Data/Towers/TowerDefinition 1.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/02_塔图标/024_抗体B细胞中继_图标.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 291201,
+    "visible": 292913,
+    "bbox": [
+      65,
+      53,
+      1170,
+      1180
+    ],
+    "colors": 26502,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "27af5d86e210a0544b8d6c71a4347a73",
+    "sha256": "6d1d64603b25aeef470a5998587333035ea54efe15668e52c898d2f41fe2904e",
+    "parents": [
+      "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/03_普通敌人与状态/027_葡萄球菌群_生物膜软适应.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 449559,
+    "visible": 450717,
+    "bbox": [
+      97,
+      47,
+      1202,
+      1228
+    ],
+    "colors": 115084,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "fd856e36dee13ab4a97f64b859ed1456",
+    "sha256": "0abe6b43120f35ea16d427a8e3a5a599bd85e706626f5780ddfac4e5a8d8a736",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/03_普通敌人与状态/031_鞭毛双球菌_被凝血隔离状态.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 338309,
+    "visible": 340966,
+    "bbox": [
+      61,
+      49,
+      1218,
+      1237
+    ],
+    "colors": 74652,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "fd49e48650310a04da7f8cb78b3c3d2d",
+    "sha256": "4f0cfaa17d6a328b32eac2644ac3837445f0f36996636a3cb5930b5b00bf0eb2",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/Flagellate.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/03_普通敌人与状态/034_重甲芽孢杆菌_破膜状态.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 506232,
+    "visible": 508415,
+    "bbox": [
+      65,
+      53,
+      1194,
+      1254
+    ],
+    "colors": 63732,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "2f5842684c1fba843a6ed2b6a3c64323",
+    "sha256": "c2ad4005c19c7286dad20a149bea67b96fc88238e4ae2b1dd14fc310e68edf96",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/03_普通敌人与状态/035_重甲芽孢杆菌_吞噬阈值状态.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 387825,
+    "visible": 389898,
+    "bbox": [
+      49,
+      57,
+      1198,
+      1238
+    ],
+    "colors": 71237,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "04ef34473d701aa43b2b3e422ade6cb0",
+    "sha256": "ac75fe86a6f6c339418f08d81b0ddb0f3032e84ee6f5ceed83a73252c1eba6ef",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/038_变异超级真菌_阶段一：休眠侵入.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 780752,
+    "visible": 782669,
+    "bbox": [
+      0,
+      3,
+      1236,
+      1254
+    ],
+    "colors": 120139,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "64c656b8dcc01d84a93094d64d83b724",
+    "sha256": "82c248512e4ffaf8dc3c8983a61619c57e548b05328a661cec1544c973ed43f2",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/039_变异超级真菌_阶段二：孢子播散.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 591376,
+    "visible": 593353,
+    "bbox": [
+      0,
+      20,
+      1200,
+      1254
+    ],
+    "colors": 164241,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "0d438417cea10944da16cf1260424165",
+    "sha256": "c5c575dfd83d965b2c952b926b1bfbf8321e329c73da2efc251609e6760f885d",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/040_变异超级真菌_阶段三：菌丝干扰.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 750919,
+    "visible": 752540,
+    "bbox": [
+      0,
+      5,
+      1222,
+      1254
+    ],
+    "colors": 200634,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "93809e90ac944f04aa5cbb79642719ca",
+    "sha256": "2ee29aea928f9e4d4b8251ee7ddbcc91082e875eb18fbc34cf42bbfb4dfe187f",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/042_细菌生物膜核心_基础.png",
+    "size": [
+      1374,
+      1145
+    ],
+    "partialAlpha": 750500,
+    "visible": 751832,
+    "bbox": [
+      0,
+      39,
+      1326,
+      1145
+    ],
+    "colors": 114923,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "a7d0015f0b4e11848890577724419498",
+    "sha256": "5a1648f9d66d6d8960fb0b0dd34c4a8ca5b09d190d3880a0fb0a235911086815",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/043_细菌生物膜核心_护盾脉冲状态.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 713862,
+    "visible": 716688,
+    "bbox": [
+      0,
+      39,
+      1238,
+      1254
+    ],
+    "colors": 147514,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "4f2b13515b9d4564eb90fa8d406c0abe",
+    "sha256": "3efcd9d8d4926f757a3cb4f6f818512872c2173d45a7c157313f4abf2f880a52",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/044_细菌生物膜核心_破膜状态.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 727826,
+    "visible": 728975,
+    "bbox": [
+      0,
+      21,
+      1238,
+      1254
+    ],
+    "colors": 138327,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "d47528868e676804a9abea0dd0586f24",
+    "sha256": "099ecd4c308edaea4551a18d7d5ebbbc961262dc0ff358fbc42be47973ba3404",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/046_病毒母体_复制阶段.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 646356,
+    "visible": 649762,
+    "bbox": [
+      0,
+      21,
+      1234,
+      1254
+    ],
+    "colors": 187844,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "aa2e3892bf59dac40a4d817f227c0a21",
+    "sha256": "c618d41967e2c6f01addb53245b42ae80c83007a1f6639c6b0459b3ebf007ffe",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/047_病毒母体_变异阶段.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 673639,
+    "visible": 675693,
+    "bbox": [
+      0,
+      33,
+      1206,
+      1254
+    ],
+    "colors": 229473,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "291f0a319e0f7dd43be32ac8d2033ff9",
+    "sha256": "14a967b7d501c81b81f8ba3d006f40261c499e53d9072231fd26a3c43820fede",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/05_Boss与阶段/048_病毒母体_劫持阶段.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 616458,
+    "visible": 618652,
+    "bbox": [
+      96,
+      21,
+      1222,
+      1204
+    ],
+    "colors": 200345,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "f276662909817bd4b9d1e0954af41f62",
+    "sha256": "5f8825f55c64c982d0ad13a1c481ccfabc56ff91c43216c499a6d66f6dcdcb61",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/08_子弹与特效/089_免疫记忆脉冲.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 339410,
+    "visible": 341887,
+    "bbox": [
+      27,
+      21,
+      1200,
+      1222
+    ],
+    "colors": 103220,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "281425ecca8112440ba86731b7ea0a9a",
+    "sha256": "5d4aaa1052263dcd806b38ef2ae5e3fa11cb06e7887720c72322cba001ba08ef",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/2026-09-28_完整补图/08_子弹与特效/090_抗体标记环.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 327365,
+    "visible": 331507,
+    "bbox": [
+      57,
+      53,
+      1202,
+      1222
+    ],
+    "colors": 53893,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "26b34f399643cd04e9a1ca8509bb456b",
+    "sha256": "1738e3d196cc88bd6fcf9d1ee895dfa962af5aa747f17182e3753176bf24a2bb",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/Enemy.prefab",
+      "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+      "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+      "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+      "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+      "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+      "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+      "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+      "Assets/_Project/Prefabs/Enemies/VirusClone.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/主界面/胞卫战_主界面_v1.png",
+    "size": [
+      1672,
+      941
+    ],
+    "partialAlpha": 0,
+    "visible": 1573352,
+    "bbox": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "colors": 365269,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "12db36b7114085d418178f8f0f368bbd",
+    "sha256": "962404dba4e161e5d3192b736bb7192beec24b1415f69fa37f24351b10558e50",
+    "parents": [
+      "Assets/_Project/Scenes/MainMenu.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/01_守住伤口.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "partialAlpha": 0,
+    "visible": 1572864,
+    "bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "colors": 103473,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "bcf6adb5ecb84adea15ba0d3db2ae342",
+    "sha256": "516a4a180348481d83bfff955c5a6296144adae67fa89bb99a2b3ba316183aa9",
+    "parents": [
+      "Assets/_Project/Scenes/MainMenu.unity",
+      "Assets/_Project/Scenes/OpenFieldPrototype.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/02_集中清除.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "partialAlpha": 0,
+    "visible": 1572864,
+    "bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "colors": 121839,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "4606d8df18684723a2d08ebbaa28f6ca",
+    "sha256": "5b8b0e10fbc14ce67066b85559daf7a7643ca6c613dd4be6083030a559e09e52",
+    "parents": [
+      "Assets/_Project/Scenes/MainMenu.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel02.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/03_认出敌人.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "partialAlpha": 0,
+    "visible": 1572864,
+    "bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "colors": 128888,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "75ae2d16cd134c63b87bde18c0fdaafa",
+    "sha256": "2c5fa2a95d60f5add223ce98547873f7281f2cdcb8d558a2c6b4273abde71738",
+    "parents": [
+      "Assets/_Project/Scenes/MainMenu.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel03.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/04_两侧告急.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "partialAlpha": 0,
+    "visible": 1572864,
+    "bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "colors": 111714,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "babd037c4d22459c80ab50903e658001",
+    "sha256": "7660267ad83813a83c9c178179436a9f3a9a1523b990ea231a9d7c80dfc28315",
+    "parents": [
+      "Assets/_Project/Scenes/MainMenu.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel04.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/05_感染加剧.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "partialAlpha": 0,
+    "visible": 1572864,
+    "bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "colors": 139507,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "f27cb04aae87434198bb51ab3a287bb8",
+    "sha256": "72e92f31816fbbec467ab3cb0df13cda88a0feefa74bfaf8b27d3976ff3c67d3",
+    "parents": [
+      "Assets/_Project/Scenes/MainMenu.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel05.unity"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/关卡动画_v1/葡萄球菌群攻击.png",
+    "size": [
+      512,
+      256
+    ],
+    "partialAlpha": 31336,
+    "visible": 31411,
+    "bbox": [
+      26,
+      35,
+      503,
+      238
+    ],
+    "colors": 14183,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "96",
+    "guid": "ba7e97457d7eadf4790c41d4756071ad",
+    "sha256": "612814544c74d0f783d87bae6a2e67c5ea4eeceb7e8994f262495d7c52e8cf7e",
+    "parents": [
+      "Assets/_Project/Art/Animations/CombatSample_v1/Staph_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/关卡动画_v1/葡萄球菌群移动.png",
+    "size": [
+      512,
+      256
+    ],
+    "partialAlpha": 35581,
+    "visible": 35651,
+    "bbox": [
+      25,
+      29,
+      491,
+      239
+    ],
+    "colors": 17786,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "96",
+    "guid": "ac5f9ea3d3a888d4ebd748c253606a76",
+    "sha256": "1deecc7e014135fec4564f0355e48130e7083528ef7f87d00e4b1a9e0ad096dd",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/Enemy.prefab",
+      "Assets/_Project/Art/Animations/CombatSample_v1/Staph_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/01_neutrophil_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 36046,
+    "bbox": [
+      12,
+      24,
+      618,
+      240
+    ],
+    "colors": 20491,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "81.111115",
+    "guid": "b08ca7147c9a54a4ab5f63f802757f25",
+    "sha256": "6226e8a4d7b6751b5e3774ebac7eaeb04642eb81b569d5faa73ef25f7ab96b2c",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/Tower.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/01_neutrophil_Idle.anim",
+      "Assets/_Project/Art/Animations/TopDown10_v3/01_neutrophil_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/02_fibrin_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 43585,
+    "bbox": [
+      11,
+      30,
+      620,
+      242
+    ],
+    "colors": 20940,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "7.81172",
+    "guid": "007abc6e894d3984a8741ea4fecf21ba",
+    "sha256": "8dd390c9c9021dcbea70ebed06eba8c16feff51b54a136e77ccaba959b0a881c",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/FibrinTower.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/02_fibrin_Idle.anim",
+      "Assets/_Project/Art/Animations/TopDown10_v3/02_fibrin_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/03_lysosome_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 56473,
+    "bbox": [
+      13,
+      10,
+      624,
+      241
+    ],
+    "colors": 31182,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "8.741687",
+    "guid": "c15dfe664771b484ea5163f90f87d349",
+    "sha256": "7e13225e78ad4fc7d271f584f0ced16f780ed06f8f9d7a4ca5dc388b8ccec8cc",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/AcidTower.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/03_lysosome_Attack.anim",
+      "Assets/_Project/Art/Animations/TopDown10_v3/03_lysosome_Idle.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/04_neural_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 27631,
+    "bbox": [
+      12,
+      14,
+      626,
+      241
+    ],
+    "colors": 19192,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "7.53273",
+    "guid": "f98ca8e8192b3a349bb7fdbd4893d1ab",
+    "sha256": "b82e5544fc3657f450704dfeae385c7d7a9f08a2448b0640b37c65a9c4bb2aae",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/NeuralPulseTower.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/04_neural_Idle.anim",
+      "Assets/_Project/Art/Animations/TopDown10_v3/04_neural_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/05_phagocyte_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 45048,
+    "bbox": [
+      12,
+      12,
+      621,
+      231
+    ],
+    "colors": 15827,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "102.22222",
+    "guid": "3a61857a3319ec246986e117fc8e2a2e",
+    "sha256": "e8536b4d06119bb813edd5b6e40289d718e01d55b51e6e4878eed8c3f2f36c9d",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/Tower 1.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/05_phagocyte_Attack.anim",
+      "Assets/_Project/Art/Animations/TopDown10_v3/05_phagocyte_Idle.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/06_antibody_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 38876,
+    "bbox": [
+      14,
+      12,
+      627,
+      242
+    ],
+    "colors": 20680,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "90",
+    "guid": "735b6e48c93dda64cba39b7cfa453d9e",
+    "sha256": "6e37a68e98a2faa6407de7f60ba1ba373c95c6e5c685c7b79e2f984564108f94",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/InterceptorTower.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/06_antibody_Idle.anim",
+      "Assets/_Project/Art/Animations/TopDown10_v3/06_antibody_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/07_staph_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 42288,
+    "bbox": [
+      24,
+      23,
+      616,
+      232
+    ],
+    "colors": 19573,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "53.1",
+    "guid": "3968bf27782ded9409085b2454946566",
+    "sha256": "8d2dc19a4f1c17c5083639cee8fdf6421554db16564b7d935ba5dbbe98484139",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/07_staph_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/07_staph_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 41865,
+    "bbox": [
+      26,
+      23,
+      614,
+      231
+    ],
+    "colors": 19255,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "53.1",
+    "guid": "447855e4836f679468be0f0a20453689",
+    "sha256": "aeab22679078d1168cf172599e74410c9d31bc91ca084848fe103e1e5e62c90f",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/Staphylococcus.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/07_staph_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/08_flagellate_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 12000,
+    "bbox": [
+      13,
+      40,
+      603,
+      206
+    ],
+    "colors": 10579,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "5.799212",
+    "guid": "8acdb85a8e7a7c848a26759cc2b255be",
+    "sha256": "f4ef9c91b2b4d5fa291923bba17f39c301b98bb525bb9989b5ab1b6a0ef07886",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/08_flagellate_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/08_flagellate_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 12199,
+    "bbox": [
+      11,
+      41,
+      600,
+      206
+    ],
+    "colors": 10799,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "5.799212",
+    "guid": "fdd87bfe36f9fb34a88cff5c89b4458c",
+    "sha256": "e0761d3a48174982b6c75edaaa4450b1706862ec3f431b4408439fec58b9cf45",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/Flagellate.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/08_flagellate_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/09_bacillus_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 21884,
+    "bbox": [
+      23,
+      45,
+      632,
+      209
+    ],
+    "colors": 17810,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "7.1549225",
+    "guid": "29caa8f7076b6a746aed21005f1dd68f",
+    "sha256": "6a63519e096d4b816b508ffe67455dc3d15b94adc73a7116b901141a1a8b780d",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/09_bacillus_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/09_bacillus_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 22396,
+    "bbox": [
+      24,
+      46,
+      622,
+      210
+    ],
+    "colors": 17915,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "7.1549225",
+    "guid": "3fa9b7ebe70bed34691c11d7f5c9a72d",
+    "sha256": "a98f184c721e4af7dd4bd92efc13c001c686a79236b72edf71d199c7d008be4f",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/ArmoredBacillus.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/09_bacillus_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/10_fungal_spore_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 31930,
+    "bbox": [
+      19,
+      22,
+      626,
+      235
+    ],
+    "colors": 23349,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "5.2170134",
+    "guid": "cf6501da91eeb324ca396b8a92ef484c",
+    "sha256": "a622b79cbb63bd568f2e7f8e6697b9b54106c43756d58c92fc54881f465129f2",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/10_fungal_spore_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/10_fungal_spore_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 31873,
+    "bbox": [
+      19,
+      20,
+      621,
+      234
+    ],
+    "colors": 23510,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "5.2170134",
+    "guid": "89720d6a5acea1b4299d909e3fc87e74",
+    "sha256": "d653bdb41d8e6e328aab0217a80c96649c80d2de9252de4e475f610c60375dfa",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/FungalSpore.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/10_fungal_spore_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/11_virus_clone_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 40982,
+    "bbox": [
+      16,
+      23,
+      632,
+      232
+    ],
+    "colors": 30773,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "7.8947",
+    "guid": "4ac6a544d51f66143bdcb9251b551700",
+    "sha256": "4ed7aa9357fde8f8d82b4643ae06f344d8de9156899985f30c74d54afd3f4ebe",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/11_virus_clone_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/11_virus_clone_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 42183,
+    "bbox": [
+      14,
+      18,
+      626,
+      233
+    ],
+    "colors": 30794,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "7.8947",
+    "guid": "e327de0f797be6b4d9cc7b951bdf2977",
+    "sha256": "aca73b55da0c8b79628bf9d0d168f718f7ef783765eafba4fcb372bfcf0784cb",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/VirusClone.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/11_virus_clone_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/12_fungal_boss_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 42580,
+    "bbox": [
+      17,
+      19,
+      632,
+      235
+    ],
+    "colors": 34928,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "9.539829",
+    "guid": "1704af512f3d66443b20c5f5a4e43808",
+    "sha256": "ede51bffff3927a9941252aa1ecf49f9f78da24028435f113aaf79b15c6ed2fe",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/12_fungal_boss_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/12_fungal_boss_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 42382,
+    "bbox": [
+      19,
+      16,
+      625,
+      236
+    ],
+    "colors": 34706,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "9.539829",
+    "guid": "ef8521e333df3224a81c0afc1e47be16",
+    "sha256": "8573836f86e8d69f1a3850bf7b7e55a25d6867bc9c4b4b5b1b671c779d867f99",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/FungalBoss.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/12_fungal_boss_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/13_membrane_boss_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 56551,
+    "bbox": [
+      15,
+      24,
+      631,
+      233
+    ],
+    "colors": 47619,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "8.798293",
+    "guid": "772aba204db1dbe4088d910386b7e7bb",
+    "sha256": "03fddf3b620c513bd5a1f9ae6f006fbca8b1bdb5a7c253d95699648a53b8d0f9",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/13_membrane_boss_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/13_membrane_boss_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 57083,
+    "bbox": [
+      16,
+      22,
+      625,
+      234
+    ],
+    "colors": 48171,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "8.798293",
+    "guid": "bff831b9acfb1784cb6d5b058ffb3d86",
+    "sha256": "227e9a552247f00dadf67b10077706ce4041a2c3b56dca446da81d7dee98c8d6",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/MembraneBoss.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/13_membrane_boss_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/14_virus_boss_attack/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 41464,
+    "bbox": [
+      11,
+      24,
+      624,
+      231
+    ],
+    "colors": 35496,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "9.33899",
+    "guid": "c8b979ecbae2efa40b7cf71028d327f7",
+    "sha256": "2f5724d45a1db827928dbad3b3613d5021b6eeb38b9cab4bcf7b4946c3dcc37a",
+    "parents": [
+      "Assets/_Project/Art/Animations/TopDown10_v3/14_virus_boss_Attack.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/正俯视10帧_v3/14_virus_boss_move/animation_sheet.png",
+    "size": [
+      640,
+      256
+    ],
+    "partialAlpha": 0,
+    "visible": 40268,
+    "bbox": [
+      14,
+      24,
+      625,
+      231
+    ],
+    "colors": 34801,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "2",
+    "ppu": "9.33899",
+    "guid": "e7959c4ba3afb5e4c880aeaa8cc4ff52",
+    "sha256": "ee337ef99f577eaf420a99ab2d531204bdc206181012ad09da34cc1786e74760",
+    "parents": [
+      "Assets/_Project/Prefabs/Enemies/VirusBoss.prefab",
+      "Assets/_Project/Art/Animations/TopDown10_v3/14_virus_boss_Move.anim"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/帧动画/运行样例_v1/单体颗粒.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "partialAlpha": 162484,
+    "visible": 162484,
+    "bbox": [
+      380,
+      38,
+      1378,
+      944
+    ],
+    "colors": 43879,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "58933a8c474528b4db6538053b658b9b",
+    "sha256": "c7d28b6eb41f5cbd949333a2b771586eadb5d9e31ac0928cc0cec5dcee03a9f8",
+    "parents": [
+      "Assets/_Project/Prefabs/Towers/Tower.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/ATP字样.png",
+    "size": [
+      192,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 7502,
+    "bbox": [
+      12,
+      8,
+      180,
+      72
+    ],
+    "colors": 1065,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "bb9f63ed5a7642fc80a36386321c36eb",
+    "sha256": "4f740e42653b59c16d54b97bdaba70b1335307965b504abfc05a65a53ff71cd2",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/ATP标识.png",
+    "size": [
+      128,
+      128
+    ],
+    "partialAlpha": 0,
+    "visible": 4282,
+    "bbox": [
+      8,
+      14,
+      120,
+      120
+    ],
+    "colors": 1064,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "8293b7876a7f4647bf0f1bedee92cb4d",
+    "sha256": "519e0710c499b45bc27e683251df12783786b5ac41152842d827418d7099e6bb",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/0.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2795,
+    "bbox": [
+      6,
+      8,
+      57,
+      72
+    ],
+    "colors": 995,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "1c23d786c2db4aadb3316e06cef612d5",
+    "sha256": "12970465717ed609910103bb6c6d39ffd1c088e327622ba78b589774c4a9fa17",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/1.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2071,
+    "bbox": [
+      7,
+      8,
+      56,
+      72
+    ],
+    "colors": 822,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "83f56344668e4165a53d59dd16e8c5c2",
+    "sha256": "f5eb95beba5839527e4b601f0402d44d9d639f209d0a051f95a84dfba1e14311",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/2.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2754,
+    "bbox": [
+      7,
+      8,
+      57,
+      72
+    ],
+    "colors": 1041,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "4434e361b5094c2c97a24921b9e10c6c",
+    "sha256": "555e05e2989f4090047f1a15a85eafeac6e3b5d3758a711cb5d7d73f6b2db310",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/3.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2665,
+    "bbox": [
+      7,
+      8,
+      57,
+      72
+    ],
+    "colors": 1112,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "2ad34f2f1c294db887a0d8e6a706471f",
+    "sha256": "ba1c82438efceebe5d3d29a6812a0f4c22b08aafb614fe3c37d65a82644cd6c4",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/4.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2506,
+    "bbox": [
+      4,
+      8,
+      59,
+      72
+    ],
+    "colors": 971,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "cf0b4d0df13844a3a855b9fa7b319cca",
+    "sha256": "7231f437170558de7b4e5810a14d4180df2c84330ebe01564f46272575189e95",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/5.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2744,
+    "bbox": [
+      7,
+      8,
+      57,
+      72
+    ],
+    "colors": 866,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "0f07926010c54d8984ef61b00c8d1192",
+    "sha256": "7b27369fc1df5c66b7d0280acbf835d4e329a41a5c7bacbd82477899934c5cce",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/6.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2836,
+    "bbox": [
+      6,
+      8,
+      57,
+      72
+    ],
+    "colors": 979,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "029875c221cf4d419dc202a429946c32",
+    "sha256": "6df5f0d5a259be46e194361bfff53a42f69b69eec2644d7bd62e505494f2e5ff",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/7.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2183,
+    "bbox": [
+      7,
+      8,
+      56,
+      72
+    ],
+    "colors": 842,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "f8281dae6cee4646a934cef28d4e497a",
+    "sha256": "ae4a095ef98e2f43e3c6f0ddc21cddfe8238fddaff9ed98fea8f22ba764e5116",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/8.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2906,
+    "bbox": [
+      6,
+      8,
+      57,
+      72
+    ],
+    "colors": 1032,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "a99aa322b2ff45d9860a44621dd13d92",
+    "sha256": "74868052960f53f797e0ea1e55e545e24ee226c1accf134afcae7fe4d9512253",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/ATP像素数值_v1/数字/9.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2834,
+    "bbox": [
+      6,
+      8,
+      57,
+      72
+    ],
+    "colors": 1006,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "e5dff02832c24e6bb49ed30b9fb524c9",
+    "sha256": "223571a6371818ad2e7bef9d052f50438866451472e97b0448823d83d8e0cf9b",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/下一波按钮_v1/下一波_圆形细胞按钮.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "partialAlpha": 921780,
+    "visible": 924519,
+    "bbox": [
+      73,
+      91,
+      1179,
+      1254
+    ],
+    "colors": 52523,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "67b76b5e63e8408082593966f218b157",
+    "sha256": "7bdef889be8efd662a54a558c59fdb29a45f8abf80e8820f083907c55084d7bc",
+    "parents": [
+      "Assets/_Project/Scenes/OpenFieldLevel02.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel03.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel04.unity",
+      "Assets/_Project/Scenes/OpenFieldLevel05.unity",
+      "Assets/_Project/Scenes/OpenFieldPrototype.unity",
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/01_暂停_常态.png",
+    "size": [
+      128,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 6174,
+    "bbox": [
+      5,
+      5,
+      123,
+      59
+    ],
+    "colors": 5,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "aca252f30b6f2c0438f1037ce975b189",
+    "sha256": "94f44227ea854a451d298fc47196595a57daed9061e86cd32ceb5053cb12642e",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/01_暂停_高亮.png",
+    "size": [
+      128,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 6174,
+    "bbox": [
+      5,
+      5,
+      123,
+      59
+    ],
+    "colors": 6,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "2524effc61c1b5a41acafbd3d6b1b44c",
+    "sha256": "0c2a37c0a11593245bee62daecef89a2baad6b6a8d0e5fad3d0ad8f8afdd0cff",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/02_正常速度_1x_常态.png",
+    "size": [
+      128,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 6174,
+    "bbox": [
+      5,
+      5,
+      123,
+      59
+    ],
+    "colors": 5,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "23eccadfb755bb34b867999a595c8992",
+    "sha256": "d4c0f1a61142ec7209a57ed9f511b828370b2163aeb677c40036d438859da330",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/02_正常速度_1x_高亮.png",
+    "size": [
+      128,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 6174,
+    "bbox": [
+      5,
+      5,
+      123,
+      59
+    ],
+    "colors": 6,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "0d5d35622c5b9694a985253e955c2a9e",
+    "sha256": "c4e7ccf1c78b9d2504627cb44a9f16ea260b3e9d69901eac2efab37f11a9ea51",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/03_双倍速度_2x_常态.png",
+    "size": [
+      128,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 6174,
+    "bbox": [
+      5,
+      5,
+      123,
+      59
+    ],
+    "colors": 5,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "3dd77b3e7eb98b44f9e1bb57f241f479",
+    "sha256": "c92cc59b27653010f22647b5ae55372b18fc16371fd7759d877378a7afaf3791",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/暂停与倍速按钮_v1/03_双倍速度_2x_高亮.png",
+    "size": [
+      128,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 6174,
+    "bbox": [
+      5,
+      5,
+      123,
+      59
+    ],
+    "colors": 6,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "6f527d3143f64fc40955e2a38c758b4c",
+    "sha256": "b7952c9682df1caee8940c43d71bef3a43e5ffd596a71d07452d2647b025fb8a",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/HUD三栏空框.png",
+    "size": [
+      1280,
+      208
+    ],
+    "partialAlpha": 0,
+    "visible": 228893,
+    "bbox": [
+      8,
+      11,
+      1272,
+      196
+    ],
+    "colors": 7823,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "f88cf6d69cfd4f0e8f8753f026c94df6",
+    "sha256": "ab6f2ea283cf21b98912b2af8b7fec92052fc8d74dac5df4b38b47b65cfe8d03",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/数值分隔符_斜杠.png",
+    "size": [
+      64,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 854,
+    "bbox": [
+      11,
+      8,
+      53,
+      72
+    ],
+    "colors": 338,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "93efbd0183c743549cdc98bdd6aae688",
+    "sha256": "aa448c898156d9a85b2bd29ab3c67401a9de7028a5444b062927fa7ea1fe031c",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/波次字样.png",
+    "size": [
+      160,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 6853,
+    "bbox": [
+      12,
+      8,
+      147,
+      72
+    ],
+    "colors": 1575,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "f7a671e6a4634f33815a415731b0a49b",
+    "sha256": "8b630ab5b22cfcd8a58a377b00d3271deb722f63bb0723b62dc06a2f54f8fe0a",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/波次标识_敌群.png",
+    "size": [
+      128,
+      128
+    ],
+    "partialAlpha": 0,
+    "visible": 7407,
+    "bbox": [
+      8,
+      16,
+      120,
+      111
+    ],
+    "colors": 1693,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "6eac5c8e14de423b8da91cc9a984ec7a",
+    "sha256": "68cc0128e9de207b00d9c8e37577e3a37f08d288017158ffc50bfb7248b51b85",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/生命字样.png",
+    "size": [
+      160,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 5890,
+    "bbox": [
+      15,
+      8,
+      144,
+      72
+    ],
+    "colors": 1258,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "8b4617b55bda4d18b3c4d65b46b1841a",
+    "sha256": "c7e9fe77a001c65b3cbbf0e9d9789c84b909e7ab699ae57a75f8d561aa659c60",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/战斗UI/生命波次与HUD框_v1/生命标识_爱心.png",
+    "size": [
+      128,
+      128
+    ],
+    "partialAlpha": 0,
+    "visible": 7539,
+    "bbox": [
+      8,
+      15,
+      120,
+      113
+    ],
+    "colors": 665,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "8be91c85a55b4eaaaeb87c601af8b7c9",
+    "sha256": "a1f946b8148bf8419ff71b6821e4e3f65e8fc98fb476eec5b245f69ddd362835",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset",
+      "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/01_空面板.png",
+    "size": [
+      640,
+      800
+    ],
+    "partialAlpha": 0,
+    "visible": 458279,
+    "bbox": [
+      8,
+      8,
+      632,
+      792
+    ],
+    "colors": 10347,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "59c71dfe8db74805868531c8f47c72cd",
+    "sha256": "015bf496a12f2a787603a703999c3298fab2c199125aac0b189754b2016afb96",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/02_游戏暂停_标题.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 29878,
+    "bbox": [
+      30,
+      8,
+      418,
+      104
+    ],
+    "colors": 5295,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "ce2abec885194afd8acae44fb75d101b",
+    "sha256": "9fe31247725f1b34484271a8231a488ad1c09184da5d8161d2bb34704c31ba9c",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/01_返回游戏_未选中.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 39052,
+    "bbox": [
+      16,
+      8,
+      432,
+      104
+    ],
+    "colors": 2939,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "5b4c87918e1a4cbfbf902c47c298bf6d",
+    "sha256": "a5bec1121663c4e7556edbd1522783b040ecea16d938a9348c0efc66b937a05f",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/02_返回游戏_蓝色选中.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 38726,
+    "bbox": [
+      16,
+      8,
+      432,
+      104
+    ],
+    "colors": 4935,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "4b46041c9ff84dfbb87eda46f27d3a48",
+    "sha256": "6bd384e87fdf2549a4d0362da923f1a8b8bf9b5cdf838e309706c4ddef992550",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/03_设置_未选中.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 39197,
+    "bbox": [
+      16,
+      8,
+      432,
+      104
+    ],
+    "colors": 2730,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "e27f3897d51443a5814ec8a42a67564d",
+    "sha256": "73d571e1344896c15f8ae092cad463a6d57ca5915c0a8fa66e171eebe6486c8b",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/04_设置_蓝色选中.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 38881,
+    "bbox": [
+      16,
+      8,
+      432,
+      104
+    ],
+    "colors": 3393,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "fd0a3170f8d546a2a185441ca9d743f7",
+    "sha256": "950eebf2e3c791589fc46e75598306d2d7f979d8865b866c11597f92c6563c9b",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/05_退出到主菜单_未选中.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 38838,
+    "bbox": [
+      16,
+      8,
+      432,
+      104
+    ],
+    "colors": 3796,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "691470a8836848fd9fce584f7e4a8adc",
+    "sha256": "4f9b1ac3ba4922fc5cbb5c142b9dd92a735cbae4ab295d9fe117e1102733ccb9",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/暂停界面_v2_2026-10-18/按钮/06_退出到主菜单_蓝色选中.png",
+    "size": [
+      448,
+      112
+    ],
+    "partialAlpha": 0,
+    "visible": 39210,
+    "bbox": [
+      16,
+      8,
+      432,
+      104
+    ],
+    "colors": 5800,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "8d221a9eb3104f06a7e54f6978c3a78f",
+    "sha256": "e2c1d5e9a987986caf0b01bc639258e4f1e2f1f02748c41676d9b4d3826e187c",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/01_胜利界面_无按钮.png",
+    "size": [
+      1122,
+      1402
+    ],
+    "partialAlpha": 1260361,
+    "visible": 1261254,
+    "bbox": [
+      21,
+      87,
+      1119,
+      1402
+    ],
+    "colors": 140924,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "a94b9faa75f10d44ea788111529c6172",
+    "sha256": "c837019bfecc78fa56ba48435088becdd56db261943678e025daf9f8541ec833",
+    "parents": [
+      "Assets/_Project/Prefabs/Menu/Victory.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/02_失败界面_无按钮.png",
+    "size": [
+      1122,
+      1402
+    ],
+    "partialAlpha": 1258311,
+    "visible": 1258653,
+    "bbox": [
+      21,
+      89,
+      1118,
+      1402
+    ],
+    "colors": 128466,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "03ac511b60f47874aa2d1dfb8860b4b4",
+    "sha256": "6d58dd073d3bb4c2d968a8688df12b6378ac1efda50db378afef34facebe1172",
+    "parents": [
+      "Assets/_Project/Prefabs/Menu/Defeat.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/03_下一关_未选中.png",
+    "size": [
+      2172,
+      724
+    ],
+    "partialAlpha": 759301,
+    "visible": 759611,
+    "bbox": [
+      41,
+      97,
+      2140,
+      596
+    ],
+    "colors": 27784,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "028a145524eae8249bc12f1fb78fe1c2",
+    "sha256": "a8a966aa2db2d2ce4d7f2e833ba362966242e81320bc2cc3974ead688a788b2c",
+    "parents": [
+      "Assets/_Project/Prefabs/Menu/Victory.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/05_重新挑战_未选中.png",
+    "size": [
+      2172,
+      724
+    ],
+    "partialAlpha": 755453,
+    "visible": 756460,
+    "bbox": [
+      191,
+      95,
+      2152,
+      597
+    ],
+    "colors": 37205,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "8377880efc93e7e4d9aad592671fe6ba",
+    "sha256": "e634cc73de430cf2a8ceef7abb9b98075f68e4a4536e289a36097f90cced720f",
+    "parents": [
+      "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+      "Assets/_Project/Prefabs/Menu/Victory.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/胜负结算_v1/07_返回主菜单_未选中.png",
+    "size": [
+      2172,
+      724
+    ],
+    "partialAlpha": 763331,
+    "visible": 763451,
+    "bbox": [
+      191,
+      104,
+      1980,
+      599
+    ],
+    "colors": 38332,
+    "filter": "1",
+    "compression": "1",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "1000",
+    "guid": "7f29d445490bbd84fbc40cc4a7974f63",
+    "sha256": "334c8b4a861490b9bb9ef3251f0012c1437d7f41bab78120640703cca1c0ffaa",
+    "parents": [
+      "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+      "Assets/_Project/Prefabs/Menu/Victory.prefab"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/01_声音图标.png",
+    "size": [
+      128,
+      128
+    ],
+    "partialAlpha": 0,
+    "visible": 5348,
+    "bbox": [
+      8,
+      23,
+      120,
+      104
+    ],
+    "colors": 900,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "bb74e12f50f044a0b4d022e6b567bf4e",
+    "sha256": "ce83ad3450b381b5605568f504b64086abdf41de63532a337643c3fd5558d5c4",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/02_静音图标.png",
+    "size": [
+      128,
+      128
+    ],
+    "partialAlpha": 0,
+    "visible": 4819,
+    "bbox": [
+      8,
+      24,
+      120,
+      103
+    ],
+    "colors": 713,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "890ba96af2ef4472803ff4a8c41ed282",
+    "sha256": "6c47bbb5cd61ba752536baad343249d1cb556b4de4ff9f06a1ea6f2b7c72d0b1",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/03_音量槽_底条.png",
+    "size": [
+      448,
+      48
+    ],
+    "partialAlpha": 0,
+    "visible": 13649,
+    "bbox": [
+      8,
+      8,
+      440,
+      40
+    ],
+    "colors": 1450,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "dc217ebb0c6c41489c76f214edf117aa",
+    "sha256": "1bbc521b5643d2d50a998c0c4babe75de151615a695eee96b15f692b4e09faee",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/04_音量条_蓝色填充.png",
+    "size": [
+      432,
+      32
+    ],
+    "partialAlpha": 0,
+    "visible": 6641,
+    "bbox": [
+      8,
+      8,
+      424,
+      24
+    ],
+    "colors": 535,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "9d492598e72e478cab4c390a538599f1",
+    "sha256": "b9d6cf86877b135f51051d1849f24fcc9ae72d69ef0aacfb4da69a129cd99f7f",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_声音与拉条_v1/05_音量滑块_拖动柄.png",
+    "size": [
+      48,
+      64
+    ],
+    "partialAlpha": 0,
+    "visible": 1441,
+    "bbox": [
+      8,
+      8,
+      40,
+      56
+    ],
+    "colors": 297,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "dc5d304753eb4597a8b7f17ecb3798c0",
+    "sha256": "043e68cb9e199c242ddbf9e7868f306f03469f0ae9f0413f9d96f57326c1646d",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/01_恢复默认_空框_未选中.png",
+    "size": [
+      448,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 27249,
+    "bbox": [
+      8,
+      8,
+      440,
+      72
+    ],
+    "colors": 775,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "5abab07b96c4415b9957db43feb72a08",
+    "sha256": "9d5756aa42079fa8821732baa59a8cc3782d9cb6e553d455c34b81ed89a1b5f6",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/02_恢复默认_空框_蓝色选中.png",
+    "size": [
+      448,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 27036,
+    "bbox": [
+      8,
+      8,
+      440,
+      72
+    ],
+    "colors": 758,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "d7080994c81644cbb3fa56eda52ec946",
+    "sha256": "cb13a2721f2e83ba9952b0754385a13c9d2b069844ca453687d6c4c658513630",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/03_返回_空框_未选中.png",
+    "size": [
+      448,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 27249,
+    "bbox": [
+      8,
+      8,
+      440,
+      72
+    ],
+    "colors": 775,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "6f23f0ae56f340ffab057abbc241ad0b",
+    "sha256": "9d5756aa42079fa8821732baa59a8cc3782d9cb6e553d455c34b81ed89a1b5f6",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_按钮空框_v1/04_返回_空框_蓝色选中.png",
+    "size": [
+      448,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 27036,
+    "bbox": [
+      8,
+      8,
+      440,
+      72
+    ],
+    "colors": 758,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "cc54b56afdf8421a809675250b494a2c",
+    "sha256": "cb13a2721f2e83ba9952b0754385a13c9d2b069844ca453687d6c4c658513630",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/01_设置.png",
+    "size": [
+      160,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 7232,
+    "bbox": [
+      14,
+      8,
+      145,
+      72
+    ],
+    "colors": 1993,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "c7f428b2f285423c976ed68499bae837",
+    "sha256": "bd983a5a9d2885501591e5c1504b467a1d33b8245951b40cea756e532bbc3134",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/02_总音量.png",
+    "size": [
+      224,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 9781,
+    "bbox": [
+      16,
+      8,
+      207,
+      72
+    ],
+    "colors": 2397,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "2744b6054cfd490ba74312411c10211c",
+    "sha256": "03576a418704d858239df79e945e31e04a7815e2259ae8af47458004d536db35",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/04_全屏.png",
+    "size": [
+      160,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 6520,
+    "bbox": [
+      13,
+      8,
+      146,
+      72
+    ],
+    "colors": 1829,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "252ad6fe10a04062bd7cf2a576534efe",
+    "sha256": "766c02c812de7919fc652fd92508f835d4f7cee9141538031fa010b1fd242dd1",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/05_恢复默认.png",
+    "size": [
+      288,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 12983,
+    "bbox": [
+      11,
+      8,
+      277,
+      72
+    ],
+    "colors": 3460,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "9631fc91fb654f5e93741514ec70b6d5",
+    "sha256": "2ece2e72ecb39f3b951e1611e52092150e5ec44d9121ce79a694087bd414dcd9",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/06_返回.png",
+    "size": [
+      160,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 7418,
+    "bbox": [
+      13,
+      8,
+      147,
+      72
+    ],
+    "colors": 1803,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "ff84d859bfe24373a88409611f2f53e5",
+    "sha256": "60ad046aaffeb31d2a8610bebb3a64443d87e668c8fcd72752f5d817e1970a82",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/07_点击喇叭切换静音.png",
+    "size": [
+      336,
+      48
+    ],
+    "partialAlpha": 0,
+    "visible": 6463,
+    "bbox": [
+      46,
+      8,
+      289,
+      40
+    ],
+    "colors": 2635,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "3f9c67136c9c45e8b69851b144174308",
+    "sha256": "6addad392ff6caee6defe252e6b33ef124642a1e59c37e9be39adfd6a7198e2b",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/08_关闭全屏后使用窗口模式.png",
+    "size": [
+      456,
+      48
+    ],
+    "partialAlpha": 0,
+    "visible": 7543,
+    "bbox": [
+      80,
+      8,
+      375,
+      40
+    ],
+    "colors": 3657,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "cd9d5461596f44c4b87a88a406241588",
+    "sha256": "cd067d739eec2c5056abf29a05b2b33a3b0975ef893acce5a142f2ea076a56d6",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/09_全屏切换在独立运行时生效.png",
+    "size": [
+      496,
+      48
+    ],
+    "partialAlpha": 0,
+    "visible": 8679,
+    "bbox": [
+      73,
+      8,
+      422,
+      40
+    ],
+    "colors": 3977,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "14c0e6b8b2b74837903b03510a0720f3",
+    "sha256": "08faa7475e4a465f6ec7b2bb58b304a4bc300520a4d4ecaaa4e79d5f63a8d203",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  },
+  {
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/设置界面_文字素材_v1/10_百分号.png",
+    "size": [
+      80,
+      80
+    ],
+    "partialAlpha": 0,
+    "visible": 2327,
+    "bbox": [
+      10,
+      8,
+      70,
+      72
+    ],
+    "colors": 818,
+    "filter": "0",
+    "compression": "0",
+    "maxSize": "2048",
+    "spriteMode": "1",
+    "ppu": "100",
+    "guid": "78a62c8f0e654fe69892c612165dadfe",
+    "sha256": "36d93f47007b60a7e6d96e5c91bdb885ccf86e1945915b31d7247b43f754aa85",
+    "parents": [
+      "Assets/_Project/Resources/OpenFieldUiResources.asset"
+    ]
+  }
+]
