@@ -1,0 +1,304 @@
+{
+  "fixedPhrases": 96,
+  "charactersPerSize": 449,
+  "nativeGlyphSizes": [
+    8,
+    12
+  ],
+  "EditMode": {
+    "result": "Passed",
+    "total": "131",
+    "passed": "131",
+    "failed": "0",
+    "skipped": "0",
+    "start-time": "2026-10-21 11:26:45Z",
+    "end-time": "2026-10-21 11:26:47Z"
+  },
+  "PlayMode": {
+    "result": "Passed",
+    "total": "40",
+    "passed": "40",
+    "failed": "0",
+    "skipped": "0",
+    "start-time": "2026-10-21 11:27:17Z",
+    "end-time": "2026-10-21 11:29:04Z"
+  },
+  "screenshots": [
+    {
+      "path": "prompt-build-menu.png",
+      "sha256": "4898c753de93aadd0d3b1840cb56439de34cdbf458b0606ceadbfa1c6750236f",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-ArmoredBacillus.png",
+      "sha256": "86af12a743551f113f3841c29a6f7d2b4e826c66fe795d0fab69d8977997f8e5",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-Flagellate.png",
+      "sha256": "4230bcbf67e8d0bdad43b5f070ed1fbbaa0485cad930204259f0d3f91c19e536",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-FungalBoss.png",
+      "sha256": "695008b7223f614c038727597c6d7c080551e6dcf34485db5739ca7db8d242d4",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-FungalSpore.png",
+      "sha256": "23783f65335a41d4e8e8aed88c1e244419dedd2ad7cc1f8984895a4e32f2cbd1",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-MembraneBoss.png",
+      "sha256": "3f369caf5d7429dae33940b83ef693c9dfb99e7d623bfd98987df4baca86e89e",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-Staphylococcus.png",
+      "sha256": "4c95df84c41382d3279ec843665f0e63352644cfcb4b2d042443ab4bc2dfba4f",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-VirusBoss.png",
+      "sha256": "7d0fa02f1eb393be8167dc7793e1d717c595b3393a8df048cce114d15864da58",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-enemy-VirusClone.png",
+      "sha256": "0341e4d3289e88ce94eaf00107a60b2a621895a56b9e2b27e1b7f2b3de883bb6",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-level-selection.png",
+      "sha256": "d03101ae86ce55cbc3b9288c0a40442a9eb001c0f4878388d0ee2e7379c7574e",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-sell-confirmation.png",
+      "sha256": "0b418d830bdee31a08e699a29c8e353fe453082a54f2aa81106293f350b21dd5",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-tower-info.png",
+      "sha256": "f774de3f56ad370a8f5577ef3d7c40512b3014e2bd8e24af17da3630cd972c3b",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "prompt-tutorial.png",
+      "sha256": "86c4cf173ee14ae003ec9b4c7de82a07a2aa4b59cc6dec2d2343a92f4ff2fbfd",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "tutorial-barrier-info.png",
+      "sha256": "32ccf8c410ff7ccbe1a08b70b89f5ef1cda6ab66f1688aeb1920e352f17feb2c",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "tutorial-build-choice.png",
+      "sha256": "e5215ecc2739bf902cc3e229790564730847a0bc8ef711721ed40c23ea576b7b",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "tutorial-mobile-1280x720.png",
+      "sha256": "dfdd580f36ca62c94d7e4cc02818b7bf4b773b4fb7bd1c7db55515bb8c863d3c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "tutorial-mobile-1600x720.png",
+      "sha256": "d4663a971c19c5a4f75a9f561ae8a65d71ab777bcb33bd7c177820e3b7abeaf4",
+      "size": [
+        1600,
+        720
+      ]
+    },
+    {
+      "path": "tutorial-mobile-1920x1080.png",
+      "sha256": "c12f783aeca4d077a1606e0086a677db715957159cb64a1d9bb530eee0e51015",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "tutorial-select-cell.png",
+      "sha256": "ec9cf10bd878612d272ed73fed98769a367938115ca030b48e203adb1ba879be",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "tutorial-upgrade.png",
+      "sha256": "6db9a6bb07149a73260e4b6095899f7df5c8407d109fda824633e55aac924ce4",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "upgrade-after.png",
+      "sha256": "c6ccef95ce9f066cbe88c81a06a59ae2bda5303a678951ff37af0cd28ea2280a",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "upgrade-before.png",
+      "sha256": "d8a0feaae42fd1f37be912e8caaf42e32ac0a5846061cbcb61e0dd36fa7320d2",
+      "size": [
+        640,
+        480
+      ]
+    }
+  ],
+  "changedSourceFiles": [
+    {
+      "path": "Assets/_Project/Scripts/UI/FirstLevelTutorial.cs",
+      "beforeSha256": "685e199b6189b8d65d674ba6e137aa3445ad0e0cd5a8d3f80962c602485a06e3",
+      "afterSha256": "afe21ed5c3e583ddf9781fa4ccee6fcb838fe4604c8e1e0356d6114b7c74c848"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/EnemyStatusHud.cs",
+      "beforeSha256": "2107161ecb5b9b441a946e57f82b967f19b52ac7ed3697736b7b712a5bba6a33",
+      "afterSha256": "e5e6b0394584fa510922b09eef771ceb8653480bac173c49b023ae841d4b0cd9"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/OpenFieldEntranceWaveButtons.cs",
+      "beforeSha256": "b877a3fe4425966e0a6a9bb9e6829065a8fd5ce0d0032dec0bad3e92a9278288",
+      "afterSha256": "a91f9815827d3bb71bddb1cdf10c336469fb2630e68948121c67457e4cecfe75"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/OpenFieldBuildMenu.cs",
+      "beforeSha256": "01a2acdff10d6c0963901e6dc6b6b7b8f274a47565d515653f0ab0b513e7f570",
+      "afterSha256": "9fc32dc3e81b9068ebed9ac32e3e3fdd689cafba55bad016b784cffde2d32cc1"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs",
+      "beforeSha256": "cc8b6284af1f4122dc6bb309c034149409927278dc70726cb24afa77e6eb7aad",
+      "afterSha256": "7a83e3a2812c7c188f427d394f72c4f2a17bb170a1a4be74acf328f28a773cdf"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "beforeSha256": "96fe1124561f319a0eeab357254e541f85ce70d647ef57bb384288a28c5c90ba",
+      "afterSha256": "c0b1d76f303dffae11900ac66fbda6aa144e831238ea2776d4b22347bae20e67"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/OpenFieldBattleHud.cs",
+      "beforeSha256": "f9ca3b61571c2acc90217a16c3d61857a7d7959b666e199d05eaa15721193c07",
+      "afterSha256": "5920b860743c2ad5e049d1843e20f1a3607225c9211dd7114bbcb7157c467c32"
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab",
+      "beforeSha256": "5aa767a43478a029a9558f8d5a231f571d997bc9e94cf4ac1a22cc86fa8191c1",
+      "afterSha256": "becacf82c8095300268f63baeafc32aa369bf4515af6d8b43f08b4ec34eb4e64"
+    }
+  ],
+  "runtimeTextures": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/固定文案/固定提示文案图集.png",
+      "sha256": "558ff39fb224211c5226a34f2092350923fac8165f3f9507eb53133756b20d03",
+      "size": [
+        1024,
+        512
+      ]
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/字图/提示像素字图.png",
+      "sha256": "6f7a952cd8f10d3cea04cfdcf3570efcf89bc2538707ecf422c006fb14c9bb62",
+      "size": [
+        1008,
+        162
+      ]
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/字图/提示小字号字图_8px.png",
+      "sha256": "2e53dd95ca3f5938b3fbc27fb61ac527801cea6e5c1f3073f3caaf17ace0b758",
+      "size": [
+        784,
+        126
+      ]
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/面板/01_引导与提示面板.png",
+      "sha256": "b55dcc81213bc92402f992774a397022ed181cad96882074f96f256c327f2acf",
+      "size": [
+        256,
+        96
+      ]
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/面板/02_怪物出现面板.png",
+      "sha256": "ff684f29ff3c0e6c2d43c0a762bcad453132bbe609570c88084ccafbc2455e62",
+      "size": [
+        256,
+        96
+      ]
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/面板/03_提示按钮_常态.png",
+      "sha256": "d43373a8e2baaf9ff56bf8b0cdf63bce7d7fec557ccebaeee4626fd7700d7022",
+      "size": [
+        96,
+        24
+      ]
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/提示图片化_2026-10-21_v1/面板/04_提示按钮_高亮.png",
+      "sha256": "66685d744ffc4fbc9484935e0056aa6fd87f0497b10f91f7e864df04b7f2d3cb",
+      "size": [
+        96,
+        24
+      ]
+    }
+  ]
+}

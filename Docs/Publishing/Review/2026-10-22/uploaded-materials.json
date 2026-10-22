@@ -1,0 +1,129 @@
+[
+  {
+    "kind": "screenshot",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/01_第一关新手引导.png",
+    "sha256": "e7b94d4e360879d8f730b666543487b207775a834a43227324de968edd4a74aa",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 1206934,
+    "source": "Logs/StoreCapture/2026-10-22/01-tutorial.png",
+    "pixelsEdited": false,
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-22\\截图\\01_第一关新手引导.png",
+    "upload": {
+      "assetId": "539383",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 1206934,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/b869c1bbf64da8802dab56301d90a22b.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "screenshot",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/02_壁垒承伤说明.png",
+    "sha256": "a4425b288e9de66b149ced965b9a35793bb9b5e2d3a2817634a18d0337f5d20d",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 1224788,
+    "source": "Logs/StoreCapture/2026-10-22/02-barrier-guide.png",
+    "pixelsEdited": false,
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-22\\截图\\02_壁垒承伤说明.png",
+    "upload": {
+      "assetId": "539384",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 1224788,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/e3c40bac40a2febb1523c6c9c2577329.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "screenshot",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/03_第三关防线战斗.png",
+    "sha256": "cce4f015a39db257df6981158e1d0dbf7cd113fea0ebe02cf46e1fd49ea74a01",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 1409975,
+    "source": "Logs/StoreCapture/2026-10-22/frames/frame-00280.png",
+    "pixelsEdited": false,
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-22\\截图\\03_第三关防线战斗.png",
+    "upload": {
+      "assetId": "539385",
+      "height": 1080,
+      "info": {
+        "format": "png",
+        "height": 1080,
+        "size": 1409975,
+        "width": 1920
+      },
+      "url": "https://img-tc.tapimg.com/market/images/d742632d7365421cb120cad9d93a4c92.png",
+      "width": 1920
+    },
+    "state": "uploaded-and-field-readback-verified"
+  },
+  {
+    "kind": "video",
+    "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/演示视频~/胞卫战_0.1.3_运行演示_1080p_20秒.mp4",
+    "sha256": "be0cf3b80816069df059d92c24e7db552e6de1ea42a2616526915e2b5667b5b6",
+    "bytes": 4371954,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "seconds": 20.0,
+    "frames": 600,
+    "codec": "H.264",
+    "audio": false,
+    "source": "Unity Editor PlayMode mobile layout, not Android phone",
+    "selection": "First 600 original frames, continuous 20-second combat; no interpolation or visual overlays",
+    "absolutePath": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\TapTap发布准备_2026-10-22\\演示视频~\\胞卫战_0.1.3_运行演示_1080p_20秒.mp4",
+    "upload": {
+      "handoff": {
+        "stage": "material_uploaded",
+        "completed": [
+          "video uploaded",
+          "video ID returned"
+        ],
+        "pending": [
+          "video ID still needs to be written into profile field \"gameplay_demo_video\""
+        ],
+        "targetField": "gameplay_demo_video",
+        "userActionRequired": true,
+        "userActionSummary": "需要将返回的 videoId 写回资料字段 \"gameplay_demo_video\"",
+        "nextActions": [
+          {
+            "id": "save_video_field",
+            "label": "将 videoId 写入资料字段 \"gameplay_demo_video\"",
+            "requiresConfirmation": true
+          }
+        ],
+        "links": [
+          {
+            "kind": "admin",
+            "label": "开发者后台资料页",
+            "url": "https://developer.taptap.cn/v3/338749/app/986196/store/update",
+            "available": true,
+            "source": "derived_from_ids"
+          }
+        ]
+      },
+      "nextStep": "video upload is complete; write videoId to app-edit field \"gameplay_demo_video\" while transcoding continues independently",
+      "targetField": "gameplay_demo_video",
+      "uploadStatus": "uploaded",
+      "validationWarnings": [
+        "实机录屏 still requires server-side duration, resolution, aspect ratio, codec, and content review"
+      ],
+      "videoId": 6003039
+    },
+    "state": "uploaded-and-field-readback-verified"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-22",
+  "draft": {
+    "version": "V-20261019",
+    "status": "draft",
+    "submitted": false,
+    "published": false
+  },
+  "apkVersion": "0.1.3",
+  "apkVersionCode": 4,
+  "fieldValues": {
+    "category": "strategy",
+    "description": "《胞卫战》是一款以人体免疫防御为主题的策略塔防游戏。你将深入微观世界，消耗 ATP 部署免疫细胞，利用采样、标记与吞噬的协作机制，部署可承伤的纤维蛋白壁垒，拦截经过的敌人，抵御细菌、真菌与病毒的进攻。在五个关卡中灵活建造、升级与调整防线，用有限的资源守住核心，打赢这场细胞之间的保卫战。",
+    "description_ios": null,
+    "icon": "https://img-tc.tapimg.com/market/images/28e084c7bb9ad2815fc6936bae17ab54.png",
+    "icon_ios": null,
+    "title": "胞卫战",
+    "title_ios": null,
+    "banner_4": "https://img-tc.tapimg.com/market/images/31d57e7c6d1b0ba3a6893d59fb2c7a9b.png",
+    "banner_4_ios": null,
+    "gameplay_demo_video": 6003039,
+    "screenshots": [
+      "https://img-tc.tapimg.com/market/images/b869c1bbf64da8802dab56301d90a22b.png",
+      "https://img-tc.tapimg.com/market/images/e3c40bac40a2febb1523c6c9c2577329.png",
+      "https://img-tc.tapimg.com/market/images/d742632d7365421cb120cad9d93a4c92.png"
+    ],
+    "screenshots_ios": null,
+    "square_promo_image": null,
+    "square_promo_image_ios": null,
+    "trailer": null,
+    "promotion_material_type": "GAMEPLAY_DEMO",
+    "promotion_text": "部署免疫细胞，守住微观防线。",
+    "apk_anti_addiction_status": "not-integrated",
+    "apk_related_in_app_event": null,
+    "apk_sandbox_authorized": "true",
+    "apk_update_mode": "normal",
+    "apk_whatsnew": "《胞卫战》v0.1.3 试玩版更新\n- 新增第一关三轮新手引导，涵盖建造、开波、壁垒和升级；可随时跳过，重开后重新开始。\n- 纤维蛋白壁垒改为可承伤的拦截物：500 生命、30 ATP，拦截全部经过的敌人；取消累计建造次数限制，不再改变敌人路线。\n- 完善教程、怪物出场、波次及建造操作的像素图片提示，并接入暂停与倍速图片按钮。\n- 优化胜利、失败面板在电脑和手机上的等比适配及按钮间距。\n- 修复结算后战斗血条和状态图像残留的问题。",
+    "package": null,
+    "pc_package_id": null,
+    "app_platforms": [
+      "MOBILE"
+    ],
+    "itunes_id": null,
+    "region_flag_android": 4,
+    "region_flag_ios": 1,
+    "platform_open_time_android": null,
+    "release_method": null,
+    "release_schedule": null,
+    "release_time": null,
+    "author_name": null,
+    "developer_message": "《胞卫战》目前提供五个关卡的早期试玩，仍在持续开发中。希望你能体验到免疫细胞之间协作布防的乐趣。后续将继续完善移动端操作、难度与战斗表现。",
+    "developer_type": "developer",
+    "publisher_name": null
+  },
+  "packageSlots": {
+    "apk_mini_game_play": {
+      "available": true,
+      "expected": {
+        "kind": "none"
+      }
+    },
+    "main": {
+      "available": true,
+      "expected": {
+        "apk_id": "1069190",
+        "kind": "apk"
+      }
+    },
+    "windows": {
+      "available": false,
+      "expected": {
+        "kind": "none"
+      }
+    }
+  },
+  "verification": {
+    "date": "2026-10-22",
+    "appId": "986196",
+    "developerId": "338749",
+    "status": "draft-saved-awaiting-user-review",
+    "approved": true,
+    "uploadsSucceeded": 5,
+    "mediaFieldsReadbackPassed": 2,
+    "textFieldsReadbackPassed": 2,
+    "changedFields": [
+      "apk_whatsnew",
+      "description",
+      "gameplay_demo_video",
+      "screenshots"
+    ],
+    "otherReadFieldsUnchanged": true,
+    "apkVersion": "0.1.3",
+    "apkVersionCode": 4,
+    "apkId": 1069190,
+    "mainBindingVerified": true,
+    "platformApkMd5MatchesLocal": true,
+    "draftVersion": "V-20261019",
+    "analysis": {
+      "blockers": [],
+      "suggestions": [],
+      "warnings": []
+    },
+    "packageLibraryConfigStatus": "warning",
+    "reviewPrepared": false,
+    "reviewSubmitted": false,
+    "published": false,
+    "deviceTested": false,
+    "futureMediaPreference": "Keep screenshots and gameplay video unless explicitly requested"
+  }
+}

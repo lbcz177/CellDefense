@@ -10,7 +10,7 @@
 
 > 手机适配阶段回归：EditMode **126/126**、PlayMode **30/30**，0 失败 / 跳过；另独立横屏验证 1/1。覆盖三种实际横屏尺寸和五关触控 / 结算。见 [验证报告](Testing/2026-10-19_MobileAndroid.md)。Android 首个 APK 已生成，尚未真机验收。
 
-> 架构基线：v0.16 · 2026-10-20；配套 [策划 v0.22](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。
+> 架构基线：v0.17 · 2026-10-21；配套 [策划 v0.24](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。策划中的血小板修补塔、补体裂解塔尚未实现，不增加本架构的运行模块。
 > 当前已接入暂停 / 倍速逻辑与用户 v2 暂停美术，通过共享 Resources 引用八张 Sprite，未改场景、原图或 .meta。此前临时 UI 阶段见 [接图前快照](History/2026-10-18_before_pause_art/TECHNICAL_ARCHITECTURE.md)，v0.9 及更早原文仍保留。
 
 ## 1. 场景与配置边界
@@ -28,6 +28,7 @@ Unity 2022.3.53f1c1。当前五个 OpenField 场景共用开放地图编排，Ma
 | CellDefenseAndroidBuild | Editor APK 菜单、六场景清单、Android 架构与脚本后端配置；缺组件时明确失败 |
 | MainMenuController | 设置 / 退出透明入口、QuitRequested 防重复与 Save / Quit；独立 Canvas 复用 GameSettingsPanel；与选关互斥，底层门控、焦点恢复和动态 UI 清理 |
 | OpenFieldPrototypeController | 组合根、输入、建造与出售事务、细胞注册、波次 / 结果、敌人池、地形路径、信号邻接；仍为集中编排 |
+| FirstLevelTutorial | 第一关可选引导；订阅真实选择 / 交易 / 波次事件，计算提示步骤、有效建议格与目标框；安全区定位、菜单避让和跳过，不执行战斗交易 |
 | OpenFieldGridModel | 规则类；occupied 建造占位、blocked 地形与 BFS 距离场；旧 routeBlocked / 可达性检查保留，当前防御单位不使用 |
 | OpenFieldPresentation | 地图、调试格、虚影 / 射程与地形路线；旧候选改路预览保留但不调用 |
 | OpenFieldBuildMenu / OpenFieldTowerMenu | 建造、属性 / 射程、升级费用 / 效果 / 资格、二次确认出售、遮挡与定位；交易规则由控制器执行 |
@@ -48,6 +49,8 @@ Unity 2022.3.53f1c1。当前五个 OpenField 场景共用开放地图编排，Ma
 GridModel 虽不继承 MonoBehaviour，仍依赖 Unity Vector2Int。EnemyRegistry、SignalNetwork、空间桶、专用 OpenFieldLevelDefinition、集中 Tick 调度和 ECS 尚未实现。
 
 ## 3. 初始化与对象生命周期
+
+第一关场景 enableFirstLevelTutorial=true，在控制器完成原初始化后创建 FirstLevelTutorial；其他场景默认 false。控制器只增加选择、建造、升级、出售、死亡及波次状态事件和只读查询，建造事件在事务提交后发布。引导 OnEnable 订阅并读取快照，OnDisable 取消全部订阅；每次重载重新开始，无跨局持久化。布局在 LateUpdate 与 Canvas.preWillRenderCanvases 校正，常规提示内容由事件刷新；面板几何检查纳入鼠标和触控防穿透，跳过 / 略过升级同帧屏蔽地图输入。详见 [引导说明](FIRST_LEVEL_TUTORIAL.md)。
 
 Awake 验证三波序列、至少一种塔、子弹池、中文字体、按钮 / HUD 资源和退款比例；选择相机并创建 GridModel，设置棋盘视口映射，初始化经济 / 生命 / 子弹池。随后创建 Presentation、建造 / 塔菜单、敌人状态及入口按钮，绑定场景 HUD；缺少 HUD 场景引用时可实例化默认 Prefab。UI Resources 提供按钮与 HUD 素材回退，运行时不依赖 AssetDatabase。
 

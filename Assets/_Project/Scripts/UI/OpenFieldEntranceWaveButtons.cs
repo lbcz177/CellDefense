@@ -16,11 +16,13 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
     private GameObject canvasObject;
     private Button[] buttons;
     private RectTransform[] buttonRects;
-    private TextMeshProUGUI[] labels;
+    private PixelImageText[] labels;
     private Vector3[] worldPositions;
     private Vector2[] offsets;
     private int displayedRound = -1;
     private bool displayedEarly;
+    public RectTransform FirstVisibleButton => canvasObject != null && canvasObject.activeInHierarchy &&
+        buttonRects.Length > 0 && buttonRects[0].gameObject.activeInHierarchy ? buttonRects[0] : null;
 
     public void Initialize(OpenFieldPrototypeController controller, OpenFieldGridModel grid,
         Func<Vector2Int, Vector3> cellToWorld, TMP_FontAsset font, Camera camera, Sprite artwork)
@@ -45,7 +47,7 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
         canvasRect = canvasObject.GetComponent<RectTransform>();
         buttons = new Button[grid.SpawnCount];
         buttonRects = new RectTransform[grid.SpawnCount];
-        labels = new TextMeshProUGUI[grid.SpawnCount];
+        labels = new PixelImageText[grid.SpawnCount];
         worldPositions = new Vector3[grid.SpawnCount];
         offsets = new Vector2[grid.SpawnCount];
         for (int i = 0; i < grid.SpawnCount; i++)
@@ -91,9 +93,9 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
             captionBackground.rectTransform.pivot = new Vector2(0.5f, 0f);
             captionBackground.rectTransform.anchoredPosition = Vector2.zero;
             captionBackground.rectTransform.sizeDelta = new Vector2(Width, 40f);
-            GameObject text = CreateUI("Label", caption.transform, typeof(TextMeshProUGUI));
-            TextMeshProUGUI label = text.GetComponent<TextMeshProUGUI>();
-            label.font = font;
+            GameObject text = CreateUI("Label", caption.transform, typeof(PixelImageText));
+            PixelImageText label = text.GetComponent<PixelImageText>();
+
             label.fontSize = 16f;
             label.alignment = TextAlignmentOptions.Center;
             label.color = new Color(1f, 0.96f, 0.82f, 1f);

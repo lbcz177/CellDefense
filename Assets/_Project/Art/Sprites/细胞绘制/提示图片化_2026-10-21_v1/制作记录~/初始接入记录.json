@@ -1,0 +1,42 @@
+[
+  {
+    "path": "Assets/_Project/Scripts/UI/FirstLevelTutorial.cs",
+    "beforeSha256": "685e199b6189b8d65d674ba6e137aa3445ad0e0cd5a8d3f80962c602485a06e3",
+    "afterSha256": "95bde8f9e47688d731161eb13e23f627d72e5b0a0c83ab2a09b34cc26692bdd8"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/EnemyStatusHud.cs",
+    "beforeSha256": "2107161ecb5b9b441a946e57f82b967f19b52ac7ed3697736b7b712a5bba6a33",
+    "afterSha256": "3040e4b24d0e7181ea4dad25ed5d03de5620e488ee2e5a4bcba7e3a5b23be77f"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/OpenFieldEntranceWaveButtons.cs",
+    "beforeSha256": "b877a3fe4425966e0a6a9bb9e6829065a8fd5ce0d0032dec0bad3e92a9278288",
+    "afterSha256": "a91f9815827d3bb71bddb1cdf10c336469fb2630e68948121c67457e4cecfe75"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/OpenFieldBuildMenu.cs",
+    "beforeSha256": "01a2acdff10d6c0963901e6dc6b6b7b8f274a47565d515653f0ab0b513e7f570",
+    "afterSha256": "7438730b381d76a994577e43629b7c059ded64ee4ef5686e556e2ff6b94ce94f"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/OpenFieldTowerMenu.cs",
+    "beforeSha256": "cc8b6284af1f4122dc6bb309c034149409927278dc70726cb24afa77e6eb7aad",
+    "afterSha256": "70dfedb747fc409e211608d18f034fe2c494ae7d19cbfa6c79913ed1ab5340b6"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+    "beforeSha256": "96fe1124561f319a0eeab357254e541f85ce70d647ef57bb384288a28c5c90ba",
+    "afterSha256": "c0b1d76f303dffae11900ac66fbda6aa144e831238ea2776d4b22347bae20e67"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/OpenFieldBattleHud.cs",
+    "beforeSha256": "f9ca3b61571c2acc90217a16c3d61857a7d7959b666e199d05eaa15721193c07",
+    "afterSha256": "5920b860743c2ad5e049d1843e20f1a3607225c9211dd7114bbcb7157c467c32"
+  },
+  {
+    "path": "Assets/_Project/Prefabs/Menu/OpenFieldBattleHud.prefab",
+    "beforeSha256": "5aa767a43478a029a9558f8d5a231f571d997bc9e94cf4ac1a22cc86fa8191c1",
+    "afterSha256": "becacf82c8095300268f63baeafc32aa369bf4515af6d8b43f08b4ec34eb4e64"
+  }
+]

@@ -1,0 +1,168 @@
+{
+  "target": {
+    "developerId": "338749",
+    "appId": "986196",
+    "currentDraftReference": "V-20261019",
+    "currentStatus": "draft"
+  },
+  "status": "draft-saved-awaiting-user-review",
+  "approved": true,
+  "apk": {
+    "status": "uploaded-and-bound-to-draft",
+    "appId": "986196",
+    "developerId": "338749",
+    "apk": "Builds/Android/CellDefense-0.1.3.apk",
+    "versionName": "0.1.3",
+    "versionCode": 4,
+    "packageName": "com.celldefense.game",
+    "productName": "胞卫战",
+    "bytes": 60499274,
+    "sha256": "71ad2d38e81551542aac595726c3571a1e4ca78afaab11be0f85abe8202fb216",
+    "development": false,
+    "sameSigningCertificateAsPreviousLocalBuilds": true,
+    "fixedVersionDeviceTested": false,
+    "platformWriteApproved": true,
+    "updateNote": "《胞卫战》v0.1.3 试玩版更新\n- 新增第一关三轮新手引导，涵盖建造、开波、壁垒和升级；可随时跳过，重开后重新开始。\n- 纤维蛋白壁垒改为可承伤的拦截物：500 生命、30 ATP，拦截全部经过的敌人；取消累计建造次数限制，不再改变敌人路线。\n- 完善教程、怪物出场、波次及建造操作的像素图片提示，并接入暂停与倍速图片按钮。\n- 优化胜利、失败面板在电脑和手机上的等比适配及按钮间距。\n- 修复结算后战斗血条和状态图像残留的问题。",
+    "platformDraftSaved": true,
+    "reviewSubmitted": false,
+    "published": false
+  },
+  "uploads": [
+    {
+      "kind": "screenshot",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/01_第一关新手引导.png",
+      "sha256": "e7b94d4e360879d8f730b666543487b207775a834a43227324de968edd4a74aa",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1206934,
+      "source": "Logs/StoreCapture/2026-10-22/01-tutorial.png",
+      "pixelsEdited": false
+    },
+    {
+      "kind": "screenshot",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/02_壁垒承伤说明.png",
+      "sha256": "a4425b288e9de66b149ced965b9a35793bb9b5e2d3a2817634a18d0337f5d20d",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1224788,
+      "source": "Logs/StoreCapture/2026-10-22/02-barrier-guide.png",
+      "pixelsEdited": false
+    },
+    {
+      "kind": "screenshot",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/03_第三关防线战斗.png",
+      "sha256": "cce4f015a39db257df6981158e1d0dbf7cd113fea0ebe02cf46e1fd49ea74a01",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1409975,
+      "source": "Logs/StoreCapture/2026-10-22/frames/frame-00280.png",
+      "pixelsEdited": false
+    },
+    {
+      "kind": "video",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/演示视频~/胞卫战_0.1.3_运行演示_1080p_20秒.mp4",
+      "sha256": "be0cf3b80816069df059d92c24e7db552e6de1ea42a2616526915e2b5667b5b6",
+      "bytes": 4371954,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "seconds": 20.0,
+      "frames": 600,
+      "codec": "H.264",
+      "audio": false,
+      "source": "Unity Editor PlayMode mobile layout, not Android phone",
+      "selection": "First 600 original frames, continuous 20-second combat; no interpolation or visual overlays"
+    },
+    {
+      "kind": "apk",
+      "path": "Builds/Android/CellDefense-0.1.3.apk",
+      "sha256": "71ad2d38e81551542aac595726c3571a1e4ca78afaab11be0f85abe8202fb216",
+      "bytes": 60499274
+    }
+  ],
+  "textChanges": [
+    {
+      "field_id": "description",
+      "expected": "《胞卫战》是一款以人体免疫防御为主题的策略塔防游戏。你将深入微观世界，消耗 ATP 部署免疫细胞，利用采样、标记与吞噬的协作机制，配合有限的纤维蛋白壁垒调整入侵路线，抵御细菌、真菌与病毒的进攻。在五个关卡中灵活建造、升级与调整防线，用有限的资源守住核心，打赢这场细胞之间的保卫战。",
+      "value": "《胞卫战》是一款以人体免疫防御为主题的策略塔防游戏。你将深入微观世界，消耗 ATP 部署免疫细胞，利用采样、标记与吞噬的协作机制，部署可承伤的纤维蛋白壁垒，拦截经过的敌人，抵御细菌、真菌与病毒的进攻。在五个关卡中灵活建造、升级与调整防线，用有限的资源守住核心，打赢这场细胞之间的保卫战。"
+    },
+    {
+      "field_id": "apk_whatsnew",
+      "expected": "《胞卫战》v0.1.2 试玩版更新\n- 修复 Android 横屏战斗中，地图上方及屏幕边缘残留上一页界面的显示问题。\n- 手机安装名称统一为“胞卫战”，并使用游戏图标。\n- 移除开发版标记，提供新的试玩安装包。",
+      "value": "《胞卫战》v0.1.3 试玩版更新\n- 新增第一关三轮新手引导，涵盖建造、开波、壁垒和升级；可随时跳过，重开后重新开始。\n- 纤维蛋白壁垒改为可承伤的拦截物：500 生命、30 ATP，拦截全部经过的敌人；取消累计建造次数限制，不再改变敌人路线。\n- 完善教程、怪物出场、波次及建造操作的像素图片提示，并接入暂停与倍速图片按钮。\n- 优化胜利、失败面板在电脑和手机上的等比适配及按钮间距。\n- 修复结算后战斗血条和状态图像残留的问题。"
+    }
+  ],
+  "mediaFields": [
+    "screenshots",
+    "gameplay_demo_video"
+  ],
+  "scope": "Upload exactly 3 screenshots, 20-second video and APK 0.1.3 Code 4; bind APK main; replace screenshot set and gameplay video; update description and APK release notes. No review preparation, precheck, submission, schedule change or publication.",
+  "keepExisting": [
+    "title",
+    "icon",
+    "banner_4",
+    "developer_message",
+    "promotion_text",
+    "promotion_material_type",
+    "app_platforms",
+    "region_flag_android",
+    "region_flag_ios",
+    "release_schedule",
+    "release_time",
+    "apk_anti_addiction_status",
+    "apk_sandbox_authorized",
+    "apk_update_mode"
+  ],
+  "homepageMaterialTypePreserved": "GAMEPLAY_DEMO",
+  "checks": {
+    "editModePassed": 131,
+    "playModePassed": 41,
+    "currentSourceFilesMatched": 394,
+    "stagingSourceFilesMatched": 405,
+    "apkSignatureAndCrcPassed": true,
+    "deviceTested": false
+  },
+  "approval": {
+    "date": "2026-10-22",
+    "appId": "986196",
+    "developerId": "338749",
+    "reply": "确认，按检查页更新草稿",
+    "scope": "Upload APK 0.1.3 Code 4, three approved screenshots, 20-second video; bind APK main; replace screenshots and gameplay video; update description and release notes. No review or publication.",
+    "subsequentPreference": "之后更新不用更新录屏和截图，这次就算了",
+    "preferenceApplies": "Future updates preserve existing screenshots and video by default; this approved update remains unchanged."
+  },
+  "execution": {
+    "date": "2026-10-22",
+    "appId": "986196",
+    "developerId": "338749",
+    "status": "draft-saved-awaiting-user-review",
+    "approved": true,
+    "uploadsSucceeded": 5,
+    "mediaFieldsReadbackPassed": 2,
+    "textFieldsReadbackPassed": 2,
+    "changedFields": [
+      "apk_whatsnew",
+      "description",
+      "gameplay_demo_video",
+      "screenshots"
+    ],
+    "otherReadFieldsUnchanged": true,
+    "apkVersion": "0.1.3",
+    "apkVersionCode": 4,
+    "apkId": 1069190,
+    "mainBindingVerified": true,
+    "platformApkMd5MatchesLocal": true,
+    "draftVersion": "V-20261019",
+    "analysis": {
+      "blockers": [],
+      "suggestions": [],
+      "warnings": []
+    },
+    "packageLibraryConfigStatus": "warning",
+    "reviewPrepared": false,
+    "reviewSubmitted": false,
+    "published": false,
+    "deviceTested": false,
+    "futureMediaPreference": "Keep screenshots and gameplay video unless explicitly requested"
+  }
+}

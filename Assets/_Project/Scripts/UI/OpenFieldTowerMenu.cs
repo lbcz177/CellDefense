@@ -7,13 +7,16 @@ using UnityEngine.UI;
 // Adapts Level02's select -> stats/range -> sell -> confirm flow to open-field cells.
 public sealed class OpenFieldTowerMenu : MonoBehaviour
 {
+    public RectTransform PanelRect => IsVisible ? panelRect : null;
+    public RectTransform UpgradeButtonRect => IsVisible && !IsConfirming
+        ? upgradeButton.GetComponent<RectTransform>() : null;
     private OpenFieldPrototypeController owner;
     private Camera gameplayCamera;
     private GameObject canvasObject;
     private RectTransform canvasRect, panelRect;
     private GameObject confirmation;
     private TowerController shownTower, pendingSellTower;
-    private TextMeshProUGUI info, sellLabel, upgradeLabel, confirmationText;
+    private PixelImageText info, sellLabel, upgradeLabel, confirmationText;
     private Button upgradeButton;
     private int lastATP = -1, lastRefund = -1;
     private float lastHealth = -1f;
@@ -41,6 +44,7 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         MobileDisplay.ConfigureCanvas(canvas);
         canvasRect = canvasObject.GetComponent<RectTransform>();
         Image panel = Image("Tower Details", canvasRect, new Color(.1f, .14f, .21f, .97f));
+        PromptImageResources.StylePanel(panel);
         panelRect = panel.rectTransform;
         Rect(panelRect, new Vector2(.5f, .5f), new Vector2(.5f, .5f), Vector2.zero, new Vector2(280f, MobileDisplay.IsActive ? 378f : 334f));
         info = Label("Tower Stats", panelRect, font, 17f);
@@ -50,11 +54,11 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         Rect(close.GetComponent<RectTransform>(), Vector2.one, Vector2.one, new Vector2(-4f, -4f), new Vector2(MobileDisplay.IsActive ? 48f : 28f, MobileDisplay.IsActive ? 48f : 28f));
         Button sell = Button("Sell Tower", panelRect, font, "出售", new Color(.55f, .18f, .2f), RequestSell);
         Rect(sell.GetComponent<RectTransform>(), new Vector2(.5f, 0f), new Vector2(.5f, 0f), new Vector2(0f, 12f), new Vector2(252f, MobileDisplay.IsActive ? 56f : 38f));
-        sellLabel = sell.GetComponentInChildren<TextMeshProUGUI>();
+        sellLabel = sell.GetComponentInChildren<PixelImageText>();
         upgradeButton = Button("Upgrade Tower", panelRect, font, "升级", new Color(.18f, .4f, .52f), UpgradeTower);
         Rect(upgradeButton.GetComponent<RectTransform>(), new Vector2(.5f, 0f), new Vector2(.5f, 0f),
             new Vector2(0f, MobileDisplay.IsActive ? 78f : 58f), new Vector2(252f, MobileDisplay.IsActive ? 56f : 38f));
-        upgradeLabel = upgradeButton.GetComponentInChildren<TextMeshProUGUI>();
+        upgradeLabel = upgradeButton.GetComponentInChildren<PixelImageText>();
 
         Image backdrop = Image("Sell Confirmation", canvasRect, new Color(0f, 0f, 0f, .55f));
         confirmation = backdrop.gameObject;
@@ -66,6 +70,7 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         cancelBackdrop.transition = Selectable.Transition.None;
         cancelBackdrop.onClick.AddListener(CancelSell);
         Image dialog = Image("Dialog", backdrop.transform, new Color(.1f, .14f, .21f, 1f));
+        PromptImageResources.StylePanel(dialog);
         Button dialogBlocker = dialog.gameObject.AddComponent<Button>();
         dialogBlocker.targetGraphic = dialog;
         dialogBlocker.transition = Selectable.Transition.None;
@@ -143,6 +148,7 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         int refund = owner.GetSellRefund(owner.SelectedTowerCell.Value);
         int upgradeCost = owner.GetUpgradeCost(owner.SelectedTowerCell.Value);
         upgradeButton.interactable = !IsConfirming && owner.CanUpgradeAt(owner.SelectedTowerCell.Value);
+        upgradeButton.image.color = upgradeButton.interactable ? Color.white : new Color(1f, 1f, 1f, .45f);
         if (lastATP != owner.CurrentATP || lastHealth != state.CurrentHealth ||
             lastRefund != refund || lastUpgraded != shownTower.IsUpgraded)
         {
@@ -204,13 +210,13 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         image.color = color;
         return image;
     }
-    private static TextMeshProUGUI Label(string name, Transform parent, TMP_FontAsset font, float size)
+    private static PixelImageText Label(string name, Transform parent, TMP_FontAsset font, float size)
     {
-        GameObject obj = new GameObject(name, typeof(RectTransform), typeof(TextMeshProUGUI));
+        GameObject obj = new GameObject(name, typeof(RectTransform), typeof(PixelImageText));
         obj.layer = LayerMask.NameToLayer("UI");
         obj.transform.SetParent(parent, false);
-        TextMeshProUGUI text = obj.GetComponent<TextMeshProUGUI>();
-        text.font = font;
+        PixelImageText text = obj.GetComponent<PixelImageText>();
+
         text.fontSize = size;
         text.alignment = TextAlignmentOptions.Center;
         text.color = Color.white;
@@ -222,13 +228,14 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         Image background = Image(name, parent, color);
         Button button = background.gameObject.AddComponent<Button>();
         button.targetGraphic = background;
+        PromptImageResources.StyleButton(button);
         button.navigation = new Navigation { mode = Navigation.Mode.None };
         button.onClick.AddListener(() =>
         {
             if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
             action();
         });
-        TextMeshProUGUI text = Label("Label", background.transform, font, 18f);
+        PixelImageText text = Label("Label", background.transform, font, 18f);
         text.text = caption;
         text.rectTransform.anchorMin = Vector2.zero;
         text.rectTransform.anchorMax = Vector2.one;

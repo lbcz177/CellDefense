@@ -1,0 +1,20 @@
+{
+  "status": "local-candidate-awaiting-confirmation",
+  "appId": "986196",
+  "developerId": "338749",
+  "apk": "Builds/Android/CellDefense-0.1.3.apk",
+  "versionName": "0.1.3",
+  "versionCode": 4,
+  "packageName": "com.celldefense.game",
+  "productName": "胞卫战",
+  "bytes": 60499274,
+  "sha256": "71ad2d38e81551542aac595726c3571a1e4ca78afaab11be0f85abe8202fb216",
+  "development": false,
+  "sameSigningCertificateAsPreviousLocalBuilds": true,
+  "fixedVersionDeviceTested": false,
+  "platformWriteApproved": false,
+  "updateNote": "《胞卫战》v0.1.3 试玩版更新\n- 新增第一关三轮新手引导，涵盖建造、开波、壁垒和升级；可随时跳过，重开后重新开始。\n- 纤维蛋白壁垒改为可承伤的拦截物：500 生命、30 ATP，拦截全部经过的敌人；取消累计建造次数限制，不再改变敌人路线。\n- 完善教程、怪物出场、波次及建造操作的像素图片提示，并接入暂停与倍速图片按钮。\n- 优化胜利、失败面板在电脑和手机上的等比适配及按钮间距。\n- 修复结算后战斗血条和状态图像残留的问题。",
+  "platformDraftSaved": false,
+  "reviewSubmitted": false,
+  "published": false
+}

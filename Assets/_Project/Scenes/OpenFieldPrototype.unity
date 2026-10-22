@@ -403,6 +403,7 @@ MonoBehaviour:
   showDebugGrid: 0
   waveSequence: {fileID: 11400000, guid: 2c84dffa9d902fe972c7bb304d8b1a2f, type: 2}
   initialATP: 100
+  enableFirstLevelTutorial: 1
   betweenRoundATP: 40
   initialCoreLife: 10
   enemySpeedMultiplier: 0.85

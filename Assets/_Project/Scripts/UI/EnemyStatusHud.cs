@@ -16,7 +16,9 @@ public sealed class EnemyStatusHud : MonoBehaviour
     private readonly Dictionary<EnemyController, Row> rows = new Dictionary<EnemyController, Row>();
     private readonly HashSet<EnemyDefinition> announced = new HashSet<EnemyDefinition>();
     private readonly Queue<string> hints = new Queue<string>();
-    private TextMeshProUGUI hint;
+    private readonly Dictionary<string, Sprite> introductionPortraits = new Dictionary<string, Sprite>();
+    private Image portrait;
+    private PixelImageText hint;
     private float hintUntil;
     private float allowEmptyHintUntil;
 
@@ -45,22 +47,35 @@ public sealed class EnemyStatusHud : MonoBehaviour
         notice.layer = obj.layer;
         RectTransform noticeRect = notice.GetComponent<RectTransform>();
         noticeRect.anchorMin = noticeRect.anchorMax = noticeRect.pivot = Vector2.one;
-        noticeRect.anchoredPosition = new Vector2(-12f, -12f);
-        noticeRect.sizeDelta = new Vector2(320f, 90f);
-        notice.GetComponent<Image>().color = new Color(0.1f, 0.14f, 0.21f, 0.94f);
+        noticeRect.anchoredPosition = new Vector2(-12f, -92f);
+        noticeRect.sizeDelta = new Vector2(392f, 140f);
+        PromptImageResources.StylePanel(notice.GetComponent<Image>(), true);
         notice.GetComponent<Image>().raycastTarget = false;
-        GameObject text = new GameObject("Hint", typeof(RectTransform), typeof(TextMeshProUGUI));
+        GameObject icon = new GameObject("Pathogen Portrait", typeof(RectTransform), typeof(Image));
+        icon.transform.SetParent(noticeRect, false);
+        icon.layer = obj.layer;
+        portrait = icon.GetComponent<Image>();
+        portrait.preserveAspect = true;
+        portrait.raycastTarget = false;
+        portrait.rectTransform.anchorMin = portrait.rectTransform.anchorMax = new Vector2(0f, .5f);
+        portrait.rectTransform.pivot = new Vector2(0f, .5f);
+        portrait.rectTransform.anchoredPosition = new Vector2(14f, 0f);
+        portrait.rectTransform.sizeDelta = new Vector2(66f, 66f);
+        GameObject text = new GameObject("Hint", typeof(RectTransform), typeof(PixelImageText));
         text.transform.SetParent(noticeRect, false);
         text.layer = obj.layer;
-        hint = text.GetComponent<TextMeshProUGUI>();
-        hint.font = font;
+        hint = text.GetComponent<PixelImageText>();
+
         hint.fontSize = 18f;
+        hint.enableAutoSizing = true;
+        hint.fontSizeMin = 16f;
+        hint.fontSizeMax = 18f;
         hint.alignment = TextAlignmentOptions.MidlineLeft;
         hint.raycastTarget = false;
         hint.rectTransform.anchorMin = Vector2.zero;
         hint.rectTransform.anchorMax = Vector2.one;
-        hint.rectTransform.offsetMin = new Vector2(10f, 6f);
-        hint.rectTransform.offsetMax = new Vector2(-10f, -6f);
+        hint.rectTransform.offsetMin = new Vector2(90f, 14f);
+        hint.rectTransform.offsetMax = new Vector2(-16f, -14f);
         notice.SetActive(false);
     }
 
@@ -82,7 +97,11 @@ public sealed class EnemyStatusHud : MonoBehaviour
         else if (definition.AntigenId == AntigenId.Flagellate) detail = "移动很快，接力火力与减速更有效。";
         else if (definition.KillReward == 0) detail = "召唤单位也会伤害核心，需要及时清扫。";
         else detail = "成群进入，注意覆盖不同入口。";
-        hints.Enqueue(definition.DisplayName + (definition.IsBoss ? " 即将进入" : "") + "\n" + detail);
+        string message = definition.DisplayName + (definition.IsBoss ? " 即将进入" : "") + "\n" + detail;
+        SpriteRenderer source = definition.EnemyPrefab != null
+            ? definition.EnemyPrefab.GetComponentInChildren<SpriteRenderer>() : null;
+        introductionPortraits[message] = source != null ? source.sprite : null;
+        hints.Enqueue(message);
     }
 
     public void ClearHints()
@@ -101,6 +120,9 @@ public sealed class EnemyStatusHud : MonoBehaviour
             (enemies.Count > 0 || Time.time < allowEmptyHintUntil))
         {
             hint.text = hints.Dequeue();
+            introductionPortraits.TryGetValue(hint.text, out Sprite icon);
+            portrait.sprite = icon;
+            portrait.enabled = icon != null;
             hintUntil = Time.time + 4f;
             hint.transform.parent.gameObject.SetActive(true);
         }
@@ -224,12 +246,15 @@ public sealed class EnemyStatusHud : MonoBehaviour
         rect.sizeDelta = new Vector2(boss ? 190f : 66f, 12f);
         RectTransform hpRoot = CreateBar(rect, "Health", 0f, new Color(0.3f, 0.95f, 0.45f), out RectTransform hp);
         RectTransform shieldRoot = CreateBar(rect, "Shield", 7f, new Color(0.25f, 0.65f, 1f), out RectTransform shield);
-        GameObject labelObj = new GameObject("Name and Warning", typeof(RectTransform), typeof(TextMeshProUGUI));
+        GameObject labelObj = new GameObject("Name and Warning", typeof(RectTransform), typeof(PixelImageText));
         labelObj.layer = obj.layer;
         labelObj.transform.SetParent(rect, false);
-        TextMeshProUGUI label = labelObj.GetComponent<TextMeshProUGUI>();
-        label.font = font;
+        PixelImageText label = labelObj.GetComponent<PixelImageText>();
+
         label.fontSize = boss ? 16f : 13f;
+        label.enableAutoSizing = true;
+        label.fontSizeMin = boss ? 13f : 11f;
+        label.fontSizeMax = boss ? 16f : 13f;
         label.alignment = TextAlignmentOptions.Bottom;
         label.color = Color.white;
         label.raycastTarget = false;
@@ -270,7 +295,7 @@ public sealed class EnemyStatusHud : MonoBehaviour
     private sealed class Row
     {
         public RectTransform Root, Health, ShieldRoot, Shield;
-        public TextMeshProUGUI Label;
+        public PixelImageText Label;
         public int SeenAt = -1;
         public float LastHealth = -1f, LastShield = -1f;
         public string LastPhase, LastWarning;

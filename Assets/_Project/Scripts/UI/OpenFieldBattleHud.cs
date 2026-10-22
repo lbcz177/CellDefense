@@ -12,7 +12,7 @@ public sealed class OpenFieldBattleHud : MonoBehaviour
     [SerializeField] private HudSpriteNumber life;
     [SerializeField] private HudSpriteNumber round;
     [SerializeField] private HudSpriteNumber roundTotal;
-    [SerializeField] private TextMeshProUGUI defenseText;
+    [SerializeField] private PixelImageText defenseText;
     [SerializeField] private Vector2 margin = new Vector2(12f, 12f);
     private OpenFieldPrototypeController owner;
     private RectTransform canvasRect;

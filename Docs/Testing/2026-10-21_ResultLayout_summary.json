@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-21",
+  "fullPlayMode": {
+    "total": "39",
+    "passed": "39",
+    "stage": "unified screen fitting, before final button-spacing adjustment"
+  },
+  "finalLayout": {
+    "stateCombinations": 60,
+    "resizeWhileVisible": "960x540",
+    "sizes": [
+      "640x480",
+      "1280x720",
+      "2048x928"
+    ],
+    "passed": "1",
+    "actualButtonRaycasts": true,
+    "total": "1"
+  },
+  "verificationProject": "Logs/CodexTradingTests",
+  "files": [
+    {
+      "path": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs",
+      "sha256": "00BEC7A945B3E0ECA3DD8FA07887CAE3B57EA1ECF45DC4528BEB7BC0FEC60F5C",
+      "matches": true
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/MobileSafeFrame.cs",
+      "sha256": "809871496AC237B28A07497F52E58B0C35490A75979C3A26891F692963FF669A",
+      "matches": true
+    },
+    {
+      "path": "Assets/_Project/Tests/PlayMode/MobilePlayModeTests.cs",
+      "sha256": "219A95A73CD15F407B247F10E02D3668CBA9ED1B250F44966E9BD7C48748A1E0",
+      "matches": true
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Menu/Victory.prefab",
+      "sha256": "1E823FA2A4CC5F50F3A20CF83DA302952CE69034F4700DC943C304270B102089",
+      "matches": true
+    },
+    {
+      "path": "Assets/_Project/Prefabs/Menu/Defeat.prefab",
+      "sha256": "FC029E3A7317244EB0E7BF33EC188E600ED713237C9C284B9BC2BD7D54C4BDCD",
+      "matches": true
+    }
+  ],
+  "apkRebuilt": false,
+  "mainEditorStopped": false,
+  "platformModified": false
+}

@@ -58,6 +58,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     [SerializeField] private TMP_FontAsset buildMenuFont;
     [SerializeField] private Sprite waveButtonArtwork;
     [SerializeField] private OpenFieldBattleHud battleHud;
+    [SerializeField] private bool enableFirstLevelTutorial;
 
     [Header("Result UI")]
     [SerializeField] private GameObject victoryPanel;
@@ -89,6 +90,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private OpenFieldEntranceWaveButtons entranceWaveButtons;
     private EnemyStatusHud enemyHud;
     private OpenFieldPlaybackControls playbackControls;
+    private FirstLevelTutorial tutorial;
     private Camera viewportBackgroundCamera;
     private int playbackInputBlockedFrame = -1;
     private readonly BoardTapGesture boardTap = new BoardTapGesture();
@@ -108,6 +110,14 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
     public OpenFieldPhase Phase { get; private set; }
     public int CurrentRound => roundIndex + 1;
+    public Vector2Int? SelectedBuildCell => selectedBuildCell;
+    public IEnumerable<TowerCombatState> Defenders => cellDefenders.Values;
+    public event Action SelectionChanged;
+    public event Action RoundStateChanged;
+    public event Action<TowerController> TowerBuilt;
+    public event Action<TowerController> TowerUpgraded;
+    public event Action<TowerController> TowerSold;
+    public event Action<TowerController> TowerLost;
     public int CurrentATP => economy.CurrentATP;
     public int CurrentCoreLife => life.CurrentLife;
     public bool IsPaused { get; private set; }
@@ -217,10 +227,16 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         {
             ConfigureResultPanel(victoryPanel, true);
             ConfigureResultPanel(defeatPanel, false);
-            FitResultForMobile(victoryPanel);
-            FitResultForMobile(defeatPanel);
+            FitResultToScreen(victoryPanel);
+            FitResultToScreen(defeatPanel);
             victoryPanel.SetActive(false);
             defeatPanel.SetActive(false);
+        }
+        if (enableFirstLevelTutorial)
+        {
+            tutorial = viewObject.AddComponent<FirstLevelTutorial>();
+            tutorial.Initialize(this, buildMenuFont, gameplayCamera, grid, CellToWorld,
+                buildMenu, towerMenu, entranceWaveButtons);
         }
     }
 
@@ -273,6 +289,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
 
         if (battleHud.ContainsPointer(Input.mousePosition) || buildMenu.ContainsPointer(Input.mousePosition) ||
+            (tutorial != null && tutorial.ContainsPointer(Input.mousePosition)) ||
             (playbackControls != null && playbackControls.ContainsPointer(Input.mousePosition)) ||
             (towerMenu != null && towerMenu.ContainsPointer(Input.mousePosition)) ||
             entranceWaveButtons.ContainsPointer(Input.mousePosition) ||
@@ -326,6 +343,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private bool IsBoardPointerBlocked(Vector2 position)
     {
         if (battleHud.ContainsPointer(position) || buildMenu.ContainsPointer(position) ||
+            (tutorial != null && tutorial.ContainsPointer(position)) ||
             playbackControls.ContainsPointer(position) || towerMenu.ContainsPointer(position) ||
             entranceWaveButtons.ContainsPointer(position)) return true;
         if (EventSystem.current == null) return false;
@@ -359,6 +377,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         selectedBuildCell = cell;
         buildMenu.Show(CellToWorld(cell));
         RefreshSelectedBuildPreview();
+        SelectionChanged?.Invoke();
         return true;
     }
 
@@ -377,10 +396,17 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         selectedTowerCell = cell;
         if (towerMenu != null) towerMenu.Show(tower);
         RefreshSelectedBuildPreview();
+        SelectionChanged?.Invoke();
         return true;
     }
 
     public void ClearSelection() => ClearBuildSelection();
+
+    public void SuppressBoardInputThisFrame()
+    {
+        playbackInputBlockedFrame = Time.frameCount;
+        boardTap.Reset();
+    }
 
     // Pause is orthogonal to the round phase: keep the spawn coroutine, paths and contacts intact.
     public bool Pause()
@@ -485,6 +511,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         // Do not reinitialize: health, contacts, antigen memory, cooldowns and routes stay intact.
         if (towerMenu != null) towerMenu.Refresh();
         RefreshSelectedBuildPreview();
+        TowerUpgraded?.Invoke(tower);
         return true;
     }
 
@@ -494,6 +521,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         int refund = TowerEconomyRules.GetSellRefund(tower, sellRefundPercent);
         RemovePlacedTower(cellDefenders[cell]);
         if (refund > 0) economy.AddATP(refund);
+        TowerSold?.Invoke(tower);
         return true;
     }
 
@@ -558,7 +586,9 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
     private void HandleDefenderDied(TowerCombatState defender)
     {
+        TowerController lost = defender.Tower;
         RemovePlacedTower(defender);
+        TowerLost?.Invoke(lost);
     }
 
     private void RemovePlacedTower(TowerCombatState defender)
@@ -652,6 +682,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         if (towerMenu != null) towerMenu.Hide();
         if (presentation != null) presentation.HidePreview();
         RefreshPlanningRoutes();
+        SelectionChanged?.Invoke();
     }
 
     private void OnDisable()
@@ -712,7 +743,6 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             cellDefenders.Add(cell, defender);
             RebuildSignalLinks();
             ClearBuildSelection();
-            return true;
         }
         catch (Exception exception)
         {
@@ -728,6 +758,9 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             Debug.LogException(exception, this);
             return false;
         }
+        // Publish only after the transaction commits; observers cannot cause a build rollback.
+        TowerBuilt?.Invoke(tower);
+        return true;
     }
 
     public bool StartAssault()
@@ -735,6 +768,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         if (!TryPrepareAssault()) return false;
         spawnRoutine = StartCoroutine(SpawnRound(waveSequence.GetWave(roundIndex)));
         if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
+        RoundStateChanged?.Invoke();
         return true;
     }
 
@@ -1089,6 +1123,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         enemyHud.ClearHints();
         RefreshPlanningRoutes();
         if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
+        RoundStateChanged?.Invoke();
     }
 
     private void FinishRun(OpenFieldPhase result)
@@ -1099,7 +1134,8 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         if (battleHud != null) battleHud.Hide();
         if (entranceWaveButtons != null) entranceWaveButtons.Hide();
         ClearBuildSelection();
-        enemyHud.ClearHints();
+        // OnDisable hides every status row and stops damaged defenders from restoring it.
+        enemyHud.enabled = false;
         if (spawnRoutine != null)
         {
             StopCoroutine(spawnRoutine);
@@ -1120,6 +1156,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             victoryPanel.SetActive(result == OpenFieldPhase.Victory);
             defeatPanel.SetActive(result == OpenFieldPhase.Defeat);
         }
+        RoundStateChanged?.Invoke();
     }
 
     private void ConfigureResultPanel(GameObject panel, bool isVictoryPanel)
@@ -1154,12 +1191,13 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
     }
 
-    private void FitResultForMobile(GameObject panel)
+    private void FitResultToScreen(GameObject panel)
     {
-        if (!MobileDisplay.IsActive) return;
         Canvas resultCanvas = panel.transform.Find("Canvas").GetComponent<Canvas>();
-        CanvasScaler scaler = resultCanvas.GetComponent<CanvasScaler>();
-        Transform content = MobileSafeFrame.Wrap(resultCanvas, scaler.referenceResolution);
+        // The original prefabs use 10x artwork and 6x buttons. Normalize both
+        // desktop and mobile, then fit the entire composition when the viewport changes.
+        // A 600px panel inside a 720px design height also leaves space above and below.
+        Transform content = MobileSafeFrame.Wrap(resultCanvas, new Vector2(800f, 720f));
         List<Button> activeActions = new List<Button>();
         foreach (Button button in content.GetComponentsInChildren<Button>())
             if (button.gameObject.activeSelf) activeActions.Add(button);
@@ -1169,7 +1207,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             RectTransform rect = actions[i].GetComponent<RectTransform>();
             rect.localScale = Vector3.one;
             rect.sizeDelta = new Vector2(512f, 96f);
-            rect.anchoredPosition = new Vector2(0f, actions.Length == 3 ? 10f - i * 116f : -70f - i * 130f);
+            rect.anchoredPosition = new Vector2(0f, actions.Length == 3 ? 10f - i * 100f : -60f - i * 120f);
         }
         foreach (Image image in content.GetComponentsInChildren<Image>())
         {

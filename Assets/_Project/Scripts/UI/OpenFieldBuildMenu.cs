@@ -6,7 +6,7 @@ using UnityEngine.UI;
 // Context choices use the original HUD's icon, price and hover-preview layout.
 public sealed class OpenFieldBuildMenu : MonoBehaviour
 {
-    private const float CardSize = 112f;
+    private const float CardSize = 136f;
     private const float Gap = 8f;
     private RectTransform canvasRect;
     private RectTransform panelRect;
@@ -15,11 +15,14 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
     private TowerDefinition[] definitions;
     private Button[] buttons;
     private Image[] icons;
-    private TextMeshProUGUI[] labels;
+    private PixelImageText[] labels;
     private Func<int, string> rejectionReason;
     private Func<int, bool> canBuild;
     private Vector3 cellPosition;
     public bool IsVisible => panelRect != null && panelRect.gameObject.activeSelf;
+    public RectTransform PanelRect => IsVisible ? panelRect : null;
+    public RectTransform GetChoiceRect(int index) => IsVisible && index >= 0 && index < buttons.Length
+        ? buttons[index].GetComponent<RectTransform>() : null;
 
     public void Initialize(TowerDefinition[] choices, TMP_FontAsset font, Camera camera,
         Func<int, bool> isAvailable, Action<int> onChoose, Action<int> onPreview, Action onCancel,
@@ -50,16 +53,16 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
 
         GameObject panel = CreateUIObject("Tower Choices", canvasRect, typeof(Image));
         panelRect = panel.GetComponent<RectTransform>();
-        panelRect.GetComponent<Image>().color = new Color(0.1f, 0.14f, 0.21f, 0.96f);
+        PromptImageResources.StylePanel(panelRect.GetComponent<Image>());
         panelRect.anchorMin = panelRect.anchorMax = panelRect.pivot = new Vector2(0.5f, 0.5f);
 
-        TextMeshProUGUI title = CreateLabel(panelRect, font, "选择防御细胞", 18f);
+        PixelImageText title = CreateLabel(panelRect, font, "选择防御细胞", 18f);
         SetRect(title.rectTransform, new Vector2(0f, 1f), new Vector2(1f, 1f),
             new Vector2(0.5f, 1f), new Vector2(0f, -8f), new Vector2(-16f, 26f));
 
         buttons = new Button[choices.Length];
         icons = new Image[choices.Length];
-        labels = new TextMeshProUGUI[choices.Length];
+        labels = new PixelImageText[choices.Length];
         for (int i = 0; i < choices.Length; i++)
         {
             int index = i;
@@ -87,13 +90,13 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
             icons[i] = icon;
 
             string labelText = ChoiceLabel(i);
-            TextMeshProUGUI label = CreateLabel(card.transform, font, labelText, 16f);
+            PixelImageText label = CreateLabel(card.transform, font, labelText, 16f);
             labels[i] = label;
             label.enableAutoSizing = true;
             label.fontSizeMin = 11f;
             label.fontSizeMax = 16f;
             SetRect(label.rectTransform, Vector2.zero, new Vector2(1f, 0f),
-                new Vector2(0.5f, 0f), new Vector2(0f, 3f), new Vector2(-4f, 46f));
+                new Vector2(0.5f, 0f), new Vector2(0f, 3f), new Vector2(-4f, 64f));
         }
 
         GameObject cancelObject = CreateUIObject("Cancel Build", panelRect, typeof(Image), typeof(Button));
@@ -101,10 +104,11 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         cancelBackground.color = new Color(0.25f, 0.32f, 0.4f, 1f);
         Button cancel = cancelObject.GetComponent<Button>();
         cancel.targetGraphic = cancelBackground;
+        PromptImageResources.StyleButton(cancel);
         cancel.onClick.AddListener(() => onCancel());
         SetRect(cancel.GetComponent<RectTransform>(), new Vector2(0.5f, 0f),
             new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 8f), new Vector2(180f, MobileDisplay.IsActive ? 48f : 28f));
-        TextMeshProUGUI cancelLabel = CreateLabel(cancelObject.transform, font, MobileDisplay.IsActive ? "取消" : "取消（右键 / Esc）", 14f);
+        PixelImageText cancelLabel = CreateLabel(cancelObject.transform, font, MobileDisplay.IsActive ? "取消" : "取消（右键 / Esc）", 14f);
         cancelLabel.rectTransform.anchorMin = Vector2.zero;
         cancelLabel.rectTransform.anchorMax = Vector2.one;
         cancelLabel.rectTransform.offsetMin = cancelLabel.rectTransform.offsetMax = Vector2.zero;
@@ -191,7 +195,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         TowerDefinition definition = definitions[index];
         if (definition == null) return "未配置";
         string reason = rejectionReason != null ? rejectionReason(index) : string.Empty;
-        string role = definition.InterceptsAllEnemies ? "承伤壁垒 · 拦截全部" :
+        string role = definition.InterceptsAllEnemies ? "承伤壁垒·拦截全部" :
             $"可承伤 · 拦截 {definition.InterceptCapacity}";
         return $"{definition.DisplayName}\n{definition.BuildCost} ATP\n" +
             (string.IsNullOrEmpty(reason) ? role : reason);
@@ -206,11 +210,11 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         return obj;
     }
 
-    private static TextMeshProUGUI CreateLabel(Transform parent, TMP_FontAsset font, string text, float size)
+    private static PixelImageText CreateLabel(Transform parent, TMP_FontAsset font, string text, float size)
     {
-        GameObject obj = CreateUIObject("Label", parent, typeof(TextMeshProUGUI));
-        TextMeshProUGUI label = obj.GetComponent<TextMeshProUGUI>();
-        label.font = font;
+        GameObject obj = CreateUIObject("Label", parent, typeof(PixelImageText));
+        PixelImageText label = obj.GetComponent<PixelImageText>();
+
         label.text = text;
         label.fontSize = size;
         label.alignment = TextAlignmentOptions.Center;

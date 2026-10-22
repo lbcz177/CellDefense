@@ -211,10 +211,10 @@ public class MainMenuController : MonoBehaviour
             new Vector2(0.96f, 0.95f), new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.zero);
         panel.GetComponent<Image>().color = new Color(0.28f, 0.1f, 0.17f, 1f);
 
-        TextMeshProUGUI heading = CreateLabel("Title", panel.transform, "选择关卡", 32f);
+        PixelImageText heading = CreateLabel("Title", panel.transform, "选择关卡", 32f);
         SetRect(heading.rectTransform, new Vector2(0f, 1f), Vector2.one,
             new Vector2(0.5f, 1f), new Vector2(0f, -16f), new Vector2(-240f, 44f));
-        TextMeshProUGUI hint = CreateLabel("Hint", panel.transform, "选择地图，开始防守", 18f);
+        PixelImageText hint = CreateLabel("Hint", panel.transform, "选择地图，开始防守", 18f);
         SetRect(hint.rectTransform, new Vector2(0f, 1f), Vector2.one,
             new Vector2(0.5f, 1f), new Vector2(0f, -62f), new Vector2(-40f, 26f));
         Button back = CreateButton("Back", panel.transform, "返回");
@@ -256,7 +256,7 @@ public class MainMenuController : MonoBehaviour
             levelButtons[i] = card;
             card.interactable = Application.CanStreamedLevelBeLoaded(LevelScenes[i]);
             card.onClick.AddListener(() => LoadLevel(levelIndex));
-            TextMeshProUGUI label = card.GetComponentInChildren<TextMeshProUGUI>();
+            PixelImageText label = card.GetComponentInChildren<PixelImageText>();
             SetRect(label.rectTransform, Vector2.zero, Vector2.right,
                 new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(-16f, 38f));
             label.enableAutoSizing = true;
@@ -272,7 +272,7 @@ public class MainMenuController : MonoBehaviour
                 new Vector2(0.5f, 1f), new Vector2(0f, -10f), new Vector2(-20f, 128f));
         }
 
-        TextMeshProUGUI footer = CreateLabel("Footer", panel.transform,
+        PixelImageText footer = CreateLabel("Footer", panel.transform,
             MobileDisplay.IsActive ? "滑动浏览关卡 · 返回键关闭" : "Esc 返回主菜单", 16f);
         SetRect(footer.rectTransform, Vector2.zero, Vector2.right,
             new Vector2(0.5f, 0f), new Vector2(0f, 10f), new Vector2(-40f, 24f));
@@ -348,17 +348,17 @@ public class MainMenuController : MonoBehaviour
         colors.pressedColor = new Color(0.94f, 0.65f, 0.55f, 1f);
         colors.disabledColor = new Color(0.55f, 0.48f, 0.46f, 0.8f);
         button.colors = colors;
-        TextMeshProUGUI label = CreateLabel("Label", obj.transform, text, 28f);
+        PixelImageText label = CreateLabel("Label", obj.transform, text, 28f);
         label.color = new Color(0.25f, 0.07f, 0.17f, 1f);
         Stretch(label.rectTransform);
         return button;
     }
 
-    private TextMeshProUGUI CreateLabel(string name, Transform parent, string text, float size)
+    private PixelImageText CreateLabel(string name, Transform parent, string text, float size)
     {
-        GameObject obj = CreateUI(name, parent, typeof(TextMeshProUGUI));
-        TextMeshProUGUI label = obj.GetComponent<TextMeshProUGUI>();
-        label.font = menuFont;
+        GameObject obj = CreateUI(name, parent, typeof(PixelImageText));
+        PixelImageText label = obj.GetComponent<PixelImageText>();
+
         label.text = text;
         label.fontSize = size;
         label.color = new Color(1f, 0.94f, 0.82f, 1f);

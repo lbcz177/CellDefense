@@ -421,6 +421,57 @@ public sealed class ZzMobileLandscapePlayModeTests
         }
     }
 
+    [UnityTest, Category("MobileLandscape")]
+    public IEnumerator ResultsFitDesktopAndMobileSafeAreasIncludingVisibleWindowResize()
+    {
+        foreach (bool mobile in new[] { false, true })
+        foreach (Vector2Int size in new[] { new Vector2Int(640, 480), new Vector2Int(1280, 720), new Vector2Int(2048, 928) })
+        using (new Resolution(size.x, size.y))
+        {
+            yield return null;
+            yield return null;
+            Preview(mobile);
+            foreach (string scene in new[] { "OpenFieldPrototype", "OpenFieldLevel02", "OpenFieldLevel03", "OpenFieldLevel04", "OpenFieldLevel05" })
+            foreach (string outcome in new[] { "Victory", "Defeat" })
+            {
+                yield return SceneManager.LoadSceneAsync(scene);
+                Component owner = Find("OpenFieldPrototypeController");
+                Call(owner, "FinishRun", Enum.Parse(Runtime("OpenFieldPhase"), outcome));
+                yield return null;
+                Canvas.ForceUpdateCanvases();
+                GameObject panel = (GameObject)Field(owner, outcome == "Victory" ? "victoryPanel" : "defeatPanel");
+                if (scene == "OpenFieldPrototype")
+                    OpenFieldPlaybackPlayModeTests.CaptureUi((Camera)Field(owner, "gameplayCamera"),
+                        $"result-{(mobile ? "mobile" : "desktop")}-{outcome}-{size.x}x{size.y}.png");
+                foreach (Image image in panel.GetComponentsInChildren<Image>()) Inside(image.rectTransform);
+                Button[] actions = panel.GetComponentsInChildren<Button>();
+                Assert.That(actions.Length, Is.EqualTo(outcome == "Victory" && scene != "OpenFieldLevel05" ? 3 : 2));
+                foreach (Button action in actions)
+                {
+                    Vector2 position = action.transform.TransformPoint(action.GetComponent<RectTransform>().rect.center);
+                    List<RaycastResult> hits = new List<RaycastResult>();
+                    EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current) { position = position }, hits);
+                    Assert.That(hits.Count, Is.GreaterThan(0));
+                    Assert.That(hits[0].gameObject.GetComponentInParent<Button>(), Is.EqualTo(action),
+                        "The visible button must remain clickable after fitting.");
+                }
+                if (scene == "OpenFieldLevel05" && outcome == "Defeat")
+                {
+                    using (new Resolution(960, 540))
+                    {
+                        yield return null;
+                        yield return null;
+                        Preview(mobile);
+                        Canvas.ForceUpdateCanvases();
+                        foreach (Image image in panel.GetComponentsInChildren<Image>()) Inside(image.rectTransform);
+                    }
+                    yield return null;
+                    Preview(mobile);
+                }
+            }
+        }
+    }
+
 
     [UnityTearDown]
     public IEnumerator Cleanup()

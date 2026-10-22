@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-22",
+  "status": "ready-for-user-confirmation",
+  "apkVersion": "0.1.3",
+  "versionCode": 4,
+  "apkBytes": 60499274,
+  "apkSha256": "71ad2d38e81551542aac595726c3571a1e4ca78afaab11be0f85abe8202fb216",
+  "editMode": {
+    "passed": 131,
+    "total": 131
+  },
+  "playMode": {
+    "passed": 41,
+    "total": 41
+  },
+  "stagingSourceFilesMatched": 405,
+  "currentCriticalSourceFilesMatched": 394,
+  "uploadPreviewsPassed": 5,
+  "textPreviewPassed": true,
+  "htmlLinksValid": 13,
+  "media": [
+    {
+      "kind": "screenshot",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/01_第一关新手引导.png",
+      "sha256": "e7b94d4e360879d8f730b666543487b207775a834a43227324de968edd4a74aa",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1206934,
+      "source": "Logs/StoreCapture/2026-10-22/01-tutorial.png",
+      "pixelsEdited": false
+    },
+    {
+      "kind": "screenshot",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/02_壁垒承伤说明.png",
+      "sha256": "a4425b288e9de66b149ced965b9a35793bb9b5e2d3a2817634a18d0337f5d20d",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1224788,
+      "source": "Logs/StoreCapture/2026-10-22/02-barrier-guide.png",
+      "pixelsEdited": false
+    },
+    {
+      "kind": "screenshot",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/截图/03_第三关防线战斗.png",
+      "sha256": "cce4f015a39db257df6981158e1d0dbf7cd113fea0ebe02cf46e1fd49ea74a01",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 1409975,
+      "source": "Logs/StoreCapture/2026-10-22/frames/frame-00280.png",
+      "pixelsEdited": false
+    },
+    {
+      "kind": "video",
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/TapTap发布准备_2026-10-22/演示视频~/胞卫战_0.1.3_运行演示_1080p_20秒.mp4",
+      "sha256": "be0cf3b80816069df059d92c24e7db552e6de1ea42a2616526915e2b5667b5b6",
+      "bytes": 4371954,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "seconds": 20.0,
+      "frames": 600,
+      "codec": "H.264",
+      "audio": false,
+      "source": "Unity Editor PlayMode mobile layout, not Android phone",
+      "selection": "First 600 original frames, continuous 20-second combat; no interpolation or visual overlays"
+    }
+  ],
+  "platformWritesPerformed": false,
+  "platformWriteApproved": false,
+  "reviewPrepared": false,
+  "reviewSubmitted": false,
+  "published": false,
+  "deviceTested": false
+}

@@ -1,0 +1,897 @@
+{
+  "date": "2026-10-21",
+  "unity": "2022.3.53f1c1",
+  "project": "Logs/CodexTradingTests",
+  "editMode": {
+    "passed": "129",
+    "total": "129"
+  },
+  "playMode": {
+    "passed": "38",
+    "total": "38"
+  },
+  "threeRealWaves": {
+    "extraResourcesGranted": false,
+    "combatDefinitionsChanged": false,
+    "playbackSpeed": 2,
+    "coreLife": 7,
+    "ATP": 315,
+    "phase": "Victory"
+  },
+  "sourceFileCount": 174,
+  "matchedFiles": 174,
+  "sourceFiles": [
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\像素精修_2026-10-21_v1\\制作记录~\\验证工具\\PixelRefinementImportTests.cs",
+      "sha256": "635E5971F5D318F01629928CB868A3FD21569A194493A7779A227233AFFDD253",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\像素精修_2026-10-21_v1\\制作记录~\\验证工具\\PixelRefinementVisualTests.cs",
+      "sha256": "57B063B99732524B772F564450D135254AEEB4E25A84883235022E05F49AC4C9",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\ArmoredBacillusDefinition.asset",
+      "sha256": "95E19AFAD71F80B38F6B44115FFFB22BED54EB9C7FAC4C3276B455139280831E",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\EnemyDefinition.asset",
+      "sha256": "C8CD3A3AC6B654FB45766E8E2A012518465F41AF51572AB6DFD7CE6A36A26E41",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\FlagellateDefinition.asset",
+      "sha256": "4C5CD82A8601A6B8EE34185273873ACAE7E64FE91F5BE11C444CC457140CB20F",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\FungalBossDefinition.asset",
+      "sha256": "91A9483100172E9481190FBCEA006510D27496FADEE54FC983EE8D7D9BBDB3C5",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\FungalSporeDefinition.asset",
+      "sha256": "EEB92945DC234C0625C2C5D4BCB801B1A1233D66A2F582A39E1EAC831DA2E0D4",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\MembraneBossDefinition.asset",
+      "sha256": "3A6341A9EF8FBC6CFC8404EB87BD1BA16C3298B6D1CAB92399F646D6D107785C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\OpenField03EnemyDefinition.asset",
+      "sha256": "446D5C7464AD4BA297A199A94DA8F17C851653DE55037E1594DBC62B211F0C3B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\StaphylococcusDefinition.asset",
+      "sha256": "BAA0D09183DEEDEEFC599EA37C50E96B5598F5BFD79860453E3D4A671CD5A57E",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\VirusBossDefinition.asset",
+      "sha256": "3AA8FCFDAF89ABE68F90CD470B708D7647F84AD6B813BA83A8591E0B85CD1809",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Enemies\\VirusCloneDefinition.asset",
+      "sha256": "25FFBAF3DE5B9981622FBCEAB906AD7E8341E0CD2F24480E6D653111C274E26C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Towers\\AcidTowerDefinition.asset",
+      "sha256": "03CB3185FDFB5824971E25DE433210AF4C176C02CE3886815994BF663B0A84B7",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Towers\\FibrinTowerDefinition.asset",
+      "sha256": "A224D46D4701A5FF3144BEF28E50791CE2F22A4B7685F4F2D845E2FB5266A8A2",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Towers\\InterceptorTowerDefinition.asset",
+      "sha256": "06365A97ED6B043CFEA9D910798C36C32323014F3E65C07EB1026D05ED3500CA",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Towers\\NeuralPulseTowerDefinition.asset",
+      "sha256": "5289581992DE92F8E32D79B04B334DF5DF5FB166A51C19513B52DA4DAC766F92",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Towers\\TowerDefinition 1.asset",
+      "sha256": "B22CEFC4670F2AE410082E9B3D43738EF843F9633BC496ECBA99BA554D8DF1FE",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Towers\\TowerDefinition.asset",
+      "sha256": "CE7B43D128E239324EE58FE530F8822F06933D8368F7E91A2AED93DF91473D9A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster01_Wave01.asset",
+      "sha256": "D80FB70A7BA4FFA651A492FF3028CDED06F21275DA1B5C74E21106E714615B1E",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster01_Wave02.asset",
+      "sha256": "F355333681C4EA2281EF73BAF0590BB3E95C3B4A5F95C448A5A07B808A9D08A1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster01_Wave03.asset",
+      "sha256": "03ECEAB3698D280EF1391626D861F792DD2D8DE7837D961838468B1314872489",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster01_WaveSequence.asset",
+      "sha256": "EA3462D14A8B3E04E9B200DEF0979988225E1F6AE5A26F951D2BA828D60C77C7",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster02_Wave01.asset",
+      "sha256": "E850F27202B8FD3165512CB5D106ED552930108652CE6BD940BC45ACAB5871A2",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster02_Wave02.asset",
+      "sha256": "65ED4492C7109A980763A08D8B00872886916D484D415AA358AA3D9EC09CFA8A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster02_Wave03.asset",
+      "sha256": "BFA681236F748374C5182AA40D6A5C2A656F857FE328917EB1FFC0F23EC1DF07",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster02_WaveSequence.asset",
+      "sha256": "571C2FF3928DA0A0BF90B2CE2CA95DCF764953DC0B72206C57A51015A552D591",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster03_Wave01.asset",
+      "sha256": "F7E994726CBAF0871CD3B59075372824B0227545CFC66046F180C0715BF297B1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster03_Wave02.asset",
+      "sha256": "338264BD85EFBA2EB450112A7874D4D5A432C89AD5F6617CE1DD64A439E4F4DB",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster03_Wave03.asset",
+      "sha256": "A3AE51CA3B954B94E035A8F2155872B5E183F5E22C770F6E332B5D67742BD09A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\EnemyRoster03_WaveSequence.asset",
+      "sha256": "907DA4C9A8A5C72606AEF88C92FC7449F8F9BD22088AD94882DB8CA1012BA3D5",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\Level02_Wave01.asset",
+      "sha256": "4AB4887692C7900D20AFB68AEDDB875D63AE26CC52A739EF455D97266F11AFCE",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\Level02_Wave02.asset",
+      "sha256": "ECF29E29DFF69B6EA9DD18E2EE9BC63D5C66979C5B794FDD434CF0694D7E6A93",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\Level02_Wave03.asset",
+      "sha256": "EBDEA3B1F1DD5D2A62E62FCC49746A7F2792FE40A3AAF9727457CFC6565FBC25",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\Level02_WaveSequence.asset",
+      "sha256": "41F42D1ACA4FD2CA2B2DDD5673CA96978C3E5CE5439CCEBE36C5D2970B33EED2",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField02_Wave01.asset",
+      "sha256": "59C322B29D8B31E9DC68BF54EE83B4C3D585EAC3010003C49FF8F5B81FB744FD",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField02_Wave02.asset",
+      "sha256": "ED18522FFE80ADBCF3ED1F2F2E160290B2C99853578BA6311465A1D4C90939C9",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField02_Wave03.asset",
+      "sha256": "B0A7259DFF8E90EE618AA4E4A8748D0C8046564A76ADE4610B927E6E496E8583",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField02_WaveSequence.asset",
+      "sha256": "49D564A8BDFEE4B15FCEB09B6D691CC025BD17D253DAA52DA24836E73C40787F",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField03_Wave01.asset",
+      "sha256": "05CBFDFC66CC573AAD9A2C7D5BD63FE5FC440D9B88FD7110AEB0969EC8BFD790",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField03_Wave02.asset",
+      "sha256": "072999070C0E736EFC7E8C933A039E0E4AB900E9916F226F3AEB929665A39CC4",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField03_Wave03.asset",
+      "sha256": "4BF1B41F50156AE85049152B68253106B5248D763F3C06D1981B3642AF46F87A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\OpenField03_WaveSequence.asset",
+      "sha256": "45A82E87F16D6ADF6829C03DD0C305C5C4FA015A832F0062DA740D030042B14A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\WaveDefinition_02.asset",
+      "sha256": "B030F7138F71C66306DFCBFE76E76F4CB489B5920965EF6CD4EEBC826AF89047",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\WaveDefinition_03.asset",
+      "sha256": "5551FDFCF90F942CA5B3AB5751B7EC122A27C8795E0CE023F12D0EF2CF00A6AA",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\WaveDefinition.asset",
+      "sha256": "54C18F66F9B3FC06F93001C41B3DBC0D917846787CB1C96C39E31024A61E7EAE",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Waves\\WaveSequenceDefinition.asset",
+      "sha256": "83BE7ADABF3CC1FEC059288D3B0D955ABBF109296BF4420B8934B9B7CB6C3A7B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\CellDefenseAndroidBuild.cs",
+      "sha256": "D65B68DFF400A08070D14509548B0915243DFA9CBDA4907132F1D24367CF2C4D",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\CombatAnimationSampleInstaller.cs",
+      "sha256": "AE771F90522CBAE14EAF7AA3099B0D0F57197629BC5DF7EFDCF9DD39F83322E4",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\CombatGameplayLevelVerifier.cs",
+      "sha256": "4BAAB494023056B9C8852DBF6A85EFBB94F0D6EC9C43A5E41DBA09E456232F6C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\OpenFieldPrototypeSceneCreator.cs",
+      "sha256": "EEB72914E5A262C0D9EF9DDAB7C884F0CED2948AFCF86E647AFC1CB11945A8AB",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\PlanningConfigValidation.cs",
+      "sha256": "1F9AA7895BF819314338AFC677921326D225396C73C8A1029D6DC3D0C4E02606",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\PlanningConfigWindow.cs",
+      "sha256": "A19BF3F9274A4C7FFB8CB69E9F92DDE0CDF63B9509109BFCDEAF5CAF4455E4B9",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\TopDownAnimationInstaller.cs",
+      "sha256": "BE0EC6BD2BC9959B7803469D2E75BCFB4B50A5DE04CB15777E21EF98B917939D",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\ArmoredBacillus.prefab",
+      "sha256": "401B4FCE7D1B2293B5952482CEE4C66D28C63951F212025F6722B4CFB417F76D",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\Enemy.prefab",
+      "sha256": "4B3C6018859EE76742122416078F0B8CECF4DC29BF63AF773E7EE21C5B966B47",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\Flagellate.prefab",
+      "sha256": "0BC6A2792DF5CAB8FA4CD69F521A5AB20860009B0F0E289B672A2F7FD18EB31B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\FungalBoss.prefab",
+      "sha256": "C835DA4082E067866BCE2C58FA9068D9690DCF8B2AC1407EEAACC671F032CB48",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\FungalSpore.prefab",
+      "sha256": "9F84FA67B94E324860C143BE4A7F355C02B6C886F9A59AE4280C5414946D6CEE",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\MembraneBoss.prefab",
+      "sha256": "0CD98DEB40096A216C7E4EE3B52E2984A592AE71CABAB23452454A2D853EF6B1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\OpenField03Enemy.prefab",
+      "sha256": "95C945D25350EB553BC4DD223CE3C01AD7FD4F9F62E6F4B0EBE564D2924F40CB",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\Staphylococcus.prefab",
+      "sha256": "C77F9ADE151A9F94524F1AA629279926C61E596322C67560BA308DC358718582",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\VirusBoss.prefab",
+      "sha256": "F8D14FDE1A04BAB0B98A4A48CB126A40B9D96919B6486685DF665FB8C7924477",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Enemies\\VirusClone.prefab",
+      "sha256": "D4DC3150AC9C7A4B83C068498B8BEA24B9FC72CD0698A61434003AD4A9C3D727",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Menu\\Defeat.prefab",
+      "sha256": "FC029E3A7317244EB0E7BF33EC188E600ED713237C9C284B9BC2BD7D54C4BDCD",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Menu\\Menu.prefab",
+      "sha256": "BA6A0B7B2BF3E6D490BAA1A9BD09DB2BD413753C834F5361194DC3CC2B1CC443",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Menu\\OpenFieldBattleHud.prefab",
+      "sha256": "5AA767A43478A029A9558F8D5A231F571D997BC9E94CF4AC1A22CC86FA8191C1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Menu\\Victory.prefab",
+      "sha256": "247071F1CD9BD514FBEE05DFD9F81EE0DC9ECDF005FC16B24D55E1B02A8CC184",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Projectiles\\Projectile.prefab",
+      "sha256": "BB594A7A6492C09CB7288E6DB54CAE090B3E5919A10AF182D818D7A110078321",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Towers\\AcidTower.prefab",
+      "sha256": "4A8780EC72ACA8FB936BD4425C4988C9FE45E18A33074FAB94E97A611D25D678",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Towers\\FibrinTower.prefab",
+      "sha256": "526F81A63EA6C6BD89C4278C4B2E4D04BFBF2D7A65D7725F99BED2002C25A76B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Towers\\InterceptorTower.prefab",
+      "sha256": "3DE2CD83DD6E3DAA4336E40DDD361131A9B9048431C1BA3145C13F5E4390AA7A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Towers\\NeuralPulseTower.prefab",
+      "sha256": "86BF110EF2F2F9306198403F1AFA5AA6C7878575A1CE83CE868172AA0D248285",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Towers\\Tower 1.prefab",
+      "sha256": "7D4B97AA16AF5043286B92CA13071958663E67B5CA530C28DF3D464C1E098984",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Towers\\Tower.prefab",
+      "sha256": "7BE281DCC7BEDAF738974FC85544A97BC6BD05D89C6559792CCA831F6AE3D691",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Resources\\OpenFieldUiResources.asset",
+      "sha256": "10214D78AEECB5BA5014FE4BDA89965388AE70701C205C10DEA90636C3CAFC80",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\Level02.unity",
+      "sha256": "B7C605554DD01BCFF4DFD2DCAD76343260A87FF081FA28A60CEA2B158262A017",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\MainMenu.unity",
+      "sha256": "F1DD865F44B923529803F988EB17A17CF4731A90B1D1005CC9486B5E3C132CE9",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\OpenFieldLevel02.unity",
+      "sha256": "315A66A632A8A9FE26A9DCA38156148D5D472380573F3D46E04D493E35FC9D72",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\OpenFieldLevel03.unity",
+      "sha256": "90E33DFEB1C1D3EE94FFE4488BCA79AB9593C4FFD44A7D58579A7149FB5FE09B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\OpenFieldLevel04.unity",
+      "sha256": "194BA598175C761D07668E095EE82F0EC0BBB31F77DC711638B185B0814D04F5",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\OpenFieldLevel05.unity",
+      "sha256": "198A759092D04FCC274BEEA8A5495007795270E73F39B36609BAF66739BB8E8A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\OpenFieldPrototype.unity",
+      "sha256": "BCA4BFA26E54502E40399A338A6FD9EFD090EE74B893E696FB06C13A3467E8E3",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scenes\\Prototype.unity",
+      "sha256": "8B3E958B41A755C4F20F533DD23B5633519B6A8651A331C9429F54E4056D98B1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Building\\AntigenSignalFeedback.cs",
+      "sha256": "119C5330B508E5B871B6D38B0995713848EB9D3DCC19497EC6477B8A4242346C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Building\\BuildController.cs",
+      "sha256": "9C8BF03E6B46A16D470E3745B6F91F818F0DFB40602E32BAB796913154F00150",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Building\\BuildSlot.cs",
+      "sha256": "CE076E13988E66B66062A7764C42E73D30A1206B21F097C793B4C0EDB61DD1D7",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Building\\TowerBuildPreview.cs",
+      "sha256": "FC1867ED1C3F7A4C355ADA25F426E5D52E8ABA54294680EB3BA9EF4E64F6FC85",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Building\\TowerEconomyRules.cs",
+      "sha256": "979086710815DD60CAE9B5F9867E025EDC574AC2BA146535F000640D6DDD8303",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\AcidFieldVisual.cs",
+      "sha256": "34FDA8B1956259A94082A1F6BE3331A391FC530F54D85B447EAEEB8B5E530D54",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\CombatHitFeedback.cs",
+      "sha256": "23CC2CFFDAE02533993476B302D8CFA103DE725622CA595C8430E95FC1FA3C40",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\EnemyDamageContext.cs",
+      "sha256": "93A5CBFBC50FAF55E97B5116BD43A86550776C2FDAE5E2ECDDD22D9959D94D2C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\EnemyRangeQuery.cs",
+      "sha256": "E2F4C764568A15CAC1A06B0324621AD50CB060B02278A92B00929AEB20AC773E",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\Health.cs",
+      "sha256": "1A28AA3A77E6F2327420F4D793E71D1F79FF7411E23163B7CD63463AC2D0A801",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\IDamageable.cs",
+      "sha256": "97A7EDE1EC08A9C4FE99EEDB3B0E29CC45E7658020F9AF2406A0E4ABD9F787D0",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\Projectile.cs",
+      "sha256": "497709BB44F10D96C47C96DD394D59F7449879C6601E11034779E28788BAB143",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\ProjectilePool.cs",
+      "sha256": "9A09B9657A990AFE720302D239BAD49432143520925A698D13390A532F7A8BAB",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\SpriteHitFlash.cs",
+      "sha256": "9DF48572E3B9F44F4F61F01AF33936A05281818777B2E834D8659422C3F84111",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Combat\\TopDownFacing.cs",
+      "sha256": "FB9581CDE2A48B2E25AA5A3A6572903D8A43C8C16D4295A42E62C5D31D2A586F",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Core\\GameFlowController.cs",
+      "sha256": "817EE6447B5B186A0C447884F75ECE86111B641F16467E8CB78AB1C02800E2EB",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Core\\GameplayCompositionRoot.cs",
+      "sha256": "425E70169C9D004865C12F50AFF13F20D12D236F08DFA8529C42B15210A10CC6",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Core\\GameState.cs",
+      "sha256": "FBEA6E3D2C2883772020785F8EDF83DEEAB3C924556D292EA91E1F37ECCD3252",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Data\\AntigenId.cs",
+      "sha256": "527C145103CF6DFE9B0637E9715556298A6E9E60A7B0821D5A31B2546AADF8B3",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Data\\EnemyDefinition.cs",
+      "sha256": "091849175BA837F9E3B3D3F944D501A3F31B408737E48E0729F646DDC9D3BF81",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Data\\TowerDefinition.cs",
+      "sha256": "D9EAA658045EE9E4E4ED41707CAFEDAB908B447FB2204FD7B38A3300CE8F2255",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Data\\WaveDefinition.cs",
+      "sha256": "D0A588D5F8B31E91EDE4EFED7C37EEE6AD7833CC206547BA4A50EA201B52DE46",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Data\\WaveSequenceDefinition.cs",
+      "sha256": "75F8B7F1CF8B1852142D8F6871DC2887668D38BC7F1EF91836B225A147128591",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Economy\\EconomyService.cs",
+      "sha256": "05782CA212584418EBD8C0428093A8E272F3B7C0B25D2B4C892B5778DFA35E6F",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\BossAbilityBehaviour.cs",
+      "sha256": "ACB2C4243FD7AAEF758C332C6E2BC0958EFC91F21ECF9DF5F60C203A51FD5461",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\BossPhaseController.cs",
+      "sha256": "8C21386A013A85FBCB9A41B2FD60F0407985AFB01C730B357FAB721BA5340F65",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyArmorState.cs",
+      "sha256": "664886451A71B036C84E3F8FB1175EE4052EB657F3B4784981651CBC5CC0AFA3",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyBehaviour.cs",
+      "sha256": "F247D64FF4C8C6859746ED0CCAECE60CA2D52AC3865ACD989122210BC1A6DAD9",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyContactCombat.cs",
+      "sha256": "6C0663CF4DCB3878FE85643A00827E0D56B3DDF7C1960EA39FED9CE674CE9D5A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyController.cs",
+      "sha256": "54A00E30466DC0312119EAC80D868A43FC3A9F9B2F7D7404E0E9FFA1186F4956",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyExitReason.cs",
+      "sha256": "FBD04235C125BBD857C063C2DA656B86C1BF9536DB9F16EB49425E71A986B8BF",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyImmuneState.cs",
+      "sha256": "A93DBFA8851F1018B4745A7E45C34B4B138C8574FA965EECFB93AD75EC1A67E5",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyShieldState.cs",
+      "sha256": "6D6A01FD9B168E0BA5B1571E5EF212922E948E73FC60D29F74ABACF0BC47BFB6",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemySlowState.cs",
+      "sha256": "688163B1A0121CF03E530DDD5877991AC64F788E2583899833F836D3B2D4C0EA",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemySpawnRequest.cs",
+      "sha256": "F446FFDB4813256ED3C3BE9771293218D73DD7C04886E6C827586E8F7386FC88",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyStunState.cs",
+      "sha256": "45BDC98F6113D018C7357B8EC56027A8F515A8207E65117B638E8E5223040CD4",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\EnemyVisualState.cs",
+      "sha256": "149FACD8FA4B3F6F7E5F310F6A9DFCD38E268F6C1FDBC9C4B93CE7D1927E14A1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\FungalBossBehaviour.cs",
+      "sha256": "FACC1FC0C4A88FE438BA0BE0637FF3E88D9DA328F19E84BFA6EB1249C5AC8197",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\MembraneBossBehaviour.cs",
+      "sha256": "2071416D2C6FC52793973C667BF6B0B7F9CB6325C60240C0F6F4FFF6F5D81957",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\SlowEntry.cs",
+      "sha256": "EC1A1EC596296E90AE6B807DB865B8369C3792D1C7A8761734E4C4A9C17EC127",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Enemies\\VirusBossBehaviour.cs",
+      "sha256": "B7C70DAA36C001406D9191B6C89A99CBE4F5517C4CED367888BA7E0BC715C151",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Life\\LifeService.cs",
+      "sha256": "BCF578EDF22E2D5CF18864FDE05C5E4BD7DFE86450E3451E6F85751D5E203643",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\OpenField\\BoardTapGesture.cs",
+      "sha256": "B061F3B55C13C602F688A2968280463CE4C014D2227B9A662E80D12588900A1E",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\OpenField\\OpenFieldGridModel.cs",
+      "sha256": "0E856746909ECBDB2F6F61E4CB510D48940CD523AFFE3A8E72B6C1963282176B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\OpenField\\OpenFieldPresentation.cs",
+      "sha256": "D42A05F60506BF57F407655EA07D2BE1CCB53EA25ECDA6A6B8ECAB8683B13A59",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\OpenField\\OpenFieldPrototypeController.cs",
+      "sha256": "7445CB66B26C2F3A434166C1751535FB276C7A7A51ECD2CA8441DF17FB9509A8",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Paths\\PathFollower.cs",
+      "sha256": "876E79DCB1541598B0C65C84D96330778CFF615D751E0430813E5CC2C3577A86",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Paths\\WaypointPath.cs",
+      "sha256": "5BBD2937A6ABD823F60350DFB1DE24B8D9AC0B99C268DB4B755C99AAD423C4DD",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\AcidAttackBehaviour.cs",
+      "sha256": "99A5428115C1C3F523A5AFB5A7A14EC6AF12431F6668B9008126F3E2BD64AE7A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\AntibodyAttackBehaviour.cs",
+      "sha256": "7C0B282FFA91C8CC3E80888DE1CCFE60D4A0FC2AE3AB1BE5A5368C5BC1498B62",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\FibrinSlowAura.cs",
+      "sha256": "228C5BD311C552A1AE4693087CB4BE7714F587B583D18A24B50FF20FEA3C7B7A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\NeuralPulseAttackBehaviour.cs",
+      "sha256": "E099F098AE1835DF681FF31C7297B2A25F2DC3E28881677E35C2DD980020CFFC",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\PhagocyteAttackBehaviour.cs",
+      "sha256": "75C1DF10138C4974A065F156A8324EB7E7E4593FF3233D916220422BAC41E7A4",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\TowerAttackBehaviour.cs",
+      "sha256": "4F4521EDEE3C02BF2CA71855FEB464E6DB157007C13D43305ED1712E3A607423",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\TowerCombatState.cs",
+      "sha256": "BD847B5D3EFF3A2AA6B685134F3B1B0DE3E0C5E9672ECFC7C07E9286F5289FF3",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\TowerController.cs",
+      "sha256": "4CA84667A2F6638F4AC012A6ED199B8B0E9C835E3BB1DB93905D8EED4675D984",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\EnemyStatusHud.cs",
+      "sha256": "2107161ECB5B9B441A946E57F82B967F19B52AC7ED3697736B7B712A5BBA6A33",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\FirstLevelTutorial.cs",
+      "sha256": "685E199B6189B8D65D674BA6E137AA3445AD0E0CD5A8D3F80962C602485A06E3",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\GameSettings.cs",
+      "sha256": "F8BD948F9D07968D9C782A6EEB2FEAD98FC3B7C4D500A9B51B7BDA5A6EAE0404",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\GameSettingsPanel.cs",
+      "sha256": "9501DF715A7350F400E5F1ACCC203CC7DC76E0214AD65CD0F2CA7AA4A9C339AC",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\HudController.cs",
+      "sha256": "A1E1097ADC5A312C75406B9561A6F508683B24561239D48E2A027B299D602FCF",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\HudSpriteNumber.cs",
+      "sha256": "B720BDA952089A26AE1451BD0645AE2C2F38FC43F9E3CA3BAA8E9271889F2141",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\MainMenuController.cs",
+      "sha256": "96FE1124561F319A0EEAB357254E541F85CE70D647EF57BB384288A28C5C90BA",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\MobileDisplay.cs",
+      "sha256": "0686E74803F7A808CE13B70093F420ADE0FA2A6C64C930D14D3FBA2B07ED3C74",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\MobileSafeFrame.cs",
+      "sha256": "809871496AC237B28A07497F52E58B0C35490A75979C3A26891F692963FF669A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\OpenFieldBattleHud.cs",
+      "sha256": "F9CA3B61571C2ACC90217A16C3D61857A7D7959B666E199D05EAA15721193C07",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\OpenFieldBuildMenu.cs",
+      "sha256": "01A2ACDFF10D6C0963901E6DC6B6B7B8F274A47565D515653F0AB0B513E7F570",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\OpenFieldEntranceWaveButtons.cs",
+      "sha256": "B877A3FE4425966E0A6A9BB9E6829065A8FD5CE0D0032DEC0BAD3E92A9278288",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\OpenFieldPlaybackControls.cs",
+      "sha256": "CB2828FEFEBF24FC97135ECF5C9B2EBFEE799537DA688A3AEBB131CA134B1972",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\OpenFieldTowerMenu.cs",
+      "sha256": "CC8B6284AF1F4122DC6BB309C034149409927278DC70726CB24AFA77E6EB7AAD",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\OpenFieldUiResources.cs",
+      "sha256": "6902B231DAAF1817862ADEB8FEF5A6FC41B58B0C6D4CFA5720BA09953DFD46EE",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\TimedSpriteIndicator.cs",
+      "sha256": "3F2018284003432055EC2788A294E087F5FE00F989936F088EECDFADFF932C6A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\TowerBuildChoiceHover.cs",
+      "sha256": "12FCBCDE043E4D35AB48033F650024CB197DCEF66808524442C8EAB3DC10A9D6",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Waves\\WaveController.cs",
+      "sha256": "695779CBCB4EA45F2A6D8049E2BCCE4165E0AA5B016525BA4F1A5C80EDA125F6",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\EconomyServiceTests.cs",
+      "sha256": "0E294334F91B9F02042F056AD9F6A7B8E8F78BA34D9E5640C410012477357267",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\EnemyCombatTests.cs",
+      "sha256": "759E39B4329D2DAEDA3C5A7859901F3F83773E355DE0DC562A8CE80BFA0A2C5A",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\GameSettingsTests.cs",
+      "sha256": "1A298040DB15D7CD0029E32D3AA0E7840A39DDE14BCBF42951AA56E3EEC52165",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\LifeServiceTests.cs",
+      "sha256": "D4FC846B51BCD3001DFF9EA7BB718D057116162912337480F4A432B3627DBC54",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\MobileInputTests.cs",
+      "sha256": "28043BBFB0720CBED946C8AD37CDC99164C1E1038B87F0494CA4D1A347BA9172",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\OpenFieldLiveBuildHudTests.cs",
+      "sha256": "0DD9AD30791D49FB903A9CF79CC0B51A1E42EE2FF1B93D06B50C0DC4ABE15B7C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\OpenFieldPlaybackTests.cs",
+      "sha256": "85A39E1A2E2584579A61CA0CABEDCDB920DAED0FEB7C713899D1558EB244D0E1",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\OpenFieldWaveFlowTests.cs",
+      "sha256": "B65E997651B8B60CA89949E6E539A1E8B08F564CD43377BFA44E82EA1C864414",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\TowerSupportTests.cs",
+      "sha256": "31BDC0E7FC9B2BD036885B1479D9A4A8F11808399A26B741DFBD010109092BDF",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\EditMode\\TowerTradingTests.cs",
+      "sha256": "CFC9E7F8450E49D42750FB88F6A436475CEB9BC55A2ABCE349BCE7E381C7790C",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\FirstLevelTutorialPlayModeTests.cs",
+      "sha256": "138E6CA53B431285BEE5F4FE99DA0C176F9108D2C904723391B0E2BC9FD9A1E2",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\MainMenuSettingsPlayModeTests.cs",
+      "sha256": "8E051E75DB103CB03A21EFB5EF5787D8A260486C27D5B70B5BBB7F42D7032412",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\MobilePlayModeTests.cs",
+      "sha256": "1462C59665C163EC3C5E5CDB3FE507F72BAAE7F613634712CFAA4982ABD87329",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\OpenFieldLiveBuildSmokeTests.cs",
+      "sha256": "163D013D245D57B6D0B7F81033378F9DF1E7BBB2967D58B5C5165B84E479178B",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\OpenFieldPlaybackPlayModeTests.cs",
+      "sha256": "DC6D0DB923B49850C4EC5EBCC353283DA1E278847EC7D7A44C641A747DEBCD91",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\TowerAbilityPlayModeTests.cs",
+      "sha256": "64BA53B051CF27E450DCCD6872B4333703969BC2F5CC60CDED204D30827A42B7",
+      "matches": true
+    },
+    {
+      "path": "Assets\\_Project\\Tests\\PlayMode\\TowerTradingPlayModeTests.cs",
+      "sha256": "D572FD2F7A298803274ED05B755289491085262EC388B0C187EB1604F1C39EAD",
+      "matches": true
+    }
+  ],
+  "apkRebuilt": false,
+  "platformModified": false
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22",
+  "appId": "986196",
+  "developerId": "338749",
+  "draft": "V-20261019",
+  "status": "draft",
+  "apkVersion": "0.1.2",
+  "fieldValues": {
+    "banner_4": "https://img-tc.tapimg.com/market/images/31d57e7c6d1b0ba3a6893d59fb2c7a9b.png",
+    "banner_4_ios": null,
+    "gameplay_demo_video": 5991906,
+    "screenshots": [
+      "https://img-tc.tapimg.com/market/images/e14bbf9e3ff2dbc7e53a0bb514b4fb78.png",
+      "https://img-tc.tapimg.com/market/images/5417f786f26b95123cd23922a3aaf82d.png",
+      "https://img-tc.tapimg.com/market/images/ffd31e4d49c11c28de4499e989c9e891.png"
+    ],
+    "screenshots_ios": null,
+    "square_promo_image": null,
+    "square_promo_image_ios": null,
+    "trailer": null,
+    "category": "strategy",
+    "description": "《胞卫战》是一款以人体免疫防御为主题的策略塔防游戏。你将深入微观世界，消耗 ATP 部署免疫细胞，利用采样、标记与吞噬的协作机制，配合有限的纤维蛋白壁垒调整入侵路线，抵御细菌、真菌与病毒的进攻。在五个关卡中灵活建造、升级与调整防线，用有限的资源守住核心，打赢这场细胞之间的保卫战。",
+    "description_ios": null,
+    "icon": "https://img-tc.tapimg.com/market/images/28e084c7bb9ad2815fc6936bae17ab54.png",
+    "icon_ios": null,
+    "title": "胞卫战",
+    "title_ios": null,
+    "author_name": null,
+    "developer_message": "《胞卫战》目前提供五个关卡的早期试玩，仍在持续开发中。希望你能体验到免疫细胞之间协作布防的乐趣。后续将继续完善移动端操作、难度与战斗表现。",
+    "developer_type": "developer",
+    "publisher_name": null,
+    "apk_anti_addiction_status": "not-integrated",
+    "apk_related_in_app_event": null,
+    "apk_sandbox_authorized": "true",
+    "apk_update_mode": "normal",
+    "apk_whatsnew": "《胞卫战》v0.1.2 试玩版更新\n- 修复 Android 横屏战斗中，地图上方及屏幕边缘残留上一页界面的显示问题。\n- 手机安装名称统一为“胞卫战”，并使用游戏图标。\n- 移除开发版标记，提供新的试玩安装包。",
+    "package": null,
+    "pc_package_id": null,
+    "app_platforms": [
+      "MOBILE"
+    ],
+    "itunes_id": null,
+    "region_flag_android": 4,
+    "region_flag_ios": 1,
+    "promotion_material_type": "GAMEPLAY_DEMO",
+    "promotion_text": "部署免疫细胞，守住微观防线。",
+    "platform_open_time_android": null,
+    "release_method": null,
+    "release_schedule": null,
+    "release_time": null
+  }
+}

@@ -449,6 +449,50 @@ public sealed class OpenFieldPlaybackPlayModeTests
         Assert.That(Get(owner, "IsPaused"), Is.False);
     }
 
+    [UnityTest]
+    public IEnumerator ResultsHideDamagedUnitBarsImmediatelyAndRestartRestoresThem()
+    {
+        foreach (string scene in new[] { "OpenFieldPrototype", "OpenFieldLevel02", "OpenFieldLevel03", "OpenFieldLevel04", "OpenFieldLevel05" })
+        foreach (string result in new[] { "Victory", "Defeat" })
+        {
+            yield return SceneManager.LoadSceneAsync(scene);
+            Component owner = Owner();
+            Assert.That(Call(owner, "TryBuildAt", FreeCell(owner)), Is.True);
+            Component defender = ((IEnumerable)Get(owner, "Defenders")).Cast<Component>().Single();
+            Call(defender, "TakeDamage", 10f);
+            float health = (float)Get(defender, "CurrentHealth");
+            Assert.That(Call(owner, "StartAssault"), Is.True);
+            yield return new WaitForSeconds(.04f);
+            Component enemy = ((IEnumerable)Field(owner, "activeEnemies")).Cast<Component>().First();
+            Call(enemy, "TakeDamage", 1f);
+            yield return null;
+
+            Component hud = (Component)Field(owner, "enemyHud");
+            RectTransform canvas = (RectTransform)Field(hud, "canvasRect");
+            Assert.That(((IDictionary)Field(hud, "rows")).Count, Is.GreaterThan(0), "An enemy bar must exist before finishing.");
+            Assert.That(((IDictionary)Field(hud, "defenderRows")).Count, Is.EqualTo(1));
+            Assert.That(canvas.GetComponentsInChildren<Image>().Length, Is.GreaterThan(0), "The damaged units must have visible bars.");
+            Call(owner, "Pause");
+            Call(owner, "FinishRun", Enum.Parse(Runtime("OpenFieldPhase"), result));
+            Assert.That(canvas.GetComponentsInChildren<Image>().Length, Is.Zero, scene + " " + result + ": hide bars in the result frame.");
+            yield return null;
+            yield return null;
+            Assert.That(canvas.GetComponentsInChildren<Image>().Length, Is.Zero, "LateUpdate must not restore bars behind the results.");
+            Assert.That(Get(defender, "CurrentHealth"), Is.EqualTo(health), "Hiding bars must preserve the defender.");
+
+            Call(owner, "RestartPrototype");
+            yield return null;
+            owner = Owner();
+            Assert.That(Call(owner, "TryBuildAt", FreeCell(owner)), Is.True);
+            defender = ((IEnumerable)Get(owner, "Defenders")).Cast<Component>().Single();
+            Call(defender, "TakeDamage", 10f);
+            yield return null;
+            hud = (Component)Field(owner, "enemyHud");
+            canvas = (RectTransform)Field(hud, "canvasRect");
+            Assert.That(canvas.GetComponentsInChildren<Image>().Length, Is.GreaterThan(0), "Restarted levels must show damage bars again.");
+        }
+    }
+
     [UnityTearDown]
     public IEnumerator Cleanup()
     {
