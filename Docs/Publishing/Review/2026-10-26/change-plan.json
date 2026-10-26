@@ -83,7 +83,10 @@
     "repository": "lbcz177/CellDefense",
     "branch": "codex/open-field-prototype",
     "authorized": true,
-    "scope": "Current project source, assets, policies and documents; no APK binary or GitHub Release"
+    "scope": "Current project source, assets, policies and documents; no APK binary or GitHub Release",
+    "status": "pushed-and-verified",
+    "sourceCommit": "ccefa587cced455f656f9e985a89f521e2430314",
+    "remoteHeadVerified": true
   },
   "reviewPrepared": false,
   "reviewSubmitted": false,

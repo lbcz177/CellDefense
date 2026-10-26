@@ -27,7 +27,7 @@
 ## GitHub
 
 直接连接github.com超时；读取系统已有代理后只读查询和fetch成功，未修改全局代理或Git配置。远程分支是本地祖先，本地此前有两条未推送提交；本次将正常快进推送，不强推。
-源码、原生插件、资源、政策与文档进入提交；未发现凭据特征、非空敏感JSON键或超过90MiB的新增文件。最终提交与远程核对结果待补充。
+源码、原生插件、资源、政策与文档进入提交；未发现凭据特征、非空敏感JSON键或超过90MiB的新增文件。源版本提交已完成并推送，远程分支SHA与本地一致。
 
 本轮原始证据：Logs/StoreBuild/2026-10-26、Logs/PolicyPreview20261026、Logs/GitHubSync20261026。
 
@@ -37,3 +37,8 @@
 0.1.5 / Code 6，59,617,474字节（56.86MiB），SHA256 4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab。Unity构建成功并正常以0退出，242项ZIP条目CRC通过；双架构IL2CPP/Unity ELF、同签名、非Development验证通过。实际资源内政策与源码/本地网页文本完全一致，原生launcher字节码不引用Unity类。
 
 当前政策源SHA256 fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e。新网页公开发布、APK上传与草稿保存仍待本次具体范围确认。
+
+
+## 已验证 GitHub 同步
+
+仓库lbcz177/CellDefense，分支codex/open-field-prototype，源版本提交ccefa587cced455f656f9e985a89f521e2430314。git push返回0，后续ls-remote得到完全相同SHA。未强推，未创建GitHub Release；APK按既有规则不入库。站点四个实际文件以100644普通文件提交，未将独立Sites仓库作为缺少.gitmodules的gitlink提交，嵌套Git历史保留。后续并发出现的章节策划文档未纳入本次已冻结的发布版本。
