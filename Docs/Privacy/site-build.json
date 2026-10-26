@@ -7,5 +7,7 @@
   "draft": false,
   "no_scripts": true,
   "expected_url": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/",
-  "published": false
+  "published": true,
+  "publishedVersion": 2,
+  "livePolicyMatchesPackage": true
 }

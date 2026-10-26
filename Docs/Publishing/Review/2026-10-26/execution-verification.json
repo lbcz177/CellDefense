@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "developerId": 338749,
+  "appId": 986196,
+  "draftVersion": "V-20261025",
+  "revision": 1142336,
+  "packageId": "1071004",
+  "versionName": "0.1.5",
+  "versionCode": 6,
+  "bytes": 59617474,
+  "sha256": "4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab",
+  "changedFieldIds": [
+    "apk_whatsnew"
+  ],
+  "allOtherVisibleFieldValuesUnchanged": true,
+  "visibleFieldCount": 18,
+  "screenshotsPreserved": true,
+  "gameplayVideoPreserved": true,
+  "bannerPreserved": true,
+  "packageSlots": {
+    "apk_mini_game_play": {
+      "available": true,
+      "expected": {
+        "kind": "none"
+      }
+    },
+    "main": {
+      "available": true,
+      "expected": {
+        "apk_id": "1071004",
+        "kind": "apk"
+      }
+    },
+    "windows": {
+      "available": false,
+      "expected": {
+        "kind": "none"
+      }
+    }
+  },
+  "versions": [
+    {
+      "version_id": "V-20261025",
+      "status": "draft",
+      "status_label": "未发布",
+      "last_event": "draft_created"
+    },
+    {
+      "version_id": "V-20261019",
+      "status": "online",
+      "status_label": "已上线",
+      "last_event": "published"
+    }
+  ],
+  "reviewSnapshotCreated": false,
+  "reviewPrecheckRun": false,
+  "reviewSubmitted": false,
+  "gamePublished": false,
+  "privacyWebsitePublished": true,
+  "privacyPolicyMatchesPackage": true
+}

@@ -21,7 +21,7 @@
 - 复用真实ConsentStore执行12项JVM检查全部通过，含政策变化再次同意、拒绝、撤回及存储失败边界。
 - 本地政策增加最高通关分、星级/通关展示用途及清除应用数据删除成绩说明；不增加联网同步。
 - 现有政策网页的手机390px及电脑1280px实际浏览器检查通过，无横向溢出，八节完整、日期和新记录/删除说明存在；实际截图已查看。
-- 本次政策网页尚未公开修改；需与APK草稿范围一并由用户确认。
+- 用户确认后，原政策网页已公开更新，匿名HTTP200、完整正文SHA256与APK内文本一致；Site版本2。
 - 真机安装、运行与平台隐私复检仍未执行。
 
 ## GitHub
@@ -36,9 +36,15 @@
 
 0.1.5 / Code 6，59,617,474字节（56.86MiB），SHA256 4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab。Unity构建成功并正常以0退出，242项ZIP条目CRC通过；双架构IL2CPP/Unity ELF、同签名、非Development验证通过。实际资源内政策与源码/本地网页文本完全一致，原生launcher字节码不引用Unity类。
 
-当前政策源SHA256 fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e。新网页公开发布、APK上传与草稿保存仍待本次具体范围确认。
+当前政策源SHA256 fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e。原政策网页发布、APK上传和草稿保存均已按本次明确确认完成。
 
 
 ## 已验证 GitHub 同步
 
 仓库lbcz177/CellDefense，分支codex/open-field-prototype，源版本提交ccefa587cced455f656f9e985a89f521e2430314。git push返回0，后续ls-remote得到完全相同SHA。未强推，未创建GitHub Release；APK按既有规则不入库。站点四个实际文件以100644普通文件提交，未将独立Sites仓库作为缺少.gitmodules的gitlink提交，嵌套Git历史保留。后续并发出现的章节策划文档未纳入本次已冻结的发布版本。
+
+## 已确认执行与读回（2026-10-26）
+
+用户回复“确认，更新草稿和隐私政策页”。上传APK ID1071004，平台解析0.1.5 / Code6、包名、59,617,474字节及MD5均与本地一致。主槽绑定经新鲜expected防漂移校验后写入，读回指向1071004。18个可见资料字段仅apk_whatsnew发生变化，截图、录屏、宣传图及其他资料保持原值。V-20261025仍draft，V-20261019仍online；未建立审核快照、未预检、未提审、未发布游戏。资料分析三项列表均为空。
+
+网站复用原project_id及public访问范围，推送源提交d541c3bb06fa3fe959c7c41aee52c1140f4bd19d后保存Site版本2并部署成功，公开原文与包内政策SHA256一致。完整原响应保留在Logs/TapTapRelease/2026-10-26/apply-approved和Logs/PrivacySite20261026；可提交的摘要见Docs/Publishing/Review/2026-10-26/execution-verification.json及Docs/Privacy/site-live-verification-2026-10-26.json。

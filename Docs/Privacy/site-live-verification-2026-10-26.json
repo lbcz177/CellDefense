@@ -1,0 +1,13 @@
+{
+  "url": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/privacy-policy.txt",
+  "httpStatus": 200,
+  "matchesPackagePolicy": true,
+  "normalization": "UTF-8 BOM/CRLF and trailing newline",
+  "localSha256": "fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e",
+  "liveSha256": "fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e",
+  "newScoreStorageDisclosure": true,
+  "newDeletionDisclosure": true,
+  "sourceCommit": "d541c3bb06fa3fe959c7c41aee52c1140f4bd19d",
+  "siteVersion": 2,
+  "deploymentId": "appgdep_6adea60eb9908191847f73a2c4f2cbdc"
+}

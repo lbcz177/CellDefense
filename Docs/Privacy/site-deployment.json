@@ -1,8 +1,8 @@
 {
-  "id": "appgdep_6ad9d5b1e0148191a31c9a4901d5116c",
+  "id": "appgdep_6adea60eb9908191847f73a2c4f2cbdc",
   "project_id": "appgprj_6ad9d0ba406881919f30808f61a55385",
   "title": "胞卫战 · 隐私政策",
-  "version_id": "appgprj_6ad9d0ba406881919f30808f61a55385~appgver_aa9c6af599988191a4e2d183e807f6d6",
+  "version_id": "appgprj_6ad9d0ba406881919f30808f61a55385~appgver_e2de02a9ad6881918378b9a604053bfc",
   "type": "publish",
   "status": "succeeded",
   "url": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site",
@@ -11,13 +11,15 @@
   "provider_deployment_id": "site---6ad9d0ba406881919f30808f61a55385",
   "failure_message": null,
   "env_set_revision": 0,
-  "updated_at": "2026-10-22T09:22:00.279006+00:00",
+  "updated_at": "2026-10-26T01:00:09.193846+00:00",
   "access_mode": "public",
   "source": {
     "project_id": "appgprj_6ad9d0ba406881919f30808f61a55385",
-    "checkout_path": "E:\\unity\\CellDefense\\Sites\\cell-defense-privacy",
-    "commit_sha": "083278a859fb2bf3d47915af5e781755030c01b6",
-    "archive": "E:/unity/CellDefense/Logs/PrivacyFix20261022/privacy-site.tar.gz"
+    "checkout_path": "E:/unity/CellDefense/Logs/PrivacySite20261026/source",
+    "commit_sha": "d541c3bb06fa3fe959c7c41aee52c1140f4bd19d",
+    "archive": "E:/unity/CellDefense/Logs/PrivacySite20261026/policy-015-source.tar.gz"
   },
-  "anonymous_verification": "Logs/PrivacyFix20261022/site-live-validation.json"
+  "siteVersion": 2,
+  "anonymous_verification": "Logs/PrivacySite20261026/live-verification.json",
+  "policy_sha256": "fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e"
 }

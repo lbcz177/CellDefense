@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "status": "ready-for-user-confirmation",
+  "status": "draft-saved-and-policy-published",
   "apkVersion": "0.1.5",
   "versionCode": 6,
   "apkSha256": "4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab",
@@ -12,8 +12,8 @@
   "nativePrivacyApkAuditPassed": true,
   "deviceTested": false,
   "mediaReplaced": false,
-  "tapTapWritesPerformed": false,
-  "policyWebsitePublished": false,
+  "tapTapWritesPerformed": true,
+  "policyWebsitePublished": true,
   "gitHubAuthorized": true,
   "htmlLinksValid": 7,
   "policySourcesIdentical": true,
@@ -28,5 +28,10 @@
     "remoteQueryExitCode": 0,
     "remoteHead": "ccefa587cced455f656f9e985a89f521e2430314",
     "verified": true
-  }
+  },
+  "draftVersion": "V-20261025",
+  "packageId": "1071004",
+  "reviewSubmitted": false,
+  "gamePublished": false,
+  "platformReadbackVerified": true
 }

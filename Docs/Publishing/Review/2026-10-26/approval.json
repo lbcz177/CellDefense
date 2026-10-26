@@ -1,0 +1,30 @@
+{
+  "confirmedAt": "2026-10-26T08:59:14.071371+08:00",
+  "userAnswer": "确认，更新草稿和隐私政策页",
+  "developerId": 338749,
+  "appId": 986196,
+  "versionId": "V-20261025",
+  "apk": "Builds/Android/CellDefense-0.1.5.apk",
+  "versionName": "0.1.5",
+  "versionCode": 6,
+  "scope": [
+    "upload APK",
+    "bind main APK",
+    "save approved apk_whatsnew",
+    "publish same privacy policy URL with date and sections 4/5 matching package"
+  ],
+  "preserve": [
+    "screenshots",
+    "video",
+    "banner",
+    "icon",
+    "other store fields",
+    "release settings"
+  ],
+  "excluded": [
+    "review snapshot",
+    "precheck",
+    "submit review",
+    "public game release"
+  ]
+}

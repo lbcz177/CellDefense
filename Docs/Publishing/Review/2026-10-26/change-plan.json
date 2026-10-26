@@ -5,10 +5,10 @@
     "appId": "986196",
     "draftVersion": "V-20261025"
   },
-  "status": "awaiting-user-confirmation",
-  "approved": false,
+  "status": "applied-and-readback-verified",
+  "approved": true,
   "apk": {
-    "status": "local-candidate-awaiting-confirmation",
+    "status": "draft-saved-and-verified",
     "appId": "986196",
     "developerId": "338749",
     "apk": "Builds/Android/CellDefense-0.1.5.apk",
@@ -21,8 +21,8 @@
     "development": false,
     "sameSigningCertificateAsPreviousLocalBuilds": true,
     "fixedVersionDeviceTested": false,
-    "platformWriteApproved": false,
-    "platformDraftSaved": false,
+    "platformWriteApproved": true,
+    "platformDraftSaved": true,
     "reviewSubmitted": false,
     "published": false,
     "preserveExistingScreenshots": true,
@@ -30,7 +30,13 @@
     "updateNote": "《胞卫战》v0.1.5 试玩版更新\n- 新增五关评分与星级：根据计划敌人击杀比例和核心剩余生命评分，满分 10000；通关达到 7000 分为二星，9000 分为三星。\n- 选关页展示本地最高分与最佳星级，重试或低分通关不会降低已有纪录，五关仍可自由选择。\n- 调整胜负结算的得分、星级和按钮布局，优化小屏显示，修复评分上限文字换行。\n- 隐私政策补充本地成绩和通关记录的保存、删除说明；政策更新后重新征求同意。",
     "privacyPolicyUrl": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/",
     "policySha256": "fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e",
-    "privacyWebsiteMatchesCandidate": false
+    "privacyWebsiteMatchesCandidate": true,
+    "draftVersion": "V-20261025",
+    "revision": 1142336,
+    "packageId": "1071004",
+    "savedDate": "2026-10-26",
+    "privacyWebsitePublished": true,
+    "policySiteVersion": 2
   },
   "textChanges": [
     {
@@ -76,8 +82,11 @@
     ],
     "updateDate": "2026-10-26",
     "textFile": "Assets/Plugins/Android/CellPrivacy.androidlib/res/raw/cell_privacy_policy.txt",
-    "publishApproved": false,
-    "published": false
+    "publishApproved": true,
+    "published": true,
+    "siteVersion": 2,
+    "deploymentId": "appgdep_6adea60eb9908191847f73a2c4f2cbdc",
+    "policyMatchesPackage": true
   },
   "github": {
     "repository": "lbcz177/CellDefense",
@@ -90,5 +99,7 @@
   },
   "reviewPrepared": false,
   "reviewSubmitted": false,
-  "published": false
+  "published": false,
+  "verification": "execution-verification.json",
+  "userConfirmation": "确认，更新草稿和隐私政策页"
 }
