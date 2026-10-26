@@ -1,0 +1,285 @@
+{
+  "sample_rate": 48000,
+  "bit_depth": 16,
+  "channels": 1,
+  "seed": 221022,
+  "style": "柔软、弹性、轻微电子感；程序合成试听 v1",
+  "integrated": false,
+  "files": [
+    {
+      "kind": "click",
+      "group": "操作",
+      "label": "轻触",
+      "description": "短促的软质点击，用于菜单确认。",
+      "file": "01_click.wav",
+      "variant": 1,
+      "seconds": 0.105,
+      "peak_dbfs": -11.37,
+      "rms_dbfs": -24.77,
+      "sha256": "4165508fe11350e16fcc1ed7211e55505ac47ffb8f66093327a3c264870d8f59",
+      "bytes": 10124
+    },
+    {
+      "kind": "build",
+      "group": "操作",
+      "label": "建造",
+      "description": "落点有重量，随后一小声细胞成形。",
+      "file": "02_build.wav",
+      "variant": 1,
+      "seconds": 0.38,
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -20.29,
+      "sha256": "045bfbd2bfa3aecc5b263be0f8ebfac8722a8dc3f36101070db7931542d928ee",
+      "bytes": 36524
+    },
+    {
+      "kind": "upgrade",
+      "group": "操作",
+      "label": "升级",
+      "description": "逐步上扬的清亮音，表达强化完成。",
+      "file": "03_upgrade.wav",
+      "variant": 1,
+      "seconds": 0.72,
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -19.32,
+      "sha256": "65b0597984f85d45b092dab2be8b82d2989e2a2b96dbfdba0d6f62d37dd1cdec",
+      "bytes": 69164
+    },
+    {
+      "kind": "sell",
+      "group": "操作",
+      "label": "出售",
+      "description": "轻轻回收，以两声柔和提示收尾。",
+      "file": "04_sell.wav",
+      "variant": 1,
+      "seconds": 0.36,
+      "peak_dbfs": -9.9,
+      "rms_dbfs": -21.19,
+      "sha256": "9caa45460f58baf65a2111940feadc6f626405bb5b205f72661a586cba53056c",
+      "bytes": 34604
+    },
+    {
+      "kind": "emission",
+      "group": "战斗",
+      "label": "细胞发射",
+      "description": "轻弹性发射，三种微变体供轮换。",
+      "file": "05_emission_a.wav",
+      "variant": 1,
+      "seconds": 0.15,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -25.69,
+      "sha256": "ab44d883679fd9f307b22491e1460fc5d1ed1143620216c6184806371842eb89",
+      "bytes": 14444
+    },
+    {
+      "kind": "emission",
+      "group": "战斗",
+      "label": "细胞发射",
+      "description": "轻弹性发射，三种微变体供轮换。",
+      "file": "05_emission_b.wav",
+      "variant": 2,
+      "seconds": 0.15,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -25.78,
+      "sha256": "0519583787171e1e99281ef4a0d288455fdc3b7644bd6d705ff0c06b847133ca",
+      "bytes": 14444
+    },
+    {
+      "kind": "emission",
+      "group": "战斗",
+      "label": "细胞发射",
+      "description": "轻弹性发射，三种微变体供轮换。",
+      "file": "05_emission_c.wav",
+      "variant": 3,
+      "seconds": 0.15,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -24.82,
+      "sha256": "987982084ee50acf256055e3738557e219df9d2405bfddb267baf90197d80183",
+      "bytes": 14444
+    },
+    {
+      "kind": "impact",
+      "group": "战斗",
+      "label": "黏液命中",
+      "description": "软质低频与少量气泡声，三种微变体。",
+      "file": "06_impact_a.wav",
+      "variant": 1,
+      "seconds": 0.2,
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -23.43,
+      "sha256": "139a30c00ae351650723fa1504daffb51498c1582dfdff51e41b21719ec2f678",
+      "bytes": 19244
+    },
+    {
+      "kind": "impact",
+      "group": "战斗",
+      "label": "黏液命中",
+      "description": "软质低频与少量气泡声，三种微变体。",
+      "file": "06_impact_b.wav",
+      "variant": 2,
+      "seconds": 0.2,
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -22.62,
+      "sha256": "d4b62b75c1022555851c9d0d418300c0807bbe88c468c9bb86d4d0f46c01e465",
+      "bytes": 19244
+    },
+    {
+      "kind": "impact",
+      "group": "战斗",
+      "label": "黏液命中",
+      "description": "软质低频与少量气泡声，三种微变体。",
+      "file": "06_impact_c.wav",
+      "variant": 3,
+      "seconds": 0.2,
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -23.67,
+      "sha256": "aeda8fd31b49ab4fad86c6292094b7c1f3233a07a300ca241eb389b8a132c5ff",
+      "bytes": 19244
+    },
+    {
+      "kind": "engulf",
+      "group": "战斗",
+      "label": "巨噬吞噬",
+      "description": "下沉的吸入感，伴随短气泡。",
+      "file": "07_engulf.wav",
+      "variant": 1,
+      "seconds": 0.53,
+      "peak_dbfs": -7.54,
+      "rms_dbfs": -20.57,
+      "sha256": "8f1a556e79478888bb3c01cdf6bf0928cdc5bbe33e9b9ee2d4f655d383837e6b",
+      "bytes": 50924
+    },
+    {
+      "kind": "wall_break",
+      "group": "战斗",
+      "label": "壁垒破裂",
+      "description": "纤维松裂与低沉散开，区别于金属爆炸。",
+      "file": "08_wall_break.wav",
+      "variant": 1,
+      "seconds": 0.66,
+      "peak_dbfs": -6.56,
+      "rms_dbfs": -21.64,
+      "sha256": "594a16ad7e333f26b158f198bbff283ee29a13f23ed6575776dd87397858bc4c",
+      "bytes": 63404
+    },
+    {
+      "kind": "wave",
+      "group": "状态",
+      "label": "开始波次",
+      "description": "简短向上提示，进入战斗。",
+      "file": "09_wave.wav",
+      "variant": 1,
+      "seconds": 0.84,
+      "peak_dbfs": -7.96,
+      "rms_dbfs": -20.34,
+      "sha256": "758e66dd4d1b8ef40ed779e21cc375bd13dfff545847d3d695752d488b8e43af",
+      "bytes": 80684
+    },
+    {
+      "kind": "boss",
+      "group": "状态",
+      "label": "Boss 警报",
+      "description": "三次低脉冲和双音警示，不用尖锐蜂鸣。",
+      "file": "10_boss.wav",
+      "variant": 1,
+      "seconds": 1.4,
+      "peak_dbfs": -6.2,
+      "rms_dbfs": -17.64,
+      "sha256": "f0bfe015d6873b20e0f3d2af6b21b2567437c533d996e7b3c7bad1cb369dab91",
+      "bytes": 134444
+    },
+    {
+      "kind": "core",
+      "group": "状态",
+      "label": "核心受击",
+      "description": "更低沉、明确的受损反馈。",
+      "file": "11_core.wav",
+      "variant": 1,
+      "seconds": 0.58,
+      "peak_dbfs": -5.35,
+      "rms_dbfs": -19.29,
+      "sha256": "096079f75695c0183801308677f4e91e33b9bc44949e5601a9d859606cfac8c0",
+      "bytes": 55724
+    },
+    {
+      "kind": "victory",
+      "group": "结算",
+      "label": "胜利",
+      "description": "短上行旋律与温暖和弦。",
+      "file": "12_victory.wav",
+      "variant": 1,
+      "seconds": 2.05,
+      "peak_dbfs": -6.2,
+      "rms_dbfs": -20.83,
+      "sha256": "458138c2cba88e8d26981ce24133fd1708f852a048edab5a5fcba8797c838d8c",
+      "bytes": 196844
+    },
+    {
+      "kind": "defeat",
+      "group": "结算",
+      "label": "失败",
+      "description": "收敛的下行提示，保留再次挑战的空间。",
+      "file": "13_defeat.wav",
+      "variant": 1,
+      "seconds": 1.85,
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -20.9,
+      "sha256": "f08aaf60753d3f8ca60326043900f81e967825e6bad9c02f74ff607343fbd58a",
+      "bytes": 177644
+    }
+  ],
+  "reel_cues": [
+    {
+      "label": "轻触",
+      "at": 0.25
+    },
+    {
+      "label": "建造",
+      "at": 0.735
+    },
+    {
+      "label": "升级",
+      "at": 1.495
+    },
+    {
+      "label": "出售",
+      "at": 2.595
+    },
+    {
+      "label": "细胞发射",
+      "at": 3.335
+    },
+    {
+      "label": "黏液命中",
+      "at": 3.865
+    },
+    {
+      "label": "巨噬吞噬",
+      "at": 4.445
+    },
+    {
+      "label": "壁垒破裂",
+      "at": 5.355
+    },
+    {
+      "label": "开始波次",
+      "at": 6.395
+    },
+    {
+      "label": "Boss 警报",
+      "at": 7.615
+    },
+    {
+      "label": "核心受击",
+      "at": 9.395
+    },
+    {
+      "label": "胜利",
+      "at": 10.355
+    },
+    {
+      "label": "失败",
+      "at": 12.785
+    }
+  ]
+}

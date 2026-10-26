@@ -14,6 +14,8 @@ public sealed class PixelImageText : MaskableGraphic
     [SerializeField] private TextAlignmentOptions textAlignment = TextAlignmentOptions.TopLeft;
     public bool enableAutoSizing;
     public float fontSizeMin = 11f, fontSizeMax = 18f;
+    // Optional image-only lettering style, with the same cells and advances as the shared atlas.
+    public Texture2D glyphAtlasOverride, smallGlyphAtlasOverride;
     private readonly List<Line> lines = new List<Line>();
     private Sprite phrase;
     private Texture texture;
@@ -53,7 +55,7 @@ public sealed class PixelImageText : MaskableGraphic
         float minimum = Mathf.Max(fontSizeMin, nativeSize / screenScale);
         size = Mathf.Max(size, nativeSize / screenScale);
         // A fixed phrase uses its hand-checked line breaks when it fits at the requested size.
-        if (!small && art.TryPhrase(displayText, out phrase) &&
+        if (!small && glyphAtlasOverride == null && art.TryPhrase(displayText, out phrase) &&
             phrase.rect.width * size / 12f <= bounds.width + .01f &&
             phrase.rect.height * size / 12f <= bounds.height + .01f)
         {
@@ -68,7 +70,9 @@ public sealed class PixelImageText : MaskableGraphic
             return;
         }
         phrase = null;
-        Texture2D atlas = small ? art.smallGlyphAtlas : art.glyphAtlas;
+        Texture2D atlas = small
+            ? (smallGlyphAtlasOverride != null ? smallGlyphAtlasOverride : art.smallGlyphAtlas)
+            : (glyphAtlasOverride != null ? glyphAtlasOverride : art.glyphAtlas);
         float[] advances = small ? art.smallAdvances : art.advances;
         int cellSize = small ? 14 : art.cellSize;
         texture = atlas;

@@ -1,0 +1,23 @@
+--- 
++++ 
+@@ -1150,7 +1150,7 @@
+         string scene = gameObject.scene.name;
+         if (result == OpenFieldPhase.Victory) progress.SaveVictory(scene, FinalScore.Score);
+         LevelResultScoreView scoreView = result == OpenFieldPhase.Victory ? victoryScoreView : defeatScoreView;
+-        if (scoreView != null) scoreView.Show(FinalScore, progress.BestScore(scene), progress.HasCleared(scene));
++        if (scoreView != null) scoreView.Show(FinalScore);
+         ResetPlayback();
+         if (playbackControls != null) playbackControls.Hide();
+         if (battleHud != null) battleHud.Hide();
+@@ -1229,8 +1229,9 @@
+         {
+             RectTransform rect = actions[i].GetComponent<RectTransform>();
+             rect.localScale = Vector3.one;
+-            rect.sizeDelta = new Vector2(512f, 56f);
+-            rect.anchoredPosition = new Vector2(0f, panel == defeatPanel ? -132f - i * 70f : -96f - i * 60f);
++            rect.sizeDelta = new Vector2(260f, 52f);
++            rect.anchoredPosition = new Vector2(0f, panel == defeatPanel ? -116f - i * 70f : -82f - i * 62f);
++            LevelResultScoreView.StyleActionButton(actions[i]);
+         }
+         foreach (Image image in content.GetComponentsInChildren<Image>())
+         {

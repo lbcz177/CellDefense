@@ -67,6 +67,10 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
     private readonly Dictionary<Vector2Int, BuildSlot> placedSlots = new Dictionary<Vector2Int, BuildSlot>();
     private readonly HashSet<EnemyController> activeEnemies = new HashSet<EnemyController>();
+    private readonly HashSet<EnemyController> scheduledEnemies = new HashSet<EnemyController>();
+    private readonly LevelProgress progress = new LevelProgress();
+    private int scheduledEnemyCount, killedScheduledEnemies;
+    private LevelResultScoreView victoryScoreView, defeatScoreView;
     private readonly Dictionary<Vector2Int, TowerCombatState> cellDefenders =
         new Dictionary<Vector2Int, TowerCombatState>();
     private readonly Dictionary<EnemyController, Stack<EnemyController>> inactiveEnemiesByPrefab =
@@ -120,6 +124,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     public event Action<TowerController> TowerLost;
     public int CurrentATP => economy.CurrentATP;
     public int CurrentCoreLife => life.CurrentLife;
+    public LevelScoreResult FinalScore { get; private set; }
     public bool IsPaused { get; private set; }
     public int PlaybackSpeed { get; private set; } = 1;
     public bool HasActiveRun => Phase == OpenFieldPhase.Planning || Phase == OpenFieldPhase.Assault;
@@ -183,7 +188,12 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
         grid = new OpenFieldGridModel(width, height, coreCell, spawnCells, blockedCells);
         ConfigureMapViewport();
-        for (int i = 0; i < waveSequence.WaveCount; i++) waveSequence.GetWave(i).Validate();
+        for (int i = 0; i < waveSequence.WaveCount; i++)
+        {
+            WaveDefinition wave = waveSequence.GetWave(i);
+            wave.Validate();
+            scheduledEnemyCount = checked(scheduledEnemyCount + wave.ScheduledEnemyCount);
+        }
         projectilePool.Initialize();
         economy.Initialize(initialATP);
         life.Initialize(initialCoreLife);
@@ -227,8 +237,8 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         {
             ConfigureResultPanel(victoryPanel, true);
             ConfigureResultPanel(defeatPanel, false);
-            FitResultToScreen(victoryPanel);
-            FitResultToScreen(defeatPanel);
+            victoryScoreView = FitResultToScreen(victoryPanel);
+            defeatScoreView = FitResultToScreen(defeatPanel);
             victoryPanel.SetActive(false);
             defeatPanel.SetActive(false);
         }
@@ -1040,6 +1050,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
                 enemy.Exited += HandleEnemyExited;
                 enemy.SummonRequested += HandleSummonRequested;
                 activeEnemies.Add(enemy);
+                if (!request.HasValue) scheduledEnemies.Add(enemy);
                 enemy.Initialize(path, definition, enemySpeedMultiplier, request);
                 EnemyContactCombat contact = enemy.GetComponent<EnemyContactCombat>();
                 if (contact == null) contact = enemy.gameObject.AddComponent<EnemyContactCombat>();
@@ -1053,6 +1064,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             if (enemy != null)
             {
                 activeEnemies.Remove(enemy);
+                scheduledEnemies.Remove(enemy);
                 enemy.Exited -= HandleEnemyExited;
                 enemy.SummonRequested -= HandleSummonRequested;
                 ReturnEnemy(enemy, definition.EnemyPrefab);
@@ -1086,6 +1098,8 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
         enemy.Exited -= HandleEnemyExited;
         enemy.SummonRequested -= HandleSummonRequested;
+        if (scheduledEnemies.Remove(enemy) && reason == EnemyExitReason.Killed)
+            killedScheduledEnemies++;
         if (reason == EnemyExitReason.Killed && enemy.Definition.KillReward > 0)
         {
             economy.AddATP(enemy.Definition.KillReward);
@@ -1128,7 +1142,15 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
 
     private void FinishRun(OpenFieldPhase result)
     {
+        if (!HasActiveRun || (result != OpenFieldPhase.Victory && result != OpenFieldPhase.Defeat)) return;
+        if (life.IsDepleted) result = OpenFieldPhase.Defeat;
         Phase = result;
+        FinalScore = LevelScoring.Evaluate(result == OpenFieldPhase.Victory,
+            killedScheduledEnemies, scheduledEnemyCount, life.CurrentLife, initialCoreLife);
+        string scene = gameObject.scene.name;
+        if (result == OpenFieldPhase.Victory) progress.SaveVictory(scene, FinalScore.Score);
+        LevelResultScoreView scoreView = result == OpenFieldPhase.Victory ? victoryScoreView : defeatScoreView;
+        if (scoreView != null) scoreView.Show(FinalScore);
         ResetPlayback();
         if (playbackControls != null) playbackControls.Hide();
         if (battleHud != null) battleHud.Hide();
@@ -1149,6 +1171,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             ReturnEnemy(enemy, enemy.Definition.EnemyPrefab);
         }
         activeEnemies.Clear();
+        scheduledEnemies.Clear();
         DestroyRoundPaths();
         presentation.HidePreview();
         if (victoryPanel != null && defeatPanel != null)
@@ -1191,7 +1214,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
     }
 
-    private void FitResultToScreen(GameObject panel)
+    private LevelResultScoreView FitResultToScreen(GameObject panel)
     {
         Canvas resultCanvas = panel.transform.Find("Canvas").GetComponent<Canvas>();
         // The original prefabs use 10x artwork and 6x buttons. Normalize both
@@ -1206,8 +1229,9 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         {
             RectTransform rect = actions[i].GetComponent<RectTransform>();
             rect.localScale = Vector3.one;
-            rect.sizeDelta = new Vector2(512f, 96f);
-            rect.anchoredPosition = new Vector2(0f, actions.Length == 3 ? 10f - i * 100f : -60f - i * 120f);
+            rect.sizeDelta = new Vector2(260f, 52f);
+            rect.anchoredPosition = new Vector2(0f, panel == defeatPanel ? -116f - i * 70f : -82f - i * 62f);
+            LevelResultScoreView.StyleActionButton(actions[i]);
         }
         foreach (Image image in content.GetComponentsInChildren<Image>())
         {
@@ -1216,6 +1240,8 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             image.rectTransform.sizeDelta = new Vector2(600f, 600f);
             image.preserveAspect = true;
         }
+        // The failure illustration extends lower than the victory title.
+        return LevelResultScoreView.Create(content, panel == defeatPanel ? -28f : 0f);
     }
 
     private void DestroyRoundPaths()

@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-22",
+  "unity": "2022.3.53f1c1",
+  "result": "LocalValidationPassed",
+  "unity_build_succeeded": true,
+  "consent_logic": {
+    "result": "Passed",
+    "consent_jvm_checks": 12,
+    "source_manifest_audit": true,
+    "policy_sha256": "344096c909c6c9a02308ce50a6e4a832e12ad1f55756b73e792b5e28df3e5a46",
+    "policy_contact_complete": false,
+    "device_tested": false,
+    "runtime_sensor_or_identifier_instrumentation": false,
+    "remote_writes": false
+  },
+  "apk": {
+    "result": "Passed",
+    "apk": "E:\\unity\\CellDefense\\Builds\\Android\\CellDefense-0.1.4-privacy-validation.apk",
+    "bytes": 59571636,
+    "size_mib": 56.81,
+    "sha256": "0c3633cc22de307573d298cbbe3b4baaea8c718bcd45b339914f6bab48055961",
+    "version_name": "0.1.4",
+    "version_code": 5,
+    "launcher": "com.celldefense.privacy.PrivacyActivity",
+    "unity_activity_exported": false,
+    "application_is_android_default": true,
+    "auto_start_providers": 0,
+    "permissions": [],
+    "packaged_policy_matches": true,
+    "policy_zip_entry": "res/Hh.txt",
+    "launcher_dex_has_no_unity_class_references": true,
+    "signing_certificate_matches_previous": true,
+    "development": false,
+    "contact_details_pending": true,
+    "device_tested": false,
+    "remote_writes": false
+  },
+  "validated_sources": [
+    {
+      "path": "Assets/Plugins/Android/AndroidManifest.xml",
+      "sha256": "18ccb42208341a45e666bc7eac2f563dd0a419c4f2ea75b591e86ac4946663be",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/ConsentUnityActivity.java",
+      "sha256": "3472fee70050a1c14fd9f73416f040399fa0fbdcc0a8c7cb8345b60236b55817",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/AndroidManifest.xml",
+      "sha256": "6d99f0df95ba04f76025fd2a1bd43afddedffe3e428c459c81bad495cd51779b",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/build.gradle",
+      "sha256": "cec14deeb055931ba7a93385762569ba66e9b4bbe2581fb9e4f8de41afac8d70",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/project.properties",
+      "sha256": "ee8296909a197be5729b1fbb210a6ac71b55bbd4033bf82941cb0d4e2ebc1a8f",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/src/com/celldefense/privacy/ConsentStore.java",
+      "sha256": "3470fbb415ff45e4970648b1e07bc53c5246668779a700bcef8c15aff204118a",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/src/com/celldefense/privacy/PrivacyActivity.java",
+      "sha256": "39aac6ecd02eb713a1d538f2ae848227354c2eec70cffc632fadcc46ee506d8b",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/res/raw/cell_privacy_policy.txt",
+      "sha256": "344096c909c6c9a02308ce50a6e4a832e12ad1f55756b73e792b5e28df3e5a46",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/res/xml/cell_privacy_backup_rules.xml",
+      "sha256": "a450bceb02bf317620c8acd34380015f835a16c8d836d6ff2f0adbe9d5eb876d",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/Plugins/Android/CellPrivacy.androidlib/res/xml/cell_privacy_data_extraction_rules.xml",
+      "sha256": "83f4529f9302397a8f21dc40b9ea42d896970b7a0c1a2d9bdfcbe714ae336dd4",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/AndroidPrivacy.cs",
+      "sha256": "5f6661819570708dfde895a8f03243ce8630920da440aec6ba4ca79bec6aa006",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "d576d9e529da28365c592806d63888a1876744dd7e70936337caf55020b4aa68",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/_Project/Editor/CellDefenseAndroidBuild.cs",
+      "sha256": "cb016add56664d18ecaeac969f12518a0942a7387cdac72d41f859c7dec08de6",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/_Project/Editor/CellDefensePrivacyValidationBuild.cs",
+      "sha256": "358bb2fae23c48000daecc0dd91b6c8fbbc2ab52e0c9d3a91daf4e98b6e467f8",
+      "matches_validated_project": true
+    },
+    {
+      "path": "Assets/_Project/Editor/AndroidPrivacyGradleGuard.cs",
+      "sha256": "007c3b6e23cf319894da8362f61236b1a7685a300ae58b0629ec92a0b7efdb6c",
+      "matches_validated_project": true
+    },
+    {
+      "path": "ProjectSettings/UnityConnectSettings.asset",
+      "sha256": "3400f2701244285ca5e78c0d531e2197cb6ddce0e020c130f4fb0f4c22481f02",
+      "matches_validated_project": true
+    }
+  ],
+  "unity_analytics_settings_match_validated_project": true,
+  "previous_apk_preserved": true,
+  "taptap_changed": false,
+  "submitted_for_review": false,
+  "limitations": [
+    "No connected Android device; no device or SDK access instrumentation test.",
+    "Operator details/contact channel and public policy URL still pending."
+  ]
+}

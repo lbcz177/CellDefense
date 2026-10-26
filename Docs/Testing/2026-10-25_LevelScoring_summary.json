@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-25",
+  "unity_version": "2022.3.53f1c1",
+  "isolated_project": "Logs/CodexTradingTests",
+  "test_company": "CellDefenseValidation",
+  "test_product": "ScoreFlowTests",
+  "tests": {
+    "EditMode": {
+      "result": "Passed",
+      "total": "140",
+      "passed": "140",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "1.2456169",
+      "start-time": "2026-10-25 04:35:22Z",
+      "end-time": "2026-10-25 04:35:23Z"
+    },
+    "PlayMode": {
+      "result": "Passed",
+      "total": "45",
+      "passed": "45",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "112.5221503",
+      "start-time": "2026-10-25 04:39:55Z",
+      "end-time": "2026-10-25 04:41:48Z"
+    }
+  },
+  "source_sha256": {
+    "Assets/_Project/Scripts/OpenField/LevelScoring.cs": "8595894e4443fda7e50e154796bbfa13a6d02ffbedd7b5ffdfaa80bcb8c08e1a",
+    "Assets/_Project/Scripts/OpenField/LevelProgress.cs": "a296be5c0b7edc4171e741f5c6fa1323210bf28f405b83bdb21f5b1b29023bd5",
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "e0bea7882bdb4e9117abc52e2656af2900827f6ff3620fb2d011614b63aeaff7",
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "86870830665535a32ad05f1c123d80e9710c13430964527e53a03f1eb30947f0",
+    "Assets/_Project/Scripts/UI/StarRatingGraphic.cs": "9723d99b1d23819f9abd2bd1d14e98d1c8fe4f28e0d4e8c5b6207fff70c43bc4",
+    "Assets/_Project/Scripts/UI/LevelResultScoreView.cs": "93d364a116f03d2922648e08839854b8e6d00a25f9554fc1e2ce498971bb0f6a",
+    "Assets/_Project/Tests/EditMode/LevelScoringTests.cs": "24a9e1620b85b3fd1032a6c5284e69fc182f8338f8b9ad8f9cbf598c749cb3f0",
+    "Assets/_Project/Tests/PlayMode/LevelScoringPlayModeTests.cs": "f526bb3173e52d194b0a05db7788a1a1490c461191dc171f19b516a19b5886e3",
+    "Assets/_Project/Tests/PlayMode/MobilePlayModeTests.cs": "4f17247a12cebf5550dd2323f384a16782a6d8b4bb4c36956e0abe2506e31e05"
+  },
+  "scoring": {
+    "maximum": 10000,
+    "kill_maximum": 4000,
+    "core_maximum": 6000,
+    "two_stars": 7000,
+    "three_stars": 9000,
+    "loss_stars": 0,
+    "lower_retry_preserves_best": true,
+    "summons_excluded": true
+  },
+  "five_level_flow": "Real spawn, death, final-wave completion, next-level and menu callbacks; automated large damage and accelerated test clock, not a balance playthrough",
+  "captures": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\关卡评星_2026-10-25\\完整回归_v4~",
+  "image_dimensions": {
+    "score-defeat-retains-best.png": [
+      321,
+      531
+    ],
+    "score-False-Defeat-1280x720.png": [
+      1280,
+      720
+    ],
+    "score-False-Defeat-2048x928.png": [
+      2048,
+      928
+    ],
+    "score-False-Defeat-640x480.png": [
+      640,
+      480
+    ],
+    "score-False-Victory-1280x720.png": [
+      1280,
+      720
+    ],
+    "score-False-Victory-2048x928.png": [
+      2048,
+      928
+    ],
+    "score-False-Victory-640x480.png": [
+      640,
+      480
+    ],
+    "score-five-level-selection.png": [
+      321,
+      531
+    ],
+    "score-perfect-OpenFieldLevel02.png": [
+      321,
+      531
+    ],
+    "score-perfect-OpenFieldLevel03.png": [
+      321,
+      531
+    ],
+    "score-perfect-OpenFieldLevel04.png": [
+      321,
+      531
+    ],
+    "score-perfect-OpenFieldLevel05.png": [
+      321,
+      531
+    ],
+    "score-perfect-OpenFieldPrototype.png": [
+      321,
+      531
+    ],
+    "score-True-Defeat-1280x720.png": [
+      1280,
+      720
+    ],
+    "score-True-Defeat-2048x928.png": [
+      2048,
+      928
+    ],
+    "score-True-Defeat-640x480.png": [
+      640,
+      480
+    ],
+    "score-True-Victory-1280x720.png": [
+      1280,
+      720
+    ],
+    "score-True-Victory-2048x928.png": [
+      2048,
+      928
+    ],
+    "score-True-Victory-640x480.png": [
+      640,
+      480
+    ],
+    "score-two-stars.png": [
+      321,
+      531
+    ]
+  },
+  "android_device_tested": false,
+  "new_apk_built": false,
+  "taptap_modified": false,
+  "privacy_policy_for_next_release": "Add local score/clear records and deletion instructions before packaging the next version"
+}

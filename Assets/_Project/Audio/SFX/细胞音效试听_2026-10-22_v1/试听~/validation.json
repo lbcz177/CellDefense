@@ -1,0 +1,109 @@
+{
+  "result": "Passed",
+  "audio_files": [
+    {
+      "file": "01_click.wav",
+      "frames": 5040,
+      "peak_dbfs": -11.37,
+      "rms_dbfs": -24.77
+    },
+    {
+      "file": "02_build.wav",
+      "frames": 18240,
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -20.29
+    },
+    {
+      "file": "03_upgrade.wav",
+      "frames": 34560,
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -19.32
+    },
+    {
+      "file": "04_sell.wav",
+      "frames": 17280,
+      "peak_dbfs": -9.9,
+      "rms_dbfs": -21.19
+    },
+    {
+      "file": "05_emission_a.wav",
+      "frames": 7200,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -25.69
+    },
+    {
+      "file": "05_emission_b.wav",
+      "frames": 7200,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -25.78
+    },
+    {
+      "file": "05_emission_c.wav",
+      "frames": 7200,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -24.82
+    },
+    {
+      "file": "06_impact_a.wav",
+      "frames": 9600,
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -23.43
+    },
+    {
+      "file": "06_impact_b.wav",
+      "frames": 9600,
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -22.62
+    },
+    {
+      "file": "06_impact_c.wav",
+      "frames": 9600,
+      "peak_dbfs": -9.37,
+      "rms_dbfs": -23.67
+    },
+    {
+      "file": "07_engulf.wav",
+      "frames": 25440,
+      "peak_dbfs": -7.54,
+      "rms_dbfs": -20.57
+    },
+    {
+      "file": "08_wall_break.wav",
+      "frames": 31680,
+      "peak_dbfs": -6.56,
+      "rms_dbfs": -21.64
+    },
+    {
+      "file": "09_wave.wav",
+      "frames": 40320,
+      "peak_dbfs": -7.96,
+      "rms_dbfs": -20.34
+    },
+    {
+      "file": "10_boss.wav",
+      "frames": 67200,
+      "peak_dbfs": -6.2,
+      "rms_dbfs": -17.64
+    },
+    {
+      "file": "11_core.wav",
+      "frames": 27840,
+      "peak_dbfs": -5.35,
+      "rms_dbfs": -19.29
+    },
+    {
+      "file": "12_victory.wav",
+      "frames": 98400,
+      "peak_dbfs": -6.2,
+      "rms_dbfs": -20.83
+    },
+    {
+      "file": "13_defeat.wav",
+      "frames": 88800,
+      "peak_dbfs": -7.33,
+      "rms_dbfs": -20.9
+    }
+  ],
+  "preview_cards": 13,
+  "embedded_players": 19
+}

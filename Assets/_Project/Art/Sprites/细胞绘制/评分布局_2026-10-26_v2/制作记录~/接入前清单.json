@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Assets/_Project/Scripts/UI/LevelResultScoreView.cs",
+    "sha256": "24da001a44ac80f5cf9ca28f971e2561564e92dec7959f48983c055e46d91b94"
+  },
+  {
+    "path": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs",
+    "sha256": "e73eb77df4d5c96ce4ad5ac7df89bd3a224e8f7b01e67b73d16a88600bd69a80"
+  },
+  {
+    "path": "Docs/LEVEL_SCORING.md",
+    "sha256": "aba7e0b87948e6b751a7af55e2db7fda088bab7d4ee9afb09f741b2c22aea9f5"
+  }
+]

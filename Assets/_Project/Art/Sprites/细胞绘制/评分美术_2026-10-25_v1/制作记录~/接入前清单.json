@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Assets/_Project/Resources/PromptImageResources.asset",
+    "sha256": "5a60d313dc866fe7e2668e3916f057a309a45a89d444a8508321d9537cc61b87"
+  },
+  {
+    "path": "Assets/_Project/Tests/PlayMode/LevelScoringPlayModeTests.cs",
+    "sha256": "f526bb3173e52d194b0a05db7788a1a1490c461191dc171f19b516a19b5886e3"
+  },
+  {
+    "path": "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs",
+    "sha256": "e0bea7882bdb4e9117abc52e2656af2900827f6ff3620fb2d011614b63aeaff7"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/LevelResultScoreView.cs",
+    "sha256": "93d364a116f03d2922648e08839854b8e6d00a25f9554fc1e2ce498971bb0f6a"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/PixelImageText.cs",
+    "sha256": "cbc47f47c58c09b393562f1b23e698115634db28b1eded5e31d241432c49e339"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/StarRatingGraphic.cs",
+    "sha256": "9723d99b1d23819f9abd2bd1d14e98d1c8fe4f28e0d4e8c5b6207fff70c43bc4"
+  }
+]

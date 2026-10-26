@@ -1,0 +1,63 @@
+--- 
++++ 
+@@ -4,7 +4,7 @@
+ 
+ public sealed class LevelResultScoreView : MonoBehaviour
+ {
+-    private PixelImageText kills, core, best;
++    private PixelImageText kills, core;
+     private readonly Image[] digits = new Image[5];
+     private StarRatingGraphic stars;
+ 
+@@ -16,7 +16,7 @@
+         RectTransform rect = (RectTransform)root.transform;
+         rect.anchorMin = rect.anchorMax = rect.pivot = Vector2.one * .5f;
+         rect.anchoredPosition = Vector2.up * verticalOffset;
+-        rect.sizeDelta = new Vector2(400f, 108f);
++        rect.sizeDelta = new Vector2(400f, 80f);
+         LevelResultScoreView view = root.GetComponent<LevelResultScoreView>();
+         Image ribbon = Picture(root.transform, "Score Ribbon", new Vector2(-58f, 12f), new Vector2(244f, 44f),
+             ScoreArtworkResources.Defaults.scoreRibbon);
+@@ -35,12 +35,10 @@
+         Picture(root.transform, "Core Icon", new Vector2(18f, -24f), Vector2.one * 22f, hud.LifeIcon);
+         view.kills = Label(root.transform, "Kill Score", new Vector2(-80f, -24f), new Vector2(148f, 22f), 16f);
+         view.core = Label(root.transform, "Core Score", new Vector2(106f, -24f), new Vector2(148f, 22f), 16f);
+-        view.best = Label(root.transform, "Best Score", Vector2.up * -47f, new Vector2(360f, 20f), 14f);
+-        view.best.color = new Color(.49f, .31f, .35f);
+         return view;
+     }
+ 
+-    public void Show(LevelScoreResult result, int bestScore, bool cleared)
++    public void Show(LevelScoreResult result)
+     {
+         stars.Stars = result.Stars;
+         string number = result.Score.ToString(System.Globalization.CultureInfo.InvariantCulture);
+@@ -54,7 +52,27 @@
+         }
+         kills.text = $"击杀 {result.KillScore}/4000";
+         core.text = $"核心 {result.CoreScore}/6000";
+-        best.text = cleared ? $"最高 {bestScore}" : "未通关";
++    }
++
++    public static void StyleActionButton(Button button)
++    {
++        OpenFieldUiResources artwork = OpenFieldUiResources.LoadDefaults();
++        Image frame = button.image;
++        frame.sprite = artwork.SettingsBackFrame;
++        frame.type = Image.Type.Sliced;
++        frame.preserveAspect = false;
++        frame.pixelsPerUnitMultiplier = 2f;
++        frame.color = Color.white;
++        button.transition = Selectable.Transition.SpriteSwap;
++        button.spriteState = new SpriteState
++        {
++            highlightedSprite = artwork.SettingsBackFrameSelected,
++            pressedSprite = artwork.SettingsBackFrameSelected,
++            selectedSprite = artwork.SettingsBackFrameSelected,
++            disabledSprite = artwork.SettingsBackFrame
++        };
++        PixelImageText caption = Label(button.transform, "Action Caption", Vector2.zero, new Vector2(228f, 32f), 24f);
++        caption.text = button.name == "Next" ? "下一关" : button.name == "Again" ? "重新开始" : "返回主菜单";
+     }
+ 
+     private static PixelImageText Label(Transform parent, string name, Vector2 position, Vector2 size, float fontSize)

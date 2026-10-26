@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-26",
+  "target": {
+    "developerId": "338749",
+    "appId": "986196",
+    "draftVersion": "V-20261025"
+  },
+  "status": "awaiting-user-confirmation",
+  "approved": false,
+  "apk": {
+    "status": "local-candidate-awaiting-confirmation",
+    "appId": "986196",
+    "developerId": "338749",
+    "apk": "Builds/Android/CellDefense-0.1.5.apk",
+    "versionName": "0.1.5",
+    "versionCode": 6,
+    "packageName": "com.celldefense.game",
+    "productName": "胞卫战",
+    "bytes": 59617474,
+    "sha256": "4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab",
+    "development": false,
+    "sameSigningCertificateAsPreviousLocalBuilds": true,
+    "fixedVersionDeviceTested": false,
+    "platformWriteApproved": false,
+    "platformDraftSaved": false,
+    "reviewSubmitted": false,
+    "published": false,
+    "preserveExistingScreenshots": true,
+    "preserveExistingGameplayVideo": true,
+    "updateNote": "《胞卫战》v0.1.5 试玩版更新\n- 新增五关评分与星级：根据计划敌人击杀比例和核心剩余生命评分，满分 10000；通关达到 7000 分为二星，9000 分为三星。\n- 选关页展示本地最高分与最佳星级，重试或低分通关不会降低已有纪录，五关仍可自由选择。\n- 调整胜负结算的得分、星级和按钮布局，优化小屏显示，修复评分上限文字换行。\n- 隐私政策补充本地成绩和通关记录的保存、删除说明；政策更新后重新征求同意。",
+    "privacyPolicyUrl": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/",
+    "policySha256": "fa9eecc29eee6dadfd0876d90230561798668d56f166e1f805b75c2b83adab4e",
+    "privacyWebsiteMatchesCandidate": false
+  },
+  "textChanges": [
+    {
+      "field_id": "apk_whatsnew",
+      "value": "《胞卫战》v0.1.5 试玩版更新\n- 新增五关评分与星级：根据计划敌人击杀比例和核心剩余生命评分，满分 10000；通关达到 7000 分为二星，9000 分为三星。\n- 选关页展示本地最高分与最佳星级，重试或低分通关不会降低已有纪录，五关仍可自由选择。\n- 调整胜负结算的得分、星级和按钮布局，优化小屏显示，修复评分上限文字换行。\n- 隐私政策补充本地成绩和通关记录的保存、删除说明；政策更新后重新征求同意。",
+      "expected": "《胞卫战》v0.1.3 试玩版更新\n- 新增第一关三轮新手引导，涵盖建造、开波、壁垒和升级；可随时跳过，重开后重新开始。\n- 纤维蛋白壁垒改为可承伤的拦截物：500 生命、30 ATP，拦截全部经过的敌人；取消累计建造次数限制，不再改变敌人路线。\n- 完善教程、怪物出场、波次及建造操作的像素图片提示，并接入暂停与倍速图片按钮。\n- 优化胜利、失败面板在电脑和手机上的等比适配及按钮间距。\n- 修复结算后战斗血条和状态图像残留的问题。"
+    }
+  ],
+  "uploads": [
+    {
+      "kind": "apk",
+      "path": "Builds/Android/CellDefense-0.1.5.apk",
+      "sha256": "4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab",
+      "bytes": 59617474
+    }
+  ],
+  "mediaUpdates": false,
+  "keepExisting": [
+    "title",
+    "description",
+    "icon",
+    "banner_4",
+    "screenshots",
+    "gameplay_demo_video",
+    "promotion_text",
+    "developer_message",
+    "promotion_material_type",
+    "app_platforms",
+    "region_flag_android",
+    "region_flag_ios",
+    "apk_anti_addiction_status",
+    "apk_sandbox_authorized",
+    "apk_update_mode",
+    "release_schedule",
+    "release_time"
+  ],
+  "privacyWebsite": {
+    "projectId": "appgprj_6ad9d0ba406881919f30808f61a55385",
+    "url": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/",
+    "changedSections": [
+      4,
+      5
+    ],
+    "updateDate": "2026-10-26",
+    "textFile": "Assets/Plugins/Android/CellPrivacy.androidlib/res/raw/cell_privacy_policy.txt",
+    "publishApproved": false,
+    "published": false
+  },
+  "github": {
+    "repository": "lbcz177/CellDefense",
+    "branch": "codex/open-field-prototype",
+    "authorized": true,
+    "scope": "Current project source, assets, policies and documents; no APK binary or GitHub Release"
+  },
+  "reviewPrepared": false,
+  "reviewSubmitted": false,
+  "published": false
+}

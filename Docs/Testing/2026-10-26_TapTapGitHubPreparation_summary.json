@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-26",
+  "status": "ready-for-user-confirmation",
+  "apkVersion": "0.1.5",
+  "versionCode": 6,
+  "apkSha256": "4801149e9f07451b5f0bd6ba863ab7f8442dca438a806ddd4ea431e0a446c2ab",
+  "editModePassed": 140,
+  "playModePassed": 45,
+  "initialPlayModeFailed": 2,
+  "failedScoreMaximumWrapFixed": true,
+  "consentJvmChecksPassed": 12,
+  "nativePrivacyApkAuditPassed": true,
+  "deviceTested": false,
+  "mediaReplaced": false,
+  "tapTapWritesPerformed": false,
+  "policyWebsitePublished": false,
+  "gitHubAuthorized": true,
+  "htmlLinksValid": 7,
+  "policySourcesIdentical": true,
+  "previousUnpushedCommitsOver90MiB": []
+}

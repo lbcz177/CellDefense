@@ -1,0 +1,23 @@
+{
+  "id": "appgdep_6ad9d5b1e0148191a31c9a4901d5116c",
+  "project_id": "appgprj_6ad9d0ba406881919f30808f61a55385",
+  "title": "胞卫战 · 隐私政策",
+  "version_id": "appgprj_6ad9d0ba406881919f30808f61a55385~appgver_aa9c6af599988191a4e2d183e807f6d6",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ad9d0ba406881919f30808f61a55385",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-22T09:22:00.279006+00:00",
+  "access_mode": "public",
+  "source": {
+    "project_id": "appgprj_6ad9d0ba406881919f30808f61a55385",
+    "checkout_path": "E:\\unity\\CellDefense\\Sites\\cell-defense-privacy",
+    "commit_sha": "083278a859fb2bf3d47915af5e781755030c01b6",
+    "archive": "E:/unity/CellDefense/Logs/PrivacyFix20261022/privacy-site.tar.gz"
+  },
+  "anonymous_verification": "Logs/PrivacyFix20261022/site-live-validation.json"
+}

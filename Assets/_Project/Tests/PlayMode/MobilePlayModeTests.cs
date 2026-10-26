@@ -171,7 +171,7 @@ public sealed class MobilePlayModeTests
 public sealed class ZzMobileLandscapePlayModeTests
 {
     // This helper only runs in Editor tests, against Unity 2022.3's Game view API.
-    private sealed class Resolution : IDisposable
+    internal sealed class Resolution : IDisposable
     {
         private readonly UnityEditor.EditorWindow view;
         private readonly object group;

@@ -17,6 +17,8 @@ public static class CellDefenseAndroidBuild
         "Assets/_Project/Scenes/OpenFieldLevel05.unity"
     };
 
+    internal static string[] GetGameplayScenes() => (string[])Scenes.Clone();
+
     [MenuItem("胞卫战/Android/检查构建环境")]
     public static void CheckEnvironment()
     {

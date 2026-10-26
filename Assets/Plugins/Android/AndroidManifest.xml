@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+    <!-- This offline build has no advertising, purchase, or network gameplay SDK. -->
+    <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" tools:node="remove" />
+    <application android:allowBackup="false"
+                 android:fullBackupContent="@xml/cell_privacy_backup_rules"
+                 android:dataExtractionRules="@xml/cell_privacy_data_extraction_rules"
+                 tools:replace="android:allowBackup">
+        <activity android:name="com.celldefense.privacy.PrivacyActivity"
+                  android:theme="@android:style/Theme.Material.Light.NoActionBar"
+                  android:screenOrientation="userLandscape"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- No externally addressable Unity activity or deep-link bypass. -->
+        <activity android:name="com.celldefense.privacy.ConsentUnityActivity"
+                  android:theme="@style/UnityThemeSelector"
+                  android:screenOrientation="userLandscape"
+                  android:launchMode="singleTask"
+                  android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+                  android:resizeableActivity="false"
+                  android:hardwareAccelerated="false"
+                  android:exported="false">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+            <meta-data android:name="notch_support" android:value="true" />
+        </activity>
+    </application>
+</manifest>

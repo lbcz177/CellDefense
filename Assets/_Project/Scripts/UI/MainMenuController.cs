@@ -29,6 +29,9 @@ public class MainMenuController : MonoBehaviour
     private CanvasGroup menuInteraction;
     private Button selectionEntry, settingsEntry, quitEntry;
     private Button[] levelButtons;
+    private StarRatingGraphic[] levelStars;
+    private PixelImageText[] levelRecords;
+    private readonly LevelProgress progress = new LevelProgress();
     private RectTransform listViewport;
     private GridLayoutGroup levelGrid;
     private ScrollRect levelScroll;
@@ -79,6 +82,7 @@ public class MainMenuController : MonoBehaviour
             new Vector2(.345f, .202f), Vector2.one * .5f, Vector2.zero, Vector2.zero);
         quitEntry.onClick.AddListener(QuitGame);
         CreateSettings();
+        AndroidPrivacy.SetMenuEntryVisible(true);
     }
 
     private void Update()
@@ -119,6 +123,7 @@ public class MainMenuController : MonoBehaviour
         if (!isActiveAndEnabled || selectionCanvas == null || selectionCanvas.activeSelf || loadingLevel || IsSettingsOpen) return;
         BlockMenu();
         selectionCanvas.SetActive(true);
+        RefreshLevelProgress();
         levelScroll.verticalNormalizedPosition = 1f;
         Canvas.ForceUpdateCanvases();
         RefreshCardLayout();
@@ -249,6 +254,8 @@ public class MainMenuController : MonoBehaviour
         levelScroll.scrollSensitivity = 35f;
 
         levelButtons = new Button[LevelScenes.Length];
+        levelStars = new StarRatingGraphic[LevelScenes.Length];
+        levelRecords = new PixelImageText[LevelScenes.Length];
         for (int i = 0; i < LevelScenes.Length; i++)
         {
             int levelIndex = i;
@@ -258,10 +265,10 @@ public class MainMenuController : MonoBehaviour
             card.onClick.AddListener(() => LoadLevel(levelIndex));
             PixelImageText label = card.GetComponentInChildren<PixelImageText>();
             SetRect(label.rectTransform, Vector2.zero, Vector2.right,
-                new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(-16f, 38f));
+                new Vector2(0.5f, 0f), new Vector2(0f, 78f), new Vector2(-16f, 32f));
             label.enableAutoSizing = true;
             label.fontSizeMin = 16f;
-            label.fontSizeMax = 22f;
+            label.fontSizeMax = 20f;
             GameObject preview = CreateUI("Map Preview", card.transform, typeof(Image));
             Image image = preview.GetComponent<Image>();
             image.sprite = levelArtwork != null && i < levelArtwork.Length ? levelArtwork[i] : null;
@@ -269,7 +276,16 @@ public class MainMenuController : MonoBehaviour
             image.raycastTarget = false;
             image.enabled = image.sprite != null;
             SetRect(image.rectTransform, new Vector2(0f, 1f), Vector2.one,
-                new Vector2(0.5f, 1f), new Vector2(0f, -10f), new Vector2(-20f, 128f));
+                new Vector2(0.5f, 1f), new Vector2(0f, -10f), new Vector2(-20f, 110f));
+            GameObject rating = CreateUI("Best Stars", card.transform, typeof(StarRatingGraphic));
+            levelStars[i] = rating.GetComponent<StarRatingGraphic>();
+            levelStars[i].raycastTarget = false;
+            SetRect(rating.GetComponent<RectTransform>(), new Vector2(.5f, 0f), new Vector2(.5f, 0f),
+                new Vector2(.5f, 0f), new Vector2(0f, 46f), new Vector2(90f, 24f));
+            levelRecords[i] = CreateLabel("Best Score", card.transform, "未通关", 16f);
+            levelRecords[i].color = new Color(.25f, .07f, .17f);
+            SetRect(levelRecords[i].rectTransform, Vector2.zero, Vector2.right,
+                new Vector2(.5f, 0f), new Vector2(0f, 14f), new Vector2(-16f, 22f));
         }
 
         PixelImageText footer = CreateLabel("Footer", panel.transform,
@@ -277,6 +293,16 @@ public class MainMenuController : MonoBehaviour
         SetRect(footer.rectTransform, Vector2.zero, Vector2.right,
             new Vector2(0.5f, 0f), new Vector2(0f, 10f), new Vector2(-40f, 24f));
         selectionCanvas.SetActive(false);
+    }
+
+    private void RefreshLevelProgress()
+    {
+        for (int i = 0; i < LevelScenes.Length; i++)
+        {
+            levelStars[i].Stars = progress.BestStars(LevelScenes[i]);
+            levelRecords[i].text = progress.HasCleared(LevelScenes[i])
+                ? $"最高 {progress.BestScore(LevelScenes[i])}" : "未通关";
+        }
     }
 
     private void CreateSettings()
@@ -331,7 +357,7 @@ public class MainMenuController : MonoBehaviour
         lastListWidth = width;
         int columns = Mathf.Clamp(Mathf.FloorToInt((width + 16f) / 288f), 1, 3);
         levelGrid.constraintCount = columns;
-        levelGrid.cellSize = new Vector2(Mathf.Min(340f, (width - (columns - 1) * 16f) / columns), 196f);
+        levelGrid.cellSize = new Vector2(Mathf.Min(340f, (width - (columns - 1) * 16f) / columns), 236f);
     }
 
     private Button CreateButton(string name, Transform parent, string text)
@@ -401,6 +427,7 @@ public class MainMenuController : MonoBehaviour
 
     private void OnDisable()
     {
+        AndroidPrivacy.SetMenuEntryVisible(false);
         Canvas.preWillRenderCanvases -= PositionSettings;
         CloseSettings();
         CloseLevelSelection();

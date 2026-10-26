@@ -10,7 +10,7 @@
 
 > 手机适配阶段回归：EditMode **126/126**、PlayMode **30/30**，0 失败 / 跳过；另独立横屏验证 1/1。覆盖三种实际横屏尺寸和五关触控 / 结算。见 [验证报告](Testing/2026-10-19_MobileAndroid.md)。Android 首个 APK 已生成，尚未真机验收。
 
-> 架构基线：v0.17 · 2026-10-21；配套 [策划 v0.24](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。策划中的血小板修补塔、补体裂解塔尚未实现，不增加本架构的运行模块。
+> 架构基线：v0.18 · 2026-10-25；配套 [策划 v0.25](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。本轮新增评分、星级及本地最高分；两座规划新塔尚未实现。此前正文见 [v0.17 快照](History/2026-10-25_before_level_scoring/TECHNICAL_ARCHITECTURE.md)。
 > 当前已接入暂停 / 倍速逻辑与用户 v2 暂停美术，通过共享 Resources 引用八张 Sprite，未改场景、原图或 .meta。此前临时 UI 阶段见 [接图前快照](History/2026-10-18_before_pause_art/TECHNICAL_ARCHITECTURE.md)，v0.9 及更早原文仍保留。
 
 ## 1. 场景与配置边界
@@ -28,6 +28,9 @@ Unity 2022.3.53f1c1。当前五个 OpenField 场景共用开放地图编排，Ma
 | CellDefenseAndroidBuild | Editor APK 菜单、六场景清单、Android 架构与脚本后端配置；缺组件时明确失败 |
 | MainMenuController | 设置 / 退出透明入口、QuitRequested 防重复与 Save / Quit；独立 Canvas 复用 GameSettingsPanel；与选关互斥，底层门控、焦点恢复和动态 UI 清理 |
 | OpenFieldPrototypeController | 组合根、输入、建造与出售事务、细胞注册、波次 / 结果、敌人池、地形路径、信号邻接；仍为集中编排 |
+| LevelScoring / LevelScoreResult | 计划敌人击杀比例 4000 分＋通关核心保全比例 6000 分；7000 / 9000 对应二 / 三星，失败零星 |
+| LevelProgress | 五关本地最高通关分、按最高分派生最佳星级；PlayerPrefs 持久化，不按重试低分覆盖 |
+| LevelResultScoreView / StarRatingGraphic | 结算分项与最高分、原生 UI 像素星；复用原有字图，随安全区容器缩放；失败页额外下移以避让原图标题 |
 | FirstLevelTutorial | 第一关可选引导；订阅真实选择 / 交易 / 波次事件，计算提示步骤、有效建议格与目标框；安全区定位、菜单避让和跳过，不执行战斗交易 |
 | OpenFieldGridModel | 规则类；occupied 建造占位、blocked 地形与 BFS 距离场；旧 routeBlocked / 可达性检查保留，当前防御单位不使用 |
 | OpenFieldPresentation | 地图、调试格、虚影 / 射程与地形路线；旧候选改路预览保留但不调用 |
@@ -85,6 +88,8 @@ Phase 为 Planning / Assault / Victory / Defeat。CanBuild 在前两种状态且
 WaveDefinition 支持混合 groups，每组可配敌人、count、burstSize 和 afterDelay；组内 / 组间 WaitForSeconds 按波次复用，组切换与 Boss 预告可单独等待。旧 WaveController 仍是固定路线顺序生成，不自动获得新分组规则。
 
 敌人 hasResolved 保证一次退出，控制器 HashSet.Remove 再防重复结算。Killed 发 EnemyDefinition.KillReward；Leaked 扣 LeakDamage，非固定 1；Cleared 不发奖励或扣生命。核心动作期间不可锁敌，CompleteCoreAttack 动画事件或 0.75 秒超时触发一次泄露；塔释放等待上限为 0.6 秒，两者不同。
+
+评分在初始化时读取全部波次计划数量；`SpawnEnemy` 仅把无召唤请求的敌人加入 `scheduledEnemies`。真实退出时先移出集合，仅 Killed 增加计划击杀数。`FinishRun` 只接受尚未终局的 Victory / Defeat，核心归零优先失败，然后固定 `FinalScore`；胜利调用 `LevelProgress.SaveVictory`，再把本局分项、星级和最高分交给结果视图。终局回收不增加成绩，重试与下一关用新实例清零。选关页打开时读取最新 PlayerPrefs，不用静态缓存推断已通关。规则与持久化边界见 [关卡评分](LEVEL_SCORING.md)。
 
 ## 6. 攻击、伤害和协作
 

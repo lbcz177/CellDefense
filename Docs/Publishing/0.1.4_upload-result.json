@@ -1,0 +1,23 @@
+{
+  "developer_id": 338749,
+  "app_id": 986196,
+  "apk_id": "1069451",
+  "version": "0.1.4",
+  "version_code": 5,
+  "uploaded": true,
+  "main_binding_verified": true,
+  "md5_and_size_verified": true,
+  "privacy_url": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/",
+  "privacy_draft_saved": true,
+  "privacy_draft_status": "uploaded",
+  "privacy_url_value_readback_available": false,
+  "all_media_preserved": true,
+  "all_other_package_settings_preserved": true,
+  "update_note_preserved": true,
+  "review_submitted": false,
+  "published": false,
+  "remote_version": "V-20261019",
+  "remote_status": "rejected",
+  "privacy_reinspection_passed": false,
+  "log_directory": "Logs\\TapTapRelease\\2026-10-22\\privacy-0.1.4"
+}

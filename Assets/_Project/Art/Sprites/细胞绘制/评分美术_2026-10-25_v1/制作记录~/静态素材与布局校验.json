@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "pngCount": 6,
+  "glyphCount": 451,
+  "newGlyphs": [
+    "分",
+    "通"
+  ],
+  "oldGlyphCellsPreservedPerAtlas": 449,
+  "flatGlyphMasksMatch": true,
+  "hardAlpha": true,
+  "pointSampling": true,
+  "noCompressionOrMipmaps": true,
+  "scoreDigitsOneThroughFiveLayoutChecked": true,
+  "resultButtonsDoNotOverlapScore": true,
+  "unityRuntimeVerification": "Not completed: Unity editor initialization blocked; composition previews are not runtime screenshots",
+  "finalCSharpCompilationSucceeded": true,
+  "resourceReferencesValidated": true
+}

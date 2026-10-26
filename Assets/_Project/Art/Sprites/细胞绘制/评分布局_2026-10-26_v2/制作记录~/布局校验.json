@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "highestScoreRemovedFromResults": true,
+  "buttonSize": [
+    260,
+    52
+  ],
+  "captionPixels": 24,
+  "captionGlyphsComplete": true,
+  "textFits": true,
+  "scoreButtonBoundsSeparate": true,
+  "buttonBoundsSeparate": true,
+  "canvasBoundsFit": true,
+  "previewKind": "Aseprite composition reference, not runtime screenshot"
+}

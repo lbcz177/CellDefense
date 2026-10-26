@@ -1,5 +1,12 @@
 # 《胞卫战》文档导航
 
+> 2026-10-26发布准备：当前候选0.1.5 / Code 6（56.86MiB），含五关评分、星级、本地最高分及结算修正；140项EditMode、修正后45项PlayMode和12项授权逻辑检查通过，实际APK隐私审计通过。TapTap目标为新草稿V-20261025，仍绑定0.1.4；截图录屏保留，更新待确认。
+
+
+> 2026-10-25：五关按击杀与核心生命比例评分，满分 10000，7000 二星 / 9000 三星；结算及选关显示成绩，最高通关分本地保存，重试不降分。五关继续自由选择。完整 EditMode **140/140**、PlayMode **45/45** 通过。本次仅本地源码，未重打 APK 或修改 TapTap。见[评分规则与流程](LEVEL_SCORING.md)及[验证报告](Testing/2026-10-25_LevelScoring.md)。
+
+> 2026-10-22：Android 接入引擎启动前的原生隐私授权、离线政策及撤回入口，关闭自动统计并移除联网权限。0.1.4 / Code 5 正式候选已构建并通过包体检查；已补齐运营者 ichen、QQ 2558057120 并发布[独立政策网页](https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/)。用户已确认，TapTap 主包已切换为 0.1.4，独立链接已保存到隐私资质草稿；现有素材及更新日志保留，未提审或上线。真机及平台隐私复检待完成，见[上传记录](Publishing/0.1.4_UPLOAD.md)。见[整改与验证说明](Privacy/README.md)。
+
 > 2026-10-21：第一关接入可跳过的三轮新手引导，包含末轮 Boss 增援提示；其他四关不启用。见 [操作与源码](FIRST_LEVEL_TUTORIAL.md)。
 
 > 2026-10-20 壁垒最终回归：EditMode **128/128**、PlayMode **33/33**，0 失败 / 跳过；八敌共同攻墙、自然破裂 / 出售放行、暂停保持和超过六次建造均通过。在隔离副本验证，未重打 APK。见 [壁垒验证](Testing/2026-10-20_FibrinBarrier.md)。
@@ -13,14 +20,14 @@
 > 整理日期：2026-10-19；Unity 2022.3.53f1c1。
 > 当前范围：五关各三轮、承伤壁垒全部拦截、普通细胞有限接敌、六塔、混合敌群与 ATP 购售。
 
-先读 [当前实现与验证状态](PROJECT_STATUS.md)，再读 [策划 v0.24](GAME_DESIGN_FRAMEWORK.md) 和 [技术架构](TECHNICAL_ARCHITECTURE.md)。策划第 6.1 节新增血小板修补塔、补体裂解塔的待实现规划。五关核心 / 入口、数量和共享配置以状态页、场景和引用资产核对；旧日期交接不代表当前进度。
+先读 [当前实现与验证状态](PROJECT_STATUS.md)，再读 [策划 v0.25](GAME_DESIGN_FRAMEWORK.md) 和 [技术架构](TECHNICAL_ARCHITECTURE.md)。策划第 6.1 节新增血小板修补塔、补体裂解塔的待实现规划。五关核心 / 入口、数量和共享配置以状态页、场景和引用资产核对；旧日期交接不代表当前进度。
 
 | 目的 | 文档 |
 |---|---|
 | 胜利 / 失败面板过大、超出屏幕 | [屏幕适配](RESULT_UI_LAYOUT.md) |
 | Android 横屏、触控 / 安全区 / 后台暂停、APK 与学习路径 | [手机适配说明](MOBILE_ANDROID.md) |
 | 战斗地图 / 细胞 / 射程圈拉伸修复 | [等比显示说明](VIEWPORT_ASPECT.md) |
-| 最新测试 | [承伤壁垒 128/33](Testing/2026-10-20_FibrinBarrier.md) |
+| 最新测试 | [关卡评分 140/45](Testing/2026-10-25_LevelScoring.md) |
 | 手机地图外残留上一页 UI | [清屏修复说明](MOBILE_UI_RESIDUE_FIX.md) |
 | TapTap 发布协作 / 先确认再修改平台内容 | [发布流程](Publishing/TAPTAP_WORKFLOW.md)、[0.1.2 检查页](Publishing/Review/2026-10-20/index.html) |
 | Android APK 输出 / 重打包 / 安装试玩 | [打包说明](ANDROID_APK_BUILD.md)、[首次构建证据](Testing/2026-10-19_AndroidApk.md) |
