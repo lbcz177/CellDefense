@@ -12,6 +12,8 @@ public sealed class TowerCombatState : MonoBehaviour
     public Vector2Int Cell { get; private set; }
     public float CurrentHealth { get; private set; }
     public float MaxHealth { get; private set; }
+    public float TotalRepaired { get; private set; }
+    public float RepairBudgetRemaining => InterceptsAllEnemies ? Mathf.Max(0f, MaxHealth * 3f / 5f - TotalRepaired) : 0f;
     public int Capacity { get; private set; }
     public bool InterceptsAllEnemies => Tower != null && Tower.Definition.InterceptsAllEnemies;
     public int ContactCount => contacts.Count;
@@ -27,6 +29,7 @@ public sealed class TowerCombatState : MonoBehaviour
         Tower = tower;
         Cell = cell;
         MaxHealth = CurrentHealth = tower.Definition.MaxHealth;
+        TotalRepaired = 0f;
         Capacity = tower.Definition.InterceptCapacity;
         contacts.Clear();
     }
@@ -56,6 +59,11 @@ public sealed class TowerCombatState : MonoBehaviour
         EnemyRangeQuery.RequirePositive(amount, nameof(amount));
         if (!CanTakeContact) return;
         CurrentHealth = Mathf.Max(0f, CurrentHealth - amount);
+        if (InterceptsAllEnemies)
+        {
+            CellCombatFeedback.Impact(CellImpactKind.Fibrin, transform.position);
+            TowerImpactRecoil recoil = GetComponent<TowerImpactRecoil>();if (recoil != null) recoil.Play(Vector3.right, .55f);
+        }
         SpriteHitFlash flash = GetComponent<SpriteHitFlash>();
         if (flash != null) flash.Play();
         if (CurrentHealth > 0f) return;
@@ -63,6 +71,17 @@ public sealed class TowerCombatState : MonoBehaviour
         // Disable immediately: no attack event or aura may fire before deferred Destroy.
         gameObject.SetActive(false);
         Died?.Invoke(this);
+    }
+
+    // The allowance belongs to this wall, so multiple repair towers share one lifetime cap.
+    public float Repair(float amount)
+    {
+        EnemyRangeQuery.RequirePositive(amount, nameof(amount));
+        if (!IsAlive || !InterceptsAllEnemies) return 0f;
+        float restored = Mathf.Min(amount, MaxHealth - CurrentHealth, RepairBudgetRemaining);
+        CurrentHealth += restored;
+        TotalRepaired += restored;
+        return restored;
     }
 
     private void OnDisable() => contacts.Clear();

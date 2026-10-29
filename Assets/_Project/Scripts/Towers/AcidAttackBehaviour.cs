@@ -79,6 +79,8 @@ public class AcidAttackBehaviour : TowerAttackBehaviour
         Projectile projectile = projectilePool.Get(transform.position);
         projectile.Initialize(target, damage, 0f,
             hit => CreateAcidField(hit, rate, castVersion), EnemyDamageKind.Acid);
+        CellCombatFeedback.PrepareProjectile(projectile, CellImpactKind.Acid);
+        CellCombatFeedback.Release(CellImpactKind.Acid, this, target.transform.position);
         CombatHitFeedback.Shot(projectile.transform.position);
     }
 

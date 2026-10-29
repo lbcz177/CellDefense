@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "developerId": 338749,
+  "appId": 986196,
+  "version": "V-20261028",
+  "packageVersion": "0.1.6",
+  "versionCode": 7,
+  "currentVersionStatus": "rejected",
+  "reviewReason": "1. 隐私政策链接请勿为TapTap站内页面，请更换为独立网页链接。",
+  "proposedQualification": {
+    "qualification": {
+      "qualification_type": "privacy-compliance",
+      "privacy_qualification": {
+        "privacy_policy_link": "https://cell-defense-privacy.jazzy-flint-2968.chatgpt.site/",
+        "use_general_privacy_policy": false
+      }
+    }
+  },
+  "websiteVerified": true,
+  "privacyTextMatchesPackage": true,
+  "currentSavedLinkAndGeneralPolicyFlagReadable": false,
+  "platformWriteApproved": false,
+  "platformWritePerformed": false,
+  "scope": [
+    "save existing independent privacy URL",
+    "explicitly disable general privacy policy"
+  ],
+  "excluded": [
+    "APK replacement",
+    "store copy changes",
+    "media changes",
+    "website publication",
+    "review submission",
+    "game publication"
+  ]
+}

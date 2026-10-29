@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-29",
+  "result": "Passed",
+  "total": 13,
+  "passed": 13,
+  "failed": 0,
+  "run": "Logs\\ChapterPaging20261029\\play-v2.xml",
+  "files": [
+    {
+      "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "916df46160168b7d4cb31a1965fe4de9c1bfeefc7041d2bb1f559e741f43eda7",
+      "matches_tested_copy": true
+    },
+    {
+      "path": "Assets/_Project/Tests/PlayMode/ChapterPagingPlayModeTests.cs",
+      "sha256": "e3a3510ece07c0a6c0e31df839a7cca266f6f5eb45c4aec136c9bba167308b68",
+      "matches_tested_copy": true
+    },
+    {
+      "path": "Assets/_Project/Resources/ScoreArtworkResources.asset",
+      "sha256": "a843608e5db191a2f94b4b4a5bd133a9fed49dbe9025e75606476110ce260613",
+      "matches_tested_copy": true
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节翻页_2026-10-29_v1\\字图\\章节净字图_12px.png",
+      "sha256": "9be87f88de66be397dcb1027fff7942eb9c4c20a93282b37a88193f7e6f8314a",
+      "matches_tested_copy": true
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节翻页_2026-10-29_v1\\字图\\章节净字图_8px.png",
+      "sha256": "b089e264205c06a9b7d0d99756a6e48e095f7109bdaf630fc186d31d9f698b64",
+      "matches_tested_copy": true
+    }
+  ],
+  "tests": [
+    {
+      "name": "MainMenuFocusPlayModeTests.FeedbackFitsHitAreasAndDoesNotInterceptClicksAcrossLandscapeSizes",
+      "result": "Passed"
+    },
+    {
+      "name": "MainMenuFocusPlayModeTests.PointerKeyboardAndTouchHaveOneClearFocusAndModalReturnDoesNotStick",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzNumberedLevelSelectionPlayModeTests.DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzNumberedLevelSelectionPlayModeTests.NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterPagingPlayModeTests.AddedCatalogChaptersUseGlobalIndicesAndReturnToTheirOwnPage",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterPagingPlayModeTests.ArrowsPageFrom123To456AndRespectBoundariesWithoutOpeningLevels",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterPagingPlayModeTests.BothPagesAndArrowHitAreasFitDesktopAndMobileWindows",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterSelectionPlayModeTests.AllThreeChapterCardsStayFullyVisibleAndClickableWithoutScrolling",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterSelectionPlayModeTests.ChapterHierarchyKeepsFirstChapterScoresAndStartsOnlyExplicitly",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterSelectionPlayModeTests.ChapterPagesAndDetailsFitRealWindowSizesAndUseCompleteArtwork",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterSelectionPlayModeTests.OpeningPagesDoesNotSelectFirstItemButHoverAndKeyboardStillHighlight",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterSelectionPlayModeTests.SequentialUnlocksBlockBypassDefeatAndUseVictoryRecordsImmediately",
+      "result": "Passed"
+    },
+    {
+      "name": "ZzzzzChapterSelectionPlayModeTests.ThirdChapterRemainsLockedUntilPreviousChaptersAreCleared",
+      "result": "Passed"
+    }
+  ],
+  "screenshots": 12,
+  "scope": "Chapter paging, chapter hierarchy/progression/focus, numbered selection, original start button/menu focus. No APK build or publishing."
+}

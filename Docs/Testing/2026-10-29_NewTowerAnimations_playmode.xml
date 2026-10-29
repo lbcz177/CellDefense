@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 16:41:44Z" end-time="2026-10-28 16:41:57Z" duration="13.060915">
+  <test-suite type="TestSuite" id="1000" name="ChapterTwoValidation" fullname="ChapterTwoValidation" runstate="Runnable" testcasecount="69" result="Passed" start-time="2026-10-28 16:41:44Z" end-time="2026-10-28 16:41:57Z" duration="13.060915" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1089" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/NewTowerArtValidation/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="69" result="Passed" start-time="2026-10-28 16:41:44Z" end-time="2026-10-28 16:41:57Z" duration="13.055638" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="44736" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1016" name="ChapterTwoActionAnimationPlayModeTests" fullname="ChapterTwoActionAnimationPlayModeTests" classname="ChapterTwoActionAnimationPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 16:41:44Z" end-time="2026-10-28 16:41:50Z" duration="6.032285" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1018" name="LostTargetsCancelChargeAndFullWallsDoNotProduceRepairContacts" fullname="ChapterTwoActionAnimationPlayModeTests.LostTargetsCancelChargeAndFullWallsDoNotProduceRepairContacts" methodname="LostTargetsCancelChargeAndFullWallsDoNotProduceRepairContacts" classname="ChapterTwoActionAnimationPlayModeTests" runstate="Runnable" seed="1658109781" result="Passed" start-time="2026-10-28 16:41:44Z" end-time="2026-10-28 16:41:47Z" duration="2.285973" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1017" name="RealSupportContactsAnimateAtTheSkillResultAndFreezeOnPause" fullname="ChapterTwoActionAnimationPlayModeTests.RealSupportContactsAnimateAtTheSkillResultAndFreezeOnPause" methodname="RealSupportContactsAnimateAtTheSkillResultAndFreezeOnPause" classname="ChapterTwoActionAnimationPlayModeTests" runstate="Runnable" seed="1218585676" result="Passed" start-time="2026-10-28 16:41:47Z" end-time="2026-10-28 16:41:50Z" duration="3.737886" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1019" name="ChapterTwoPlayModeTests" fullname="ChapterTwoPlayModeTests" classname="ChapterTwoPlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-28 16:41:50Z" end-time="2026-10-28 16:41:57Z" duration="7.019397" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1023" name="ComplementLosesProgressOutOfRangeFreezesOnPauseAndRespectsShieldAndMark" fullname="ChapterTwoPlayModeTests.ComplementLosesProgressOutOfRangeFreezesOnPauseAndRespectsShieldAndMark" methodname="ComplementLosesProgressOutOfRangeFreezesOnPauseAndRespectsShieldAndMark" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="1345008443" result="Passed" start-time="2026-10-28 16:41:50Z" end-time="2026-10-28 16:41:52Z" duration="1.390582" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1024" name="MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" fullname="ChapterTwoPlayModeTests.MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" methodname="MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="2028120548" result="Passed" start-time="2026-10-28 16:41:52Z" end-time="2026-10-28 16:41:55Z" duration="3.355247" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1022" name="RepairTowersShareWallLifetimeBudgetAndNeverHealOtherCells" fullname="ChapterTwoPlayModeTests.RepairTowersShareWallLifetimeBudgetAndNeverHealOtherCells" methodname="RepairTowersShareWallLifetimeBudgetAndNeverHealOtherCells" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="1050352278" result="Passed" start-time="2026-10-28 16:41:55Z" end-time="2026-10-28 16:41:57Z" duration="2.263802" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

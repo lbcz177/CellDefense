@@ -8,5 +8,7 @@ public enum AntigenId
     Fungus = 5,
     Biofilm = 6,
     VirusA = 7,
-    VirusB = 8
+    VirusB = 8,
+    ComplementDiplococcus = 9,
+    InflammationSource = 10
 }

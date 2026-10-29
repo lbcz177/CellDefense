@@ -20,8 +20,9 @@ public sealed class OpenFieldPresentation : MonoBehaviour
     private LineRenderer rangeRenderer;
     private Material rangeMaterial;
     private GameObject routesRoot;
-    private LineRenderer[] routeLines;
+    private RouteFlowRenderer[] routeLines;
     private readonly List<Vector2Int> routeCells = new List<Vector2Int>();
+    private readonly List<Vector3> routePositions = new List<Vector3>();
 
     public void Initialize(OpenFieldGridModel grid, Func<Vector2Int, Vector3> cellToWorld,
         float cellSize, Sprite mapArtwork, bool showDebugGrid)
@@ -171,20 +172,23 @@ public sealed class OpenFieldPresentation : MonoBehaviour
     public void ShowRoutes(OpenFieldGridModel grid, Func<Vector2Int, Vector3> cellToWorld,
         float cellSize, Vector2Int? previewBarrier = null)
     {
+        if (routesRoot != null && routeLines.Length != grid.SpawnCount)
+        {
+            routesRoot.SetActive(false);
+            Destroy(routesRoot);
+            routesRoot = null;
+        }
         if (routesRoot == null)
         {
             routesRoot = new GameObject("Planning Routes");
             routesRoot.transform.SetParent(transform, false);
-            routeLines = new LineRenderer[grid.SpawnCount];
+            routeLines = new RouteFlowRenderer[grid.SpawnCount];
             for (int i = 0; i < routeLines.Length; i++)
             {
                 GameObject line = new GameObject($"Entrance Route {i + 1}");
                 line.transform.SetParent(routesRoot.transform, false);
-                LineRenderer renderer = line.AddComponent<LineRenderer>();
-                renderer.sharedMaterial = rangeMaterial;
-                renderer.useWorldSpace = true;
-                renderer.widthMultiplier = cellSize * 0.07f;
-                renderer.sortingOrder = -12;
+                RouteFlowRenderer renderer = line.AddComponent<RouteFlowRenderer>();
+                renderer.Initialize(rangeMaterial);
                 routeLines[i] = renderer;
             }
         }
@@ -194,15 +198,13 @@ public sealed class OpenFieldPresentation : MonoBehaviour
             bool valid = previewBarrier.HasValue
                 ? grid.TryGetPreviewPath(grid.GetSpawnCell(i), previewBarrier.Value, routeCells)
                 : grid.TryGetPath(grid.GetSpawnCell(i), routeCells);
-            LineRenderer line = routeLines[i];
-            line.enabled = valid;
+            RouteFlowRenderer line = routeLines[i];
+            line.gameObject.SetActive(valid);
             if (!valid) continue;
-            Color tint = previewBarrier.HasValue ? new Color(1f, 0.8f, 0.3f, 0.75f)
-                : new Color(0.4f, 0.85f, 1f, 0.55f);
-            line.startColor = line.endColor = tint;
-            line.positionCount = routeCells.Count;
+            routePositions.Clear();
             for (int point = 0; point < routeCells.Count; point++)
-                line.SetPosition(point, cellToWorld(routeCells[point]));
+                routePositions.Add(cellToWorld(routeCells[point]));
+            line.SetPath(routePositions, cellSize, previewBarrier.HasValue);
         }
     }
 

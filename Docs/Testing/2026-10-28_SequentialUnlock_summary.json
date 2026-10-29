@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "tests": {
+    "PlayMode": {
+      "id": "2",
+      "testcasecount": "53",
+      "result": "Passed",
+      "total": "53",
+      "passed": "53",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-28 09:02:56Z",
+      "end-time": "2026-10-28 09:06:05Z",
+      "duration": "188.6873708"
+    },
+    "EditMode": {
+      "id": "2",
+      "testcasecount": "141",
+      "result": "Passed",
+      "total": "141",
+      "passed": "141",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-28 09:06:29Z",
+      "end-time": "2026-10-28 09:06:30Z",
+      "duration": "1.2852994"
+    }
+  },
+  "source_sha256": {
+    "Assets/_Project/Scripts/OpenField/LevelProgress.cs": "00ff2313574cec20fd0cc5fbbd057cfb6fad453ed83c54eb4a81409ec064c656",
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "5588fdc2d9f9d89f40e00eb1a1403c82e3f5d443980cfda2988e83e73134b3ee",
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "1cd4e5b1328e17a8d217887eaf0f109f20a5185aba9f37f16c2fd88e4652ae23",
+    "Assets/_Project/Tests/EditMode/LevelScoringTests.cs": "0f9a577e3950f29f498baf5caef15ac4c5808b5d5b618806cc7be1406f140052",
+    "Assets/_Project/Tests/PlayMode/ChapterSelectionPlayModeTests.cs": "636e7d0785acc51b3b23f0134b88dc6f2a8baa1559c1ef27c8084af22c9d3fa2",
+    "Assets/_Project/Tests/PlayMode/NumberedLevelSelectionPlayModeTests.cs": "6ccf19cd0700ab4cb38a948b99b720d0f24edd3a29c459c8bc02fafa2c704279"
+  },
+  "initially_available_levels": 1,
+  "all_previous_clears_required": true,
+  "star_threshold_required": false,
+  "existing_records_preserved": true,
+  "preview_chapters_remain_nonplayable": true,
+  "captures": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节接入_2026-10-28\\验证_v9~",
+  "apk_built": false,
+  "taptap_modified": false
+}

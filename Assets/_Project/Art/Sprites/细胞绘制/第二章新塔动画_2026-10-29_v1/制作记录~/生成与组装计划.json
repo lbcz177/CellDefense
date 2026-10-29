@@ -1,0 +1,50 @@
+{
+  "art": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔动画_2026-10-29_v1",
+  "jobs": [
+    {
+      "id": "platelet_action",
+      "name": "血小板修补_动作",
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔_2026-10-29_v1/战斗与图标/01_血小板修补塔.png",
+      "prompt": "Use case: identity-preserve pixel-game animation. Create a production TEN FRAME SPRITE SHEET of the exact referenced platelet repair tower. Image1 is identity and pixel-style reference. Preserve FOUR peach/apricot platelet lobes, small red granules, FOUR blunt cyan-white protrusions, and pale green woven fibrin seam. No nucleus, no face. Flat overhead orthographic camera, fixed orientation and center; no rotation, flipping, isometric angle, perspective or camera motion. Genuine pixel art with crisp stepped square clusters, dark plum outlines, ivory highlights, 2-3 bounded shades per material, no soft gradients/antialiasing/grain. TRANSPARENT alpha background. EXACT FIVE columns by TWO rows, ten equally sized invisible square cells, row-major order, canvas 5:2 wide ideally1600x640. No labels, text, grids, ground, checkerboard or cast shadows. SAME common scale and registered center throughout. Neutral entire silhouette occupies 56% tile width, strongest pulse stays within central80%, minimum10% transparent margin EVERY tile. Each pose complete and distinct. Animation: F1 neutral ready like reference; F2 four platelet lobes pull inward slightly, fibrin tightens; F3 clear compression15%, cyan protrusions bend inward; F4 strongest compression25% and taut green seam, visibly anticipates force; F5 SHARP RELEASE lobes stretch radially and seam snaps straight, small mint contact sparks close to body; F6 broad25% expansion with bright ivory-green seam and compact radial pulse; F7 recoil inward with bent fibers; F8 opposing rebound; F9 soft settling; F10 almost neutral recovery. All four peach lobes and all four protrusions remain identifiable in all frames, no duplicates. Biological contraction and fiber traction provide real silhouette-changing ACTION, not a series of color changes or scaled copies. No separate target or detached projectile; separate target FX will be handled in game.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-078c763f-21d3-4f84-aef6-589ce78aa864.png",
+      "count": 10,
+      "columns": 5,
+      "rows": 2,
+      "directory": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔动画_2026-10-29_v1/血小板修补_动作"
+    },
+    {
+      "id": "complement_action",
+      "name": "补体裂解_动作",
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔_2026-10-29_v1/战斗与图标/02_补体裂解塔.png",
+      "prompt": "Use case: identity-preserve pixel-game animation. Create a production TEN FRAME SPRITE SHEET of the exact referenced complement lysis protein ring tower. Image1 is identity and pixel-style reference: chunky cyan-teal protein ring, ivory caps, two small GOLD connector nodules upper-right, three MINT scaffold lobes below, empty transparent center. Do not turn it into a nucleated cell, mechanical gear or magic sigil. Flat overhead orthographic camera, fixed orientation and center; no rotation/flipping/isometric perspective. Strict pixel art: clear square clusters and stepped edges, dark plum outlines, 2-3 bounded shades per material, no gradients/antialiasing/grain. Genuine TRANSPARENT background and central pore. EXACT FIVE columns by TWO rows, ten equally-sized invisible square cells, row-major, 5:2 wide canvas ideally1600x640. No text, grids, labels, ground, cast shadow or checkerboard. Same scale and registered center. Neutral ring diameter56%tile, all effects central80%, at least10% transparent margin every tile. Each pose complete/distinct. F1 neutral ring matching reference. F2 protein subunits draw closer, connector nodules approach. F3 more compression, pore narrows15%, ivory caps lean inward. F4 maximum stored tension25%compression with nearly closed small connector gap and intensely ivory cyan inner rim. F5 sudden FORCEFUL radial release, ring diameter25%larger, small angular cyan impact spokes touching outer rim. F6 peak bright compact cyan-white corona, pore reopens sharply, all original ring segments remain recognizable. F7 inward recoil/overshoot, caps tilt back. F8 small rebound. F9 energy fades and segment tension releases. F10 nearly neutral. This is strong biological subunit articulation, not repeated stills, rigid spinning, or simple global scaling. Keep pore visibly transparent at all times; no center nucleus. No separate targets/projectiles.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-dcb28b2e-c7b7-4d4b-8841-02a02ac010f1.png",
+      "count": 10,
+      "columns": 5,
+      "rows": 2,
+      "directory": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔动画_2026-10-29_v1/补体裂解_动作"
+    },
+    {
+      "id": "repair_impact",
+      "name": "修补接触_特效",
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔_2026-10-29_v1/战斗与图标/01_血小板修补塔.png",
+      "prompt": "Use case: stylized-concept. A six-frame animated TARGET CONTACT EFFECT sprite sheet for a pixel-art platelet repair tower in a biological game. Reference is palette and pixel style only, do NOT draw the actual tower/cell. EXACT SIX columns, ONE row, six equally-sized invisible SQUARE cells, 6:1 long transparent strip. Flat top-down pixel art, crisp square clusters, 2-3 shades, ivory white and pale mint, mint-green outlines, no glow blur or gradients, no black shadows or text/grid/checkerboard/background. Each frame centered at same origin, effect maximum central76%tile, generous transparent margin. One continuous healing fiber-stitch contact pulse: F1 two small mint fiber hooks approach center with two tiny specks; F2 hooks interlock into short X-shaped woven knot; F3 strongest crisp ivory mint knot with four short outward dashes, visible impact contact; F4 knot opens into small broken circular mint ripple with an EMPTY TRANSPARENT center and 4 short diagonal flecks; F5 larger sparse ring of separated mint dash segments, no filled disk; F6 just four tiny fading mint flecks near perimeter. No medical cross, no hearts, no numbers, no cell body, no floating plus signs. Silhouette should feel like fibers tightening and rejoining at contact.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-567b7a78-62c6-4e1f-9b2b-d4cdcec7a991.png",
+      "count": 6,
+      "columns": 6,
+      "rows": 1,
+      "directory": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔动画_2026-10-29_v1/修补接触_特效"
+    },
+    {
+      "id": "lysis_impact",
+      "name": "裂解命中_特效",
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔_2026-10-29_v1/战斗与图标/02_补体裂解塔.png",
+      "prompt": "Use case: stylized-concept. A six-frame animated LYSIS IMPACT EFFECT sprite sheet for complement protein assembly in a pixel-art biological tower-defense game. Image1 is palette/pixel style only, do NOT draw actual tower or enemy. EXACT SIX columns ONE row, six equally-sized invisible square cells, 6:1 long transparent strip. Strict top-down flat hand-clustered pixel art, dark teal/mint bounds, cyan-white with small pale golden flecks, sharply stepped edges, no blur/gradients/antialiasing, real transparent alpha. No words, labels, grid, background, checkerboard, gore or skull. Each frame same origin. Effects stay central80%tile, minimum10%transparent margin. Timing is IMPACT FIRST: F1 compact brilliant ivory-cyan fourpoint STAR SNAP, tiny cyan rim, strong contact. F2 fast jagged cyan-white radial bloom 60%tilewidth, empty small center, 6 short angular spokes and two small golden flecks. F3 broad broken cyan shock ring expanding to76%tilewidth, center transparent so enemy remains readable; eight distinct rectangular membrane-like fragments travel outward. F4 ring breaks into eight separated cyan shards, shortening spokes, empty center. F5 six sparse smaller cyan/gold flecks farther outward. F6 four tiny darkmint flecks nearly gone. Emphasize fast snap, radial displacement and decay, no sustained blinding disk, no explosion fire. Six clearly different sequential frames.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-9af66a2d-7d7f-4424-9957-12c12a215cc0.png",
+      "count": 6,
+      "columns": 6,
+      "rows": 1,
+      "directory": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔动画_2026-10-29_v1/裂解命中_特效"
+    }
+  ],
+  "mode": "built-in imagegen; Aseprite frame registration and pixel cleanup"
+}

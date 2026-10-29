@@ -21,6 +21,7 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
     private Vector2[] offsets;
     private int displayedRound = -1;
     private bool displayedEarly;
+    private int displayedCountdown = -2;
     public RectTransform FirstVisibleButton => canvasObject != null && canvasObject.activeInHierarchy &&
         buttonRects.Length > 0 && buttonRects[0].gameObject.activeInHierarchy ? buttonRects[0] : null;
 
@@ -97,6 +98,9 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
             PixelImageText label = text.GetComponent<PixelImageText>();
 
             label.fontSize = 16f;
+            label.enableAutoSizing = true;
+            label.fontSizeMin = 12f;
+            label.fontSizeMax = 16f;
             label.alignment = TextAlignmentOptions.Center;
             label.color = new Color(1f, 0.96f, 0.82f, 1f);
             label.raycastTarget = false;
@@ -120,9 +124,11 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
 
         bool early = owner.Phase == OpenFieldPhase.Assault;
         int round = owner.UpcomingRound;
-        if (displayedRound != round || displayedEarly != early)
+        int countdown = owner.HasAutoWaveCountdown ? Mathf.CeilToInt(owner.AutoWaveSecondsRemaining) : -1;
+        if (displayedRound != round || displayedEarly != early || displayedCountdown != countdown)
         {
-            string caption = $"第{round}波\n{(early ? "提前开始" : "开始")}";
+            string caption = countdown >= 0 ? $"第{round}波\n{countdown}秒后开始"
+                : $"第{round}波\n{(early ? "提前开始" : "开始")}";
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].interactable = true;
@@ -130,6 +136,7 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
             }
             displayedRound = round;
             displayedEarly = early;
+            displayedCountdown = countdown;
         }
         Rect bounds = canvasRect.rect;
         // Keep the whole icon/caption inside the device's usable area.
@@ -148,7 +155,7 @@ public sealed class OpenFieldEntranceWaveButtons : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
             Vector3 screen = gameplayCamera.WorldToScreenPoint(worldPositions[i]);
-            bool show = i < entranceCount && screen.z > 0f;
+            bool show = owner.UpcomingUsesEntrance(i) && screen.z > 0f;
             if (buttons[i].gameObject.activeSelf != show) buttons[i].gameObject.SetActive(show);
             if (!show) continue;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, null, out Vector2 local);

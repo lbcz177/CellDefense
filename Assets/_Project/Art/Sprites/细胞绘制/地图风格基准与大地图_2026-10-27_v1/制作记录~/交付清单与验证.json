@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-27",
+  "approvedStyleSaved": true,
+  "largeMap": {
+    "saved": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/大地图/30x22_宽域组织_大地图.png",
+    "nativeSize": [
+      1465,
+      1073
+    ],
+    "exportSize": [
+      4395,
+      3219
+    ],
+    "nearestNeighbor3xVerified": true,
+    "grid": [
+      30,
+      22
+    ],
+    "totalCells": 660,
+    "plannedBuildableCells": 490,
+    "plannedPathSteps": 35,
+    "artReview": "one left wound, four separate islands, one three-cell jade core; warm brown outlines; no UI or grid baked into artwork",
+    "limitations": [
+      "生成图与精确网格存在偏差，接入时须对齐障碍物与核心碰撞",
+      "可建格数仅属于布局草案，未作为现有关卡生效",
+      "尚未验证缩放、手机点击、波次经济或战斗平衡"
+    ]
+  },
+  "textureImport": "Sprite Single; Point; no mipmaps; no compression; maximum texture 8192 (preserve 4K-width PNG)",
+  "nativeSources": "Aseprite, one base image layer per map; no claim of per-object layers",
+  "runtimeChanges": false,
+  "oldAssetsPreserved": true,
+  "files": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/30x22_大地图_生成原图.png",
+      "bytes": 1780804,
+      "sha256": "1b60c7b9b567186d59ff1b9ed952e0ccd144650f42937304604cbacab3cb9304"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/30x22_空间参考.png",
+      "bytes": 2841,
+      "sha256": "315bcc28791f5f07687b1ec2415c53cf263c1e53d134d4ded60ada439665027a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/30x22_逻辑布局与连通检查.json",
+      "bytes": 7112,
+      "sha256": "04898b5829f9567d4bf8c9230151cdf7239d317468e889dbdd7b9d1967f48e16"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/制作脚本/finalize.py",
+      "bytes": 3640,
+      "sha256": "1d5ea41a82de0d3f36a495fa3fe1db27266386d240265a369710bd51debd68e5"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/制作脚本/prepare_sources.lua",
+      "bytes": 1062,
+      "sha256": "a8e30f06bf54b0db09221f71bc5613737d087df374f00d21672151eedb60091a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/制作脚本/save_assets.py",
+      "bytes": 5393,
+      "sha256": "30d5598af0ab5283754ef2f6615c8d2717aaf40f14a8890ef84292bfc677ad9f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/完整绘图提示词.json",
+      "bytes": 5625,
+      "sha256": "a9e30144ad47a1b0ef0a00a70d447c4f8a707759a4e58cba9d22bb96dfa9d4d2"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/确认画风_生成原图_1466x1073.png",
+      "bytes": 1731620,
+      "sha256": "f3493126a1c8f50b9867af7d3342d2b27d27429d5f52fd9f66b41b4aec3eb140"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/制作记录~/风格确认与来源.json",
+      "bytes": 1586,
+      "sha256": "d15644233384a405a8e08ae003327261d54fa4f232f0cf8cac684b615fbca3b3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/大地图/30x22_宽域组织_大地图.png",
+      "bytes": 2545733,
+      "sha256": "9702f670a0aa71f7ac47ec6f461d048de780a3a979ec4daaef81c30bc474b761"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/大地图/30x22_宽域组织_大地图.png.meta",
+      "bytes": 3117,
+      "sha256": "298559f3f02d37e304bb230bb34293d5adfad508b6129a8785cddb387da70784"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/大地图.meta",
+      "bytes": 180,
+      "sha256": "6ed4d649064936528926063d1b169c8979525a747de7f4c65005eb707840652e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/源文件/2-1_确认画风_原生尺寸.aseprite",
+      "bytes": 2543554,
+      "sha256": "9f68e379e9221fd91639f5db9d2ecf2045e69b879d0d07eb2178238cc3595c50"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/源文件/2-1_确认画风_原生尺寸.aseprite.meta",
+      "bytes": 4357,
+      "sha256": "b225070bbd69a9e287ba6588c74b274a82aeac13fcb3f54ef17df4410e76aeab"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/源文件/30x22_宽域组织_原生尺寸.aseprite",
+      "bytes": 2618999,
+      "sha256": "af1c7b80902d2f4df941889dd84b01dce25e688db2b3f5f5c2420ef1002b6a1f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/源文件/30x22_宽域组织_原生尺寸.aseprite.meta",
+      "bytes": 162,
+      "sha256": "b02a04fee01164a77989d6535f2c806b4f1eb7fac1617452de4b782e2468b581"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/源文件.meta",
+      "bytes": 172,
+      "sha256": "c2106185c424452323cad63303fba50d95097d596fdfe4c8cb6d5b4e27e7c534"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/风格基准/2-1_凝血缺口_棕边淡周边_4398x3219.png",
+      "bytes": 2433170,
+      "sha256": "6fca5009ff13fc9d707d200e420e51abd401dc0cac2ae397c2cdd719dd361a27"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/风格基准/2-1_凝血缺口_棕边淡周边_4398x3219.png.meta",
+      "bytes": 3117,
+      "sha256": "9d423589000ec75a98779c76b094dc2c2d3c96c5ced27aef8ed0247b82dd7405"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/地图风格基准与大地图_2026-10-27_v1/风格基准.meta",
+      "bytes": 172,
+      "sha256": "9851b58d579f86b279f0bd3b5e10525b60662bd49df9a64c389e2d33094a9f35"
+    }
+  ]
+}

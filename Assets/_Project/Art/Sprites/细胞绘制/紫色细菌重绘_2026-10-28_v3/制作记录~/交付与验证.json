@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-28",
+  "sprites": "Three new independently drawn 128x128 RGBA sprites; no scene crops used in runtime",
+  "sourceTool": "built-in image_gen; Aseprite atlas extraction and alpha cleanup",
+  "runtime": "10 independent UI sprites follow curved channel; body size fixed; raycasts disabled; fade before button area; unscaled time",
+  "preview": {
+    "frames": 180,
+    "frameMs": 30,
+    "fps": 33.333333333333336,
+    "note": "5.4-second actual Unity sample, replaying this short GIF resets the preview; runtime wraps each bacterium at transparent endpoints"
+  },
+  "tests": {
+    "passed": 4,
+    "failed": 0,
+    "sizes": [
+      [
+        1280,
+        720
+      ],
+      [
+        640,
+        480
+      ],
+      [
+        2048,
+        928
+      ]
+    ]
+  },
+  "originalArtPreserved": true,
+  "files": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/紫色细菌重绘_2026-10-28_v3/紫色细菌_小球_重绘.png",
+      "sha256": "acfa18b6de1e86b7d54dbc3f5464acef5b4fc8e61ace9a7b5de0813dfec6e020"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/紫色细菌重绘_2026-10-28_v3/紫色细菌_杆状_重绘.png",
+      "sha256": "5f80ea0d489c11756f8e1aff9ddbc00d78c9d2fdede3e112866040371e3d1e31"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/紫色细菌重绘_2026-10-28_v3/紫色细菌_球形_重绘.png",
+      "sha256": "9d65f0953129d9f08ec46bbd4df1aeba9f5630f28f26b8092a4d350b9741e08a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/紫色细菌重绘_2026-10-28_v3/胞卫战_主界面_v1.png",
+      "sha256": "8e7c92a57ce91ffcdcf177078a0da64ea3ebeec63285c060a3af82107e653080"
+    }
+  ]
+}

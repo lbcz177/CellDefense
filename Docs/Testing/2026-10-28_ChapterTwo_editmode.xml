@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="140" result="Passed" total="140" passed="140" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:31Z" duration="0.802406">
+  <test-suite type="TestSuite" id="1182" name="ChapterTwoValidation" fullname="ChapterTwoValidation" runstate="Runnable" testcasecount="140" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:31Z" duration="0.802406" total="140" passed="140" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1359" name="CellDefense.Tests.EditMode.dll" fullname="E:/unity/CellDefense/Logs/ChapterTwoValidation/Library/ScriptAssemblies/CellDefense.Tests.EditMode.dll" runstate="Runnable" testcasecount="140" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:31Z" duration="0.785068" total="140" passed="140" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="50372" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1183" name="EconomyServiceTests" fullname="EconomyServiceTests" classname="EconomyServiceTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.028991" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1188" name="TrySpend_WhenAmountIsZero_ThrowsArgumentOutOfRangeException" fullname="EconomyServiceTests.TrySpend_WhenAmountIsZero_ThrowsArgumentOutOfRangeException" methodname="TrySpend_WhenAmountIsZero_ThrowsArgumentOutOfRangeException" classname="EconomyServiceTests" runstate="Runnable" seed="1427358502" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.009539" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1185" name="TrySpend_WhenBalanceIsInsufficient_DoesNotDeductATPAndReturnsFalse" fullname="EconomyServiceTests.TrySpend_WhenBalanceIsInsufficient_DoesNotDeductATPAndReturnsFalse" methodname="TrySpend_WhenBalanceIsInsufficient_DoesNotDeductATPAndReturnsFalse" classname="EconomyServiceTests" runstate="Runnable" seed="865529219" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004915" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1186" name="TrySpend_WhenBalanceIsInsufficient_DoesNotRaiseATPChanged" fullname="EconomyServiceTests.TrySpend_WhenBalanceIsInsufficient_DoesNotRaiseATPChanged" methodname="TrySpend_WhenBalanceIsInsufficient_DoesNotRaiseATPChanged" classname="EconomyServiceTests" runstate="Runnable" seed="1424257036" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000397" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1184" name="TrySpend_WhenBalanceIsSufficient_DeductsATPAndReturnsTrue" fullname="EconomyServiceTests.TrySpend_WhenBalanceIsSufficient_DeductsATPAndReturnsTrue" methodname="TrySpend_WhenBalanceIsSufficient_DeductsATPAndReturnsTrue" classname="EconomyServiceTests" runstate="Runnable" seed="143487362" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000295" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1187" name="TrySpend_WhenSuccessful_RaisesATPChangedOnceWithRemainingATP" fullname="EconomyServiceTests.TrySpend_WhenSuccessful_RaisesATPChangedOnceWithRemainingATP" methodname="TrySpend_WhenSuccessful_RaisesATPChangedOnceWithRemainingATP" classname="EconomyServiceTests" runstate="Runnable" seed="165324284" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000233" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1189" name="EnemyCombatTests" fullname="EnemyCombatTests" classname="EnemyCombatTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.145193" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1191" name="Acid_BreaksArmorBeforeDamage_AndMarkAppliesOnce" fullname="EnemyCombatTests.Acid_BreaksArmorBeforeDamage_AndMarkAppliesOnce" methodname="Acid_BreaksArmorBeforeDamage_AndMarkAppliesOnce" classname="EnemyCombatTests" runstate="Runnable" seed="426865970" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.017396" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1206" name="BarrierCanOccupyOnlyChokeWithoutSealingTerrainRoute" fullname="EnemyCombatTests.BarrierCanOccupyOnlyChokeWithoutSealingTerrainRoute" methodname="BarrierCanOccupyOnlyChokeWithoutSealingTerrainRoute" classname="EnemyCombatTests" runstate="Runnable" seed="394818113" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.011967" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1207" name="BarrierHoldsWholeGroup_EachEnemyDamagesIt_AndDeathReleasesMovement" fullname="EnemyCombatTests.BarrierHoldsWholeGroup_EachEnemyDamagesIt_AndDeathReleasesMovement" methodname="BarrierHoldsWholeGroup_EachEnemyDamagesIt_AndDeathReleasesMovement" classname="EnemyCombatTests" runstate="Runnable" seed="536083342" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.045135" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1205" name="BarrierPreview_ReroutesAndRestoresActualGrid" fullname="EnemyCombatTests.BarrierPreview_ReroutesAndRestoresActualGrid" methodname="BarrierPreview_ReroutesAndRestoresActualGrid" classname="EnemyCombatTests" runstate="Runnable" seed="359479604" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002815" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1198" name="Boss_KilledDuringWarning_DoesNotSummon" fullname="EnemyCombatTests.Boss_KilledDuringWarning_DoesNotSummon" methodname="Boss_KilledDuringWarning_DoesNotSummon" classname="EnemyCombatTests" runstate="Runnable" seed="792150419" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.014653" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1201" name="BossControlResistance_UsesStrongestSlowAndRecoveryWindow" fullname="EnemyCombatTests.BossControlResistance_UsesStrongestSlowAndRecoveryWindow" methodname="BossControlResistance_UsesStrongestSlowAndRecoveryWindow" classname="EnemyCombatTests" runstate="Runnable" seed="1944351155" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003780" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1208" name="ContactCapacity_RejectsOverflowAndPreservesVersionOwnership" fullname="EnemyCombatTests.ContactCapacity_RejectsOverflowAndPreservesVersionOwnership" methodname="ContactCapacity_RejectsOverflowAndPreservesVersionOwnership" classname="EnemyCombatTests" runstate="Runnable" seed="348055430" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003572" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1211" name="ContactDamage_WaitsOneInterval_NoCatchUpBurst_AndStunPreventsHit" fullname="EnemyCombatTests.ContactDamage_WaitsOneInterval_NoCatchUpBurst_AndStunPreventsHit" methodname="ContactDamage_WaitsOneInterval_NoCatchUpBurst_AndStunPreventsHit" classname="EnemyCombatTests" runstate="Runnable" seed="1514986580" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001595" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1210" name="EnemyExitAndReuse_ClearContactAndMovementGate" fullname="EnemyCombatTests.EnemyExitAndReuse_ClearContactAndMovementGate" methodname="EnemyExitAndReuse_ClearContactAndMovementGate" classname="EnemyCombatTests" runstate="Runnable" seed="2058703466" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002101" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1192" name="Engulf_BypassesArmor_AndExitsOnlyOnce" fullname="EnemyCombatTests.Engulf_BypassesArmor_AndExitsOnlyOnce" methodname="Engulf_BypassesArmor_AndExitsOnlyOnce" classname="EnemyCombatTests" runstate="Runnable" seed="943330495" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001931" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1197" name="FungalBoss_ThresholdJump_HasOnlyTwoBoundedBatches" fullname="EnemyCombatTests.FungalBoss_ThresholdJump_HasOnlyTwoBoundedBatches" methodname="FungalBoss_ThresholdJump_HasOnlyTwoBoundedBatches" classname="EnemyCombatTests" runstate="Runnable" seed="865695014" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002662" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1194" name="Healing_IsCapped_AndCannotReviveAnExitedEnemy" fullname="EnemyCombatTests.Healing_IsCapped_AndCannotReviveAnExitedEnemy" methodname="Healing_IsCapped_AndCannotReviveAnExitedEnemy" classname="EnemyCombatTests" runstate="Runnable" seed="138061163" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001015" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1203" name="HealingFromZeroHealthNotification_CannotPreventDeath" fullname="EnemyCombatTests.HealingFromZeroHealthNotification_CannotPreventDeath" methodname="HealingFromZeroHealthNotification_CannotPreventDeath" classname="EnemyCombatTests" runstate="Runnable" seed="2132623687" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004478" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1202" name="MembraneSupport_SelectsThreeNearest_AndShieldDoesNotStack" fullname="EnemyCombatTests.MembraneSupport_SelectsThreeNearest_AndShieldDoesNotStack" methodname="MembraneSupport_SelectsThreeNearest_AndShieldDoesNotStack" classname="EnemyCombatTests" runstate="Runnable" seed="71599806" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.008265" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1200" name="OldAntibodyProjectile_DoesNotMarkMutatedTarget" fullname="EnemyCombatTests.OldAntibodyProjectile_DoesNotMarkMutatedTarget" methodname="OldAntibodyProjectile_DoesNotMarkMutatedTarget" classname="EnemyCombatTests" runstate="Runnable" seed="731721650" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004851" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1204" name="OrdinaryCell_IsOccupiedButKeepsChokePointTraversable" fullname="EnemyCombatTests.OrdinaryCell_IsOccupiedButKeepsChokePointTraversable" methodname="OrdinaryCell_IsOccupiedButKeepsChokePointTraversable" classname="EnemyCombatTests" runstate="Runnable" seed="36369669" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001046" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1209" name="OverflowCommitsToPassing_AndTowerDeathReleasesHeldEnemy" fullname="EnemyCombatTests.OverflowCommitsToPassing_AndTowerDeathReleasesHeldEnemy" methodname="OverflowCommitsToPassing_AndTowerDeathReleasesHeldEnemy" classname="EnemyCombatTests" runstate="Runnable" seed="201610200" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003464" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1195" name="Reinitialize_ResetsDefenseMarkAndSpawnIdentity" fullname="EnemyCombatTests.Reinitialize_ResetsDefenseMarkAndSpawnIdentity" methodname="Reinitialize_ResetsDefenseMarkAndSpawnIdentity" classname="EnemyCombatTests" runstate="Runnable" seed="554875694" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001771" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1190" name="Shield_ExactHit_DoesNotSendZeroDamageToHealth" fullname="EnemyCombatTests.Shield_ExactHit_DoesNotSendZeroDamageToHealth" methodname="Shield_ExactHit_DoesNotSendZeroDamageToHealth" classname="EnemyCombatTests" runstate="Runnable" seed="1237660668" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000843" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1193" name="Shield_PreventsEngulf_UntilItIsConsumed" fullname="EnemyCombatTests.Shield_PreventsEngulf_UntilItIsConsumed" methodname="Shield_PreventsEngulf_UntilItIsConsumed" classname="EnemyCombatTests" runstate="Runnable" seed="1585171887" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000850" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1196" name="Summon_InheritsCurrentSegmentAndPosition" fullname="EnemyCombatTests.Summon_InheritsCurrentSegmentAndPosition" methodname="Summon_InheritsCurrentSegmentAndPosition" classname="EnemyCombatTests" runstate="Runnable" seed="1027719141" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003462" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1199" name="VirusMutation_ClearsOnlyMotherMark_AndSnapshotsCloneAntigen" fullname="EnemyCombatTests.VirusMutation_ClearsOnlyMotherMark_AndSnapshotsCloneAntigen" methodname="VirusMutation_ClearsOnlyMotherMark_AndSnapshotsCloneAntigen" classname="EnemyCombatTests" runstate="Runnable" seed="1255176729" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002981" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1212" name="GameSettingsTests" fullname="GameSettingsTests" classname="GameSettingsTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.013158" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="ParameterizedMethod" id="1218" name="InvalidVolumeCannotReachTheAudioListener" fullname="GameSettingsTests.InvalidVolumeCannotReachTheAudioListener" classname="GameSettingsTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.008549" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1214" name="InvalidVolumeCannotReachTheAudioListener(-0.5f,0.0f)" fullname="GameSettingsTests.InvalidVolumeCannotReachTheAudioListener(-0.5f,0.0f)" methodname="InvalidVolumeCannotReachTheAudioListener" classname="GameSettingsTests" runstate="Runnable" seed="721943261" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003095" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1215" name="InvalidVolumeCannotReachTheAudioListener(1.5f,1.0f)" fullname="GameSettingsTests.InvalidVolumeCannotReachTheAudioListener(1.5f,1.0f)" methodname="InvalidVolumeCannotReachTheAudioListener" classname="GameSettingsTests" runstate="Runnable" seed="2042871434" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000619" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1216" name="InvalidVolumeCannotReachTheAudioListener(float.NaN,1.0f)" fullname="GameSettingsTests.InvalidVolumeCannotReachTheAudioListener(float.NaN,1.0f)" methodname="InvalidVolumeCannotReachTheAudioListener" classname="GameSettingsTests" runstate="Runnable" seed="1413062198" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000512" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1217" name="InvalidVolumeCannotReachTheAudioListener(float.PositiveInfinity,1.0f)" fullname="GameSettingsTests.InvalidVolumeCannotReachTheAudioListener(float.PositiveInfinity,1.0f)" methodname="InvalidVolumeCannotReachTheAudioListener" classname="GameSettingsTests" runstate="Runnable" seed="1228069734" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000571" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1219" name="LoadingInvalidStoredVolumeFallsBackToAValidValue" fullname="GameSettingsTests.LoadingInvalidStoredVolumeFallsBackToAValidValue" methodname="LoadingInvalidStoredVolumeFallsBackToAValidValue" classname="GameSettingsTests" runstate="Runnable" seed="72628335" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000828" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1213" name="PreferencesSurviveRecreationMuteKeepsVolumeAndDefaultsPersist" fullname="GameSettingsTests.PreferencesSurviveRecreationMuteKeepsVolumeAndDefaultsPersist" methodname="PreferencesSurviveRecreationMuteKeepsVolumeAndDefaultsPersist" classname="GameSettingsTests" runstate="Runnable" seed="1084655757" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002433" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1220" name="LevelScoringTests" fullname="LevelScoringTests" classname="LevelScoringTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.011540" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1229" name="InvalidInputsCannotProduceExtraPointsOrDivideByZeroAndDefeatHasNoCoreBonus" fullname="LevelScoringTests.InvalidInputsCannotProduceExtraPointsOrDivideByZeroAndDefeatHasNoCoreBonus" methodname="InvalidInputsCannotProduceExtraPointsOrDivideByZeroAndDefeatHasNoCoreBonus" classname="LevelScoringTests" runstate="Runnable" seed="408482489" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001526" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1231" name="RecordsPersistPerLevelAndLowerRetriesNeverOverwriteTheBest" fullname="LevelScoringTests.RecordsPersistPerLevelAndLowerRetriesNeverOverwriteTheBest" methodname="RecordsPersistPerLevelAndLowerRetriesNeverOverwriteTheBest" classname="LevelScoringTests" runstate="Runnable" seed="1764193162" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002018" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1228" name="ScoreNormalizesDifferentWaveSizesAndCoreCapacities" fullname="LevelScoringTests.ScoreNormalizesDifferentWaveSizesAndCoreCapacities" methodname="ScoreNormalizesDifferentWaveSizesAndCoreCapacities" classname="LevelScoringTests" runstate="Runnable" seed="1131141144" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000869" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1230" name="UnlocksRequireAllEarlierClearsAndSurviveStoreRecreationWithoutStarRequirements" fullname="LevelScoringTests.UnlocksRequireAllEarlierClearsAndSurviveStoreRecreationWithoutStarRequirements" methodname="UnlocksRequireAllEarlierClearsAndSurviveStoreRecreationWithoutStarRequirements" classname="LevelScoringTests" runstate="Runnable" seed="781328929" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001429" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1227" name="VictoryUsesExactScoreThresholds" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004529" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1221" name="VictoryUsesExactScoreThresholds(0,1)" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds(0,1)" methodname="VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" seed="1241189456" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001166" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1222" name="VictoryUsesExactScoreThresholds(6999,1)" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds(6999,1)" methodname="VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" seed="990382844" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000449" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1223" name="VictoryUsesExactScoreThresholds(7000,2)" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds(7000,2)" methodname="VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" seed="1992266361" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000459" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1224" name="VictoryUsesExactScoreThresholds(8999,2)" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds(8999,2)" methodname="VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" seed="463309468" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000419" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1225" name="VictoryUsesExactScoreThresholds(9000,3)" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds(9000,3)" methodname="VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" seed="1651198229" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000418" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1226" name="VictoryUsesExactScoreThresholds(10000,3)" fullname="LevelScoringTests.VictoryUsesExactScoreThresholds(10000,3)" methodname="VictoryUsesExactScoreThresholds" classname="LevelScoringTests" runstate="Runnable" seed="272470515" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000457" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="1232" name="LifeServiceTests" fullname="LifeServiceTests" classname="LifeServiceTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001146" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1233" name="TryLoseLife_AfterLifeReachesZero_DoesNotSettleAgain" fullname="LifeServiceTests.TryLoseLife_AfterLifeReachesZero_DoesNotSettleAgain" methodname="TryLoseLife_AfterLifeReachesZero_DoesNotSettleAgain" classname="LifeServiceTests" runstate="Runnable" seed="80978635" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000560" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1234" name="MobileInputTests" fullname="MobileInputTests" classname="MobileInputTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.011348" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="ParameterizedMethod" id="1246" name="BackgroundCallbacksPauseAndNeverAutoResume" fullname="MobileInputTests.BackgroundCallbacksPauseAndNeverAutoResume" classname="MobileInputTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.005890" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1244" name="BackgroundCallbacksPauseAndNeverAutoResume(&quot;Planning&quot;)" fullname="MobileInputTests.BackgroundCallbacksPauseAndNeverAutoResume(&quot;Planning&quot;)" methodname="BackgroundCallbacksPauseAndNeverAutoResume" classname="MobileInputTests" runstate="Runnable" seed="1967100783" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002105" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1245" name="BackgroundCallbacksPauseAndNeverAutoResume(&quot;Assault&quot;)" fullname="MobileInputTests.BackgroundCallbacksPauseAndNeverAutoResume(&quot;Assault&quot;)" methodname="BackgroundCallbacksPauseAndNeverAutoResume" classname="MobileInputTests" runstate="Runnable" seed="387390696" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000470" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1238" name="BeginningOrEndingOverUiCancels" fullname="MobileInputTests.BeginningOrEndingOverUiCancels" classname="MobileInputTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001331" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1236" name="BeginningOrEndingOverUiCancels(True,False)" fullname="MobileInputTests.BeginningOrEndingOverUiCancels(True,False)" methodname="BeginningOrEndingOverUiCancels" classname="MobileInputTests" runstate="Runnable" seed="1232470398" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000738" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1237" name="BeginningOrEndingOverUiCancels(False,True)" fullname="MobileInputTests.BeginningOrEndingOverUiCancels(False,True)" methodname="BeginningOrEndingOverUiCancels" classname="MobileInputTests" runstate="Runnable" seed="686768248" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000132" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1239" name="DraggingOutAndBackStillCancels" fullname="MobileInputTests.DraggingOutAndBackStillCancels" methodname="DraggingOutAndBackStillCancels" classname="MobileInputTests" runstate="Runnable" seed="867609154" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000218" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1240" name="MultipleFingersSuppressRemainderUntilAllAreReleased" fullname="MobileInputTests.MultipleFingersSuppressRemainderUntilAllAreReleased" methodname="MultipleFingersSuppressRemainderUntilAllAreReleased" classname="MobileInputTests" runstate="Runnable" seed="640027253" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000255" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1235" name="SingleFingerOnlyCommitsOnReleaseAndNeverTwice" fullname="MobileInputTests.SingleFingerOnlyCommitsOnReleaseAndNeverTwice" methodname="SingleFingerOnlyCommitsOnReleaseAndNeverTwice" classname="MobileInputTests" runstate="Runnable" seed="834419393" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000241" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1243" name="UnmatchedFingerCannotCommit" fullname="MobileInputTests.UnmatchedFingerCannotCommit" classname="MobileInputTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001397" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1241" name="UnmatchedFingerCannotCommit(Canceled)" fullname="MobileInputTests.UnmatchedFingerCannotCommit(Canceled)" methodname="UnmatchedFingerCannotCommit" classname="MobileInputTests" runstate="Runnable" seed="770822902" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000361" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1242" name="UnmatchedFingerCannotCommit(Ended)" fullname="MobileInputTests.UnmatchedFingerCannotCommit(Ended)" methodname="UnmatchedFingerCannotCommit" classname="MobileInputTests" runstate="Runnable" seed="761640282" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000119" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="1247" name="OpenFieldLiveBuildHudTests" fullname="OpenFieldLiveBuildHudTests" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.343285" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1258" name="AssaultBarrierBuildStillHonorsATP" fullname="OpenFieldLiveBuildHudTests.AssaultBarrierBuildStillHonorsATP" methodname="AssaultBarrierBuildStillHonorsATP" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="666798714" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.010881" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1255" name="AssaultBuildSpendsOnceAndKeepsTerrainRoutes" fullname="OpenFieldLiveBuildHudTests.AssaultBuildSpendsOnceAndKeepsTerrainRoutes" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.048194" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1253" name="AssaultBuildSpendsOnceAndKeepsTerrainRoutes(&quot;TowerDefinition&quot;,False)" fullname="OpenFieldLiveBuildHudTests.AssaultBuildSpendsOnceAndKeepsTerrainRoutes(&quot;TowerDefinition&quot;,False)" methodname="AssaultBuildSpendsOnceAndKeepsTerrainRoutes" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="727634001" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.037585" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1254" name="AssaultBuildSpendsOnceAndKeepsTerrainRoutes(&quot;FibrinTowerDefinition&quot;,True)" fullname="OpenFieldLiveBuildHudTests.AssaultBuildSpendsOnceAndKeepsTerrainRoutes(&quot;FibrinTowerDefinition&quot;,True)" methodname="AssaultBuildSpendsOnceAndKeepsTerrainRoutes" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1500209878" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.009958" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1256" name="BarrierMayBeBuiltOnUpcomingRouteNodeWithoutReroutingEnemy" fullname="OpenFieldLiveBuildHudTests.BarrierMayBeBuiltOnUpcomingRouteNodeWithoutReroutingEnemy" methodname="BarrierMayBeBuiltOnUpcomingRouteNodeWithoutReroutingEnemy" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="2142021964" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001354" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1257" name="BarrierMustKeepStrandedSurvivorReachableEvenIfEntranceCanReachCore" fullname="OpenFieldLiveBuildHudTests.BarrierMustKeepStrandedSurvivorReachableEvenIfEntranceCanReachCore" methodname="BarrierMustKeepStrandedSurvivorReachableEvenIfEntranceCanReachCore" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="560625234" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001385" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1252" name="BuildingIsAvailableInPlanningAndAssaultOnly" fullname="OpenFieldLiveBuildHudTests.BuildingIsAvailableInPlanningAndAssaultOnly" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003694" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1248" name="BuildingIsAvailableInPlanningAndAssaultOnly(0,True)" fullname="OpenFieldLiveBuildHudTests.BuildingIsAvailableInPlanningAndAssaultOnly(0,True)" methodname="BuildingIsAvailableInPlanningAndAssaultOnly" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1943440982" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001244" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1249" name="BuildingIsAvailableInPlanningAndAssaultOnly(1,True)" fullname="OpenFieldLiveBuildHudTests.BuildingIsAvailableInPlanningAndAssaultOnly(1,True)" methodname="BuildingIsAvailableInPlanningAndAssaultOnly" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="69923828" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000563" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1250" name="BuildingIsAvailableInPlanningAndAssaultOnly(2,False)" fullname="OpenFieldLiveBuildHudTests.BuildingIsAvailableInPlanningAndAssaultOnly(2,False)" methodname="BuildingIsAvailableInPlanningAndAssaultOnly" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="306319080" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000328" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1251" name="BuildingIsAvailableInPlanningAndAssaultOnly(3,False)" fullname="OpenFieldLiveBuildHudTests.BuildingIsAvailableInPlanningAndAssaultOnly(3,False)" methodname="BuildingIsAvailableInPlanningAndAssaultOnly" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="88285167" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000325" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1273" name="EachSceneContainsLinkedHudPrefabWithAllBindings" fullname="OpenFieldLiveBuildHudTests.EachSceneContainsLinkedHudPrefabWithAllBindings" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.232325" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1268" name="EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldPrototype&quot;)" fullname="OpenFieldLiveBuildHudTests.EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldPrototype&quot;)" methodname="EachSceneContainsLinkedHudPrefabWithAllBindings" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="96319850" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.153359" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1269" name="EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel02&quot;)" fullname="OpenFieldLiveBuildHudTests.EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel02&quot;)" methodname="EachSceneContainsLinkedHudPrefabWithAllBindings" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1382959939" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.033486" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1270" name="EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel03&quot;)" fullname="OpenFieldLiveBuildHudTests.EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel03&quot;)" methodname="EachSceneContainsLinkedHudPrefabWithAllBindings" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1844616846" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.030465" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1271" name="EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel04&quot;)" fullname="OpenFieldLiveBuildHudTests.EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel04&quot;)" methodname="EachSceneContainsLinkedHudPrefabWithAllBindings" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1476174359" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.007472" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1272" name="EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel05&quot;)" fullname="OpenFieldLiveBuildHudTests.EachSceneContainsLinkedHudPrefabWithAllBindings(&quot;OpenFieldLevel05&quot;)" methodname="EachSceneContainsLinkedHudPrefabWithAllBindings" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1626469229" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.006467" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1261" name="HudBindsChangingGameplayValuesAndHidesAtVictory" fullname="OpenFieldLiveBuildHudTests.HudBindsChangingGameplayValuesAndHidesAtVictory" methodname="HudBindsChangingGameplayValuesAndHidesAtVictory" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="87299214" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.009848" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1259" name="MoreThanSixBarriersCanBeBuiltAndBrokenWithoutChangingRoutesOrRefundingDeath" fullname="OpenFieldLiveBuildHudTests.MoreThanSixBarriersCanBeBuiltAndBrokenWithoutChangingRoutesOrRefundingDeath" methodname="MoreThanSixBarriersCanBeBuiltAndBrokenWithoutChangingRoutesOrRefundingDeath" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1665790897" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.005591" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1267" name="PrefabDigitsDisplayActualValueWithoutCreatingChildren" fullname="OpenFieldLiveBuildHudTests.PrefabDigitsDisplayActualValueWithoutCreatingChildren" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.023453" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1262" name="PrefabDigitsDisplayActualValueWithoutCreatingChildren(0,&quot;0&quot;)" fullname="OpenFieldLiveBuildHudTests.PrefabDigitsDisplayActualValueWithoutCreatingChildren(0,&quot;0&quot;)" methodname="PrefabDigitsDisplayActualValueWithoutCreatingChildren" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1515301134" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.006431" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1263" name="PrefabDigitsDisplayActualValueWithoutCreatingChildren(1250,&quot;1250&quot;)" fullname="OpenFieldLiveBuildHudTests.PrefabDigitsDisplayActualValueWithoutCreatingChildren(1250,&quot;1250&quot;)" methodname="PrefabDigitsDisplayActualValueWithoutCreatingChildren" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="2074779161" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003872" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1264" name="PrefabDigitsDisplayActualValueWithoutCreatingChildren(20,&quot;20&quot;)" fullname="OpenFieldLiveBuildHudTests.PrefabDigitsDisplayActualValueWithoutCreatingChildren(20,&quot;20&quot;)" methodname="PrefabDigitsDisplayActualValueWithoutCreatingChildren" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="70874149" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003248" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1265" name="PrefabDigitsDisplayActualValueWithoutCreatingChildren(9,&quot;9&quot;)" fullname="OpenFieldLiveBuildHudTests.PrefabDigitsDisplayActualValueWithoutCreatingChildren(9,&quot;9&quot;)" methodname="PrefabDigitsDisplayActualValueWithoutCreatingChildren" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="1628591044" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002525" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1266" name="PrefabDigitsDisplayActualValueWithoutCreatingChildren(int.MaxValue,&quot;2147483647&quot;)" fullname="OpenFieldLiveBuildHudTests.PrefabDigitsDisplayActualValueWithoutCreatingChildren(int.MaxValue,&quot;2147483647&quot;)" methodname="PrefabDigitsDisplayActualValueWithoutCreatingChildren" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="595768963" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002519" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1260" name="RerouteKeepsStoppedStateAndRejectsDiscontinuousNextNode" fullname="OpenFieldLiveBuildHudTests.RerouteKeepsStoppedStateAndRejectsDiscontinuousNextNode" methodname="RerouteKeepsStoppedStateAndRejectsDiscontinuousNextNode" classname="OpenFieldLiveBuildHudTests" runstate="Runnable" seed="802155527" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001855" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1274" name="OpenFieldPlaybackTests" fullname="OpenFieldPlaybackTests" classname="OpenFieldPlaybackTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.011786" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1285" name="EscapeClosesSelectionBeforePausingAndResumesBeforeOpeningAnything" fullname="OpenFieldPlaybackTests.EscapeClosesSelectionBeforePausingAndResumesBeforeOpeningAnything" methodname="EscapeClosesSelectionBeforePausingAndResumesBeforeOpeningAnything" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="1158942146" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001005" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1277" name="PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase" fullname="OpenFieldPlaybackTests.PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase" classname="OpenFieldPlaybackTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004412" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1275" name="PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase(&quot;Planning&quot;)" fullname="OpenFieldPlaybackTests.PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase(&quot;Planning&quot;)" methodname="PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="1612216187" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001303" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1276" name="PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase(&quot;Assault&quot;)" fullname="OpenFieldPlaybackTests.PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase(&quot;Assault&quot;)" methodname="PauseBlocksGameplayAndResumeRestoresSpeedWithoutChangingRoundPhase" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="887541069" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000370" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1284" name="ResultsRejectPauseResumeAndSpeedChanges" fullname="OpenFieldPlaybackTests.ResultsRejectPauseResumeAndSpeedChanges" classname="OpenFieldPlaybackTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001907" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1282" name="ResultsRejectPauseResumeAndSpeedChanges(&quot;Victory&quot;)" fullname="OpenFieldPlaybackTests.ResultsRejectPauseResumeAndSpeedChanges(&quot;Victory&quot;)" methodname="ResultsRejectPauseResumeAndSpeedChanges" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="511583632" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000582" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1283" name="ResultsRejectPauseResumeAndSpeedChanges(&quot;Defeat&quot;)" fullname="OpenFieldPlaybackTests.ResultsRejectPauseResumeAndSpeedChanges(&quot;Defeat&quot;)" methodname="ResultsRejectPauseResumeAndSpeedChanges" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="1276310583" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000219" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1281" name="UnsupportedSpeedIsRejectedWithoutChangingClock" fullname="OpenFieldPlaybackTests.UnsupportedSpeedIsRejectedWithoutChangingClock" classname="OpenFieldPlaybackTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003422" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1278" name="UnsupportedSpeedIsRejectedWithoutChangingClock(-1)" fullname="OpenFieldPlaybackTests.UnsupportedSpeedIsRejectedWithoutChangingClock(-1)" methodname="UnsupportedSpeedIsRejectedWithoutChangingClock" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="73481966" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000775" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1279" name="UnsupportedSpeedIsRejectedWithoutChangingClock(0)" fullname="OpenFieldPlaybackTests.UnsupportedSpeedIsRejectedWithoutChangingClock(0)" methodname="UnsupportedSpeedIsRejectedWithoutChangingClock" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="1261080247" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000343" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1280" name="UnsupportedSpeedIsRejectedWithoutChangingClock(3)" fullname="OpenFieldPlaybackTests.UnsupportedSpeedIsRejectedWithoutChangingClock(3)" methodname="UnsupportedSpeedIsRejectedWithoutChangingClock" classname="OpenFieldPlaybackTests" runstate="Runnable" seed="1403732582" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000204" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="1286" name="OpenFieldWaveFlowTests" fullname="OpenFieldWaveFlowTests" classname="OpenFieldWaveFlowTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.040851" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1296" name="EarlyStartKeepsSurvivorsAndPathsAndGrantsRoundATPOnce" fullname="OpenFieldWaveFlowTests.EarlyStartKeepsSurvivorsAndPathsAndGrantsRoundATPOnce" methodname="EarlyStartKeepsSurvivorsAndPathsAndGrantsRoundATPOnce" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="771928413" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003310" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1298" name="EmptyFieldCannotFinishWhileWaveIsStillSpawning" fullname="OpenFieldWaveFlowTests.EmptyFieldCannotFinishWhileWaveIsStillSpawning" methodname="EmptyFieldCannotFinishWhileWaveIsStillSpawning" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="2023900930" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001052" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1299" name="EntranceCountFollowsTheUpcomingWaveAndHidesAtTheEnd" fullname="OpenFieldWaveFlowTests.EntranceCountFollowsTheUpcomingWaveAndHidesAtTheEnd" methodname="EntranceCountFollowsTheUpcomingWaveAndHidesAtTheEnd" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="750219901" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001231" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1297" name="LastWaveCannotFinishWhileAnyEarlierSurvivorRemains" fullname="OpenFieldWaveFlowTests.LastWaveCannotFinishWhileAnyEarlierSurvivorRemains" methodname="LastWaveCannotFinishWhileAnyEarlierSurvivorRemains" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="2073026466" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000857" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1304" name="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput" fullname="OpenFieldWaveFlowTests.ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput" classname="OpenFieldWaveFlowTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.020301" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1300" name="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(160,90)" fullname="OpenFieldWaveFlowTests.ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(160,90)" methodname="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="1613170256" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.009896" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1301" name="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(210,90)" fullname="OpenFieldWaveFlowTests.ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(210,90)" methodname="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="1679785081" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003083" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1302" name="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(120,90)" fullname="OpenFieldWaveFlowTests.ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(120,90)" methodname="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="867335143" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003126" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1303" name="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(90,160)" fullname="OpenFieldWaveFlowTests.ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput(90,160)" methodname="ViewportFitsMapWithoutDistortingWorldGeometryOrCellInput" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="140785460" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003225" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1305" name="ViewportRecalculatesWhenTheSameCameraChangesAspectRatio" fullname="OpenFieldWaveFlowTests.ViewportRecalculatesWhenTheSameCameraChangesAspectRatio" methodname="ViewportRecalculatesWhenTheSameCameraChangesAspectRatio" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="455599563" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002895" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1308" name="WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing" fullname="OpenFieldWaveFlowTests.WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing" classname="OpenFieldWaveFlowTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003513" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1306" name="WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing(False)" fullname="OpenFieldWaveFlowTests.WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing(False)" methodname="WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="63777233" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001193" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1307" name="WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing(True)" fullname="OpenFieldWaveFlowTests.WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing(True)" methodname="WaveArtworkUsesDefaultOnlyWhenSceneReferenceIsMissing" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="2133119434" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001652" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1295" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004943" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1287" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(0,0,False,True)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(0,0,False,True)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="474340747" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000699" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1288" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(0,1,False,True)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(0,1,False,True)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="371482078" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000390" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1289" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,0,False,False)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,0,False,False)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="1347390579" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000396" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1290" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,0,True,True)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,0,True,True)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="690499032" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000577" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1291" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,1,True,True)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,1,True,True)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="508322856" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000522" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1292" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,2,True,False)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(1,2,True,False)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="1329782775" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000411" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1293" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(2,1,True,False)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(2,1,True,False)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="1778615412" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000335" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1294" name="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(3,1,True,False)" fullname="OpenFieldWaveFlowTests.WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave(3,1,True,False)" methodname="WaveStartRequiresPlanningOrFinishedSpawningWithAnotherWave" classname="OpenFieldWaveFlowTests" runstate="Runnable" seed="1339899645" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000325" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="1309" name="PromptArtworkImageTests" fullname="PromptArtworkImageTests" classname="PromptArtworkImageTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.025667" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1310" name="AllFixedPhrasesHaveImportedSpritesAndEveryCharacterHasAnImage" fullname="PromptArtworkImageTests.AllFixedPhrasesHaveImportedSpritesAndEveryCharacterHasAnImage" methodname="AllFixedPhrasesHaveImportedSpritesAndEveryCharacterHasAnImage" classname="PromptArtworkImageTests" runstate="Runnable" seed="1476836874" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.016041" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1311" name="FixedCopyUsesPhraseSpriteAndChangingValuesUseGlyphImagesWithoutTruncation" fullname="PromptArtworkImageTests.FixedCopyUsesPhraseSpriteAndChangingValuesUseGlyphImagesWithoutTruncation" methodname="FixedCopyUsesPhraseSpriteAndChangingValuesUseGlyphImagesWithoutTruncation" classname="PromptArtworkImageTests" runstate="Runnable" seed="266640351" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.008780" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1312" name="TowerSupportTests" fullname="TowerSupportTests" classname="TowerSupportTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.012209" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1320" name="AntibodyPrefabHasMemoryIndicatorAndZeroDamageDefinition" fullname="TowerSupportTests.AntibodyPrefabHasMemoryIndicatorAndZeroDamageDefinition" methodname="AntibodyPrefabHasMemoryIndicatorAndZeroDamageDefinition" classname="TowerSupportTests" runstate="Runnable" seed="47278248" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001075" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1317" name="AntigenMemoryRejectsInvalidDuration" fullname="TowerSupportTests.AntigenMemoryRejectsInvalidDuration" classname="TowerSupportTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.004732" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1313" name="AntigenMemoryRejectsInvalidDuration(0.0f)" fullname="TowerSupportTests.AntigenMemoryRejectsInvalidDuration(0.0f)" methodname="AntigenMemoryRejectsInvalidDuration" classname="TowerSupportTests" runstate="Runnable" seed="748405889" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001262" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1314" name="AntigenMemoryRejectsInvalidDuration(-1.0f)" fullname="TowerSupportTests.AntigenMemoryRejectsInvalidDuration(-1.0f)" methodname="AntigenMemoryRejectsInvalidDuration" classname="TowerSupportTests" runstate="Runnable" seed="1705987130" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000236" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1315" name="AntigenMemoryRejectsInvalidDuration(float.NaN)" fullname="TowerSupportTests.AntigenMemoryRejectsInvalidDuration(float.NaN)" methodname="AntigenMemoryRejectsInvalidDuration" classname="TowerSupportTests" runstate="Runnable" seed="1407449363" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000151" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1316" name="AntigenMemoryRejectsInvalidDuration(float.PositiveInfinity)" fullname="TowerSupportTests.AntigenMemoryRejectsInvalidDuration(float.PositiveInfinity)" methodname="AntigenMemoryRejectsInvalidDuration" classname="TowerSupportTests" runstate="Runnable" seed="377942026" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000185" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1319" name="DisabledOrDeadTargetCannotBeMarked" fullname="TowerSupportTests.DisabledOrDeadTargetCannotBeMarked" methodname="DisabledOrDeadTargetCannotBeMarked" classname="TowerSupportTests" runstate="Runnable" seed="747649327" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000509" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1325" name="EngulfThresholdsAreValidatedDuringInitialization" fullname="TowerSupportTests.EngulfThresholdsAreValidatedDuringInitialization" classname="TowerSupportTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002261" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1321" name="EngulfThresholdsAreValidatedDuringInitialization(-1.0f,50.0f)" fullname="TowerSupportTests.EngulfThresholdsAreValidatedDuringInitialization(-1.0f,50.0f)" methodname="EngulfThresholdsAreValidatedDuringInitialization" classname="TowerSupportTests" runstate="Runnable" seed="1968317791" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000821" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1322" name="EngulfThresholdsAreValidatedDuringInitialization(20.0f,19.0f)" fullname="TowerSupportTests.EngulfThresholdsAreValidatedDuringInitialization(20.0f,19.0f)" methodname="EngulfThresholdsAreValidatedDuringInitialization" classname="TowerSupportTests" runstate="Runnable" seed="1750800070" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000183" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1323" name="EngulfThresholdsAreValidatedDuringInitialization(float.NaN,50.0f)" fullname="TowerSupportTests.EngulfThresholdsAreValidatedDuringInitialization(float.NaN,50.0f)" methodname="EngulfThresholdsAreValidatedDuringInitialization" classname="TowerSupportTests" runstate="Runnable" seed="1339564219" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000340" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1324" name="EngulfThresholdsAreValidatedDuringInitialization(20.0f,float.PositiveInfinity)" fullname="TowerSupportTests.EngulfThresholdsAreValidatedDuringInitialization(20.0f,float.PositiveInfinity)" methodname="EngulfThresholdsAreValidatedDuringInitialization" classname="TowerSupportTests" runstate="Runnable" seed="420766037" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.000218" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1318" name="RememberingForShorterDurationDoesNotEraseLongerMemory" fullname="TowerSupportTests.RememberingForShorterDurationDoesNotEraseLongerMemory" methodname="RememberingForShorterDurationDoesNotEraseLongerMemory" classname="TowerSupportTests" runstate="Runnable" seed="1675208202" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.002344" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1326" name="TowerTradingTests" fullname="TowerTradingTests" classname="TowerTradingTests" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:31Z" duration="0.136480" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1338" name="BarrierSaleKeepsRouteAndAllowsRebuilding" fullname="TowerTradingTests.BarrierSaleKeepsRouteAndAllowsRebuilding" methodname="BarrierSaleKeepsRouteAndAllowsRebuilding" classname="TowerTradingTests" runstate="Runnable" seed="98738865" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.003973" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1339" name="DeathGivesNoRefundAndClearsSelectedTower" fullname="TowerTradingTests.DeathGivesNoRefundAndClearsSelectedTower" methodname="DeathGivesNoRefundAndClearsSelectedTower" classname="TowerTradingTests" runstate="Runnable" seed="1005478161" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001923" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1337" name="LaterPriceChangesDoNotChangeSaleRefund" fullname="TowerTradingTests.LaterPriceChangesDoNotChangeSaleRefund" methodname="LaterPriceChangesDoNotChangeSaleRefund" classname="TowerTradingTests" runstate="Runnable" seed="2007310990" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:30Z" duration="0.001409" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1333" name="LegacyAndOpenFieldRefundSamePaidCostsIncludingUpgrade" fullname="TowerTradingTests.LegacyAndOpenFieldRefundSamePaidCostsIncludingUpgrade" methodname="LegacyAndOpenFieldRefundSamePaidCostsIncludingUpgrade" classname="TowerTradingTests" runstate="Runnable" seed="1431931418" result="Passed" start-time="2026-10-28 15:30:30Z" end-time="2026-10-28 15:30:31Z" duration="0.001508" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1350" name="OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments" fullname="TowerTradingTests.OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments" classname="TowerTradingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.003854" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1348" name="OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments(0)" fullname="TowerTradingTests.OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments(0)" methodname="OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments" classname="TowerTradingTests" runstate="Runnable" seed="1656940956" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.002258" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1349" name="OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments(1)" fullname="TowerTradingTests.OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments(1)" methodname="OpenFieldUpgradeChargesOnceKeepsPlacementAndRefundsBothPayments" classname="TowerTradingTests" runstate="Runnable" seed="672369624" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.000729" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1353" name="OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability" fullname="TowerTradingTests.OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability" classname="TowerTradingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.002444" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1351" name="OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability(24,False)" fullname="TowerTradingTests.OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability(24,False)" methodname="OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability" classname="TowerTradingTests" runstate="Runnable" seed="1975953028" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.001255" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1352" name="OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability(25,True)" fullname="TowerTradingTests.OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability(25,True)" methodname="OpenFieldUpgradeUsesPaidBuildPriceAndExactAffordability" classname="TowerTradingTests" runstate="Runnable" seed="1702342881" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.000604" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1336" name="OriginalPurchaseStillUsesConfigPriceAndAffordability" fullname="TowerTradingTests.OriginalPurchaseStillUsesConfigPriceAndAffordability" classname="TowerTradingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.004572" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1334" name="OriginalPurchaseStillUsesConfigPriceAndAffordability(25,True)" fullname="TowerTradingTests.OriginalPurchaseStillUsesConfigPriceAndAffordability(25,True)" methodname="OriginalPurchaseStillUsesConfigPriceAndAffordability" classname="TowerTradingTests" runstate="Runnable" seed="1596878250" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.002474" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1335" name="OriginalPurchaseStillUsesConfigPriceAndAffordability(24,False)" fullname="TowerTradingTests.OriginalPurchaseStillUsesConfigPriceAndAffordability(24,False)" methodname="OriginalPurchaseStillUsesConfigPriceAndAffordability" classname="TowerTradingTests" runstate="Runnable" seed="48228736" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.000464" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1357" name="ResultsOrPauseRejectUpgradeWithoutTakingATP" fullname="TowerTradingTests.ResultsOrPauseRejectUpgradeWithoutTakingATP" classname="TowerTradingTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.004270" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1354" name="ResultsOrPauseRejectUpgradeWithoutTakingATP(2,False)" fullname="TowerTradingTests.ResultsOrPauseRejectUpgradeWithoutTakingATP(2,False)" methodname="ResultsOrPauseRejectUpgradeWithoutTakingATP" classname="TowerTradingTests" runstate="Runnable" seed="831803918" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.001136" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1355" name="ResultsOrPauseRejectUpgradeWithoutTakingATP(3,False)" fullname="TowerTradingTests.ResultsOrPauseRejectUpgradeWithoutTakingATP(3,False)" methodname="ResultsOrPauseRejectUpgradeWithoutTakingATP" classname="TowerTradingTests" runstate="Runnable" seed="1327731785" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.001521" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1356" name="ResultsOrPauseRejectUpgradeWithoutTakingATP(0,True)" fullname="TowerTradingTests.ResultsOrPauseRejectUpgradeWithoutTakingATP(0,True)" methodname="ResultsOrPauseRejectUpgradeWithoutTakingATP" classname="TowerTradingTests" runstate="Runnable" seed="394035363" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.000664" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1329" name="SaleRefundsHalfRoundedDownAndCannotBeRepeated" fullname="TowerTradingTests.SaleRefundsHalfRoundedDownAndCannotBeRepeated" classname="TowerTradingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.002620" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1327" name="SaleRefundsHalfRoundedDownAndCannotBeRepeated(0)" fullname="TowerTradingTests.SaleRefundsHalfRoundedDownAndCannotBeRepeated(0)" methodname="SaleRefundsHalfRoundedDownAndCannotBeRepeated" classname="TowerTradingTests" runstate="Runnable" seed="2039650982" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.001230" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1328" name="SaleRefundsHalfRoundedDownAndCannotBeRepeated(1)" fullname="TowerTradingTests.SaleRefundsHalfRoundedDownAndCannotBeRepeated(1)" methodname="SaleRefundsHalfRoundedDownAndCannotBeRepeated" classname="TowerTradingTests" runstate="Runnable" seed="2109309118" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.000737" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="ParameterizedMethod" id="1347" name="SceneUsesOriginalFiftyPercentRefund" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.099043" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1341" name="SceneUsesOriginalFiftyPercentRefund(&quot;Level02&quot;,&quot;BuildController&quot;)" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund(&quot;Level02&quot;,&quot;BuildController&quot;)" methodname="SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" seed="1039165682" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.068044" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1342" name="SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldPrototype&quot;,&quot;OpenFieldPrototypeController&quot;)" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldPrototype&quot;,&quot;OpenFieldPrototypeController&quot;)" methodname="SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" seed="317773056" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.005483" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1343" name="SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel02&quot;,&quot;OpenFieldPrototypeController&quot;)" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel02&quot;,&quot;OpenFieldPrototypeController&quot;)" methodname="SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" seed="720826633" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.005503" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1344" name="SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel03&quot;,&quot;OpenFieldPrototypeController&quot;)" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel03&quot;,&quot;OpenFieldPrototypeController&quot;)" methodname="SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" seed="2034898120" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.006076" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1345" name="SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel04&quot;,&quot;OpenFieldPrototypeController&quot;)" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel04&quot;,&quot;OpenFieldPrototypeController&quot;)" methodname="SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" seed="478891396" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.005156" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1346" name="SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel05&quot;,&quot;OpenFieldPrototypeController&quot;)" fullname="TowerTradingTests.SceneUsesOriginalFiftyPercentRefund(&quot;OpenFieldLevel05&quot;,&quot;OpenFieldPrototypeController&quot;)" methodname="SceneUsesOriginalFiftyPercentRefund" classname="TowerTradingTests" runstate="Runnable" seed="2066710316" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.005279" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-case id="1340" name="SelectingSameTowerTogglesOffAndSellingClearsSelection" fullname="TowerTradingTests.SelectingSameTowerTogglesOffAndSellingClearsSelection" methodname="SelectingSameTowerTogglesOffAndSellingClearsSelection" classname="TowerTradingTests" runstate="Runnable" seed="560505340" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.002332" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1358" name="SupportBarrierAndEmptyCellCannotConsumeUpgradeATP" fullname="TowerTradingTests.SupportBarrierAndEmptyCellCannotConsumeUpgradeATP" methodname="SupportBarrierAndEmptyCellCannotConsumeUpgradeATP" classname="TowerTradingTests" runstate="Runnable" seed="888915576" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.001166" asserts="0">
+          <properties />
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1332" name="TerminalPhaseBlocksSelling" fullname="TowerTradingTests.TerminalPhaseBlocksSelling" classname="TowerTradingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.004733" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1330" name="TerminalPhaseBlocksSelling(2)" fullname="TowerTradingTests.TerminalPhaseBlocksSelling(2)" methodname="TerminalPhaseBlocksSelling" classname="TowerTradingTests" runstate="Runnable" seed="286295111" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.001214" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1331" name="TerminalPhaseBlocksSelling(3)" fullname="TowerTradingTests.TerminalPhaseBlocksSelling(3)" methodname="TerminalPhaseBlocksSelling" classname="TowerTradingTests" runstate="Runnable" seed="1639313124" result="Passed" start-time="2026-10-28 15:30:31Z" end-time="2026-10-28 15:30:31Z" duration="0.000962" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

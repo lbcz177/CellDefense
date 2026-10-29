@@ -1,0 +1,36 @@
+[
+  {
+    "id": "platelet",
+    "sprite": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔_2026-10-29_v1/战斗与图标/01_血小板修补塔.png",
+    "guid": "06d78e80e6dc4dbe9231025fa298462f",
+    "size": [
+      128,
+      128
+    ],
+    "opaqueBounds": [
+      12,
+      13,
+      116,
+      114
+    ],
+    "worldCanvasSize": 0.9,
+    "sha256": "8cc20cbd6c2b1c29d1fe005eb21a8bfd5c3b75006e669b97fb8489be82daf935"
+  },
+  {
+    "id": "complement",
+    "sprite": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二章新塔_2026-10-29_v1/战斗与图标/02_补体裂解塔.png",
+    "guid": "1cb0846aab214fe7b066fecb1e9068ed",
+    "size": [
+      128,
+      128
+    ],
+    "opaqueBounds": [
+      12,
+      12,
+      115,
+      116
+    ],
+    "worldCanvasSize": 0.9,
+    "sha256": "78e152c44fedb06fba1915302d4546a00d6c81d3b18e1ef24f887cfe37e31cef"
+  }
+]

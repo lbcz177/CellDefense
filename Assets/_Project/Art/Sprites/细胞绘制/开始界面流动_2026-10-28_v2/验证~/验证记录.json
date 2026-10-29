@@ -1,0 +1,9 @@
+{
+  "frameCount": 180,
+  "frameMilliseconds": 30,
+  "fps": 33.333333333333336,
+  "cycleSeconds": 5.4,
+  "testsPassed": 4,
+  "preview": "forward complete cycle, no reverse",
+  "runtime": "per-rendered-frame; mobile target remains 60 fps, not a device performance claim"
+}

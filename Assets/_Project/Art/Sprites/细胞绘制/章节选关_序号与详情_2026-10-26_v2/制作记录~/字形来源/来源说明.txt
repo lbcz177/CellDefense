@@ -1,0 +1,4 @@
+Fusion Pixel 12px Monospaced zh_hans, official release 2026.09.01
+https://github.com/TakWolf/fusion-pixel-font/releases/tag/2026.09.01
+SIL Open Font License 1.1; licenses shipped alongside the unchanged font source.
+The TTF is a production source only; runtime uses PNG artwork.

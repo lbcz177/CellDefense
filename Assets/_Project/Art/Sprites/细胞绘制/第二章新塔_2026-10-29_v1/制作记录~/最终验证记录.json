@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-29",
+  "testResult": {
+    "id": "2",
+    "testcasecount": "3",
+    "result": "Passed",
+    "total": "3",
+    "passed": "3",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-28 16:20:19Z",
+    "end-time": "2026-10-28 16:20:34Z",
+    "duration": "14.2344706"
+  },
+  "filesVerifiedAgainstValidation": [
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔_2026-10-29_v1\\战斗与图标\\01_血小板修补塔.png",
+      "sha256": "8cc20cbd6c2b1c29d1fe005eb21a8bfd5c3b75006e669b97fb8489be82daf935"
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Chapter02\\PlateletTower.prefab",
+      "sha256": "431b139d1208938746bfd5b17c2959cb667c126e280968d64aa08f5e86b9c442"
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Chapter02\\PlateletTowerDefinition.asset",
+      "sha256": "0481b970e88df8f11e82fd3762ec8bbc78d11842a3d3c18693366c335fc71e72"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔_2026-10-29_v1\\战斗与图标\\02_补体裂解塔.png",
+      "sha256": "78e152c44fedb06fba1915302d4546a00d6c81d3b18e1ef24f887cfe37e31cef"
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Chapter02\\ComplementTower.prefab",
+      "sha256": "c0effcc873c70220adaa3dd0dcb772029af0445e7c684d5afbfbbc518cd488a5"
+    },
+    {
+      "path": "Assets\\_Project\\Data\\Chapter02\\ComplementTowerDefinition.asset",
+      "sha256": "7d7c9f743f31ebb41c99feeb10c7bd20834e5097ea646f687c64f8b797e0e101"
+    }
+  ],
+  "screenshots": [
+    "chapter-two-complement.png",
+    "chapter-two-menu-1280x720.png",
+    "chapter-two-menu-2048x928.png",
+    "chapter-two-menu-640x480.png",
+    "chapter-two-repair.png",
+    "Chapter02Level01-planning.png",
+    "Chapter02Level02-planning.png",
+    "Chapter02Level03-planning.png",
+    "Chapter02Level04-planning.png"
+  ]
+}

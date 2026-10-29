@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "numberedBadges": 5,
+  "blankExtensibleTemplate": 1,
+  "normalAndSelectedFiles": 12,
+  "badgeSize": [
+    256,
+    256
+  ],
+  "transparentAlphaIsBinary": true,
+  "selectedStatePreservesNumberAndBody": true,
+  "noClippedOutline": true,
+  "source": "built-in image_gen atlas; Aseprite native crop, normalization and outline layer",
+  "starsAndDetailFlowUnchanged": true
+}

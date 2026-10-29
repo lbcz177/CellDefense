@@ -57,6 +57,7 @@ public sealed class MainMenuSettingsPlayModeTests
             Assert.That(interaction.interactable, Is.False);
             Assert.That(interaction.blocksRaycasts, Is.False);
             Call(menu, "OpenLevelSelection");
+        Call(menu, "OpenChapter", 0);
             Call(menu, "LoadLevel", 0);
             Assert.That(((GameObject)Field(menu, "selectionCanvas")).activeSelf, Is.False);
             Assert.That(SceneManager.GetActiveScene().name, Is.EqualTo("MainMenu"));
@@ -103,7 +104,10 @@ public sealed class MainMenuSettingsPlayModeTests
             Call(menu, "CloseLevelSelection");
             Assert.That(interaction.interactable && interaction.blocksRaycasts, Is.True);
             Call(menu, "StartGame");
+            Call(menu, "OpenChapter", 0);
             ((Button[])Field(menu, "levelButtons"))[0].onClick.Invoke();
+            Assert.That(Get(menu, "IsLevelDetailsOpen"), Is.True);
+            ((Button)Field(menu, "detailsStart")).onClick.Invoke();
             yield return null;
             Component owner = (Component)Object.FindObjectOfType(Runtime("OpenFieldPrototypeController"));
             Assert.That(owner, Is.Not.Null);
@@ -153,6 +157,7 @@ public sealed class MainMenuSettingsPlayModeTests
         Assert.That(Get(menu, "IsSettingsOpen"), Is.True);
         Call(menu, "CloseSettings");
         Call(menu, "OpenLevelSelection");
+        Call(menu, "OpenChapter", 0);
         ((Behaviour)menu).enabled = false;
         Assert.That(selectionCanvas.activeSelf, Is.False);
         Assert.That(interaction.interactable && interaction.blocksRaycasts, Is.True);
@@ -190,6 +195,7 @@ public sealed class MainMenuSettingsPlayModeTests
         Assert.That(Get(menu, "QuitRequested"), Is.False);
         Call(menu, "CloseSettings");
         Call(menu, "OpenLevelSelection");
+        Call(menu, "OpenChapter", 0);
         Call(menu, "QuitGame");
         Assert.That(Get(menu, "QuitRequested"), Is.False);
         Call(menu, "CloseLevelSelection");

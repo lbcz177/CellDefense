@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-28",
+  "tests": {
+    "id": "2",
+    "testcasecount": "50",
+    "result": "Passed",
+    "total": "50",
+    "passed": "50",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-28 04:23:07Z",
+    "end-time": "2026-10-28 04:25:17Z",
+    "duration": "129.8131859"
+  },
+  "source_sha256": {
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "a9b44dc9382a24e4a0f8c7204a5dc6f227e1c00ca476e995238e766babf52f34",
+    "Assets/_Project/Scripts/UI/LevelSelectionArtwork.cs": "21ade402f868981de23907bc6125b94a222f4cab13353549e8729a1d7ba493dc",
+    "Assets/_Project/Resources/LevelSelectionArtwork.asset": "d01c9b61de254c77a7a8830057cb7625d30ff456ad52b4f750847c8d19289343",
+    "Assets/_Project/Tests/PlayMode/ChapterSelectionPlayModeTests.cs": "022fb11c50aa4a34d3f669a43eb8202a1d9fb4f9244c696dec3cdc1f1e258267",
+    "Assets/_Project/Tests/PlayMode/NumberedLevelSelectionPlayModeTests.cs": "acb4fa4307a74adfa88b92534be3d022052b467f0067026fd56f342c03d65f5e",
+    "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs": "48f70f5e0b6115eb7d87b93ec04a20399249e5b1db9216a2d1c51dcbe234f44d",
+    "Assets/_Project/Tests/PlayMode/LevelScoringPlayModeTests.cs": "fa1ef21d8bfa3784fb9fcd658fd4d886701ed1e10626a1bb3aee0e069bc559db"
+  },
+  "capture_directory": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节接入_2026-10-28\\验证_v3~",
+  "image_dimensions": {
+    "chapter-1-1280x720.png": [
+      1280,
+      720
+    ],
+    "chapter-1-2048x928.png": [
+      2048,
+      928
+    ],
+    "chapter-1-640x480.png": [
+      640,
+      480
+    ],
+    "chapter-2-1280x720.png": [
+      1280,
+      720
+    ],
+    "chapter-2-2048x928.png": [
+      2048,
+      928
+    ],
+    "chapter-2-640x480.png": [
+      640,
+      480
+    ],
+    "chapter-3-1280x720.png": [
+      1280,
+      720
+    ],
+    "chapter-3-2048x928.png": [
+      2048,
+      928
+    ],
+    "chapter-3-640x480.png": [
+      640,
+      480
+    ],
+    "chapters-1280x720.png": [
+      1280,
+      720
+    ],
+    "chapters-2048x928.png": [
+      2048,
+      928
+    ],
+    "chapters-640x480.png": [
+      640,
+      480
+    ],
+    "details-1-1280x720.png": [
+      1280,
+      720
+    ],
+    "details-1-2048x928.png": [
+      2048,
+      928
+    ],
+    "details-1-640x480.png": [
+      640,
+      480
+    ],
+    "details-2-1280x720.png": [
+      1280,
+      720
+    ],
+    "details-2-2048x928.png": [
+      2048,
+      928
+    ],
+    "details-2-640x480.png": [
+      640,
+      480
+    ],
+    "details-3-1280x720.png": [
+      1280,
+      720
+    ],
+    "details-3-2048x928.png": [
+      2048,
+      928
+    ],
+    "details-3-640x480.png": [
+      640,
+      480
+    ]
+  },
+  "chapters": 3,
+  "level_counts": [
+    5,
+    4,
+    4
+  ],
+  "playable_levels": 5,
+  "preview_levels": 8,
+  "existing_progress_keys_preserved": true,
+  "android_device_tested": false,
+  "apk_built": false,
+  "taptap_modified": false,
+  "isolated_profile": "CellDefenseValidation / ChapterSelectionTests"
+}

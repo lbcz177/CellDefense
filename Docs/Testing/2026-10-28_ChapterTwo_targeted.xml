@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 13:10:05Z" end-time="2026-10-28 13:10:22Z" duration="16.821471">
+  <test-suite type="TestSuite" id="1000" name="ChapterTwoValidation" fullname="ChapterTwoValidation" runstate="Runnable" testcasecount="67" result="Passed" start-time="2026-10-28 13:10:05Z" end-time="2026-10-28 13:10:22Z" duration="16.821471" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1086" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/ChapterTwoValidation/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="67" result="Passed" start-time="2026-10-28 13:10:05Z" end-time="2026-10-28 13:10:22Z" duration="16.813184" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="50248" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1016" name="ChapterTwoPlayModeTests" fullname="ChapterTwoPlayModeTests" classname="ChapterTwoPlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-28 13:10:05Z" end-time="2026-10-28 13:10:11Z" duration="5.620924" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1021" name="MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" fullname="ChapterTwoPlayModeTests.MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" methodname="MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="358996657" result="Passed" start-time="2026-10-28 13:10:05Z" end-time="2026-10-28 13:10:11Z" duration="5.604213" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1054" name="OpenFieldPlaybackPlayModeTests" fullname="OpenFieldPlaybackPlayModeTests" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-28 13:10:11Z" end-time="2026-10-28 13:10:12Z" duration="1.663828" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1057" name="SettingsControlsApplySaveAndReturnWithoutResumingTheBattle" fullname="OpenFieldPlaybackPlayModeTests.SettingsControlsApplySaveAndReturnWithoutResumingTheBattle" methodname="SettingsControlsApplySaveAndReturnWithoutResumingTheBattle" classname="OpenFieldPlaybackPlayModeTests" runstate="Runnable" seed="2064237666" result="Passed" start-time="2026-10-28 13:10:11Z" end-time="2026-10-28 13:10:12Z" duration="1.638402" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1062" name="PromptArtworkPlayModeTests" fullname="PromptArtworkPlayModeTests" classname="PromptArtworkPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-28 13:10:12Z" end-time="2026-10-28 13:10:14Z" duration="1.397926" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1063" name="TutorialTradingEnemyIntroductionsAndLevelSelectionUseImageArtwork" fullname="PromptArtworkPlayModeTests.TutorialTradingEnemyIntroductionsAndLevelSelectionUseImageArtwork" methodname="TutorialTradingEnemyIntroductionsAndLevelSelectionUseImageArtwork" classname="PromptArtworkPlayModeTests" runstate="Runnable" seed="999990158" result="Passed" start-time="2026-10-28 13:10:12Z" end-time="2026-10-28 13:10:14Z" duration="1.387670" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1076" name="TowerTradingPlayModeTests" fullname="TowerTradingPlayModeTests" classname="TowerTradingPlayModeTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-28 13:10:14Z" end-time="2026-10-28 13:10:22Z" duration="8.124628" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1080" name="BarrierHoldsCrowdTakesDamageBreaksAndReplacementSaleReleasesEveryEnemy" fullname="TowerTradingPlayModeTests.BarrierHoldsCrowdTakesDamageBreaksAndReplacementSaleReleasesEveryEnemy" methodname="BarrierHoldsCrowdTakesDamageBreaksAndReplacementSaleReleasesEveryEnemy" classname="TowerTradingPlayModeTests" runstate="Runnable" seed="952930408" result="Passed" start-time="2026-10-28 13:10:14Z" end-time="2026-10-28 13:10:22Z" duration="8.112969" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,190 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "c431cb7084130d0471886af1609c46c983e9bff16a9d7a9a766a2b271232775a"
+  },
+  {
+    "path": "可扩展素材索引.json",
+    "sha256": "4c38affe274522fef352c88a8ce36aef6e34016fa3015030dbc7d258bca1bb4d"
+  },
+  {
+    "path": "完整界面/01_第1章_序号选关.png",
+    "sha256": "2d4a69cefb6bcbd31174c579adc341fa66bf1ee3b075b0d849090a0de6513021"
+  },
+  {
+    "path": "完整界面/02_第2章_序号选关.png",
+    "sha256": "b57b22e7bef99bf802592e8fdef8f7892f297028b43d415cc4ebc1e269526f33"
+  },
+  {
+    "path": "完整界面/03_第3章_序号选关.png",
+    "sha256": "6428b71bf0dcb07a07c65b382c39cec0cc818793f34326082dcbed30618afcf5"
+  },
+  {
+    "path": "完整界面/04_第1章_点击后详情示意.png",
+    "sha256": "726903464f1e87c25bd76934b53da6b6602238597d9a31ec5ea1630dbb1a8ff9"
+  },
+  {
+    "path": "完整界面/05_第2章_点击后详情示意.png",
+    "sha256": "d2c086bd3e687246987eac253d48181e4c58869fbad879cffdfe7f7a4f5e03ff"
+  },
+  {
+    "path": "完整界面/06_第3章_点击后详情示意.png",
+    "sha256": "8526fc2b2323744fac7e40f1943f6e0997f2524b85be8646e2153d78e01535d7"
+  },
+  {
+    "path": "完整界面/07_详情_未通关示意.png",
+    "sha256": "dc016a692bc07b1b9adc52a4cc775b634e7a77f4ed7d5c3ff5517d22f28e3571"
+  },
+  {
+    "path": "序号选关与详情总览.png",
+    "sha256": "07da73a6d171e14db72eb36b3789d8753e628c7adb41f0453b8f85241bcc0bd3"
+  },
+  {
+    "path": "文字/1-1_detailtitle.png",
+    "sha256": "e69935a26cd3d599c0ea860c9210a6dc02c06326ff8fb0bfd09bd55de3a2bd33"
+  },
+  {
+    "path": "文字/1-2_detailtitle.png",
+    "sha256": "80279a5d5656b932f5434a9a236025ee456dba47012afc3b830f2e0321efe918"
+  },
+  {
+    "path": "文字/1-3_detailtitle.png",
+    "sha256": "5be5e733cdd9ae34fbebe7f23d193693870f87d3d65ec31c5a97880e832dee59"
+  },
+  {
+    "path": "文字/1-4_detailtitle.png",
+    "sha256": "410767c2a582eade8351ca1ab9c49e3dd38c19485ad71433a5faa722516f1019"
+  },
+  {
+    "path": "文字/1-5_detailtitle.png",
+    "sha256": "4b396b62c3765ece2106bc95e42cac39dfa16f0c539493bc783e820691f5763d"
+  },
+  {
+    "path": "文字/2-1_detailtitle.png",
+    "sha256": "1a7b487cad86297742d2178af53647a3db03e840f4fee6e029a4be31b30e5788"
+  },
+  {
+    "path": "文字/2-2_detailtitle.png",
+    "sha256": "a5fef6a4d1b8ac96f1c071b502fa143915f6c2bec1064dc59bd74a11370eb508"
+  },
+  {
+    "path": "文字/2-3_detailtitle.png",
+    "sha256": "0101e87aa67a4f3855d4e18a295c56f133d2c2a009864e6f46feda9c5a993564"
+  },
+  {
+    "path": "文字/2-4_detailtitle.png",
+    "sha256": "f4fe7e112520bf8b80a6f1feb1e2ccc0d5a754097087f8bc00afd551cdedbcbb"
+  },
+  {
+    "path": "文字/3-1_detailtitle.png",
+    "sha256": "c0c9cf629911b693fa315d5aa893bb628358eb97f73f5b3b48acbe42e2112a2c"
+  },
+  {
+    "path": "文字/3-2_detailtitle.png",
+    "sha256": "fc397b586faab04873e519469c4e342b30761fdbc075c50c6f527208723e7135"
+  },
+  {
+    "path": "文字/3-3_detailtitle.png",
+    "sha256": "6081b439b173e1e0fd70497d1b5f7afd082e23eb1e7cf46cb47726c7976e8484"
+  },
+  {
+    "path": "文字/3-4_detailtitle.png",
+    "sha256": "438b99957a9210c56f1f2498b0f61b417af85685faaea6cb65e49e7501517551"
+  },
+  {
+    "path": "文字/best_stars.png",
+    "sha256": "8b59422ac660cd533568d261096bb093ea7557e5216ee7c160db35db647a0a6c"
+  },
+  {
+    "path": "文字/hint.png",
+    "sha256": "01b4d1436211807af54648420531b300e5b15ba2fd93894946dbf86bd5ca3b97"
+  },
+  {
+    "path": "文字/history.png",
+    "sha256": "5a0dbe00ad12c016871a4886445410333e25da2e66c77aca430e00133c6b4eec"
+  },
+  {
+    "path": "文字/number1.png",
+    "sha256": "886b10a87698977b5685c869c37f5dbf87f5cb750e115909d7fb90b1e269ca81"
+  },
+  {
+    "path": "文字/number2.png",
+    "sha256": "33a9d12f7501e54dea705f64895ab97f446c075b0379fd6998dd4f42dbcc473f"
+  },
+  {
+    "path": "文字/number3.png",
+    "sha256": "eb6a3bd684c2d64e1ab132f3975ad3eb307ce6c53b0e3d1680abd5c60a5f5d62"
+  },
+  {
+    "path": "文字/number4.png",
+    "sha256": "3cc7d6fc8e31bea396bf064159d08b9ec5ad51d3914b38ad9085316aa6709790"
+  },
+  {
+    "path": "文字/number5.png",
+    "sha256": "b9a318fe259afda38ccf94c9d8800782d331a48b6c3963a37c5368cb43a48222"
+  },
+  {
+    "path": "文字/return.png",
+    "sha256": "bb33ec3e205099e1d1f654c15a36c5433dcd6667765fcb53985b29830f0144ab"
+  },
+  {
+    "path": "文字/sample_score.png",
+    "sha256": "db1bb4957bca2f7306a8d5b5c9675e01f55d693a0055cc72fba6dca05c7d031b"
+  },
+  {
+    "path": "文字/start.png",
+    "sha256": "01995f4f73c0ed478792539b8da1cd2d87f604e7c1e934cee95e57b458e59904"
+  },
+  {
+    "path": "文字/unplayed.png",
+    "sha256": "c87406038fbe9751b3d07be0680f44e3fbdb6db3f1ae836447e9c860d7b088c1"
+  },
+  {
+    "path": "源文件/01_第1章_序号选关.aseprite",
+    "sha256": "ea0eef71ed3cc344c45de3b520916f268f22dd7d305a604afc6b36624bd54ee5"
+  },
+  {
+    "path": "源文件/02_第2章_序号选关.aseprite",
+    "sha256": "5e6d4a6c9c7f7b53a16da4e4f70706b8d65d0760a0d82d64c56ae4dc4cc842f3"
+  },
+  {
+    "path": "源文件/03_第3章_序号选关.aseprite",
+    "sha256": "2ffb6787094fb0a83efe877c72d3401052b23802b1c7b5019775c1b00e0b9e3b"
+  },
+  {
+    "path": "源文件/04_第1章_点击后详情示意.aseprite",
+    "sha256": "f47d7b23f412d6d65c0755365c71bfd07a4da818bcd41fc8562ba5738f75ab07"
+  },
+  {
+    "path": "源文件/05_第2章_点击后详情示意.aseprite",
+    "sha256": "d42dc83222509eaab21b422fa36059b0a8b798cb66608f6c0bdaabd77af03fc7"
+  },
+  {
+    "path": "源文件/06_第3章_点击后详情示意.aseprite",
+    "sha256": "19775a3e5f7363f1c2c025dfad7ca4e982b21dab37758f38eef7bbdd23670ba1"
+  },
+  {
+    "path": "源文件/07_详情_未通关示意.aseprite",
+    "sha256": "3ca23705266d22bea9f4aafc4d592f9a7595ec2063e0c087ce84de1f4823c250"
+  },
+  {
+    "path": "组件/序号按钮_常态.png",
+    "sha256": "106a1442f1c2296c3541df5d9ea4c6eccc43d97d27af9861296f2e1f06a04645"
+  },
+  {
+    "path": "组件/序号按钮_高亮.png",
+    "sha256": "c3ab7a5557bfb244e9d62721eae0df9128f65f6c50bf073f7e1d75f42c7d98be"
+  },
+  {
+    "path": "组件/操作按钮_常态.png",
+    "sha256": "8edb6fd561b9bf6004257dbc037d23735be3946aa3cc1e320aeadff7b279b838"
+  },
+  {
+    "path": "组件/操作按钮_高亮.png",
+    "sha256": "6e45966ae0feb5ce5e6e506f93883bc74e2e21e1a9f0d6f166f3a7e8e2128abb"
+  },
+  {
+    "path": "组件/详情底板.png",
+    "sha256": "8edb6fd561b9bf6004257dbc037d23735be3946aa3cc1e320aeadff7b279b838"
+  }
+]

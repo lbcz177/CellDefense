@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="13" result="Passed" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-29 05:08:04Z" end-time="2026-10-29 05:08:16Z" duration="12.3782556">
+  <test-suite type="TestSuite" id="1000" name="ChapterTwoValidation" fullname="ChapterTwoValidation" runstate="Runnable" testcasecount="86" result="Passed" start-time="2026-10-29 05:08:04Z" end-time="2026-10-29 05:08:16Z" duration="12.378256" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1112" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="86" result="Passed" start-time="2026-10-29 05:08:04Z" end-time="2026-10-29 05:08:16Z" duration="12.371490" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="59596" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1057" name="MainMenuFocusPlayModeTests" fullname="MainMenuFocusPlayModeTests" classname="MainMenuFocusPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-29 05:08:04Z" end-time="2026-10-29 05:08:05Z" duration="1.512893" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1059" name="FeedbackFitsHitAreasAndDoesNotInterceptClicksAcrossLandscapeSizes" fullname="MainMenuFocusPlayModeTests.FeedbackFitsHitAreasAndDoesNotInterceptClicksAcrossLandscapeSizes" methodname="FeedbackFitsHitAreasAndDoesNotInterceptClicksAcrossLandscapeSizes" classname="MainMenuFocusPlayModeTests" runstate="Runnable" seed="215847680" result="Passed" start-time="2026-10-29 05:08:04Z" end-time="2026-10-29 05:08:05Z" duration="1.148379" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1058" name="PointerKeyboardAndTouchHaveOneClearFocusAndModalReturnDoesNotStick" fullname="MainMenuFocusPlayModeTests.PointerKeyboardAndTouchHaveOneClearFocusAndModalReturnDoesNotStick" methodname="PointerKeyboardAndTouchHaveOneClearFocusAndModalReturnDoesNotStick" classname="MainMenuFocusPlayModeTests" runstate="Runnable" seed="679919341" result="Passed" start-time="2026-10-29 05:08:05Z" end-time="2026-10-29 05:08:05Z" duration="0.354560" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1073" name="ZzzzNumberedLevelSelectionPlayModeTests" fullname="ZzzzNumberedLevelSelectionPlayModeTests" classname="ZzzzNumberedLevelSelectionPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-29 05:08:05Z" end-time="2026-10-29 05:08:07Z" duration="1.646767" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1075" name="DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes" fullname="ZzzzNumberedLevelSelectionPlayModeTests.DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes" methodname="DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes" classname="ZzzzNumberedLevelSelectionPlayModeTests" runstate="Runnable" seed="438262388" result="Passed" start-time="2026-10-29 05:08:05Z" end-time="2026-10-29 05:08:06Z" duration="0.734750" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1074" name="NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap" fullname="ZzzzNumberedLevelSelectionPlayModeTests.NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap" methodname="NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap" classname="ZzzzNumberedLevelSelectionPlayModeTests" runstate="Runnable" seed="864187062" result="Passed" start-time="2026-10-29 05:08:06Z" end-time="2026-10-29 05:08:07Z" duration="0.904358" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1014" name="ZzzzzChapterPagingPlayModeTests" fullname="ZzzzzChapterPagingPlayModeTests" classname="ZzzzzChapterPagingPlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-29 05:08:07Z" end-time="2026-10-29 05:08:10Z" duration="3.153230" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1017" name="AddedCatalogChaptersUseGlobalIndicesAndReturnToTheirOwnPage" fullname="ZzzzzChapterPagingPlayModeTests.AddedCatalogChaptersUseGlobalIndicesAndReturnToTheirOwnPage" methodname="AddedCatalogChaptersUseGlobalIndicesAndReturnToTheirOwnPage" classname="ZzzzzChapterPagingPlayModeTests" runstate="Runnable" seed="1932250673" result="Passed" start-time="2026-10-29 05:08:07Z" end-time="2026-10-29 05:08:08Z" duration="0.380755" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1015" name="ArrowsPageFrom123To456AndRespectBoundariesWithoutOpeningLevels" fullname="ZzzzzChapterPagingPlayModeTests.ArrowsPageFrom123To456AndRespectBoundariesWithoutOpeningLevels" methodname="ArrowsPageFrom123To456AndRespectBoundariesWithoutOpeningLevels" classname="ZzzzzChapterPagingPlayModeTests" runstate="Runnable" seed="9021788" result="Passed" start-time="2026-10-29 05:08:08Z" end-time="2026-10-29 05:08:08Z" duration="0.408117" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1016" name="BothPagesAndArrowHitAreasFitDesktopAndMobileWindows" fullname="ZzzzzChapterPagingPlayModeTests.BothPagesAndArrowHitAreasFitDesktopAndMobileWindows" methodname="BothPagesAndArrowHitAreasFitDesktopAndMobileWindows" classname="ZzzzzChapterPagingPlayModeTests" runstate="Runnable" seed="896035920" result="Passed" start-time="2026-10-29 05:08:08Z" end-time="2026-10-29 05:08:10Z" duration="2.352313" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1018" name="ZzzzzChapterSelectionPlayModeTests" fullname="ZzzzzChapterSelectionPlayModeTests" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-29 05:08:10Z" end-time="2026-10-29 05:08:16Z" duration="6.053594" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1024" name="AllThreeChapterCardsStayFullyVisibleAndClickableWithoutScrolling" fullname="ZzzzzChapterSelectionPlayModeTests.AllThreeChapterCardsStayFullyVisibleAndClickableWithoutScrolling" methodname="AllThreeChapterCardsStayFullyVisibleAndClickableWithoutScrolling" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" seed="2106475389" result="Passed" start-time="2026-10-29 05:08:10Z" end-time="2026-10-29 05:08:12Z" duration="1.723015" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1019" name="ChapterHierarchyKeepsFirstChapterScoresAndStartsOnlyExplicitly" fullname="ZzzzzChapterSelectionPlayModeTests.ChapterHierarchyKeepsFirstChapterScoresAndStartsOnlyExplicitly" methodname="ChapterHierarchyKeepsFirstChapterScoresAndStartsOnlyExplicitly" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" seed="1289146346" result="Passed" start-time="2026-10-29 05:08:12Z" end-time="2026-10-29 05:08:13Z" duration="0.777668" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1023" name="ChapterPagesAndDetailsFitRealWindowSizesAndUseCompleteArtwork" fullname="ZzzzzChapterSelectionPlayModeTests.ChapterPagesAndDetailsFitRealWindowSizesAndUseCompleteArtwork" methodname="ChapterPagesAndDetailsFitRealWindowSizesAndUseCompleteArtwork" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" seed="1585844291" result="Passed" start-time="2026-10-29 05:08:13Z" end-time="2026-10-29 05:08:14Z" duration="0.846034" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1020" name="OpeningPagesDoesNotSelectFirstItemButHoverAndKeyboardStillHighlight" fullname="ZzzzzChapterSelectionPlayModeTests.OpeningPagesDoesNotSelectFirstItemButHoverAndKeyboardStillHighlight" methodname="OpeningPagesDoesNotSelectFirstItemButHoverAndKeyboardStillHighlight" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" seed="75817532" result="Passed" start-time="2026-10-29 05:08:14Z" end-time="2026-10-29 05:08:14Z" duration="0.472815" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1022" name="SequentialUnlocksBlockBypassDefeatAndUseVictoryRecordsImmediately" fullname="ZzzzzChapterSelectionPlayModeTests.SequentialUnlocksBlockBypassDefeatAndUseVictoryRecordsImmediately" methodname="SequentialUnlocksBlockBypassDefeatAndUseVictoryRecordsImmediately" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" seed="689489852" result="Passed" start-time="2026-10-29 05:08:14Z" end-time="2026-10-29 05:08:16Z" duration="1.850164" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1021" name="ThirdChapterRemainsLockedUntilPreviousChaptersAreCleared" fullname="ZzzzzChapterSelectionPlayModeTests.ThirdChapterRemainsLockedUntilPreviousChaptersAreCleared" methodname="ThirdChapterRemainsLockedUntilPreviousChaptersAreCleared" classname="ZzzzzChapterSelectionPlayModeTests" runstate="Runnable" seed="1783877715" result="Passed" start-time="2026-10-29 05:08:16Z" end-time="2026-10-29 05:08:16Z" duration="0.372441" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

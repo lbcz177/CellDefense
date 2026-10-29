@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="9" result="Passed" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-29 05:05:15Z" end-time="2026-10-29 05:07:28Z" duration="132.3861288">
+  <test-suite type="TestSuite" id="1000" name="ChapterTwoValidation" fullname="ChapterTwoValidation" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-29 05:05:15Z" end-time="2026-10-29 05:07:28Z" duration="132.386129" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1108" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/NewTowerArtValidation/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="84" result="Passed" start-time="2026-10-29 05:05:15Z" end-time="2026-10-29 05:07:28Z" duration="132.380345" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="32300" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1025" name="ChapterThreePlayModeTests" fullname="ChapterThreePlayModeTests" classname="ChapterThreePlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-29 05:05:15Z" end-time="2026-10-29 05:06:59Z" duration="103.154066" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1026" name="CrossChapterFlowRunsAllFourSequencesAndRetainsIndependentScores" fullname="ChapterThreePlayModeTests.CrossChapterFlowRunsAllFourSequencesAndRetainsIndependentScores" methodname="CrossChapterFlowRunsAllFourSequencesAndRetainsIndependentScores" classname="ChapterThreePlayModeTests" runstate="Runnable" seed="629642686" result="Passed" start-time="2026-10-29 05:05:15Z" end-time="2026-10-29 05:05:49Z" duration="33.449328" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1030" name="FourMapsAndTenChoicesFitThreeRealLandscapeSizes" fullname="ChapterThreePlayModeTests.FourMapsAndTenChoicesFitThreeRealLandscapeSizes" methodname="FourMapsAndTenChoicesFitThreeRealLandscapeSizes" classname="ChapterThreePlayModeTests" runstate="Runnable" seed="1987813103" result="Passed" start-time="2026-10-29 05:05:49Z" end-time="2026-10-29 05:05:52Z" duration="3.103668" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1028" name="HelperTSelectsOneAntibodyAndDoesNotStackOrLeaveStaleBonuses" fullname="ChapterThreePlayModeTests.HelperTSelectsOneAntibodyAndDoesNotStackOrLeaveStaleBonuses" methodname="HelperTSelectsOneAntibodyAndDoesNotStackOrLeaveStaleBonuses" classname="ChapterThreePlayModeTests" runstate="Runnable" seed="330857302" result="Passed" start-time="2026-10-29 05:05:52Z" end-time="2026-10-29 05:05:53Z" duration="0.772865" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1027" name="RegionalSourceGivesWarningThenLocalDamageAndRecoversAfterDeath" fullname="ChapterThreePlayModeTests.RegionalSourceGivesWarningThenLocalDamageAndRecoversAfterDeath" methodname="RegionalSourceGivesWarningThenLocalDamageAndRecoversAfterDeath" classname="ChapterThreePlayModeTests" runstate="Runnable" seed="1159964722" result="Passed" start-time="2026-10-29 05:05:53Z" end-time="2026-10-29 05:05:54Z" duration="1.653090" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1029" name="RegulatoryTStabilizesOnlyOneRegionWithoutHealingOrStacking" fullname="ChapterThreePlayModeTests.RegulatoryTStabilizesOnlyOneRegionWithoutHealingOrStacking" methodname="RegulatoryTStabilizesOnlyOneRegionWithoutHealingOrStacking" classname="ChapterThreePlayModeTests" runstate="Runnable" seed="440965888" result="Passed" start-time="2026-10-29 05:05:54Z" end-time="2026-10-29 05:05:55Z" duration="0.597439" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1031" name="ResourceFundedDefensesCanCompleteAllFourChaptersWithoutDirectDamage" fullname="ChapterThreePlayModeTests.ResourceFundedDefensesCanCompleteAllFourChaptersWithoutDirectDamage" methodname="ResourceFundedDefensesCanCompleteAllFourChaptersWithoutDirectDamage" classname="ChapterThreePlayModeTests" runstate="Runnable" seed="853995763" result="Passed" start-time="2026-10-29 05:05:55Z" end-time="2026-10-29 05:06:59Z" duration="63.566928" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[CHAPTER_THREE_DEFENSE Chapter03Level01: Victory, life=20, atp=775, built=14
+CHAPTER_THREE_DEFENSE Chapter03Level02: Victory, life=20, atp=1016, built=14
+CHAPTER_THREE_DEFENSE Chapter03Level03: Victory, life=20, atp=951, built=14
+CHAPTER_THREE_DEFENSE Chapter03Level04: Victory, life=20, atp=1469, built=14
+]]></output>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1042" name="FirstLevelTutorialPlayModeTests" fullname="FirstLevelTutorialPlayModeTests" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-29 05:06:59Z" end-time="2026-10-29 05:07:28Z" duration="29.220968" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1044" name="EarlyWaveStartsDoNotLockGuideAndBarrierLossOffersRebuild" fullname="FirstLevelTutorialPlayModeTests.EarlyWaveStartsDoNotLockGuideAndBarrierLossOffersRebuild" methodname="EarlyWaveStartsDoNotLockGuideAndBarrierLossOffersRebuild" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" seed="260764796" result="Passed" start-time="2026-10-29 05:06:59Z" end-time="2026-10-29 05:07:00Z" duration="0.885862" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[TUTORIAL_BUILD type=3 cell=(5, 7) atp=70
+TUTORIAL_BUILD type=3 cell=(5, 7) atp=40
+]]></output>
+        </test-case>
+        <test-case id="1043" name="RealBuildsAdvanceGuideAndSkipNeverChangesEconomyOrWaveRules" fullname="FirstLevelTutorialPlayModeTests.RealBuildsAdvanceGuideAndSkipNeverChangesEconomyOrWaveRules" methodname="RealBuildsAdvanceGuideAndSkipNeverChangesEconomyOrWaveRules" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" seed="1237756872" result="Passed" start-time="2026-10-29 05:07:00Z" end-time="2026-10-29 05:07:01Z" duration="1.216406" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[TUTORIAL_BUILD type=0 cell=(5, 6) atp=75
+TUTORIAL_BUILD type=0 cell=(5, 8) atp=50
+]]></output>
+        </test-case>
+        <test-case id="1045" name="SuggestedDefenseCompletesThreeRealWavesWithoutChangingCombatOrResources" fullname="FirstLevelTutorialPlayModeTests.SuggestedDefenseCompletesThreeRealWavesWithoutChangingCombatOrResources" methodname="SuggestedDefenseCompletesThreeRealWavesWithoutChangingCombatOrResources" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" seed="1853184463" result="Passed" start-time="2026-10-29 05:07:01Z" end-time="2026-10-29 05:07:28Z" duration="27.106922" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Timeout" value="120000" />
+          </properties>
+          <output><![CDATA[TUTORIAL_BUILD type=0 cell=(5, 6) atp=75
+TUTORIAL_BUILD type=0 cell=(5, 8) atp=50
+FIRST_LEVEL_PLAYTHROUGH round=1 life=7 atp=120
+TUTORIAL_BUILD type=3 cell=(5, 7) atp=90
+FIRST_LEVEL_PLAYTHROUGH round=2 life=7 atp=229
+TUTORIAL_BUILD type=2 cell=(6, 7) atp=204
+TUTORIAL_BUILD type=0 cell=(6, 8) atp=179
+TUTORIAL_BUILD type=0 cell=(7, 6) atp=154
+FIRST_LEVEL_PLAYTHROUGH round=3 life=7 atp=315
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

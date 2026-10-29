@@ -1,0 +1,789 @@
+[
+  {
+    "file": "README.md",
+    "sha256": "2253754880fdfda7d60e9663fa8735bb53772de143f4c1f9e405e9a87d5985c5",
+    "guid": "fb473d8a90bb42f3999e31c2745394b5"
+  },
+  {
+    "file": "关卡缩略图/1-1_守住伤口.png",
+    "sha256": "84aac2fd78e64808e770dde233a92b3c9e2c6fe74f0bc4130255abec3e23e3c7",
+    "guid": "a627c26e99a74915b9baf854d8ed2d94",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/1-2_集中清除.png",
+    "sha256": "d86f6996188ce918fd395c7369c45f6e314e908617200a1e227b6f779214e852",
+    "guid": "193fd9d5ce09455280854ad1f37cd02b",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/1-3_认出敌人.png",
+    "sha256": "b76930c91dbb577d8b2c06efcd22755510aa54c4ad27dc435433767f0cd11d29",
+    "guid": "9bc6c983136240c28db52f6ec61f2dc4",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/1-4_两侧告急.png",
+    "sha256": "be321fa6e0dee7ec0581c804e812a45d6a2ee441472df061b117cd521bcf363d",
+    "guid": "509d3d0085fa4b6d892e93b81c3cb988",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/1-5_感染加剧.png",
+    "sha256": "3b2efe3e80695d08963c4249903052f29cfc802bee18d1bca7014d8b28862529",
+    "guid": "e554343aad4e46a9bf47a595ac8f565d",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/2-1_凝血缺口.png",
+    "sha256": "b45ae97d1912addcb44af6cede1a83d78ed3c7b9e7eeed4f88f773cfa7c54781",
+    "guid": "fd5b7e8769a646e791344b8c0a5e924f",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/2-2_厚膜岔口.png",
+    "sha256": "eb47a1e164af0e155ac43135b7d9eb11bc11464f138619f34f7d375c9256aad3",
+    "guid": "1f735ea8a6534c2cb0680592188b6143",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/2-3_长廊窗口.png",
+    "sha256": "282893541a049e6e7e50ba5caa1d585bac12efd4332da4f749399db23191f310",
+    "guid": "efba71dd4bc64ad18341f947ebbdafe2",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/2-4_生物膜边缘.png",
+    "sha256": "8a7b7b79658a71b2291faccae52baac9073f66c7f43bf2f8c00fffae4f4ab06a",
+    "guid": "40cd237ae26f45ea936ce812cd7b40b5",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/3-1_充血边缘.png",
+    "sha256": "efdf3936d778a0e66265d4fd6c39ab96836ce5cff5f830836d03801ca74f0c21",
+    "guid": "d1ec0de4e73447f4ba9cffb6c1f8f678",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/3-2_反应交汇.png",
+    "sha256": "6657170d8111e474111d9b732f07077e339a708f9d7c79c46dacb4b4438fbcaa",
+    "guid": "851747e52d4e448b81ce22068bc4fe96",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/3-3_过热前沿.png",
+    "sha256": "9147cb6240807b935b51d4b80c1372d8c518ed29cc2d5f4b4fb17f160000c36e",
+    "guid": "9caeecbfd0f44bc1b485dc76d7ce93e5",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "关卡缩略图/3-4_双灶组织.png",
+    "sha256": "ff8ccef2f5e719f51d05847ddc4261db5964627d5998e20f725021ac0e9545bb",
+    "guid": "b5771f4c7f1f4425b36ea5bfdeac6785",
+    "size": [
+      300,
+      174
+    ]
+  },
+  {
+    "file": "可扩展素材索引.json",
+    "sha256": "bcc8a3e12ae27a0ac0656136ba9318896108bce94f89e427209e2d30d5b8d1f9",
+    "guid": "fccb7d0b3c634588a2c130969fd276eb"
+  },
+  {
+    "file": "四个界面总览.png",
+    "sha256": "6d43056c0756a116eb3b969503aa2136e51b684ea13c3348bb4cdf6bd229fb27",
+    "guid": "b9c8675f15ac4ca0b82284e2214f2bce",
+    "size": [
+      1648,
+      948
+    ]
+  },
+  {
+    "file": "完整界面/01_第1章_伤口防线_选关.png",
+    "sha256": "802515510842da8cbbb0b16643690a84a503d711f53d43c2c7006308eb0615d6",
+    "guid": "b13a92dec81a4eb4a5bd7a53c52c7ea9",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "完整界面/02_第2章_持续感染_选关.png",
+    "sha256": "f03da8ce8aa9c087130070fb564a06a1acdfc33a20a659d5d6eadd61eb6945fd",
+    "guid": "7c217dc9aac74709a058851d997ee91c",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "完整界面/03_第3章_免疫平衡_选关.png",
+    "sha256": "201f10070e900bc67fc178ac1d6771f16d1457722307eb4591e5ec8d8bb577b6",
+    "guid": "276a04ad47474ec0adcdef8560c5ca9c",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "完整界面/04_章节选择.png",
+    "sha256": "6e3b6602e351f6a7b270456c54e5bae32044036d0399bcbc6957c11878096a61",
+    "guid": "64dda871b9ab41859d226c26226f00e4",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "文字/1-1_id.png",
+    "sha256": "8bbf642a057fefbbe8bd1e464897f3085eb4d126027e2b8fb874e3f467c98a95",
+    "guid": "84ebb3579c6d41d0909f4fbfc15051ae",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/1-1_name.png",
+    "sha256": "0d1107dff8e8a5c36c5263bda1589bffce1a6c83412964a1ce6c16f2150b9a81",
+    "guid": "32a8e3fac68c4f30bc30a25576e9eb3d",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/1-2_id.png",
+    "sha256": "bd9869bc5d59450f5b5cfd8a0c45d7971504acdae75e138b31b265976374360d",
+    "guid": "c1fd01d1327c438695e0212c91851e96",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/1-2_name.png",
+    "sha256": "cdb4cb66a582e6b14154f22d7533c1a691e0c0c00ba13406f1a309fd81e6e4e5",
+    "guid": "e7daed1259dc4c3f84d1ddcf2ceeeedd",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/1-3_id.png",
+    "sha256": "c51e849027ff6db13f10b1d60626730c3df3bc8f85e6d089e185b407a1b2dbda",
+    "guid": "36dc9bdccbfd4cf19436f8afdf817db0",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/1-3_name.png",
+    "sha256": "60759f895033dc5af78fe05f06e9d9627b8ab864404e271d54ab03bf1e8e5a1c",
+    "guid": "cb658a2ea72747f4949f6bc9d44d2536",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/1-4_id.png",
+    "sha256": "50c57ec2861b88c76576bcf530a21d1bcc81bcfb54c242c3ceeb4c4f5e4505c2",
+    "guid": "08bd19fa49ba41e0ba89f1d6aaa74b44",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/1-4_name.png",
+    "sha256": "e8fe26d16f8e17cef5f13afbf4c880f9d82994d9d07d77749143503d31c91b3f",
+    "guid": "dc2439112a3b4866b9db836d42a357e0",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/1-5_id.png",
+    "sha256": "264246d2b1a9be729f18d89b96fdda5c37b9b0b392658663d88eba2e9c99265b",
+    "guid": "7013fd10feed4d8c9b38f966e632bbe1",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/1-5_name.png",
+    "sha256": "2ca6071cf1421f1cd9c98dfd1013f6425142664a58962d1887f1bef1b2e4a8eb",
+    "guid": "5c73aea4f2ac48deb424ac74cc3a0ac6",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/2-1_id.png",
+    "sha256": "1bd4d52b94494b5c22fe6603db888989463bc45dfb542d8cb19c31c6ec9e02fb",
+    "guid": "4b877a96e08943c59b62a5a280fea345",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/2-1_name.png",
+    "sha256": "fa4f0b36b1a473f85fb64009f32301005658be2461110f9adca637f686f768ea",
+    "guid": "caeb53b98eff4f46b1340b61e1c6d39d",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/2-2_id.png",
+    "sha256": "8e4c2efb434f9ba3127619e83d703b2ac391e0068a2d5e354c4664620b730172",
+    "guid": "078751fff8e74e1c9b7a1c6de2c132da",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/2-2_name.png",
+    "sha256": "0fa0e40b624cf88114018d81139cf757fc72626ae3cc2046911c40be94f58119",
+    "guid": "8bb230983e2f4e7080e65f182e38bf5b",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/2-3_id.png",
+    "sha256": "8926194184e0a6ddd6398b0ca5b0ff5bcbdae3e237583b9704e947d3158f3031",
+    "guid": "6ae5754c241a48159f56f01e7db4ddd2",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/2-3_name.png",
+    "sha256": "8ac67cc14c17fc3f978062b01d1181481548a8e2b6727cdfe15305ef0cc37bcb",
+    "guid": "e720a88199984f94b5dc976f9ca3c649",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/2-4_id.png",
+    "sha256": "da84974cb677ed9a0bc90d5c81457d72e1ea5108076d84ff12d11b4635a6d30d",
+    "guid": "7034c0109e8b4283b378afae5192a0da",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/2-4_name.png",
+    "sha256": "b70fee5e644bb3b4074437f6488aa8bd74801f0c65e528539dc3b4f7005e1c87",
+    "guid": "b56a47c6492f4e6980a8599b3147fd13",
+    "size": [
+      128,
+      32
+    ]
+  },
+  {
+    "file": "文字/3-1_id.png",
+    "sha256": "58cf89e9be6df42b64ecdbae470f9790efd314ed3a8c3154910b747adec99894",
+    "guid": "f8c950f9d49b4545ba8f64cb35847fa9",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/3-1_name.png",
+    "sha256": "0c8a144c112074f50c73d3692ff22e52d5abb6d5d9d54448c8dc3cdb79432b30",
+    "guid": "a5c040332018472a871459a0660b7f3a",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/3-2_id.png",
+    "sha256": "9219448aee17a1f1605067f391ac02894b718f98f59e4c504034a28152d28e4a",
+    "guid": "cf2b22eaa3ea40ab843666b9780e4f2d",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/3-2_name.png",
+    "sha256": "58e92ba3dc93250b0409f9b0a421cd27c63834ff54d45d819ccf9b4a830e1e07",
+    "guid": "1da5c8e609fa411a9fdfb3b87f07dd7a",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/3-3_id.png",
+    "sha256": "6eb26447cbe4190d1b83abbb0ab851cbdcf67ae2c8e8d32df0036a8994b1b5aa",
+    "guid": "f8f1effeadcc48dab324e62cdfa22acc",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/3-3_name.png",
+    "sha256": "f6534583a4fbd42f9ef8a86c7da248d29c3d6bb624edc9dc3cd6fbf2801df3d8",
+    "guid": "7705c69cfe9d4b3894d827039e10d220",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/3-4_id.png",
+    "sha256": "f42e4cc7ab19fc63aac01865ea4469808efbba9266b502b34245b05ab289205a",
+    "guid": "b5994644d0b34649b1db5bb7cfcce1e6",
+    "size": [
+      44,
+      26
+    ]
+  },
+  {
+    "file": "文字/3-4_name.png",
+    "sha256": "b5445c5e84a1e1e6de01d5f798b8fe00db27c54311a77a06974490e31bc93593",
+    "guid": "5b60c70e73d845729a0611af44644dcd",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/back_chapters.png",
+    "sha256": "fa04815ad21d12142ff24264f42131492e3366b4e505882b5a62bcfb9eb0548a",
+    "guid": "441bf37cea6c4479bc1b1819af2f94b0",
+    "size": [
+      56,
+      32
+    ]
+  },
+  {
+    "file": "文字/back_home.png",
+    "sha256": "e23dd5ccb85b1be57aca77d6bae5ae7c1be8b39fcda148f072dbac152b7144a1",
+    "guid": "7617e385aad040cba67d37c78d87d629",
+    "size": [
+      56,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter1_cardtitle.png",
+    "sha256": "72935056fe4fac8e27f9a4603574b7369b049f798bdd77a94aea3e987243d9bf",
+    "guid": "7582ce1fbdc341f1872d36de92ad29fe",
+    "size": [
+      156,
+      48
+    ]
+  },
+  {
+    "file": "文字/chapter1_count.png",
+    "sha256": "506fa77066a8be1b7085550aba68128123b56c162d7455fd562d325428ddf64b",
+    "guid": "8e0edf86135d481ca04a42cba7d7c19d",
+    "size": [
+      56,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter1_label.png",
+    "sha256": "23cb1718cf20ccac2c3e8aff9e1f70a75ef6a6f7c860496bd57623da630a383c",
+    "guid": "b0beaa4fe9f14c85a9bb397f8ad352b0",
+    "size": [
+      80,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter1_tagline.png",
+    "sha256": "b803706aeb64447761dd1eed4e5dc73f05e71233d296e47aceb039b739a59fc0",
+    "guid": "11e667d447264ac3bb45c48ef2046ead",
+    "size": [
+      224,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter1_title.png",
+    "sha256": "ebe692d633e49e573afdb9bc0c0e507b6f28f9bb635bca6f3f89b726e3defce9",
+    "guid": "a837f5b2229c418ba253610103547692",
+    "size": [
+      208,
+      64
+    ]
+  },
+  {
+    "file": "文字/chapter2_cardtitle.png",
+    "sha256": "619348161d4b5c02444229e8e593f541209852b9b50175f908c5ddb806843062",
+    "guid": "599ea30567a946c685dc2bc0d351516a",
+    "size": [
+      156,
+      48
+    ]
+  },
+  {
+    "file": "文字/chapter2_count.png",
+    "sha256": "56a7595cc3239ed446b2d5b84bc4e8c9b3f0085d96126f15ea9b42979608f3a6",
+    "guid": "964bf05c3a884370a979f6c91465df97",
+    "size": [
+      56,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter2_label.png",
+    "sha256": "ea1f9d20e80e6887abeb0d70befb98c96e16573d96829ef2e1f2968d1ee48203",
+    "guid": "a0c70d20f46e4865875267ea2d78c72f",
+    "size": [
+      80,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter2_tagline.png",
+    "sha256": "a6a06672bae545b3eb297d452b6e717ed07d7fc028146e3a4e553193b0455546",
+    "guid": "c5432c6ea87645dcada1d506c7adc9d6",
+    "size": [
+      224,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter2_title.png",
+    "sha256": "696dcf42cc04734992052ee1b6352902ee92b8820206074b393b6fc3e25524e2",
+    "guid": "73d16e24c8c5477caa10e45fe2d5cfb8",
+    "size": [
+      208,
+      64
+    ]
+  },
+  {
+    "file": "文字/chapter3_cardtitle.png",
+    "sha256": "4f91ed98a7e8d081b2403d4fafca94fa9d5462ff9f0b8ff219a7372b6ee1525e",
+    "guid": "04779c0c6e7547ce9212f968dccbda02",
+    "size": [
+      156,
+      48
+    ]
+  },
+  {
+    "file": "文字/chapter3_count.png",
+    "sha256": "56a7595cc3239ed446b2d5b84bc4e8c9b3f0085d96126f15ea9b42979608f3a6",
+    "guid": "3fb6e592559642b4b69f5811f9a6b526",
+    "size": [
+      56,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter3_label.png",
+    "sha256": "614661abdabcdebf42118cc0d701db8f7ceae261947e84a0446172b4215a6637",
+    "guid": "63ac45779967476a8a32683aeebaa5a9",
+    "size": [
+      80,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter3_tagline.png",
+    "sha256": "9970035021072cea86257678e63140d71a5a34f378670a4b3bb11eadea0faafa",
+    "guid": "db0810593d124e3bbf1877c090787b40",
+    "size": [
+      224,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter3_title.png",
+    "sha256": "cf29a6fb9459ca5908e10077f798e0ed64ecded49b6f524bee45483d68c6fbdd",
+    "guid": "14cf6a69148b40efa64180ff42e5437b",
+    "size": [
+      208,
+      64
+    ]
+  },
+  {
+    "file": "文字/chapter_hint.png",
+    "sha256": "9e4b8860cffa97e62553140b8d1dec3ea87bddc5a36541fa828f024c1b14d649",
+    "guid": "93f11a5f4acd47ddab81e70308155eec",
+    "size": [
+      224,
+      32
+    ]
+  },
+  {
+    "file": "文字/chapter_select.png",
+    "sha256": "72c9244176779145217a23c2a1eae634eceefa887c7b1af1f2d96e1e51ae3e6f",
+    "guid": "ff01096832b54001ae1059b58ad77a6a",
+    "size": [
+      208,
+      64
+    ]
+  },
+  {
+    "file": "文字/level_hint.png",
+    "sha256": "f48d62517131e7966ede9fa532864364e5a22d7aa30eb6c6ab43eccd3f6e01f3",
+    "guid": "87903319836a4a46ab37e91214775a8e",
+    "size": [
+      224,
+      32
+    ]
+  },
+  {
+    "file": "文字/level_select.png",
+    "sha256": "cafe3c3506b5aaee88876d5657081b816f6b061a14acc998cb9209f9b0f413a2",
+    "guid": "c342f25e4e744114b236c887361b7f8c",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/more_body.png",
+    "sha256": "4c3165f7c3df19c12968e480db1032c5fbfca949d544e5570e08d352905b100a",
+    "guid": "0c2610ba05bf4590a81394c9b4b5c555",
+    "size": [
+      104,
+      32
+    ]
+  },
+  {
+    "file": "文字/more_title.png",
+    "sha256": "b6a85aa3d6af1ec66c09d81330a99083e9415763a469b6f21377cbf297dafb74",
+    "guid": "666ee9c8fb124209b5f8f582f4be6b68",
+    "size": [
+      156,
+      48
+    ]
+  },
+  {
+    "file": "文字/page.png",
+    "sha256": "884bd7fba5a9d7f596c37002aa6e2dd170a84e912db3b0af08705578fd7bacdf",
+    "guid": "ea252401c788423b922f21adf15579ce",
+    "size": [
+      68,
+      30
+    ]
+  },
+  {
+    "file": "源文件/01_第1章_伤口防线_选关.aseprite",
+    "sha256": "4d2d1d14bf9d0b2975751c3d91672193b0255333c73b9caac1e6d39c71a9ccc0",
+    "guid": "83ead3e05a8d4c37b2d4835a55757b51"
+  },
+  {
+    "file": "源文件/02_第2章_持续感染_选关.aseprite",
+    "sha256": "a9f8e08a147f27caeba0c425ad21bcaa6572ae3cbb0a16b8ee454a588fa20250",
+    "guid": "815b763a2ef24392836471fc6270513c"
+  },
+  {
+    "file": "源文件/03_第3章_免疫平衡_选关.aseprite",
+    "sha256": "4092969ab3a50ff95f4192f07e87e1493476c4d157579de0991741165505e8c5",
+    "guid": "5edacc1d05ac4228b0646f35b3e8f85e"
+  },
+  {
+    "file": "源文件/04_章节选择.aseprite",
+    "sha256": "938905f8cd71fc92eddbbfb773852ac20d9ded2656fd905cfd6b87b97cb38aad",
+    "guid": "d1506a5e0a8141e8b1c96f1407ccb681"
+  },
+  {
+    "file": "源文件/独立文字图集.aseprite",
+    "sha256": "cc9658d2f27a6213c24eda3240c8bacd96b5c90d609b6112561bfbbdf4c2aa01",
+    "guid": "253209151f12489e953a75ebceb93d83"
+  },
+  {
+    "file": "源文件/通用界面组件.aseprite",
+    "sha256": "62ccf8407ee04a103baffa3cee7a527a74051ddbf7c6bbcd8c8e1d5784e0c734",
+    "guid": "a5765ec6ccd746088968025e3ca4479b"
+  },
+  {
+    "file": "章节封面/第1章_伤口防线_地图封面.png",
+    "sha256": "dec7192759207f88fab35fe2933f2973135a47514fc119754b4e3277903d96bf",
+    "guid": "616e6cc8e68044f8a6dd13df1417e9b7",
+    "size": [
+      344,
+      252
+    ]
+  },
+  {
+    "file": "章节封面/第2章_持续感染_地图封面.png",
+    "sha256": "90a062e8b6a1d17e639bdd07a2541c87096a83dde99c29da70e177dca9571475",
+    "guid": "f7c88f6154aa4c67b38ec3e5620ada76",
+    "size": [
+      344,
+      252
+    ]
+  },
+  {
+    "file": "章节封面/第3章_免疫平衡_地图封面.png",
+    "sha256": "3faf12ac7b03bc4283b6f2eae9e88bc43936d0c4962da16f8f2cebb2c8de0d91",
+    "guid": "534ea8d7ba5940c6956878e2fbfb5e00",
+    "size": [
+      344,
+      252
+    ]
+  },
+  {
+    "file": "组件/下一页箭头.png",
+    "sha256": "ed7b79c240b90138ab91bb50eac0823f8a1e1a63db43a326f79f3e382670009f",
+    "guid": "6bec07d2fe7144fe9b4c78778b2538a6",
+    "size": [
+      88,
+      76
+    ]
+  },
+  {
+    "file": "组件/卡片_常态.png",
+    "sha256": "1981aa5a75f8e2631e49ab293c997c0eb9782633e025387f28bdda24f6ad7ba9",
+    "guid": "f5fed57a2bd64a8aaf0864c4e6507282",
+    "size": [
+      192,
+      128
+    ]
+  },
+  {
+    "file": "组件/卡片_高亮.png",
+    "sha256": "39baf4e62667e64be55c3e0bb28b9db5242ec1c2464dee2424ce3a86c5abb187",
+    "guid": "4a368bbb66e2426bbd77a9fb4f6d2cbd",
+    "size": [
+      192,
+      128
+    ]
+  },
+  {
+    "file": "组件/星级_亮.png",
+    "sha256": "69b5a1d99572798e96bdfd7094bc73cecd095a0ac7f25102f90feeb3eb7f3f59",
+    "guid": "ae7d443d101349f3b0761ceaf0faee7c",
+    "size": [
+      18,
+      18
+    ]
+  },
+  {
+    "file": "组件/星级_暗.png",
+    "sha256": "86a027832fefe704e9c30c002f9525afc39d5823ce7ec010f4d5475380c99b65",
+    "guid": "2e18b95495f0466f828845412a69cf18",
+    "size": [
+      18,
+      18
+    ]
+  },
+  {
+    "file": "组件/标题底板.png",
+    "sha256": "eb9c19174ca1bc7c8079942af0cd227c091ce0ed1a76c658b90bafcc16b746d8",
+    "guid": "b6e9c963eceb4033b3b0e2d6073a6347",
+    "size": [
+      256,
+      80
+    ]
+  },
+  {
+    "file": "组件/编号底板.png",
+    "sha256": "ddf23a23c9cd698cdef0404b1e437b14b953560d0056aebc1ab693e941a3fada",
+    "guid": "91e2beff3eb34c89bd401d4e6cc3a9ec",
+    "size": [
+      128,
+      40
+    ]
+  },
+  {
+    "file": "组件/返回箭头.png",
+    "sha256": "97974dff329980d443f2ef551d8b17997bee050bda6dce5c66720e3b2ccd644c",
+    "guid": "d33cdc449534461a98d8f7dfa6573da2",
+    "size": [
+      88,
+      76
+    ]
+  },
+  {
+    "file": "背景/第一章_伤口防线_纯背景.png",
+    "sha256": "d8dba48d7f5c6d1410b75e8493c66cfe906cdb136a2a8755437f61ca31ad0407",
+    "guid": "36ca6743ab8448a898770c7091e8ced7",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "背景/第三章_免疫平衡_纯背景.png",
+    "sha256": "d1dd7854ea8060633fc34db45bc07b852f3d51ff782a4e9e8dd2ea7104dc9385",
+    "guid": "654538441b334e55a4bc4f0b4e8f85f8",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "背景/第二章_持续感染_纯背景.png",
+    "sha256": "0c05d0f03dda75898da183f284c2334faf4ea09fa97d07bb1aec63334e5b860e",
+    "guid": "8ab37fc5ed534e259a3ac5187b3cc510",
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "file": "背景/选章界面_纯背景.png",
+    "sha256": "89b7c5a01c6412950ca13bc4232b8c7e012bc5c2fd31764cf2772cc5c8e86abc",
+    "guid": "890b415e876f4f16ad53619894c36e69",
+    "size": [
+      1600,
+      900
+    ]
+  }
+]

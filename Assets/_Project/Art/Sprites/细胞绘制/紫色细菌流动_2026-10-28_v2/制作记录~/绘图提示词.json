@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit.\nEdit target: the supplied Chinese pixel-art game main menu.\nCreate a CLEAN BACKGROUND PLATE for animation by removing ONLY the FREE-FLOATING purple/magenta bacteria, viruses and small purple debris inside the diagonal pink-purple channel running from the upper-right wound to the lower-left edge. Fill their former pixels with the uninterrupted pink/lavender channel fluid, following its existing subtle pixel shading and thin rim. Keep the channel visibly intact and empty. Do not remove the purple organism being held in the mouth of the large blue white-blood-cell at the lower-right, since it belongs to that foreground character.\nABSOLUTELY preserve all blue/white cells, the green tissue beads, all yellow antibodies and cyan particles outside the channel, the Chinese title 胞卫战 and the four buttons/labels, all anatomy, framing and colors. Do not add new objects, repaint the menu design, change the layout or shift the channel. Keep the original crisp pixel-art texture and palette. Match the source canvas exactly (1672x941) if possible. Output only the complete cleaned menu background, no labels, masks or side-by-side layout.",
+  "source": "像素精修_2026-10-21_v1/主界面/胞卫战_主界面_v1.png",
+  "output": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-5f8ece45-9256-4902-8e60-24fe8dd61904.png",
+  "compositing": "Aseprite; only channel purple pixels replaced, original UI protected; native bacteria cutouts"
+}

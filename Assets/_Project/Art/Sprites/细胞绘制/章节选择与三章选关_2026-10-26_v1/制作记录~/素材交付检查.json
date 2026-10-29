@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "canvas": [
+    1600,
+    900
+  ],
+  "completeMenuImages": 4,
+  "chapterStageCounts": [
+    5,
+    4,
+    4
+  ],
+  "independentComponents": 8,
+  "mapThumbnails": 13,
+  "chapterCovers": 3,
+  "exactTextImages": 50,
+  "editableAsepriteFiles": 6,
+  "layersPerMenu": 7,
+  "normalStateUnselected": true,
+  "starState": "empty neutral example; bright and dark sprites exported separately, not baked into blank cards",
+  "highestScoreRow": false,
+  "lockedProgressionInvented": false,
+  "opaqueBackgroundsAndScreens": true,
+  "binaryTransparentUiSprites": true,
+  "originalMapHashesUnchanged": true,
+  "cardBoundsAndNoOverlap": true,
+  "allCharacterCoverageChecked": true,
+  "uniqueGuids": true,
+  "frameNineSliceBorder": 24,
+  "genericSeparatePagingArt": true,
+  "runtimeStatus": "Art and source delivery only. Existing main menu/level selection, chapter logic and scene availability not modified or runtime-tested."
+}

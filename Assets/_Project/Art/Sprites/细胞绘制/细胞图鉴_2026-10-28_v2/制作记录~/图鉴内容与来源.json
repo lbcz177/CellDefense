@@ -1,0 +1,414 @@
+{
+  "date": "2026-10-28",
+  "art": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v1",
+  "entries": [
+    {
+      "id": "neutrophil",
+      "number": 1,
+      "category": 0,
+      "name": "近卫塔",
+      "role": "前线采样 · 单体输出",
+      "stats": [
+        "建造 25 ATP    生命 100",
+        "伤害 25    射程 2.5 格"
+      ],
+      "traits": [
+        "命中敌人时采集其当前抗原。",
+        "向三格内一跳邻居共享采样。"
+      ],
+      "tactics": [
+        "与抗体塔相邻布置，建立识别链。",
+        "射程交叉覆盖路线，分担前线压力。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/01_近卫.png",
+      "source": "Assets/_Project/Data/Towers/TowerDefinition.asset",
+      "sourceSha256": "ce7b43d128e239324ee58fe530f8822f06933d8368f7e91a2aed93df91473d9a",
+      "data": {
+        "buildCost": 25,
+        "damage": 25,
+        "attackRange": 2.5,
+        "attackInterval": 1
+      }
+    },
+    {
+      "id": "antibody",
+      "number": 2,
+      "category": 0,
+      "name": "抗体标记塔",
+      "role": "抗原记忆 · 标记增伤",
+      "stats": [
+        "建造 40 ATP    生命 100",
+        "伤害 0    射程 3 格"
+      ],
+      "traits": [
+        "记住共享的抗原八秒。",
+        "标记已知目标四秒，使其多受伤害15%。"
+      ],
+      "tactics": [
+        "需要近卫先采样，再进行标记。",
+        "与巨噬细胞配合，提高吞噬门槛。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/06_抗体细胞.png",
+      "source": "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset",
+      "sourceSha256": "06365a97ed6b043cfea9d910798c36c32323014f3e65c07eb1026d05ed3500ca",
+      "data": {
+        "buildCost": 40,
+        "damage": 0,
+        "attackRange": 3,
+        "attackInterval": 1.5
+      }
+    },
+    {
+      "id": "phagocyte",
+      "number": 3,
+      "category": 0,
+      "name": "巨噬细胞",
+      "role": "前排承伤 · 吞噬清除",
+      "stats": [
+        "建造 25 ATP    生命 250",
+        "伤害 25    射程 2.5 格"
+      ],
+      "traits": [
+        "可吞噬生命不高于20的普通目标。",
+        "标记后门槛提高到50，消化需三秒。"
+      ],
+      "tactics": [
+        "可同时拦截两名敌人。",
+        "首领、有护盾或免疫目标不能吞噬。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/05_巨噬细胞.png",
+      "source": "Assets/_Project/Data/Towers/TowerDefinition 1.asset",
+      "sourceSha256": "b22cefc4670f2ae410082e9b3d43738ef843f9633bc496ecba99ba554d8df1fe",
+      "data": {
+        "buildCost": 25,
+        "maxHealth": 250,
+        "damage": 25,
+        "attackRange": 2.5,
+        "attackInterval": 1
+      }
+    },
+    {
+      "id": "fibrin",
+      "number": 4,
+      "category": 0,
+      "name": "纤维蛋白壁垒",
+      "role": "拦截全部 · 范围减速",
+      "stats": [
+        "建造 30 ATP    生命 500",
+        "伤害 0    射程 2.5 格"
+      ],
+      "traits": [
+        "拦截经过自身位置的全部敌人。",
+        "射程内减速40%，不改变行进路线。"
+      ],
+      "tactics": [
+        "放在主路交战点，为后排争取时间。",
+        "生命耗尽后及时补建；自身不输出。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/02_纤维蛋白壁垒.png",
+      "source": "Assets/_Project/Data/Towers/FibrinTowerDefinition.asset",
+      "sourceSha256": "a224d46d4701a5ff3144bef28e50791ce2f22a4b7685f4f2d845e2fb5266a8a2",
+      "data": {
+        "buildCost": 30,
+        "maxHealth": 500,
+        "damage": 0,
+        "attackRange": 2.5,
+        "attackInterval": 1
+      }
+    },
+    {
+      "id": "lysosome",
+      "number": 5,
+      "category": 0,
+      "name": "溶酶体酸化炮",
+      "role": "持续酸区 · 装甲破壳",
+      "stats": [
+        "建造 45 ATP    生命 100",
+        "伤害 15    射程 3 格"
+      ],
+      "traits": [
+        "命中后留下持续三秒的酸区。",
+        "酸区每秒造成10点伤害，可叠加。"
+      ],
+      "tactics": [
+        "配合壁垒集中敌人，发挥范围伤害。",
+        "酸伤可以破除重甲敌人的装甲。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/03_酸化炮.png",
+      "source": "Assets/_Project/Data/Towers/AcidTowerDefinition.asset",
+      "sourceSha256": "03cb3185fdfb5824971e25de433210af4c176c02ce3886815994bf663b0a84b7",
+      "data": {
+        "buildCost": 45,
+        "damage": 15,
+        "attackRange": 3,
+        "attackInterval": 2
+      }
+    },
+    {
+      "id": "neural",
+      "number": 6,
+      "category": 0,
+      "name": "神经脉冲刺突",
+      "role": "连锁打击 · 短暂停顿",
+      "stats": [
+        "建造 50 ATP    生命 100",
+        "伤害 45    射程 3 格"
+      ],
+      "traits": [
+        "攻击最多连锁三个目标。",
+        "伤害逐跳递减，并使目标停顿0.2秒。"
+      ],
+      "tactics": [
+        "适合处理靠近的一群敌人。",
+        "连锁半径2.5格，配合聚怪位置。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/图标/04_神经脉冲.png",
+      "source": "Assets/_Project/Data/Towers/NeuralPulseTowerDefinition.asset",
+      "sourceSha256": "5289581992de92f8e32d79b04b334df5df5fb166a51c19513b52da4dac766f92",
+      "data": {
+        "buildCost": 50,
+        "damage": 45,
+        "attackRange": 3,
+        "attackInterval": 2
+      }
+    },
+    {
+      "id": "staph",
+      "number": 7,
+      "category": 1,
+      "name": "葡萄球菌群",
+      "role": "基础入侵者 · 群体推进",
+      "stats": [
+        "生命 100    基础速度 2",
+        "击杀 15 ATP    漏怪损伤 1"
+      ],
+      "traits": [
+        "常规敌人，生命和速度较均衡。",
+        "葡萄状簇集外形便于辨认。"
+      ],
+      "tactics": [
+        "用交叉火力持续削减数量。",
+        "配合壁垒和范围酸区处理成群目标。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/07_staph_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/StaphylococcusDefinition.asset",
+      "sourceSha256": "baa0d09183deedeefc599ea37c50e96b5598f5bfd79860453e3d4a671cd5a57e",
+      "data": {
+        "maxHealth": 100,
+        "baseMoveSpeed": 2,
+        "killReward": 15,
+        "leakDamage": 1,
+        "isBoss": 0
+      }
+    },
+    {
+      "id": "flagellate",
+      "number": 8,
+      "category": 1,
+      "name": "鞭毛双球菌",
+      "role": "高速入侵者 · 快速穿线",
+      "stats": [
+        "生命 55    基础速度 3.2",
+        "击杀 12 ATP    漏怪损伤 1"
+      ],
+      "traits": [
+        "基础速度较快，但生命较低。",
+        "双球体与鞭毛是主要识别特征。"
+      ],
+      "tactics": [
+        "提前布置火力，不要等接近核心。",
+        "用减速或停顿增加输出时间。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/08_flagellate_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/FlagellateDefinition.asset",
+      "sourceSha256": "4c5cd82a8601a6b8ee34185273873acae7e64fe91f5be11c444cc457140cb20f",
+      "data": {
+        "maxHealth": 55,
+        "baseMoveSpeed": 3.2,
+        "killReward": 12,
+        "leakDamage": 1,
+        "isBoss": 0
+      }
+    },
+    {
+      "id": "bacillus",
+      "number": 9,
+      "category": 1,
+      "name": "重甲芽孢杆菌",
+      "role": "重甲入侵者 · 抗伤推进",
+      "stats": [
+        "生命 240    基础速度 1.2",
+        "击杀 24 ATP    漏怪损伤 2"
+      ],
+      "traits": [
+        "完整装甲减少25%的所受伤害。",
+        "酸性伤害可以使装甲暂时失效。"
+      ],
+      "tactics": [
+        "先用酸化炮破壳，再集中输出。",
+        "减速和拦截能延长破壳窗口。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/09_bacillus_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/ArmoredBacillusDefinition.asset",
+      "sourceSha256": "95e19afad71f80b38f6b44115fffb22bed54eb9c7fac4c3276b455139280831e",
+      "data": {
+        "maxHealth": 240,
+        "baseMoveSpeed": 1.2,
+        "killReward": 24,
+        "leakDamage": 2,
+        "isBoss": 0
+      }
+    },
+    {
+      "id": "spore",
+      "number": 10,
+      "category": 1,
+      "name": "真菌孢子",
+      "role": "真菌召唤物 · 快速增援",
+      "stats": [
+        "生命 30    基础速度 2.4",
+        "击杀 0 ATP    漏怪损伤 1"
+      ],
+      "traits": [
+        "由变异超级真菌在阶段变化时召唤。",
+        "生命较低、移动较快，击杀不奖励ATP。"
+      ],
+      "tactics": [
+        "保留范围输出，及时清理增援。",
+        "召唤物不计入计划敌人的评分数量。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/10_fungal_spore_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/FungalSporeDefinition.asset",
+      "sourceSha256": "eeb92945dc234c0625c2c5d4bcb801b1a1233d66a2f582a39e1eac831da2e0d4",
+      "data": {
+        "maxHealth": 30,
+        "baseMoveSpeed": 2.4,
+        "killReward": 0,
+        "leakDamage": 1,
+        "isBoss": 0
+      }
+    },
+    {
+      "id": "clone",
+      "number": 11,
+      "category": 1,
+      "name": "病毒复制体",
+      "role": "病毒召唤物 · 分散压力",
+      "stats": [
+        "生命 45    基础速度 2.6",
+        "击杀 0 ATP    漏怪损伤 1"
+      ],
+      "traits": [
+        "由病毒母体生成的复制体。",
+        "移动较快，击杀不奖励ATP。"
+      ],
+      "tactics": [
+        "兼顾母体与复制体，防止漏怪。",
+        "召唤物不计入计划敌人的评分数量。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/11_virus_clone_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/VirusCloneDefinition.asset",
+      "sourceSha256": "25ffbaf3de5b9981622fbceab906ad7e8341e0cd2f24480e6d653111c274e26c",
+      "data": {
+        "maxHealth": 45,
+        "baseMoveSpeed": 2.6,
+        "killReward": 0,
+        "leakDamage": 1,
+        "isBoss": 0
+      }
+    },
+    {
+      "id": "fungal",
+      "number": 12,
+      "category": 1,
+      "name": "变异超级真菌",
+      "role": "首领 · 孢子增援",
+      "stats": [
+        "生命 800    基础速度 0.7",
+        "击杀 60 ATP    漏怪损伤 5"
+      ],
+      "traits": [
+        "两次阶段变化各召唤三枚孢子。",
+        "后期移动加快，不能被巨噬吞噬。"
+      ],
+      "tactics": [
+        "以壁垒承伤，并预留清理孢子的火力。",
+        "集中主目标时兼顾周围小型增援。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/12_fungal_boss_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/FungalBossDefinition.asset",
+      "sourceSha256": "91a9483100172e9481190fbcea006510d27496fadee54fc983ee8d7d9bbdb3c5",
+      "data": {
+        "maxHealth": 800,
+        "baseMoveSpeed": 0.7,
+        "killReward": 60,
+        "leakDamage": 5,
+        "isBoss": 1
+      }
+    },
+    {
+      "id": "membrane",
+      "number": 13,
+      "category": 1,
+      "name": "细菌生物膜核心",
+      "role": "首领 · 护盾支援",
+      "stats": [
+        "生命 1400    基础速度 0.65",
+        "击杀 100 ATP    漏怪损伤 6"
+      ],
+      "traits": [
+        "周期性补充护盾并恢复生命。",
+        "还会支援附近最多三名普通敌人。"
+      ],
+      "tactics": [
+        "集中火力，避免长时间分散输出。",
+        "先打掉护盾，再持续压低其生命。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/13_membrane_boss_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/MembraneBossDefinition.asset",
+      "sourceSha256": "3a6341a9ef8fbc6cfc8404eb87bd1ba16c3298b6d1cab92399f646d6d107785c",
+      "data": {
+        "maxHealth": 1400,
+        "baseMoveSpeed": 0.65,
+        "killReward": 100,
+        "leakDamage": 6,
+        "isBoss": 1
+      }
+    },
+    {
+      "id": "virus",
+      "number": 14,
+      "category": 1,
+      "name": "病毒母体",
+      "role": "首领 · 复制与变异",
+      "stats": [
+        "生命 2000    基础速度 0.8",
+        "击杀 150 ATP    漏怪损伤 8"
+      ],
+      "traits": [
+        "生成复制体，并在阶段变化时换抗原。",
+        "后期移动加快，不能被巨噬吞噬。"
+      ],
+      "tactics": [
+        "变异后重新采样，恢复抗体标记。",
+        "准备范围伤害，防止复制体穿过防线。"
+      ],
+      "reference": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/像素精修_2026-10-21_v1/动画/14_virus_boss_move/animation_sheet.png",
+      "source": "Assets/_Project/Data/Enemies/VirusBossDefinition.asset",
+      "sourceSha256": "3aa8fcfdaf89abe68f90cd470b708d7647f84ad6b813ba83a8591e0b85cd1809",
+      "data": {
+        "maxHealth": 2000,
+        "baseMoveSpeed": 0.8,
+        "killReward": 150,
+        "leakDamage": 8,
+        "isBoss": 1
+      }
+    }
+  ],
+  "canvas": [
+    1280,
+    720
+  ],
+  "scope": "6 implemented defenses + 8 current enemies including bosses and summons; exclude duplicate legacy placeholder definitions and planned units",
+  "footer": "基础属性，不含升级与关卡倍率"
+}

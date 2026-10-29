@@ -1,0 +1,79 @@
+{
+  "tests": {
+    "1": {
+      "id": "2",
+      "testcasecount": "9",
+      "result": "Passed",
+      "total": "9",
+      "passed": "9",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-29 05:05:15Z",
+      "end-time": "2026-10-29 05:07:28Z",
+      "duration": "132.3861288"
+    },
+    "3": {
+      "id": "2",
+      "testcasecount": "1",
+      "result": "Passed",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-29 07:05:42Z",
+      "end-time": "2026-10-29 07:05:45Z",
+      "duration": "2.6839851"
+    }
+  },
+  "testedFiles": [
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\炎症与引导_2026-10-29_v1\\inflammation.png",
+      "sha256": "2667c9b6663cfc4d90b111cb9981aeafc5d8d3f6b3fd73c242fcc435229c8cc0"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\炎症与引导_2026-10-29_v1\\particle.png",
+      "sha256": "02be9c012f15c463c53bc5ddf149c19294dceedc5d64b9b9381e0135729f4194"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\炎症与引导_2026-10-29_v1\\tissue.png",
+      "sha256": "b9e20aa53366313c7f1ccf3f4cb868068ae047f25e0436e864d07b1a7c2fab3b"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\炎症与引导_2026-10-29_v1\\tutorial.png",
+      "sha256": "d373a1a5039bcfed15b969f809e7e8e367f8520e9cdf2cd20de74ce82bcfb2a9"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\炎症与引导_2026-10-29_v1\\warning.png",
+      "sha256": "bf9d21fc4ade9a4d4eaacf489842ddc9abe44a26e51dc845b82d3a71b53f9053"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\FirstLevelTutorial.cs",
+      "sha256": "b905bc12127959fee9c18de90cde73ca6c57f73e858964f66bcc744f33a7c45d"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\UI\\GuidanceArtwork.cs",
+      "sha256": "37994299450f40adac61af5c64150b6abb6f923b95b4eced5d8cef1e8019c041"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\OpenField\\InflammationRegionVisual.cs",
+      "sha256": "2be694d07ecd90dd650c5687e558221c2ff0ed44d4c46ad0aba6f48284b08083"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\OpenField\\ChapterThreeInflammation.cs",
+      "sha256": "c2cb77b06f000d95d52d8df8c9df7c0a7c30772996235ca347f469a8799884b7"
+    },
+    {
+      "path": "Assets\\_Project\\Resources\\GuidanceArtwork.asset",
+      "sha256": "16af210e0e0f1b22d21cab719dbe22c47d43010e9e4e9d35ebed1340bae443bc"
+    }
+  ],
+  "screenshots": "验证_v3~"
+}

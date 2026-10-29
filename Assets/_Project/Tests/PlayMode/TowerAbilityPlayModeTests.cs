@@ -260,8 +260,10 @@ public sealed class TowerAbilityPlayModeTests
         float until = (float)Field(stun, "stunnedUntil");
         LineRenderer line = (LineRenderer)Field(neural, "pulse");
         Assert.That(line.enabled, Is.True);
-        Assert.That(line.positionCount, Is.EqualTo(4));
-        Assert.That(line.GetPosition(3), Is.EqualTo(third.transform.position));
+        Assert.That(line.positionCount, Is.GreaterThan(4), "The committed chain now has intermediate zigzag vertices.");
+        Assert.That(line.GetPosition(line.positionCount-1), Is.EqualTo(third.transform.position));
+        var committed=(List<Vector3>)Field(neural,"pulseNodes");
+        Assert.That(committed,Is.EqualTo(new[]{neural.transform.position,first.transform.position,second.transform.position,third.transform.position}));
         Call(neural, "Attack", first, 45f, pool);
         Assert.That(Field(stun, "stunnedUntil"), Is.EqualTo(until));
         yield return new WaitForSeconds(.3f);

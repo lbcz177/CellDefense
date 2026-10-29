@@ -5,6 +5,7 @@ using UnityEngine;
 public class AntibodyAttackBehaviour : TowerAttackBehaviour
 {
     [SerializeField, Min(0.01f)] private float markDuration = 4f;
+    public float SupportMarkDurationBonus { get; set; }
     [SerializeField] private TimedSpriteIndicator memoryIndicator;
     private readonly Dictionary<AntigenId, float> knownAntigens = new Dictionary<AntigenId, float>();
     private readonly List<AntigenId> expiredAntigens = new List<AntigenId>();
@@ -109,6 +110,8 @@ public class AntibodyAttackBehaviour : TowerAttackBehaviour
         }
 
         Projectile projectile = projectilePool.Get(transform.position);
-        projectile.InitializeMark(target, markDuration);
+        projectile.InitializeMark(target, markDuration + SupportMarkDurationBonus);
+        CellCombatFeedback.PrepareProjectile(projectile, CellImpactKind.Antibody);
+        CellCombatFeedback.Release(CellImpactKind.Antibody, this, target.transform.position);
     }
 }

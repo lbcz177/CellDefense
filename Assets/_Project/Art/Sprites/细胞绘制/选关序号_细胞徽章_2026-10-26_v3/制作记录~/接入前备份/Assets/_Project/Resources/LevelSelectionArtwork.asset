@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7526877cf7e445cac5a7c600802a6a8, type: 3}
+  m_Name: LevelSelectionArtwork
+  m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: 36ca6743ab8448a898770c7091e8ced7, type: 3}
+  node: {fileID: 21300000, guid: cf606f8867fb42a5b81a0becee24e2d6, type: 3}
+  selectedNode: {fileID: 21300000, guid: 9727bdcf668c4cc8a00e3232c389e88d, type: 3}
+  panel: {fileID: 21300000, guid: 96184879cd364df0bce14723aaf1125a, type: 3}
+  button: {fileID: 21300000, guid: 7be0ee267f2a4c13b4cfc8ad16c51f23, type: 3}
+  selectedButton: {fileID: 21300000, guid: fa0f42b5e2084c91adf4bf6688d42227, type: 3}
+  historyLabel: {fileID: 21300000, guid: 6f7adbd347484f108157e5ef3d635bd8, type: 3}
+  bestStarsLabel: {fileID: 21300000, guid: de61900f4746409bafe11ab27d45871f, type: 3}
+  unplayedLabel: {fileID: 21300000, guid: a1aa81ddfce2465b9aa6cd499eeb468a, type: 3}
+  startLabel: {fileID: 21300000, guid: 0f9920fb32f14f15837414133a98a795, type: 3}
+  returnLabel: {fileID: 21300000, guid: 2f65b9d64fcf436ab4d261563215dd5a, type: 3}
+  overviewHint: {fileID: 21300000, guid: d400c8f1ba9e4132a64a77a7072ebaff, type: 3}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chapter1",
+    "name": "第一章_伤口防线_纯背景",
+    "transparent": false,
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/第一章_伤口防线_纯背景.png",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-a18f49ed-4e2b-43f9-be05-3cf5deb4eaa0.png",
+    "raw": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/制作记录~/原始生成/chapter1_imagegen.png",
+    "sourceSha256": "4a737b6dfc9ba780c7127c46c9cc5cc73b39f4a2a97be72843a1a61d29ed6094"
+  },
+  {
+    "id": "chapter2",
+    "name": "第二章_持续感染_纯背景",
+    "transparent": false,
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/第二章_持续感染_纯背景.png",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-316c3c8c-d28e-476c-b661-64bad2dfb779.png",
+    "raw": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/制作记录~/原始生成/chapter2_imagegen.png",
+    "sourceSha256": "fbd4c66b217537275ab1b32029a936e3fe882dcadaca25be997706e1396a5748"
+  },
+  {
+    "id": "chapter3",
+    "name": "第三章_免疫平衡_纯背景",
+    "transparent": false,
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/第三章_免疫平衡_纯背景.png",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-a14f8be3-3d6b-4495-acd2-24a2f9c5ba48.png",
+    "raw": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/制作记录~/原始生成/chapter3_imagegen.png",
+    "sourceSha256": "f3f80ee2e40e3c732bc794c350419329797fc6451a142337e04ca59082c3fc6e"
+  },
+  {
+    "id": "chapters",
+    "name": "选章界面_纯背景",
+    "transparent": false,
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/选章界面_纯背景.png",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-83c26bfe-2bfd-4a55-b4ec-311972938175.png",
+    "raw": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/制作记录~/原始生成/chapters_imagegen.png",
+    "sourceSha256": "478f32fffc439503dfe041539a8448849ab658bc3a8d67fc03c17a80edeadc9e"
+  },
+  {
+    "id": "kit",
+    "name": "通用界面组件_原始图集",
+    "transparent": true,
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/制作记录~/原始生成/通用界面组件_原始图集.png",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-5ea21363-f117-4e3f-8917-52126a40caf7.png",
+    "raw": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/制作记录~/原始生成/kit_imagegen.png",
+    "sourceSha256": "c7714492a852651a1309841236bf68e49e5b33a9d96c870266841160ef46aa1b"
+  }
+]

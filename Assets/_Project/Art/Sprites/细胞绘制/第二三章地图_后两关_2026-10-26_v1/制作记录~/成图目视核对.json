@@ -1,0 +1,27 @@
+{
+  "reviewedFiles": [
+    "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第二章/2-3_长廊窗口.png",
+    "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第二章/2-4_生物膜边缘.png",
+    "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第三章/3-3_过热前沿.png",
+    "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第三章/3-4_双灶组织.png"
+  ],
+  "entryCounts": {
+    "2-3": 2,
+    "2-4": 2,
+    "3-3": 2,
+    "3-4": 2
+  },
+  "detachedIslandCounts": {
+    "2-3": 2,
+    "2-4": 2,
+    "3-3": 3,
+    "3-4": 1
+  },
+  "3-4AttachedSideShoulders": 2,
+  "singleCoreEach": true,
+  "noFixedPadsGridTextUnits": true,
+  "regionMasksOnVisibleOpenFloor": true,
+  "thirdChapterNeutralBaseAndSeparateRegionLayers": true,
+  "previousApprovedFourMapPngHashesUnchanged": true,
+  "note": "Manual visual review of final full images and composite overview. Organic contours and entry centers remain approximate; initial graybox paths are not final scene coordinates or a runtime validation."
+}

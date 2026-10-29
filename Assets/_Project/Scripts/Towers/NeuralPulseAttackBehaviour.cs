@@ -16,6 +16,8 @@ public class NeuralPulseAttackBehaviour : TowerAttackBehaviour
     private LineRenderer pulse;
     private Material pulseMaterial;
     private float pulseUntil;
+    private readonly List<Vector3> pulseNodes = new List<Vector3>(9);
+    private readonly List<Vector3> pulsePoints = new List<Vector3>(96);
     private TowerController tower;
     private EnemyRangeQuery query;
     private readonly List<EnemyTargetSnapshot> chain = new List<EnemyTargetSnapshot>(8);
@@ -47,6 +49,7 @@ public class NeuralPulseAttackBehaviour : TowerAttackBehaviour
         EnemyRangeQuery.RequirePositive(damage, nameof(damage));
         BuildChain(target);
         ShowChain();
+        CellCombatFeedback.Release(CellImpactKind.Neural, this, target.transform.position);
 
         // Capture the complete chain before a lethal hit can recycle its origin.
         for (int i = 0; i < chain.Count; i++)
@@ -68,6 +71,7 @@ public class NeuralPulseAttackBehaviour : TowerAttackBehaviour
                     reportedMissingStunState = true;
                 }
             }
+            CellCombatFeedback.Impact(CellImpactKind.Neural, hit.Position);
             hit.Enemy.TakeDamage(new EnemyDamageContext(hitDamage, EnemyDamageKind.Neural));
         }
         chain.Clear();
@@ -134,12 +138,32 @@ public class NeuralPulseAttackBehaviour : TowerAttackBehaviour
                 pulse.sortingOrder = body.sortingOrder + 2;
             }
         }
-        pulse.positionCount = chain.Count + 1;
-        pulse.SetPosition(0, transform.position);
-        for (int i = 0; i < chain.Count; i++) pulse.SetPosition(i + 1, chain[i].Position);
+        pulseNodes.Clear();pulseNodes.Add(transform.position);
+        for (int i = 0; i < chain.Count; i++) pulseNodes.Add(chain[i].Position);
+        ShapePulse(0);
         pulse.startColor = pulse.endColor = pulseColor;
         pulseUntil = Time.time + pulseVisibleDuration;
         pulse.enabled = true;
+    }
+
+    private void ShapePulse(int phase)
+    {
+        pulsePoints.Clear();if(pulseNodes.Count<2)return;
+        pulsePoints.Add(pulseNodes[0]);
+        for(int segment=1;segment<pulseNodes.Count;segment++)
+        {
+            Vector3 from=pulseNodes[segment-1],to=pulseNodes[segment],delta=to-from;
+            Vector3 across=new Vector3(-delta.y,delta.x,0f).normalized;
+            int steps=Mathf.Clamp(Mathf.CeilToInt(delta.magnitude/.18f),2,22);
+            for(int step=1;step<=steps;step++)
+            {
+                Vector3 point=Vector3.Lerp(from,to,(float)step/steps);
+                if(step<steps)point+=across*((step+segment+phase)%2==0 ? .055f : -.055f);
+                pulsePoints.Add(point);
+            }
+        }
+        pulse.positionCount=pulsePoints.Count;
+        for(int i=0;i<pulsePoints.Count;i++)pulse.SetPosition(i,pulsePoints[i]);
     }
 
     private void Update()
@@ -148,6 +172,7 @@ public class NeuralPulseAttackBehaviour : TowerAttackBehaviour
         if (Time.time >= pulseUntil) pulse.enabled = false;
         else
         {
+            if(Time.deltaTime>0f)ShapePulse(Mathf.FloorToInt(Time.time*30f)%3);
             Color color = pulseColor;
             color.a *= Mathf.Clamp01((pulseUntil - Time.time) / pulseVisibleDuration);
             pulse.startColor = pulse.endColor = color;

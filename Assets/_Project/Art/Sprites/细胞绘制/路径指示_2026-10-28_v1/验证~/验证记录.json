@@ -1,0 +1,27 @@
+{
+  "passed": 2,
+  "failed": 0,
+  "scenes": 5,
+  "resolution": [
+    1280,
+    720
+  ],
+  "files": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/路径指示_2026-10-28_v1/验证~/OpenFieldLevel03-yellow-routes-next.png",
+      "sha256": "64e1b396ce99aca91513a6c0ca7fd47a42c867cf1e60ed58e0be8067159823d6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/路径指示_2026-10-28_v1/验证~/OpenFieldLevel03-yellow-routes.png",
+      "sha256": "9ce82f326fb035c84e47cfd322beeac0185bb66fdb19d37383bfe116f9222803"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/路径指示_2026-10-28_v1/验证~/OpenFieldPrototype-yellow-routes-next.png",
+      "sha256": "cd978345418d5480742376b13c1e1bb565f4396b387957415bfd85bfb6d464bc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/路径指示_2026-10-28_v1/验证~/OpenFieldPrototype-yellow-routes.png",
+      "sha256": "89e28d850e365187bb8c439c895e121ff053bb1d26b2ef4fa5342eeaba2de42a"
+    }
+  ]
+}

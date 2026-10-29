@@ -44,6 +44,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     [SerializeField] private WaveSequenceDefinition waveSequence;
     [SerializeField, Min(0)] private int initialATP = 100;
     [SerializeField, Min(0)] private int betweenRoundATP = 40;
+    [SerializeField, Min(.1f)] private float autoWaveDelay = 10f;
     [SerializeField, Min(1)] private int initialCoreLife = 10;
     [SerializeField, Min(0.1f)] private float enemySpeedMultiplier = 0.85f;
 
@@ -109,13 +110,20 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     private int roundIndex;
     private int selectedTowerIndex;
     private bool allEnemiesSpawned;
+    private float autoWaveRemaining = -1f;
     private Func<Vector3, TowerCombatState> defenderLookup;
     private Func<bool> assaultCheck;
 
     public OpenFieldPhase Phase { get; private set; }
     public int CurrentRound => roundIndex + 1;
+    public bool HasAutoWaveCountdown => autoWaveRemaining >= 0f && HasActiveRun;
+    public float AutoWaveSecondsRemaining => Mathf.Max(0f, autoWaveRemaining);
     public Vector2Int? SelectedBuildCell => selectedBuildCell;
     public IEnumerable<TowerCombatState> Defenders => cellDefenders.Values;
+    public IEnumerable<EnemyController> ActiveEnemies => activeEnemies;
+    public Vector2 WorldToLogicalPosition(Vector3 world) => new Vector2(
+        (world.x-transform.position.x)/cellSize+width*.5f,
+        (world.y-transform.position.y)/cellSize+height*.5f);
     public event Action SelectionChanged;
     public event Action RoundStateChanged;
     public event Action<TowerController> TowerBuilt;
@@ -149,12 +157,36 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         }
     }
     public string DefenseStatusText => "壁垒可承伤 · 拦截全部经过的敌人";
+    public string UpcomingWaveSummary
+    {
+        get
+        {
+            int index = UpcomingRound - 1;
+            if (index < 0 || index >= TotalRounds) return "最后一波";
+            WaveDefinition wave = waveSequence.GetWave(index);
+            var parts = new List<string>();
+            for (int group = 0; group < wave.GroupCount; group++)
+                parts.Add($"入口{wave.GetGroupEntrance(group) + 1} {wave.GetGroupEnemy(group).DisplayName}×{wave.GetGroupCount(group)}");
+            return string.Join(" / ", parts);
+        }
+    }
+
+    public bool UpcomingUsesEntrance(int entrance)
+    {
+        int index = Phase == OpenFieldPhase.Planning ? roundIndex : roundIndex + 1;
+        if (grid == null || entrance < 0 || entrance >= grid.SpawnCount || index < 0 || index >= TotalRounds) return false;
+        WaveDefinition wave = waveSequence.GetWave(index);
+        for (int group = 0; group < wave.GroupCount; group++)
+            if (wave.GetGroupEntrance(group) == entrance ||
+                (wave.GetGroupEntrance(group) < 0 && entrance < Mathf.Min(grid.SpawnCount, wave.ScheduledEnemyCount))) return true;
+        return false;
+    }
 
     private void Awake()
     {
-        if (waveSequence == null || waveSequence.WaveCount != 3)
+        if (waveSequence == null || waveSequence.WaveCount < 1)
         {
-            throw new InvalidOperationException("Open field prototype requires a three-wave sequence.");
+            throw new InvalidOperationException("Open field levels require at least one wave.");
         }
         if (towerDefinitions == null || towerDefinitions.Length == 0)
         {
@@ -192,6 +224,9 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         {
             WaveDefinition wave = waveSequence.GetWave(i);
             wave.Validate();
+            for (int group = 0; group < wave.GroupCount; group++)
+                if (wave.GetGroupEntrance(group) >= grid.SpawnCount)
+                    throw new InvalidOperationException("Wave group entrance is outside this map.");
             scheduledEnemyCount = checked(scheduledEnemyCount + wave.ScheduledEnemyCount);
         }
         projectilePool.Initialize();
@@ -261,6 +296,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             return;
         }
         if (Input.GetKeyDown(KeyCode.Space) && StartAssault()) return;
+        if (TickAutoWave(Time.deltaTime)) return;
 
         if (!CanBuild)
         {
@@ -782,9 +818,17 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         return true;
     }
 
+    private bool TickAutoWave(float deltaTime)
+    {
+        if (!isActiveAndEnabled || IsPaused || !HasAutoWaveCountdown || !CanStartWave) return false;
+        autoWaveRemaining = Mathf.Max(0f, autoWaveRemaining - Mathf.Max(0f, deltaTime));
+        return autoWaveRemaining <= 0f && StartAssault();
+    }
+
     private bool TryPrepareAssault()
     {
         if (!CanStartWave) return false;
+        autoWaveRemaining = -1f;
         if (Phase == OpenFieldPhase.Assault)
         {
             // Survivors and their summons still reference these paths; reuse them until all clear.
@@ -823,7 +867,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
     public void LoadNextLevel()
     {
         if (Phase != OpenFieldPhase.Victory || string.IsNullOrWhiteSpace(nextSceneName) ||
-            !Application.CanStreamedLevelBeLoaded(nextSceneName))
+            !Application.CanStreamedLevelBeLoaded(nextSceneName) || !progress.IsUnlocked(nextSceneName))
         {
             return;
         }
@@ -1019,7 +1063,10 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
             }
             for (int i = 0; i < count && Phase == OpenFieldPhase.Assault; i++)
             {
-                if (SpawnEnemy(definition, roundPaths[spawnIndex++ % roundPaths.Count], null) == null)
+                int entrance = wave.GetGroupEntrance(groupIndex);
+                int pathIndex = entrance < 0 ? spawnIndex % roundPaths.Count : entrance;
+                spawnIndex++;
+                if (SpawnEnemy(definition, roundPaths[pathIndex], null) == null)
                 {
                     FinishRun(OpenFieldPhase.Defeat);
                     yield break;
@@ -1035,6 +1082,9 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         if (Phase != OpenFieldPhase.Assault) yield break;
         spawnRoutine = null;
         allEnemiesSpawned = true;
+        autoWaveRemaining = roundIndex < TotalRounds - 1
+            ? (float.IsNaN(autoWaveDelay) || float.IsInfinity(autoWaveDelay) ? 10f : Mathf.Max(.1f, autoWaveDelay))
+            : -1f;
         FinishRoundIfReady();
         if (entranceWaveButtons != null) entranceWaveButtons.Refresh();
     }
@@ -1145,6 +1195,7 @@ public sealed class OpenFieldPrototypeController : MonoBehaviour
         if (!HasActiveRun || (result != OpenFieldPhase.Victory && result != OpenFieldPhase.Defeat)) return;
         if (life.IsDepleted) result = OpenFieldPhase.Defeat;
         Phase = result;
+        autoWaveRemaining = -1f;
         FinalScore = LevelScoring.Evaluate(result == OpenFieldPhase.Victory,
             killedScheduledEnemies, scheduledEnemyCount, life.CurrentLife, initialCoreLife);
         string scene = gameObject.scene.name;

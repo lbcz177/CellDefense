@@ -1,0 +1,28 @@
+{
+  "tests": {
+    "id": "2",
+    "testcasecount": "10",
+    "result": "Passed",
+    "total": "10",
+    "passed": "10",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-28 07:10:29Z",
+    "end-time": "2026-10-28 07:10:46Z",
+    "duration": "17.5630353"
+  },
+  "source_sha256": {
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "5d1e77c5c6db597e12c64f6a3d70d12fbc82049aaa96384ffef990cdb72ecc89",
+    "Assets/_Project/Tests/PlayMode/ChapterSelectionPlayModeTests.cs": "d04ed3fc2fc95ae94a17b6363912ae3325606fdd0f6fb693a8e8934f17fe12aa"
+  },
+  "captures": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节接入_2026-10-28\\验证_v7~",
+  "default_selection_removed": true,
+  "hover_and_explicit_keyboard_focus_verified": true,
+  "previous_selection_restored_after_details": true,
+  "apk_built": false,
+  "taptap_modified": false
+}

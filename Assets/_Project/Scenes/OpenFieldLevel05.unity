@@ -428,7 +428,7 @@ MonoBehaviour:
   waveButtonArtwork: {fileID: 21300000, guid: 7578f9504f07492d964d8a760b7863bd, type: 3}
   victoryPanel: {fileID: 3000000002}
   defeatPanel: {fileID: 3000000005}
-  nextSceneName: 
+  nextSceneName: Chapter02Level01
 --- !u!4 &2025039400
 Transform:
   m_ObjectHideFlags: 0

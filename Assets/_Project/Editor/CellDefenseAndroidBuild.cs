@@ -14,7 +14,15 @@ public static class CellDefenseAndroidBuild
         "Assets/_Project/Scenes/OpenFieldLevel02.unity",
         "Assets/_Project/Scenes/OpenFieldLevel03.unity",
         "Assets/_Project/Scenes/OpenFieldLevel04.unity",
-        "Assets/_Project/Scenes/OpenFieldLevel05.unity"
+        "Assets/_Project/Scenes/OpenFieldLevel05.unity",
+        "Assets/_Project/Scenes/Chapter02Level01.unity",
+        "Assets/_Project/Scenes/Chapter02Level02.unity",
+        "Assets/_Project/Scenes/Chapter02Level03.unity",
+        "Assets/_Project/Scenes/Chapter02Level04.unity",
+        "Assets/_Project/Scenes/Chapter03Level01.unity",
+        "Assets/_Project/Scenes/Chapter03Level02.unity",
+        "Assets/_Project/Scenes/Chapter03Level03.unity",
+        "Assets/_Project/Scenes/Chapter03Level04.unity"
     };
 
     internal static string[] GetGameplayScenes() => (string[])Scenes.Clone();

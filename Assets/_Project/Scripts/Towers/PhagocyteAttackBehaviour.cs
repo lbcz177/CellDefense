@@ -78,16 +78,24 @@ public class PhagocyteAttackBehaviour : TowerAttackBehaviour
         {
             ShowFeedback(engulfFlashColor);
             digestionUntil = Time.time + digestionDuration;
-            target.TryEngulf(GetEngulfThreshold(target));
+            Vector3 contact = target.transform.position;
+            if (target.TryEngulf(GetEngulfThreshold(target)))
+            {
+                CellCombatFeedback.Release(CellImpactKind.Phagocyte, this, contact);
+                CellCombatFeedback.Impact(CellImpactKind.Phagocyte, contact);
+            }
             return;
         }
 
         ShowFeedback(attackFlashColor);
+        CellCombatFeedback.Release(CellImpactKind.Phagocyte, this, target.transform.position);
+        CellCombatFeedback.Impact(CellImpactKind.Phagocyte, target.transform.position);
         target.TakeDamage(damage);
     }
 
     private void ShowFeedback(Color color)
     {
+        if (CellCombatFeedback.IsReady) { ResetFeedback();return; }
         if (bodyRenderer == null)
         {
             return;

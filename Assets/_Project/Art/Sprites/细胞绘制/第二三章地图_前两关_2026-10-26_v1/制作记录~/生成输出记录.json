@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2-1",
+    "name": "凝血缺口",
+    "chapter": "第二章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第二章/2-1_凝血缺口.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-eda5ca7d-54e5-457b-91e7-13111c32f38e.png"
+  },
+  {
+    "id": "2-2",
+    "name": "厚膜岔口",
+    "chapter": "第二章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第二章/2-2_厚膜岔口.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-b464b9a7-c6c6-480a-9638-48f4e873ec7a.png"
+  },
+  {
+    "id": "3-1",
+    "name": "充血边缘",
+    "chapter": "第三章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第三章/3-1_充血边缘.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-2b2796dd-3903-43bc-a2b7-99447fad0096.png"
+  },
+  {
+    "id": "3-2",
+    "name": "反应交汇",
+    "chapter": "第三章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第三章/3-2_反应交汇.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-67db373f-f438-4731-95bf-18a555039d89.png"
+  }
+]

@@ -17,6 +17,10 @@ public class EnemyDefinition : ScriptableObject
     [SerializeField, Min(0.01f)] private float baseMoveSpeed = 2f;
     [SerializeField, Min(1)] private int leakDamage = 1;
     [SerializeField] private bool isBoss;
+    [SerializeField] private bool complementSensitive;
+    public bool ComplementSensitive => complementSensitive;
+    [SerializeField] private bool inflammationSource;
+    public bool IsInflammationSource => inflammationSource;
     [SerializeField, Range(0f, 0.95f)] private float armorReduction;
     [SerializeField, Min(0.01f)] private float armorBreakDuration = 3f;
     [SerializeField, Min(0f)] private float initialShield;

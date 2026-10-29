@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "appId": "986196",
+  "forumId": null,
+  "forumName": null,
+  "forumUrl": null,
+  "section": null,
+  "sectionId": null,
+  "identity": "personal",
+  "title": "《胞卫战》开发日志：第二章四关完成，两座新塔加入防线",
+  "bodyFile": "Docs/Publishing/Community/2026-10-29_开发日志_0.1.6.md",
+  "documentSha256": "59c7ffc344f24aa0dc26bc7cfdc2860034b9b7566fb0ecbc3682fe704ba9b0bf",
+  "format": "text only",
+  "uploadNewMedia": false,
+  "approved": false,
+  "remoteDraftCreated": false,
+  "published": false,
+  "scope": [
+    "create one new community topic draft",
+    "read back and verify title/body/identity/forum",
+    "publish same verified post"
+  ],
+  "excluded": [
+    "game review submission",
+    "game public release",
+    "store field changes",
+    "APK uploads",
+    "screenshots or video changes"
+  ],
+  "destination": "personal post without forum bindings",
+  "documentFile": "Logs/TapTapCommunity/2026-10-29/create-personal-draft.json",
+  "verificationBeforePublish": [
+    "draft is_official is false",
+    "draft forum_bindings is empty",
+    "title and all body text match reviewed draft"
+  ]
+}

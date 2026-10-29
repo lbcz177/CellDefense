@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 10:17:17Z" end-time="2026-10-28 10:17:31Z" duration="14.0935555">
+  <test-suite type="TestSuite" id="1000" name="ChapterSelectionTests" fullname="ChapterSelectionTests" runstate="Runnable" testcasecount="60" result="Passed" start-time="2026-10-28 10:17:17Z" end-time="2026-10-28 10:17:31Z" duration="14.093556" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1078" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="60" result="Passed" start-time="2026-10-28 10:17:17Z" end-time="2026-10-28 10:17:31Z" duration="14.076988" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="52100" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1024" name="MainMenuCellFlowPlayModeTests" fullname="MainMenuCellFlowPlayModeTests" classname="MainMenuCellFlowPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-28 10:17:17Z" end-time="2026-10-28 10:17:26Z" duration="8.912086" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1025" name="CellsMoveWhileTitleButtonsAndArtworkStayFixedAtDesktopAndMobileSizes" fullname="MainMenuCellFlowPlayModeTests.CellsMoveWhileTitleButtonsAndArtworkStayFixedAtDesktopAndMobileSizes" methodname="CellsMoveWhileTitleButtonsAndArtworkStayFixedAtDesktopAndMobileSizes" classname="MainMenuCellFlowPlayModeTests" runstate="Runnable" seed="1196301158" result="Passed" start-time="2026-10-28 10:17:17Z" end-time="2026-10-28 10:17:26Z" duration="8.884625" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1026" name="MainMenuSettingsPlayModeTests" fullname="MainMenuSettingsPlayModeTests" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-28 10:17:26Z" end-time="2026-10-28 10:17:31Z" duration="5.157336" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1028" name="DisableClosesOverlaysAndDestroyRemovesRuntimeUi" fullname="MainMenuSettingsPlayModeTests.DisableClosesOverlaysAndDestroyRemovesRuntimeUi" methodname="DisableClosesOverlaysAndDestroyRemovesRuntimeUi" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" seed="1809181005" result="Passed" start-time="2026-10-28 10:17:26Z" end-time="2026-10-28 10:17:27Z" duration="1.189555" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1027" name="MainMenuEntryBlocksBackgroundAndSharesPreferencesWithBattle" fullname="MainMenuSettingsPlayModeTests.MainMenuEntryBlocksBackgroundAndSharesPreferencesWithBattle" methodname="MainMenuEntryBlocksBackgroundAndSharesPreferencesWithBattle" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" seed="653513260" result="Passed" start-time="2026-10-28 10:17:27Z" end-time="2026-10-28 10:17:30Z" duration="2.867721" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1029" name="QuitEntryOnlyRequestsExitFromIdleMainMenu" fullname="MainMenuSettingsPlayModeTests.QuitEntryOnlyRequestsExitFromIdleMainMenu" methodname="QuitEntryOnlyRequestsExitFromIdleMainMenu" classname="MainMenuSettingsPlayModeTests" runstate="Runnable" seed="1953710941" result="Passed" start-time="2026-10-28 10:17:30Z" end-time="2026-10-28 10:17:31Z" duration="1.075749" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[退出请求已触发；独立运行时关闭游戏窗口。
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

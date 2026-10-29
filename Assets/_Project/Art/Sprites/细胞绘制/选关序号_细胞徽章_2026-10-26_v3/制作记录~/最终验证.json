@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "testResult": {
+    "result": "Passed",
+    "total": "2",
+    "passed": "2",
+    "failed": "0"
+  },
+  "engine": "Unity 2022.3.53f1c1 / D3D11",
+  "verifiedResolutions": [
+    "1280x720",
+    "640x480",
+    "2048x928 with mobile safe area"
+  ],
+  "visuallyReviewed": [
+    "numbers-1280x720.png",
+    "numbers-640x480.png"
+  ],
+  "badgeCount": 5,
+  "extraBlankTemplate": true,
+  "normalAndSelectedPngCount": 12,
+  "nativeFiles": 9,
+  "mainAndIsolatedSourceHashes": [
+    {
+      "path": "Assets/_Project/Scripts/UI/LevelSelectionArtwork.cs",
+      "sha256": "c6aece03905fc04e8e7ff20147eaa658abb1150d523b4db29b74456c0d003859"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "a11462b9f5955305d36aebf969c3b079aa2602f747682f30009e72384b0ad13b"
+    },
+    {
+      "path": "Assets/_Project/Resources/LevelSelectionArtwork.asset",
+      "sha256": "5969374b90125efd849effa0f9ae651bc8881e3be3224c0c9575388ff30c7309"
+    }
+  ],
+  "captureFolder": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\选关序号_细胞徽章_2026-10-26_v3\\运行验证_v1~",
+  "method": "built-in imagegen plus Aseprite"
+}

@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "playmode": {
+    "result": "Passed",
+    "total": "9",
+    "passed": "9",
+    "failed": "0"
+  },
+  "engine": "Unity 2022.3.53f1c1 / D3D11",
+  "scope": "existing five playable scenes plus three chapter art variants",
+  "resolutions": [
+    "1280x720",
+    "640x480",
+    "2048x928 with mobile safe area"
+  ],
+  "captures": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节选关_序号与详情_2026-10-26_v2\\运行验证_v3~",
+  "mainAndValidationHashesMatch": [
+    {
+      "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+      "sha256": "f2315895da92af8a01de81453fcde3bdb426d2b0f937177848747f660ed37a75"
+    },
+    {
+      "path": "Assets/_Project/Scripts/UI/LevelSelectionArtwork.cs",
+      "sha256": "3c836e45fa72a817d1406d48b5f99919877a76b7b3d7172f520ba9a8948a19e0"
+    },
+    {
+      "path": "Assets/_Project/Resources/LevelSelectionArtwork.asset",
+      "sha256": "11358a2847e1c0348a743a9e3356e84bae3810b3116e28afa8ca42895e31914d"
+    },
+    {
+      "path": "Assets/_Project/Tests/PlayMode/NumberedLevelSelectionPlayModeTests.cs",
+      "sha256": "97e68c6e6be1800914726888e14c7328b9b706063a0b9697a7d1c0c5d3252c0b"
+    },
+    {
+      "path": "Assets/_Project/Tests/PlayMode/MainMenuSettingsPlayModeTests.cs",
+      "sha256": "ba1a1c88e4c165705bef6bea46cb69a94d520ff90ae75fc489a15ad768365226"
+    },
+    {
+      "path": "Assets/_Project/Tests/PlayMode/LevelScoringPlayModeTests.cs",
+      "sha256": "7b6cb888d90b53abbac066e6b908ba366fe92546f8b9883f0228aa7174c763a3"
+    }
+  ],
+  "recordStorageUnchanged": true,
+  "scoreAndMapOnlyInDetails": true,
+  "explicitStartRequired": true,
+  "artProduction": "Aseprite native edit of existing art, no new imagegen call"
+}

@@ -126,7 +126,7 @@ public sealed class MobilePlayModeTests
             Transform frame = victory.transform.Find("Canvas/Mobile Safe Content");
             Inside((RectTransform)frame);
             Button next = frame.Find("Next").GetComponent<Button>();
-            Assert.That(next.gameObject.activeSelf, Is.EqualTo(scene != "OpenFieldLevel05"));
+            Assert.That(next.gameObject.activeSelf, Is.True, "First chapter finale now has a next chapter.");
             Inside(frame.Find("Again") as RectTransform);
             Inside(frame.Find("Return") as RectTransform);
         }
@@ -445,7 +445,7 @@ public sealed class ZzMobileLandscapePlayModeTests
                         $"result-{(mobile ? "mobile" : "desktop")}-{outcome}-{size.x}x{size.y}.png");
                 foreach (Image image in panel.GetComponentsInChildren<Image>()) Inside(image.rectTransform);
                 Button[] actions = panel.GetComponentsInChildren<Button>();
-                Assert.That(actions.Length, Is.EqualTo(outcome == "Victory" && scene != "OpenFieldLevel05" ? 3 : 2));
+                Assert.That(actions.Length, Is.EqualTo(outcome == "Victory" ? 3 : 2));
                 foreach (Button action in actions)
                 {
                     Vector2 position = action.transform.TransformPoint(action.GetComponent<RectTransform>().rect.center);

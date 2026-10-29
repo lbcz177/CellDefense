@@ -28,7 +28,7 @@ public sealed class FirstLevelTutorial : MonoBehaviour
     private readonly List<Vector2Int> route = new List<Vector2Int>();
     private readonly HashSet<Vector2Int> routeCells = new HashSet<Vector2Int>();
     private readonly Vector3[] corners = new Vector3[4];
-    private readonly Image[] outline = new Image[4];
+    private Image targetFrame;
     private bool subscribed, skipped, barrierExplained, upgradeExplained, barrierLost;
     private Vector2Int? suggestedCell;
     private int choiceIndex;
@@ -78,19 +78,11 @@ public sealed class FirstLevelTutorial : MonoBehaviour
         footer.text = "可自由操作 · 引导不暂停战斗";
         Place(footer.rectTransform, 18f, -174f, 280f, 24f);
         highlight = Create("Tutorial Target Highlight", canvasRect).GetComponent<RectTransform>();
-        for (int i = 0; i < outline.Length; i++)
-        {
-            Image edge = Create("Highlight Edge " + i, highlight, typeof(Image)).GetComponent<Image>();
-            edge.raycastTarget = false;
-            RectTransform rect = edge.rectTransform;
-            rect.anchorMin = i == 0 ? new Vector2(0, 1) : Vector2.zero;
-            rect.anchorMax = i == 1 ? new Vector2(1, 0) : Vector2.one;
-            if (i >= 2) rect.anchorMin = rect.anchorMax = new Vector2(i == 2 ? 0 : 1, .5f);
-            rect.offsetMin = rect.offsetMax = Vector2.zero;
-            if (i < 2) rect.sizeDelta = new Vector2(0, 3f);
-            else { rect.anchorMin = new Vector2(i == 2 ? 0 : 1, 0); rect.anchorMax = new Vector2(i == 2 ? 0 : 1, 1); rect.sizeDelta = new Vector2(3f, 0); }
-            outline[i] = edge;
-        }
+        targetFrame = highlight.gameObject.AddComponent<Image>();
+        GuidanceArtwork art = GuidanceArtwork.Load();
+        targetFrame.sprite = art != null ? art.tutorialFrame : null;
+        targetFrame.type = Image.Type.Sliced;targetFrame.fillCenter = false;
+        targetFrame.pixelsPerUnitMultiplier = 2.3f;targetFrame.raycastTarget = false;
         grid.TryGetPath(grid.GetSpawnCell(0), route);
         foreach (Vector2Int cell in route) routeCells.Add(cell);
         Subscribe();
@@ -183,12 +175,12 @@ public sealed class FirstLevelTutorial : MonoBehaviour
                 break;
             case FirstLevelTutorialStep.StartWave:
                 heading = $"第{owner.CurrentRound}轮 · 准备开波";
-                body = "点击高亮的入口按钮开始这一波。击杀获得 ATP，清场后再布置；战斗中也可以继续建造。";
+                body = "点击高亮的入口按钮开始这一波。击杀获得 ATP，战斗中也可以继续建造；暂停可调整防线。";
                 break;
             case FirstLevelTutorialStep.ObserveBattle:
                 heading = $"第{owner.CurrentRound}轮 · 守住核心";
-                body = owner.CurrentRound == 1 ? "观察交叉火力。可用 ATP 补建近卫；右上可暂停或切换倍速。清场后进入下一轮。"
-                    : "壁垒拦敌，后排输出。留意壁垒生命，破裂后可在空位补建；清场后学习巨噬与升级。";
+                body = owner.CurrentRound == 1 ? "观察交叉火力。敌人出完后会自动开下一波，可提前开始；暂停可调整防线。"
+                    : "壁垒拦敌，后排输出。留意壁垒生命，破裂后可在空位补建；下一波学习巨噬与升级。";
                 break;
             case FirstLevelTutorialStep.BuildBarrier:
                 heading = barrierLost ? "第2轮 · 补建壁垒" : "第2轮 · 保护防线";
@@ -327,8 +319,7 @@ public sealed class FirstLevelTutorial : MonoBehaviour
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, targetScreen.center, eventCamera, out Vector2 local);
         highlight.anchoredPosition = local;
         highlight.sizeDelta = targetScreen.size / Mathf.Max(.01f, canvas.scaleFactor) + Vector2.one * 8f;
-        Color color = new Color(.32f, .96f, 1f, .7f + .3f * Mathf.Sin(Time.unscaledTime * 4f));
-        foreach (Image edge in outline) edge.color = color;
+        targetFrame.color = new Color(1f, 1f, 1f, .88f + .12f * Mathf.Sin(Time.unscaledTime * 4f));
     }
 
     public bool ContainsPointer(Vector2 screenPosition) => IsVisible &&

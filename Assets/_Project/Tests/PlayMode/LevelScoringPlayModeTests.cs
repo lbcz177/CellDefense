@@ -112,15 +112,21 @@ public sealed class ZzzLevelScoringPlayModeTests
             Assert.That(Get(owner, "Phase").ToString(), Is.EqualTo("Victory"), "A terminal result must be recorded once.");
             Capture(owner, "score-perfect-" + scene + ".png");
             if (scene != Scenes.Last()) { Call(owner, "LoadNextLevel"); yield return null; }
-            else Assert.That(((GameObject)Field(owner, "victoryPanel")).GetComponentsInChildren<Button>().Any(b => b.name == "Next"), Is.False);
+            else Assert.That(((GameObject)Field(owner, "victoryPanel")).GetComponentsInChildren<Button>().Any(b => b.name == "Next"), Is.True, "The chapter finale now leads to chapter two.");
         }
         Call(Owner(), "ReturnToMainMenu");
         yield return null;
         Component menu = (Component)Object.FindObjectOfType(Runtime("MainMenuController"));
         Call(menu, "OpenLevelSelection");
+        Call(menu, "OpenChapter", 0);
         yield return null;
         foreach (object star in (IEnumerable)Field(menu, "levelStars")) Assert.That(Get(star, "Stars"), Is.EqualTo(3));
-        foreach (object label in (IEnumerable)Field(menu, "levelRecords")) Assert.That(Get(label, "text"), Is.EqualTo("最高 10000"));
+        for (int i = 0; i < Scenes.Length; i++)
+        {
+            Call(menu, "OpenLevelDetails", i);
+            Assert.That(Get(Field(menu, "detailsScore"), "text"), Is.EqualTo("10000"));
+            Call(menu, "CloseLevelDetails");
+        }
         Assert.That(((Button[])Field(menu, "levelButtons")).All(b => b.interactable), Is.True);
         Capture(null, "score-five-level-selection.png");
     }

@@ -1,0 +1,202 @@
+{
+  "result": {
+    "id": "2",
+    "testcasecount": "5",
+    "result": "Passed",
+    "total": "5",
+    "passed": "5",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-28 16:41:44Z",
+    "end-time": "2026-10-28 16:41:57Z",
+    "duration": "13.060915"
+  },
+  "testedFiles": [
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\修补接触_特效\\frames\\frame_01.png",
+      "sha256": "1ebf3ff056431648d06c0f093b3471d8d563ac75276cef33dc3783f24e4a52fb"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\修补接触_特效\\frames\\frame_02.png",
+      "sha256": "5bccbe962f7ee02ead1e318e7d79b104cc8129f7a4afd7987e36f5f9cca4d7e5"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\修补接触_特效\\frames\\frame_03.png",
+      "sha256": "3f05c9d1c15a4d9e42c676543f8fdc913bf7c7a08b6b236a6f5e52a424f5e69f"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\修补接触_特效\\frames\\frame_04.png",
+      "sha256": "b4f1e025003c8b0272e44a40169008978dbcc488584e0a3aa4862b84c590d9ef"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\修补接触_特效\\frames\\frame_05.png",
+      "sha256": "0d956abb81940ebcae0c557b26c36762822607761c4ee03dfc62ab9c7f4b3b6f"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\修补接触_特效\\frames\\frame_06.png",
+      "sha256": "9df2b48f63ca71074f6dbb265f824b077540e713a615cb88c1dc3e0d5462496e"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_01.png",
+      "sha256": "5cb4fef2e74a8382a29a250fbb0eeca0194e3d21f54774abed915b17fd3a1563"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_02.png",
+      "sha256": "6cdfc4240de292407f71b7d2cd8f3031af1e9ceed4a48cde0dfffea1ff8ddf48"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_03.png",
+      "sha256": "f5190bf38dea868b4c8e88464a6313a56b7d534a361ec759726e6ba995acdc75"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_04.png",
+      "sha256": "6c2a16197e5683c743e6f0f6ce97f53dc30c4a2db64d5166e02881a5737b1b4a"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_05.png",
+      "sha256": "6af225de5e940f3799afc9801698ab8350235ce0df0e0dc0cecb1b5c15c31cb4"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_06.png",
+      "sha256": "1bb67238224e59e71028f592f0e3357ccdf9d6357262e687de012a6e551e7d56"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_07.png",
+      "sha256": "5ea2adc9ceae164324c40bd7eb75e1b2a9f7b5dfa0c7c7c06054f22043db6dd4"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_08.png",
+      "sha256": "8c2850067323772618aaddf80750bccb8b3a9bafb3c9cb6d4ad60e7f8942c3e2"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_09.png",
+      "sha256": "9c4e81e3337434055d0a4feac57c30f73de59be88bd00c9211b94b606aece65c"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\血小板修补_动作\\frames\\frame_10.png",
+      "sha256": "6b1ddca30813422e2487b670261922bd21ea19547a4adab815a7f93f5e2155bc"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_01.png",
+      "sha256": "79e05657eaf874c0a4e67adfd68dea3f0cc6356f40a2dc9072a93f2241e048ca"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_02.png",
+      "sha256": "8f4bcd8acd7f6d64f0ad090f0352c022b51c77bf5f759256b8ef97fe91a91389"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_03.png",
+      "sha256": "69dd7fc476f75c23bfbb44648da9919902ca613734955aad86127ce598e8666b"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_04.png",
+      "sha256": "e6706ec7d7201e901f99d592bb0b217061356cfcf748157be8a5b41bc1d1ca91"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_05.png",
+      "sha256": "1eca8ffabc4aa7780e5bcf3a29c7695a662fb6bcb2838adbfbe66c1f9d602b0f"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_06.png",
+      "sha256": "3ddaf163b25aa72359e67e37fbe0f397ed6c3feb777356038027c1cdd62ac39c"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_07.png",
+      "sha256": "70c026fe8ca039f8631a11d309a201e5b341b3a7dcf9b54f398a36ff46730c5b"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_08.png",
+      "sha256": "b68ac3f3a72f47b99a29c0ac4065ebf3b6099276f0a1ba466d3fb964cd01f73a"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_09.png",
+      "sha256": "fef102338e5f3589a9807c425c46c72a8e6dad673d931539a7547d80e51ee1c3"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\补体裂解_动作\\frames\\frame_10.png",
+      "sha256": "ab7bbf9b74ad20b6db65cf1e81d9cd0af2299b367479769bb9fcab2974b83b40"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\裂解命中_特效\\frames\\frame_01.png",
+      "sha256": "b6bb1cf1e4795ce43ed8f04450ec405b1602ab9f991066d652516afc9b7e0eba"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\裂解命中_特效\\frames\\frame_02.png",
+      "sha256": "45bf978ced2886e8cb2f2296c46df66f3d449b61e21ae18dd05fc67b4de9f624"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\裂解命中_特效\\frames\\frame_03.png",
+      "sha256": "6011a5d0a3b0c66ecf5dedb83627152940a1df78e0dad1ec7992fb391eb1ed17"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\裂解命中_特效\\frames\\frame_04.png",
+      "sha256": "cc14c7fa3c646b097b3610242ec9534095695b28a0f30b67b9e5f3212e2b2f5c"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\裂解命中_特效\\frames\\frame_05.png",
+      "sha256": "adfa85ebe67f5b65c14cb79e36a264a96a039212c779eca5f2fb20f0573d5899"
+    },
+    {
+      "path": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\第二章新塔动画_2026-10-29_v1\\裂解命中_特效\\frames\\frame_06.png",
+      "sha256": "54ad0a255e260fc738bae74032349576f5f8508256131435284932b691ca2b6e"
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Chapter02\\PlateletTower.prefab",
+      "sha256": "15f574060f2c1028a62dc7d999a34906107eac7f51c618ac7fd71e6be3bb5472"
+    },
+    {
+      "path": "Assets\\_Project\\Prefabs\\Chapter02\\ComplementTower.prefab",
+      "sha256": "e2d3b1e2a65d677b10bf7bd0953892d761aeff0ef0da168472011f4a096d4398"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\ChapterTwoActionAnimation.cs",
+      "sha256": "c14f9b1c58fe418b24f6e98187c2a522627a4a583cae408954a890220ee2e354"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\PlateletRepairBehaviour.cs",
+      "sha256": "90978103564ab6a33644c2350b176b98112940c01fdc989c1adf705889282362"
+    },
+    {
+      "path": "Assets\\_Project\\Scripts\\Towers\\ComplementAttackBehaviour.cs",
+      "sha256": "a8da1fcd34e057de38c513999843b10ef76d5ec6ac0ac4d1f90d802abcc4e491"
+    },
+    {
+      "path": "Assets\\_Project\\Editor\\ChapterTwoContentBuilder.cs",
+      "sha256": "b47f4fbda6ccf686d0f195124fe2b1d40deb16b35c21436e8af91ad4acac09fe"
+    }
+  ],
+  "gifVerification": [
+    {
+      "file": "两座新塔_动作与命中预览.gif",
+      "frames": 90,
+      "durationMs": 2700,
+      "size": [
+        1024,
+        640
+      ]
+    },
+    {
+      "file": "两座新塔_实际战斗_30fps.gif",
+      "frames": 156,
+      "durationMs": 5200,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "file": "两座新塔_实际战斗特写_30fps.gif",
+      "frames": 156,
+      "durationMs": 5200,
+      "size": [
+        510,
+        465
+      ]
+    }
+  ],
+  "rawSources": "生成与组装计划.json contains all four built-in imagegen prompts and reference paths"
+}

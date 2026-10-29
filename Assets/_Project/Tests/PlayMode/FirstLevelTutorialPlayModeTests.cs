@@ -121,6 +121,8 @@ public sealed class FirstLevelTutorialPlayModeTests
     {
         yield return SceneManager.LoadSceneAsync("OpenFieldPrototype");
         Component owner = Find("OpenFieldPrototypeController"), guide = Find("FirstLevelTutorial");
+        // This existing fixture isolates the manual teaching sequence; automatic timing has dedicated coverage.
+        owner.GetType().GetField("autoWaveDelay", Flags).SetValue(owner, 10000f);
         BuildSuggested(owner, guide, 0);
         BuildSuggested(owner, guide, 0);
         Assert.That(Get(owner, "CurrentATP"), Is.EqualTo(50));

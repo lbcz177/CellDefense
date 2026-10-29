@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Assets/_Project/Scripts/UI/MainMenuController.cs",
+    "sha256": "f2315895da92af8a01de81453fcde3bdb426d2b0f937177848747f660ed37a75"
+  },
+  {
+    "path": "Assets/_Project/Scripts/UI/LevelSelectionArtwork.cs",
+    "sha256": "3c836e45fa72a817d1406d48b5f99919877a76b7b3d7172f520ba9a8948a19e0"
+  },
+  {
+    "path": "Assets/_Project/Resources/LevelSelectionArtwork.asset",
+    "sha256": "11358a2847e1c0348a743a9e3356e84bae3810b3116e28afa8ca42895e31914d"
+  }
+]

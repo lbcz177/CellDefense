@@ -1,0 +1,44 @@
+[
+  {
+    "sprite": "紫色细菌_小球_重绘.png",
+    "size": [
+      128,
+      128
+    ],
+    "alphaBounds": [
+      32,
+      32,
+      109,
+      105
+    ],
+    "edgePaddingVerified": true
+  },
+  {
+    "sprite": "紫色细菌_杆状_重绘.png",
+    "size": [
+      128,
+      128
+    ],
+    "alphaBounds": [
+      21,
+      16,
+      123,
+      117
+    ],
+    "edgePaddingVerified": true
+  },
+  {
+    "sprite": "紫色细菌_球形_重绘.png",
+    "size": [
+      128,
+      128
+    ],
+    "alphaBounds": [
+      17,
+      16,
+      116,
+      114
+    ],
+    "edgePaddingVerified": true
+  }
+]

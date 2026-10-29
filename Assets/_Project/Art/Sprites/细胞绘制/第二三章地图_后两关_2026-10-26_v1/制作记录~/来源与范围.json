@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-26",
+  "localVersion": "v0.28 / chapter discussion v0.3",
+  "scope": [
+    "2-3",
+    "2-4",
+    "3-3",
+    "3-4"
+  ],
+  "sources": [
+    {
+      "path": "Docs/GAME_DESIGN_FRAMEWORK.md",
+      "sha256": "751bf6be642192999ac695858b84f6407bc2a4b8bf113fda1cb02baf2b9f8e75"
+    },
+    {
+      "path": "Docs/LevelPlanning/CHAPTER_FLOW_DISCUSSION_2026-10-26.md",
+      "sha256": "9d5eb6fbb2878449d10da283f5d06fa20fde34bbf6852845b842cf88e3e3a308"
+    }
+  ],
+  "approvedPreviousArt": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1",
+  "note": "Continue the user-approved first two maps of each chapter. No gameplay, scene, wave, remote Notion or publishing changes."
+}

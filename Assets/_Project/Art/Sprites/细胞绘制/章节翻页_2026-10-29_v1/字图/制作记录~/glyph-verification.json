@@ -1,0 +1,528 @@
+[
+  {
+    "source": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\评分美术_2026-10-25_v1\\结算净字图_12px.png",
+    "target": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节翻页_2026-10-29_v1\\字图\\章节净字图_12px.png",
+    "size": [
+      1008,
+      180
+    ],
+    "added": [
+      {
+        "index": 451,
+        "character": "享"
+      },
+      {
+        "index": 452,
+        "character": "修"
+      },
+      {
+        "index": 453,
+        "character": "共"
+      },
+      {
+        "index": 454,
+        "character": "凝"
+      },
+      {
+        "index": 455,
+        "character": "削"
+      },
+      {
+        "index": 456,
+        "character": "厚"
+      },
+      {
+        "index": 457,
+        "character": "去"
+      },
+      {
+        "index": 458,
+        "character": "各"
+      },
+      {
+        "index": 459,
+        "character": "墙"
+      },
+      {
+        "index": 460,
+        "character": "岔"
+      },
+      {
+        "index": 461,
+        "character": "度"
+      },
+      {
+        "index": 462,
+        "character": "廊"
+      },
+      {
+        "index": 463,
+        "character": "总"
+      },
+      {
+        "index": 464,
+        "character": "持"
+      },
+      {
+        "index": 465,
+        "character": "敏"
+      },
+      {
+        "index": 466,
+        "character": "方"
+      },
+      {
+        "index": 467,
+        "character": "板"
+      },
+      {
+        "index": 468,
+        "character": "每"
+      },
+      {
+        "index": 469,
+        "character": "玩"
+      },
+      {
+        "index": 470,
+        "character": "示"
+      },
+      {
+        "index": 471,
+        "character": "离"
+      },
+      {
+        "index": 472,
+        "character": "章"
+      },
+      {
+        "index": 473,
+        "character": "组"
+      },
+      {
+        "index": 474,
+        "character": "缘"
+      },
+      {
+        "index": 475,
+        "character": "缺"
+      },
+      {
+        "index": 476,
+        "character": "装"
+      },
+      {
+        "index": 477,
+        "character": "解"
+      },
+      {
+        "index": 478,
+        "character": "负"
+      },
+      {
+        "index": 479,
+        "character": "责"
+      },
+      {
+        "index": 480,
+        "character": "边"
+      },
+      {
+        "index": 481,
+        "character": "迎"
+      },
+      {
+        "index": 482,
+        "character": "长"
+      },
+      {
+        "index": 483,
+        "character": "领"
+      },
+      {
+        "index": 484,
+        "character": "首"
+      },
+      {
+        "index": 485,
+        "character": "个"
+      },
+      {
+        "index": 486,
+        "character": "仍"
+      },
+      {
+        "index": 487,
+        "character": "助"
+      },
+      {
+        "index": 488,
+        "character": "区"
+      },
+      {
+        "index": 489,
+        "character": "叠"
+      },
+      {
+        "index": 490,
+        "character": "域"
+      },
+      {
+        "index": 491,
+        "character": "定"
+      },
+      {
+        "index": 492,
+        "character": "局"
+      },
+      {
+        "index": 493,
+        "character": "峰"
+      },
+      {
+        "index": 494,
+        "character": "左"
+      },
+      {
+        "index": 495,
+        "character": "延"
+      },
+      {
+        "index": 496,
+        "character": "性"
+      },
+      {
+        "index": 497,
+        "character": "恢"
+      },
+      {
+        "index": 498,
+        "character": "才"
+      },
+      {
+        "index": 499,
+        "character": "框"
+      },
+      {
+        "index": 500,
+        "character": "源"
+      },
+      {
+        "index": 501,
+        "character": "激"
+      },
+      {
+        "index": 502,
+        "character": "炎"
+      },
+      {
+        "index": 503,
+        "character": "热"
+      },
+      {
+        "index": 504,
+        "character": "症"
+      },
+      {
+        "index": 505,
+        "character": "稳"
+      },
+      {
+        "index": 506,
+        "character": "绘"
+      },
+      {
+        "index": 507,
+        "character": "节"
+      },
+      {
+        "index": 508,
+        "character": "警"
+      },
+      {
+        "index": 509,
+        "character": "诱"
+      },
+      {
+        "index": 510,
+        "character": "起"
+      },
+      {
+        "index": 511,
+        "character": "辅"
+      },
+      {
+        "index": 512,
+        "character": "错"
+      },
+      {
+        "index": 513,
+        "character": "预"
+      }
+    ],
+    "all_existing_glyphs_preserved": true
+  },
+  {
+    "source": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\评分美术_2026-10-25_v1\\结算净字图_8px.png",
+    "target": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节翻页_2026-10-29_v1\\字图\\章节净字图_8px.png",
+    "size": [
+      784,
+      140
+    ],
+    "added": [
+      {
+        "index": 451,
+        "character": "享"
+      },
+      {
+        "index": 452,
+        "character": "修"
+      },
+      {
+        "index": 453,
+        "character": "共"
+      },
+      {
+        "index": 454,
+        "character": "凝"
+      },
+      {
+        "index": 455,
+        "character": "削"
+      },
+      {
+        "index": 456,
+        "character": "厚"
+      },
+      {
+        "index": 457,
+        "character": "去"
+      },
+      {
+        "index": 458,
+        "character": "各"
+      },
+      {
+        "index": 459,
+        "character": "墙"
+      },
+      {
+        "index": 460,
+        "character": "岔"
+      },
+      {
+        "index": 461,
+        "character": "度"
+      },
+      {
+        "index": 462,
+        "character": "廊"
+      },
+      {
+        "index": 463,
+        "character": "总"
+      },
+      {
+        "index": 464,
+        "character": "持"
+      },
+      {
+        "index": 465,
+        "character": "敏"
+      },
+      {
+        "index": 466,
+        "character": "方"
+      },
+      {
+        "index": 467,
+        "character": "板"
+      },
+      {
+        "index": 468,
+        "character": "每"
+      },
+      {
+        "index": 469,
+        "character": "玩"
+      },
+      {
+        "index": 470,
+        "character": "示"
+      },
+      {
+        "index": 471,
+        "character": "离"
+      },
+      {
+        "index": 472,
+        "character": "章"
+      },
+      {
+        "index": 473,
+        "character": "组"
+      },
+      {
+        "index": 474,
+        "character": "缘"
+      },
+      {
+        "index": 475,
+        "character": "缺"
+      },
+      {
+        "index": 476,
+        "character": "装"
+      },
+      {
+        "index": 477,
+        "character": "解"
+      },
+      {
+        "index": 478,
+        "character": "负"
+      },
+      {
+        "index": 479,
+        "character": "责"
+      },
+      {
+        "index": 480,
+        "character": "边"
+      },
+      {
+        "index": 481,
+        "character": "迎"
+      },
+      {
+        "index": 482,
+        "character": "长"
+      },
+      {
+        "index": 483,
+        "character": "领"
+      },
+      {
+        "index": 484,
+        "character": "首"
+      },
+      {
+        "index": 485,
+        "character": "个"
+      },
+      {
+        "index": 486,
+        "character": "仍"
+      },
+      {
+        "index": 487,
+        "character": "助"
+      },
+      {
+        "index": 488,
+        "character": "区"
+      },
+      {
+        "index": 489,
+        "character": "叠"
+      },
+      {
+        "index": 490,
+        "character": "域"
+      },
+      {
+        "index": 491,
+        "character": "定"
+      },
+      {
+        "index": 492,
+        "character": "局"
+      },
+      {
+        "index": 493,
+        "character": "峰"
+      },
+      {
+        "index": 494,
+        "character": "左"
+      },
+      {
+        "index": 495,
+        "character": "延"
+      },
+      {
+        "index": 496,
+        "character": "性"
+      },
+      {
+        "index": 497,
+        "character": "恢"
+      },
+      {
+        "index": 498,
+        "character": "才"
+      },
+      {
+        "index": 499,
+        "character": "框"
+      },
+      {
+        "index": 500,
+        "character": "源"
+      },
+      {
+        "index": 501,
+        "character": "激"
+      },
+      {
+        "index": 502,
+        "character": "炎"
+      },
+      {
+        "index": 503,
+        "character": "热"
+      },
+      {
+        "index": 504,
+        "character": "症"
+      },
+      {
+        "index": 505,
+        "character": "稳"
+      },
+      {
+        "index": 506,
+        "character": "绘"
+      },
+      {
+        "index": 507,
+        "character": "节"
+      },
+      {
+        "index": 508,
+        "character": "警"
+      },
+      {
+        "index": 509,
+        "character": "诱"
+      },
+      {
+        "index": 510,
+        "character": "起"
+      },
+      {
+        "index": 511,
+        "character": "辅"
+      },
+      {
+        "index": 512,
+        "character": "错"
+      },
+      {
+        "index": 513,
+        "character": "预"
+      }
+    ],
+    "all_existing_glyphs_preserved": true
+  }
+]

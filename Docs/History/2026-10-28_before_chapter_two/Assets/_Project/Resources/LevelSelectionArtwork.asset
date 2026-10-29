@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7526877cf7e445cac5a7c600802a6a8, type: 3}
+  m_Name: LevelSelectionArtwork
+  m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: 36ca6743ab8448a898770c7091e8ced7, type: 3}
+  node: {fileID: 21300000, guid: aafdb1382ee241a4996223d71896c178, type: 3}
+  selectedNode: {fileID: 21300000, guid: 64fe3ed3f39a488fbc2cb1ebfd31145f, type: 3}
+  panel: {fileID: 21300000, guid: 96184879cd364df0bce14723aaf1125a, type: 3}
+  button: {fileID: 21300000, guid: 7be0ee267f2a4c13b4cfc8ad16c51f23, type: 3}
+  selectedButton: {fileID: 21300000, guid: fa0f42b5e2084c91adf4bf6688d42227, type: 3}
+  historyLabel: {fileID: 21300000, guid: 6f7adbd347484f108157e5ef3d635bd8, type: 3}
+  bestStarsLabel: {fileID: 21300000, guid: de61900f4746409bafe11ab27d45871f, type: 3}
+  unplayedLabel: {fileID: 21300000, guid: a1aa81ddfce2465b9aa6cd499eeb468a, type: 3}
+  startLabel: {fileID: 21300000, guid: 0f9920fb32f14f15837414133a98a795, type: 3}
+  returnLabel: {fileID: 21300000, guid: 2f65b9d64fcf436ab4d261563215dd5a, type: 3}
+  overviewHint: {fileID: 21300000, guid: d400c8f1ba9e4132a64a77a7072ebaff, type: 3}
+  numberBadges:
+  - {fileID: 21300000, guid: dfee603bb3384b82ab5a00450b354089, type: 3}
+  - {fileID: 21300000, guid: 8801eea09fe94ec2927a63e341fd56bd, type: 3}
+  - {fileID: 21300000, guid: 205cc106ac96436191210ff17831c5e6, type: 3}
+  - {fileID: 21300000, guid: 4a7f884239f84b8abb63fc9be6b7a78e, type: 3}
+  - {fileID: 21300000, guid: a0754bd482ea448988b8939762e76eca, type: 3}
+  selectedNumberBadges:
+  - {fileID: 21300000, guid: 09b1ba3d61d84bd38b63b6486c279c31, type: 3}
+  - {fileID: 21300000, guid: 992ca8de07b44a25bf4b14391a025afe, type: 3}
+  - {fileID: 21300000, guid: 069fdf67bf0e4ada943021edd149f744, type: 3}
+  - {fileID: 21300000, guid: d64bc417919e4a74859897bac0b87c30, type: 3}
+  - {fileID: 21300000, guid: d8a41d5cdf4b45a781b7c11997d410ce, type: 3}
+  chapterBackground: {fileID: 21300000, guid: 890b415e876f4f16ad53619894c36e69, type: 3}
+  chapterTitle: {fileID: 21300000, guid: ff01096832b54001ae1059b58ad77a6a, type: 3}
+  chapterHint: {fileID: 21300000, guid: 93f11a5f4acd47ddab81e70308155eec, type: 3}
+  chapterFrame: {fileID: 21300000, guid: f5fed57a2bd64a8aaf0864c4e6507282, type: 3}
+  chapterHighlight: {fileID: 21300000, guid: 4a368bbb66e2426bbd77a9fb4f6d2cbd, type: 3}
+  titlePlate: {fileID: 21300000, guid: b6e9c963eceb4033b3b0e2d6073a6347, type: 3}
+  backArrow: {fileID: 21300000, guid: d33cdc449534461a98d8f7dfa6573da2, type: 3}
+  homeCaption: {fileID: 21300000, guid: 7617e385aad040cba67d37c78d87d629, type: 3}
+  chaptersCaption: {fileID: 21300000, guid: 441bf37cea6c4479bc1b1819af2f94b0, type: 3}
+  chapters:
+  - id: "1"
+    name: "\u4f24\u53e3\u9632\u7ebf"
+    background: {fileID: 21300000, guid: 36ca6743ab8448a898770c7091e8ced7, type: 3}
+    cover: {fileID: 21300000, guid: 616e6cc8e68044f8a6dd13df1417e9b7, type: 3}
+    label: {fileID: 21300000, guid: b0beaa4fe9f14c85a9bb397f8ad352b0, type: 3}
+    title: {fileID: 21300000, guid: a837f5b2229c418ba253610103547692, type: 3}
+    cardTitle: {fileID: 21300000, guid: 7582ce1fbdc341f1872d36de92ad29fe, type: 3}
+    tagline: {fileID: 21300000, guid: 11e667d447264ac3bb45c48ef2046ead, type: 3}
+    count: {fileID: 21300000, guid: 8e0edf86135d481ca04a42cba7d7c19d, type: 3}
+    levels:
+    - id: "1-1"
+      name: "\u5b88\u4f4f\u4f24\u53e3"
+      sceneName: "OpenFieldPrototype"
+      map: {fileID: 21300000, guid: bcf6adb5ecb84adea15ba0d3db2ae342, type: 3}
+      title: {fileID: 21300000, guid: e429966f01ae49e2b67dc444a9eed6fc, type: 3}
+    - id: "1-2"
+      name: "\u96c6\u4e2d\u6e05\u9664"
+      sceneName: "OpenFieldLevel02"
+      map: {fileID: 21300000, guid: 4606d8df18684723a2d08ebbaa28f6ca, type: 3}
+      title: {fileID: 21300000, guid: 479fecf48f564537ac375aa947123363, type: 3}
+    - id: "1-3"
+      name: "\u8ba4\u51fa\u654c\u4eba"
+      sceneName: "OpenFieldLevel03"
+      map: {fileID: 21300000, guid: 75ae2d16cd134c63b87bde18c0fdaafa, type: 3}
+      title: {fileID: 21300000, guid: 805925812e55421db422fbbf2c018721, type: 3}
+    - id: "1-4"
+      name: "\u4e24\u4fa7\u544a\u6025"
+      sceneName: "OpenFieldLevel04"
+      map: {fileID: 21300000, guid: babd037c4d22459c80ab50903e658001, type: 3}
+      title: {fileID: 21300000, guid: 6cc66a5c929a43b9a517c6ec31964165, type: 3}
+    - id: "1-5"
+      name: "\u611f\u67d3\u52a0\u5267"
+      sceneName: "OpenFieldLevel05"
+      map: {fileID: 21300000, guid: f27cb04aae87434198bb51ab3a287bb8, type: 3}
+      title: {fileID: 21300000, guid: f29670ead93d4b2ab66fa92bd28d4f80, type: 3}
+  - id: "2"
+    name: "\u6301\u7eed\u611f\u67d3"
+    background: {fileID: 21300000, guid: 8ab37fc5ed534e259a3ac5187b3cc510, type: 3}
+    cover: {fileID: 21300000, guid: f7c88f6154aa4c67b38ec3e5620ada76, type: 3}
+    label: {fileID: 21300000, guid: a0c70d20f46e4865875267ea2d78c72f, type: 3}
+    title: {fileID: 21300000, guid: 73d16e24c8c5477caa10e45fe2d5cfb8, type: 3}
+    cardTitle: {fileID: 21300000, guid: 599ea30567a946c685dc2bc0d351516a, type: 3}
+    tagline: {fileID: 21300000, guid: c5432c6ea87645dcada1d506c7adc9d6, type: 3}
+    count: {fileID: 21300000, guid: 964bf05c3a884370a979f6c91465df97, type: 3}
+    levels:
+    - id: "2-1"
+      name: "\u51dd\u8840\u7f3a\u53e3"
+      sceneName: ""
+      map: {fileID: 21300000, guid: 19715891a4414f1f9aac2a61025eece2, type: 3}
+      title: {fileID: 21300000, guid: e37c780fbefb4ba8a085dcd5b296ceb4, type: 3}
+    - id: "2-2"
+      name: "\u539a\u819c\u5c94\u53e3"
+      sceneName: ""
+      map: {fileID: 21300000, guid: be45429e72784980b8c34d6bc48efdca, type: 3}
+      title: {fileID: 21300000, guid: cfe93ba541d74d88bd17b647d0e686b9, type: 3}
+    - id: "2-3"
+      name: "\u957f\u5eca\u7a97\u53e3"
+      sceneName: ""
+      map: {fileID: 21300000, guid: 346cf5d66ab043bfa35ea934ce9a37be, type: 3}
+      title: {fileID: 21300000, guid: 839a769d1dd14b00abd0e454a10b47c0, type: 3}
+    - id: "2-4"
+      name: "\u751f\u7269\u819c\u8fb9\u7f18"
+      sceneName: ""
+      map: {fileID: 21300000, guid: f5f04bb028894cb2b52bedf86ba878d0, type: 3}
+      title: {fileID: 21300000, guid: 3e20666a69a04a04bc4d3deead559bdb, type: 3}
+  - id: "3"
+    name: "\u514d\u75ab\u5e73\u8861"
+    background: {fileID: 21300000, guid: 654538441b334e55a4bc4f0b4e8f85f8, type: 3}
+    cover: {fileID: 21300000, guid: 534ea8d7ba5940c6956878e2fbfb5e00, type: 3}
+    label: {fileID: 21300000, guid: 63ac45779967476a8a32683aeebaa5a9, type: 3}
+    title: {fileID: 21300000, guid: 14cf6a69148b40efa64180ff42e5437b, type: 3}
+    cardTitle: {fileID: 21300000, guid: 04779c0c6e7547ce9212f968dccbda02, type: 3}
+    tagline: {fileID: 21300000, guid: db0810593d124e3bbf1877c090787b40, type: 3}
+    count: {fileID: 21300000, guid: 3fb6e592559642b4b69f5811f9a6b526, type: 3}
+    levels:
+    - id: "3-1"
+      name: "\u5145\u8840\u8fb9\u7f18"
+      sceneName: ""
+      map: {fileID: 21300000, guid: efd6af2ac28d47aa9512ebfd4843323c, type: 3}
+      title: {fileID: 21300000, guid: 9755669820fc46c1a2e6936b1aee1e45, type: 3}
+    - id: "3-2"
+      name: "\u53cd\u5e94\u4ea4\u6c47"
+      sceneName: ""
+      map: {fileID: 21300000, guid: 3501f0683fa645b88b21d05f4cba7a3a, type: 3}
+      title: {fileID: 21300000, guid: 4317f78c003e4864bee754c5d082352a, type: 3}
+    - id: "3-3"
+      name: "\u8fc7\u70ed\u524d\u6cbf"
+      sceneName: ""
+      map: {fileID: 21300000, guid: 17efed5cdd3d4bec875ae7e44e8f1cea, type: 3}
+      title: {fileID: 21300000, guid: aa3be17f308346b0aa0d9aff831c6f28, type: 3}
+    - id: "3-4"
+      name: "\u53cc\u7076\u7ec4\u7ec7"
+      sceneName: ""
+      map: {fileID: 21300000, guid: b1ea4b549a58426db3eac88c01d8bd05, type: 3}
+      title: {fileID: 21300000, guid: a32185f98d7b407fa18876a85d826764, type: 3}

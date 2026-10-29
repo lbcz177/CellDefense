@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-28",
+  "frames": 180,
+  "frameMs": 30,
+  "fps": 33.333333333333336,
+  "testsPassed": 4,
+  "sizes": [
+    [
+      1280,
+      720
+    ],
+    [
+      640,
+      480
+    ],
+    [
+      2048,
+      928
+    ]
+  ],
+  "effects": [
+    "cyan projectiles",
+    "flying Y antibodies",
+    "inward phagocytosis motes",
+    "subtle nucleus pulses"
+  ],
+  "bodyStretch": false,
+  "raycastTarget": false,
+  "preview": "actual Unity sampled clip, not runtime GIF playback"
+}

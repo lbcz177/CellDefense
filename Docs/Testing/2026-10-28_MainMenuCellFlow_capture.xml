@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 10:20:33Z" end-time="2026-10-28 10:20:44Z" duration="11.3728276">
+  <test-suite type="TestSuite" id="1000" name="ChapterSelectionTests" fullname="ChapterSelectionTests" runstate="Runnable" testcasecount="60" result="Passed" start-time="2026-10-28 10:20:33Z" end-time="2026-10-28 10:20:44Z" duration="11.372828" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1078" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="60" result="Passed" start-time="2026-10-28 10:20:33Z" end-time="2026-10-28 10:20:44Z" duration="11.353901" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="52340" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1024" name="MainMenuCellFlowPlayModeTests" fullname="MainMenuCellFlowPlayModeTests" classname="MainMenuCellFlowPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-28 10:20:33Z" end-time="2026-10-28 10:20:44Z" duration="11.348907" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1025" name="CellsMoveWhileTitleButtonsAndArtworkStayFixedAtDesktopAndMobileSizes" fullname="MainMenuCellFlowPlayModeTests.CellsMoveWhileTitleButtonsAndArtworkStayFixedAtDesktopAndMobileSizes" methodname="CellsMoveWhileTitleButtonsAndArtworkStayFixedAtDesktopAndMobileSizes" classname="MainMenuCellFlowPlayModeTests" runstate="Runnable" seed="88734717" result="Passed" start-time="2026-10-28 10:20:33Z" end-time="2026-10-28 10:20:44Z" duration="11.320304" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

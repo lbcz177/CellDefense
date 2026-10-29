@@ -8,6 +8,10 @@ public sealed class WaveEnemyGroup
     [Min(1)] public int count = 6;
     [Min(1)] public int burstSize = 6;
     [Min(0f)] public float afterDelay = 1f;
+    // Missing fields in legacy assets must keep round-robin spawning, even when an
+    // importer initializes a newly added integer to zero rather than its initializer.
+    public bool useExplicitEntrance;
+    public int entranceIndex = -1;
 }
 
 [CreateAssetMenu(fileName = "WaveDefinition", menuName = "Cell Defense/Wave Definition")]
@@ -26,6 +30,7 @@ public class WaveDefinition : ScriptableObject
     public int GetGroupCount(int index) => HasMixedGroups ? groups[index].count : enemyCount;
     public int GetGroupBurstSize(int index) => HasMixedGroups ? groups[index].burstSize : BurstSize;
     public float GetGroupAfterDelay(int index) => HasMixedGroups ? groups[index].afterDelay : burstInterval;
+    public int GetGroupEntrance(int index) => HasMixedGroups && groups[index].useExplicitEntrance ? groups[index].entranceIndex : -1;
     public int ScheduledEnemyCount
     {
         get
@@ -47,7 +52,7 @@ public class WaveDefinition : ScriptableObject
             EnemyDefinition definition = GetGroupEnemy(i);
             float delay = GetGroupAfterDelay(i);
             if (definition == null || definition.EnemyPrefab == null || GetGroupCount(i) < 1 ||
-                GetGroupBurstSize(i) < 1 || float.IsNaN(delay) || float.IsInfinity(delay) || delay < 0f)
+                GetGroupBurstSize(i) < 1 || GetGroupEntrance(i) < -1 || float.IsNaN(delay) || float.IsInfinity(delay) || delay < 0f)
                 throw new ArgumentException("Invalid wave enemy, count, burst size or delay.");
             definition.Validate();
         }

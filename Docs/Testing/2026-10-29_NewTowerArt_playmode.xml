@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 16:20:19Z" end-time="2026-10-28 16:20:34Z" duration="14.2344706">
+  <test-suite type="TestSuite" id="1000" name="ChapterTwoValidation" fullname="ChapterTwoValidation" runstate="Runnable" testcasecount="67" result="Passed" start-time="2026-10-28 16:20:19Z" end-time="2026-10-28 16:20:34Z" duration="14.234471" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1086" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/NewTowerArtValidation/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="67" result="Passed" start-time="2026-10-28 16:20:19Z" end-time="2026-10-28 16:20:34Z" duration="14.213348" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="39816" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1016" name="ChapterTwoPlayModeTests" fullname="ChapterTwoPlayModeTests" classname="ChapterTwoPlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-28 16:20:19Z" end-time="2026-10-28 16:20:34Z" duration="14.199576" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1020" name="ComplementLosesProgressOutOfRangeFreezesOnPauseAndRespectsShieldAndMark" fullname="ChapterTwoPlayModeTests.ComplementLosesProgressOutOfRangeFreezesOnPauseAndRespectsShieldAndMark" methodname="ComplementLosesProgressOutOfRangeFreezesOnPauseAndRespectsShieldAndMark" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="1976932235" result="Passed" start-time="2026-10-28 16:20:19Z" end-time="2026-10-28 16:20:23Z" duration="3.845882" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1021" name="MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" fullname="ChapterTwoPlayModeTests.MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" methodname="MapsAndEightTowerMenuFitDesktopAndMobileWithCompleteGlyphs" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="384338645" result="Passed" start-time="2026-10-28 16:20:23Z" end-time="2026-10-28 16:20:30Z" duration="6.910459" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1019" name="RepairTowersShareWallLifetimeBudgetAndNeverHealOtherCells" fullname="ChapterTwoPlayModeTests.RepairTowersShareWallLifetimeBudgetAndNeverHealOtherCells" methodname="RepairTowersShareWallLifetimeBudgetAndNeverHealOtherCells" classname="ChapterTwoPlayModeTests" runstate="Runnable" seed="1693786390" result="Passed" start-time="2026-10-28 16:20:30Z" end-time="2026-10-28 16:20:34Z" duration="3.410394" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

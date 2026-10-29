@@ -32,4 +32,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/OpenFieldLevel05.unity
     guid: 6d8eb7456d5a4bc8b97c8394994c039c
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter02Level01.unity
+    guid: eee259065f3e2394cbf1ac0ce43a97d6
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter02Level02.unity
+    guid: cc5b68faec18fcd40854b6075d11f054
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter02Level03.unity
+    guid: af9dbece8e6283547bedeeeda8974c08
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter02Level04.unity
+    guid: 074c99fa0efb61349ad0d50096433b58
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter03Level01.unity
+    guid: 543ade471b32e9840901b1c486c6d3a6
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter03Level02.unity
+    guid: b419aa2125447f24c93360d431ba880d
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter03Level03.unity
+    guid: dcd366aa6266c384a96c3bcafa18d09a
+  - enabled: 1
+    path: Assets/_Project/Scenes/Chapter03Level04.unity
+    guid: ae6eea48be0ec0b4fb34e4b26596bd91
   m_configObjects: {}

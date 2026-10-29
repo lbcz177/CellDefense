@@ -95,7 +95,9 @@ public sealed class PlanningConfigWindow : EditorWindow
         {
             string path = AssetDatabase.GUIDToAssetPath(guid);
             if (typeof(T) == typeof(SceneAsset) &&
-                !Path.GetFileNameWithoutExtension(path).StartsWith("OpenField", StringComparison.OrdinalIgnoreCase))
+                !Path.GetFileNameWithoutExtension(path).StartsWith("OpenField", StringComparison.OrdinalIgnoreCase) &&
+                !Path.GetFileNameWithoutExtension(path).StartsWith("Chapter02", StringComparison.OrdinalIgnoreCase) &&
+                !Path.GetFileNameWithoutExtension(path).StartsWith("Chapter03", StringComparison.OrdinalIgnoreCase))
                 continue;
             T asset = AssetDatabase.LoadAssetAtPath<T>(path);
             if (asset != null) catalog[index].Add(asset);
@@ -285,6 +287,7 @@ public sealed class PlanningConfigWindow : EditorWindow
         Percent(current, "armorReduction", "护甲减伤（%）");
         Field(current, "armorBreakDuration", "酸性破壳持续（秒）");
         Field(current, "initialShield", "初始护盾");
+        Field(current, "complementSensitive", "补体敏感（裂解伤害×1.5）");
         Percent(current, "slowEffectiveness", "减速生效比例（%）");
         Percent(current, "stunEffectiveness", "停顿生效比例（%）");
         Field(current, "stunRecoveryDuration", "停顿恢复窗口（秒）");
@@ -329,13 +332,13 @@ public sealed class PlanningConfigWindow : EditorWindow
     {
         var list = new ReorderableList(current, array, true, true, true, true);
         float line = EditorGUIUtility.singleLineHeight + 4f;
-        list.elementHeight = line * 4f + 6f;
+        list.elementHeight = line * 6f + 6f;
         list.drawHeaderCallback = rect => EditorGUI.LabelField(rect, "出怪分组（拖动左侧调整顺序）");
         list.drawElementCallback = (rect, index, active, focused) =>
         {
             SerializedProperty group = array.GetArrayElementAtIndex(index);
-            string[] fields = { "enemy", "count", "burstSize", "afterDelay" };
-            string[] labels = { $"第 {index + 1} 组 · 敌人", "数量", "每批数量", "组结束后等待（秒）" };
+            string[] fields = { "enemy", "count", "burstSize", "afterDelay", "useExplicitEntrance", "entranceIndex" };
+            string[] labels = { $"第 {index + 1} 组 · 敌人", "数量", "每批数量", "组结束后等待（秒）", "指定入口（关闭则轮换）", "入口下标（0为第一入口）" };
             for (int i = 0; i < fields.Length; i++)
                 EditorGUI.PropertyField(new Rect(rect.x, rect.y + 3f + i * line, rect.width,
                     EditorGUIUtility.singleLineHeight), group.FindPropertyRelative(fields[i]),
@@ -351,6 +354,8 @@ public sealed class PlanningConfigWindow : EditorWindow
             group.FindPropertyRelative("burstSize").intValue = index == 0
                 ? Mathf.Max(1, current.FindProperty("burstSize").intValue) : 6;
             group.FindPropertyRelative("afterDelay").floatValue = current.FindProperty("burstInterval").floatValue;
+            group.FindPropertyRelative("useExplicitEntrance").boolValue = false;
+            group.FindPropertyRelative("entranceIndex").intValue = -1;
             value.index = index;
             SyncWaveSummary(current);
             GUI.changed = true;
@@ -410,6 +415,7 @@ public sealed class PlanningConfigWindow : EditorWindow
         Section("资源与防御");
         Field(current, "initialATP", "开局 ATP");
         Field(current, "betweenRoundATP", "轮间奖励 ATP");
+        Field(current, "autoWaveDelay", "出兵后自动开波等待（秒）");
         Field(current, "initialCoreLife", "核心初始生命");
         Field(current, "sellRefundPercent", "出售返还比例（%）");
         Field(current, "enemySpeedMultiplier", "敌人速度倍率");
@@ -417,8 +423,8 @@ public sealed class PlanningConfigWindow : EditorWindow
         Field(current, "showDebugGrid", "显示调试格子");
         Section("本关可建细胞");
         Field(current, "towerDefinitions", "选择框列表", "列表顺序决定选择框顺序，前六项对应数字快捷键 1–6。");
-        Section("本关三轮");
-        Field(current, "waveSequence", "三轮顺序资源");
+        Section("本关波次");
+        Field(current, "waveSequence", "波次顺序资源");
         if (EditorGUI.EndChangeCheck() && current.hasModifiedProperties)
         {
             Undo.SetCurrentGroupName("修改胞卫战关卡配置");
@@ -439,17 +445,12 @@ public sealed class PlanningConfigWindow : EditorWindow
             sequenceData.Update();
             SerializedProperty waves = sequenceData.FindProperty("waves");
             EditorGUI.BeginChangeCheck();
-            if (waves.arraySize != 3)
-            {
-                EditorGUILayout.HelpBox("开放关卡必须有三轮。可展开下方列表修正。", MessageType.Error);
-                EditorGUILayout.PropertyField(waves, new GUIContent("三轮列表"), true);
-            }
-            else
-                for (int i = 0; i < waves.arraySize; i++)
-                    EditorGUILayout.PropertyField(waves.GetArrayElementAtIndex(i), new GUIContent($"第 {i + 1} 轮"));
+            if (waves.arraySize < 1)
+                EditorGUILayout.HelpBox("关卡至少需要一波。可展开下方列表修正。", MessageType.Error);
+            EditorGUILayout.PropertyField(waves, new GUIContent("波次列表"), true);
             if (EditorGUI.EndChangeCheck() && sequenceData.hasModifiedProperties)
             {
-                Undo.SetCurrentGroupName("修改胞卫战三轮顺序");
+                Undo.SetCurrentGroupName("修改胞卫战波次顺序");
                 sequenceData.ApplyModifiedProperties();
             }
         }
@@ -497,7 +498,7 @@ public sealed class PlanningConfigWindow : EditorWindow
         using (new EditorGUILayout.HorizontalScope())
         {
             using (new EditorGUI.DisabledScope(errors.Count > 0 || !dirty))
-                if (GUILayout.Button(scene.HasValue ? "保存关卡与三轮顺序" : "保存当前配置", GUILayout.Height(30f)))
+                if (GUILayout.Button(scene.HasValue ? "保存关卡与波次顺序" : "保存当前配置", GUILayout.Height(30f)))
                 {
                     GUI.FocusControl(null);
                     errors.Clear();

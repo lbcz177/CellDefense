@@ -8,6 +8,7 @@ internal sealed class AcidFieldVisual
     private readonly GameObject root;
     private readonly MeshRenderer fill;
     private readonly LineRenderer edge;
+    private readonly SpriteRenderer bubbles;
     private readonly MaterialPropertyBlock properties = new MaterialPropertyBlock();
     private Color fillColor;
     private Color edgeColor;
@@ -37,6 +38,9 @@ internal sealed class AcidFieldVisual
         edge.loop = true;
         edge.positionCount = Segments;
         edge.widthMultiplier = 0.025f;
+        GameObject foam = new GameObject("Acid vesicle bubbles");foam.transform.SetParent(root.transform,false);
+        bubbles=foam.AddComponent<SpriteRenderer>();bubbles.sortingLayerName="BackGround";bubbles.sortingOrder=2;
+        bubbles.transform.localScale=Vector3.one*1.8f;
         for (int i = 0; i < Segments; i++)
         {
             float angle = i * Mathf.PI * 2f / Segments;
@@ -72,13 +76,20 @@ internal sealed class AcidFieldVisual
         float fade = Mathf.Clamp01(remaining / fadeDuration);
         float pulse = 0.9f + 0.1f * Mathf.Cos((now - startedAt) * 7f);
         Color tint = fillColor;
-        tint.a *= fade * pulse;
+        // Several real fields can overlap; keep their accumulated fill below the units.
+        tint.a *= fade * pulse * .40f;
         properties.SetColor(TintProperty, tint);
         fill.SetPropertyBlock(properties);
         Color border = edgeColor;
-        border.a *= fade;
+        border.a *= fade * .60f;
         edge.startColor = border;
         edge.endColor = border;
+        CellImpactStyle style=CellCombatFeedback.Artwork!=null?CellCombatFeedback.Artwork.Find(CellImpactKind.Acid):null;
+        if(style!=null&&style.frames!=null&&style.frames.Length==6)
+        {
+            bubbles.sprite=style.frames[3+Mathf.FloorToInt((now-startedAt)*8f)%3];
+            bubbles.color=new Color(1f,1f,1f,.22f*fade);
+        }
     }
 
     public void Hide()

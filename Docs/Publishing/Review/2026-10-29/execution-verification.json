@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-29",
+  "developerId": 338749,
+  "appId": 986196,
+  "draftVersion": "V-20261028",
+  "revision": 1162505,
+  "packageId": "1072548",
+  "versionName": "0.1.6",
+  "versionCode": 7,
+  "bytes": 106869032,
+  "sha256": "4c381eccb1363bf0d03378bba530bc03b37408740580a4416a499bd9f3f69be1",
+  "changedFieldIds": [
+    "apk_whatsnew",
+    "description"
+  ],
+  "visibleFieldCount": 19,
+  "allOtherVisibleFieldValuesUnchanged": true,
+  "screenshotsPreserved": true,
+  "gameplayVideoPreserved": true,
+  "bannerPreserved": true,
+  "packageSlots": {
+    "apk_mini_game_play": {
+      "available": true,
+      "expected": {
+        "kind": "none"
+      }
+    },
+    "main": {
+      "available": true,
+      "expected": {
+        "apk_id": "1072548",
+        "kind": "apk"
+      }
+    },
+    "windows": {
+      "available": false,
+      "expected": {
+        "kind": "none"
+      }
+    }
+  },
+  "versions": [
+    {
+      "version_id": "V-20261028",
+      "status": "draft",
+      "status_label": "未发布",
+      "last_event": "draft_created"
+    },
+    {
+      "version_id": "V-20261025",
+      "status": "online",
+      "status_label": "已上线",
+      "last_event": "published"
+    },
+    {
+      "version_id": "V-20261019",
+      "status": "online",
+      "status_label": "已上线",
+      "last_event": "published"
+    }
+  ],
+  "analysis": {
+    "blockers": [],
+    "suggestions": [],
+    "warnings": []
+  },
+  "reviewSnapshotCreated": false,
+  "reviewPrecheckRun": false,
+  "reviewSubmitted": false,
+  "gamePublished": false,
+  "privacyWebsiteChanged": false,
+  "githubPushed": false,
+  "scope": "Approved frozen tested snapshot; excludes subsequent concurrent unvalidated combat effects"
+}

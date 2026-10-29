@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58fc6261871b47dba13f455d2a8b9ef1, type: 3}
+  m_Name: MainMenuBacteriaArtwork
+  m_EditorClassIdentifier: 
+  background: {fileID: 21300000, guid: 3e1ef737785849c78c6289f97476edaa, type: 3}
+  bacteria:
+  - {fileID: 21300000, guid: c1c16b3ee5eb40d6953e96c3f7784104, type: 3}
+  - {fileID: 21300000, guid: fc9e3fbd9d174fa9836fa794f0608ab4, type: 3}
+  - {fileID: 21300000, guid: 7dbfe3fca93947e7a2f651367eac4d08, type: 3}

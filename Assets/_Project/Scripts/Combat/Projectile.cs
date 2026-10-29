@@ -28,6 +28,13 @@ public class Projectile : MonoBehaviour
     private Vector3 originalScale;
     private bool visualCached;
     private bool hasVisualOverride;
+    private bool feedbackEnabled;
+    private CellImpactKind feedbackKind;
+    private Vector3 lastTrailPosition;
+    public void SetFeedback(CellImpactKind kind)
+    {
+        feedbackEnabled = true;feedbackKind = kind;lastTrailPosition = transform.position;
+    }
 
     public void SetVisual(Sprite sprite, Color color, float size)
     {
@@ -164,6 +171,10 @@ public class Projectile : MonoBehaviour
             }
         }
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+        if (feedbackEnabled && (transform.position-lastTrailPosition).sqrMagnitude >= .0225f)
+        {
+            CellCombatFeedback.Trail(feedbackKind, lastTrailPosition);lastTrailPosition = transform.position;
+        }
         float distanceSquared = (target.transform.position - transform.position).sqrMagnitude;
         if (distanceSquared <= hitDistance * hitDistance)
         {
@@ -199,9 +210,11 @@ public class Projectile : MonoBehaviour
                 throw new InvalidOperationException("Antibody target lost its EnemyImmuneState component.");
             }
             immuneState.ApplyMark(markDuration);
+            if (feedbackEnabled) CellCombatFeedback.Impact(feedbackKind, target.transform.position);
         }
         if (damage > 0f)
         {
+            if (feedbackEnabled) CellCombatFeedback.Impact(feedbackKind, target.transform.position);
             target.TakeDamage(new EnemyDamageContext(damage, damageKind));
         }
         Finish();
@@ -235,6 +248,7 @@ public class Projectile : MonoBehaviour
             transform.localScale = originalScale;
         }
         hasVisualOverride = false;
+        feedbackEnabled = false;feedbackKind = default;lastTrailPosition = Vector3.zero;
         target = null;
         targetSpawnVersion = 0;
         damage = 0f;

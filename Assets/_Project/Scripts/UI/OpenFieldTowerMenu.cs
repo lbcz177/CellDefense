@@ -21,6 +21,7 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
     private int lastATP = -1, lastRefund = -1;
     private float lastHealth = -1f;
     private bool lastUpgraded;
+    private float lastRepairBudget = -1f;
     public bool IsVisible => canvasObject != null && canvasObject.activeSelf;
     public bool IsConfirming => IsVisible && confirmation != null && confirmation.activeSelf;
 
@@ -150,14 +151,16 @@ public sealed class OpenFieldTowerMenu : MonoBehaviour
         upgradeButton.interactable = !IsConfirming && owner.CanUpgradeAt(owner.SelectedTowerCell.Value);
         upgradeButton.image.color = upgradeButton.interactable ? Color.white : new Color(1f, 1f, 1f, .45f);
         if (lastATP != owner.CurrentATP || lastHealth != state.CurrentHealth ||
-            lastRefund != refund || lastUpgraded != shownTower.IsUpgraded)
+            lastRefund != refund || lastUpgraded != shownTower.IsUpgraded || lastRepairBudget != state.RepairBudgetRemaining)
         {
             lastATP = owner.CurrentATP;
             lastHealth = state.CurrentHealth;
             lastRefund = refund;
             lastUpgraded = shownTower.IsUpgraded;
+            lastRepairBudget = state.RepairBudgetRemaining;
             info.text = $"{shownTower.Definition.DisplayName}  Lv.{(shownTower.IsUpgraded ? 2 : 1)}\n" +
-                $"生命  {state.CurrentHealth:0}/{state.MaxHealth:0}\n" +
+                $"生命  {state.CurrentHealth:0}/{state.MaxHealth:0}" +
+                (state.InterceptsAllEnemies ? $" · 可修补 {state.RepairBudgetRemaining:0}\n" : "\n") +
                 (state.InterceptsAllEnemies ? "拦截  全部经过的敌人\n" : $"拦截容量  {state.Capacity}\n") +
                 $"射程  {shownTower.Definition.AttackRange:0.#}\n" +
                 $"伤害  {shownTower.CurrentDamage:0.#}\n" +

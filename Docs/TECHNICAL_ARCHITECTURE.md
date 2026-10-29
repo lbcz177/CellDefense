@@ -1,5 +1,7 @@
 # 《胞卫战》技术架构：当前实现
 
+> 2026-10-28 第二章扩展：开放控制器支持任意正波数与分组指定入口，旧波次通过默认关闭的显式入口开关保持轮换；九关共用LevelProgress，菜单按当前章节场景引用加载。新增PlateletRepairBehaviour、ComplementAttackBehaviour、ChapterTwoLinkVisual、ChapterTwoBriefing；修补上限在TowerCombatState按墙生命周期共享。第二章配置、行为与验证入口见[第二章接入](CHAPTER_TWO.md)。以下早期基线的三波／六塔限制已被这次扩展替代。
+
 > 2026-10-20 壁垒最终回归：EditMode **128/128**、PlayMode **33/33**，0 失败 / 跳过；八敌共同攻墙、自然破裂 / 出售放行、暂停保持和超过六次建造均通过。在隔离副本验证，未重打 APK。见 [壁垒验证](Testing/2026-10-20_FibrinBarrier.md)。
 
 > 2026-10-20 本地源码更新：壁垒改为可破坏的原路拦截物，500 生命、30 ATP，拦截全部经过敌人；取消累计建造额度和改路拒建。旧改路代码保留但不启用、界面不展示。本次不重打 APK 或修改 TapTap；既有 0.1.2 包和远程草稿不包含此变更。见 [壁垒说明](FIBRIN_BARRIER.md)。
@@ -10,7 +12,7 @@
 
 > 手机适配阶段回归：EditMode **126/126**、PlayMode **30/30**，0 失败 / 跳过；另独立横屏验证 1/1。覆盖三种实际横屏尺寸和五关触控 / 结算。见 [验证报告](Testing/2026-10-19_MobileAndroid.md)。Android 首个 APK 已生成，尚未真机验收。
 
-> 架构基线：v0.18 · 2026-10-25；配套 [策划 v0.25](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。本轮新增评分、星级及本地最高分；两座规划新塔尚未实现。此前正文见 [v0.17 快照](History/2026-10-25_before_level_scoring/TECHNICAL_ARCHITECTURE.md)。
+> 架构基线：v0.18 · 2026-10-25；配套 [策划 v0.32](GAME_DESIGN_FRAMEWORK.md)、[实现与验证状态](PROJECT_STATUS.md)。第二章已接入修补 / 补体、可变波数和分组入口，实际规则见 [第二章](CHAPTER_TWO.md)。新规划第三章的塑形、双路线、辅助 T 与溶纤首领尚未实现，炎症顺延第四章；流程见 [讨论稿 v0.4](LevelPlanning/CHAPTER_FLOW_DISCUSSION_2026-10-26.md)及[逐关稿](LevelPlanning/CHAPTER_THREE_FLOW_2026-10-29.md)，本次不新增运行模块。此前正文见 [v0.17 快照](History/2026-10-25_before_level_scoring/TECHNICAL_ARCHITECTURE.md)。
 > 当前已接入暂停 / 倍速逻辑与用户 v2 暂停美术，通过共享 Resources 引用八张 Sprite，未改场景、原图或 .meta。此前临时 UI 阶段见 [接图前快照](History/2026-10-18_before_pause_art/TECHNICAL_ARCHITECTURE.md)，v0.9 及更早原文仍保留。
 
 ## 1. 场景与配置边界

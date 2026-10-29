@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "originalStartArtworkRestored": true,
+  "sourceLog": "Logs/ChapterTwo20261028/play-v20.log",
+  "playmode": "13/13",
+  "sha256": {
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "90A628FBFC57B16E01AAE6D7D84E364BDCB9882016508E4F0A6AAF2C227B4C46",
+    "Assets/_Project/Tests/PlayMode/MainMenuFocusPlayModeTests.cs": "3C550A7D28D7405D66F8CAAFFF13D5F0687A1A4F433EBE30EC02E8B8DAC803C8",
+    "Assets/_Project/Scripts/UI/MainMenuButtonFeedback.cs": "6DE851CE9D75C0AA8623D6AADF1BC3E9FA8252C4219C4B5FF822BB8A1E278EC7",
+    "Assets/_Project/Scripts/UI/MainMenuFocusGraphic.cs": "102F92224A4C895ABC002268729AD5D738F81395D5A586A57B40041FF2A39FA0"
+  }
+}

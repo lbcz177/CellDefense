@@ -1,0 +1,395 @@
+{
+  "reports": {
+    "play": {
+      "id": "2",
+      "testcasecount": "73",
+      "result": "Passed",
+      "total": "73",
+      "passed": "73",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-28 17:30:45Z",
+      "end-time": "2026-10-28 17:34:58Z",
+      "duration": "253.0258292"
+    },
+    "final": {
+      "id": "2",
+      "testcasecount": "14",
+      "result": "Passed",
+      "total": "14",
+      "passed": "14",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-28 17:36:21Z",
+      "end-time": "2026-10-28 17:36:51Z",
+      "duration": "29.5129935"
+    },
+    "edit": {
+      "id": "2",
+      "testcasecount": "140",
+      "result": "Passed",
+      "total": "140",
+      "passed": "140",
+      "failed": "0",
+      "inconclusive": "0",
+      "skipped": "0",
+      "asserts": "0",
+      "engine-version": "3.5.0.0",
+      "clr-version": "4.0.30319.42000",
+      "start-time": "2026-10-28 17:37:58Z",
+      "end-time": "2026-10-28 17:37:58Z",
+      "duration": "0.7071073"
+    }
+  },
+  "testedFiles": [
+    {
+      "file": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\01_neutrophil.controller",
+      "sha256": "f6d865a60f39a69d0fe3d07952576b6c9ca49e0e46fc26de011ba6286c254380"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\02_fibrin.controller",
+      "sha256": "fa581ea6afbc52377ef0db074ba20b91cebbb74b2eac3c3a7fe52d67682d0ac4"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\03_lysosome.controller",
+      "sha256": "9711c2d304a432e90b616f772d222f31cbba545973c923f5129e4e380b37d85e"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\04_neural.controller",
+      "sha256": "61c50d41d19fcf02b7dc316bf6bb92d8de615f33a845347d8cb87173a7a4fd4e"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\05_phagocyte.controller",
+      "sha256": "ff06cc692db80a28c6403324ede4d28d3fd70d24d3a9d3471355c7262946a5f3"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\06_antibody.controller",
+      "sha256": "9c0cb2a9397180597eb9b8031824a789cc6f98ca7b830e527d0829b000e4a1d0"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Shaders\\SpriteHitFlash.shader",
+      "sha256": "0b3ace2427828f1564dfb8ec1e9851ee6dfbb819afd5b43d6c396db489d6d8b4"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\01_neutrophil_Attack_ImpactTiming.anim",
+      "sha256": "d565ab332dd443ffadef9583cf9e1671d1529aebe22a98c023dd296f7a3908cf"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\02_fibrin_Attack_ImpactTiming.anim",
+      "sha256": "8753b3e532a6927d38f1b76acaeb6e1d952ec7d3d8982d86af2927997e5a1e81"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\03_lysosome_Attack_ImpactTiming.anim",
+      "sha256": "4af401b7d757bf4b323215d084533c9a05267ea9abcd610b0084189407cdfa2e"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\04_neural_Attack_ImpactTiming.anim",
+      "sha256": "a40292276e136e5dc5f282089c12362b0353b46a0a92d940620fa0b5dac442a3"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\05_phagocyte_Attack_ImpactTiming.anim",
+      "sha256": "c17b6f6d47bf48d695999587aa45b0f5fc9df0b893eb20a2f911f58386f7a09e"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\06_antibody_Attack_ImpactTiming.anim",
+      "sha256": "7e95ebfdf8d0e0422c004df5c3e6a10763aa19ee7d564c145750fe9ab3aeb753"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\CellImpact.mat",
+      "sha256": "1a6e727cb0390ed5c124d6e6e901dc4596bb4fd217d32ee1a7e4af7029f727ef"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\壁垒_纤维回弹\\frames\\frame_01.png",
+      "sha256": "7be44e637a99d635ca2751bf3bd234af8727dcf786078b401d57e3f319ca7009"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\壁垒_纤维回弹\\frames\\frame_02.png",
+      "sha256": "0a0e7f21aca6418c9c1e7741c2931f4a21f3d6370c9757d40f333f6747a39275"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\壁垒_纤维回弹\\frames\\frame_03.png",
+      "sha256": "5a3b6435a8e4f66eb8c53fbaa282cce9145c0990b2aba9089455e0fcff41af83"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\壁垒_纤维回弹\\frames\\frame_04.png",
+      "sha256": "e0ac9c1f3d45b10173fa242c6a5a10936108f28372765e3f5189579d44c1b1d4"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\壁垒_纤维回弹\\frames\\frame_05.png",
+      "sha256": "de866756010d3b074d576f17ae4ad3bc4bc2f5118ab3d8301365edff84fc44a9"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\壁垒_纤维回弹\\frames\\frame_06.png",
+      "sha256": "519455718150ba0864e6f85c86c1193f61b8ac969088d2a329f4e9dd034d3a71"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\巨噬_吞噬收拢\\frames\\frame_01.png",
+      "sha256": "74ce184f63fb13884b5431cd010f7ab99c8ec30643e6d1d827ed920d58e9afea"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\巨噬_吞噬收拢\\frames\\frame_02.png",
+      "sha256": "53e67dc12a84f0df1fa6bb71ce64e455d7394579600ab314adea52e9aede5f66"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\巨噬_吞噬收拢\\frames\\frame_03.png",
+      "sha256": "ba9cca8de9aab3234d7e315c9e89ba0e2961ffb58884385aa18ad6c2d2b2c495"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\巨噬_吞噬收拢\\frames\\frame_04.png",
+      "sha256": "92a2884f27692b9bd4eeea16573b4e744a0606b9d0396fe0f442e582e621333f"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\巨噬_吞噬收拢\\frames\\frame_05.png",
+      "sha256": "5519dfa4a0a17a596d963c6328e6cbfba0fb6e19627705b8bee34a6f32fc94fb"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\巨噬_吞噬收拢\\frames\\frame_06.png",
+      "sha256": "bca48ee17f6f61991347897dfb3d842b991f0afdccae015f5c85e2ddfa5839c3"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\投射物\\抗体Y蛋白.png",
+      "sha256": "7b28ec039d15128c8dda150917e4934e64ae818d1a80cc3a72bb3cf9ec582432"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\投射物\\近卫颗粒.png",
+      "sha256": "c86ed8928b5b5d0e8ed121a50186e74190199333ff366b43fbfa491e45ba3b50"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\投射物\\酸化囊泡.png",
+      "sha256": "701eb1524d79c4ec3d4ede5d7f4ac2c7c0f00e7d936628853aab8ebb7af41f0b"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\抗体_标记附着\\frames\\frame_01.png",
+      "sha256": "a9ee0891d150f100dd96e872b464d3d8da2f6daf0f03cb3a8a1ffae65551b90c"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\抗体_标记附着\\frames\\frame_02.png",
+      "sha256": "d62d824de5b9c006b770aeafb777b7eb27ae3c0c29591e1e3f0ceab344142442"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\抗体_标记附着\\frames\\frame_03.png",
+      "sha256": "1e78e2505a1196cfa30b9b6d8481d872f2fdb0c484196e2a5b058fcb1251e839"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\抗体_标记附着\\frames\\frame_04.png",
+      "sha256": "975bf2edb876b27dd30eddd89c87c2e8b97685004857dba88376ca4042276691"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\抗体_标记附着\\frames\\frame_05.png",
+      "sha256": "099d29115a8761fb019b22cc685aaa5c1bc60d65e5d8e5cd81aa0566d00130f2"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\抗体_标记附着\\frames\\frame_06.png",
+      "sha256": "5b5d6fd8794ecbb61e6722228f27d776b82c44b125af29b066da2e39d4795be1"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\神经_脉冲接触\\frames\\frame_01.png",
+      "sha256": "060e30f53963105522bd70950d6c6aa69e74ad126f6073913a32dd2815b31152"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\神经_脉冲接触\\frames\\frame_02.png",
+      "sha256": "962e58e04bd7a771db39ece602cd2464f3f3b1918106733d1834ceaa8ecbeb7d"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\神经_脉冲接触\\frames\\frame_03.png",
+      "sha256": "8d1ccee0cd82da1cb1a535306a51aaffd03fc5750cd4a6011af0e3647cca1463"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\神经_脉冲接触\\frames\\frame_04.png",
+      "sha256": "439b65e000ba2fb2fe4a55d0a3d91f224e532e234f0e7c927cf3272314de7c4b"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\神经_脉冲接触\\frames\\frame_05.png",
+      "sha256": "42294c6b29b22395ea9ee8a69f0afceec8ca01d5975fbb5d7b801810af9bc5a1"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\神经_脉冲接触\\frames\\frame_06.png",
+      "sha256": "f917c560f2380a3ca982cb4706227305357acdd90575645567ef4bc298479adb"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\近卫_颗粒冲击\\frames\\frame_01.png",
+      "sha256": "ee66e975071ee56bf87de50e823ac9c121fb1c2610eda13332a0b9025c8ab139"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\近卫_颗粒冲击\\frames\\frame_02.png",
+      "sha256": "8ad6055904dae7a06fb2e3b544a552e5c2ce1768dc03b2fbf7b062346dace559"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\近卫_颗粒冲击\\frames\\frame_03.png",
+      "sha256": "0607398fb328d8376b0ee7ec5fb8f54efb27c3be77018d16c8a573b1c5d33210"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\近卫_颗粒冲击\\frames\\frame_04.png",
+      "sha256": "16c0f0412409ffcb1b15f80b826a4bab7bfc08fecc6c6b83da61461cd03bc3e7"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\近卫_颗粒冲击\\frames\\frame_05.png",
+      "sha256": "9860308f90cf632993162940558f89bbbdb0f23d7efd00efad92059575a91309"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\近卫_颗粒冲击\\frames\\frame_06.png",
+      "sha256": "ac76b1fed5f32c9356e773bcec91ff761d38d8ab89a4f413b07d6c0c697587a2"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\酸化_囊泡飞溅\\frames\\frame_01.png",
+      "sha256": "8c1efd127fb08266968bbd87e17f335da8e362dfc6e4ff4fca8b99ccdd000d2e"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\酸化_囊泡飞溅\\frames\\frame_02.png",
+      "sha256": "baae302597dfd1c4394fa8822e24544478d08495d24c74f38756b9d1a33151fa"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\酸化_囊泡飞溅\\frames\\frame_03.png",
+      "sha256": "92fb13dbb320e00b48169b85395481873ab9c8ccf7b36ff02df1c6ec99fd6968"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\酸化_囊泡飞溅\\frames\\frame_04.png",
+      "sha256": "0973a3830cd2402250f1e79a9b18283a6941bbc5a670c23877fcb8a2f4aee6b5"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\酸化_囊泡飞溅\\frames\\frame_05.png",
+      "sha256": "9bcff3ea5beab95d3d0138585d962f29d9c35c92fbb6fbe14198280a9c08c128"
+    },
+    {
+      "file": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\酸化_囊泡飞溅\\frames\\frame_06.png",
+      "sha256": "2e755878f0aef2ec0fab5ff8fe2e053fabb47f09dce3da7934eb4137094f8662"
+    },
+    {
+      "file": "Assets\\_Project\\Resources\\CellImpactArtwork.asset",
+      "sha256": "a5499abacb9f1610621c0863278677d8c46b4a16c108cc0e6e8020ece0be0863"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\AcidFieldVisual.cs",
+      "sha256": "7a16769a5f927c58cb828059a73acf76e19aa33e39be0adb57e3b79a240559b2"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\CellCombatFeedback.cs",
+      "sha256": "043e01f8dea8b0f6578b8a5dccda72363a55d47c10a71cb4d1e78054002bf909"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\CellImpactArtwork.cs",
+      "sha256": "647bc0637073a3da1c9868b11a9c2671f1a9f9b65e4a9c113be81a1a5d6b8278"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\CombatHitFeedback.cs",
+      "sha256": "bc8c0643d71f8731903b16d86011d8a8b5a6af9f38947d16dd16a1b8c08f74f5"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\EnemyDamageContext.cs",
+      "sha256": "93a5cbfbc50faf55e97b5116bd43a86550776c2fdae5e2ecddd22d9959d94d2c"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\EnemyRangeQuery.cs",
+      "sha256": "e2f4c764568a15cac1a06b0324621ad50cb060b02278a92b00929aeb20ac773e"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\Health.cs",
+      "sha256": "1a28aa3a77e6f2327420f4d793e71d1f79ff7411e23163b7cd63463ac2d0a801"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\IDamageable.cs",
+      "sha256": "97a7ede1ec08a9c4fe99eedb3b0e29cc45e7658020f9af2406a0e4abd9f787d0"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\Projectile.cs",
+      "sha256": "6740763341e53b6622545f78c4e43c738c9993077e1e2306e8cc5b1a1f5383a1"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\ProjectilePool.cs",
+      "sha256": "9a09b9657a990afe720302d239bad49432143520925a698d13390a532f7a8bab"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\SpriteHitFlash.cs",
+      "sha256": "6d3337b7f44171cf3f257fb9e43213350a709c544acfd4f121fbe74540437f65"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\TopDownFacing.cs",
+      "sha256": "fb9581cde2a48b2e25aa5a3a6572903d8a43c8c16d4295a42e62c5d31d2a586f"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Combat\\TowerImpactRecoil.cs",
+      "sha256": "06ed10f8dd63df981892d8696c6e0a15cf1b0f904816418922178ed4b7eb058e"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\AcidAttackBehaviour.cs",
+      "sha256": "e0459c127b2a8c0d20fa21c439176706d641449be32d52687fe901830b33fa71"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\AntibodyAttackBehaviour.cs",
+      "sha256": "509decffb8f45b1d2f07e8abf049b543c849d1bbe505c6baeda7141289a1d97a"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\ChapterTwoActionAnimation.cs",
+      "sha256": "c32631063f7df1b0d8f427f00b4e96c8b8bcf11392957bcecc6bfd919617a099"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\ChapterTwoLinkVisual.cs",
+      "sha256": "8106c6835ab2bcc4cc23b4f283f621a2f27beb156c60c3f45ef756a3baa29e5a"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\ComplementAttackBehaviour.cs",
+      "sha256": "a8da1fcd34e057de38c513999843b10ef76d5ec6ac0ac4d1f90d802abcc4e491"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\FibrinSlowAura.cs",
+      "sha256": "228c5bd311c552a1ae4693087cb4be7714f587b583d18a24b50ff20fea3c7b7a"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\NeuralPulseAttackBehaviour.cs",
+      "sha256": "dc2d52e1c2992cd714e0796433668b4c121aabf54a7183c93d8b9455600c1034"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\PhagocyteAttackBehaviour.cs",
+      "sha256": "9be813dec49d6551a2af9ac7a2697d7a83276eb5ba9340b97e08c046126b361d"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\PlateletRepairBehaviour.cs",
+      "sha256": "90978103564ab6a33644c2350b176b98112940c01fdc989c1adf705889282362"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\TowerAttackBehaviour.cs",
+      "sha256": "4f4521edee3c02bf2ca71855feb464e6db157007c13d43305ed1712e3a607423"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\TowerCombatState.cs",
+      "sha256": "0de6572a8f5b3e8ffe4df8d1fa098139ae9a5540a9c3e3c1fa4167a5e5a2bdfc"
+    },
+    {
+      "file": "Assets\\_Project\\Scripts\\Towers\\TowerController.cs",
+      "sha256": "ded688890f6c8fea632caeb0b4908b5a7ff438336af39fd8b002f567cc029507"
+    }
+  ],
+  "finalPreviews": [
+    {
+      "file": "八塔受控实战_v2_30fps.gif",
+      "frames": 180,
+      "durationMs": 6000,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "正常资源实战_v2_30fps.gif",
+      "frames": 180,
+      "durationMs": 6000,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "newFrames": 36,
+  "existingChapterTwoContactFrames": 12,
+  "originalClipsAndControllerMetaPreserved": true,
+  "originalArticle": "403 Forbidden; body unavailable",
+  "initialFullRunFinalVisualChanges": "Final targeted 14/14 and EditMode 140/140 validate the reduced acid opacity and unchanged macrophage body color after the 73/73 functional run."
+}

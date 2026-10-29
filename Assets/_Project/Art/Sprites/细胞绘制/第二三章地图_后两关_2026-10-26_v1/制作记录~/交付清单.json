@@ -1,0 +1,79 @@
+[
+  {
+    "id": "2-3",
+    "name": "长廊窗口",
+    "chapter": "第二章",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-986425eb-f1bd-4bdc-9d8b-f546e84027f7.png",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第二章/2-3_长廊窗口.png",
+    "initialSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-f58b2e03-ab11-4602-ae1f-9b2749510284.png",
+    "positionCorrectionSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-db5adb06-fb63-4a52-824d-7ca45ea7ceb5.png",
+    "promptFiles": [
+      "完整绘图提示词.json",
+      "位置校正提示词.json",
+      "2-3_多余伤口校正提示词.json"
+    ],
+    "size": [
+      1464,
+      1075
+    ],
+    "sha256": "a1dbf5a8d02bbfadfbfcb813e925d06d641b72d36dfb92f587127923ab391646",
+    "ppu": 97.6
+  },
+  {
+    "id": "2-4",
+    "name": "生物膜边缘",
+    "chapter": "第二章",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-24f139b1-c0ca-4c7c-82a5-832b1245a359.png",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第二章/2-4_生物膜边缘.png",
+    "initialSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-6b5b9764-5a09-469d-bc10-ad7a0fd59ffe.png",
+    "positionCorrectionSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-24f139b1-c0ca-4c7c-82a5-832b1245a359.png",
+    "promptFiles": [
+      "完整绘图提示词.json",
+      "位置校正提示词.json"
+    ],
+    "size": [
+      1463,
+      1075
+    ],
+    "sha256": "8c5bbe25879782f8e8a06d193f22450b8d9ca18daa88d3c65977a5da54a2513a",
+    "ppu": 97.53333333333333
+  },
+  {
+    "id": "3-3",
+    "name": "过热前沿",
+    "chapter": "第三章",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-53dd04d3-2176-4afe-8a7e-a1eeb1476bf6.png",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第三章/3-3_过热前沿.png",
+    "initialSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-f3dfdb95-15d6-4554-a1a2-7cdab7182b32.png",
+    "positionCorrectionSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-53dd04d3-2176-4afe-8a7e-a1eeb1476bf6.png",
+    "promptFiles": [
+      "完整绘图提示词.json",
+      "位置校正提示词.json"
+    ],
+    "size": [
+      1463,
+      1075
+    ],
+    "sha256": "245921a0e348e564d782ab03ebb93388b923036057d65f96c5342dcd73dbb781",
+    "ppu": 97.53333333333333
+  },
+  {
+    "id": "3-4",
+    "name": "双灶组织",
+    "chapter": "第三章",
+    "source": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-5f0d1152-254c-461e-b4d0-db1ed498fb3c.png",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第三章/3-4_双灶组织.png",
+    "initialSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-52da52c5-1b21-48ba-9a8f-bf39074dcc70.png",
+    "positionCorrectionSource": "C:/Users/a/.codex/generated_images/01a14fcf-47f7-7d81-9e68-5605e5720d6c/exec-5f0d1152-254c-461e-b4d0-db1ed498fb3c.png",
+    "promptFiles": [
+      "完整绘图提示词.json",
+      "位置校正提示词.json"
+    ],
+    "size": [
+      1464,
+      1075
+    ],
+    "sha256": "dbf2a7835527b68d209030cbc530a06e4cbdc6d8b0d8aba8df00bb4f0e66f744",
+    "ppu": 97.6
+  }
+]

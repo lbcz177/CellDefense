@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 09:47:02Z" end-time="2026-10-28 09:47:35Z" duration="32.5675969">
+  <test-suite type="TestSuite" id="1000" name="ChapterSelectionTests" fullname="ChapterSelectionTests" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-10-28 09:47:02Z" end-time="2026-10-28 09:47:35Z" duration="32.567597" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1076" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-10-28 09:47:02Z" end-time="2026-10-28 09:47:35Z" duration="32.563239" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="47884" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="AutoWavePlayModeTests" fullname="AutoWavePlayModeTests" classname="AutoWavePlayModeTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-28 09:47:02Z" end-time="2026-10-28 09:47:07Z" duration="4.406022" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1004" name="ClearingBeforeCountdownExpiresDoesNotGrantRoundRewardTwice" fullname="AutoWavePlayModeTests.ClearingBeforeCountdownExpiresDoesNotGrantRoundRewardTwice" methodname="ClearingBeforeCountdownExpiresDoesNotGrantRoundRewardTwice" classname="AutoWavePlayModeTests" runstate="Runnable" seed="1936430736" result="Passed" start-time="2026-10-28 09:47:02Z" end-time="2026-10-28 09:47:04Z" duration="1.133402" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1003" name="CountdownStartsOnlyAfterLastSpawnAndCaptionRendersWithoutMissingGlyphs" fullname="AutoWavePlayModeTests.CountdownStartsOnlyAfterLastSpawnAndCaptionRendersWithoutMissingGlyphs" methodname="CountdownStartsOnlyAfterLastSpawnAndCaptionRendersWithoutMissingGlyphs" classname="AutoWavePlayModeTests" runstate="Runnable" seed="986315537" result="Passed" start-time="2026-10-28 09:47:04Z" end-time="2026-10-28 09:47:04Z" duration="0.825556" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1005" name="DisabledOrDefeatedRunsDoNotAutoStartAndRestartWaitsForFirstInput" fullname="AutoWavePlayModeTests.DisabledOrDefeatedRunsDoNotAutoStartAndRestartWaitsForFirstInput" methodname="DisabledOrDefeatedRunsDoNotAutoStartAndRestartWaitsForFirstInput" classname="AutoWavePlayModeTests" runstate="Runnable" seed="723436114" result="Passed" start-time="2026-10-28 09:47:04Z" end-time="2026-10-28 09:47:05Z" duration="0.997217" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1002" name="FirstWaveIsManualAndSurvivorsDoNotPreventAutomaticSecondWave" fullname="AutoWavePlayModeTests.FirstWaveIsManualAndSurvivorsDoNotPreventAutomaticSecondWave" methodname="FirstWaveIsManualAndSurvivorsDoNotPreventAutomaticSecondWave" classname="AutoWavePlayModeTests" runstate="Runnable" seed="31245739" result="Passed" start-time="2026-10-28 09:47:05Z" end-time="2026-10-28 09:47:07Z" duration="1.440212" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1013" name="FirstLevelTutorialPlayModeTests" fullname="FirstLevelTutorialPlayModeTests" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-28 09:47:07Z" end-time="2026-10-28 09:47:35Z" duration="28.155054" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1015" name="EarlyWaveStartsDoNotLockGuideAndBarrierLossOffersRebuild" fullname="FirstLevelTutorialPlayModeTests.EarlyWaveStartsDoNotLockGuideAndBarrierLossOffersRebuild" methodname="EarlyWaveStartsDoNotLockGuideAndBarrierLossOffersRebuild" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" seed="1789843096" result="Passed" start-time="2026-10-28 09:47:07Z" end-time="2026-10-28 09:47:07Z" duration="0.490346" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[TUTORIAL_BUILD type=3 cell=(5, 7) atp=70
+TUTORIAL_BUILD type=3 cell=(5, 7) atp=40
+]]></output>
+        </test-case>
+        <test-case id="1014" name="RealBuildsAdvanceGuideAndSkipNeverChangesEconomyOrWaveRules" fullname="FirstLevelTutorialPlayModeTests.RealBuildsAdvanceGuideAndSkipNeverChangesEconomyOrWaveRules" methodname="RealBuildsAdvanceGuideAndSkipNeverChangesEconomyOrWaveRules" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" seed="700374119" result="Passed" start-time="2026-10-28 09:47:07Z" end-time="2026-10-28 09:47:08Z" duration="0.800200" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+          <output><![CDATA[TUTORIAL_BUILD type=0 cell=(5, 6) atp=75
+TUTORIAL_BUILD type=0 cell=(5, 8) atp=50
+]]></output>
+        </test-case>
+        <test-case id="1016" name="SuggestedDefenseCompletesThreeRealWavesWithoutChangingCombatOrResources" fullname="FirstLevelTutorialPlayModeTests.SuggestedDefenseCompletesThreeRealWavesWithoutChangingCombatOrResources" methodname="SuggestedDefenseCompletesThreeRealWavesWithoutChangingCombatOrResources" classname="FirstLevelTutorialPlayModeTests" runstate="Runnable" seed="634602988" result="Passed" start-time="2026-10-28 09:47:08Z" end-time="2026-10-28 09:47:35Z" duration="26.859314" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="Timeout" value="120000" />
+          </properties>
+          <output><![CDATA[TUTORIAL_BUILD type=0 cell=(5, 6) atp=75
+TUTORIAL_BUILD type=0 cell=(5, 8) atp=50
+FIRST_LEVEL_PLAYTHROUGH round=1 life=7 atp=120
+TUTORIAL_BUILD type=3 cell=(5, 7) atp=90
+FIRST_LEVEL_PLAYTHROUGH round=2 life=7 atp=229
+TUTORIAL_BUILD type=2 cell=(6, 7) atp=204
+TUTORIAL_BUILD type=0 cell=(6, 8) atp=179
+TUTORIAL_BUILD type=0 cell=(7, 6) atp=154
+FIRST_LEVEL_PLAYTHROUGH round=3 life=7 atp=315
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "🎮 01｜游戏策划与原创玩法框架",
+    "url": "https://app.notion.com/p/3b8c4f9516208182bdf1f2b106c7ba75?pvs=204",
+    "lastEdited": "2026-10-18T08:24:59.025Z",
+    "usedFor": "Historical cross-check only; local v0.28 takes precedence"
+  },
+  {
+    "title": "🎨 05｜统一美术方向与资产规范",
+    "url": "https://app.notion.com/p/3b8c4f951620817cb407f1726dc3df97?pvs=204",
+    "lastEdited": "2026-09-09T07:45:55.694Z",
+    "usedFor": "Visual style, readability and asset separation; legacy fixed tower slots superseded"
+  },
+  {
+    "title": "🗺️ 08｜AI 绘画提示词｜地图",
+    "url": "https://app.notion.com/p/3b8c4f951620815aa491d632803bd02b?pvs=204",
+    "lastEdited": "2026-09-09T07:42:21.169Z",
+    "usedFor": "Graybox-first process, style DNA and negative prompts; old chapter layouts superseded"
+  }
+]

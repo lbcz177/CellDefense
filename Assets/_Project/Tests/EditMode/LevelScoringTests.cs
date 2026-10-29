@@ -72,6 +72,25 @@ public sealed class LevelScoringTests
     }
 
     [Test]
+    public void UnlocksRequireAllEarlierClearsAndSurviveStoreRecreationWithoutStarRequirements()
+    {
+        string[] scenes={"OpenFieldPrototype","OpenFieldLevel02","OpenFieldLevel03","OpenFieldLevel04","OpenFieldLevel05"};
+        Assert.That(Call(progress,"IsUnlocked",scenes[0]),Is.True);
+        Assert.That(Call(progress,"IsUnlocked",scenes[1]),Is.False);
+        Call(progress,"SaveVictory",scenes[3],9300);
+        Assert.That(Call(progress,"IsUnlocked",scenes[4]),Is.False,"A late legacy record cannot fill earlier gaps.");
+        for(int i=0;i<scenes.Length-1;i++)
+        {
+            Call(progress,"SaveVictory",scenes[i],100);
+            progress=Activator.CreateInstance(Progress,prefix);
+            Assert.That(Call(progress,"IsUnlocked",scenes[i+1]),Is.True);
+        }
+        Assert.That(Call(progress,"BestScore",scenes[3]),Is.EqualTo(9300));
+        Assert.That(Call(progress,"IsUnlocked","MainMenu"),Is.False);
+        Assert.That(Call(progress,"IsUnlocked",""),Is.False);
+    }
+
+    [Test]
     public void RecordsPersistPerLevelAndLowerRetriesNeverOverwriteTheBest()
     {
         Assert.That(Call(progress, "BestStars", "OpenFieldPrototype"), Is.Zero);

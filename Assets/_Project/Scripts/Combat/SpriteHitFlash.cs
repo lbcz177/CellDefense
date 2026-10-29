@@ -6,6 +6,8 @@ public sealed class SpriteHitFlash : MonoBehaviour
 {
     [SerializeField, Min(0.01f)] private float duration = 0.065f;
     private static readonly int FlashAmount = Shader.PropertyToID("_FlashAmount");
+    private static readonly int Squash = Shader.PropertyToID("_ImpactSquash");
+    private static readonly int Direction = Shader.PropertyToID("_ImpactDirection");
     private SpriteRenderer body;
     private MaterialPropertyBlock properties;
     private float flashUntil;
@@ -54,6 +56,8 @@ public sealed class SpriteHitFlash : MonoBehaviour
         }
         body.GetPropertyBlock(properties);
         properties.SetFloat(FlashAmount, amount);
+        properties.SetFloat(Squash, amount * .075f);
+        properties.SetVector(Direction, new Vector4(1f, 0f, 0f, 0f));
         body.SetPropertyBlock(properties);
     }
 }

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-28",
+  "unity": "2022.3.53f1c1",
+  "results": {
+    "playmode": {
+      "result": "Passed",
+      "total": "59",
+      "passed": "59",
+      "failed": "0",
+      "skipped": "0",
+      "start-time": "2026-10-28 09:44:04Z",
+      "end-time": "2026-10-28 09:46:16Z",
+      "source": "Logs\\ChapterSelection20261028\\playmode-v16.xml"
+    },
+    "final-targeted": {
+      "result": "Passed",
+      "total": "7",
+      "passed": "7",
+      "failed": "0",
+      "skipped": "0",
+      "start-time": "2026-10-28 09:47:02Z",
+      "end-time": "2026-10-28 09:47:35Z",
+      "source": "Logs\\ChapterSelection20261028\\playmode-v17.xml"
+    },
+    "editmode": {
+      "result": "Passed",
+      "total": "141",
+      "passed": "141",
+      "failed": "0",
+      "skipped": "0",
+      "start-time": "2026-10-28 09:48:14Z",
+      "end-time": "2026-10-28 09:48:15Z",
+      "source": "Logs\\ChapterSelection20261028\\editmode-auto-waves.xml"
+    }
+  },
+  "sha256": {
+    "Assets/_Project/Scripts/OpenField/OpenFieldPrototypeController.cs": "902c35c59bd0e9dba0301b6fd0013b7ae63d484ec260e3f52247a9341bec11f2",
+    "Assets/_Project/Scripts/UI/OpenFieldEntranceWaveButtons.cs": "fde7b0e42a10628be4ae7c3d4843ac2dd67dc5c70ceef333c34d74a1373ef33a",
+    "Assets/_Project/Scripts/UI/FirstLevelTutorial.cs": "e278f206a59c7cea8df5692026dac5438af983117b242409b3744893530c1e67",
+    "Assets/_Project/Tests/PlayMode/AutoWavePlayModeTests.cs": "61eaff769d1556526690cce3946c1854f831920365c3f1b9475a964b07c86668",
+    "Assets/_Project/Tests/PlayMode/FirstLevelTutorialPlayModeTests.cs": "934c8efdcc11d5c0717cff26a7c689909d4447a7066da4db2a6929123d8ec9fc"
+  },
+  "screenshot": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\自动开波验证_2026-10-28_v1\\出兵后倒计时.png",
+  "notes": "Full PlayMode precedes two final tutorial copy edits; final targeted rerun covers those edits. No APK built or uploaded."
+}

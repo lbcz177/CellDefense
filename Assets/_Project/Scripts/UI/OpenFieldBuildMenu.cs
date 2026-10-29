@@ -152,7 +152,7 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         }
 
         Rect bounds = MobileDisplay.IsActive ? MobileDisplay.LocalSafeArea(canvasRect) : canvasRect.rect;
-        int columns = Mathf.Clamp(Mathf.FloorToInt((bounds.width - 32f) / (CardSize + Gap)), 1, 3);
+        int columns = Mathf.Clamp(Mathf.FloorToInt((bounds.width - 32f) / (CardSize + Gap)), 1, definitions.Length > 6 ? 4 : 3);
         columns = Mathf.Min(columns, buttons.Length);
         int rows = (buttons.Length + columns - 1) / columns;
         Vector2 size = new Vector2(16f + columns * CardSize + (columns - 1) * Gap,
@@ -188,14 +188,24 @@ public sealed class OpenFieldBuildMenu : MonoBehaviour
         panelRect.anchoredPosition = new Vector2(
             xMin <= xMax ? Mathf.Clamp(local.x, xMin, xMax) : bounds.center.x,
             yMin <= yMax ? Mathf.Clamp(preferredY, yMin, yMax) : bounds.center.y);
+        // Eight choices can require a third row on narrow screens. Fit the whole menu
+        // below the HUD without shrinking the cards in the original six-tower levels.
+        float availableHeight = Mathf.Max(1f, topLimit - bounds.yMin - 16f);
+        float fit = Mathf.Min(1f, (bounds.width - 16f) / size.x, availableHeight / size.y);
+        panelRect.localScale = Vector3.one * fit;
+        if (fit < 1f) panelRect.anchoredPosition = new Vector2(bounds.center.x, (topLimit + bounds.yMin) * .5f);
     }
 
     private string ChoiceLabel(int index)
     {
         TowerDefinition definition = definitions[index];
-        if (definition == null) return "未配置";
+        if (definition == null || definition.Prefab == null) return "未配置";
         string reason = rejectionReason != null ? rejectionReason(index) : string.Empty;
-        string role = definition.InterceptsAllEnemies ? "承伤壁垒·拦截全部" :
+        var immuneSupport=definition.Prefab.GetComponent<ImmuneSupportBehaviour>();
+        string role = immuneSupport != null ? (immuneSupport.IsRegulatory ? "局部调节·不治疗" : "辅助抗体·延长标记") :
+            definition.Prefab.GetComponent<PlateletRepairBehaviour>() != null ? "修补壁垒·总量有限" :
+            definition.Prefab.GetComponent<ComplementAttackBehaviour>() != null ? "标记加速·单体裂解" :
+            definition.InterceptsAllEnemies ? "承伤壁垒·拦截全部" :
             $"可承伤 · 拦截 {definition.InterceptCapacity}";
         return $"{definition.DisplayName}\n{definition.BuildCost} ATP\n" +
             (string.IsNullOrEmpty(reason) ? role : reason);

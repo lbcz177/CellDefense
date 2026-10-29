@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-29",
+  "appId": "986196",
+  "forumId": "1565091",
+  "forumName": "胞卫战",
+  "forumUrl": "https://www.taptap.cn/app/986196/forum",
+  "section": "综合",
+  "sectionId": "0",
+  "identity": "official",
+  "title": "《胞卫战》开发日志：第二章四关完成，两座新塔加入防线",
+  "bodyFile": "Docs/Publishing/Community/2026-10-29_开发日志_0.1.6.md",
+  "documentSha256": "44d5c242ea1d9a8dcf2677b5b16dd77a908c7092be6712737ff8b0e4b6db8e0f",
+  "format": "text only",
+  "uploadNewMedia": false,
+  "approved": false,
+  "remoteDraftCreated": false,
+  "published": false,
+  "scope": [
+    "create one new community topic draft",
+    "read back and verify title/body/identity/forum",
+    "publish same verified post"
+  ],
+  "excluded": [
+    "game review submission",
+    "game public release",
+    "store field changes",
+    "APK uploads",
+    "screenshots or video changes"
+  ]
+}

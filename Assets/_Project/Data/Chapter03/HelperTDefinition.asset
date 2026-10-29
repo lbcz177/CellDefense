@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5821597d2fbd35049b050306d57e6dee, type: 3}
+  m_Name: HelperTDefinition
+  m_EditorClassIdentifier: 
+  displayName: "\u8F85\u52A9\u6027T\u7EC6\u80DE"
+  prefab: {fileID: 4762122256896839380, guid: 116693d1560bc4e4cb56e213fd5f778d, type: 3}
+  buildIcon: {fileID: 4138848172959368440, guid: 02ecaa9cd1a34808a75abec97e91e6e7, type: 3}
+  placementKind: 0
+  projectilePrefab: {fileID: 0}
+  buildCost: 60
+  attackRange: 2.6
+  damage: 0
+  attackInterval: 1
+  targetingMode: 1
+  blocksEnemyRoute: 0
+  interceptsAllEnemies: 0
+  maxHealth: 100
+  interceptCapacity: 1

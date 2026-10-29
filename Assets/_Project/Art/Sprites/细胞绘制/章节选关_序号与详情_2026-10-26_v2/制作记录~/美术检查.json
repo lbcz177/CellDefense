@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "method": "Aseprite edit of existing native assets; no new imagegen call",
+  "overviewCounts": [
+    5,
+    4,
+    4
+  ],
+  "overviewContent": [
+    "number",
+    "stars"
+  ],
+  "mapAndRecordOnlyInDetails": true,
+  "existingMapHashesUnchanged": true,
+  "artExampleScore": 9600,
+  "exampleIsNotARealUserRecord": true,
+  "runtimeRecordSource": "LevelProgress.BestScore / BestStars; no new save keys or per-attempt history"
+}

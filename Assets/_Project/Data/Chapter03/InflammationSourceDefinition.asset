@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d4742dd96d5e346bf7912855a9a839, type: 3}
+  m_Name: InflammationSourceDefinition
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1597413059991711265, guid: 0c006f7b88b91e64aa00f4a291d926ce, type: 3}
+  maxHealth: 180
+  killReward: 20
+  antigenId: 10
+  engulfImmune: 0
+  displayName: "\u708E\u75C7\u8BF1\u5BFC\u83CC"
+  baseMoveSpeed: 0.8
+  leakDamage: 1
+  isBoss: 0
+  complementSensitive: 0
+  inflammationSource: 1
+  armorReduction: 0
+  armorBreakDuration: 3
+  initialShield: 0
+  slowEffectiveness: 1
+  stunEffectiveness: 1
+  stunRecoveryDuration: 0.5
+  contactDamage: 6
+  contactAttackInterval: 1

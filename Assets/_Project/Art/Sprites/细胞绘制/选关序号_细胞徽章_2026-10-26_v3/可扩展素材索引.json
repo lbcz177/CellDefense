@@ -1,0 +1,208 @@
+{
+  "version": 3,
+  "artOnly": false,
+  "chapters": [
+    {
+      "id": 1,
+      "name": "伤口防线",
+      "label": "第一章",
+      "tagline": "守住伤口，建立防线",
+      "background": "chapter1",
+      "cover": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/章节封面/第1章_伤口防线_地图封面.png",
+      "levels": [
+        {
+          "id": "1-1",
+          "name": "守住伤口",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/01_守住伤口.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/1-1_守住伤口.png",
+          "localNumber": 1
+        },
+        {
+          "id": "1-2",
+          "name": "集中清除",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/02_集中清除.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/1-2_集中清除.png",
+          "localNumber": 2
+        },
+        {
+          "id": "1-3",
+          "name": "认出敌人",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/03_认出敌人.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/1-3_认出敌人.png",
+          "localNumber": 3
+        },
+        {
+          "id": "1-4",
+          "name": "两侧告急",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/04_两侧告急.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/1-4_两侧告急.png",
+          "localNumber": 4
+        },
+        {
+          "id": "1-5",
+          "name": "感染加剧",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/前五关地图_2026-10-15_v1/05_感染加剧.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/1-5_感染加剧.png",
+          "localNumber": 5
+        }
+      ],
+      "backgroundImage": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/第一章_伤口防线_纯背景.png",
+      "levelSelectImage": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/完整界面/01_第1章_细胞徽章选关.png"
+    },
+    {
+      "id": 2,
+      "name": "持续感染",
+      "label": "第二章",
+      "tagline": "维持阵地，集中裂解",
+      "background": "chapter2",
+      "cover": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/章节封面/第2章_持续感染_地图封面.png",
+      "levels": [
+        {
+          "id": "2-1",
+          "name": "凝血缺口",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第二章/2-1_凝血缺口.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/2-1_凝血缺口.png",
+          "localNumber": 1
+        },
+        {
+          "id": "2-2",
+          "name": "厚膜岔口",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第二章/2-2_厚膜岔口.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/2-2_厚膜岔口.png",
+          "localNumber": 2
+        },
+        {
+          "id": "2-3",
+          "name": "长廊窗口",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第二章/2-3_长廊窗口.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/2-3_长廊窗口.png",
+          "localNumber": 3
+        },
+        {
+          "id": "2-4",
+          "name": "生物膜边缘",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第二章/2-4_生物膜边缘.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/2-4_生物膜边缘.png",
+          "localNumber": 4
+        }
+      ],
+      "backgroundImage": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/第二章_持续感染_纯背景.png",
+      "levelSelectImage": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/完整界面/02_第2章_细胞徽章选关.png"
+    },
+    {
+      "id": 3,
+      "name": "免疫平衡",
+      "label": "第三章",
+      "tagline": "局部反应，稳住平衡",
+      "background": "chapter3",
+      "cover": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/章节封面/第3章_免疫平衡_地图封面.png",
+      "levels": [
+        {
+          "id": "3-1",
+          "name": "充血边缘",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第三章/3-1_充血边缘.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/3-1_充血边缘.png",
+          "localNumber": 1
+        },
+        {
+          "id": "3-2",
+          "name": "反应交汇",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第三章/3-2_反应交汇.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/3-2_反应交汇.png",
+          "localNumber": 2
+        },
+        {
+          "id": "3-3",
+          "name": "过热前沿",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第三章/3-3_过热前沿.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/3-3_过热前沿.png",
+          "localNumber": 3
+        },
+        {
+          "id": "3-4",
+          "name": "双灶组织",
+          "map": "Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_后两关_2026-10-26_v1/第三章/3-4_双灶组织.png",
+          "thumbnail": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/关卡缩略图/3-4_双灶组织.png",
+          "localNumber": 4
+        }
+      ],
+      "backgroundImage": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/背景/第三章_免疫平衡_纯背景.png",
+      "levelSelectImage": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/完整界面/03_第3章_细胞徽章选关.png"
+    }
+  ],
+  "extension": {
+    "stableStringIds": true,
+    "pageCapacity": 6,
+    "appendChaptersAndLevelsWithoutRedrawingBackground": true,
+    "cardNormal": "组件/卡片_常态.png",
+    "cardHighlight": "组件/卡片_高亮.png",
+    "chapterCardUsesSameNineSlice": true,
+    "nineSliceBorderPixels": 24,
+    "noBakedStarOrScoreInTemplates": true,
+    "paginationIsSeparate": true,
+    "futurePagePreviewIsIllustrative": true,
+    "chapterPageCapacity": 3,
+    "paginationVisibleOnlyIfMoreThanOnePage": true,
+    "responsiveColumnOptions": [
+      2,
+      3
+    ],
+    "frameSliceBorder": [
+      24,
+      24,
+      24,
+      24
+    ]
+  },
+  "assetRoot": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3",
+  "runtimeScope": "Existing five playable scenes: number/star overview, detail modal reads existing best-score record, explicit start button. Chapter 2/3 remain art-only.",
+  "selectionFlow": {
+    "overview": [
+      "localStageNumber",
+      "bestStars"
+    ],
+    "onStageClick": "openDetails",
+    "details": [
+      "mapPreview",
+      "existingHistoricalBestScore",
+      "bestStars",
+      "explicitStartAction"
+    ],
+    "localStageNumbers": true,
+    "newAttemptHistoryAdded": false,
+    "chapterSelectUnchanged": true
+  },
+  "chapterBrowserImage": "Assets/_Project/Art/Sprites/细胞绘制/章节选择与三章选关_2026-10-26_v1/完整界面/04_章节选择.png",
+  "numberedBadges": [
+    {
+      "number": 1,
+      "normal": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/01_关卡1_常态.png",
+      "selected": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/01_关卡1_选中.png"
+    },
+    {
+      "number": 2,
+      "normal": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/02_关卡2_常态.png",
+      "selected": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/02_关卡2_选中.png"
+    },
+    {
+      "number": 3,
+      "normal": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/03_关卡3_常态.png",
+      "selected": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/03_关卡3_选中.png"
+    },
+    {
+      "number": 4,
+      "normal": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/04_关卡4_常态.png",
+      "selected": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/04_关卡4_选中.png"
+    },
+    {
+      "number": 5,
+      "normal": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/05_关卡5_常态.png",
+      "selected": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/05_关卡5_选中.png"
+    }
+  ],
+  "blankBadge": {
+    "normal": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/06_空白扩展徽章_常态.png",
+    "selected": "Assets/_Project/Art/Sprites/细胞绘制/选关序号_细胞徽章_2026-10-26_v3/徽章/06_空白扩展徽章_选中.png",
+    "futureNumbersUseDynamicLabel": true
+  }
+}

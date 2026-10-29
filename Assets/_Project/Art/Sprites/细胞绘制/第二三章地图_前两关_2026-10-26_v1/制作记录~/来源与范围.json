@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-26",
+  "localVersion": "v0.28 / chapter discussion v0.3",
+  "scope": [
+    "2-1",
+    "2-2",
+    "3-1",
+    "3-2"
+  ],
+  "sources": [
+    {
+      "path": "Docs/GAME_DESIGN_FRAMEWORK.md",
+      "sha256": "751bf6be642192999ac695858b84f6407bc2a4b8bf113fda1cb02baf2b9f8e75"
+    },
+    {
+      "path": "Docs/LevelPlanning/CHAPTER_FLOW_DISCUSSION_2026-10-26.md",
+      "sha256": "9d5eb6fbb2878449d10da283f5d06fa20fde34bbf6852845b842cf88e3e3a308"
+    }
+  ],
+  "notionArt": "https://app.notion.com/p/3b8c4f951620817cb407f1726dc3df97",
+  "notionMaps": "https://app.notion.com/p/3b8c4f951620815aa491d632803bd02b",
+  "note": "Notion map/page versions predate the local chapter spec; legacy fixed tower pads and route-changing rules do not apply."
+}

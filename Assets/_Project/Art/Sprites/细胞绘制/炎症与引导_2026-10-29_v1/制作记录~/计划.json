@@ -1,0 +1,20 @@
+{
+  "art": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/炎症与引导_2026-10-29_v1",
+  "jobs": [
+    {
+      "id": "tutorial",
+      "prompt": "Production UI asset for pixel-art biological tower defense. One centered SQUARE 9-SLICE TUTORIAL TARGET FRAME, transparent background and COMPLETELY EMPTY transparent center (central70%). Crisp square pixel clusters, ivory cyan mint thick cell-membrane rim, muted warm plum/brown thin outline. Flat top down. Four large reinforced stepped L corners with tiny jade round receptor nodules integrated into each corner. Straight consistent narrow connective membrane bands across sides, very simple repeatable central segments for 9-slicing. Subtle ivory highlight, 3 bounded shades. No text, hands, arrows, icons, ground, shadows, gradients or glow. 512x512 square canvas, complete frame within canvas with 24px transparent outer margin, maximum frame thickness60px; corners occupy96px each. Must be usable around tiny grid cells and wide rectangular UI cards, do not bake an interface scene.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-f117f78e-128f-4e47-9b89-9e154bc4bb95.png"
+    },
+    {
+      "id": "inflammation",
+      "prompt": "Production 9-slice SPRITE for pixel-art biological tower defense. One square biological INFLAMMATION REGION BORDER, real transparent background and empty transparent center central76%. Complete frame centered with24px transparent margins. Flat topdown pixel art, stepped square edges, warm brown outline, pale ivory and apricot membrane connecting in straight repeatable side bands; four thick reinforced corner clusters of pale peach vesicles with little ivory highlights. Simple side band center segments support 9-slice expansion into very wide rectangles. No full cell bodies, text, labels, symbols, glow, shading gradients, floor or shadows. Restrained pale colors so runtime can tint amber or red for warning; exactly same simple thickness all sides, small rounded capillary beads integrated on rim, crisp pixels. 512x512 square. No particles outside frame.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-d72b253e-5484-48e3-a0d6-2ca1af3c1fe2.png"
+    },
+    {
+      "id": "tissue",
+      "prompt": "A small seamless TRANSPARENT pixel-art tissue overlay tile for a biological tower defense inflammation zone. Square 512x512. Very sparse and airy peach/apricot tiny vesicle clusters and short thin pink capillary dashes, ivory membrane flecks. At least85 percent empty transparent space, irregular dispersed speckles all less than40px across, no large objects. Strict crisp square pixel clusters, no blur/glow/shadows/gradient/background, no text and no UI frame. Quiet low contrast warm pale palette, intended to tile behind towers in a marked region with low opacity, never obscure placement or yellow enemy routes. Pure transparent background.",
+      "raw": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-b106ddf0-381e-425d-a3d8-64c54354d829.png"
+    }
+  ]
+}

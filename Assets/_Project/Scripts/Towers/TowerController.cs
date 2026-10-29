@@ -18,7 +18,8 @@ public class TowerController : MonoBehaviour
         (attackBehaviour == null || attackBehaviour.RequiresDamage);
     public float CurrentDamage => Definition == null ||
         (attackBehaviour != null && !attackBehaviour.RequiresDamage) ? 0f :
-        Definition.Damage * (IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f);
+        Definition.Damage * (IsUpgraded ? 1f + UpgradeDamageBonusPercent / 100f : 1f) * EnvironmentalDamageMultiplier;
+    public float EnvironmentalDamageMultiplier { get; set; } = 1f;
     private const float UpgradeVisualScale = 1.15f;
     [SerializeField]
     private LayerMask enemyLayerMask;
@@ -115,6 +116,7 @@ public class TowerController : MonoBehaviour
         targetFilter.useTriggers = true;
         animator = GetComponent<Animator>();
         bodyRenderer = GetComponent<SpriteRenderer>();
+        if (bodyRenderer != null && GetComponent<TowerImpactRecoil>() == null) gameObject.AddComponent<TowerImpactRecoil>();
         if (aimVisualAtTarget) transform.rotation = Quaternion.identity;
         if (bodyRenderer != null)
         {
@@ -394,6 +396,8 @@ public class TowerController : MonoBehaviour
             }
             projectile.Initialize(target, damage, 0f,
                 samplesAntigenOnHit ? HandleAntigenSample : null);
+            CellCombatFeedback.PrepareProjectile(projectile, CellImpactKind.Neutrophil);
+            CellCombatFeedback.Release(CellImpactKind.Neutrophil, this, target.transform.position);
             CombatHitFeedback.Shot(projectile.transform.position);
         }
     }

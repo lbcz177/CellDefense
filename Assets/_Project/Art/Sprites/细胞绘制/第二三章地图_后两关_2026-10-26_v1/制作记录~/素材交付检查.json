@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "mapCount": 4,
+  "editableSourceCount": 4,
+  "separateOverlayCount": 3,
+  "basePngsAreUnresampledGeneratedOutputs": true,
+  "sourceAndDeliveryHashesMatch": true,
+  "mapAspectWithinHalfPercentOf15by11": true,
+  "nativeBasePixels": "verified by Aseprite fresh open; base layer exactly equals delivered PNG",
+  "unityImport": "Sprite Single, Point, no mipmap, no compression, centered pivot; PPU = width / 15. Native sources use DefaultImporter.",
+  "overlays": [
+    {
+      "map": "3-3",
+      "region": "主前线",
+      "file": "第三章/3-3_炎症区域_主前线_独立覆盖.png",
+      "size": [
+        1463,
+        1075
+      ],
+      "occupiedFraction": 0.0235,
+      "maxAlpha": 225
+    },
+    {
+      "map": "3-4",
+      "region": "左前线",
+      "file": "第三章/3-4_炎症区域_左前线_独立覆盖.png",
+      "size": [
+        1464,
+        1075
+      ],
+      "occupiedFraction": 0.0315,
+      "maxAlpha": 225
+    },
+    {
+      "map": "3-4",
+      "region": "右前线",
+      "file": "第三章/3-4_炎症区域_右前线_独立覆盖.png",
+      "size": [
+        1464,
+        1075
+      ],
+      "occupiedFraction": 0.0315,
+      "maxAlpha": 225
+    }
+  ],
+  "thirdChapterDoubleZonesDoNotOverlap": true,
+  "staticBfs": {
+    "2-3": [
+      17,
+      17
+    ],
+    "2-4": [
+      15,
+      12
+    ],
+    "3-3": [
+      12,
+      6
+    ],
+    "3-4": [
+      13,
+      13
+    ]
+  },
+  "scope": "Art delivery only. Graybox topology is reachable, not a visual collision/range/economy validation. New scenes, chapter flow, directional waves and inflammation gameplay are not implemented or runtime-tested."
+}

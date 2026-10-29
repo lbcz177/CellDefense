@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2-1",
+    "name": "凝血缺口",
+    "chapter": "第二章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第二章/2-1_凝血缺口.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-eda5ca7d-54e5-457b-91e7-13111c32f38e.png",
+    "size": [
+      1464,
+      1074
+    ],
+    "sha256": "09c55d9c05f24459f688610161cb345987d332e26015e904b5d0a8dcefb4e332",
+    "guid": "19715891a4414f1f9aac2a61025eece2",
+    "ppu": 97.6
+  },
+  {
+    "id": "2-2",
+    "name": "厚膜岔口",
+    "chapter": "第二章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第二章/2-2_厚膜岔口.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-b464b9a7-c6c6-480a-9638-48f4e873ec7a.png",
+    "size": [
+      1464,
+      1074
+    ],
+    "sha256": "279caff19a31d7fab27f37ed174ad0e4bd070e2a4c632cb947fa3a818f619aee",
+    "guid": "be45429e72784980b8c34d6bc48efdca",
+    "ppu": 97.6
+  },
+  {
+    "id": "3-1",
+    "name": "充血边缘",
+    "chapter": "第三章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第三章/3-1_充血边缘.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-2b2796dd-3903-43bc-a2b7-99447fad0096.png",
+    "size": [
+      1464,
+      1074
+    ],
+    "sha256": "15b9810e0c96f951e66a90bfc310e1d25f9cc29bb10c1829c990e38bf5da8f68",
+    "guid": "efd6af2ac28d47aa9512ebfd4843323c",
+    "ppu": 97.6
+  },
+  {
+    "id": "3-2",
+    "name": "反应交汇",
+    "chapter": "第三章",
+    "target": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/第二三章地图_前两关_2026-10-26_v1/第三章/3-2_反应交汇.png",
+    "source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-67db373f-f438-4731-95bf-18a555039d89.png",
+    "size": [
+      1465,
+      1073
+    ],
+    "sha256": "a083b34acebcd4014494c7c94e5fcd97ebbd1a748d53bc499869cb193106fde1",
+    "guid": "3501f0683fa645b88b21d05f4cba7a3a",
+    "ppu": 97.66666666666667
+  }
+]

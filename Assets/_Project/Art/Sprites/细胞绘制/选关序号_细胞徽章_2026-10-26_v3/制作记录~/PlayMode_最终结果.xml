@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-26 11:54:54Z" end-time="2026-10-26 11:54:58Z" duration="4.0295885">
+  <test-suite type="TestSuite" id="1000" name="NumberedSelectionTests" fullname="NumberedSelectionTests" runstate="Runnable" testcasecount="47" result="Passed" start-time="2026-10-26 11:54:54Z" end-time="2026-10-26 11:54:58Z" duration="4.029589" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1061" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="47" result="Passed" start-time="2026-10-26 11:54:54Z" end-time="2026-10-26 11:54:58Z" duration="4.022692" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="50008" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1025" name="NumberedLevelSelectionPlayModeTests" fullname="NumberedLevelSelectionPlayModeTests" classname="NumberedLevelSelectionPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-26 11:54:54Z" end-time="2026-10-26 11:54:58Z" duration="4.020762" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1027" name="DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes" fullname="NumberedLevelSelectionPlayModeTests.DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes" methodname="DetailsStayInTheSafeAreaAndPixelLabelsRenderAcrossWindowSizes" classname="NumberedLevelSelectionPlayModeTests" runstate="Runnable" seed="1092698717" result="Passed" start-time="2026-10-26 11:54:54Z" end-time="2026-10-26 11:54:58Z" duration="3.191652" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+        <test-case id="1026" name="NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap" fullname="NumberedLevelSelectionPlayModeTests.NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap" methodname="NumbersOpenDetailsAndOnlyExplicitStartLoadsTheSelectedMap" classname="NumberedLevelSelectionPlayModeTests" runstate="Runnable" seed="1100519482" result="Passed" start-time="2026-10-26 11:54:58Z" end-time="2026-10-26 11:54:58Z" duration="0.816995" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

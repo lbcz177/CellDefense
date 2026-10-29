@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "neutrophil",
+      "name": "近卫塔",
+      "category": 0,
+      "role": "前线采样 · 单体输出",
+      "source": "Assets/_Project/Data/Towers/TowerDefinition.asset",
+      "sourceSha256": "ce7b43d128e239324ee58fe530f8822f06933d8368f7e91a2aed93df91473d9a",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/01_近卫塔.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/01_近卫塔_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/neutrophil_名称.png"
+    },
+    {
+      "id": "antibody",
+      "name": "抗体标记塔",
+      "category": 0,
+      "role": "抗原记忆 · 标记增伤",
+      "source": "Assets/_Project/Data/Towers/InterceptorTowerDefinition.asset",
+      "sourceSha256": "06365a97ed6b043cfea9d910798c36c32323014f3e65c07eb1026d05ed3500ca",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/02_抗体标记塔.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/02_抗体标记塔_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/antibody_名称.png"
+    },
+    {
+      "id": "phagocyte",
+      "name": "巨噬细胞",
+      "category": 0,
+      "role": "前排承伤 · 吞噬清除",
+      "source": "Assets/_Project/Data/Towers/TowerDefinition 1.asset",
+      "sourceSha256": "b22cefc4670f2ae410082e9b3d43738ef843f9633bc496ecba99ba554d8df1fe",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/03_巨噬细胞.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/03_巨噬细胞_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/phagocyte_名称.png"
+    },
+    {
+      "id": "fibrin",
+      "name": "纤维蛋白壁垒",
+      "category": 0,
+      "role": "拦截全部 · 范围减速",
+      "source": "Assets/_Project/Data/Towers/FibrinTowerDefinition.asset",
+      "sourceSha256": "a224d46d4701a5ff3144bef28e50791ce2f22a4b7685f4f2d845e2fb5266a8a2",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/04_纤维蛋白壁垒.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/04_纤维蛋白壁垒_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/fibrin_名称.png"
+    },
+    {
+      "id": "lysosome",
+      "name": "溶酶体酸化炮",
+      "category": 0,
+      "role": "持续酸区 · 装甲破壳",
+      "source": "Assets/_Project/Data/Towers/AcidTowerDefinition.asset",
+      "sourceSha256": "03cb3185fdfb5824971e25de433210af4c176c02ce3886815994bf663b0a84b7",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/05_溶酶体酸化炮.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/05_溶酶体酸化炮_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/lysosome_名称.png"
+    },
+    {
+      "id": "neural",
+      "name": "神经脉冲刺突",
+      "category": 0,
+      "role": "连锁打击 · 短暂停顿",
+      "source": "Assets/_Project/Data/Towers/NeuralPulseTowerDefinition.asset",
+      "sourceSha256": "5289581992de92f8e32d79b04b334df5df5fb166a51c19513b52da4dac766f92",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/06_神经脉冲刺突.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/06_神经脉冲刺突_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/neural_名称.png"
+    },
+    {
+      "id": "staph",
+      "name": "葡萄球菌群",
+      "category": 1,
+      "role": "基础入侵者 · 群体推进",
+      "source": "Assets/_Project/Data/Enemies/StaphylococcusDefinition.asset",
+      "sourceSha256": "baa0d09183deedeefc599ea37c50e96b5598f5bfd79860453e3d4a671cd5a57e",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/07_葡萄球菌群.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/07_葡萄球菌群_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/staph_名称.png"
+    },
+    {
+      "id": "flagellate",
+      "name": "鞭毛双球菌",
+      "category": 1,
+      "role": "高速入侵者 · 快速穿线",
+      "source": "Assets/_Project/Data/Enemies/FlagellateDefinition.asset",
+      "sourceSha256": "4c5cd82a8601a6b8ee34185273873acae7e64fe91f5be11c444cc457140cb20f",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/08_鞭毛双球菌.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/08_鞭毛双球菌_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/flagellate_名称.png"
+    },
+    {
+      "id": "bacillus",
+      "name": "重甲芽孢杆菌",
+      "category": 1,
+      "role": "重甲入侵者 · 抗伤推进",
+      "source": "Assets/_Project/Data/Enemies/ArmoredBacillusDefinition.asset",
+      "sourceSha256": "95e19afad71f80b38f6b44115fffb22bed54eb9c7fac4c3276b455139280831e",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/09_重甲芽孢杆菌.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/09_重甲芽孢杆菌_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/bacillus_名称.png"
+    },
+    {
+      "id": "spore",
+      "name": "真菌孢子",
+      "category": 1,
+      "role": "真菌召唤物 · 快速增援",
+      "source": "Assets/_Project/Data/Enemies/FungalSporeDefinition.asset",
+      "sourceSha256": "eeb92945dc234c0625c2c5d4bcb801b1a1233d66a2f582a39e1eac831da2e0d4",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/10_真菌孢子.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/10_真菌孢子_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/spore_名称.png"
+    },
+    {
+      "id": "clone",
+      "name": "病毒复制体",
+      "category": 1,
+      "role": "病毒召唤物 · 分散压力",
+      "source": "Assets/_Project/Data/Enemies/VirusCloneDefinition.asset",
+      "sourceSha256": "25ffbaf3de5b9981622fbceab906ad7e8341e0cd2f24480e6d653111c274e26c",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/11_病毒复制体.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/11_病毒复制体_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/clone_名称.png"
+    },
+    {
+      "id": "fungal",
+      "name": "变异超级真菌",
+      "category": 1,
+      "role": "首领 · 孢子增援",
+      "source": "Assets/_Project/Data/Enemies/FungalBossDefinition.asset",
+      "sourceSha256": "91a9483100172e9481190fbcea006510d27496fadee54fc983ee8d7d9bbdb3c5",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/12_变异超级真菌.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/12_变异超级真菌_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/fungal_名称.png"
+    },
+    {
+      "id": "membrane",
+      "name": "细菌生物膜核心",
+      "category": 1,
+      "role": "首领 · 护盾支援",
+      "source": "Assets/_Project/Data/Enemies/MembraneBossDefinition.asset",
+      "sourceSha256": "3a6341a9ef8fbc6cfc8404eb87bd1ba16c3298b6d1cab92399f646d6d107785c",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/13_细菌生物膜核心.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/13_细菌生物膜核心_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/membrane_名称.png"
+    },
+    {
+      "id": "virus",
+      "name": "病毒母体",
+      "category": 1,
+      "role": "首领 · 复制与变异",
+      "source": "Assets/_Project/Data/Enemies/VirusBossDefinition.asset",
+      "sourceSha256": "3aa8fcfdaf89abe68f90cd470b708d7647f84ad6b813ba83a8591e0b85cd1809",
+      "portrait": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/14_病毒母体.png",
+      "page": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/14_病毒母体_图鉴.png",
+      "captionPath": "E:/unity/CellDefense/Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/virus_名称.png"
+    }
+  ],
+  "layout": "1280x720 full pages, 384x384 transparent portraits",
+  "dataDate": "2026-10-28",
+  "expansion": "Append stable-id entries and portraits/pages; no fixed roster size in UI, current list fits up to eight entries per category",
+  "extension": "Append stable-id data entries and matching page/portrait/caption; index scrolls when more than two rows."
+}

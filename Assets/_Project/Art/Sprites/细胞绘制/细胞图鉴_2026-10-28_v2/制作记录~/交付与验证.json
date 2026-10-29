@@ -1,0 +1,711 @@
+{
+  "portraits": 14,
+  "pages": 14,
+  "nativeLayeredSources": 14,
+  "categories": {
+    "defenses": 6,
+    "enemies": 8
+  },
+  "generationTool": "built-in image_gen + Aseprite",
+  "generationCalls": 15,
+  "font": "Fusion Pixel 12px, OFL; glyph masks verified",
+  "baseDataSnapshot": "2026-10-28; regenerate pages after balance changes",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "screenshots": "验证_v2~/",
+  "gameplayChanges": false,
+  "files": [
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/全角色立绘总览.png",
+      "bytes": 621061,
+      "sha256": "b726482bb2fb97e34fa051d78451a09d8f76369a3956ad3da416d8ae643dd8ae"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/全角色立绘总览.png.meta",
+      "bytes": 3105,
+      "sha256": "55bf33646d747e629d084183a590f6c4a936b8f5496bffd41a7b794703c73d4a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴素材索引.json",
+      "bytes": 10738,
+      "sha256": "5ab1eff59c027a6ecbc6c95a18946d1d48ba364a0bf0e3fa3763d3905cb9a9c2"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页.meta",
+      "bytes": 180,
+      "sha256": "12c3ba1a80b12f631ccd977eda9c81f6bde1d9f0befcbbe582eee0db3f5558bf"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页总览.png",
+      "bytes": 466958,
+      "sha256": "5ae191bddfbe55cecb82ed132264137a001624976e391c0d38787972c4450beb"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页总览.png.meta",
+      "bytes": 3105,
+      "sha256": "1651422f720a08e3eac36a6ab4d8a64cdd5e70270fbc4bfdb89e143d9d46f956"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字.meta",
+      "bytes": 180,
+      "sha256": "72f756a0f0510a8abb4de85fd863fcbc14d25f053f567684751dbdaca57a3cb6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件.meta",
+      "bytes": 180,
+      "sha256": "48545db90ec1c3ff6a5d9b60376579819f493cc3b42935d8d8f855497e15ef2a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘.meta",
+      "bytes": 180,
+      "sha256": "f1d2275beeca1810364ccda62c5a02945159032ded2bd1117e6b1135ba56374e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/组件.meta",
+      "bytes": 180,
+      "sha256": "739d3c198c9363aeecda8ce2639d541ff3011a70226f902b1bc512259377067e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/01_近卫塔_图鉴.png",
+      "bytes": 859480,
+      "sha256": "06dae81b266e4fd8febf694c09d8ec1c05380252248cae197978f1c2bbfff2da"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/01_近卫塔_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "0a79a5d15201c1379678247159305d2240dc4fa03d5d78b242de732dae1b8a45"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/02_抗体标记塔_图鉴.png",
+      "bytes": 854244,
+      "sha256": "105991868f6e00b7b1fa23ffb9df0145e9f8c6b2dd060c9edb8d3f69e4b8925d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/02_抗体标记塔_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "b0d75e57f74811656175bf5b8e656f4466f8c67a08cd23afabbbe5a49001c01b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/03_巨噬细胞_图鉴.png",
+      "bytes": 862760,
+      "sha256": "91ea5fa2ad8a592915d771e7149cbffcf528cef98e626eb6512d4b7f0b7b57ea"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/03_巨噬细胞_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "2647bbed96e88be0ae77df485c4d2ee8b6fac74f38a35d35512260a3c233e281"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/04_纤维蛋白壁垒_图鉴.png",
+      "bytes": 875118,
+      "sha256": "185624f5ed4209a922bc7f7b4142dbcba1e6c1cd87303dd5b5bab230e30d81b6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/04_纤维蛋白壁垒_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "2bfd4dd5e0a66d619d2826fe0ccd6cc7fad46878e97f35273c467e0861d78877"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/05_溶酶体酸化炮_图鉴.png",
+      "bytes": 875184,
+      "sha256": "1edd197ff2ef89c1a7323173987c6d43754aed87a0075bd423425251a9b39218"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/05_溶酶体酸化炮_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "b0ea4dd28649a2c2e50fe066fa28e9b060cccbf861f8dbd4ac87e08644607052"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/06_神经脉冲刺突_图鉴.png",
+      "bytes": 846505,
+      "sha256": "690274c9fdfc6d0c05fee21a0d2130192583519e768fba0aa2b7087005a77898"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/06_神经脉冲刺突_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "3632b8faebd132fd902cbc1f3c69a44cb0c2eb7e000efe96bb0817741ad275f3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/07_葡萄球菌群_图鉴.png",
+      "bytes": 849234,
+      "sha256": "81437dc85923c84d4410e0bbb6deac91ac9b598661a641e2b85c8b56f09d7b3f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/07_葡萄球菌群_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "fd116dc6dc522fd639fca998fa1f2c8cd3c7a37384c722d164887c616c17fd0b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/08_鞭毛双球菌_图鉴.png",
+      "bytes": 840111,
+      "sha256": "d928727f355cafb97ec68b94de786de157d3f5d02990ad74e3af91e2c612c61d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/08_鞭毛双球菌_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "722026eba52948f0b55dc13ab41d044c620fd28d70c36c457b2b39e073ec0dec"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/09_重甲芽孢杆菌_图鉴.png",
+      "bytes": 839211,
+      "sha256": "81f3bc184d119b66148e08fe5fb36a34ba208cc73b028cf75d77beef7bf24dfb"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/09_重甲芽孢杆菌_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "eaf26a310c06f4818023b265693efe72b96dced0ef57b3e46df8d567369d2099"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/10_真菌孢子_图鉴.png",
+      "bytes": 845234,
+      "sha256": "dbc8c1ed1b11527c8d352fdf6cf728dbe750192f73a47579a030a30e76c97ecb"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/10_真菌孢子_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "7828c9016f6e6680113d06b6d8c41306dfa10f4deb2012c64aa1abec9d3e4ab9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/11_病毒复制体_图鉴.png",
+      "bytes": 853090,
+      "sha256": "e8af1c2e15e148a0975d1187b24de81a792d518bd0db223932f585994cde8696"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/11_病毒复制体_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "26a4d688e4961265d3e6f36fbb9482d932c979ddd7a16e222a09a96a1b60c630"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/12_变异超级真菌_图鉴.png",
+      "bytes": 891575,
+      "sha256": "dec5cb7ce50c040e6b9bd0ba78173dd2fff518c6149fef92a7ac5f17ff4ad19f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/12_变异超级真菌_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "c4bbf446c397a289f9661041cf0ac58e38e600f69e96e51efbf5a88abdfa53a8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/13_细菌生物膜核心_图鉴.png",
+      "bytes": 905289,
+      "sha256": "798bdfde642f5c67f8a7afe603b9a62c28e639dbb1e121a35acd15f1ec8d317d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/13_细菌生物膜核心_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "4df8f5cb31fed51dd58673e3b922b83b178b5938475a24490e7b186c8e4dc0af"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/14_病毒母体_图鉴.png",
+      "bytes": 888424,
+      "sha256": "747a91006f18b3abd493c79ace8f45713243bd4c8f0ecbceadd3e2dc31299dd9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/图鉴页/14_病毒母体_图鉴.png.meta",
+      "bytes": 3105,
+      "sha256": "6aea6b9c0e0e8fe08a682b25d70b7dd2c2335d8de65adf350cabc85104fea029"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/antibody_名称.png",
+      "bytes": 393,
+      "sha256": "f690a1ea16f7a51d60e0255d8620d68801b6cffe0ab293043297e31bc4ffa977"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/antibody_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "12d61a6ee84f2804b154f7d37542822259eca1b2b496160a141e9c8af7d70c88"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/bacillus_名称.png",
+      "bytes": 417,
+      "sha256": "c2f62e872afd7982686fb63ad0a1f1166f28cc16c7f2fab9b284a95c2ca7f68a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/bacillus_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "0b4ee3193df35ea54bb7c54444a7cffcba06c72655dd998bd66ae43520bdd5b2"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/clone_名称.png",
+      "bytes": 414,
+      "sha256": "84ae21af011c14ab647bb67c636db5e4436ebe4fbe97b1cad2e8f35e8c10a152"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/clone_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "f22c504e2c0741edb91a137a1ceee72ea21e1a06f5cdf0338a71bb7ee8702901"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/defenders.png",
+      "bytes": 366,
+      "sha256": "e529f852713323d59767b13130481718f15dcc2585037ad816d23de20ecadffa"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/defenders.png.meta",
+      "bytes": 3105,
+      "sha256": "8f65aad62a76dfcfbeeb451e8f58f58139c5f43e935d4046366653af2283e599"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/fibrin_名称.png",
+      "bytes": 461,
+      "sha256": "7ff85a23003f6422b5e0e869fa0b82a849240e75ec8bcde7d5234664572fb932"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/fibrin_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "d21768262a99378ee5481ce6217c95b3a1e18051a04dbb4ba878c3c73c39d152"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/flagellate_名称.png",
+      "bytes": 413,
+      "sha256": "1be2e6613b3630ec5a2af3c05a8730a87880f53fac01b8a10ed78f28ab03c47b"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/flagellate_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "55b05a8ac65e512820dd93261f9f386a9ff5bd5a3660406d3a1f02c0ec907e8c"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/fungal_名称.png",
+      "bytes": 452,
+      "sha256": "c791fe0823ef399003211a0766a68bcbb65e60d7362367e4a098831d7992e21c"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/fungal_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "5ca47eae1da40d4eb2059633515197f6e2fd3351e620a074a774438deb8a2906"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/home.png",
+      "bytes": 331,
+      "sha256": "b91589bc7bc3898fdfa7e4b19c27ed9edc65a6b16ecfab893c95817453e8ac34"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/home.png.meta",
+      "bytes": 3105,
+      "sha256": "3990c60508d589717a8ce479db42a75827ef1c6c37b06c9fe85a18c96ca95ec6"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/index.png",
+      "bytes": 341,
+      "sha256": "7d23027b53e68952d041f3462fc8d4e0f060599b7ffad1dc2b788ac49eead47a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/index.png.meta",
+      "bytes": 3105,
+      "sha256": "3282d0c4e0245dff629c8ff5340a21651880a9259c48291910a240c435d4a1c2"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/invaders.png",
+      "bytes": 298,
+      "sha256": "921ebf077af2f98091e565f42c48d9f6c6f1a578998587ea7c94e4f9a0e6b1dc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/invaders.png.meta",
+      "bytes": 3105,
+      "sha256": "595868afc0f8d73bc0a6845404f7a4326c6096d46430127b11133023349737b9"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/lysosome_名称.png",
+      "bytes": 470,
+      "sha256": "13a3e88baf664e56f2f8f550c43b57eaa89497d95901e95bfc1e2bd6de72f90f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/lysosome_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "1b1a0f77a831a7fa8526be5dc15b781c7b5d53a9bcc62f4ec28ce40a1577490e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/membrane_名称.png",
+      "bytes": 497,
+      "sha256": "76cb335aef323a2b115ed9c10537e1638bb62a08176dbfa0263fb5dcd95a2106"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/membrane_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "b5908d821a43b67852ec638a483d8acf878b7e1972540cce6ffef4e942d0db08"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/neural_名称.png",
+      "bytes": 473,
+      "sha256": "8cefb07efb8d7aa8c87839a1ed409c8bfd62362c59abd7a243d5e1caac8227df"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/neural_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "8060aee3cc653aea00364b622281731bbcd9c5a752d6c37e1dd8c276a3f4826d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/neutrophil_名称.png",
+      "bytes": 292,
+      "sha256": "8f6c26c147f23bbbe7f3a8d9f9ea98d8be1a9a61ba822369d6d561296bef7cd8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/neutrophil_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "cc0a3ad3ef3b5c03fcbd837c061a411e21dddb05beb6d1235c7f468822ae9080"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/next.png",
+      "bytes": 262,
+      "sha256": "48471a2f0420a740cc23d687a262da7ba68fc389f5243302206e4651ae37a193"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/next.png.meta",
+      "bytes": 3105,
+      "sha256": "6b178cdb9a7fa1386545398562f8a851d6153968bfe63f59d6570c43c4aed924"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/phagocyte_名称.png",
+      "bytes": 353,
+      "sha256": "1eaf08262eea6c72b7fac2118a6471d35700d22833b12271c3984672183936bd"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/phagocyte_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "ff7053b26521c9e96e02adb486d0bc8d451b02285d7d73088d6908cb76ceca30"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/previous.png",
+      "bytes": 260,
+      "sha256": "ad61926b59c9a9bd58e9ea6f51e160abe9df806f9fd66af460fb1ae8455fa216"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/previous.png.meta",
+      "bytes": 3105,
+      "sha256": "6ad38fb58b0f113770bdbca5ffea5113161db06ccb5e84663dc92c01e86ca7ca"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/spore_名称.png",
+      "bytes": 349,
+      "sha256": "ac86c2788d1c8453158a1fd24fb937998647515c0ca24ed6466f54ffce74984d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/spore_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "284081817911b9d00fe1a615297d7d7f28b11a5f5d88385f70f1ed28eff65967"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/staph_名称.png",
+      "bytes": 404,
+      "sha256": "1fb39f6d5a88c06d6d7af71f5875ea039a9ad6ab17f9e9a5f6c9138f4d27ea43"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/staph_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "008829e8afa0fabb3585ca15df51befeac468178e3a99c6442361b65be60f979"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/title.png",
+      "bytes": 439,
+      "sha256": "e3db03673ed7cc27b2c6767dad6bfae4a38383c4f36c54f02b384fed547526b4"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/title.png.meta",
+      "bytes": 3105,
+      "sha256": "18cb37e340c98800dd55546e8b08e81d6b1ff9a05c6665647ef9086bfba63772"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/virus_名称.png",
+      "bytes": 348,
+      "sha256": "be61b93bfb77e7edf65411d0a85ff5035779b1399c0994ac2673905a886afd4e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/文字/virus_名称.png.meta",
+      "bytes": 3105,
+      "sha256": "149b459d6caa369b764ed391aa510ff7793904ac8f50080a784105daf1b90d7e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/antibody_图鉴.aseprite",
+      "bytes": 1117316,
+      "sha256": "bc83de9f27315548889447c902804cdd2adcabe317d5a6797b3afee57de47e61"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/antibody_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "ac3c36868f161e323e509b9ac432324eae1aee175421963034f7c433c83e8958"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/bacillus_图鉴.aseprite",
+      "bytes": 1074002,
+      "sha256": "aafa326b74d494738252b135ebde1acf2e960c6ef9605df539a3a5580fa3247e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/bacillus_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "28db4a82b3de6ff8f3eae9e0603ff407420113e00ec0b3ee685cb8fe39cce6e1"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/clone_图鉴.aseprite",
+      "bytes": 1129265,
+      "sha256": "0182bf40ff22f2421e75f89a7adde7d617c64227fe1ac785ce1680f2dae1b0e5"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/clone_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "2eb867c5b77e93d1920164969b4d729a1cc1c833d6f8289f5088e0eba05bfeae"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/fibrin_图鉴.aseprite",
+      "bytes": 1139729,
+      "sha256": "621f0624f67cbab66f176cd3550c97cc035e991c94f71fa1b515c51b99c1a696"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/fibrin_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "e4a048f6a286c6e1c7ac07bf7295f37b5d49bbc61d1b64b0e5e2af2b7f6466cf"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/flagellate_图鉴.aseprite",
+      "bytes": 1061084,
+      "sha256": "7cd29b9a48f0568f9f67f2f9fd3c1c7160683a4477e4251d8d3e9f8b7b200631"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/flagellate_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "91e24f4f8df8e8cbcafcb293f465dfc07d576ca277158d1591852aa9395dabce"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/fungal_图鉴.aseprite",
+      "bytes": 1159869,
+      "sha256": "7a4e44211e19df7ed9b9b43a6933d7edb9565049137b58d046a22c66c50212cf"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/fungal_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "4dc0187c13ea10cfcd42e1b5874b75033e1cb664bb316fbc7e58796d934b53e7"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/lysosome_图鉴.aseprite",
+      "bytes": 1166791,
+      "sha256": "69925e90c43dfe9121c0658759859601487f4a403dbab72c51f5bc4200df0adc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/lysosome_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "25293a7d222afd49983e3c0dc89ad36bb3368df6cb71dcf090e31abad760cd3d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/membrane_图鉴.aseprite",
+      "bytes": 1198402,
+      "sha256": "4c90fec75335fbb22f00e868e27bfda898390006b24fbae1b8f320669962f7dc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/membrane_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "2b29798a0db7c7bdbb468f1a3158477e10ffeda2a272a99b325f4a88cfdb6b62"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/neural_图鉴.aseprite",
+      "bytes": 1082203,
+      "sha256": "2716f34074f34c5d9e92e97c64c3ce8463b0c1c39f49e37aace7b55ac3235d5f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/neural_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "459ef0c025db4514c655be7530ab6f0fd9c1e39471efd654c4f36414327c1936"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/neutrophil_图鉴.aseprite",
+      "bytes": 1137648,
+      "sha256": "c6fb67273599ebe9e8b4cec2a6dac0ffd2173bc78a51d8d4f25c890180f26cfe"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/neutrophil_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "b514857fbd538238ea36d11b53c8474aa769258fee9e6c6404b031f5ef0205bb"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/phagocyte_图鉴.aseprite",
+      "bytes": 1131686,
+      "sha256": "8a3428d195fcdcb87dce876f6a716ee176aaacba2c64059c7bf59b081fee0d15"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/phagocyte_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "2deb96f4cf8305eca7d0b4eb698cad2704a3a6928beeadab4e0d65e004df5194"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/spore_图鉴.aseprite",
+      "bytes": 1095104,
+      "sha256": "51219691ee363c7ddc66f4335d1e289cbabe2ff467c4326bfd49f50b0b499f23"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/spore_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "54a40bc749dee0bd1a11adeeb5e65542952173781023aa66618298df0317737d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/staph_图鉴.aseprite",
+      "bytes": 1144239,
+      "sha256": "ad7694f53df9c954b0bbb75a5345c93e68fdc4b6ce504db8b2b5f295b9ae2c0c"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/staph_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "6c8f82bf9a34ce481e3135c0e0b30297d38397aeab5c140a8ec73873e34e44b3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/virus_图鉴.aseprite",
+      "bytes": 1140311,
+      "sha256": "0f5ad0d42b6b9a4536535f502c65abd7517a4d6e764571c78b2951df72ecdc2f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/源文件/virus_图鉴.aseprite.meta",
+      "bytes": 162,
+      "sha256": "a19521cca2096b00fdc4d1c227c46392e5e53783978c247eaa406befce43140c"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/01_近卫塔.png",
+      "bytes": 97113,
+      "sha256": "1850e13e8930a44d38190c5866d3f7516b37bcb923de7859c5826d4b821260b3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/01_近卫塔.png.meta",
+      "bytes": 3105,
+      "sha256": "e8ba17b35f25c3eaaa2e98a60b589a900a308e8cb6e64815548471e8a5b912d8"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/02_抗体标记塔.png",
+      "bytes": 81612,
+      "sha256": "12e85ff94fdf823b05620425dfd1a2cab44b5ac7a48837443a819a0b1116b26f"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/02_抗体标记塔.png.meta",
+      "bytes": 3105,
+      "sha256": "e8b8582cef693059902097394fecd3c160925224b839d0878aa58e63ec312029"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/03_巨噬细胞.png",
+      "bytes": 95033,
+      "sha256": "3fc3c36df2517b6d46593e75e422d6a5552d168e4b8a91cbd13ca11e29a5c82a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/03_巨噬细胞.png.meta",
+      "bytes": 3105,
+      "sha256": "ece957445ec413093f0026019511375e2892ca9b5accad91bbbdaa4a106f3196"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/04_纤维蛋白壁垒.png",
+      "bytes": 104771,
+      "sha256": "0e6d07dda935b4db0dea5db6bc63748d258fdbe1b78e7882a1cac838e84d314a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/04_纤维蛋白壁垒.png.meta",
+      "bytes": 3105,
+      "sha256": "8b0a72012d8d332237506adb8dbf42c9bcdf3bd03f463d4620ccfca55df4b653"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/05_溶酶体酸化炮.png",
+      "bytes": 117314,
+      "sha256": "ba2d8d2379b84ad1406ea1f4f242288bcf05934ea4761bd86a48f2c2ce9f65fc"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/05_溶酶体酸化炮.png.meta",
+      "bytes": 3105,
+      "sha256": "6d14d822f3ca5038bc57454d8845b96c38dcd71f83f03ae10bbff9854cff132d"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/06_神经脉冲刺突.png",
+      "bytes": 60408,
+      "sha256": "6657fd7c90860e090de2850c23717dc7676438223e9bbe3d94e5282612def7b7"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/06_神经脉冲刺突.png.meta",
+      "bytes": 3105,
+      "sha256": "83cf64a7bfadda8f1eb49d28c123672724d4bd7c20c1e06807e533d141584f75"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/07_葡萄球菌群.png",
+      "bytes": 95302,
+      "sha256": "aefcd8b20c16ca193a0c315f1f720c0745891e2e2ba679447a877a7fd1817063"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/07_葡萄球菌群.png.meta",
+      "bytes": 3105,
+      "sha256": "01731d79bb33745b212c4d60a76077deb558fd562718e2743ae9269a8118ca76"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/08_鞭毛双球菌.png",
+      "bytes": 42474,
+      "sha256": "441d33e0be40a837b37450ab505662b468fbfce4b471f6d0aaf5ea6259ddb88a"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/08_鞭毛双球菌.png.meta",
+      "bytes": 3105,
+      "sha256": "c3f04510895a53aa0ae5eda3fff447e2135557d31a53072b4927ecdb29affd96"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/09_重甲芽孢杆菌.png",
+      "bytes": 50013,
+      "sha256": "7c81c4a0a659980fbdad2a019a1368ec3332eaa6b14bb9cd4bc5fceb543b6891"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/09_重甲芽孢杆菌.png.meta",
+      "bytes": 3105,
+      "sha256": "4be5a02272f40a135a74094fa3b17b30aca6acfbd0a7c4e38efef895c5f0cc82"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/10_真菌孢子.png",
+      "bytes": 62775,
+      "sha256": "49079403221a4ad7a4376a54e392cbf1f192df1cf4f17e7c49df747aca18391e"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/10_真菌孢子.png.meta",
+      "bytes": 3105,
+      "sha256": "5a874db411d16d217093b6cce0ed5a3b0e5da639caab8285360ff80d021eab30"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/11_病毒复制体.png",
+      "bytes": 83013,
+      "sha256": "1015051d20d27eb7f3e37bacde850a7a3e9d7d0b4df98979dd7cc15a4a859196"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/11_病毒复制体.png.meta",
+      "bytes": 3105,
+      "sha256": "e5c2782ddd435cd9287beb3ddd779f80519a5d14fe55aea37a1ca1a6eab579e1"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/12_变异超级真菌.png",
+      "bytes": 110798,
+      "sha256": "a06b9cc5e7e8e8a37c92ca1f6912fb5cd2df113fbeb681b6ba17e2fcbc64ff16"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/12_变异超级真菌.png.meta",
+      "bytes": 3105,
+      "sha256": "085ecb30d1888e23a8757939c8e9b7fd5d436ff70edffd55dd068d378c21fbe5"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/13_细菌生物膜核心.png",
+      "bytes": 136729,
+      "sha256": "eef9f5dd3b6b66389997b5b908d2c7b8a1789773d1aba6b329972bef1a9790d5"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/13_细菌生物膜核心.png.meta",
+      "bytes": 3105,
+      "sha256": "596122409ddf50d7e53841772babf210eadcfb98a7e2202c3084f4a3d92878f3"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/14_病毒母体.png",
+      "bytes": 104336,
+      "sha256": "0682480e14d8bc3f49c1f03b02df5e9c5d48347a600b1412634ff5f0f129b3c4"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/立绘/14_病毒母体.png.meta",
+      "bytes": 3105,
+      "sha256": "04f58ba123d5e374dff9247dc9b040b85a376f85bc6cda3cb2ac80019175fc90"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/组件/图鉴底板.png",
+      "bytes": 814131,
+      "sha256": "525390f3a5024117b9c5efd94106dc0443b03de7c150d97b12cdd5ae9d1937cb"
+    },
+    {
+      "path": "Assets/_Project/Art/Sprites/细胞绘制/细胞图鉴_2026-10-28_v2/组件/图鉴底板.png.meta",
+      "bytes": 3105,
+      "sha256": "9171d47cd6e3606450b7bd059463a1b9215715320917b508ec3e51f583bf9250"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27",
+  "user_instruction": "这个画风先保存，之后的按这个修改，然后我觉得格数太少了，能不能做一个大地图",
+  "confirmed_style": [
+    "清晰的像素色块与阶梯轮廓",
+    "暖棕色描边，避免近黑色或深紫描边",
+    "周边组织淡色、较低饱和度",
+    "米白组织膜、桃粉珊瑚细胞、低对比粉紫地面、青绿核心",
+    "障碍物偏矩形，周边较工整，实际占格须精确对齐"
+  ],
+  "native_source": "C:\\Users\\a\\.codex\\generated_images\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\exec-e0514b69-e8db-4e38-96af-ab861566f7d4.png",
+  "native_size": [
+    1466,
+    1073
+  ],
+  "approved_upscaled_source": "C:\\Users\\a\\.codex\\visualizations\\2026\\10\\18\\01a14fcf-47f7-7d81-9e68-5605e5720d6c\\地图预览\\2-1_棕色描边_3倍像素放大.png",
+  "saved": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\地图风格基准与大地图_2026-10-27_v1\\风格基准\\2-1_凝血缺口_棕边淡周边_4398x3219.png",
+  "saved_size": [
+    4398,
+    3219
+  ],
+  "upscale": "Aseprite --batch --scale 3 (nearest-neighbor; no new painted detail)",
+  "sha256": "6fca5009ff13fc9d707d200e420e51abd401dc0cac2ae397c2cdd719dd361a27",
+  "scope": "后续新绘制或修改的地图沿用本风格；旧图和旧 meta 保留；此记录不表示所有旧地图已完成替换。",
+  "generation_prompt_provenance": "本次棕边图的原始内置 imagegen 提示词保存于 完整绘图提示词.json；此前渐进迭代见聊天记录。"
+}

@@ -98,6 +98,7 @@ public static class PlanningConfigValidation
             int count = wave.GetGroupCount(i);
             if (count < 1) errors.Add(prefix + "数量必须至少为 1。");
             if (wave.GetGroupBurstSize(i) < 1) errors.Add(prefix + "每批数量必须至少为 1。");
+            if (wave.GetGroupEntrance(i) < -1) errors.Add(prefix + "入口编号无效。");
             NonNegative(wave.GetGroupAfterDelay(i), prefix + "组结束等待", errors);
             total += count;
         }
@@ -132,7 +133,7 @@ public static class PlanningConfigValidation
                 foreach (string message in towerErrors) errors.Add(tower.DisplayName + "：" + message);
             }
             WaveSequenceDefinition sequence = current.FindProperty("waveSequence").objectReferenceValue as WaveSequenceDefinition;
-            if (sequence == null || sequence.WaveCount != 3) errors.Add("关卡必须引用一个包含三轮的顺序资源。");
+            if (sequence == null || sequence.WaveCount < 1) errors.Add("关卡必须引用至少包含一轮的顺序资源。");
             else
                 for (int i = 0; i < sequence.WaveCount; i++)
                 {
@@ -141,6 +142,9 @@ public static class PlanningConfigValidation
                     catch (Exception) { errors.Add($"第 {i + 1} 轮尚未指定波次。"); continue; }
                     var waveErrors = new List<string>();
                     CheckWave(wave, waveErrors);
+                    int entrances = current.FindProperty("spawnCells").arraySize;
+                    for (int group = 0; group < wave.GroupCount; group++)
+                        if (wave.GetGroupEntrance(group) >= entrances) waveErrors.Add("指定入口超出本地图范围。");
                     foreach (string message in waveErrors) errors.Add($"第 {i + 1} 轮：" + message);
                 }
             try

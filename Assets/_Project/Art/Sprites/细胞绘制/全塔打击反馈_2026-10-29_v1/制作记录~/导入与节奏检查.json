@@ -1,0 +1,200 @@
+{
+  "newFrames": [
+    {
+      "id": "neutrophil",
+      "frames": 6,
+      "distinct": 6,
+      "hashes": [
+        "a14fecaf32ce91e5ec4435f7412cc0673d3f7060a0c6cb3ae2143630deacb5f8",
+        "746276ea0b8e20f360590e943faac06c1daf2ec1c2fe2382dd48c3b5cfa974cf",
+        "3e2787863c3c1c1f6410f58593f10a493c583292388c869a26ca0d08abb19b3a",
+        "41694542bee997576463aad2b5472e742f53dd98d3865af57841a3a1a41a8de2",
+        "a8e317264a6fcbb7d032a19790e97856781c03d84e9b899cae7aafe4475a684e",
+        "891888698d571dd859d5c78bfccf05833bf570a9d714c04a676816246b217cb1"
+      ]
+    },
+    {
+      "id": "antibody",
+      "frames": 6,
+      "distinct": 6,
+      "hashes": [
+        "255e3c9a6ba5a295bdb9cd0bdf88d80251b0655c6d53d7c73776327f32ce622d",
+        "6e01c825a2045e1cbbeae85f676aec8664995b3e5e7ce98cc5f1be2348e5d738",
+        "ff63ac477b4c8e4f01d02f27c86c5dff85bcd5b3dfc85c3b91ab7a4576c968f6",
+        "cc4bcb5727d2f56483cb2c47c89d4d5f67ea2e1f41dc0925e21e2a57ecc8dd78",
+        "dbb39aef68079b8f18a5312678039521e7f1511cc110066596b8b0228c3cfc21",
+        "7898d9c9d0bd2328ed3570247f88a7f56c6de596d074d833dde97e8c1753ebb1"
+      ]
+    },
+    {
+      "id": "phagocyte",
+      "frames": 6,
+      "distinct": 6,
+      "hashes": [
+        "0de692afaa87fde5809290c0d17dfe3e27968463f90c502bc9990180d9aca345",
+        "0ea71c844df0ea1384534df5c5a685e0357f00ef503c3dc9bd64237af49baf3d",
+        "984293ed70de72e25e367e054f2a3556480d03da7de7d1238aa24289418852d9",
+        "81689ba313b63cb5cbd808154ef593d0ff8d33068a050412a4b55c9220e988c2",
+        "42c9ba7c2bfe2a97a4117f62980c526f99b342ebd4715def710d68b9c9137309",
+        "9cb79b90e5007cd884310a920048683894ec76a8be0645ecfc9c0399e2bb4f67"
+      ]
+    },
+    {
+      "id": "fibrin",
+      "frames": 6,
+      "distinct": 6,
+      "hashes": [
+        "ce80d92359cd90dd1426e3ddf4e9bcf626053a26604e07cc076811538b6502ee",
+        "a26cf948c17c84b44d289642115c5db66049d6014c8b68105b0e74c78efb7906",
+        "7f61e8a10c9cba928a682d046748c0004c654e476d8ef0b8c2850b4025efdd25",
+        "395deac1ec395a71482833617a2b49fc3530ebc71262489c8acf35358304e856",
+        "eda53bb95f3b2caacf118ee20ccfdb4aeef0ffcf9d63203f1dca84671678836d",
+        "436f627d2da1dc17bba0152b8f804184880898cd119eb2ad667e3a339e1893ae"
+      ]
+    },
+    {
+      "id": "acid",
+      "frames": 6,
+      "distinct": 6,
+      "hashes": [
+        "2a9f25d8743a3382a81b9c62344a461c6a850ceadac6016273ba0ac34d506ca9",
+        "4a8f928abcfc3e071f3ccb1066a4ac60ee29915dfcf5469e361d026987a24129",
+        "1f0d26f6bb826c9b4f41868ea86ae9d62636d664a55a26454f0b07f0c1d6e348",
+        "d7e0f574fe096b1a9170fcf00afd529a4468c0151383a15b2957009b118a0661",
+        "44d2bda0cba2b482b57594aeb810e687a6df9162692ec21df31ec98208bbea61",
+        "a7f885348f04a581533f1570063f696f5db0d1bd5106cf870f3b6ed32d3401e8"
+      ]
+    },
+    {
+      "id": "neural",
+      "frames": 6,
+      "distinct": 6,
+      "hashes": [
+        "df4ed5371e1ed325e87e43f8e02ed1137beb2d800a5c99a9404b31c7088b2b8c",
+        "65cb44513756f057f73eb896ccc58d337404bdada8e184c10e31cab00700a51f",
+        "9d8c4555f37e3c18055a9dfff77dc5475635b3589d0acc121f92855ff6eeb345",
+        "44eaf89273c12fdc9050cfd8db5ee5384b5e012a3ca89d9204dc77e9d31fa6d2",
+        "6204ca3614a6a3aab6793cf273f49c74013b611b4811af59191b6d43157a274a",
+        "6dc2e5dd2c9f3309cd35f6e7dd9405de03f2f56d393944c0be022efec9241256"
+      ]
+    }
+  ],
+  "retimedClips": [
+    {
+      "original": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\01_neutrophil_Attack.anim",
+      "versionedClip": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\01_neutrophil_Attack_ImpactTiming.anim",
+      "releaseSeconds": 0.16,
+      "durationSeconds": 0.48,
+      "frameTimes": [
+        0,
+        0.06,
+        0.105,
+        0.14,
+        0.16,
+        0.185,
+        0.245,
+        0.28,
+        0.325,
+        0.38,
+        0.48
+      ]
+    },
+    {
+      "original": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\02_fibrin_Attack.anim",
+      "versionedClip": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\02_fibrin_Attack_ImpactTiming.anim",
+      "releaseSeconds": 0.16,
+      "durationSeconds": 0.48,
+      "frameTimes": [
+        0,
+        0.06,
+        0.105,
+        0.14,
+        0.16,
+        0.185,
+        0.245,
+        0.28,
+        0.325,
+        0.38,
+        0.48
+      ]
+    },
+    {
+      "original": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\03_lysosome_Attack.anim",
+      "versionedClip": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\03_lysosome_Attack_ImpactTiming.anim",
+      "releaseSeconds": 0.16,
+      "durationSeconds": 0.48,
+      "frameTimes": [
+        0,
+        0.06,
+        0.105,
+        0.14,
+        0.16,
+        0.185,
+        0.245,
+        0.28,
+        0.325,
+        0.38,
+        0.48
+      ]
+    },
+    {
+      "original": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\04_neural_Attack.anim",
+      "versionedClip": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\04_neural_Attack_ImpactTiming.anim",
+      "releaseSeconds": 0.16,
+      "durationSeconds": 0.48,
+      "frameTimes": [
+        0,
+        0.06,
+        0.105,
+        0.14,
+        0.16,
+        0.185,
+        0.245,
+        0.28,
+        0.325,
+        0.38,
+        0.48
+      ]
+    },
+    {
+      "original": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\05_phagocyte_Attack.anim",
+      "versionedClip": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\05_phagocyte_Attack_ImpactTiming.anim",
+      "releaseSeconds": 0.16,
+      "durationSeconds": 0.48,
+      "frameTimes": [
+        0,
+        0.06,
+        0.105,
+        0.14,
+        0.16,
+        0.185,
+        0.245,
+        0.28,
+        0.325,
+        0.38,
+        0.48
+      ]
+    },
+    {
+      "original": "Assets\\_Project\\Art\\Animations\\TopDown10_v3\\06_antibody_Attack.anim",
+      "versionedClip": "Assets\\_Project\\Art\\Sprites\\细胞绘制\\全塔打击反馈_2026-10-29_v1\\Unity\\06_antibody_Attack_ImpactTiming.anim",
+      "releaseSeconds": 0.16,
+      "durationSeconds": 0.48,
+      "frameTimes": [
+        0,
+        0.06,
+        0.105,
+        0.14,
+        0.16,
+        0.185,
+        0.245,
+        0.28,
+        0.325,
+        0.38,
+        0.48
+      ]
+    }
+  ],
+  "styles": 8,
+  "resource": "Assets\\_Project\\Resources\\CellImpactArtwork.asset"
+}

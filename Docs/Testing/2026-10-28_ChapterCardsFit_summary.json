@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "tests": {
+    "id": "2",
+    "testcasecount": "4",
+    "result": "Passed",
+    "total": "4",
+    "passed": "4",
+    "failed": "0",
+    "inconclusive": "0",
+    "skipped": "0",
+    "asserts": "0",
+    "engine-version": "3.5.0.0",
+    "clr-version": "4.0.30319.42000",
+    "start-time": "2026-10-28 07:04:14Z",
+    "end-time": "2026-10-28 07:04:29Z",
+    "duration": "15.1560884"
+  },
+  "source_sha256": {
+    "Assets/_Project/Scripts/UI/MainMenuController.cs": "c6d4f2cddf303475d72a23a5e7ef0f75a24e09825f53de70c4ceca146c2b2d53",
+    "Assets/_Project/Tests/PlayMode/ChapterSelectionPlayModeTests.cs": "6dc85b619712599043c34034bd841ba70bdaf78f2443688000e22f1c6cd56c59"
+  },
+  "capture_directory": "E:\\unity\\CellDefense\\Assets\\_Project\\Art\\Sprites\\细胞绘制\\章节接入_2026-10-28\\验证_v6~",
+  "screenshots": 27,
+  "resolutions": [
+    "640x480",
+    "1280x720",
+    "2048x928"
+  ],
+  "modes": [
+    "desktop",
+    "mobile safe area"
+  ],
+  "three_cards_fully_inside_viewport": true,
+  "non_overlapping": true,
+  "all_three_buttons_raycast_and_navigation_verified": true,
+  "chapter_scrolling_disabled": true,
+  "apk_built": false,
+  "taptap_modified": false
+}

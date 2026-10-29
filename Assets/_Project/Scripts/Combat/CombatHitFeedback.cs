@@ -16,6 +16,9 @@ public sealed class CombatHitFeedback : MonoBehaviour
     private AudioSource[] voices;
     private Sprite pixelSprite;
     private AudioClip shotSound,hitSound,coreSound;
+    private AudioClip[] cellSounds;
+    private float nextCellSound;
+    private float nextEmissionSound;
     private bool audioPaused;
     private int cursor;
     public int ShotCount { get; private set; }
@@ -32,8 +35,10 @@ public sealed class CombatHitFeedback : MonoBehaviour
 
     private static void EnsureForScene(Scene scene,LoadSceneMode mode)
     {
-        if (scene.name!="OpenFieldPrototype" && scene.name!="OpenFieldLevel02" &&
-            scene.name!="Prototype" && scene.name!="Level02") return;
+        bool gameplay=scene.name=="Prototype" || scene.name=="Level02";
+        foreach(GameObject root in scene.GetRootGameObjects())
+            gameplay |= root.GetComponentInChildren<OpenFieldPrototypeController>(true)!=null;
+        if(!gameplay)return;
         foreach (GameObject root in scene.GetRootGameObjects())
             if (root.GetComponentInChildren<CombatHitFeedback>(true)!=null) return;
         GameObject host=new GameObject("Combat Feedback");
@@ -62,20 +67,33 @@ public sealed class CombatHitFeedback : MonoBehaviour
         shotSound=MakeSound("Cell emission",0.045f,1050f,430f,0.08f);
         hitSound=MakeSound("Cell impact",0.075f,650f,130f,0.24f);
         coreSound=MakeSound("Core impact",0.12f,230f,70f,0.18f);
+        float[] starts={980f,1380f,310f,480f,680f,1650f,1000f,240f};
+        float[] ends={190f,780f,85f,180f,230f,510f,620f,65f};
+        cellSounds=new AudioClip[8];
+        for(int i=0;i<cellSounds.Length;i++)cellSounds[i]=MakeSound("Cell contact "+i,i==7 ? .12f : .07f,starts[i],ends[i],i==1||i==6 ? .04f : .13f);
     }
 
     public static void Shot(Vector3 position)
     {
         if (active==null) return;
-        active.ShotCount++;active.PlaySound(active.shotSound,position,0.7f);
+        active.ShotCount++;if(!CellCombatFeedback.IsReady)active.PlaySound(active.shotSound,position,0.7f);
     }
 
     public static void Hit(Vector3 position)
     {
         if (active==null) return;
         active.HitCount++;
-        active.Burst(position,active.hitSparkCount,active.hitDuration,active.pixelSize,new Color(0.3f,0.95f,1f));
-        active.PlaySound(active.hitSound,position,1f);
+        active.Burst(position,Mathf.Min(2,active.hitSparkCount),active.hitDuration,active.pixelSize*.65f,new Color(0.3f,0.95f,1f));
+        if(!CellCombatFeedback.IsReady)active.PlaySound(active.hitSound,position,1f);
+    }
+
+    public static void CellAction(CellImpactKind kind,Vector3 position,bool impact)
+    {
+        if(active==null||Time.timeScale<=0f||active.cellSounds==null)return;
+        // A wall of simultaneous strikes has a bounded mix, including at 2x game speed.
+        if(Time.unscaledTime<(impact ? active.nextCellSound : active.nextEmissionSound))return;
+        if(impact)active.nextCellSound=Time.unscaledTime+.025f;else active.nextEmissionSound=Time.unscaledTime+.04f;
+        active.PlaySound(active.cellSounds[(int)kind],position,impact ? .7f : .22f);
     }
 
     public static void CoreImpact(Vector3 position)
@@ -160,6 +178,7 @@ public sealed class CombatHitFeedback : MonoBehaviour
         if (shotSound!=null) Destroy(shotSound);
         if (hitSound!=null) Destroy(hitSound);
         if (coreSound!=null) Destroy(coreSound);
+        if(cellSounds!=null)foreach(AudioClip clip in cellSounds)if(clip!=null)Destroy(clip);
     }
 
     private sealed class Spark

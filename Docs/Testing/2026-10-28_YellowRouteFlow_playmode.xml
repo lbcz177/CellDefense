@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-28 09:27:40Z" end-time="2026-10-28 09:27:56Z" duration="16.4779192">
+  <test-suite type="TestSuite" id="1000" name="ChapterSelectionTests" fullname="ChapterSelectionTests" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-28 09:27:40Z" end-time="2026-10-28 09:27:56Z" duration="16.477919" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1071" name="CellDefense.Tests.PlayMode.dll" fullname="E:/unity/CellDefense/Logs/CodexTradingTests/Library/ScriptAssemblies/CellDefense.Tests.PlayMode.dll" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-28 09:27:40Z" end-time="2026-10-28 09:27:56Z" duration="16.459271" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="25000" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1049" name="RouteFlowPlayModeTests" fullname="RouteFlowPlayModeTests" classname="RouteFlowPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-28 09:27:40Z" end-time="2026-10-28 09:27:56Z" duration="16.454476" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1050" name="DashesRevealAndMoveForwardWithoutCuttingAcrossACorner" fullname="RouteFlowPlayModeTests.DashesRevealAndMoveForwardWithoutCuttingAcrossACorner" methodname="DashesRevealAndMoveForwardWithoutCuttingAcrossACorner" classname="RouteFlowPlayModeTests" runstate="Runnable" seed="91694676" result="Passed" start-time="2026-10-28 09:27:40Z" end-time="2026-10-28 09:27:41Z" duration="1.389482" asserts="0">
+          <properties />
+        </test-case>
+        <test-case id="1051" name="FiveScenesShowAnimatedRoutesAndPauseStopsTheirClock" fullname="RouteFlowPlayModeTests.FiveScenesShowAnimatedRoutesAndPauseStopsTheirClock" methodname="FiveScenesShowAnimatedRoutesAndPauseStopsTheirClock" classname="RouteFlowPlayModeTests" runstate="Runnable" seed="1663885487" result="Passed" start-time="2026-10-28 09:27:41Z" end-time="2026-10-28 09:27:56Z" duration="15.033283" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

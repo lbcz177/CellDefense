@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d029a18e7354f0f90e7231a12c2f785, type: 3}
+  m_Name: CellCodexArtwork
+  m_EditorClassIdentifier: 
+  frame: {fileID: 21300000, guid: f5fed57a2bd64a8aaf0864c4e6507282, type: 3}
+  title: {fileID: 21300000, guid: fa4f60dd6ae94364b73ca7710215ba37, type: 3}
+  defenders: {fileID: 21300000, guid: b0bccda3a5ef45d99c5191d6779f0d05, type: 3}
+  invaders: {fileID: 21300000, guid: e4093080cc6e499587301e50e42918fc, type: 3}
+  home: {fileID: 21300000, guid: 07f7af7ad7eb4de28a570be24134b0aa, type: 3}
+  index: {fileID: 21300000, guid: 43e9031615c146279530bbe225b3d53d, type: 3}
+  previous: {fileID: 21300000, guid: ff962d7984754b808b26a4ab42378ee5, type: 3}
+  next: {fileID: 21300000, guid: 1ba6132cbe9d4d70ad7bfe7e898eea2e, type: 3}
+  entries:
+  - id: neutrophil
+    displayName: "近卫塔"
+    category: 0
+    portrait: {fileID: 21300000, guid: 1f83ff755f98455db006f46ddcea57e2, type: 3}
+    page: {fileID: 21300000, guid: 3524f63d1c2b4a9ebf84ccb814e50e45, type: 3}
+    caption: {fileID: 21300000, guid: 8f07502b872241f99afd3fa86b095599, type: 3}
+  - id: antibody
+    displayName: "抗体标记塔"
+    category: 0
+    portrait: {fileID: 21300000, guid: f470a5f2e4f14d94b81d46b26c49482a, type: 3}
+    page: {fileID: 21300000, guid: bbe38db492b746ea99ced44cc33ed799, type: 3}
+    caption: {fileID: 21300000, guid: 2d04d47b94e148c9ba9479d8d3871bc2, type: 3}
+  - id: phagocyte
+    displayName: "巨噬细胞"
+    category: 0
+    portrait: {fileID: 21300000, guid: 85acd51492284449a87efc02b5f9f9d4, type: 3}
+    page: {fileID: 21300000, guid: 5c2051f97ded404fa97c4bb223df7e17, type: 3}
+    caption: {fileID: 21300000, guid: a7ae610fd97e4b5c9828d64b1c660d5a, type: 3}
+  - id: fibrin
+    displayName: "纤维蛋白壁垒"
+    category: 0
+    portrait: {fileID: 21300000, guid: 0a8337cdad914614a4faa8247254ef4c, type: 3}
+    page: {fileID: 21300000, guid: 7a7e4307983f486a959ba3da82a3af04, type: 3}
+    caption: {fileID: 21300000, guid: c50ead93545b45c5bfaf6c37cb44613d, type: 3}
+  - id: lysosome
+    displayName: "溶酶体酸化炮"
+    category: 0
+    portrait: {fileID: 21300000, guid: 3eaca48b0058495d9d1cd34f41d9bd6b, type: 3}
+    page: {fileID: 21300000, guid: c58526c919f14de6955173c828df0792, type: 3}
+    caption: {fileID: 21300000, guid: 61d011b65a9144cb9b891f13178e782c, type: 3}
+  - id: neural
+    displayName: "神经脉冲刺突"
+    category: 0
+    portrait: {fileID: 21300000, guid: 01c238d18b3d441d9f65819357a0cf04, type: 3}
+    page: {fileID: 21300000, guid: 6bcfb578f4424fafa87adbd1acf737c9, type: 3}
+    caption: {fileID: 21300000, guid: cd61f224dbcf45daa2725492d8660e8b, type: 3}
+  - id: staph
+    displayName: "葡萄球菌群"
+    category: 1
+    portrait: {fileID: 21300000, guid: cdb0771db5e041ed9c704351d765fcfd, type: 3}
+    page: {fileID: 21300000, guid: 46c1a879b1274152ba50580f282e348b, type: 3}
+    caption: {fileID: 21300000, guid: 545a3c9ec13143fcae5f02032d24d88e, type: 3}
+  - id: flagellate
+    displayName: "鞭毛双球菌"
+    category: 1
+    portrait: {fileID: 21300000, guid: 80a7073be6ab4158b7e75db7f940ca7f, type: 3}
+    page: {fileID: 21300000, guid: d6d4a7a617014adf89b486c7e8e78e7e, type: 3}
+    caption: {fileID: 21300000, guid: d27375f974f4402082996816270041b2, type: 3}
+  - id: bacillus
+    displayName: "重甲芽孢杆菌"
+    category: 1
+    portrait: {fileID: 21300000, guid: ecb6885c7ea04c479934ac6a020e3239, type: 3}
+    page: {fileID: 21300000, guid: 4e43b17edc8a4356a0e79a5ccb0b829a, type: 3}
+    caption: {fileID: 21300000, guid: 485c9216a92b4f78828e091018b2c8a2, type: 3}
+  - id: spore
+    displayName: "真菌孢子"
+    category: 1
+    portrait: {fileID: 21300000, guid: 0b2d20219bed4708a59189abc300ed0d, type: 3}
+    page: {fileID: 21300000, guid: cc8ca6c6b1f446c8a577b63087336e9e, type: 3}
+    caption: {fileID: 21300000, guid: ddae47096a884784ba5f2e92620449e9, type: 3}
+  - id: clone
+    displayName: "病毒复制体"
+    category: 1
+    portrait: {fileID: 21300000, guid: 96508143308d48db9b54250083888dd0, type: 3}
+    page: {fileID: 21300000, guid: 54c19f4753dd415fbda3e180345bd5c5, type: 3}
+    caption: {fileID: 21300000, guid: d6ba3cebdbd84b6e94fdb5be47827830, type: 3}
+  - id: fungal
+    displayName: "变异超级真菌"
+    category: 1
+    portrait: {fileID: 21300000, guid: 7bedbb58e27a4e1b8592383ec8de42d3, type: 3}
+    page: {fileID: 21300000, guid: 99308988cbcf4ac39d890e71cf62b5b3, type: 3}
+    caption: {fileID: 21300000, guid: b90e0ee6500041f1be8104528c9677aa, type: 3}
+  - id: membrane
+    displayName: "细菌生物膜核心"
+    category: 1
+    portrait: {fileID: 21300000, guid: 64c511603d5c43f2b8290d4692d377db, type: 3}
+    page: {fileID: 21300000, guid: 01de642f39b14fd39d4396535a1b4fd5, type: 3}
+    caption: {fileID: 21300000, guid: 46b32428b4bd4d5e89f20ac630582d65, type: 3}
+  - id: virus
+    displayName: "病毒母体"
+    category: 1
+    portrait: {fileID: 21300000, guid: e8bd742b756640368f1251810c0c9eb1, type: 3}
+    page: {fileID: 21300000, guid: 66c61d3ee33f4ee881dd60ae45c91fb0, type: 3}
+    caption: {fileID: 21300000, guid: 9930fabe9a184080993b0674d759158b, type: 3}
